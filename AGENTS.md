@@ -45,7 +45,7 @@
 
 | 영역 | 규정 파일 (상대 경로 링크) | 본질적 역할 및 핵심 제약 수칙 |
 | :--- | :--- | :--- |
-| **Git & 형상관리** | [L1-git.md](rules/L1-git.md) | 커밋 메시지 한국어 작성 및 태그 접두사 의무화, Dual Push(메인 & intelligence) 순차 동시 수행 수칙 |
+| **Git & 형상관리** | [L1-git.md](rules/L1-git.md) | 커밋 메시지 한국어 작성 및 태그 접두사 의무화, Dual Push(메인 & .agents) 순차 동시 수행 수칙 |
 | **시스템 아키텍처** | [L2-architecture.md](rules/L2-architecture.md) | 3-Layer(UI-Service-Query) 물리 격리 및 Pandas 체이닝 표준, UI 6대 정합성 수칙 준수 |
 | **비즈니스 상수** | [L2-business-constants.md](rules/L2-business-constants.md) | 물리 공장 코드 정적 매핑 및 이중화 방지, 도메인 상수 일원화 관리 |
 | **컬러 시스템** | [L2-color-system.md](rules/L2-color-system.md) | IBM Carbon 테마 기반의 대시보드 및 플롯 컬러 시스템 정적 일치화 |
@@ -78,7 +78,6 @@
 
 - 에이전트는 작업 중 에러나 규칙 미준수를 인지하는 즉시 원인을 정밀 분석하여 [reverse-sync-prevention.md](context/checklist/reverse-sync-prevention.md) 내의 히스토리 테이블에 양식에 맞춰 추가 기록해야 합니다.
 - 동시에 로컬 및 글로벌 규칙을 갱신 및 보강하여 지속적으로 실시간 자가 정제를 완수합니다.
-- **AI 읽기 금지 구역**: `intelligence/note/` 및 그 하위 경로는 어떠한 경우에도 조회, 검색, 참조해서는 안 됩니다.
 
 ---
 
