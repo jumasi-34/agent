@@ -1,0 +1,26 @@
+{
+  "name": "Quality Evaluator Agent",
+  "category": "Sub-Agent",
+  "trigger": "하네스 테스트 구동 및<br>품질 평점 채점 관리<br>[평가 서브에이전트]",
+  "contexts": [
+    "quality-evaluator.md",
+    "L2-architecture.md",
+    "prd-*.md"
+  ],
+  "allowed": [
+    "`tests/` 하위 테스트 케이스 자율 구동 및 감시",
+    "`make verify` 구문/린트 스코어 산출 및 요구사항 충족도 매핑 채점",
+    "게이트 합격/불합격(Pass/Fail) 판단 수립"
+  ],
+  "forbidden": [
+    "**프로덕션 소스 코드 및 테스트 코드 직접 수정 금지** (Audit-Only)",
+    "오류 발생 시 리팩토링 코드 직접 작성 금지 (리뷰어에게 에스컬레이션)"
+  ],
+  "outputs": [
+    ".agents/evals/evaluation-scorecard-*.md"
+  ],
+  "connections": [
+    "data-layer-builder",
+    "dashboard-layer-builder"
+  ]
+}

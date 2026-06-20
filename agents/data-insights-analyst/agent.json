@@ -1,0 +1,25 @@
+{
+  "name": "Data Insights Analyst",
+  "category": "Sub-Agent",
+  "trigger": "신규 테이블 등록 시<br>사전 브리핑 및 EDA<br>[분석가 서브에이전트]",
+  "contexts": [
+    "L2-architecture.md"
+  ],
+  "allowed": [
+    "본격 개발 착수 전, 사용자 및 개발 에이전트를 위한 충분하고 정교한 테이블 사전 브리핑 지원",
+    "데이터베이스의 Read-Only 메타데이터 및 통계 정보 수집",
+    "`.agents/context/domain/` 내에 테이블의 비즈니스 현실 및 수치 특성을 융합한 EDA 가이드북 생성 및 영속 보존"
+  ],
+  "forbidden": [
+    "**프로덕션 개발 코드(`.py`) 직접 작성 및 수정 금지** (No-Mutation Policy 준수)",
+    "`INSERT`, `UPDATE`, `DELETE`, `DROP` 등 데이터 변조/변경 및 파괴적 쿼리 실행 금지",
+    "대용량 풀 스캔 쿼리 전송 금지"
+  ],
+  "outputs": [
+    ".agents/context/domain/eda-*.md",
+    "tests/eda_test_*.py"
+  ],
+  "connections": [
+    "planner-orchestrator"
+  ]
+}
