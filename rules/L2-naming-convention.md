@@ -36,6 +36,12 @@
   * 형식: `_<번호>_<카테고리명>/`
   * 예: `_10_dashboard/`, `_20_analysis/`, `_30_monitoring/`
 
+### ⑤ 기획 및 요구사항 명세서 파일 명명 (`docs/superpowers/specs/`)
+* **목적**: AI와 인간 개발자 간의 원활한 소통 및 기획 사양 공유를 위한 PRD(Product Requirement Document) 기획서입니다.
+* **명명 규칙**: 실제 렌더링 및 페이지 구동을 담당하는 Streamlit 메인 화면 컨트롤러 파일명(`*_page.py`)과 정확히 일치되도록 1:1로 매핑하여 명명합니다. (예외 없이 `*_prd.md` 포맷을 사용합니다.)
+  * 올바른 예시: `oe_quality_issue_dashboard_page.py` -> `oe_quality_issue_dashboard_prd.md`
+  * 잘못된 예시: `oe_dashboard_prd.md` (구동 파일명과 불일치하여 명세서 식별성 저하)
+
 ---
 
 ## 2. 소스 코드 요소 명명 규칙 (Code Level Naming)

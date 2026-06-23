@@ -71,6 +71,8 @@
 - **에이전트 품질 평가 데이터 (Golden Tasks)**: [golden_tasks.yaml](context/evals/golden_tasks.yaml) (에이전트 성능 정량 평가 명세셋)
 - **신규 페이지 개발 워크플로우**: [new_page_development_workflow.md](context/guide/new_page_development_workflow.md) (Streamlit 화면 개발 계층별 표준 워크플로우)
 - **시각화 개발 워크플로우 및 템플릿**: [plotly-workflow-template.md](context/guide/plotly-workflow-template.md) (일관된 고품질 Plotly 생성을 위한 표준 워크플로우 및 코드 템플릿)
+- **PRD 기획서 표준 템플릿**: [docs/superpowers/specs/prd_standard_template.md](docs/superpowers/specs/prd_standard_template.md) (AI-Human 간 요구사항 정렬을 위한 4대 섹션 기획 템플릿 표준)
+- **OE 품질 대시보드 기획 명세서**: [docs/superpowers/specs/oe_quality_issue_dashboard_prd.md](docs/superpowers/specs/oe_quality_issue_dashboard_prd.md) (완성형 OE Quality Issue Integrated Dashboard 전수 기획 명세서)
 
 ---
 
@@ -113,5 +115,17 @@
 1. **Lucide Icons SSOT 단일화**: 인라인 마크다운, HTML 배너, 커스텀 메트릭 카드 등 인라인 HTML/CSS 스타일 영역에는 현대적 미학의 업계 표준인 **Lucide Icons SVG**를 단일 표준으로 전격 적용합니다.
 2. **유니코드 이모지 금지**: 소스 코드 주석, 마크다운 텍스트, 위젯 라벨 등 모든 영역에서 일반 유니코드 이모지 사용을 엄격히 차단하며, 아이콘 렌더링 시 `get_svg_icon(style="lucide")` 헬퍼를 경유하여 출력합니다.
 3. **네이티브 위젯 하이브리드 예외 조항**: Streamlit 네이티브 위젯의 `icon` 파라미터 등 내부 마크다운 제약으로 인해 인라인 SVG 주입이 불가한 물리적 영역에 한하여, 예외적으로 Streamlit 빌트인 구글 머티리얼 심볼(`:material/icon_name:`)을 병행 보조 사용하는 것을 허용합니다.
+
+---
+
+## 8. PRD 기반 기획 및 자율 협업 개발 표준 (PRD-driven Specification & Development Standard)
+
+AI와 인간 개발자 간의 원활한 소통 및 기획-구현 정합성을 사수하기 위해, 신규 개발 및 리팩토링 진행 시 다음의 PRD 협업 표준을 엄격히 준수해야 합니다.
+
+1. **4대 섹션 전수 명세 의무화**: 신규 화면을 개발하거나 대규모 UI/차트 리팩토링을 수행할 때, 반드시 `docs/superpowers/specs/prd_standard_template.md` 표준 템플릿에 맞추어 SECTION 1~4(데이터 원천, 화면 레이아웃, Plot별 상세 가이드, 비즈니스 계산 수식)를 전수 명세해야 합니다.
+2. **전체 탭 기획 범위 수립**: 대시보드 기획 시 특정 탭에만 치우치지 않고 화면에 포함되는 모든 탭(GLOBAL, PLANT, OEQG, RAWDATA 등)의 세부 명세와 차트 드로잉 함수, 조건부 서식 규칙을 명확히 명기해야 합니다.
+3. **기획-화면 파일명 1:1 대칭 정렬**: 기획 명세서의 파일명은 실제 렌더링 및 페이지 제어를 담당하는 Streamlit 메인 화면 컨트롤러 파일(`*_page.py`)과 정확히 1:1로 매칭되도록 `*_prd.md`로 일치시켜야 합니다. (예: `oe_quality_issue_dashboard_page.py` -> `oe_quality_issue_dashboard_prd.md`)
+4. **WSL Markdown Link Constraint 적용**: 기획서 내에서 파일 링크를 기입할 때는 절대 프로토콜 없는 평문 상대 경로(예: `[상대경로](docs/superpowers/specs/oe_quality_issue_dashboard_prd.md)`)만을 사용하여 윈도우 호스트 연동 에러를 완벽히 차단합니다.
+5. **실시간 기획-코드 정합성 동기화**: 코드 변경 및 리팩토링 과정에서 발생하는 비즈니스 로직(예: MTTC 영업일 계산법), 임계치(예: RAWDATA 조건부 오렌지색 하일라이트 기준), 사용 칼럼 등의 변화는 반드시 매칭되는 PRD 파일에 즉각 반영하여 동기화 상태를 유지해야 합니다.
 
 
