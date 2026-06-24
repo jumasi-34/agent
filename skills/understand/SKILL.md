@@ -1,7 +1,31 @@
 ---
 name: understand
-description: Analyze a codebase to produce an interactive knowledge graph for understanding architecture, components, and relationships
+description: "Analyze codebases to produce interactive knowledge graphs, explaining architecture layers, component relations, domain flows, git diffs, developer onboard guides, or code-chat inquiries."
 argument-hint: ["[path] [--full|--auto-update|--no-auto-update|--review|--language <lang>]"]
+---
+
+# 코드베이스 분석 및 지식 그래프 모델링 통합 가이드라인 (understand)
+
+본 스킬은 전체 코드베이스의 구조 정밀 진단, 의존성 맵 설계 및 특화 정적/LLM 종합 분석 지침을 포함합니다.
+기본 코드베이스 분석(Phase 0~7) 외에, 사용자가 특수 영역에 대해 문의하거나 분석을 요청할 경우 아래의 상대 경로를 즉각 조회하여 자율 수행하십시오.
+
+## 특화 분석 기능 라우팅 테이블 (Specialized Analysis)
+
+*   **코드베이스 기반 질의응답 (chat)**: [references/chat.md](references/chat.md)
+    - 대화형 질의응답, 컴포넌트 정보 검색 시의 컨텍스트 필터링 및 대답 요약 표준
+*   **인터랙티브 대시보드 구동 (dashboard)**: [references/dashboard.md](references/dashboard.md)
+    - 지식 그래프 웹 인터페이스 서버 가동 표준 및 렌더링 검증 수칙
+*   **Git Diff 분석 및 점진 분석 (diff)**: [references/diff.md](references/diff.md)
+    - 변경 내역 파악, 영향 범위(Impact Area) 계산 및 리스크 진단 표준
+*   **비즈니스 도메인 지식 흐름 추출 (domain)**: [references/domain.md](references/domain.md)
+    - 업무 플로우 그래프, 비즈니스 흐름 모델링 및 도메인 상수 분석
+*   **소스코드 및 모듈 상세 딥다이브 (explain)**: [references/explain.md](references/explain.md)
+    - 특정 소스코드 파일 및 유닛 컴포넌트의 기저 아키텍처 및 세부 로직 설명 기법
+*   **위키형 지식 베이스 추출 (knowledge)**: [references/knowledge.md](references/knowledge.md)
+    - Karpathy 패턴 Wiki 구조 분석 및 지식 클러스터링 규칙
+*   **신규 팀 멤버 온보딩 가이드 제작 (onboard)**: [references/onboard.md](references/onboard.md)
+    - 온보딩 가이드라인 문서 자율 포맷 생산 지침
+
 ---
 
 # /understand
