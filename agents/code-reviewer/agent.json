@@ -1,7 +1,9 @@
 {
-  "name": "Code Reviewer Agent",
+  "name": "code-reviewer",
+  "displayName": "Code Reviewer Agent",
+  "description": "아키텍처 및 3-Layer 정적 코드 리뷰 수행 [리뷰어 서브에이전트]",
   "category": "Sub-Agent",
-  "trigger": "아키텍처 및 3-Layer<br>정적 코드 리뷰 수행<br>[리뷰어 서브에이전트]",
+  "hidden": false,
   "contexts": [
     "code-reviewer.md",
     "L2-architecture.md",
@@ -12,18 +14,32 @@
     "checklist/checklist-coding-standard.md",
     "checklist/checklist-git.md"
   ],
-  "allowed": [
-    "빌더가 완성한 파이썬 소스 코드 정적 정합성 및 잠재 버그 분석",
-    "아키텍처 규칙 위반 탐지 시 리팩토링 개선 가이드(Diff) 제안 생성"
-  ],
-  "forbidden": [
-    "**프로덕션 소스 코드(`.py`) 직접 수정 및 임의 변경 금지**",
-    "최종 Pass/Fail 합격 여부 독단 결정 금지 (의견 기술만 허용)"
-  ],
   "outputs": [
     "intelligence/verification/review-report-*.md"
   ],
   "connections": [
     "quality-evaluator"
-  ]
+  ],
+  "config": {
+    "customAgent": {
+      "systemPromptSections": [
+        {
+          "title": "Allowed Operations",
+          "content": "- 빌더가 완성한 파이썬 소스 코드 정적 정합성 및 잠재 버그 분석\n- 아키텍처 규칙 위반 탐지 시 리팩토링 개선 가이드(Diff) 제안 생성"
+        },
+        {
+          "title": "Forbidden Operations",
+          "content": "- **프로덕션 소스 코드(`.py`) 직접 수정 및 임의 변경 금지**\n- 최종 Pass/Fail 합격 여부 독단 결정 금지 (의견 기술만 허용)"
+        }
+      ],
+      "toolNames": [
+        "view_file",
+        "write_to_file",
+        "replace_file_content",
+        "multi_replace_file_content",
+        "grep_search",
+        "list_dir"
+      ]
+    }
+  }
 }
