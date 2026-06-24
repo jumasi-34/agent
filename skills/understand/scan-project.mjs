@@ -467,7 +467,7 @@ function enumerateViaGit(projectRoot) {
   // -z = NUL-terminated output. Without it, `git ls-files` C-escapes non-ASCII
   // bytes in path names — paths containing emoji, accented characters, CJK
   // codepoints, etc. come back quoted with octal escapes (e.g.
-  // `"30. \360\237\217\227 BD-CCER/file.md"` for a path containing 🏗️).
+  // `"30. \360\237\217\227 BD-CCER/file.md"` for a path containing emoji [Building construction emoji]).
   // Those quoted-escaped strings then fail to round-trip back to real disk
   // paths in downstream consumers, so files in such directories are silently
   // dropped from the scan. The -z form emits raw bytes between NUL separators,
