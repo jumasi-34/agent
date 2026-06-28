@@ -13,11 +13,13 @@ related:
 consumers:
   - agent.all
 
-updated: 2026-06-28---
+updated: 2026-06-28
+---
+
 # Subagent-Driven Development
 
 ## Overview / Connections
-* **Parent (상위 개념)**: [skills/index.md](../index.md)
+* **Parent (상위 개념)**: [[skills/index]]
 
 
 Execute plan by dispatching a fresh implementer subagent per task, a task review (spec compliance + code quality) after each, and a broad whole-branch review at the end.
@@ -280,9 +282,9 @@ a ledger file, not only in todos.
 
 ## Prompt Templates
 
-- [implementer-prompt.md](implementer-prompt.md) - Dispatch implementer subagent
-- [task-reviewer-prompt.md](task-reviewer-prompt.md) - Dispatch task reviewer subagent (spec compliance + code quality)
-- Final whole-branch review: use superpowers:requesting-code-review's [code-reviewer.md](../requesting-code-review/code-reviewer.md)
+- [[skills/subagent-driven-development/implementer-prompt]] - Dispatch implementer subagent
+- [[skills/subagent-driven-development/task-reviewer-prompt]] - Dispatch task reviewer subagent (spec compliance + code quality)
+- Final whole-branch review: use superpowers:requesting-code-review's [[skills/requesting-code-review/code-reviewer]]
 
 ## Example Workflow
 
@@ -434,5 +436,5 @@ Done!
 
 
 ## Sub-Assets (하위 참조 자산)
-* [Implementer Prompt](implementer-prompt.md) — Implementer Prompt 참조 및 가이드 명세서.
-* [Task Reviewer Prompt](task-reviewer-prompt.md) — Task Reviewer Prompt 참조 및 가이드 명세서.
+* [[skills/subagent-driven-development/implementer-prompt]] — Implementer Prompt 참조 및 가이드 명세서.
+* [[skills/subagent-driven-development/task-reviewer-prompt]] — Task Reviewer Prompt 참조 및 가이드 명세서.

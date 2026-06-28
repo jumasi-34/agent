@@ -8,10 +8,12 @@ summary: >
 
 parent: "[[skills/understand/SKILL]]"
 
-updated: 2026-06-28---
+updated: 2026-06-28
+---
+
 # 신규 팀 멤버 온보딩 가이드 제작 가이드라인 (understand-onboard)
 
-* **Parent (상위 스킬)**: [SKILL.md](../SKILL.md)
+* **Parent (상위 스킬)**: [[skills/understand/SKILL]]
 
 ---
 

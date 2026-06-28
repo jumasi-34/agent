@@ -8,10 +8,12 @@ summary: >
 
 parent: "[[skills/understand/SKILL]]"
 
-updated: 2026-06-28---
+updated: 2026-06-28
+---
+
 # YAML Language Prompt Snippet
 
-* **Parent (상위 스킬)**: [SKILL.md](../SKILL.md)
+* **Parent (상위 스킬)**: [[skills/understand/SKILL]]
 
 ---
 
@@ -22,7 +24,9 @@ updated: 2026-06-28---
 - **Anchors and Aliases**: `&anchor` defines a reusable block, `*anchor` references it to avoid duplication
 - **Merge Keys**: `<<: *anchor` merges anchor contents into the current mapping
 - **Multi-Line Strings**: Literal block (`|`) preserves newlines, folded block (`>`) joins lines
-- **Document Separators**: `---` starts a new document, `...` ends one (multi-document streams)
+- **Document Separators**: `
+---
+` starts a new document, `...` ends one (multi-document streams)
 - **Tags and Types**: `!!str`, `!!int`, `!!bool` for explicit typing; custom tags for application-specific types
 - **Flow Style**: Inline JSON-like syntax `{key: value}` and `[item1, item2]` for compact notation
 - **Environment Variable Substitution**: `${VAR}` patterns used in docker-compose and CI configs

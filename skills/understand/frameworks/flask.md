@@ -8,10 +8,12 @@ summary: >
 
 parent: "[[skills/understand/SKILL]]"
 
-updated: 2026-06-28---
+updated: 2026-06-28
+---
+
 # Flask Framework Addendum
 
-* **Parent (상위 스킬)**: [SKILL.md](../SKILL.md)
+* **Parent (상위 스킬)**: [[skills/understand/SKILL]]
 
 ---
 
@@ -26,7 +28,9 @@ When analyzing a Flask project, apply these additional conventions on top of the
 ### Canonical File Roles
 
 | File / Pattern | Role | Tags |
-|---|---|---|
+|---|---|
+---
+|
 | `app.py`, `__init__.py` (in app package) | Application factory (`create_app()`) or direct `Flask(__name__)` instance | `entry-point`, `config` |
 | `run.py`, `wsgi.py` | Production/dev server entry point | `entry-point`, `config` |
 | `*/views.py`, `*/routes.py` | Route handler functions with `@app.route` or `@blueprint.route` | `api-handler`, `routing` |

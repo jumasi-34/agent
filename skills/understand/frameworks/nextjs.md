@@ -8,10 +8,12 @@ summary: >
 
 parent: "[[skills/understand/SKILL]]"
 
-updated: 2026-06-28---
+updated: 2026-06-28
+---
+
 # Next.js Framework Addendum
 
-* **Parent (상위 스킬)**: [SKILL.md](../SKILL.md)
+* **Parent (상위 스킬)**: [[skills/understand/SKILL]]
 
 ---
 
@@ -26,7 +28,9 @@ When analyzing a Next.js project, apply these additional conventions on top of t
 ### Canonical File Roles
 
 | File / Pattern | Role | Tags |
-|---|---|---|
+|---|---|
+---
+|
 | `app/layout.tsx` | Root layout — wraps all pages, defines HTML shell and global providers | `entry-point`, `config`, `ui` |
 | `app/page.tsx` | Root page component — renders at `/` | `ui`, `routing` |
 | `app/**/page.tsx` | Route page components — file path determines URL | `ui`, `routing` |

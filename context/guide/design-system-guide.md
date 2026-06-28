@@ -23,7 +23,9 @@ consumers:
   - "[[agents/roles/planner-orchestrator]]"
   - agent.ui_builder
 
-updated: 2026-06-28---
+updated: 2026-06-28
+---
+
 
 # IQM+ (Interactive Quality Management Plus) 통합 디자인 시스템 가이드
 
@@ -92,7 +94,9 @@ flowchart TD
 모든 UI 요소와 차트 트레이스(Trace)는 아래 지정된 헥사코드 상수를 호출하여 사용하며, **하드코딩을 절대 금지**합니다.
 
 | 구분 | 변수명 | 헥사코드 | 설명 / 용도 |
-| :--- | :--- | :--- | :--- |
+| :--- | :--- | :--- | :
+---
+ |
 | **기본 (Shadcn)** | `colors.primary` | `#0f172a` | Slate-900 (기본 브랜드 강조색, 진한 회색) |
 | | `colors.secondary` | `#64748b` | Slate-500 (보조 텍스트, 설명글 등 중간 회색) |
 | | `colors.muted` | `#94a3b8` | Slate-400 (비활성화 상태, 연한 회색) |

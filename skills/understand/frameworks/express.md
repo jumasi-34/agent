@@ -8,10 +8,12 @@ summary: >
 
 parent: "[[skills/understand/SKILL]]"
 
-updated: 2026-06-28---
+updated: 2026-06-28
+---
+
 # Express Framework Addendum
 
-* **Parent (상위 스킬)**: [SKILL.md](../SKILL.md)
+* **Parent (상위 스킬)**: [[skills/understand/SKILL]]
 
 ---
 
@@ -26,7 +28,9 @@ When analyzing an Express project, apply these additional conventions on top of 
 ### Canonical File Roles
 
 | File / Pattern | Role | Tags |
-|---|---|---|
+|---|---|
+---
+|
 | `app.js`, `app.ts` | Application entry point — creates Express app, mounts middleware and routes | `entry-point`, `config` |
 | `server.js`, `server.ts`, `index.js`, `index.ts` | Server bootstrap — starts HTTP listener, may import app | `entry-point`, `config` |
 | `routes/*.js`, `routes/*.ts` | Route definitions — map HTTP methods and paths to handlers | `api-handler`, `routing` |

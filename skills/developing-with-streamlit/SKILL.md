@@ -14,11 +14,13 @@ related:
 consumers:
   - agent.all
 
-updated: 2026-06-28---
+updated: 2026-06-28
+---
+
 # Developing with Streamlit
 
 ## Overview / Connections
-* **Parent (상위 개념)**: [skills/index.md](../index.md)
+* **Parent (상위 개념)**: [[skills/index]]
 
 
 Streamlit (>=1.57) ships detailed reference documentation for building Streamlit apps inside its pip package. The bundled skill is a routing `SKILL.md` plus a `references/` folder of topic-specific reference docs (dashboards, themes, layouts, session state, custom components, etc.).

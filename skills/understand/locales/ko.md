@@ -8,10 +8,12 @@ summary: >
 
 parent: "[[skills/understand/SKILL]]"
 
-updated: 2026-06-28---
+updated: 2026-06-28
+---
+
 # 한국어 출력 가이드라인 (Korean)
 
-* **Parent (상위 스킬)**: [SKILL.md](../SKILL.md)
+* **Parent (상위 스킬)**: [[skills/understand/SKILL]]
 
 ---
 
@@ -23,7 +25,9 @@ updated: 2026-06-28---
 한국어 태그 또는 영어 일반 기술 용어 사용:
 
 | 패턴 | 추천 태그 |
-|------|---------|
+|------|------
+---
+|
 | 진입점 파일 | `진입점`, `barrel`, `exports` 또는 `entry-point` |
 | 유틸리티 함수 | `유틸리티`, `helpers`, `utility` |
 | API 핸들러 | `api-handler`, `controller`, `endpoint` |

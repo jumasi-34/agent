@@ -8,10 +8,12 @@ summary: >
 
 parent: "[[skills/understand/SKILL]]"
 
-updated: 2026-06-28---
+updated: 2026-06-28
+---
+
 # 日本語出力ガイドライン (Japanese)
 
-* **Parent (상위 스킬)**: [SKILL.md](../SKILL.md)
+* **Parent (상위 스킬)**: [[skills/understand/SKILL]]
 
 ---
 
@@ -23,7 +25,9 @@ updated: 2026-06-28---
 日本語タグまたは英語の一般的な技術用語を使用：
 
 | パターン | 推奨タグ |
-|---------|---------|
+|---------|------
+---
+|
 | エントリーポイント | `入口点`, `barrel`, `exports` または `entry-point` |
 | ユーティリティ | `ユーティリティ`, `helpers`, `utility` |
 | APIハンドラー | `api-handler`, `controller`, `endpoint` |

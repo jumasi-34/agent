@@ -23,7 +23,9 @@ consumers:
   - "[[agents/roles/code-reviewer]]"
   - "[[agents/roles/quality-evaluator]]"
 
-updated: 2026-06-28---
+updated: 2026-06-28
+---
+
 
 # checklist-release.md (L1 릴리즈 및 빌드 정합성 체크리스트)
 

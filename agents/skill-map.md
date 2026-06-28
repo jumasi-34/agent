@@ -21,7 +21,9 @@ related:
 consumers:
   - "[[agents/roles/planner-orchestrator]]"
 
-updated: 2026-06-28---
+updated: 2026-06-28
+---
+
 
 # 에이전트별 필수 기동 스킬 맵핑 정의서 (agents/skill-map.md)
 

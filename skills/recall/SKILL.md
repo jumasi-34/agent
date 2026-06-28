@@ -1,6 +1,6 @@
 ---
 name: "recall"
-description: "Search agentmemory for past observations, sessions, and learnings about a topic using hybrid BM25 plus vector plus graph search. Use when the user says "recall", "what did we do about", "did we ever", "have we seen", or needs context from past sessions."
+description: "Search agentmemory for past observations, sessions, and learnings about a topic using hybrid BM25 plus vector plus graph search. Use when the user says 'recall', 'what did we do about', 'did we ever', 'have we seen', or needs context from past sessions."
 id: skill.recall
 type: skill
 status: active
@@ -13,7 +13,10 @@ related:
 consumers:
   - agent.all
 
-updated: 2026-06-28---
+updated: 2026-06-28
+---
+
+
 The user wants to recall past context about: $ARGUMENTS
 
 ## Quick start
@@ -70,4 +73,4 @@ See ../_shared/TROUBLESHOOTING.md if `memory_smart_search` is not available.
 
 
 ## Sub-Assets (하위 참조 자산)
-* [Examples](EXAMPLES.md) — Examples 참조 및 가이드 명세서.
+* [[skills/recall/EXAMPLES]] — Examples 참조 및 가이드 명세서.

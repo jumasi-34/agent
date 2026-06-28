@@ -24,7 +24,9 @@ related:
 consumers:
   - "[[agents/roles/data-layer-builder]]"
 
-updated: 2026-06-28---
+updated: 2026-06-28
+---
+
 
 # data-layer-builder.md (CQ-BI Data Layer Builder Agent 상세 명세서)
 
@@ -62,7 +64,9 @@ updated: 2026-06-28---
 에이전트는 다음 디렉터리와 모듈 내에서 활동하며 코드의 생성과 수정을 수행합니다.
 
 | 대상 범위 (Scope) | 해당 파일 및 디렉터리 패턴 | 에이전트의 역할 및 가이드라인 |
-| :--- | :--- | :--- |
+| :--- | :--- | :
+---
+ |
 | **쿼리 레이어** | `app/queries/*_query.py`<br>`app/queries/q_*.py` | - 원시 SQL 조회 쿼리를 생성하는 전용 함수 구현<br>- 서비스 레이어에 제공할 파라미터 기반 SQL 조립 로직 작성 |
 | **서비스 레이어** | `app/service/*_df.py` | - 원시 SQL을 실행하여 비즈니스 데이터프레임으로 변환하는 함수 구현<br>- 연산, 정제, 정렬, 타입 변환 및 `@st.cache_data` 캐싱 처리 전담 |
 | **참조 메타데이터** | `app/core/query/query_database.py`<br>`app/core/query/query_helper.py` | - Databricks 테이블 상수(`DatabricksTables`) 참조<br>- 동적 WHERE 조건 조립을 위한 헬퍼 모듈 참조 및 적극 활용 |

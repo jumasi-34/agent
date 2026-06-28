@@ -14,11 +14,13 @@ related:
 consumers:
   - agent.all
 
-updated: 2026-06-28---
+updated: 2026-06-28
+---
+
 # Frontend Design
 
 ## Overview / Connections
-* **Parent (상위 개념)**: [skills/index.md](../index.md)
+* **Parent (상위 개념)**: [[skills/index]]
 
 
 Approach this as the design lead at a small studio known for giving every client a visual identity that could not be mistaken for anyone else's. This client has already rejected proposals that felt templated, and is paying for a distinctive point of view: make deliberate, opinionated choices about palette, typography, and layout that are specific to this brief, and take one real aesthetic risk you can justify.

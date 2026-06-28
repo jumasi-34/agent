@@ -8,10 +8,12 @@ summary: >
 
 parent: "[[skills/understand/SKILL]]"
 
-updated: 2026-06-28---
+updated: 2026-06-28
+---
+
 # 中文输出指南 (Chinese Simplified)
 
-* **Parent (상위 스킬)**: [SKILL.md](../SKILL.md)
+* **Parent (상위 스킬)**: [[skills/understand/SKILL]]
 
 ---
 
@@ -23,7 +25,9 @@ updated: 2026-06-28---
 推荐使用中文标签或英文通用技术术语：
 
 | 模式 | 推荐标签 |
-|------|---------|
+|------|------
+---
+|
 | 入口文件 | `入口点`, `barrel`, `导出` 或 `entry-point` |
 | 工具函数 | `工具函数`, `helpers`, `common` 或 `utility` |
 | API处理器 | `api-handler`, `控制器`, `端点` |

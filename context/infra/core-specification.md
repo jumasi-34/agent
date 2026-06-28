@@ -23,7 +23,9 @@ consumers:
   - "[[agents/roles/planner-orchestrator]]"
   - agent.system_administrator
 
-updated: 2026-06-28---
+updated: 2026-06-28
+---
+
 
 # \[CORE\] core/ — 공용 인프라 레이어 컨텍스트
 
@@ -168,7 +170,9 @@ ddl.drop_table("my_table")
 ### SQLite 작업 선택 기준
 
 | 작업 | 사용 |
-|------|------|
+|------|---
+---
+|
 | 데이터 조회 (SELECT) | `get_client("sqlite", "ops").execute(query)` |
 | 데이터 조회 — 파라미터 바인딩 | `get_client("sqlite", "ops").execute(query, params)` |
 | DataFrame 일괄 저장 | `get_client("sqlite", "ops").insert_dataframe(df, table)` |

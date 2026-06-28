@@ -8,10 +8,12 @@ summary: >
 
 parent: "[[skills/understand/SKILL]]"
 
-updated: 2026-06-28---
+updated: 2026-06-28
+---
+
 # Gin (Go) Framework Addendum
 
-* **Parent (상위 스킬)**: [SKILL.md](../SKILL.md)
+* **Parent (상위 스킬)**: [[skills/understand/SKILL]]
 
 ---
 
@@ -26,7 +28,9 @@ When analyzing a Gin project, apply these additional conventions on top of the b
 ### Canonical File Roles
 
 | File / Pattern | Role | Tags |
-|---|---|---|
+|---|---|
+---
+|
 | `main.go` | Application entry point — initializes the Gin engine, registers routes, starts the server | `entry-point`, `config` |
 | `cmd/*.go`, `cmd/**/*.go` | CLI entry points — multiple binaries in a multi-command project | `entry-point`, `config` |
 | `handlers/*.go`, `handler/*.go` | HTTP handlers — process requests with `gin.Context` | `api-handler` |

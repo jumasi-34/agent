@@ -8,10 +8,12 @@ summary: >
 
 parent: "[[skills/writing-plans/SKILL]]"
 
-updated: 2026-06-28---
+updated: 2026-06-28
+---
+
 # Plan Document Reviewer Prompt Template
 
-* **Parent (상위 스킬)**: [SKILL.md](./SKILL.md)
+* **Parent (상위 스킬)**: [[skills/writing-plans/SKILL]]
 
 ---
 
@@ -34,7 +36,9 @@ Subagent (general-purpose):
     ## What to Check
 
     | Category | What to Look For |
-    |----------|------------------|
+    |----------|---------------
+---
+|
     | Completeness | TODOs, placeholders, incomplete tasks, missing steps |
     | Spec Alignment | Plan covers spec requirements, no major scope creep |
     | Task Decomposition | Tasks have clear boundaries, steps are actionable |

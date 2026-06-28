@@ -25,7 +25,9 @@ consumers:
   - "[[agents/roles/data-layer-builder]]"
   - agent.query_reviewer
 
-updated: 2026-06-28---
+updated: 2026-06-28
+---
+
 
 # L3-service.md (L3 서비스 레이어 개발 규칙)
 

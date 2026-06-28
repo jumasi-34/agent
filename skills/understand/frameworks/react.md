@@ -8,10 +8,12 @@ summary: >
 
 parent: "[[skills/understand/SKILL]]"
 
-updated: 2026-06-28---
+updated: 2026-06-28
+---
+
 # React Framework Addendum
 
-* **Parent (상위 스킬)**: [SKILL.md](../SKILL.md)
+* **Parent (상위 스킬)**: [[skills/understand/SKILL]]
 
 ---
 
@@ -26,7 +28,9 @@ When analyzing a React project, apply these additional conventions on top of the
 ### Canonical File Roles
 
 | File / Pattern | Role | Tags |
-|---|---|---|
+|---|---|
+---
+|
 | `src/App.tsx` | Root application component — mounts providers, router, and top-level layout | `entry-point`, `ui` |
 | `components/*.tsx`, `components/**/*.tsx` | Reusable UI components | `ui` |
 | `hooks/*.ts`, `hooks/*.tsx` | Custom React hooks — encapsulate reusable stateful logic | `service`, `utility` |

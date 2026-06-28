@@ -14,11 +14,13 @@ related:
 consumers:
   - agent.all
 
-updated: 2026-06-28---
+updated: 2026-06-28
+---
+
 # Using Git Worktrees
 
 ## Overview / Connections
-* **Parent (상위 개념)**: [skills/index.md](../index.md)
+* **Parent (상위 개념)**: [[skills/index]]
 
 
 ## Overview
@@ -158,7 +160,9 @@ Ready to implement <feature-name>
 ## Quick Reference
 
 | Situation | Action |
-|-----------|--------|
+|-----------|-----
+---
+|
 | Already in linked worktree | Skip creation (Step 0) |
 | In a submodule | Treat as normal repo (Step 0 guard) |
 | Native worktree tool available | Use it (Step 1a) |

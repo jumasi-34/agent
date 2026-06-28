@@ -32,7 +32,9 @@ consumers:
   - "[[agents/roles/planner-orchestrator]]"
   - "[[agents/roles/quality-evaluator]]"
 
-updated: 2026-06-28---
+updated: 2026-06-28
+---
+
 
 # rules/ 규정
 
@@ -59,7 +61,9 @@ updated: 2026-06-28---
 ## 2. 활성 파일 목록 인덱스 (Active Files)
 
 | 파일명 | 파일의 본질적 역할 및 책임 (1줄 요약) |
-| :--- | :--- |
+| :--- | :
+---
+ |
 | `L1-git.md` | 커밋 메시지 머리말 태그 규정, 한국어 작성 표준 및 동시 푸시(Dual Push) 원칙 표준 |
 | `L2-architecture.md` | UI - 비즈니스 서비스 - SQL 쿼리 간 결합도 제어 및 아키텍처 아웃라인 총괄 대원칙 |
 | `L2-business-constants.md` | 물리 공장 코드(Plant Code), 핵심 비즈니스 상수 정적 매핑 및 이중화 방지 표준 |

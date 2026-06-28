@@ -23,7 +23,9 @@ consumers:
   - "[[agents/roles/code-reviewer]]"
   - "[[agents/roles/quality-evaluator]]"
 
-updated: 2026-06-28---
+updated: 2026-06-28
+---
+
 
 # checklist-architecture.md (L2 3-레이어 아키텍처 및 모듈 격리 체크리스트)
 

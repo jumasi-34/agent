@@ -8,10 +8,12 @@ summary: >
 
 parent: "[[skills/understand/SKILL]]"
 
-updated: 2026-06-28---
+updated: 2026-06-28
+---
+
 # Ruby on Rails Framework Addendum
 
-* **Parent (상위 스킬)**: [SKILL.md](../SKILL.md)
+* **Parent (상위 스킬)**: [[skills/understand/SKILL]]
 
 ---
 
@@ -26,7 +28,9 @@ When analyzing a Ruby on Rails project, apply these additional conventions on to
 ### Canonical File Roles
 
 | File / Pattern | Role | Tags |
-|---|---|---|
+|---|---|
+---
+|
 | `config.ru` | Rack entry point — boots the Rails application for the web server | `entry-point` |
 | `config/application.rb` | Application configuration — sets up Rails, loads gems, configures middleware | `entry-point`, `config` |
 | `app/controllers/*_controller.rb` | Controllers — handle HTTP requests, orchestrate models, render responses | `api-handler` |

@@ -27,7 +27,9 @@ consumers:
   - "[[agents/roles/planner-orchestrator]]"
   - "[[agents/roles/quality-evaluator]]"
 
-updated: 2026-06-28---
+updated: 2026-06-28
+---
+
 
 # L2-naming-convention.md (L2 코드베이스 명명 규칙 표준)
 
@@ -50,7 +52,9 @@ updated: 2026-06-28---
 ### ① 3-레이어 핵심 파일 명명
 
 | 레이어 | 역할 | 파일명 규칙 | 올바른 예시 | 잘못된 예시 |
-| :--- | :--- | :--- | :--- | :--- |
+| :--- | :--- | :--- | :--- | :
+---
+ |
 | **UI 메인** | Streamlit 화면 구성 및 입력 필터 제어 | `*_page.py` | `cqms_dashboard_page.py` | `cqms_dashboard.py` (접미사 누락) |
 | **UI 시각화** | Plotly 차트 드로잉 및 Hover 포맷팅 | `*_plots.py` | `cqms_dashboard_plots.py` | `cqms_chart.py` (일관성 없음) |
 | **Service** | Pandas 전처리, 비즈니스 계산 및 캐싱 | `*_df.py` | `cqms_df.py` | `cqms_service.py` (접미사 불일치) |

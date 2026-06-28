@@ -8,10 +8,12 @@ summary: >
 
 parent: "[[skills/systematic-debugging/SKILL]]"
 
-updated: 2026-06-28---
+updated: 2026-06-28
+---
+
 # Root Cause Tracing
 
-* **Parent (상위 스킬)**: [SKILL.md](./SKILL.md)
+* **Parent (상위 스킬)**: [[skills/systematic-debugging/SKILL]]
 
 ---
 

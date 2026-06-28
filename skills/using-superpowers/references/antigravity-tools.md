@@ -8,10 +8,12 @@ summary: >
 
 parent: "[[skills/using-superpowers/SKILL]]"
 
-updated: 2026-06-28---
+updated: 2026-06-28
+---
+
 # Antigravity CLI (`agy`) Tool Mapping
 
-* **Parent (상위 스킬)**: [SKILL.md](../SKILL.md)
+* **Parent (상위 스킬)**: [[skills/using-superpowers/SKILL]]
 
 ---
 
@@ -19,7 +21,9 @@ updated: 2026-06-28---
 Skills speak in actions ("dispatch a subagent", "create a todo", "read a file"). On the Antigravity CLI (`agy`) these resolve to the tools below.
 
 | Action skills request | Antigravity CLI equivalent |
-|----------------------|----------------------|
+|----------------------|-------------------
+---
+|
 | Read a file | `view_file` |
 | Create a new file | `write_to_file` |
 | Edit a file | `replace_file_content` |

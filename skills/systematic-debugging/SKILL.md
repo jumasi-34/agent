@@ -14,11 +14,13 @@ related:
 consumers:
   - agent.all
 
-updated: 2026-06-28---
+updated: 2026-06-28
+---
+
 # Systematic Debugging
 
 ## Overview / Connections
-* **Parent (상위 개념)**: [skills/index.md](../index.md)
+* **Parent (상위 개념)**: [[skills/index]]
 
 
 ## Overview
@@ -261,7 +263,9 @@ If you catch yourself thinking:
 ## Common Rationalizations
 
 | Excuse | Reality |
-|--------|---------|
+|--------|------
+---
+|
 | "Issue is simple, don't need process" | Simple issues have root causes too. Process is fast for simple bugs. |
 | "Emergency, no time for process" | Systematic debugging is FASTER than guess-and-check thrashing. |
 | "Just try this first, then investigate" | First fix sets the pattern. Do it right from the start. |
@@ -313,11 +317,11 @@ From debugging sessions:
 
 
 ## Sub-Assets (하위 참조 자산)
-* [Creation Log](CREATION-LOG.md) — Creation Log 참조 및 가이드 명세서.
-* [Condition Based Waiting](condition-based-waiting.md) — Condition Based Waiting 참조 및 가이드 명세서.
-* [Defense In Depth](defense-in-depth.md) — Defense In Depth 참조 및 가이드 명세서.
-* [Root Cause Tracing](root-cause-tracing.md) — Root Cause Tracing 참조 및 가이드 명세서.
-* [Test Academic](test-academic.md) — Test Academic 참조 및 가이드 명세서.
-* [Test Pressure 1](test-pressure-1.md) — Test Pressure 1 참조 및 가이드 명세서.
-* [Test Pressure 2](test-pressure-2.md) — Test Pressure 2 참조 및 가이드 명세서.
-* [Test Pressure 3](test-pressure-3.md) — Test Pressure 3 참조 및 가이드 명세서.
+* [[skills/systematic-debugging/CREATION-LOG]] — Creation Log 참조 및 가이드 명세서.
+* [[skills/systematic-debugging/condition-based-waiting]] — Condition Based Waiting 참조 및 가이드 명세서.
+* [[skills/systematic-debugging/defense-in-depth]] — Defense In Depth 참조 및 가이드 명세서.
+* [[skills/systematic-debugging/root-cause-tracing]] — Root Cause Tracing 참조 및 가이드 명세서.
+* [[skills/systematic-debugging/test-academic]] — Test Academic 참조 및 가이드 명세서.
+* [[skills/systematic-debugging/test-pressure-1]] — Test Pressure 1 참조 및 가이드 명세서.
+* [[skills/systematic-debugging/test-pressure-2]] — Test Pressure 2 참조 및 가이드 명세서.
+* [[skills/systematic-debugging/test-pressure-3]] — Test Pressure 3 참조 및 가이드 명세서.

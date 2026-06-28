@@ -23,7 +23,9 @@ related:
 consumers:
   - "[[agents/roles/code-reviewer]]"
 
-updated: 2026-06-28---
+updated: 2026-06-28
+---
+
 
 # code-reviewer.md (CQ-BI Code Reviewer Agent 상세 명세서)
 
@@ -63,7 +65,9 @@ updated: 2026-06-28---
 리뷰어 에이전트는 다음 디렉터리와 모듈 내의 코드를 검토하고 리뷰 산출물을 생성합니다.
 
 | 대상 범위 (Scope) | 해당 파일 및 디렉터리 패턴 | 에이전트의 역할 및 가이드라인 |
-| :--- | :--- | :--- |
+| :--- | :--- | :
+---
+ |
 | **리뷰 산출물 저장소** | `intelligence/verification/review-report-*.md` | - 검증한 코드 파일별 정적 리뷰 결과 및 개선 코드 제안 저장 |
 | **프로덕션 검토 대상** | `app/queries/`<br>`app/service/`<br>`app/pages/` | - 빌더 에이전트가 작성한 모든 레이어의 소스 코드 정적 분석 |
 | **아키텍처 표준 참조** | `.agents/rules/L2-architecture.md`<br>`.agents/rules/L2-naming-convention.md`<br>`.agents/rules/L3-*.md` | - 각 레이어별 표준 규칙 및 명명법을 리뷰 기준으로 삼음 |

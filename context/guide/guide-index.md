@@ -34,7 +34,9 @@ consumers:
   - agent.ui_builder
   - agent.service_builder
 
-updated: 2026-06-28---
+updated: 2026-06-28
+---
+
 
 # guide/ 규정
 
@@ -77,7 +79,9 @@ updated: 2026-06-28---
 ## 2. 활성 파일 목록 인덱스 (Active Files)
 
 | 파일명 | 파일의 본질적 역할 및책임 (1줄 요약) |
-| :--- | :--- |
+| :--- | :
+---
+ |
 | `3layer-development-process.md` | UI - 비즈니스 서비스 - SQL 쿼리가 분리된 3레이어 구조 개발 프로세스 절차 및 규격 지침 |
 | `coding-templates.md` | 데이터프레임 가공 서비스, 쿼리 모듈, 시각화 plots 및 streamlit 화면 구현 표준 코드 템플릿 |
 | `design-system-guide.md` | 프리미엄 테마 적용 및 Google Material Symbols 기반의 일관성 있는 웹 디자인 가이드라인 |

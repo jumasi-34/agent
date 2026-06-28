@@ -22,14 +22,16 @@ consumers:
   - "[[agents/roles/planner-orchestrator]]"
   - agent.service_builder
 
-updated: 2026-06-28---
+updated: 2026-06-28
+---
+
 
 # 글로벌 공통 컬럼 메타데이터 일괄 업데이트 시스템 설계서 (Common Column Metadata Sync)
 
 ## Overview
 * **왜 존재하는가 (Why)**: 테이블별로 파편화되어 정의되던 컬럼 메타데이터를 통합하여 글로벌 공통 컬럼 사전(SSOT)으로 일원화하고, 중복 수동 반복 작업 공수를 줄이고 일관성을 보장하기 위함입니다.
 * **언제 사용하는가 (When)**: 공통 컬럼의 메타데이터 설계 구조를 확장하거나, `common_column_metadata.json`을 다루는 동기화 스크립트 메커니즘을 수정할 때 참고합니다.
-* **연계 실행 (Next Action)**: 한국어 컬럼 메타데이터 매핑 및 업데이트 스킬 지침을 보려면 [korean_metadata](../../skills/korean_metadata/SKILL.md)를 참조하십시오.
+* **연계 실행 (Next Action)**: 한국어 컬럼 메타데이터 매핑 및 업데이트 스킬 지침을 보려면 [[skills/korean_metadata/SKILL]]를 참조하십시오.
 
 ## Connections
 * **상위 개념**: [guide.readme](.agents/context/guide/guide-index.md)

@@ -23,7 +23,9 @@ consumers:
   - "[[agents/roles/planner-orchestrator]]"
   - agent.ui_builder
 
-updated: 2026-06-28---
+updated: 2026-06-28
+---
+
 
 # Plotly 시각화 개발 워크플로우 및 표준 함수 템플릿
 
@@ -111,7 +113,9 @@ def draw_standard_chart(df: pd.DataFrame, title: str = "표준 차트") -> go.Fi
         go.Figure: 레이아웃 조율이 완료된 Plotly 피겨 객체
     """
     
-    # -------------------------------------------------------------------------
+    # ----------------------------------------------------------------------
+---
+
     # 1단계. 데이터 검증 및 예외 탈출 (Validate & Early Exit)
     # -------------------------------------------------------------------------
     required_cols = ["X_DIMENSION", "Y_VALUE"]

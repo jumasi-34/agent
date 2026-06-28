@@ -25,7 +25,9 @@ consumers:
   - "[[agents/roles/code-reviewer]]"
   - "[[agents/roles/quality-evaluator]]"
 
-updated: 2026-06-28---
+updated: 2026-06-28
+---
+
 
 # checklist-coding-standard.md (L2 코드 및 데이터 전처리 코딩 표준 체크리스트)
 

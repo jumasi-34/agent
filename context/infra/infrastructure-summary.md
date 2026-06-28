@@ -23,7 +23,9 @@ consumers:
   - "[[agents/roles/planner-orchestrator]]"
   - agent.system_administrator
 
-updated: 2026-06-28---
+updated: 2026-06-28
+---
+
 
 # infrastructure-summary.md (공용 인프라스트럭처 연합 요약서)
 

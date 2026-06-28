@@ -24,15 +24,17 @@ consumers:
   - "[[agents/roles/planner-orchestrator]]"
   - ui-reviewer
 
-updated: 2026-06-28---
+updated: 2026-06-28
+---
+
 
 # [PRD] HGWS 리턴 현황 및 생산기반 PPM 대시보드 개발 명세서 (Draft)
 
 ## Overview / Connections
-* **Parent (상위 개념)**: [prd/prd-index.md](prd-index.md)
+* **Parent (상위 개념)**: [[context/prd/prd-index]]
 * **Related (연관 문서)**:
-  * [prd/prd-template.md](prd-template.md) (PRD 표준 템플릿)
-  * [prd/prd-oe-quality-issue-dashboard.md](prd-oe-quality-issue-dashboard.md) (OE 품질 이슈 PRD)
+  * [[context/prd/prd-template]] (PRD 표준 템플릿)
+  * [[context/prd/prd-oe-quality-issue-dashboard]] (OE 품질 이슈 PRD)
 
 ---
 
@@ -64,7 +66,9 @@ updated: 2026-06-28---
 본 화면 및 기능 개발은 아래 3-레이어 아키텍처 구조를 엄격히 준수하여 독립적으로 배치되어야 합니다.
 
 | 레이어 (Layer) | 대상 파일 경로 (File Path) | 역할 및 구현 내용 (Role) |
-| :--- | :--- | :--- |
+| :--- | :--- | :
+---
+ |
 | **UI 레이어** | `app/pages/_30_monitoring/hgws_return_dashboard_page.py` | 화면 레이아웃 및 탭 구성, 사이드바 필터 바인딩 및 렌더링 제어 |
 | **시각화 레이어** | `app/pages/_30_monitoring/hgws_return_dashboard_plots.py` | Plotly 시각화 드로잉 전담 함수 선언 (Streamlit 컴포넌트 호출 격리) |
 | **서비스 레이어** | `app/service/hgws_return_df.py` | HGWS 데이터 및 생산 실적 데이터 취득, 결합, PPM 연산 및 캐싱 (`@st.cache_data`) |

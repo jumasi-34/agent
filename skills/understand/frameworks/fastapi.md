@@ -8,10 +8,12 @@ summary: >
 
 parent: "[[skills/understand/SKILL]]"
 
-updated: 2026-06-28---
+updated: 2026-06-28
+---
+
 # FastAPI Framework Addendum
 
-* **Parent (상위 스킬)**: [SKILL.md](../SKILL.md)
+* **Parent (상위 스킬)**: [[skills/understand/SKILL]]
 
 ---
 
@@ -26,7 +28,9 @@ When analyzing a FastAPI project, apply these additional conventions on top of t
 ### Canonical File Roles
 
 | File / Pattern | Role | Tags |
-|---|---|---|
+|---|---|
+---
+|
 | `main.py`, `app.py` | Application factory — creates and configures the `FastAPI()` instance | `entry-point`, `config` |
 | `*/routers/*.py`, `*/api/*.py` | `APIRouter` modules — group related endpoints by domain | `api-handler`, `routing` |
 | `*/schemas.py`, `*/schemas/*.py` | Pydantic request/response models | `type-definition`, `serialization` |

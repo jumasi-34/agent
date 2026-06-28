@@ -14,11 +14,13 @@ related:
 consumers:
   - agent.all
 
-updated: 2026-06-28---
+updated: 2026-06-28
+---
+
 # Test-Driven Development (TDD)
 
 ## Overview / Connections
-* **Parent (상위 개념)**: [skills/index.md](../index.md)
+* **Parent (상위 개념)**: [[skills/index]]
 
 
 ## Overview
@@ -214,7 +216,9 @@ Next failing test for next feature.
 ## Good Tests
 
 | Quality | Good | Bad |
-|---------|------|-----|
+|---------|------|--
+---
+|
 | **Minimal** | One thing. "and" in name? Split it. | `test('validates email and domain and whitespace')` |
 | **Clear** | Name describes behavior | `test('test1')` |
 | **Shows intent** | Demonstrates desired API | Obscures what code should do |
@@ -372,7 +376,7 @@ Never fix bugs without a test.
 
 ## Testing Anti-Patterns
 
-When adding mocks or test utilities, read [testing-anti-patterns.md](testing-anti-patterns.md) to avoid common pitfalls:
+When adding mocks or test utilities, read [[skills/test-driven-development/testing-anti-patterns]] to avoid common pitfalls:
 - Testing mock behavior instead of real behavior
 - Adding test-only methods to production classes
 - Mocking without understanding dependencies
@@ -388,4 +392,4 @@ No exceptions without your human partner's permission.
 
 
 ## Sub-Assets (하위 참조 자산)
-* [Testing Anti Patterns](testing-anti-patterns.md) — Testing Anti Patterns 참조 및 가이드 명세서.
+* [[skills/test-driven-development/testing-anti-patterns]] — Testing Anti Patterns 참조 및 가이드 명세서.

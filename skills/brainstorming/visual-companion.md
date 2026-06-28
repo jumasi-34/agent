@@ -8,10 +8,12 @@ summary: >
 
 parent: "[[skills/brainstorming/SKILL]]"
 
-updated: 2026-06-28---
+updated: 2026-06-28
+---
+
 # Visual Companion Guide
 
-* **Parent (상위 스킬)**: [SKILL.md](./SKILL.md)
+* **Parent (상위 스킬)**: [[skills/brainstorming/SKILL]]
 
 ---
 

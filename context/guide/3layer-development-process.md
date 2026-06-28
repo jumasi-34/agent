@@ -24,7 +24,9 @@ consumers:
   - agent.ui_builder
   - agent.service_builder
 
-updated: 2026-06-28---
+updated: 2026-06-28
+---
+
 
 # [PROCESS] 3레이어 준수 개발 및 리팩토링 표준 절차서
 

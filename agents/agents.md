@@ -21,7 +21,9 @@ related:
 consumers:
   - "[[agents/roles/planner-orchestrator]]"
 
-updated: 2026-06-28---
+updated: 2026-06-28
+---
+
 
 # agents.md (에이전트 규정)
 
@@ -55,7 +57,9 @@ updated: 2026-06-28---
 본 폴더 내에 활성화되어 보존 중인 파일 목록과 그 물리적 책임 규정은 다음과 같습니다. 모든 하이퍼링크는 WSL Markdown Link Constraint에 따라 워크스페이스 루트 기준 상대 경로로 연결됩니다.
 
 | 파일명 (상대 경로 링크) | 파일의 본질적 역할 및 책임 (1줄 요약) |
-| :--- | :--- |
+| :--- | :
+---
+ |
 | [agents_registry.json](.agents/agents/agents_registry.json) | 에이전트 명세 및 Agy 표준 매니페스트 설정을 담은 단일 진실 공급원 (JSON) |
 | [roles/planner-orchestrator.md](.agents/agents/roles/planner-orchestrator.md) | 최상위 기획 및 PRD 설계를 지휘하는 에이전트 상세 가이드 |
 | [roles/data-layer-builder.md](.agents/agents/roles/data-layer-builder.md) | SQL 설계 및 Pandas 데이터프레임 전처리를 수행하는 에이전트 가이드 |

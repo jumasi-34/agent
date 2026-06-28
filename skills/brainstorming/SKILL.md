@@ -13,11 +13,13 @@ related:
 consumers:
   - agent.all
 
-updated: 2026-06-28---
+updated: 2026-06-28
+---
+
 # Brainstorming Ideas Into Designs
 
 ## Overview / Connections
-* **Parent (상위 개념)**: [skills/index.md](../index.md)
+* **Parent (상위 개념)**: [[skills/index]]
 
 
 Help turn ideas into fully formed designs and specs through natural collaborative dialogue.
@@ -175,5 +177,5 @@ If they agree to the companion, read the detailed guide before proceeding:
 
 
 ## Sub-Assets (하위 참조 자산)
-* [Spec Document Reviewer Prompt](spec-document-reviewer-prompt.md) — Spec Document Reviewer Prompt 참조 및 가이드 명세서.
-* [Visual Companion](visual-companion.md) — Visual Companion 참조 및 가이드 명세서.
+* [[skills/brainstorming/spec-document-reviewer-prompt]] — Spec Document Reviewer Prompt 참조 및 가이드 명세서.
+* [[skills/brainstorming/visual-companion]] — Visual Companion 참조 및 가이드 명세서.

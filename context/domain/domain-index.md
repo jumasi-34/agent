@@ -22,7 +22,9 @@ consumers:
   - "[[agents/roles/planner-orchestrator]]"
   - "[[agents/roles/quality-evaluator]]"
 
-updated: 2026-06-28---
+updated: 2026-06-28
+---
+
 
 # domain/ 규정
 
@@ -48,7 +50,9 @@ updated: 2026-06-28---
 ## 2. 활성 파일 목록 인덱스 (Active Files)
 
 | 파일명 | 파일의 본질적 역할 및 책임 (1줄 요약) |
-| :--- | :--- |
+| :--- | :
+---
+ |
 | `domain-knowledge.md` | 공장별 마스터 코드, 디코드 테이블, 품질 핵심 공식(수식) 및 도메인 지식 원장 |
 
 ---

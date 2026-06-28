@@ -23,7 +23,9 @@ consumers:
   - "[[agents/roles/planner-orchestrator]]"
   - agent.service_builder
 
-updated: 2026-06-28---
+updated: 2026-06-28
+---
+
 
 # \[QUERIES\] queries/ — 레포지토리 레이어 컨텍스트
 
@@ -72,7 +74,9 @@ get_{system}_{domain}_{description}(params: SomeParams) -> str
 ```
 
 | 세그먼트 | 예시 |
-|----------|------|
+|----------|---
+---
+|
 | `{system}` | `gmes`, `cqms`, `hope`, `hgws`, `qrs`, `sap`, `ctms`, `plm`, `sqlite`, `dbx` |
 | `{domain}` | `ncf`, `production`, `rr`, `uf`, `qi`, `oeapp`, `sellin` |
 | `{description}` | `rawdata`, `by_plant`, `by_mcode`, `by_period`, `by_dft_cd`, `standard` |

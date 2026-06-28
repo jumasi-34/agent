@@ -23,7 +23,9 @@ related:
 consumers:
   - "[[agents/roles/planner-orchestrator]]"
 
-updated: 2026-06-28---
+updated: 2026-06-28
+---
+
 
 # data-insights-analyst.md (CQ-BI Data Insights Analyst Sub-Agent 상세 명세서)
 
@@ -61,7 +63,9 @@ updated: 2026-06-28---
 에이전트는 다음 디렉터리와 모듈 내에서 활동하며 분석과 보고서 작성을 수행합니다.
 
 | 대상 범위 (Scope) | 해당 파일 및 디렉터리 패턴 | 에이전트의 역할 및 가이드라인 |
-| :--- | :--- | :--- |
+| :--- | :--- | :
+---
+ |
 | **지식 자산화 영역** | `.agents/context/infra/database-metadata.md` | - 사용자와 개발 에이전트들을 위한 고품질 테이블 분석 가이드북 및 컬럼 명세 보관 |
 | **임시 테스트 영역** | `tests/eda_test_*.py`<br>`tests/sql_query_test.py` | - 탐색용 SELECT 집계 쿼리를 독립 실행하기 위한 일회성 검증 스크립트 작성 및 가동 (임시/테스트 전용) |
 | **DB 메타데이터 수집** | `app/core/db/client.py`<br>`app/core/query/query_database.py` | - `get_client()` 및 `DatabricksTables`를 통해 신규 참조해야 할 대상 DB 테이블 자원 탐색 (읽기 전용) |

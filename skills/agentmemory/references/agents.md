@@ -8,10 +8,12 @@ summary: >
 
 parent: "[[skills/agentmemory/SKILL]]"
 
-updated: 2026-06-28---
+updated: 2026-06-28
+---
+
 # agentmemory 에이전트 연동 가이드
 
-* **Parent (상위 스킬)**: [SKILL.md](../SKILL.md)
+* **Parent (상위 스킬)**: [[skills/agentmemory/SKILL]]
 
 ---
 

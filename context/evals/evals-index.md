@@ -23,7 +23,9 @@ consumers:
   - "[[agents/roles/planner-orchestrator]]"
   - "[[agents/roles/quality-evaluator]]"
 
-updated: 2026-06-28---
+updated: 2026-06-28
+---
+
 
 # evals/ 규정
 
@@ -49,7 +51,9 @@ updated: 2026-06-28---
 ## 2. 활성 파일 목록 인덱스 (Active Files)
 
 | 파일명 | 파일의 본질적 역할 및 책임 (1줄 요약) |
-| :--- | :--- |
+| :--- | :
+---
+ |
 | `golden_tasks.yaml` | 에이전트 품질 평가와 정량 벤치마크 성능 측정을 위해 사전 선언된 대표 골든 태스크셋 명세 |
 
 ---

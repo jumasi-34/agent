@@ -1,6 +1,6 @@
 ---
 name: "recap"
-description: "Summarize the last N agent sessions for the current project, grouped by date, with highlight observations per session. Use when the user asks "recap", "what have we been doing", "today", "this week", or wants a rollup of recent work."
+description: "Summarize the last N agent sessions for the current project, grouped by date, with highlight observations per session. Use when the user asks 'recap', 'what have we been doing', 'today', 'this week', or wants a rollup of recent work."
 id: skill.recap
 type: skill
 status: active
@@ -13,7 +13,10 @@ related:
 consumers:
   - agent.all
 
-updated: 2026-06-28---
+updated: 2026-06-28
+---
+
+
 The user wants a recap. Time window args: $ARGUMENTS
 
 ## Quick start
@@ -73,4 +76,4 @@ See ../_shared/TROUBLESHOOTING.md if `memory_sessions` or `memory_recall` is not
 
 
 ## Sub-Assets (하위 참조 자산)
-* [Examples](EXAMPLES.md) — Examples 참조 및 가이드 명세서.
+* [[skills/recap/EXAMPLES]] — Examples 참조 및 가이드 명세서.

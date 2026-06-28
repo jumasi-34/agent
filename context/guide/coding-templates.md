@@ -24,7 +24,9 @@ consumers:
   - agent.ui_builder
   - agent.service_builder
 
-updated: 2026-06-28---
+updated: 2026-06-28
+---
+
 
 # 3-Layer Architecture 구조적 주석 템플릿 가이드
 

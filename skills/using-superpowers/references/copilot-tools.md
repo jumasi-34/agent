@@ -8,10 +8,12 @@ summary: >
 
 parent: "[[skills/using-superpowers/SKILL]]"
 
-updated: 2026-06-28---
+updated: 2026-06-28
+---
+
 # Copilot CLI Tool Mapping
 
-* **Parent (상위 스킬)**: [SKILL.md](../SKILL.md)
+* **Parent (상위 스킬)**: [[skills/using-superpowers/SKILL]]
 
 ---
 
@@ -19,7 +21,9 @@ updated: 2026-06-28---
 Skills speak in actions ("dispatch a subagent", "create a todo", "read a file"). On Copilot CLI these resolve to the tools below.
 
 | Action skills request | Copilot CLI equivalent |
-|----------------------|----------------------|
+|----------------------|-------------------
+---
+|
 | Read a file | `view` |
 | Create / edit / delete a file | `apply_patch` (Copilot CLI has no separate create/edit/write tools) |
 | Run a shell command | `bash` |

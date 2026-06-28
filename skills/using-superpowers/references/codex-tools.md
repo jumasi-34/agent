@@ -8,10 +8,12 @@ summary: >
 
 parent: "[[skills/using-superpowers/SKILL]]"
 
-updated: 2026-06-28---
+updated: 2026-06-28
+---
+
 # Codex Tool Mapping
 
-* **Parent (상위 스킬)**: [SKILL.md](../SKILL.md)
+* **Parent (상위 스킬)**: [[skills/using-superpowers/SKILL]]
 
 ---
 
@@ -19,7 +21,9 @@ updated: 2026-06-28---
 Skills speak in actions ("dispatch a subagent", "create a todo", "read a file"). On Codex these resolve to the tools below.
 
 | Action skills request | Codex equivalent |
-|----------------------|------------------|
+|----------------------|---------------
+---
+|
 | Read a file | `shell` (e.g., `cat`, `head`, `tail`) — Codex reads files via shell |
 | Create / edit / delete a file | `apply_patch` (structured diff for create, update, delete) |
 | Run a shell command | `shell` |

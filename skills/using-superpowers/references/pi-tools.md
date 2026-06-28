@@ -8,10 +8,12 @@ summary: >
 
 parent: "[[skills/using-superpowers/SKILL]]"
 
-updated: 2026-06-28---
+updated: 2026-06-28
+---
+
 # Pi Tool Mapping
 
-* **Parent (상위 스킬)**: [SKILL.md](../SKILL.md)
+* **Parent (상위 스킬)**: [[skills/using-superpowers/SKILL]]
 
 ---
 
@@ -19,7 +21,9 @@ updated: 2026-06-28---
 Skills speak in actions ("dispatch a subagent", "create a todo", "read a file"). On Pi these resolve to the tools below.
 
 | Action skills request | Pi equivalent |
-| --- | --- |
+| --- | 
+---
+ |
 | Invoke a skill | Pi native skills: load the relevant `SKILL.md` with `read`, or let the human use `/skill:name` |
 | Read a file | `read` |
 | Create a file | `write` |

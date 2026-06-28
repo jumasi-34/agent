@@ -24,7 +24,9 @@ consumers:
   - "[[agents/roles/data-layer-builder]]"
   - "[[agents/roles/planner-orchestrator]]"
 
-updated: 2026-06-28---
+updated: 2026-06-28
+---
+
 
 # L2-architecture.md (L2 3-레이어 파일 아키텍처 및 모듈 격리 규칙)
 

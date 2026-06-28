@@ -1,6 +1,6 @@
 ---
 name: "commit-context"
-description: "Trace a file, function, or line back to the agent session that produced its current commit. Use when the user asks "why is this code here", "what was the agent doing when this changed", "who wrote this", or wants context on a specific location in the codebase."
+description: "Trace a file, function, or line back to the agent session that produced its current commit. Use when the user asks 'why is this code here', 'what was the agent doing when this changed', 'who wrote this', or wants context on a specific location in the codebase."
 id: skill.commit_context
 type: skill
 status: active
@@ -14,7 +14,10 @@ related:
 consumers:
   - agent.all
 
-updated: 2026-06-28---
+updated: 2026-06-28
+---
+
+
 The user wants commit context for: $ARGUMENTS
 
 ## Quick start
@@ -75,4 +78,4 @@ See ../_shared/TROUBLESHOOTING.md if `memory_commit_lookup` is not available.
 
 
 ## Sub-Assets (하위 참조 자산)
-* [Examples](EXAMPLES.md) — Examples 참조 및 가이드 명세서.
+* [[skills/commit-context/EXAMPLES]] — Examples 참조 및 가이드 명세서.

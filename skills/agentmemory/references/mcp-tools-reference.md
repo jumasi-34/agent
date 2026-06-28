@@ -8,10 +8,12 @@ summary: >
 
 parent: "[[skills/agentmemory/SKILL]]"
 
-updated: 2026-06-28---
+updated: 2026-06-28
+---
+
 # agentmemory MCP 도구 세트 참조서 (mcp-tools-reference)
 
-* **Parent (상위 스킬)**: [SKILL.md](../SKILL.md)
+* **Parent (상위 스킬)**: [[skills/agentmemory/SKILL]]
 
 ---
 
@@ -22,7 +24,9 @@ updated: 2026-06-28---
 agentmemory는 총 53개의 MCP 도구를 제공합니다. 이 중 8개는 핵심(Core) 도구 세트(`--tools core` 또는 `AGENTMEMORY_TOOLS=core` 설정 시 구동)에 해당하며, 나머지는 `--tools all`(기본값) 설정 시 함께 로드됩니다.
 
 | 도구명 | 핵심(Core) | 파라미터 규격 | 기능 설명 (Purpose) |
-| --- | --- | --- | --- |
+| --- | --- | --- | 
+---
+ |
 | `memory_action_create` |  | `title`*: string, `description`: string, `priority`: number, `project`: string, `tags`: string, `parentId`: string, `requires`: string | 의존성이 정의된 실행 가능한 작업 아이템을 생성합니다. 액션은 에이전트가 해야 할 일과 작업 간의 유기적인 관계를 추적합니다. |
 | `memory_action_update` |  | `actionId`*: string, `status`: string, `result`: string, `priority`: number | 액션의 상태, 우선순위 또는 세부 정보를 업데이트합니다. 상태를 'done'으로 설정하면 완료 처리되며, 해당 액션에 의존성이 걸려 있던 하위 액션들의 잠금이 해제됩니다. |
 | `memory_audit` |  | `operation`: string, `limit`: number | 메모리 작업의 감사 내역(Audit Trail)을 조회합니다. |

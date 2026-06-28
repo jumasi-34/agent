@@ -21,7 +21,9 @@ related:
 consumers:
   - "[[agents/roles/planner-orchestrator]]"
 
-updated: 2026-06-28---
+updated: 2026-06-28
+---
+
 
 # planner-orchestrator.md (CQ-BI Planner Orchestration Agent 상세 명세서)
 
@@ -63,7 +65,9 @@ updated: 2026-06-28---
 에이전트는 다음 디렉터리와 모듈 내에서 활동하며 코드 역분석 및 PRD 설계 산출물의 생성을 수행합니다.
 
 | 대상 범위 (Scope) | 해당 파일 및 디렉터리 패턴 | 에이전트의 역할 및 가이드라인 |
-| :--- | :--- | :--- |
+| :--- | :--- | :
+---
+ |
 | **PRD 저장소** | `.agents/context/prd/prd-*.md` | - 신규 페이지 PRD 설계, 기존 PRD 업데이트 및 배포 전담<br>- 모든 PRD는 `prd-template.md`를 표준으로 삼아 작성함 |
 | **템플릿 참조** | `.agents/context/prd/prd-template.md` | - 기획서 작성 및 데이터 흐름 표준 포맷 참조 (수정 불가) |
 | **기존 코드 분석 (리팩토링용)** | `app/pages/`<br>`app/service/`<br>`app/queries/` | - 기존 리팩토링 대상 페이지의 소스 코드를 면밀히 리딩하여 3-Layer 아키텍처 흐름 및 데이터 가공 절차 역분석 |

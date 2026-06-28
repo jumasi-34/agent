@@ -22,15 +22,17 @@ consumers:
   - "[[agents/roles/planner-orchestrator]]"
   - ui-reviewer
 
-updated: 2026-06-28---
+updated: 2026-06-28
+---
+
 
 # [PRD] - {기능명 / 화면명} 개발 명세서
 
 ## Overview / Connections
-* **Parent (상위 개념)**: [prd/prd-index.md](prd-index.md)
+* **Parent (상위 개념)**: [[context/prd/prd-index]]
 * **Related (연관 문서)**:
-  * [prd/prd-hgws-return-dashboard.md](prd-hgws-return-dashboard.md) (HGWS 반송 PRD)
-  * [prd/prd-oe-quality-issue-dashboard.md](prd-oe-quality-issue-dashboard.md) (OE 품질 이슈 PRD)
+  * [[context/prd/prd-hgws-return-dashboard]] (HGWS 반송 PRD)
+  * [[context/prd/prd-oe-quality-issue-dashboard]] (OE 품질 이슈 PRD)
 
 ---
 
@@ -51,7 +53,9 @@ updated: 2026-06-28---
 작성해야 할 파일의 경로를 3-레이어 표준에 의거하여 명시하십시오.
 
 | 레이어 (Layer) | 대상 파일 경로 (File Path) | 역할 및 구현 내용 (Role) |
-| :--- | :--- | :--- |
+| :--- | :--- | :
+---
+ |
 | **UI 레이어** | `app/pages/[메뉴폴더]/[기능명]_page.py` | 화면 제어, 사이드바 필터 바인딩, 레이아웃 및 탭 구성 |
 | **시각화 레이어** | `app/pages/[메뉴폴더]/[기능명]_plots.py` | Plotly 차트 드로잉 함수 정의 (Streamlit 종속 코드 사용 금지) |
 | **서비스 레이어** | `app/service/df_[도메인명].py` | 데이터 처리, 비즈니스 계산 로직, Pandas 파이프라인 및 `@st.cache_data` 캐싱 |

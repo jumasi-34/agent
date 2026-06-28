@@ -26,7 +26,9 @@ consumers:
   - "[[agents/roles/dashboard-layer-builder]]"
   - agent.ui_reviewer
 
-updated: 2026-06-28---
+updated: 2026-06-28
+---
+
 
 # L3-dashboard.md (L3 대시보드 UI 개발 규칙)
 

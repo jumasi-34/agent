@@ -1,6 +1,6 @@
 ---
 name: "commit-history"
-description: "List recent git commits linked to agent sessions, optionally filtered by branch or repo. Use when the user asks "show agent commits", "what has the agent shipped", "list linked commits", or wants commits with their session context."
+description: "List recent git commits linked to agent sessions, optionally filtered by branch or repo. Use when the user asks 'show agent commits', 'what has the agent shipped', 'list linked commits', or wants commits with their session context."
 id: skill.commit_history
 type: skill
 status: active
@@ -14,7 +14,10 @@ related:
 consumers:
   - agent.all
 
-updated: 2026-06-28---
+updated: 2026-06-28
+---
+
+
 The user wants a list of agent-linked commits. Filter args: $ARGUMENTS
 
 ## Quick start
@@ -73,4 +76,4 @@ See ../_shared/TROUBLESHOOTING.md if `memory_commits` is not available.
 
 
 ## Sub-Assets (하위 참조 자산)
-* [Examples](EXAMPLES.md) — Examples 참조 및 가이드 명세서.
+* [[skills/commit-history/EXAMPLES]] — Examples 참조 및 가이드 명세서.

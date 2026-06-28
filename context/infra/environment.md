@@ -23,14 +23,16 @@ consumers:
   - "[[agents/roles/planner-orchestrator]]"
   - agent.system_administrator
 
-updated: 2026-06-28---
+updated: 2026-06-28
+---
+
 
 # context-environment.md (개발 및 서비스 환경 정합성 보고서)
 
 ## Overview
 * **왜 존재하는가 (Why)**: 로컬 개발 환경과 실제 운영 환경 간의 패키지 버전 이격이나 드라이버 설정 차이를 사전에 식별하여 배포 시의 시스템 비호환 런타임 오류를 완벽히 차단하기 위함입니다.
 * **언제 사용하는가 (When)**: 신규 파이썬 라이브러리를 추가하거나, 실서버 배포 중 라이브러리 충돌이 의심될 때, Miniconda 가상환경 구성을 동기화할 때 참조합니다.
-* **연계 실행 (Next Action)**: 구체적인 운영 서버 배포 매뉴얼과 수동 배포 단계를 보려면 [guide.manual_setup](../guide/manual-setup.md)을 참조하십시오.
+* **연계 실행 (Next Action)**: 구체적인 운영 서버 배포 매뉴얼과 수동 배포 단계를 보려면 [[context/guide/manual-setup]]을 참조하십시오.
 
 ## Connections
 * **상위 개념**: [infra.readme](.agents/context/infra/infra-index.md)
@@ -47,7 +49,9 @@ updated: 2026-06-28---
 ## 1. 하드웨어 및 운영체제 사양 비교
 
 | 구분 | 개발환경 (WSL2 Local) | 서비스환경 (Ubuntu Production Server) | 분석 및 특이사항 |
-| :--- | :--- | :--- | :--- |
+| :--- | :--- | :--- | :
+---
+ |
 | **운영체제** | Ubuntu 24.04.2 LTS (Noble) | Ubuntu 24.04.1 LTS (Noble) | 동일 배포판 계열로 매우 일치함 |
 | **커널** | `6.6.87.2-microsoft-standard-WSL2` | `6.8.0-106-generic` (Ubuntu 공식) | WSL 가상화 커널 vs 네이티브 리눅스 커널 차이 |
 | **메모리(RAM)**| 7.6 GiB (여유: 5.0 GiB) | **15.0 GiB** (여유: 12.0 GiB) | 실서비스 환경의 메모리 자원이 약 2배 넉넉함 |

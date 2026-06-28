@@ -13,11 +13,13 @@ related:
 consumers:
   - agent.all
 
-updated: 2026-06-28---
+updated: 2026-06-28
+---
+
 # Skill. Writing Wiki (프로젝트 이해를 위한 Wiki 작성 표준)
 
 ## Overview / Connections
-* **Parent (상위 개념)**: [skills/index.md](../index.md)
+* **Parent (상위 개념)**: [[skills/index]]
 
 
 이 스킬은 프로젝트의 다양한 지식 구성 요소(Rule, Skill, Agent, Context, Raw)를 종합 분석하여, 인간과 AI 에이전트가 시스템을 완벽히 이해할 수 있도록 구조화된 **Wiki(Understanding)** 문서를 작성 및 갱신할 때 적용하는 가이드입니다.

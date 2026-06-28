@@ -1,6 +1,6 @@
 ---
 name: "forget"
-description: "Delete specific observations from agentmemory after showing them and getting explicit confirmation. Use when the user says "forget this", "delete memory", "remove that note", or wants to scrub specific data for privacy."
+description: "Delete specific observations from agentmemory after showing them and getting explicit confirmation. Use when the user says 'forget this', 'delete memory', 'remove that note', or wants to scrub specific data for privacy."
 id: skill.forget
 type: skill
 status: active
@@ -13,7 +13,10 @@ related:
 consumers:
   - agent.all
 
-updated: 2026-06-28---
+updated: 2026-06-28
+---
+
+
 The user wants to remove data from agentmemory: $ARGUMENTS
 
 ## Quick start
@@ -76,4 +79,4 @@ See ../_shared/TROUBLESHOOTING.md if `memory_smart_search` or `memory_governance
 
 
 ## Sub-Assets (하위 참조 자산)
-* [Examples](EXAMPLES.md) — Examples 참조 및 가이드 명세서.
+* [[skills/forget/EXAMPLES]] — Examples 참조 및 가이드 명세서.

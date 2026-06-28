@@ -24,7 +24,9 @@ related:
 consumers:
   - "[[agents/roles/dashboard-layer-builder]]"
 
-updated: 2026-06-28---
+updated: 2026-06-28
+---
+
 
 # dashboard-layer-builder.md (CQ-BI Dashboard Layer Builder Agent 상세 명세서)
 
@@ -63,7 +65,9 @@ updated: 2026-06-28---
 E태스크는 다음 디렉터리와 모듈 내에서 활동하며 코드의 생성과 수정을 수행합니다.
 
 | 대상 범위 (Scope) | 해당 파일 및 디렉터리 패턴 | 에이전트의 역할 및 가이드라인 |
-| :--- | :--- | :--- |
+| :--- | :--- | :
+---
+ |
 | **화면 컨트롤러** | `app/pages/*_page.py`<br>`app/pages/**/*_page.py` | - Streamlit 레이아웃 구성, 사이드바 필터 바인딩, 세션 상태 관리 전담<br>- 직접 raw SQL을 호출하거나 무겁게 가공하지 않고 중개 및 렌더링만 수행<br>- 커스텀 주입 CSS를 Minified 포맷으로 완벽히 압축 리포맷팅 주입<br>- 유니코드 이모지를 배제하고 Google Material Symbols로의 일괄 교체 |
 | **시각화 레이어** | `app/pages/*_plots.py`<br>`app/pages/**/plots/*.py` | - Plotly Figure 객체를 생성 및 반환하는 함수 전담 작성<br>- UI 컴포넌트나 레이아웃 호출을 완전 배제한 순수 차트 렌더러 설계<br>- 모든 Plotly Figure 생성 시 `apply_premium_chart_theme` 연동 및 배경 투명화 |
 | **네비게이션 등록** | `app/core/page/config_pages.py` | - 새로 생성된 페이지 객체를 메뉴 사전(`PAGE_CONFIGS`)에 등록하여 사이드바 네비게이션과 권한 매핑 연결 |

@@ -8,10 +8,12 @@ summary: >
 
 parent: "[[skills/understand/SKILL]]"
 
-updated: 2026-06-28---
+updated: 2026-06-28
+---
+
 # Django Framework Addendum
 
-* **Parent (상위 스킬)**: [SKILL.md](../SKILL.md)
+* **Parent (상위 스킬)**: [[skills/understand/SKILL]]
 
 ---
 
@@ -26,7 +28,9 @@ When analyzing a Django project, apply these additional conventions on top of th
 ### Canonical File Roles
 
 | File / Pattern | Role | Tags |
-|---|---|---|
+|---|---|
+---
+|
 | `manage.py` | CLI entry point for dev server, migrations, management commands | `entry-point`, `config` |
 | `*/settings.py`, `*/settings/*.py` | Project-wide configuration (DB, installed apps, middleware) | `config` |
 | `*/urls.py` | URL routing — maps URL patterns to views | `api-handler`, `routing` |

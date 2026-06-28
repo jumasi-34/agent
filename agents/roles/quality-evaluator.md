@@ -23,7 +23,9 @@ related:
 consumers:
   - "[[agents/roles/quality-evaluator]]"
 
-updated: 2026-06-28---
+updated: 2026-06-28
+---
+
 
 # quality-evaluator.md (CQ-BI Quality Evaluator Agent 상세 명세서)
 
@@ -63,7 +65,9 @@ updated: 2026-06-28---
 평가 에이전트는 다음 디렉터리와 모듈 내에서 독립 테스트를 실행하고 평가 성적표를 생성합니다.
 
 | 대상 범위 (Scope) | 해당 파일 및 디렉터리 패턴 | 에이전트의 역할 및 가이드라인 |
-| :--- | :--- | :--- |
+| :--- | :--- | :
+---
+ |
 | **평가 성적표 저장소** | `.agents/evals/evaluation-scorecard-*.md` | - 최종 정량/정성 평가 점수판 및 Pass/Fail 판정 결과 영속 저장 |
 | **독립 테스트 구동** | `tests/` | - `tests/` 하위의 유닛/인메모리 테스트 케이스 실행 및 감시 |
 | **구문 및 린트 검사** | `make verify` / `ruff` 등 | - 정적 검증 명령어 및 린트 검사 실행 결과 수집 |

@@ -25,7 +25,9 @@ consumers:
   - "[[agents/roles/data-layer-builder]]"
   - agent.query_reviewer
 
-updated: 2026-06-28---
+updated: 2026-06-28
+---
+
 
 # L3-query.md (L3 쿼리 레이어 개발 규칙)
 
@@ -140,7 +142,9 @@ def get_<도메인>_<기능>_rawdata(params: <파라미터_클래스>) -> str:
     3. Final: 영문 물리 컬럼명 보존을 유지하며 출력 최종 선택 및 정렬
 
     Parameters
-    ----------
+    -------
+---
+
     params : <파라미터_클래스> (예: QualityIssueTasksParams)
         쿼리 조회 및 동적 조건 바인딩에 필요한 입력 파라미터 데이터클래스
         - plant_list : 조회 대상 공장 코드 리스트 (예: ['KP', 'DP'])

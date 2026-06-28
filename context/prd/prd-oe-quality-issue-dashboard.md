@@ -24,15 +24,17 @@ consumers:
   - "[[agents/roles/planner-orchestrator]]"
   - ui-reviewer
 
-updated: 2026-06-28---
+updated: 2026-06-28
+---
+
 
 # [PRD] OE 품질 이슈 대시보드 개발 명세서 (Draft for AI Developer Agent)
 
 ## Overview / Connections
-* **Parent (상위 개념)**: [prd/prd-index.md](prd-index.md)
+* **Parent (상위 개념)**: [[context/prd/prd-index]]
 * **Related (연관 문서)**:
-  * [prd/prd-template.md](prd-template.md) (PRD 표준 템플릿)
-  * [prd/prd-hgws-return-dashboard.md](prd-hgws-return-dashboard.md) (HGWS 반송 PRD)
+  * [[context/prd/prd-template]] (PRD 표준 템플릿)
+  * [[context/prd/prd-hgws-return-dashboard]] (HGWS 반송 PRD)
 
 ---
 
@@ -57,7 +59,9 @@ updated: 2026-06-28---
 본 개발은 아래 3-레이어 아키텍처 구조를 엄격히 준수하여 배치되어야 합니다.
 
 | 레이어 (Layer) | 대상 파일 경로 (File Path) | 역할 및 구현 내용 (Role) |
-| :--- | :--- | :--- |
+| :--- | :--- | :
+---
+ |
 | **UI 레이어** | `app/pages/_10_dashboard/oe_quality_issue_dashboard_page.py` | 화면 제어, 사이드바 필터 바인딩, 레이아웃 및 탭 구성 |
 | **시각화 레이어** | `app/pages/_10_dashboard/oe_quality_issue_dashboard_plots.py` | Plotly 차트 드로잉 함수 정의 (Streamlit 종속 코드 사용 금지) |
 | **서비스 레이어** | `app/service/cqms_df.py` 및 `hope_df.py` | 데이터 수집 및 Pandas 가공 전처리 파이프라인 구축 및 캐싱 |

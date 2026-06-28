@@ -8,10 +8,12 @@ summary: >
 
 parent: "[[skills/brainstorming/SKILL]]"
 
-updated: 2026-06-28---
+updated: 2026-06-28
+---
+
 # Spec Document Reviewer Prompt Template
 
-* **Parent (상위 스킬)**: [SKILL.md](./SKILL.md)
+* **Parent (상위 스킬)**: [[skills/brainstorming/SKILL]]
 
 ---
 
@@ -33,7 +35,9 @@ Subagent (general-purpose):
     ## What to Check
 
     | Category | What to Look For |
-    |----------|------------------|
+    |----------|---------------
+---
+|
     | Completeness | TODOs, placeholders, "TBD", incomplete sections |
     | Consistency | Internal contradictions, conflicting requirements |
     | Clarity | Requirements ambiguous enough to cause someone to build the wrong thing |

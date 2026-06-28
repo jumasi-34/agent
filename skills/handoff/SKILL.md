@@ -1,6 +1,6 @@
 ---
 name: "handoff"
-description: "Resume the most recent agent session for the current working directory, leading with any unanswered question. Use when the user says "where were we", "resume", "handoff", "pick up where I left off", or starts a session with no fresh context."
+description: "Resume the most recent agent session for the current working directory, leading with any unanswered question. Use when the user says 'where were we', 'resume', 'handoff', 'pick up where I left off', or starts a session with no fresh context."
 id: skill.handoff
 type: skill
 status: active
@@ -13,7 +13,10 @@ related:
 consumers:
   - agent.all
 
-updated: 2026-06-28---
+updated: 2026-06-28
+---
+
+
 The user wants to resume work. Optional cwd override: $ARGUMENTS
 
 ## Quick start
@@ -78,4 +81,4 @@ See ../_shared/TROUBLESHOOTING.md if `memory_sessions` or `memory_recall` is not
 
 
 ## Sub-Assets (하위 참조 자산)
-* [Examples](EXAMPLES.md) — Examples 참조 및 가이드 명세서.
+* [[skills/handoff/EXAMPLES]] — Examples 참조 및 가이드 명세서.

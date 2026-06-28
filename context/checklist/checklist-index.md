@@ -27,7 +27,9 @@ consumers:
   - "[[agents/roles/code-reviewer]]"
   - "[[agents/roles/quality-evaluator]]"
 
-updated: 2026-06-28---
+updated: 2026-06-28
+---
+
 
 # checklist/ 규정
 
@@ -53,7 +55,9 @@ updated: 2026-06-28---
 ## 2. 활성 파일 목록 인덱스 (Active Files)
 
 | 파일명 | 파일의 본질적 역할 및 책임 (1줄 요약) |
-| :--- | :--- |
+| :--- | :
+---
+ |
 | `checklist-architecture.md` | 3-Layer 아키텍처 격벽, 의존성 방향 및 1:1 대칭 매핑 정합성 검사 체크리스트 |
 | `checklist-coding-standard.md` | 명명 규칙, 데이터클래스 파라미터 전달, 동적 컬럼 맵핑 및 이모지 금지 검사 체크리스트 |
 | `checklist-git.md` | 한국어 커밋 메시지, 대괄호 태그 규칙, Dual Push 및 단방향 Rsync 정책 검사 체크리스트 |

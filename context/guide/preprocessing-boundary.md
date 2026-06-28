@@ -24,7 +24,9 @@ consumers:
   - agent.ui_builder
   - agent.service_builder
 
-updated: 2026-06-28---
+updated: 2026-06-28
+---
+
 
 # IQM+ 데이터 전처리 및 시각화 전처리 경계 정의 가이드라인
 
@@ -80,7 +82,9 @@ flowchart TD
 ## 2. 영역별 역할 및 경계 표준 정의 (The Boundary Standard)
 
 | 비교 항목 | ❶ 서비스 전처리 레이어 (`service/df_*.py`) | ❷ 시각화 전처리 레이어 (`pages/*_plots.py`) |
-| :--- | :--- | :--- |
+| :--- | :--- | :
+---
+ |
 | **핵심 목적** | **비즈니스 정합성 확보 및 순수 통계 산출** | **인간 중심의 데이터 가독성 극대화** |
 | **반환 데이터** | 순수한 정형 데이터프레임 (`pd.DataFrame`) | Plotly Figure (`go.Figure`) |
 | **수행 주체** | 비즈니스 서비스 가공 함수 (예: `get_cqms_statistics_df`) | 플롯 드로잉 함수 (예: `draw_defect_trend_chart`) |

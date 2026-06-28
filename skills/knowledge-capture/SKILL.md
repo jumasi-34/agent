@@ -13,11 +13,13 @@ related:
 consumers:
   - agent.all
 
-updated: 2026-06-28---
+updated: 2026-06-28
+---
+
 # Skill. Knowledge Capture (지식 자동 캡처 및 전파 가이드)
 
 ## Overview / Connections
-* **Parent (상위 개념)**: [skills/index.md](../index.md)
+* **Parent (상위 개념)**: [[skills/index]]
 
 
 이 스킬은 개발, 리팩토링, 디버깅 등 모든 개발 작업이 완료되고 종료(커밋 혹은 푸시)되는 시점에 에이전트가 자율적으로 실행해야 하는 최종 지식 정제 프로세스입니다.

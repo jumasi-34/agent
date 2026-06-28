@@ -23,14 +23,16 @@ consumers:
   - "[[agents/roles/planner-orchestrator]]"
   - agent.system_administrator
 
-updated: 2026-06-28---
+updated: 2026-06-28
+---
+
 
 # Automation Execution Log System Specification (자동화 실행 로그 수집 체계 설계서)
 
 ## Overview
 * **왜 존재하는가 (Why)**: 백그라운드 자동화 배치 작업이나 수동 데이터 취합 시 소요 시간과 성공 여부를 실시간 추적하고, 장애 스택 트레이스를 기록하여 실행 흐름의 투명성과 장애 감내성을 보장하기 위함입니다.
 * **언제 사용하는가 (When)**: 집계 크론 배치(`agg_sellin.py` 등)의 실행 로그를 SQLite에 영구 적재하는 스키마나 가동 소스를 수정하고 관리할 때 참고합니다.
-* **연계 실행 (Next Action)**: 대시보드 에러 처리 및 SQLite 통합 로깅 메커니즘을 상세히 보려면 [guide.error_handling](../guide/error-handling.md)을 참조하십시오.
+* **연계 실행 (Next Action)**: 대시보드 에러 처리 및 SQLite 통합 로깅 메커니즘을 상세히 보려면 [[context/guide/error-handling]]을 참조하십시오.
 
 ## Connections
 * **상위 개념**: [infra.readme](.agents/context/infra/infra-index.md)
@@ -57,7 +59,9 @@ updated: 2026-06-28---
 ### 테이블 정의: `user_automation_log`
 
 | 컬럼명 (Column Name) | 데이터 타입 (Data Type) | 제약 조건 (Constraints) | 설명 (Description) |
-| :--- | :--- | :--- | :--- |
+| :--- | :--- | :--- | :
+---
+ |
 | **log_id** | `INTEGER` | PRIMARY KEY AUTOINCREMENT | 로그 레코드 고유 식별자 |
 | **task_name** | `TEXT` | NOT NULL | 자동화 작업명 (예: `daily_aggregation`, `email_dispatch`, `manual_kpi_sync`) |
 | **trigger_type** | `TEXT` | NOT NULL | 실행 유발 방식 (`CRON` or `MANUAL`) |

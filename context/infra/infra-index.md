@@ -30,7 +30,9 @@ consumers:
   - "[[agents/roles/planner-orchestrator]]"
   - agent.system_administrator
 
-updated: 2026-06-28---
+updated: 2026-06-28
+---
+
 
 # infra/ 규정
 
@@ -69,7 +71,9 @@ updated: 2026-06-28---
 ## 2. 활성 파일 목록 인덱스 (Active Files)
 
 | 파일명 | 파일의 본질적 역할 및 책임 (1줄 요약) |
-| :--- | :--- |
+| :--- | :
+---
+ |
 | `infrastructure-summary.md` | 플랫폼 서버 및 연합 데이터베이스 분산 아키텍처 인프라 연동 총괄 가이드 |
 | `database-metadata.md` | 분산 물리 테이블 스키마, 컬럼명, 물리 타입, 한글 설명 매핑 메타데이터 원장 |
 | `environment.md` | 로컬 가상환경(Miniconda `goeq`), Oracle 인스턴트 클라이언트 및 OS 종속 라이브러리 설정 가이드 |

@@ -24,7 +24,9 @@ consumers:
   - "[[agents/roles/code-reviewer]]"
   - "[[agents/roles/quality-evaluator]]"
 
-updated: 2026-06-28---
+updated: 2026-06-28
+---
+
 
 # checklist-git.md (L1 Git 형상관리 및 동기화 정책 체크리스트)
 

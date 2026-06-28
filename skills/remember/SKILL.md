@@ -1,6 +1,6 @@
 ---
 name: "remember"
-description: "Save an insight, decision, or learning to agentmemory's long-term storage with searchable concept tags. Use when the user says "remember this", "save this", "note that", "don't forget", or wants to preserve knowledge for future sessions."
+description: "Save an insight, decision, or learning to agentmemory's long-term storage with searchable concept tags. Use when the user says 'remember this', 'save this', 'note that', 'don't forget', or wants to preserve knowledge for future sessions."
 id: skill.remember
 type: skill
 status: active
@@ -13,7 +13,10 @@ related:
 consumers:
   - agent.all
 
-updated: 2026-06-28---
+updated: 2026-06-28
+---
+
+
 The user wants to save this to long-term memory: $ARGUMENTS
 
 ## Quick start
@@ -71,4 +74,4 @@ See ../_shared/TROUBLESHOOTING.md if `memory_save` is not available.
 
 
 ## Sub-Assets (하위 참조 자산)
-* [Examples](EXAMPLES.md) — Examples 참조 및 가이드 명세서.
+* [[skills/remember/EXAMPLES]] — Examples 참조 및 가이드 명세서.

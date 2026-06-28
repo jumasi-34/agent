@@ -8,10 +8,12 @@ summary: >
 
 parent: "[[skills/agent_hooks/SKILL]]"
 
-updated: 2026-06-28---
+updated: 2026-06-28
+---
+
 # agent_hooks/scripts/ 규정
 
-* **Parent (상위 스킬)**: [SKILL.md](../SKILL.md)
+* **Parent (상위 스킬)**: [[skills/agent_hooks/SKILL]]
 
 ---
 
@@ -36,7 +38,9 @@ updated: 2026-06-28---
 ## 2. 활성 파일 목록 인덱스 (Active Files)
 
 | 파일명 | 파일의 본질적 역할 및 책임 (1줄 요약) |
-| :--- | :--- |
+| :--- | :
+---
+ |
 | `[hooks-specification.md](.agents/context/infra/hooks-specification.md)` | 다차원 라이프사이클 이벤트 인터셉터 아키텍처 및 인터페이스 규격 정의서 (**infra/ 레이어 보관**) |
 | `agent_runs_observer.py` | 에이전트 자율 작업(Agent Run)의 라이프사이클 이벤트를 관측하고 후속 조치를 트리거하는 분석 인터셉터 |
 | `agent_runs_analyzer.py` | 누적된 에이전트 실행 로그(runs) 이벤트를 수집하여 이상 동작 유무를 판별하는 훅 모듈 |

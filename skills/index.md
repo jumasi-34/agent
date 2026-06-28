@@ -22,15 +22,17 @@ related:
 consumers:
   - agent.all
 
-updated: 2026-06-28---
+updated: 2026-06-28
+---
+
 
 # 에이전트 스킬 인덱스 및 기동 타이밍 가이드 (skills/index.md)
 
 ## Overview / Connections
-* **Parent (상위 개념)**: [AGENTS.md](../AGENTS.md)
+* **Parent (상위 개념)**: [[AGENTS]]
 * **Related (연관 문서)**:
-  * [rules/L2-sync-policy.md](../rules/L2-sync-policy.md) (자산 동기화 정책)
-  * [infra/hooks-specification.md](../context/infra/hooks-specification.md) (품질 릴리즈 훅 규격)
+  * [[rules/L2-sync-policy]] (자산 동기화 정책)
+  * [[context/infra/hooks-specification]] (품질 릴리즈 훅 규격)
 
 ---
 

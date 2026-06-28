@@ -24,7 +24,9 @@ consumers:
   - "[[agents/roles/planner-orchestrator]]"
   - "[[agents/roles/quality-evaluator]]"
 
-updated: 2026-06-28---
+updated: 2026-06-28
+---
+
 
 # L2-context-readability.md (L2 컨텍스트 및 문서 가독성 규칙)
 

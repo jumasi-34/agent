@@ -8,10 +8,12 @@ summary: >
 
 parent: "[[skills/using-superpowers/SKILL]]"
 
-updated: 2026-06-28---
+updated: 2026-06-28
+---
+
 # Claude Code Tool Mapping
 
-* **Parent (상위 스킬)**: [SKILL.md](../SKILL.md)
+* **Parent (상위 스킬)**: [[skills/using-superpowers/SKILL]]
 
 ---
 
@@ -21,7 +23,9 @@ Skills speak in actions ("dispatch a subagent", "create a todo", "read a file").
 ## Tools
 
 | Action skills request | Claude Code tool |
-|----------------------|------------------|
+|----------------------|---------------
+---
+|
 | Read a file | `Read` |
 | Create a new file | `Write` |
 | Edit a file | `Edit` |

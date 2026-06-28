@@ -24,7 +24,9 @@ consumers:
   - "[[agents/roles/planner-orchestrator]]"
   - "[[agents/roles/quality-evaluator]]"
 
-updated: 2026-06-28---
+updated: 2026-06-28
+---
+
 
 # L2-sync-policy.md (L2 로컬 폴더 동기화 및 Rsync 운영 규칙)
 
@@ -113,7 +115,9 @@ flowchart LR
 `.env` 파일에 정의되어야 하는 변수명과 역할은 아래와 같습니다.
 
 | 변수명 | 설명 | 기본값 / 예시 |
-| :--- | :--- | :--- |
+| :--- | :--- | :
+---
+ |
 | **`DEPLOY_SERVER_IP`** | 원격 운영 서버의 IP 주소 (필수 설정) | `192.168.x.x` |
 | **`DEPLOY_SERVER_USER`** | SSH 및 Rsync 접속용 서버 사용자 계정 | `jumasi` |
 | **`DEPLOY_SERVER_PORT`** | SSH 접속 포트 번호 | `22` |

@@ -8,10 +8,12 @@ summary: >
 
 parent: "[[skills/understand/SKILL]]"
 
-updated: 2026-06-28---
+updated: 2026-06-28
+---
+
 # Markdown Language Prompt Snippet
 
-* **Parent (상위 스킬)**: [SKILL.md](../SKILL.md)
+* **Parent (상위 스킬)**: [[skills/understand/SKILL]]
 
 ---
 
@@ -19,7 +21,9 @@ updated: 2026-06-28---
 ## Key Concepts
 
 - **Heading Hierarchy**: `#` through `######` for document structure, with h1 as the title
-- **Front Matter**: YAML metadata between `---` delimiters at the top of the file
+- **Front Matter**: YAML metadata between `
+---
+` delimiters at the top of the file
 - **Fenced Code Blocks**: Triple backticks with optional language identifier for syntax highlighting
 - **Reference-Style Links**: `[text][ref]` with `[ref]: url` definitions, useful for repeated URLs
 - **Tables**: Pipe-delimited columns with alignment markers (`:---`, `:---:`, `---:`)

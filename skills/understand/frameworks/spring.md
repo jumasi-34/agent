@@ -8,10 +8,12 @@ summary: >
 
 parent: "[[skills/understand/SKILL]]"
 
-updated: 2026-06-28---
+updated: 2026-06-28
+---
+
 # Spring Boot Framework Addendum
 
-* **Parent (상위 스킬)**: [SKILL.md](../SKILL.md)
+* **Parent (상위 스킬)**: [[skills/understand/SKILL]]
 
 ---
 
@@ -26,7 +28,9 @@ When analyzing a Spring Boot project, apply these additional conventions on top 
 ### Canonical File Roles
 
 | File / Pattern | Role | Tags |
-|---|---|---|
+|---|---|
+---
+|
 | `*Application.java`, `*Application.kt` | Application entry point — `@SpringBootApplication` class with `main()` method | `entry-point`, `config` |
 | `*Controller.java`, `*RestController.java` | REST controllers — handle HTTP requests, delegate to services | `api-handler` |
 | `*Service.java` | Service interfaces — define business operation contracts | `service` |

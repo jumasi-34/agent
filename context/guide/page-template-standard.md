@@ -24,7 +24,9 @@ consumers:
   - "[[agents/roles/planner-orchestrator]]"
   - agent.ui_builder
 
-updated: 2026-06-28---
+updated: 2026-06-28
+---
+
 
 # Streamlit UI Page Naming & Architectural Template Standard
 

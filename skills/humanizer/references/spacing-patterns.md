@@ -8,10 +8,12 @@ summary: >
 
 parent: "[[skills/humanizer/SKILL]]"
 
-updated: 2026-06-28---
+updated: 2026-06-28
+---
+
 # 띄어쓰기 패턴 (8-10)
 
-* **Parent (상위 스킬)**: [SKILL.md](../SKILL.md)
+* **Parent (상위 스킬)**: [[skills/humanizer/SKILL]]
 
 ---
 

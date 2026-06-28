@@ -1,6 +1,6 @@
 ---
 name: "session-history"
-description: "Show what happened in recent past sessions on this project as a clean timeline. Use when the user asks "what did we do last time", "session history", "past sessions", or wants an overview of previous work."
+description: "Show what happened in recent past sessions on this project as a clean timeline. Use when the user asks 'what did we do last time', 'session history', 'past sessions', or wants an overview of previous work."
 id: skill.session_history
 type: skill
 status: active
@@ -13,7 +13,10 @@ related:
 consumers:
   - agent.all
 
-updated: 2026-06-28---
+updated: 2026-06-28
+---
+
+
 The user wants an overview of recent sessions on this project.
 
 ## Quick start
@@ -72,4 +75,4 @@ See ../_shared/TROUBLESHOOTING.md if `memory_sessions` is not available.
 
 
 ## Sub-Assets (하위 참조 자산)
-* [Examples](EXAMPLES.md) — Examples 참조 및 가이드 명세서.
+* [[skills/session-history/EXAMPLES]] — Examples 참조 및 가이드 명세서.

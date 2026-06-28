@@ -8,10 +8,12 @@ summary: >
 
 parent: "[[skills/understand/SKILL]]"
 
-updated: 2026-06-28---
+updated: 2026-06-28
+---
+
 # English Output Guidelines
 
-* **Parent (상위 스킬)**: [SKILL.md](../SKILL.md)
+* **Parent (상위 스킬)**: [[skills/understand/SKILL]]
 
 ---
 
@@ -23,7 +25,9 @@ This file provides language-specific guidance for generating knowledge graph con
 Use lowercase, hyphenated tags in English:
 
 | Pattern | Recommended Tags |
-|---------|-----------------|
+|---------|--------------
+---
+|
 | Entry point file | `entry-point`, `barrel`, `exports` |
 | Utility functions | `utility`, `helpers`, `common` |
 | API handlers | `api-handler`, `controller`, `endpoint` |

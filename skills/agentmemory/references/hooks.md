@@ -8,7 +8,9 @@ summary: >
 
 parent: "[[skills/agentmemory/SKILL]]"
 
-updated: 2026-06-28---
+updated: 2026-06-28
+---
+
 # agentmemory 세션 주기 관측 훅 표준
 
 본 문서는 에이전트 세션의 라이프사이클 전체에 걸쳐 자동으로 관측 데이터를 수집하는 agentmemory 플러그인 훅(Hooks)에 대한 지침을 기술합니다.

@@ -24,7 +24,9 @@ consumers:
   - "[[agents/roles/code-reviewer]]"
   - "[[agents/roles/quality-evaluator]]"
 
-updated: 2026-06-28---
+updated: 2026-06-28
+---
+
 
 # checklist-security.md (릴리즈 및 에이전트 구동 보안 검토 체크리스트)
 

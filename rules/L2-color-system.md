@@ -22,7 +22,9 @@ related:
 consumers:
   - "[[agents/roles/dashboard-layer-builder]]"
 
-updated: 2026-06-28---
+updated: 2026-06-28
+---
+
 
 # L2-color-system.md (L2 대시보드 컬러 및 시각화 디자인 시스템 규칙)
 
@@ -172,7 +174,9 @@ Plotly 영역은 정밀 데이터를 시각 분석하는 데이터 캔버스로,
 - **[Alert 컬러와의 격리]**: `carbon_red_50_seq` (Red 50, `#fa4d56`) 등은 일반 범주 시각화에만 사용하며, 에러나 통과 실패 등 상태 경고(Alert)를 강조할 때는 이 범주색이 아닌 `status_error` (`#dc2626`) 또는 `spec_limit` (`#b91c1c`)과 같은 전용 상태 시맨틱 토큰을 사용해 기능적 의미를 완전히 격리해야 합니다.
 
 | Order | 토큰명 | 컬러 이름 | HEX 코드 | 주용도 |
-| :--- | :--- | :--- | :--- | :--- |
+| :--- | :--- | :--- | :--- | :
+---
+ |
 | 01 | `carbon_purple_70` | Purple 70 | `#6929c4` | 1순위 범주 그룹색 |
 | 02 | `carbon_cyan_50` | Cyan 50 | `#1192e8` | 2순위 범주 그룹색 |
 | 03 | `carbon_teal_70_seq` | Teal 70 | `#005d5d` | 3순위 범주 그룹색 |

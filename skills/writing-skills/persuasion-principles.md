@@ -8,10 +8,12 @@ summary: >
 
 parent: "[[skills/writing-skills/SKILL]]"
 
-updated: 2026-06-28---
+updated: 2026-06-28
+---
+
 # Persuasion Principles for Skill Design
 
-* **Parent (상위 스킬)**: [SKILL.md](./SKILL.md)
+* **Parent (상위 스킬)**: [[skills/writing-skills/SKILL]]
 
 ---
 
@@ -142,7 +144,9 @@ LLMs respond to the same persuasion principles as humans. Understanding this psy
 ## Principle Combinations by Skill Type
 
 | Skill Type | Use | Avoid |
-|------------|-----|-------|
+|------------|-----|----
+---
+|
 | Discipline-enforcing | Authority + Commitment + Social Proof | Liking, Reciprocity |
 | Guidance/technique | Moderate Authority + Unity | Heavy authority |
 | Collaborative | Unity + Commitment | Authority, Liking |

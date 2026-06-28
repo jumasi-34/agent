@@ -8,10 +8,12 @@ summary: >
 
 parent: "[[skills/session-history/SKILL]]"
 
-updated: 2026-06-28---
+updated: 2026-06-28
+---
+
 # session-history worked examples
 
-* **Parent (상위 스킬)**: [SKILL.md](./SKILL.md)
+* **Parent (상위 스킬)**: [[skills/session-history/SKILL]]
 
 ---
 

@@ -8,10 +8,12 @@ summary: >
 
 parent: "[[skills/writing-skills/SKILL]]"
 
-updated: 2026-06-28---
+updated: 2026-06-28
+---
+
 # Testing Skills With Subagents
 
-* **Parent (상위 스킬)**: [SKILL.md](./SKILL.md)
+* **Parent (상위 스킬)**: [[skills/writing-skills/SKILL]]
 
 ---
 
@@ -46,7 +48,9 @@ Don't test:
 ## TDD Mapping for Skill Testing
 
 | TDD Phase | Skill Testing | What You Do |
-|-----------|---------------|-------------|
+|-----------|---------------|----------
+---
+|
 | **RED** | Baseline test | Run scenario WITHOUT skill, watch agent fail |
 | **Verify RED** | Capture rationalizations | Document exact failures verbatim |
 | **GREEN** | Write skill | Address specific baseline failures |

@@ -25,7 +25,9 @@ consumers:
   - "[[agents/roles/planner-orchestrator]]"
   - "[[agents/roles/quality-evaluator]]"
 
-updated: 2026-06-28---
+updated: 2026-06-28
+---
+
 
 # domain-knowledge.md (전사 핵심 품질 및 시스템 운영 도메인 지식 연합 원장)
 

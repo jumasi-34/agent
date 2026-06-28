@@ -24,7 +24,9 @@ consumers:
   - "[[agents/roles/planner-orchestrator]]"
   - agent.service_builder
 
-updated: 2026-06-28---
+updated: 2026-06-28
+---
+
 
 # \[SERVICE\] service/ — 서비스 레이어 컨텍스트
 
@@ -82,7 +84,9 @@ preprocessing_{domain}_{purpose}_{unit}_{agg_or_condition}(params) -> pd.DataFra
 ```
 
 | 세그먼트 | 예시 |
-|----------|------|
+|----------|---
+---
+|
 | `{domain}` | `ncf`, `production`, `rr`, `uf`, `qi`, `oeapp`, `4m`, `audit` |
 | `{purpose}` | `rawdata`, `monthly_agg`, `plant_agg`, `dft_cd_agg`, `period_ppm_agg` |
 | `{unit}` | 생략 가능 (단일 집계) |

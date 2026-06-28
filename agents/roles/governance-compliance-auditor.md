@@ -24,7 +24,9 @@ consumers:
   - "[[agents/roles/planner-orchestrator]]"
   - "[[agents/roles/governance-compliance-auditor]]"
 
-updated: 2026-06-28---
+updated: 2026-06-28
+---
+
 
 # governance-compliance-auditor.md (CQ-BI Governance & Compliance Auditor Sub-Agent 상세 명세서)
 
@@ -63,7 +65,9 @@ updated: 2026-06-28---
 에이전트는 다음 디렉터리와 모듈 내에서 스캔, 분석, 데이터 사전 업데이트를 수행합니다.
 
 | 대상 범위 (Scope) | 해당 파일 및 디렉터리 패턴 | 에이전트의 역할 및 가이드라인 |
-| :--- | :--- | :--- |
+| :--- | :--- | :
+---
+ |
 | **메타데이터 사전 자산** | `.agents/context/infra/database-metadata.md` | - 도메인별(CQMS, GMES, HOPE 등) 테이블 컬럼 스펙과 파이썬 코드 변수 간 1:1 매핑 사전 영속 보관 |
 | **비즈니스 상수 및 표준** | `.agents/rules/L2-naming-convention.md`<br>`.agents/rules/L2-business-constants.md` | - 에이전트가 검증 시 정답지로 활용하는 핵심 규칙 가이드라인 (Read-Only) |
 | **네이밍 룰 설정 메타데이터** | `.agents/rules/table_naming_convention.json` | - 테이블 변수 네이밍 컨벤션 규칙 및 `{system}_{domain}_{contents}` 공식의 허용 도메인 목록 |

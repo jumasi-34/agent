@@ -8,10 +8,12 @@ summary: >
 
 parent: "[[skills/understand/SKILL]]"
 
-updated: 2026-06-28---
+updated: 2026-06-28
+---
+
 # Vue Framework Addendum
 
-* **Parent (상위 스킬)**: [SKILL.md](../SKILL.md)
+* **Parent (상위 스킬)**: [[skills/understand/SKILL]]
 
 ---
 
@@ -26,7 +28,9 @@ When analyzing a Vue project, apply these additional conventions on top of the b
 ### Canonical File Roles
 
 | File / Pattern | Role | Tags |
-|---|---|---|
+|---|---|
+---
+|
 | `src/App.vue` | Root application component — mounts the top-level layout and router view | `entry-point`, `ui` |
 | `src/main.ts`, `src/main.js` | Application bootstrap — creates Vue app instance, registers plugins, mounts to DOM | `entry-point`, `config` |
 | `components/*.vue`, `components/**/*.vue` | Reusable UI components | `ui` |

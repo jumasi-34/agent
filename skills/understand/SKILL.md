@@ -13,11 +13,13 @@ related:
 consumers:
   - agent.all
 
-updated: 2026-06-28---
+updated: 2026-06-28
+---
+
 # 코드베이스 분석 및 지식 그래프 모델링 통합 가이드라인 (understand)
 
 ## Overview / Connections
-* **Parent (상위 개념)**: [skills/index.md](../index.md)
+* **Parent (상위 개념)**: [[skills/index]]
 
 
 본 스킬은 전체 코드베이스의 구조 정밀 진단, 의존성 맵 설계 및 특화 정적/LLM 종합 분석 지침을 포함합니다.
@@ -25,19 +27,19 @@ updated: 2026-06-28---
 
 ## 특화 분석 기능 라우팅 테이블 (Specialized Analysis)
 
-*   **코드베이스 기반 질의응답 (chat)**: [references/chat.md](references/chat.md)
+*   **코드베이스 기반 질의응답 (chat)**: [[skills/understand/references/chat]]
     - 대화형 질의응답, 컴포넌트 정보 검색 시의 컨텍스트 필터링 및 대답 요약 표준
-*   **인터랙티브 대시보드 구동 (dashboard)**: [references/dashboard.md](references/dashboard.md)
+*   **인터랙티브 대시보드 구동 (dashboard)**: [[skills/understand/references/dashboard]]
     - 지식 그래프 웹 인터페이스 서버 가동 표준 및 렌더링 검증 수칙
-*   **Git Diff 분석 및 점진 분석 (diff)**: [references/diff.md](references/diff.md)
+*   **Git Diff 분석 및 점진 분석 (diff)**: [[skills/understand/references/diff]]
     - 변경 내역 파악, 영향 범위(Impact Area) 계산 및 리스크 진단 표준
-*   **비즈니스 도메인 지식 흐름 추출 (domain)**: [references/domain.md](references/domain.md)
+*   **비즈니스 도메인 지식 흐름 추출 (domain)**: [[skills/understand/references/domain]]
     - 업무 플로우 그래프, 비즈니스 흐름 모델링 및 도메인 상수 분석
-*   **소스코드 및 모듈 상세 딥다이브 (explain)**: [references/explain.md](references/explain.md)
+*   **소스코드 및 모듈 상세 딥다이브 (explain)**: [[skills/understand/references/explain]]
     - 특정 소스코드 파일 및 유닛 컴포넌트의 기저 아키텍처 및 세부 로직 설명 기법
-*   **위키형 지식 베이스 추출 (knowledge)**: [references/knowledge.md](references/knowledge.md)
+*   **위키형 지식 베이스 추출 (knowledge)**: [[skills/understand/references/knowledge]]
     - Karpathy 패턴 Wiki 구조 분석 및 지식 클러스터링 규칙
-*   **신규 팀 멤버 온보딩 가이드 제작 (onboard)**: [references/onboard.md](references/onboard.md)
+*   **신규 팀 멤버 온보딩 가이드 제작 (onboard)**: [[skills/understand/references/onboard]]
     - 온보딩 가이드라인 문서 자율 포맷 생산 지침
 
 ---
@@ -206,7 +208,9 @@ Determine whether to run a full analysis or incremental update.
 7. **Decision logic:**
 
    | Condition | Action |
-   |---|---|
+   |---|
+---
+|
    | `--full` flag in `$ARGUMENTS` | Full analysis (all phases) |
    | No existing graph or meta | Full analysis (all phases) |
    | `--review` flag + existing graph + unchanged commit hash | Skip to Phase 6 (review-only — reuse existing assembled graph) |
@@ -877,49 +881,49 @@ Report to the user: `[Phase 7/7] Saving knowledge graph...`
 
 
 ## Sub-Assets (하위 참조 자산)
-* [Django](frameworks/django.md) — Django 참조 및 가이드 명세서.
-* [Express](frameworks/express.md) — Express 참조 및 가이드 명세서.
-* [Fastapi](frameworks/fastapi.md) — Fastapi 참조 및 가이드 명세서.
-* [Flask](frameworks/flask.md) — Flask 참조 및 가이드 명세서.
-* [Gin](frameworks/gin.md) — Gin 참조 및 가이드 명세서.
-* [Nextjs](frameworks/nextjs.md) — Nextjs 참조 및 가이드 명세서.
-* [Rails](frameworks/rails.md) — Rails 참조 및 가이드 명세서.
-* [React](frameworks/react.md) — React 참조 및 가이드 명세서.
-* [Spring](frameworks/spring.md) — Spring 참조 및 가이드 명세서.
-* [Vue](frameworks/vue.md) — Vue 참조 및 가이드 명세서.
-* [Cpp](languages/cpp.md) — Cpp 참조 및 가이드 명세서.
-* [Csharp](languages/csharp.md) — Csharp 참조 및 가이드 명세서.
-* [Css](languages/css.md) — Css 참조 및 가이드 명세서.
-* [Dockerfile](languages/dockerfile.md) — Dockerfile 참조 및 가이드 명세서.
-* [Go](languages/go.md) — Go 참조 및 가이드 명세서.
-* [Graphql](languages/graphql.md) — Graphql 참조 및 가이드 명세서.
-* [Html](languages/html.md) — Html 참조 및 가이드 명세서.
-* [Java](languages/java.md) — Java 참조 및 가이드 명세서.
-* [Javascript](languages/javascript.md) — Javascript 참조 및 가이드 명세서.
-* [Json](languages/json.md) — Json 참조 및 가이드 명세서.
-* [Kotlin](languages/kotlin.md) — Kotlin 참조 및 가이드 명세서.
-* [Markdown](languages/markdown.md) — Markdown 참조 및 가이드 명세서.
-* [Php](languages/php.md) — Php 참조 및 가이드 명세서.
-* [Protobuf](languages/protobuf.md) — Protobuf 참조 및 가이드 명세서.
-* [Python](languages/python.md) — Python 참조 및 가이드 명세서.
-* [Ruby](languages/ruby.md) — Ruby 참조 및 가이드 명세서.
-* [Rust](languages/rust.md) — Rust 참조 및 가이드 명세서.
-* [Shell](languages/shell.md) — Shell 참조 및 가이드 명세서.
-* [Sql](languages/sql.md) — Sql 참조 및 가이드 명세서.
-* [Swift](languages/swift.md) — Swift 참조 및 가이드 명세서.
-* [Terraform](languages/terraform.md) — Terraform 참조 및 가이드 명세서.
-* [Typescript](languages/typescript.md) — Typescript 참조 및 가이드 명세서.
-* [Yaml](languages/yaml.md) — Yaml 참조 및 가이드 명세서.
-* [En](locales/en.md) — En 참조 및 가이드 명세서.
-* [Ja](locales/ja.md) — Ja 참조 및 가이드 명세서.
-* [Ko](locales/ko.md) — Ko 참조 및 가이드 명세서.
-* [Ru](locales/ru.md) — Ru 참조 및 가이드 명세서.
-* [Zh Tw](locales/zh-TW.md) — Zh Tw 참조 및 가이드 명세서.
-* [Zh](locales/zh.md) — Zh 참조 및 가이드 명세서.
-* [Chat](references/chat.md) — Chat 참조 및 가이드 명세서.
-* [Dashboard](references/dashboard.md) — Dashboard 참조 및 가이드 명세서.
-* [Diff](references/diff.md) — Diff 참조 및 가이드 명세서.
-* [Domain](references/domain.md) — Domain 참조 및 가이드 명세서.
-* [Explain](references/explain.md) — Explain 참조 및 가이드 명세서.
-* [Knowledge](references/knowledge.md) — Knowledge 참조 및 가이드 명세서.
-* [Onboard](references/onboard.md) — Onboard 참조 및 가이드 명세서.
+* [[skills/understand/frameworks/django]] — Django 참조 및 가이드 명세서.
+* [[skills/understand/frameworks/express]] — Express 참조 및 가이드 명세서.
+* [[skills/understand/frameworks/fastapi]] — Fastapi 참조 및 가이드 명세서.
+* [[skills/understand/frameworks/flask]] — Flask 참조 및 가이드 명세서.
+* [[skills/understand/frameworks/gin]] — Gin 참조 및 가이드 명세서.
+* [[skills/understand/frameworks/nextjs]] — Nextjs 참조 및 가이드 명세서.
+* [[skills/understand/frameworks/rails]] — Rails 참조 및 가이드 명세서.
+* [[skills/understand/frameworks/react]] — React 참조 및 가이드 명세서.
+* [[skills/understand/frameworks/spring]] — Spring 참조 및 가이드 명세서.
+* [[skills/understand/frameworks/vue]] — Vue 참조 및 가이드 명세서.
+* [[skills/understand/languages/cpp]] — Cpp 참조 및 가이드 명세서.
+* [[skills/understand/languages/csharp]] — Csharp 참조 및 가이드 명세서.
+* [[skills/understand/languages/css]] — Css 참조 및 가이드 명세서.
+* [[skills/understand/languages/dockerfile]] — Dockerfile 참조 및 가이드 명세서.
+* [[skills/understand/languages/go]] — Go 참조 및 가이드 명세서.
+* [[skills/understand/languages/graphql]] — Graphql 참조 및 가이드 명세서.
+* [[skills/understand/languages/html]] — Html 참조 및 가이드 명세서.
+* [[skills/understand/languages/java]] — Java 참조 및 가이드 명세서.
+* [[skills/understand/languages/javascript]] — Javascript 참조 및 가이드 명세서.
+* [[skills/understand/languages/json]] — Json 참조 및 가이드 명세서.
+* [[skills/understand/languages/kotlin]] — Kotlin 참조 및 가이드 명세서.
+* [[skills/understand/languages/markdown]] — Markdown 참조 및 가이드 명세서.
+* [[skills/understand/languages/php]] — Php 참조 및 가이드 명세서.
+* [[skills/understand/languages/protobuf]] — Protobuf 참조 및 가이드 명세서.
+* [[skills/understand/languages/python]] — Python 참조 및 가이드 명세서.
+* [[skills/understand/languages/ruby]] — Ruby 참조 및 가이드 명세서.
+* [[skills/understand/languages/rust]] — Rust 참조 및 가이드 명세서.
+* [[skills/understand/languages/shell]] — Shell 참조 및 가이드 명세서.
+* [[skills/understand/languages/sql]] — Sql 참조 및 가이드 명세서.
+* [[skills/understand/languages/swift]] — Swift 참조 및 가이드 명세서.
+* [[skills/understand/languages/terraform]] — Terraform 참조 및 가이드 명세서.
+* [[skills/understand/languages/typescript]] — Typescript 참조 및 가이드 명세서.
+* [[skills/understand/languages/yaml]] — Yaml 참조 및 가이드 명세서.
+* [[skills/understand/locales/en]] — En 참조 및 가이드 명세서.
+* [[skills/understand/locales/ja]] — Ja 참조 및 가이드 명세서.
+* [[skills/understand/locales/ko]] — Ko 참조 및 가이드 명세서.
+* [[skills/understand/locales/ru]] — Ru 참조 및 가이드 명세서.
+* [[skills/understand/locales/zh-TW]] — Zh Tw 참조 및 가이드 명세서.
+* [[skills/understand/locales/zh]] — Zh 참조 및 가이드 명세서.
+* [[skills/understand/references/chat]] — Chat 참조 및 가이드 명세서.
+* [[skills/understand/references/dashboard]] — Dashboard 참조 및 가이드 명세서.
+* [[skills/understand/references/diff]] — Diff 참조 및 가이드 명세서.
+* [[skills/understand/references/domain]] — Domain 참조 및 가이드 명세서.
+* [[skills/understand/references/explain]] — Explain 참조 및 가이드 명세서.
+* [[skills/understand/references/knowledge]] — Knowledge 참조 및 가이드 명세서.
+* [[skills/understand/references/onboard]] — Onboard 참조 및 가이드 명세서.

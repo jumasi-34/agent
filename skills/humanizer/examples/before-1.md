@@ -8,10 +8,12 @@ summary: >
 
 parent: "[[skills/humanizer/SKILL]]"
 
-updated: 2026-06-28---
+updated: 2026-06-28
+---
+
 # 인공지능의 교육 분야 활용
 
-* **Parent (상위 스킬)**: [SKILL.md](../SKILL.md)
+* **Parent (상위 스킬)**: [[skills/humanizer/SKILL]]
 
 ---
 

@@ -23,14 +23,16 @@ consumers:
   - "[[agents/roles/planner-orchestrator]]"
   - agent.system_administrator
 
-updated: 2026-06-28---
+updated: 2026-06-28
+---
+
 
 # context-manual-setup.md (서비스 환경 수동 설정 및 배포 가이드라인)
 
 ## Overview
 * **왜 존재하는가 (Why)**: 실서비스 배포 시 보안상의 이유나 OS 권한 제약으로 AI가 직접 제어하지 못하는 필수 인프라 설정을 사용자가 수동으로 완수하여 원활하게 런타임을 구동시키기 위함입니다.
 * **언제 사용하는가 (When)**: Ubuntu Production 서버 배포, `.env` 환경 변수 관리, Databricks/Oracle/Snowflake 커넥션 설정, systemd 백그라운드 데몬 및 crontab 스케줄러를 구성할 때 참고합니다.
-* **연계 실행 (Next Action)**: 전체 공용 인프라 사양 및 리소스를 보려면 [infrastructure.readme](../infra/infra-index.md)를 참조하십시오.
+* **연계 실행 (Next Action)**: 전체 공용 인프라 사양 및 리소스를 보려면 [[context/infra/infra-index]]를 참조하십시오.
 
 ## Connections
 * **상위 개념**: [guide.readme](.agents/context/guide/guide-index.md)
@@ -242,7 +244,9 @@ MAILTO="Jungman.Sim@hankookn.com"
 
 # =================================================================
 # 1. HOPE SELLIN 데이터 집계 자동화
-# -----------------------------------------------------------------
+# --------------------------------------------------------------
+---
+
 # 실행 시간: 매일 12:30 (KST) / 03:30 (UTC)
 # 주요 기능: SELLIN 관련 데이터 추출 및 집계
 # =================================================================

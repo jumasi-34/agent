@@ -8,10 +8,12 @@ summary: >
 
 parent: "[[skills/writing-skills/SKILL]]"
 
-updated: 2026-06-28---
+updated: 2026-06-28
+---
+
 # Testing CLAUDE.md Skills Documentation
 
-* **Parent (상위 스킬)**: [SKILL.md](../SKILL.md)
+* **Parent (상위 스킬)**: [[skills/writing-skills/SKILL]]
 
 ---
 

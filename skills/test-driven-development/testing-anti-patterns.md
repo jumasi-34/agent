@@ -8,10 +8,12 @@ summary: >
 
 parent: "[[skills/test-driven-development/SKILL]]"
 
-updated: 2026-06-28---
+updated: 2026-06-28
+---
+
 # Testing Anti-Patterns
 
-* **Parent (상위 스킬)**: [SKILL.md](./SKILL.md)
+* **Parent (상위 스킬)**: [[skills/test-driven-development/SKILL]]
 
 ---
 
@@ -289,7 +291,9 @@ TDD cycle:
 ## Quick Reference
 
 | Anti-Pattern | Fix |
-|--------------|-----|
+|--------------|--
+---
+|
 | Assert on mock elements | Test real component or unmock it |
 | Test-only methods in production | Move to test utilities |
 | Mock without understanding | Understand dependencies first, mock minimally |

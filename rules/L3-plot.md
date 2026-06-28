@@ -25,7 +25,9 @@ consumers:
   - "[[agents/roles/dashboard-layer-builder]]"
   - agent.ui_reviewer
 
-updated: 2026-06-28---
+updated: 2026-06-28
+---
+
 
 # L3-plot.md (L3 시각화/차트 개발 규칙)
 

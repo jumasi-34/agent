@@ -1,6 +1,6 @@
 ---
 name: "find-skills"
-description: "Helps users discover and install agent skills when they ask questions like "how do I do X", "find a skill for X", "is there a skill that can...", or express interest in extending capabilities. This skill should be used when the user is looking for functionality that might exist as an installable skill."
+description: "Helps users discover and install agent skills when they ask questions like 'how do I do X', 'find a skill for X', 'is there a skill that can...', or express interest in extending capabilities. This skill should be used when the user is looking for functionality that might exist as an installable skill."
 id: skill.find_skills
 type: skill
 status: active
@@ -13,11 +13,14 @@ related:
 consumers:
   - agent.all
 
-updated: 2026-06-28---
+updated: 2026-06-28
+---
+
+
 # Find Skills
 
 ## Overview / Connections
-* **Parent (상위 개념)**: [skills/index.md](../index.md)
+* **Parent (상위 개념)**: [[skills/index]]
 
 
 This skill helps you discover and install skills from the open agent skills ecosystem.
@@ -123,7 +126,9 @@ The `-g` flag installs globally (user-level) and `-y` skips confirmation prompts
 When searching, consider these common categories:
 
 | Category        | Example Queries                          |
-| --------------- | ---------------------------------------- |
+| --------------- | -------------------------------------
+---
+ |
 | Web Development | react, nextjs, typescript, css, tailwind |
 | Testing         | testing, jest, playwright, e2e           |
 | DevOps          | deploy, docker, kubernetes, ci-cd        |
