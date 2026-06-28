@@ -1,6 +1,6 @@
 ---
 id: rule.l2.architecture
-title: "Ref: RULES > L2-ARCHITECTURE"
+title: "[Rule] 아키텍처 3계층 설계"
 type: rule
 status: active
 

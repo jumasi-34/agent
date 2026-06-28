@@ -1,6 +1,6 @@
 ---
 id: rule.l3.plot
-title: "Ref: RULES > L3-PLOT"
+title: "[Rule] Plotly 시각화 격리"
 type: rule
 status: active
 

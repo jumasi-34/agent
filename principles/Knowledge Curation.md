@@ -58,6 +58,7 @@ Wiki는 그것들을 연결한다.
 항상 지식을 연결하는 것을 우선한다.
 
 ---
+title: "[Wiki] 지식 큐레이션 철학"
 
 ## Karpathy AI 지식 철학: Raw = Memory, Wiki = Understanding
 

@@ -1,3 +1,7 @@
+---
+title: "[Wiki] 아키텍처 3계층 가이드"
+---
+
 # Architecture Guide (아키텍처 설계 및 계층 분리 가이드)
 
 ## 1. 왜 존재하는가 (Why)

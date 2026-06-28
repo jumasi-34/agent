@@ -1,6 +1,6 @@
 ---
 id: rule.l2.color_system
-title: "Ref: RULES > L2-COLOR-SYSTEM"
+title: "[Rule] 컬러 및 시각화 시스템"
 type: rule
 status: active
 

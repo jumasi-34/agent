@@ -1,6 +1,6 @@
 ---
 id: rule.l2.naming_convention
-title: "Ref: RULES > L2-NAMING-CONVENTION"
+title: "[Rule] 코드 명명 규칙"
 type: rule
 status: active
 

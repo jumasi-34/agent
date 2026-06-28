@@ -1,6 +1,6 @@
 ---
 id: rule.l3.service
-title: "Ref: RULES > L3-SERVICE"
+title: "[Rule] 비즈니스 서비스 전처리"
 type: rule
 status: active
 

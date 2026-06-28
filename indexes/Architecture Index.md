@@ -1,3 +1,7 @@
+---
+title: "[Index] 아키텍처 허브"
+---
+
 # Architecture Index (아키텍처 지식 색인)
 
 ## 1. 개요

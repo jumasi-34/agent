@@ -1,6 +1,6 @@
 ---
 id: rule.l2.sync_policy
-title: "Ref: RULES > L2-SYNC-POLICY"
+title: "[Rule] 자산 동기화 정책"
 type: rule
 status: active
 

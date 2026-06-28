@@ -1,3 +1,7 @@
+---
+title: "[Index] 비즈니스 도메인 허브"
+---
+
 # Business Domain Index (비즈니스 도메인 및 메타 지식 색인)
 
 ## 1. 개요

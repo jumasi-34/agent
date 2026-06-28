@@ -1,6 +1,6 @@
 ---
 id: rule.metadata
-title: "Ref: RULES > L2-METADATA-STANDARD"
+title: "[Rule] 옵시디언 메타데이터 표준"
 type: rule
 status: active
 summary: 옵시디언(Obsidian) 연동 및 에이전트 지식 관리를 위한 YAML 메타데이터(Frontmatter) 표준 규격
@@ -30,7 +30,7 @@ updated: 2026-06-29
 ```yaml
 ---
 id: "파일고유식별자" # 예: rule.metadata, wiki.architecture, raw.bug.123
-title: "문서 제목"
+title: "[Rule] 옵시디언 메타데이터 표준"
 type: ""          # rule, wiki, raw, index, principle 중 택 1
 status: ""        # active, unresolved, resolved, synthesized, deprecated 중 택 1
 category: ""      # (선택) raw 데이터의 경우: bug, chat, decision, idea 등

@@ -1,3 +1,7 @@
+---
+title: "[Wiki] PRD 기획 워크플로우"
+---
+
 # PRD Planning Workflow (PRD 기반 기획 및 요구사항 정렬)
 
 ## 1. 왜 존재하는가 (Why)

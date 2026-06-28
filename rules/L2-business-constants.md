@@ -1,6 +1,6 @@
 ---
 id: rule.l2.business_constants
-title: "Ref: RULES > L2-BUSINESS-CONSTANTS"
+title: "[Rule] 비즈니스 상수 매핑"
 type: rule
 status: active
 

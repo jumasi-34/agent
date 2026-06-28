@@ -1,6 +1,6 @@
 ---
 id: rule.l3.query
-title: "Ref: RULES > L3-QUERY"
+title: "[Rule] SQL 쿼리 작성 표준"
 type: rule
 status: active
 

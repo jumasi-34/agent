@@ -1,6 +1,6 @@
 ---
 id: rule.l1.git
-title: "Ref: RULES > L1-GIT"
+title: "[Rule] Git 및 커밋 표준"
 type: rule
 status: active
 

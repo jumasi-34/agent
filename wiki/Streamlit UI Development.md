@@ -1,3 +1,7 @@
+---
+title: "[Wiki] Streamlit UI 개발"
+---
+
 # Streamlit UI Development (Streamlit 화면 개발 및 제어 표준)
 
 ## 1. 왜 존재하는가 (Why)

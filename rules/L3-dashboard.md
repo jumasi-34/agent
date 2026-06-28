@@ -1,6 +1,6 @@
 ---
 id: rule.l3.dashboard
-title: "Ref: RULES > L3-DASHBOARD"
+title: "[Rule] Streamlit UI 구성"
 type: rule
 status: active
 

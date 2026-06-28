@@ -1,6 +1,6 @@
 ---
 id: rule.l2.context_readability
-title: "Ref: RULES > L2-CONTEXT-READABILITY"
+title: "[Rule] 코드 가독성 최적화"
 type: rule
 status: active
 

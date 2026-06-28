@@ -1,3 +1,7 @@
+---
+title: "[Wiki] 듀얼 푸시 및 동기화"
+---
+
 # Git Dual Push & Rsync Sync (Git 형상관리 및 동기화 무결성)
 
 ## 1. 왜 존재하는가 (Why)

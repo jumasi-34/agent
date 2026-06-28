@@ -1,3 +1,7 @@
+---
+title: "[Wiki] 지식 그래프 큐레이션"
+---
+
 # Project Knowledge Graph & Curation (지식 큐레이션 및 그래프 자산화)
 
 ## 1. 왜 존재하는가 (Why)

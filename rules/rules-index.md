@@ -1,6 +1,6 @@
 ---
 id: rule.index
-title: "Ref: RULES > RULES-INDEX"
+title: "[Index] 에이전트 룰 허브"
 type: rule
 status: active
 
