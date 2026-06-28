@@ -1,5 +1,6 @@
 ---
 id: rule.l2.color_system
+title: "Ref: RULES > L2-COLOR-SYSTEM"
 type: rule
 status: active
 

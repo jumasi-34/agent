@@ -1,5 +1,6 @@
 ---
 id: skill.understand.fastapi
+title: "Ref: UNDERSTAND > FRAMEWORKS > FASTAPI"
 type: reference
 status: active
 

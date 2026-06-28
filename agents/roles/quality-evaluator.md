@@ -1,5 +1,6 @@
 ---
 id: agent.quality_evaluator
+title: "Ref: AGENTS > ROLES > QUALITY-EVALUATOR"
 type: agent
 status: active
 

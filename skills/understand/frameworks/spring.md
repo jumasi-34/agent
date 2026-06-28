@@ -1,5 +1,6 @@
 ---
 id: skill.understand.spring
+title: "Ref: UNDERSTAND > FRAMEWORKS > SPRING"
 type: reference
 status: active
 

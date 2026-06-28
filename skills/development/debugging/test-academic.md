@@ -1,5 +1,6 @@
 ---
 id: skill.development.debugging.test_academic
+title: "Ref: DEVELOPMENT > DEBUGGING > TEST-ACADEMIC"
 type: reference
 status: active
 

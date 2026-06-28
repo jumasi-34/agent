@@ -2,6 +2,7 @@
 name: "guardrail"
 description: "에이전트가 코드 커밋, 푸시, 패치 배포를 가동하기 전에 이모지 존재 유무(emoji_checker.py), 커밋 메시지 표준(commit_msg_validator.py), 데이터베이스 물리 스키마(schema_validator.py)를 사전 자율 진증하는 통합 정적 가드레일 스킬입니다."
 id: skill.quality.guardrail
+title: "Skill: QUALITY > GUARDRAIL"
 type: skill
 status: active
 

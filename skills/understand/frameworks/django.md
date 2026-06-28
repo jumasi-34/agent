@@ -1,5 +1,6 @@
 ---
 id: skill.understand.django
+title: "Ref: UNDERSTAND > FRAMEWORKS > DJANGO"
 type: reference
 status: active
 

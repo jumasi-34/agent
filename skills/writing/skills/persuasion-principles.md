@@ -1,5 +1,6 @@
 ---
 id: skill.writing_skills.persuasion_principles
+title: "Ref: WRITING > SKILLS > PERSUASION-PRINCIPLES"
 type: reference
 status: active
 

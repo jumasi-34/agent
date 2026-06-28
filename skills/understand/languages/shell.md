@@ -1,5 +1,6 @@
 ---
 id: skill.understand.shell
+title: "Ref: UNDERSTAND > LANGUAGES > SHELL"
 type: reference
 status: active
 

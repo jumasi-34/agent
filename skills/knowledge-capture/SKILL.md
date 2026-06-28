@@ -2,6 +2,7 @@
 name: "knowledge-capture"
 description: "작업이 종료되는 시점에 세션의 지식을 분석하여 프로젝트 지식 그래프를 확장하는 스킬입니다. 새로운 지식을 Raw로 보존하고 Wiki 및 Index로 유기적 전파를 보증합니다."
 id: skill.knowledge_capture
+title: "Skill: SKILLS > KNOWLEDGE-CAPTURE"
 type: skill
 status: active
 

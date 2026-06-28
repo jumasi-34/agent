@@ -1,5 +1,6 @@
 ---
 id: guide.plotly_workflow_template
+title: "Ref: CONTEXT > GUIDE > PLOTLY-WORKFLOW-TEMPLATE"
 type: reference
 status: active
 

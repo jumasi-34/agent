@@ -2,6 +2,7 @@
 name: "agentmemory"
 description: "Manage agentmemory server, configurations, automatic lifecycle hooks, REST/MCP APIs, and client wiring adapters for coding agents. Use this skill when asked to explain how memory functions, configure memory environments, look up API/tool specs, inspect hooks, or run connection commands."
 id: skill.memory.core
+title: "Skill: MEMORY > CORE"
 type: skill
 status: active
 

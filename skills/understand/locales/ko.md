@@ -1,5 +1,6 @@
 ---
 id: skill.understand.ko
+title: "Ref: UNDERSTAND > LOCALES > KO"
 type: reference
 status: active
 

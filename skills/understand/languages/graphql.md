@@ -1,5 +1,6 @@
 ---
 id: skill.understand.graphql
+title: "Ref: UNDERSTAND > LANGUAGES > GRAPHQL"
 type: reference
 status: active
 

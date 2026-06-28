@@ -1,5 +1,6 @@
 ---
 id: skill.understand.nextjs
+title: "Ref: UNDERSTAND > FRAMEWORKS > NEXTJS"
 type: reference
 status: active
 

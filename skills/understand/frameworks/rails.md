@@ -1,5 +1,6 @@
 ---
 id: skill.understand.rails
+title: "Ref: UNDERSTAND > FRAMEWORKS > RAILS"
 type: reference
 status: active
 

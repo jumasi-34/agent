@@ -1,5 +1,6 @@
 ---
 id: agent.data_insights_analyst
+title: "Ref: AGENTS > ROLES > DATA-INSIGHTS-ANALYST"
 type: agent
 status: active
 

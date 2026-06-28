@@ -1,5 +1,6 @@
 ---
 id: guide.coding_templates
+title: "Ref: CONTEXT > GUIDE > CODING-TEMPLATES"
 type: reference
 status: active
 

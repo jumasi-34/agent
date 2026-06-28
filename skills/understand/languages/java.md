@@ -1,5 +1,6 @@
 ---
 id: skill.understand.java
+title: "Ref: UNDERSTAND > LANGUAGES > JAVA"
 type: reference
 status: active
 

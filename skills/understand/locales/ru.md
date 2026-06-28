@@ -1,5 +1,6 @@
 ---
 id: skill.understand.ru
+title: "Ref: UNDERSTAND > LOCALES > RU"
 type: reference
 status: active
 

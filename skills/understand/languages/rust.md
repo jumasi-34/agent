@@ -1,5 +1,6 @@
 ---
 id: skill.understand.rust
+title: "Ref: UNDERSTAND > LANGUAGES > RUST"
 type: reference
 status: active
 

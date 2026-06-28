@@ -1,5 +1,6 @@
 ---
 id: skill.development.debugging.root_cause_tracing
+title: "Ref: DEVELOPMENT > DEBUGGING > ROOT-CAUSE-TRACING"
 type: reference
 status: active
 

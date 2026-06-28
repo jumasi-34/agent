@@ -2,6 +2,7 @@
 name: "sql_analyzer"
 description: "SQL 쿼리 파일 내에 디스플레이용 한글 별칭(AS '한글')이 하드코딩되었는지, 혹은 SQL 5대 불변 규칙을 위배했는지 사전에 감지하고 정밀 진단하는 쿼리 정적 분석기입니다."
 id: skill.quality.sql
+title: "Skill: QUALITY > SQL"
 type: skill
 status: active
 

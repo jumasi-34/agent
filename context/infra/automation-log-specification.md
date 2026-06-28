@@ -1,5 +1,6 @@
 ---
 id: infra.automation_log_specification
+title: "Ref: CONTEXT > INFRA > AUTOMATION-LOG-SPECIFICATION"
 type: reference
 status: active
 

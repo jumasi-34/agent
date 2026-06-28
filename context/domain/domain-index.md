@@ -1,5 +1,6 @@
 ---
 id: domain.index
+title: "Ref: CONTEXT > DOMAIN > DOMAIN-INDEX"
 type: reference
 status: active
 

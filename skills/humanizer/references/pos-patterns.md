@@ -1,5 +1,6 @@
 ---
 id: skill.humanizer.pos_patterns
+title: "Ref: HUMANIZER > REFERENCES > POS-PATTERNS"
 type: reference
 status: active
 

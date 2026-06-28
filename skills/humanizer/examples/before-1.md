@@ -1,5 +1,6 @@
 ---
 id: skill.humanizer.before_1
+title: "Ref: HUMANIZER > EXAMPLES > BEFORE-1"
 type: reference
 status: active
 

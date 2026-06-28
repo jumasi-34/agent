@@ -1,5 +1,6 @@
 ---
 id: skill.memory.core.agents
+title: "Ref: CORE > REFERENCES > AGENTS"
 type: reference
 status: active
 

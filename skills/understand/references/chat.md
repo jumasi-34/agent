@@ -1,5 +1,6 @@
 ---
 id: skill.understand.chat
+title: "Ref: UNDERSTAND > REFERENCES > CHAT"
 type: reference
 status: active
 

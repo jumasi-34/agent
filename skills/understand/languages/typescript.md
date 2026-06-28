@@ -1,5 +1,6 @@
 ---
 id: skill.understand.typescript
+title: "Ref: UNDERSTAND > LANGUAGES > TYPESCRIPT"
 type: reference
 status: active
 

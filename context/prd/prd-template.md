@@ -1,5 +1,6 @@
 ---
 id: prd.prd_template
+title: "Ref: CONTEXT > PRD > PRD-TEMPLATE"
 type: template
 status: active
 

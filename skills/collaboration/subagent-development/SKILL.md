@@ -2,6 +2,7 @@
 name: "subagent-driven-development"
 description: "Use when executing implementation plans with independent tasks in the current session"
 id: skill.collaboration.subagent_development
+title: "Skill: COLLABORATION > SUBAGENT-DEVELOPMENT"
 type: skill
 status: active
 

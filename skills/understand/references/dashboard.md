@@ -1,5 +1,6 @@
 ---
 id: skill.understand.dashboard
+title: "Ref: UNDERSTAND > REFERENCES > DASHBOARD"
 type: reference
 status: active
 

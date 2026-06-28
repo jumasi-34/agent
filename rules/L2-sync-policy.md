@@ -1,5 +1,6 @@
 ---
 id: rule.l2.sync_policy
+title: "Ref: RULES > L2-SYNC-POLICY"
 type: rule
 status: active
 

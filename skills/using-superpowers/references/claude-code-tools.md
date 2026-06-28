@@ -1,5 +1,6 @@
 ---
 id: skill.using_superpowers.claude_code_tools
+title: "Ref: USING-SUPERPOWERS > REFERENCES > CLAUDE-CODE-TOOLS"
 type: reference
 status: active
 

@@ -1,5 +1,6 @@
 ---
 id: skill.understand.python
+title: "Ref: UNDERSTAND > LANGUAGES > PYTHON"
 type: reference
 status: active
 

@@ -1,5 +1,6 @@
 ---
 id: skill.humanizer.after_3
+title: "Ref: HUMANIZER > EXAMPLES > AFTER-3"
 type: reference
 status: active
 

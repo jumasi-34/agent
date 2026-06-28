@@ -2,6 +2,7 @@
 name: "forget"
 description: "Delete specific observations from agentmemory after showing them and getting explicit confirmation. Use when the user says 'forget this', 'delete memory', 'remove that note', or wants to scrub specific data for privacy."
 id: skill.memory.forget
+title: "Skill: MEMORY > FORGET"
 type: skill
 status: active
 

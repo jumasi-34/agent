@@ -1,5 +1,6 @@
 ---
 id: skill.collaboration.subagent_development.implementer_prompt
+title: "Ref: COLLABORATION > SUBAGENT-DEVELOPMENT > IMPLEMENTER-PROMPT"
 type: reference
 status: active
 

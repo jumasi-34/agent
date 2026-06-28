@@ -2,6 +2,7 @@
 name: "recap"
 description: "Summarize the last N agent sessions for the current project, grouped by date, with highlight observations per session. Use when the user asks 'recap', 'what have we been doing', 'today', 'this week', or wants a rollup of recent work."
 id: skill.memory.recap
+title: "Skill: MEMORY > RECAP"
 type: skill
 status: active
 

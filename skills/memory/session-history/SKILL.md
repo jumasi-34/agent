@@ -2,6 +2,7 @@
 name: "session-history"
 description: "Show what happened in recent past sessions on this project as a clean timeline. Use when the user asks 'what did we do last time', 'session history', 'past sessions', or wants an overview of previous work."
 id: skill.memory.session_history
+title: "Skill: MEMORY > SESSION-HISTORY"
 type: skill
 status: active
 

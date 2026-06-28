@@ -1,5 +1,6 @@
 ---
 id: skill.memory.core.mcp_tools
+title: "Ref: CORE > REFERENCES > MCP-TOOLS"
 type: reference
 status: active
 

@@ -1,5 +1,6 @@
 ---
 id: skill.memory.core.architecture
+title: "Ref: CORE > REFERENCES > ARCHITECTURE"
 type: reference
 status: active
 

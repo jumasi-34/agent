@@ -1,5 +1,6 @@
 ---
 id: skill.understand.gin
+title: "Ref: UNDERSTAND > FRAMEWORKS > GIN"
 type: reference
 status: active
 

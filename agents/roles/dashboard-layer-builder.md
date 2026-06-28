@@ -1,5 +1,6 @@
 ---
 id: agent.dashboard_layer_builder
+title: "Ref: AGENTS > ROLES > DASHBOARD-LAYER-BUILDER"
 type: agent
 status: active
 

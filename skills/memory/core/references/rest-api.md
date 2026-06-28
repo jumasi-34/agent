@@ -1,5 +1,6 @@
 ---
 id: skill.memory.core.rest_api
+title: "Ref: CORE > REFERENCES > REST-API"
 type: reference
 status: active
 

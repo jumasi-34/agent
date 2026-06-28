@@ -1,5 +1,6 @@
 ---
 id: skill.understand.ruby
+title: "Ref: UNDERSTAND > LANGUAGES > RUBY"
 type: reference
 status: active
 

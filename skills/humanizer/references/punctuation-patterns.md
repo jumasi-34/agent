@@ -1,5 +1,6 @@
 ---
 id: skill.humanizer.punctuation_patterns
+title: "Ref: HUMANIZER > REFERENCES > PUNCTUATION-PATTERNS"
 type: reference
 status: active
 

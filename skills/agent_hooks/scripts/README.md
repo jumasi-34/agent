@@ -1,5 +1,6 @@
 ---
 id: skill.agent_hooks.README
+title: "Ref: AGENT_HOOKS > SCRIPTS > README"
 type: reference
 status: active
 

@@ -1,5 +1,6 @@
 ---
 id: skill.humanizer.translation_ese_patterns
+title: "Ref: HUMANIZER > REFERENCES > TRANSLATION-ESE-PATTERNS"
 type: reference
 status: active
 

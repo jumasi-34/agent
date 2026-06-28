@@ -1,5 +1,6 @@
 ---
 id: skill.collaboration.handoff.EXAMPLES
+title: "Ref: COLLABORATION > HANDOFF > EXAMPLES"
 type: reference
 status: active
 

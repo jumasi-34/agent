@@ -2,6 +2,7 @@
 name: "understand"
 description: "Analyze codebases to produce interactive knowledge graphs, explaining architecture layers, component relations, domain flows, git diffs, developer onboard guides, or code-chat inquiries."
 id: skill.understand
+title: "Skill: SKILLS > UNDERSTAND"
 type: skill
 status: active
 

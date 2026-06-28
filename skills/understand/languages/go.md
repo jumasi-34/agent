@@ -1,5 +1,6 @@
 ---
 id: skill.understand.go
+title: "Ref: UNDERSTAND > LANGUAGES > GO"
 type: reference
 status: active
 

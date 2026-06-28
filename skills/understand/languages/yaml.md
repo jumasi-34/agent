@@ -1,5 +1,6 @@
 ---
 id: skill.understand.yaml
+title: "Ref: UNDERSTAND > LANGUAGES > YAML"
 type: reference
 status: active
 

@@ -1,5 +1,6 @@
 ---
 id: rule.index
+title: "Ref: RULES > RULES-INDEX"
 type: rule
 status: active
 

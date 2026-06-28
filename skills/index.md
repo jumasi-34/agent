@@ -1,5 +1,6 @@
 ---
 id: skill.index
+title: "Ref: SKILLS > INDEX"
 type: reference
 status: active
 

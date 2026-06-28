@@ -1,5 +1,6 @@
 ---
 id: skill.understand.csharp
+title: "Ref: UNDERSTAND > LANGUAGES > CSHARP"
 type: reference
 status: active
 

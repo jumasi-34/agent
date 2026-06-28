@@ -1,5 +1,6 @@
 ---
 id: skill.memory.session_history.EXAMPLES
+title: "Ref: MEMORY > SESSION-HISTORY > EXAMPLES"
 type: reference
 status: active
 

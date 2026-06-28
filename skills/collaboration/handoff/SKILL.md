@@ -2,6 +2,7 @@
 name: "handoff"
 description: "Resume the most recent agent session for the current working directory, leading with any unanswered question. Use when the user says 'where were we', 'resume', 'handoff', 'pick up where I left off', or starts a session with no fresh context."
 id: skill.collaboration.handoff
+title: "Skill: COLLABORATION > HANDOFF"
 type: skill
 status: active
 

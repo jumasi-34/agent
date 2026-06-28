@@ -1,5 +1,6 @@
 ---
 id: skill.understand.ja
+title: "Ref: UNDERSTAND > LOCALES > JA"
 type: reference
 status: active
 

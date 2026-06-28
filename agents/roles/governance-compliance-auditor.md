@@ -1,5 +1,6 @@
 ---
 id: agent.governance_compliance_auditor
+title: "Ref: AGENTS > ROLES > GOVERNANCE-COMPLIANCE-AUDITOR"
 type: agent
 status: active
 

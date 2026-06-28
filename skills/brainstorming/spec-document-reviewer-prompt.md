@@ -1,5 +1,6 @@
 ---
 id: skill.brainstorming.spec_document_reviewer_prompt
+title: "Ref: SKILLS > BRAINSTORMING > SPEC-DOCUMENT-REVIEWER-PROMPT"
 type: reference
 status: active
 

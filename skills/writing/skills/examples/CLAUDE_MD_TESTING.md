@@ -1,5 +1,6 @@
 ---
 id: skill.writing_skills.CLAUDE_MD_TESTING
+title: "Ref: SKILLS > EXAMPLES > CLAUDE_MD_TESTING"
 type: reference
 status: active
 

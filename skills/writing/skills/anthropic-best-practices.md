@@ -1,5 +1,6 @@
 ---
 id: skill.writing_skills.anthropic_best_practices
+title: "Ref: WRITING > SKILLS > ANTHROPIC-BEST-PRACTICES"
 type: reference
 status: active
 

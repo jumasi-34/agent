@@ -1,5 +1,6 @@
 ---
 id: skill.understand.sql
+title: "Ref: UNDERSTAND > LANGUAGES > SQL"
 type: reference
 status: active
 

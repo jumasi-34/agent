@@ -1,5 +1,6 @@
 ---
 id: prd.prd_hgws_return_dashboard
+title: "Ref: CONTEXT > PRD > PRD-HGWS-RETURN-DASHBOARD"
 type: specification
 status: active
 

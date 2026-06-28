@@ -1,5 +1,6 @@
 ---
 id: rule.l2.architecture
+title: "Ref: RULES > L2-ARCHITECTURE"
 type: rule
 status: active
 

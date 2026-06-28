@@ -1,5 +1,6 @@
 ---
 id: infra.hooks_specification
+title: "Ref: CONTEXT > INFRA > HOOKS-SPECIFICATION"
 type: specification
 status: active
 

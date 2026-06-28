@@ -1,5 +1,6 @@
 ---
 id: skill.agent_hooks.ncf_metrics_revamp_plan
+title: "Ref: SKILLS > AGENT_HOOKS > NCF_METRICS_REVAMP_PLAN"
 type: reference
 status: active
 

@@ -1,5 +1,6 @@
 ---
 id: infra.core_specification
+title: "Ref: CONTEXT > INFRA > CORE-SPECIFICATION"
 type: reference
 status: active
 

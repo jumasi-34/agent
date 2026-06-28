@@ -1,5 +1,6 @@
 ---
 id: skill.understand.react
+title: "Ref: UNDERSTAND > FRAMEWORKS > REACT"
 type: reference
 status: active
 

@@ -1,5 +1,6 @@
 ---
 id: skill.understand.knowledge
+title: "Ref: UNDERSTAND > REFERENCES > KNOWLEDGE"
 type: reference
 status: active
 

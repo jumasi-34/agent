@@ -1,5 +1,6 @@
 ---
 id: map.agent_skill
+title: "Ref: AGENTS > SKILL-MAP"
 type: map
 status: active
 

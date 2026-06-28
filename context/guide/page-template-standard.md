@@ -1,5 +1,6 @@
 ---
 id: guide.page_template_standard
+title: "Ref: CONTEXT > GUIDE > PAGE-TEMPLATE-STANDARD"
 type: reference
 status: active
 

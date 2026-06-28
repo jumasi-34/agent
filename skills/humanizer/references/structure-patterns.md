@@ -1,5 +1,6 @@
 ---
 id: skill.humanizer.structure_patterns
+title: "Ref: HUMANIZER > REFERENCES > STRUCTURE-PATTERNS"
 type: reference
 status: active
 

@@ -1,5 +1,6 @@
 ---
 id: skill.understand.html
+title: "Ref: UNDERSTAND > LANGUAGES > HTML"
 type: reference
 status: active
 
