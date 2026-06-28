@@ -18,7 +18,7 @@ parent: "[[context/infra/infra-index]]"
 
 related:
   - "[[context/infra/infrastructure-summary]]"
-  - "[[skills/korean_metadata/SKILL]]"
+  - "[[skills/quality/korean-metadata/SKILL]]"
 
 consumers:
   - "[[agents/roles/planner-orchestrator]]"
@@ -39,7 +39,7 @@ updated: 2026-06-28
 * **상위 개념**: [infra.readme](.agents/context/infra/infra-index.md)
 * **연관 자산**:
   - [.agents/context/guide/common-column-metadata-design.md](.agents/context/guide/common-column-metadata-design.md)
-  - [.agents/skills/korean_metadata/SKILL.md](.agents/skills/korean_metadata/SKILL.md)
+  - [.agents/skills/quality/korean-metadata/SKILL.md](.agents/skills/quality/korean-metadata/SKILL.md)
 
 ---
 
