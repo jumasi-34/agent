@@ -1,6 +1,43 @@
+---
+id: infra.hooks_specification
+type: specification
+status: active
+
+summary: >
+  품질 게이트, 에이전트 실행 로깅 및 관찰 훅, 그리고 운영 및 릴리즈 훅 규격서.
+  코드 무결성 수호 및 장애 롤백 대책을 정의한다.
+
+keywords:
+  - hooks
+  - quality-gate
+  - incident
+  - rollback
+
+parent: infra.readme
+
+related:
+  - infra.infrastructure_summary
+  - checklist.checklist_release
+  - guide.testing_verification
+
+consumers:
+  - codebase-researcher
+  - ui-reviewer
+
+updated: 2026-06-28
+---
+
 # hooks-specification.md (품질 게이트, 관찰 및 운영 릴리즈 훅 규격서)
 
-이 문서는 개발자와 AI 에이전트가 코드를 작성하고 배포 및 운영하는 전체 수명 주기 상에서 소스 코드 결함을 예방하고, 작업 이력을 투명하게 기록하며, 런타임 장애에 기민하게 대응할 수 있도록 구축된 통합 훅(Hooks) 시스템 설계 및 동작 규격을 다룹니다.
+## Overview / Connections
+* **Parent (상위 개념)**: [infra/README.md](README.md)
+* **Related (연관 문서)**:
+  * [infra/infrastructure-summary.md](infrastructure-summary.md) (인프라 전반 요약)
+  * [checklist/checklist-release.md](../checklist/checklist-release.md) (릴리즈 체크리스트)
+  * [guide/testing-verification.md](../guide/testing-verification.md) (정적 검증 가이드)
+
+---
+
 
 ---
 

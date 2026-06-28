@@ -1,4 +1,42 @@
+---
+id: prd.prd_oe_quality_issue_dashboard
+type: specification
+status: active
+
+summary: >
+  OE 품질 이슈 대시보드 개발을 위한 기획 및 사용자 시나리오 명세서.
+  글로벌 OE 고객의 품질 이슈, OEQI 지수, MTTC 종결 소요 일수를 다각도로 추적한다.
+
+keywords:
+  - oe
+  - quality-issue
+  - dashboard
+  - oeqi
+  - mttc
+
+parent: prd.readme
+
+related:
+  - prd.prd_template
+  - prd.prd_hgws_return_dashboard
+
+consumers:
+  - agent.planner_orchestrator
+  - ui-reviewer
+
+updated: 2026-06-28
+---
+
 # [PRD] OE 품질 이슈 대시보드 개발 명세서 (Draft for AI Developer Agent)
+
+## Overview / Connections
+* **Parent (상위 개념)**: [prd/README.md](README.md)
+* **Related (연관 문서)**:
+  * [prd/prd-template.md](prd-template.md) (PRD 표준 템플릿)
+  * [prd/prd-hgws-return-dashboard.md](prd-hgws-return-dashboard.md) (HGWS 반송 PRD)
+
+---
+
 
 > **[필독] AI 에이전트 수호 수칙**: 본 작업은 `L2-architecture.md`에 정의된 3-레이어 아키텍처 규칙과 프로젝트 명명 표준을 엄격히 따릅니다. 임의로 기존 프로덕션 코드를 수정해서는 안 되며, 신규 개발 파일 배치는 지정된 경로에 한정해야 합니다.
 

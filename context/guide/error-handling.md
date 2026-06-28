@@ -1,4 +1,45 @@
+---
+id: guide.error_handling
+type: reference
+status: active
+
+summary: >
+  Streamlit 화면 렌더링 시 특정 컴포넌트의 고장으로 인한 전체 크래시를 방지하기 위해, 예외를 격리하고(Error Boundary) 발생한 장애 이력을 SQLite 로그 DB에 영구 기록하는 아키텍처 및 로깅 설계 가이드라인.
+
+keywords:
+  - error-handling
+  - error-boundary
+  - logging
+  - sqlite
+  - exceptions
+
+parent: guide.readme
+
+related:
+  - rule.streamlit.widget_key
+  - skill.agent_hooks
+
+consumers:
+  - agent.planner_orchestrator
+  - agent.ui_builder
+  - agent.service_builder
+
+updated: 2026-06-28
+---
+
 # error-handling.md (UI 렌더링 예외 처리 및 SQLite 영구 로깅 설계 가이드)
+
+## Overview
+* **왜 존재하는가 (Why)**: 오류로 인해 대시보드가 통째로 마비되는 장애를 완벽히 격리하고, 발생 위치와 맥락을 SQLite 로깅을 통해 자동 추적하여 에이전트 및 인간의 신속한 디버깅 분석을 지원하기 위함입니다.
+* **언제 사용하는가 (When)**: 대시보드 내 특정 차트나 탭 렌더링에 안전장치(`st_error_boundary`)를 두거나, 서비스 데코레이터(`@log_error`)를 적용할 때, 로그 기록 테이블 스키마를 확인할 때 사용합니다.
+* **연계 실행 (Next Action)**: 에러 발생 시 SQLite 데이터가 축적되는 에이전트 런타임 훅 및 세션 관리 도구를 보려면 [agent_hooks](../../skills/agent_hooks/SKILL.md)를 참조하십시오.
+
+## Connections
+* **상위 개념**: [guide.readme](.agents/context/guide/README.md)
+* **연관 자산**:
+  - [.agents/skills/agent_hooks/SKILL.md](.agents/skills/agent_hooks/SKILL.md)
+
+---
 
 이 문서는 파이썬 및 Streamlit의 실행 구조 내에서 컴포넌트 오류 발생 시, 사용자 정보, 발생 시각, 코드 위치를 추적하여 SQLite(log DB)에 영구 저장하는 예외 격리 및 감사 로깅(Audit Logging) 표준 설계 사양을 정의합니다.
 

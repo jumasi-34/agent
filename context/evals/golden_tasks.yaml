@@ -1,3 +1,19 @@
+id: evals.golden_tasks
+type: reference
+status: active
+summary: "GoEQ BI AI 하네스의 골든 벤치마크 테스트셋 및 정량 평가지표, 병합 정책 명세"
+keywords:
+  - evals
+  - benchmark
+  - golden-tasks
+parent: concept.context
+related:
+  - evals.readme
+consumers:
+  - agent.planner_orchestrator
+  - agent.quality_evaluator
+updated: 2026-06-28
+
 version: 1
 description: "Golden benchmark tasks for the GoEQ BI AI harness."
 metrics:

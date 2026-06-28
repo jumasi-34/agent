@@ -1,6 +1,45 @@
+---
+id: checklist.reverse_sync_prevention
+type: reference
+status: active
+
+summary: >
+  역동기화 재발방지 및 자체 피드백 로그.
+  에이전트 구동 과정에서 발견된 오류(RCA, 재발방지 조치 사항)를 기록하고 자가 정제를 수행하는 지식 로그 저장소이다.
+
+keywords:
+  - checklist
+  - reverse-sync
+  - feedback-loop
+  - failure-archive
+  - rca
+
+parent: checklist.readme
+
+related:
+  - rule.l2.context_readability
+  - checklist.security
+
+consumers:
+  - agent.planner_orchestrator
+  - agent.quality_evaluator
+
+updated: 2026-06-28
+---
+
 # 역동기화 재발방지 및 자체 피드백 로그 (Reverse Sync Prevention Logs)
 
-이 파일은 에이전트 구동 과정에서 지속/누적되는 오류를 감지하여, 하네스 자체 역동기화 훅이 수립한 **근본 원인 분석(RCA)** 및 **재발방지 조치 사항**을 아카이빙하는 문서입니다. 향후 에이전트는 본 로그를 최우선 참고하여 실수를 자가 정제해야 합니다.
+## Overview
+* **왜 존재하는가 (Why)**: 개발 과정 중 에이전트가 반복해서 저지르는 아키텍처 위반, 프레임워크 옵션 오작동, 경로 연동 실패 등의 예외 이력을 수집하여 지식 개정을 가이드하고, 동일한 실수의 재발을 시스템적으로 예방하기 위함입니다.
+* **언제 사용하는가 (When)**: AI 구동 세션을 분석 및 개선하거나, 새로운 작업 브랜치를 개발하기 전 과거의 핵심 자가 치유 수칙들을 복기하기 위해 참조합니다.
+* **연계 실행 (Next Action)**: 보안 및 AI 참조 차단 영역(Exclusion Zone) 검토 수칙을 확인하려면 [checklist-security.md](.agents/context/checklist/checklist-security.md)로 이동해 수칙을 파악하십시오.
+
+## Connections
+* **상위 개념**: [.agents/context/checklist/README.md](.agents/context/checklist/README.md)
+* **연관 자산**: 
+  - [.agents/rules/L2-context-readability.md](.agents/rules/L2-context-readability.md)
+  - [.agents/context/checklist/checklist-security.md](.agents/context/checklist/checklist-security.md)
+---
 
 | 발생 일시 | RUN ID | 에이전트 | 도메인 | 에러 분류 | 근본 원인 (RCA) | 재발방지 조치 사항 |
 |---|---|---|---|---|---|---|

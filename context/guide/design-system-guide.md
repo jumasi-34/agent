@@ -1,5 +1,45 @@
+---
+id: guide.design_system_guide
+type: reference
+status: active
+
+summary: >
+  IQM+ 프로젝트의 Streamlit UI 및 Plotly 시각화 차트에 일관된 UX와 고품질 비주얼 정체성을 부여하기 위한 중앙화 디자인 시스템(색상, 폰트, 아이콘 등) 명세 가이드라인.
+
+keywords:
+  - design-system
+  - typography
+  - colors
+  - theme
+  - lucide-icons
+
+parent: guide.readme
+
+related:
+  - rule.l2.color_system
+  - guide.plotly_style_guide
+
+consumers:
+  - agent.planner_orchestrator
+  - agent.ui_builder
+
+updated: 2026-06-28
+---
+
 # IQM+ (Interactive Quality Management Plus) 통합 디자인 시스템 가이드
-> **Streamlit UI & Plotly Visualization 중앙화 명세서 (최신 정비 적용 완료)**
+
+## Overview
+* **왜 존재하는가 (Why)**: 모든 화면과 차트의 미적 룩앤필을 IBM Carbon 테마 등 단일화된 프리미엄 디자인 시스템 기준으로 일치시키고, 하드코딩 색상 및 폰트를 배제하여 관리 효율을 극대화하기 위함입니다.
+* **언제 사용하는가 (When)**: 대시보드의 레이아웃 스타일, 폰트 크기, Google Material 및 Lucide Icons 아이콘 선정, HTML/CSS 배너 제작, 또는 테마 색상을 변경할 때 참고합니다.
+* **연계 실행 (Next Action)**: 구체적인 차트 전용 Plotly 시각화 가이드를 보려면 [guide.plotly_style_guide](.agents/context/guide/plotly-style-guide.md)를 참조하십시오.
+
+## Connections
+* **상위 개념**: [guide.readme](.agents/context/guide/README.md)
+* **연관 자산**:
+  - [.agents/rules/L2-color-system.md](.agents/rules/L2-color-system.md)
+  - [.agents/context/guide/plotly-style-guide.md](.agents/context/guide/plotly-style-guide.md)
+
+---
 
 이 가이드는 IQM+ 프로젝트 내의 모든 화면(Pages)과 시각화 차트(Plotly Charts)에서 일관된 사용자 경험(UX)과 고품질의 비주얼 정체성을 유지하고, 색상 및 폰트 설정을 단일 소스(Single Source of Truth)로 중앙 관리하기 위한 개발 지침서입니다.
 

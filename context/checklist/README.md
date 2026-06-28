@@ -1,7 +1,46 @@
+---
+id: checklist.readme
+type: reference
+status: active
+
+summary: >
+  checklist/ 디렉터리 규정 마이크로 가이드라인.
+  품질 검사 및 체크리스트 레이어의 로컬 규칙과 보유 파일 정보 및 책임을 요약한다.
+
+keywords:
+  - checklist
+  - quality-gate
+  - index
+  - readme
+
+parent: concept.context
+
+related:
+  - checklist.architecture
+  - checklist.coding_standard
+  - checklist.git
+  - checklist.release
+  - checklist.security
+  - checklist.reverse_sync_prevention
+
+consumers:
+  - agent.code_reviewer
+  - agent.quality_evaluator
+
+updated: 2026-06-28
+---
+
 # checklist/ 규정
 
-이 문서는 `.agents/context/checklist/` (품질 검사 및 체크리스트 레이어) 고유의 로컬 규칙과 보유 파일 정보를 신속히 인지하기 위한 마이크로 가이드라인입니다.
+## Overview
+* **왜 존재하는가 (Why)**: 코드 리뷰 및 릴리즈 승인 단계에서 품질 검증 기준으로 활용할 5대 마스터 체크리스트와 자가 치유 피드백 로그를 한눈에 인지하고 동기화하기 위함입니다.
+* **언제 사용하는가 (When)**: 개발 완료 후 코드 리뷰를 진행하거나, 릴리즈 전에 최종 무결성을 자체 검증하고자 할 때 참고합니다.
+* **연계 실행 (Next Action)**: 아키텍처 정합성 검사 세부를 보려면 [.agents/context/checklist/checklist-architecture.md](.agents/context/checklist/checklist-architecture.md)로 이동해 지침을 파악하십시오.
 
+## Connections
+* **상위 개념**: [.agents/AGENTS.md](.agents/AGENTS.md)
+* **연관 자산**: 
+  - [.agents/context/checklist/checklist-architecture.md](.agents/context/checklist/checklist-architecture.md)
 ---
 
 ## 1. 로컬 핵심 제약 (Local Rules)

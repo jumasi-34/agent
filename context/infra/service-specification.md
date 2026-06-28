@@ -1,4 +1,47 @@
+---
+id: infra.service_specification
+type: reference
+status: active
+
+summary: >
+  service/ 서비스 레이어(쿼리 결합 실행, 집계/가공 및 Pandas 데이터프레임 생산)의 단일 레벨 플랫 구조, 설계 원칙, 캐싱(st.cache_data) 및 예외 처리 물리 사양서.
+
+keywords:
+  - service
+  - business-logic
+  - caching
+  - dataframe
+  - preprocessing
+
+parent: infra.readme
+
+related:
+  - rule.l3.service
+  - infra.queries_specification
+  - infra.pages_specification
+
+consumers:
+  - agent.planner_orchestrator
+  - agent.service_builder
+
+updated: 2026-06-28
+---
+
 # \[SERVICE\] service/ — 서비스 레이어 컨텍스트
+
+## Overview
+* **왜 존재하는가 (Why)**: SQL에서 가져온 원형 데이터에 실질적인 비즈니스 규칙과 통계 공식을 입히고, 캐싱을 적용해 최종 UI가 즉시 렌더링에 사용할 수 있는 완성도 높은 DataFrame을 생산하기 위함입니다.
+* **언제 사용하는가 (When)**: DB 커넥터로 쿼리를 실행하는 로직을 고치거나, CPK 등 파생 통계 변수를 추가하고, `st.cache_data`의 TTL 및 캐시 무효화 조건을 튜닝할 때 준수합니다.
+* **연계 실행 (Next Action)**: 생산된 DataFrame을 바탕으로 화면과 차트를 렌더링하는 UI 레이어의 스펙을 보려면 [infra.pages_specification](.agents/context/infra/pages-specification.md)을 참조하십시오.
+
+## Connections
+* **상위 개념**: [infra.readme](.agents/context/infra/README.md)
+* **연관 자산**:
+  - [.agents/rules/L3-service.md](.agents/rules/L3-service.md)
+  - [.agents/context/infra/queries-specification.md](.agents/context/infra/queries-specification.md)
+  - [.agents/context/infra/pages-specification.md](.agents/context/infra/pages-specification.md)
+
+---
 
 > **LAYER:** `service/` · 서비스 레이어 — 원시 데이터 → 집계·변환 → DataFrame 생산.
 

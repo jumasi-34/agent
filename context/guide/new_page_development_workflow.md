@@ -1,4 +1,47 @@
+---
+id: guide.new_page_development_workflow
+type: reference
+status: active
+
+summary: >
+  새로운 품질 대시보드 화면이나 신규 데이터 테이블 연계 요청 시 요구사항 분석(PRD), 데이터 분석(EDA), 3레이어 설계, 코드 생성, 품질 통과 검증 및 자동화 배포에 이르는 단계별 자율 에이전트 협업 실행 프로세스(Run-book).
+
+keywords:
+  - workflow
+  - page-development
+  - process
+  - deployment
+  - automation
+
+parent: guide.readme
+
+related:
+  - guide.3layer_development_process
+  - guide.page_template_standard
+
+consumers:
+  - agent.planner_orchestrator
+  - agent.ui_builder
+  - agent.service_builder
+
+updated: 2026-06-28
+---
+
 # new_page_development_workflow.md (신규 품질 대시보드 화면 및 시각화 개발 프로세스)
+
+## Overview
+* **왜 존재하는가 (Why)**: 신규 화면 추가 또는 대규모 마이그레이션 요구 시 단 한 단계의 데이터 검증이나 3레이어 격리 수칙도 무시되지 않도록 기획부터 검증, 푸시까지의 표준 작업 경로를 완수하기 위함입니다.
+* **언제 사용하는가 (When)**: 새로운 Streamlit 웹 애플리케이션 화면 개발을 시작하거나 대시보드 신규 탭을 대규모 기획하여 반영할 때 참조합니다.
+* **연계 실행 (Next Action)**: 구체적으로 작성해야 할 표준 PRD 문서 템플릿과 보관 위치를 파악하려면 [prd.readme](../prd/README.md)를 참조하십시오.
+
+## Connections
+* **상위 개념**: [guide.readme](.agents/context/guide/README.md)
+* **연관 자산**:
+  - [.agents/context/prd/README.md](.agents/context/prd/README.md)
+  - [.agents/context/guide/3layer-development-process.md](.agents/context/guide/3layer-development-process.md)
+  - [.agents/context/guide/page-template-standard.md](.agents/context/guide/page-template-standard.md)
+
+---
 
 이 문서는 사용자가 "새로운 품질 모니터링 화면을 추가해 달라" 또는 "신규 테이블 데이터를 연계해 달라"는 프롬프트를 건넸을 때, 여러 에이전트와 자원들이 유기적으로 체이닝되어 안전한 코드를 최종 배포하기까지 거쳐야 하는 **실행형 다단계 협업 프로세스(Run-book)**입니다.
 

@@ -1,4 +1,45 @@
+---
+id: infra.core_specification
+type: reference
+status: active
+
+summary: >
+  core/ 공용 인프라 레이어(DB 클라이언트, 파라미터 dataclass, SQL 헬퍼, 디자인 토큰 등)의 물리 구성, 세부 인터페이스, 의존성 결합 규격서.
+
+keywords:
+  - core
+  - database-client
+  - helpers
+  - design-system
+  - logging
+
+parent: infra.readme
+
+related:
+  - rule.l2.architecture
+  - infra.infrastructure_summary
+
+consumers:
+  - agent.planner_orchestrator
+  - agent.system_administrator
+
+updated: 2026-06-28
+---
+
 # \[CORE\] core/ — 공용 인프라 레이어 컨텍스트
+
+## Overview
+* **왜 존재하는가 (Why)**: 중복되는 DB 커넥터, 공통 필터 파라미터 규격, UI 디자인 시스템 토큰 등을 한 곳으로 수렴하여 전 레이어 의존성 복잡도를 제어하고 비즈니스 모듈의 간결성을 극대화하기 위함입니다.
+* **언제 사용하는가 (When)**: Snowflake/Oracle Connection Pool을 구성하거나, 공통 UI 컬러 토큰(`colors.py`)을 추가하고, 로깅 레벨 및 DB 클라이언트 아키텍처를 변경할 때 준수합니다.
+* **연계 실행 (Next Action)**: 공용 인프라 영역의 주요 5대 API 계약 및 핵심 요약을 보려면 [infra.infrastructure_summary](.agents/context/infra/infrastructure-summary.md)를 참조하십시오.
+
+## Connections
+* **상위 개념**: [infra.readme](.agents/context/infra/README.md)
+* **연관 자산**:
+  - [.agents/rules/L2-architecture.md](.agents/rules/L2-architecture.md)
+  - [.agents/context/infra/infrastructure-summary.md](.agents/context/infra/infrastructure-summary.md)
+
+---
 
 > **LAYER:** `core/` · 공용 인프라 — DB 클라이언트·파라미터 dataclass·SQL 헬퍼·설정. 모든 레이어가 의존.
 

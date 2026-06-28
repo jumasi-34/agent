@@ -1,4 +1,47 @@
+---
+id: guide.coding_templates
+type: reference
+status: active
+
+summary: >
+  UI 페이지, 서비스, plots, 쿼리 각 계층별로 준수해야 하는 파이썬 표준 소스 코드 및 주석 템플릿 가이드라인.
+
+keywords:
+  - templates
+  - coding-standard
+  - boilerplate
+  - comments
+
+parent: guide.readme
+
+related:
+  - rule.l2.naming_convention
+  - guide.3layer_development_process
+  - guide.page_template_standard
+
+consumers:
+  - agent.planner_orchestrator
+  - agent.ui_builder
+  - agent.service_builder
+
+updated: 2026-06-28
+---
+
 # 3-Layer Architecture 구조적 주석 템플릿 가이드
+
+## Overview
+* **왜 존재하는가 (Why)**: 개발자 및 AI 에이전트가 코드를 작성할 때 일관되고 통일된 주석 구조와 포맷을 보장하여 소스코드의 가독성을 최상으로 유지하기 위함입니다.
+* **언제 사용하는가 (When)**: 신규 페이지 모듈, 서비스 함수, SQL 쿼리 모듈을 신설하거나 기존 코드를 전면 리팩토링할 때 뼈대로 복사하여 사용합니다.
+* **연계 실행 (Next Action)**: 구체적인 Streamlit 표준 페이지 템플릿 상세 명세를 확인하려면 [guide.page_template_standard](.agents/context/guide/page-template-standard.md)를 참조하십시오.
+
+## Connections
+* **상위 개념**: [guide.readme](.agents/context/guide/README.md)
+* **연관 자산**:
+  - [.agents/context/guide/page-template-standard.md](.agents/context/guide/page-template-standard.md)
+  - [.agents/context/guide/page_template_standard.py](.agents/context/guide/page_template_standard.py)
+  - [.agents/context/guide/query_module_template.py](.agents/context/guide/query_module_template.py)
+
+---
 
 이 문서는 모든 개발자가 동일한 주석 블록과 정렬 구조를 표준으로 삼아 일관성 있는 소스코드를 작성하도록 유도하는 **구조적 주석 섹션(Comment Sections) 템플릿**을 정의합니다.
 

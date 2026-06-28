@@ -1,7 +1,45 @@
+---
+id: checklist.coding_standard
+type: reference
+status: active
+
+summary: >
+  L2 코드 및 데이터 전처리 코딩 표준 체크리스트.
+  명명 거버넌스, 데이터 흐름/파라미터 바인딩, 컬럼 맵핑 및 이모지 금지, Pandas 전처리 및 캐싱 등을 자체 검역하기 위한 항목을 포함한다.
+
+keywords:
+  - checklist
+  - coding-standard
+  - naming
+  - clean-code
+  - pandas
+
+parent: checklist.readme
+
+related:
+  - rule.l2.naming_convention
+  - rule.l3.service
+  - checklist.architecture
+
+consumers:
+  - agent.code_reviewer
+  - agent.quality_evaluator
+
+updated: 2026-06-28
+---
+
 # checklist-coding-standard.md (L2 코드 및 데이터 전처리 코딩 표준 체크리스트)
 
-본 문서는 명명 거버넌스, 비즈니스 상수 사용, 파라미터 전달 규칙, 그리고 Pandas 및 시각화 구현 상의 일관성을 검증하기 위한 코딩 표준 체크리스트입니다.
+## Overview
+* **왜 존재하는가 (Why)**: 코드 스타일의 불일치로 인한 가독성 저하를 방지하고, 이모지 유출 및 SQL 하드코딩 별칭으로 발생하는 런타임 결함을 사전에 자율적으로 예방하기 위함입니다.
+* **언제 사용하는가 (When)**: 클래스/함수를 설계하고 생성할 때, 혹은 Pandas 전처리 체이닝을 구성한 후 검역 단계에서 참조합니다.
+* **연계 실행 (Next Action)**: 이 체크리스트를 통과한 후 Git 형상관리 및 Rsync 동기화 규칙을 준수하는지 검증하려면 [checklist-git.md](.agents/context/checklist/checklist-git.md)를 대조해 보십시오.
 
+## Connections
+* **상위 개념**: [.agents/context/checklist/README.md](.agents/context/checklist/README.md)
+* **연관 자산**: 
+  - [.agents/rules/L2-naming-convention.md](.agents/rules/L2-naming-convention.md)
+  - [.agents/context/checklist/checklist-architecture.md](.agents/context/checklist/checklist-architecture.md)
 ---
 
 ## 1. 명명 거버넌스 및 규칙 준수

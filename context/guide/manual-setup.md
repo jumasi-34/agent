@@ -1,4 +1,45 @@
+---
+id: guide.manual_setup
+type: reference
+status: active
+
+summary: >
+  실서비스 Ubuntu 환경으로 이전 및 배포 시 AI 에이전트가 직접 제어할 수 없는 핵심 시스템 설정(환경변수, 크론탭, systemd, 오라클 클라이언트 등)의 수동 세팅 체크리스트 및 가이드라인.
+
+keywords:
+  - deployment
+  - setup
+  - ubuntu
+  - production
+  - manual
+
+parent: guide.readme
+
+related:
+  - checklist.readme
+  - infrastructure.readme
+
+consumers:
+  - agent.planner_orchestrator
+  - agent.system_administrator
+
+updated: 2026-06-28
+---
+
 # context-manual-setup.md (서비스 환경 수동 설정 및 배포 가이드라인)
+
+## Overview
+* **왜 존재하는가 (Why)**: 실서비스 배포 시 보안상의 이유나 OS 권한 제약으로 AI가 직접 제어하지 못하는 필수 인프라 설정을 사용자가 수동으로 완수하여 원활하게 런타임을 구동시키기 위함입니다.
+* **언제 사용하는가 (When)**: Ubuntu Production 서버 배포, `.env` 환경 변수 관리, Databricks/Oracle/Snowflake 커넥션 설정, systemd 백그라운드 데몬 및 crontab 스케줄러를 구성할 때 참고합니다.
+* **연계 실행 (Next Action)**: 전체 공용 인프라 사양 및 리소스를 보려면 [infrastructure.readme](../infra/README.md)를 참조하십시오.
+
+## Connections
+* **상위 개념**: [guide.readme](.agents/context/guide/README.md)
+* **연관 자산**:
+  - [.agents/context/infra/README.md](.agents/context/infra/README.md)
+  - [.agents/context/checklist/README.md](.agents/context/checklist/README.md)
+
+---
 
 본 문서는 `goeq_bi` 프로젝트의 개발 완료 후 **실서비스 환경(Ubuntu Production Server)**으로 이전 및 배포 시, AI(바이브코딩 등)가 직접 제어할 수 없는 시스템 설정 항목들을 사용자가 체계적이고 안전하게 **수동(Manual)으로 관리할 수 있도록 업무 목록을 정의하고 기록하는 전용 가이드라인**입니다.
 

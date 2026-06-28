@@ -1,7 +1,49 @@
-# 📊 데이터베이스 테이블 및 쿼리 메타데이터 명세서 (Integrated Database Metadata Specification)
+---
+id: infra.database_metadata
+type: reference
+status: active
 
-> 이 문서는 `app/core/query/query_tables_metadata.json`에 일원화 관리되는 물리적 스펙과 비즈니스 논리 매핑 정보(한글, 상수)를 바탕으로 자동 갱신된 단일 진실 공급원(SSOT) 기술 명세서입니다.
-> AI 에이전트의 정밀 코딩 및 쿼리 생성, 하네스 검증 시 스키마 무결성 판단 기준으로 사용됩니다.
+summary: >
+  Databricks 및 SQLite를 아우르는 전사 86개 테이블의 물리 경로, 컬럼명, 타입, 한글 설명 등을 포함한 통합 데이터베이스 스키마 및 쿼리 메타데이터 명세 원장.
+
+keywords:
+  - database
+  - schema
+  - tables
+  - column-metadata
+  - databricks
+  - sqlite
+
+parent: infra.readme
+
+related:
+  - infra.infrastructure_summary
+  - skill.korean_metadata
+
+consumers:
+  - agent.planner_orchestrator
+  - agent.service_builder
+
+updated: 2026-06-28
+---
+
+# 데이터베이스 테이블 및 쿼리 메타데이터 명세서 (Integrated Database Metadata Specification)
+
+## Overview
+* **왜 존재하는가 (Why)**: 물리 DB 스키마 및 한글 컬럼 디렉터리의 기준 정보를 영속 명세하여, AI 에이전트와 엔지니어가 쿼리를 안전하고 무결하게 생성하고 로직 결함을 사전 진증하게 돕기 위함입니다.
+* **언제 사용하는가 (When)**: 대시보드 화면에 필요한 데이터 원천 테이블과 컬럼 타입을 확인하고 스키마 구조를 가늠할 때 조감합니다.
+* **연계 실행 (Next Action)**: 공통 컬럼의 메타데이터 설계 가이드를 보려면 [guide.common_column_metadata_design](../guide/common-column-metadata-design.md)을 참조하십시오.
+
+## Connections
+* **상위 개념**: [infra.readme](.agents/context/infra/README.md)
+* **연관 자산**:
+  - [.agents/context/guide/common-column-metadata-design.md](.agents/context/guide/common-column-metadata-design.md)
+  - [.agents/skills/korean_metadata/SKILL.md](.agents/skills/korean_metadata/SKILL.md)
+
+---
+
+이 문서는 `app/core/query/query_tables_metadata.json`에 일원화 관리되는 물리적 스펙과 비즈니스 논리 매핑 정보(한글, 상수)를 바탕으로 자동 갱신된 단일 진실 공급원(SSOT) 기술 명세서입니다.
+AI 에이전트의 정밀 코딩 및 쿼리 생성, 하네스 검증 시 스키마 무결성 판단 기준으로 사용됩니다.
 
 ## 📈 메타데이터 통계
 - **전체 관리 테이블 수**: 86 개

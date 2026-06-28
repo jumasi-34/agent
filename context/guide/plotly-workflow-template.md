@@ -1,4 +1,46 @@
+---
+id: guide.plotly_workflow_template
+type: reference
+status: active
+
+summary: >
+  대시보드 플롯(차트)을 개발하거나 리팩토링할 때 에이전트와 엔지니어가 거쳐야 하는 5단계 시각화 개발 워크플로우와 실전 소스코드 레벨의 표준 함수 템플릿.
+
+keywords:
+  - plotly
+  - workflow
+  - boilerplate
+  - chart-template
+
+parent: guide.readme
+
+related:
+  - rule.l3.plot
+  - guide.design_system_guide
+  - guide.plotly_style_guide
+
+consumers:
+  - agent.planner_orchestrator
+  - agent.ui_builder
+
+updated: 2026-06-28
+---
+
 # Plotly 시각화 개발 워크플로우 및 표준 함수 템플릿
+
+## Overview
+* **왜 존재하는가 (Why)**: 개발자가 마주하는 다양한 데이터 차원에 대해 디자인 토큰과 가이드라인을 매끄럽게 반영한 표준 함수 템플릿을 신속히 조립해 제공함으로써 시각화 품질 편차를 극소화하기 위함입니다.
+* **언제 사용하는가 (When)**: 신규 차트 드로잉 함수를 설계하거나, 기존 plots 스크립트에 공통 레이아웃 헬퍼와 디폴트 컨피그 설정을 동적으로 주입하여 리팩토링할 때 준수합니다.
+* **연계 실행 (Next Action)**: 정립된 Plotly 스타일 가이드를 깊이 보려면 [guide.plotly_style_guide](.agents/context/guide/plotly-style-guide.md)를 참조하십시오.
+
+## Connections
+* **상위 개념**: [guide.readme](.agents/context/guide/README.md)
+* **연관 자산**:
+  - [.agents/rules/L3-plot.md](.agents/rules/L3-plot.md)
+  - [.agents/context/guide/design-system-guide.md](.agents/context/guide/design-system-guide.md)
+  - [.agents/context/guide/plotly-style-guide.md](.agents/context/guide/plotly-style-guide.md)
+
+---
 
 본 문서는 사용자의 요청에 따라 대시보드 플롯(차트)을 개발하거나 리팩토링할 때 에이전트와 개발자가 준수해야 하는 실행 워크플로우와 소스코드 레벨의 표준 함수 템플릿을 정의합니다.
 

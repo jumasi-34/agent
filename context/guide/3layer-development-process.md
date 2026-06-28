@@ -1,5 +1,47 @@
+---
+id: guide.3layer_development_process
+type: reference
+status: active
+
+summary: >
+  3레이어 아키텍처(UI-Service-Query)를 준수하여 신규 페이지를 개발하거나 리팩토링할 때 따르는 표준 개발 프로세스 절차서.
+
+keywords:
+  - 3-layer
+  - architecture
+  - workflow
+  - process
+
+parent: guide.readme
+
+related:
+  - rule.l2.architecture
+  - guide.coding_templates
+  - guide.new_page_development_workflow
+
+consumers:
+  - agent.planner_orchestrator
+  - agent.ui_builder
+  - agent.service_builder
+
+updated: 2026-06-28
+---
+
 # [PROCESS] 3레이어 준수 개발 및 리팩토링 표준 절차서
-> **Standard Development Process for 3-Layer Architecture Integration & Page Refactoring**
+
+## Overview
+* **왜 존재하는가 (Why)**: 개발의 질서를 세워 에이전트와 엔지니어가 동일한 아키텍처 원칙 하에 무결한 대시보드를 유지 및 구현할 수 있게 하기 위함입니다.
+* **언제 사용하는가 (When)**: 대시보드 화면 설계, 비즈니스 가공 레이어 작성, SQL 쿼리층 분리 등의 작업에 돌입할 때 개발 절차를 검토하기 위해 사용합니다.
+* **연계 실행 (Next Action)**: 구체적인 페이지 템플릿과 코드를 보려면 [guide.coding_templates](.agents/context/guide/coding-templates.md)를 연이어 참조하십시오.
+
+## Connections
+* **상위 개념**: [guide.readme](.agents/context/guide/README.md)
+* **연관 자산**:
+  - [.agents/rules/L2-architecture.md](.agents/rules/L2-architecture.md)
+  - [.agents/context/guide/new_page_development_workflow.md](.agents/context/guide/new_page_development_workflow.md)
+  - [.agents/context/guide/coding-templates.md](.agents/context/guide/coding-templates.md)
+
+---
 
 이 문서는 대대적인 신규 페이지 생성 및 기존 화면 전체 리팩토링을 안전하고 체계적으로 전개하기 위한 **3-레이어 아키텍처 개발 프로세스 표준 절차서(Standard Operating Procedure)**입니다. 
 

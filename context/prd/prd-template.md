@@ -1,4 +1,40 @@
+---
+id: prd.prd_template
+type: template
+status: active
+
+summary: >
+  기획 요구사양서 작성 시 문서 무결성과 구조를 동일하게 유지하기 위한 표준 설계 템플릿.
+
+keywords:
+  - prd
+  - template
+  - specifications
+  - layout
+
+parent: prd.readme
+
+related:
+  - prd.prd_hgws_return_dashboard
+  - prd.prd_oe_quality_issue_dashboard
+
+consumers:
+  - agent.planner_orchestrator
+  - ui-reviewer
+
+updated: 2026-06-28
+---
+
 # [PRD] - {기능명 / 화면명} 개발 명세서
+
+## Overview / Connections
+* **Parent (상위 개념)**: [prd/README.md](README.md)
+* **Related (연관 문서)**:
+  * [prd/prd-hgws-return-dashboard.md](prd-hgws-return-dashboard.md) (HGWS 반송 PRD)
+  * [prd/prd-oe-quality-issue-dashboard.md](prd-oe-quality-issue-dashboard.md) (OE 품질 이슈 PRD)
+
+---
+
 
 > **[필독] AI 에이전트 수호 수칙**: 본 작업은 `L2-architecture.md`에 정의된 3-레이어 아키텍처 규칙과 프로젝트 명명 표준을 엄격히 따릅니다. 임의로 기존 프로덕션 코드를 수정해서는 안 되며, 신규 개발 파일 배치는 지정된 경로에 한정해야 합니다.
 

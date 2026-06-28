@@ -1,4 +1,45 @@
+---
+id: guide.testing_verification
+type: reference
+status: active
+
+summary: >
+  실 물리 DB 통신 차단 및 인메모리 모의(Mocking) 객체 활용 등의 테스트 격리 원칙, 단위 테스트 설계법, verify_code.py 컴파일 정적 분석 검증 가이드라인.
+
+keywords:
+  - testing
+  - mocking
+  - verification
+  - unit-test
+  - compilation
+
+parent: guide.readme
+
+related:
+  - checklist.release
+  - skill.verification-before-completion
+
+consumers:
+  - agent.planner_orchestrator
+  - agent.quality_evaluator
+
+updated: 2026-06-28
+---
+
 # testing-verification.md (테스트 격리 및 코드 무결성 검증 통합 가이드)
+
+## Overview
+* **왜 존재하는가 (Why)**: 실 운영 자산이나 물리 DB 오염 없이 로컬 샌드박스 영역 내에서 온전히 테스트를 구동하고, 배포 직전 구체적인 정적 컴파일(`py_compile`) 성공 데이터 등 코드 무결성 증거(Evidence)를 획득하기 위함입니다.
+* **언제 사용하는가 (When)**: 신규 비즈니스 서비스나 플롯 검증용 독립 테스트 파일(`tests/` 하위)을 설계하거나, 릴리즈 최종 단계에서 빌드가 통과하는지 자가 진단할 때 활용합니다.
+* **연계 실행 (Next Action)**: 작업 종료 전 무결함을 확증하는 정량 정적 검증 스킬을 다루려면 [verification-before-completion](../../skills/verification-before-completion/SKILL.md)을 참조하십시오.
+
+## Connections
+* **상위 개념**: [guide.readme](.agents/context/guide/README.md)
+* **연관 자산**:
+  - [.agents/context/checklist/checklist-release.md](.agents/context/checklist/checklist-release.md)
+  - [.agents/skills/verification-before-completion/SKILL.md](.agents/skills/verification-before-completion/SKILL.md)
+
+---
 
 이 문서는 시스템의 안정적인 작동을 유지하기 위하여 개발자 및 AI 에이전트가 안전하게 테스트 코드를 설계 및 기동하고, 물리 데이터베이스 통신 없이 독립 격리 테스트를 수행하며, 표준 라이브러리 기반 정적 분석 스크립트를 통해 소스 코드 무결성을 검증하는 지침을 제공합니다.
 

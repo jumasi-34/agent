@@ -1,4 +1,45 @@
+---
+id: infra.automation_log_specification
+type: reference
+status: active
+
+summary: >
+  백그라운드 크론 작업이나 수동 자동화 작업의 실행 시점, 소요 시간, 방식(CRON/Manual), 성공/실패 여부를 SQLite log.db 내 user_automation_log 테이블에 일관되게 기록하고 관리하는 자동화 실행 로그 체계 설계서.
+
+keywords:
+  - automation-log
+  - logging
+  - database-schema
+  - sqlite
+  - auditing
+
+parent: infra.readme
+
+related:
+  - guide.error_handling
+  - skill.agent_hooks
+
+consumers:
+  - agent.planner_orchestrator
+  - agent.system_administrator
+
+updated: 2026-06-28
+---
+
 # Automation Execution Log System Specification (자동화 실행 로그 수집 체계 설계서)
+
+## Overview
+* **왜 존재하는가 (Why)**: 백그라운드 자동화 배치 작업이나 수동 데이터 취합 시 소요 시간과 성공 여부를 실시간 추적하고, 장애 스택 트레이스를 기록하여 실행 흐름의 투명성과 장애 감내성을 보장하기 위함입니다.
+* **언제 사용하는가 (When)**: 집계 크론 배치(`agg_sellin.py` 등)의 실행 로그를 SQLite에 영구 적재하는 스키마나 가동 소스를 수정하고 관리할 때 참고합니다.
+* **연계 실행 (Next Action)**: 대시보드 에러 처리 및 SQLite 통합 로깅 메커니즘을 상세히 보려면 [guide.error_handling](../guide/error-handling.md)을 참조하십시오.
+
+## Connections
+* **상위 개념**: [infra.readme](.agents/context/infra/README.md)
+* **연관 자산**:
+  - [.agents/context/guide/error-handling.md](.agents/context/guide/error-handling.md)
+  - [.agents/skills/agent_hooks/SKILL.md](.agents/skills/agent_hooks/SKILL.md)
+
+---
 
 이 문서는 시스템 내 자동 집계, 이메일 발송, 수동 집계 등 다양한 **Automation(자동화)** 기능이 수행될 때, 실행 시점, 소요 시간, 실행 방식(CRON/Manual), 사용자 정보 및 결과를 일관되게 기록하고 추적하기 위한 **Automation Execution Log** 체계의 상세 설계 사양을 정의합니다.
 

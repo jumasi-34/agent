@@ -1,7 +1,44 @@
+---
+id: checklist.git
+type: reference
+status: active
+
+summary: >
+  L1 Git 형상관리 및 동기화 정책 체크리스트.
+  한국어 커밋 메시지, 대괄호 태그, 원자적 커밋, Dual Push 수칙, local.assets/local.data 단방향 동기화 검사 항목을 담고 있다.
+
+keywords:
+  - checklist
+  - git
+  - commit-msg
+  - sync-policy
+  - rsync
+
+parent: checklist.readme
+
+related:
+  - rule.l1.git
+  - rule.l2.sync_policy
+
+consumers:
+  - agent.code_reviewer
+  - agent.quality_evaluator
+
+updated: 2026-06-28
+---
+
 # checklist-git.md (L1 Git 형상관리 및 동기화 정책 체크리스트)
 
-본 문서는 프로젝트 형상 관리 일관성을 유지하고 변경 추적 및 자산의 안전한 동기화를 완벽히 수행하기 위한 Git 커밋 및 동기화 정책 체크리스트입니다.
+## Overview
+* **왜 존재하는가 (Why)**: 커밋 이력 추적 및 협업 컨텍스트 유실을 막고, rsync 동기화 오작동으로 인한 프로덕션 데이터 손실을 원천적으로 막기 위함입니다.
+* **언제 사용하는가 (When)**: 형상관리에 커밋을 반영하기 직전, 혹은 로컬 및 원격 rsync 명령을 구동하기 전에 확인합니다.
+* **연계 실행 (Next Action)**: 소스 코드를 최종 프로덕션에 적용 및 릴리즈하기 직전에 검역해야 할 전체 게이트는 [checklist-release.md](.agents/context/checklist/checklist-release.md)를 통해 점검하십시오.
 
+## Connections
+* **상위 개념**: [.agents/context/checklist/README.md](.agents/context/checklist/README.md)
+* **연관 자산**: 
+  - [.agents/rules/L1-git.md](.agents/rules/L1-git.md)
+  - [.agents/rules/L2-sync-policy.md](.agents/rules/L2-sync-policy.md)
 ---
 
 ## 1. 커밋 메시지 표준 규칙

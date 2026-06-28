@@ -1,8 +1,48 @@
+---
+id: prd.readme
+type: reference
+status: active
+
+summary: >
+  prd/ 요구 사양 및 유스케이스 정의서 레이어 고유의 로컬 규칙과 파일 정보를 요약한다.
+
+keywords:
+  - prd
+  - specification
+  - requirements
+  - dashboard
+  - template
+
+parent: concept.context
+
+related:
+  - prd.prd_template
+  - prd.prd_hgws_return_dashboard
+  - prd.prd_oe_quality_issue_dashboard
+
+consumers:
+  - agent.planner_orchestrator
+  - agent.system_administrator
+
+updated: 2026-06-28
+---
+
 # prd/ 규정
 
-이 문서는 `.agents/context/prd/` (요구 사양 및 유스케이스 정의서 레이어) 고유의 로컬 규칙과 파일 정보를 신속히 인지하기 위한 마이크로 가이드라인입니다.
+## Overview
+* **왜 존재하는가 (Why)**: 사용자의 요구 정의, 비즈니스 목적, 화면 설계 와이어프레임(Mockup), 사용자 인터랙션 흐름 등 기획적 설계에만 오롯이 집중하여, 무분별한 소스 개발을 방지하고 일관된 설계 사상을 수립하기 위함입니다.
+* **언제 사용하는가 (When)**: 신규 기능의 요구사양을 수립하거나 기존 대시보드 화면 및 비즈니스 조건을 보강할 때 활용합니다.
+* **연계 실행 (Next Action)**: 기획 요구사양서 작성을 하려면 [prd.prd_template](prd-template.md)를 참조하십시오.
+
+## Connections
+* **상위 개념**: [.agents/AGENTS.md](.agents/AGENTS.md)
+* **하위 자산**:
+  - [prd-template.md](prd-template.md)
+  - [prd-hgws-return-dashboard.md](prd-hgws-return-dashboard.md)
+  - [prd-oe-quality-issue-dashboard.md](prd-oe-quality-issue-dashboard.md)
 
 ---
+
 
 ## 1. 로컬 핵심 제약 (Local Rules)
 

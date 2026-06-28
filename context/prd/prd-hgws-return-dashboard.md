@@ -1,4 +1,42 @@
+---
+id: prd.prd_hgws_return_dashboard
+type: specification
+status: active
+
+summary: >
+  HGWS 리턴 현황 및 생산기반 PPM 대시보드 개발을 위한 기획 및 사용자 시나리오 명세서.
+  특정 품질 리턴코드를 추적하고 실 생산량 데이터를 매핑하여 PPM 지표를 산출한다.
+
+keywords:
+  - hgws
+  - ppm
+  - dashboard
+  - returns
+  - claim
+
+parent: prd.readme
+
+related:
+  - prd.prd_template
+  - prd.prd_oe_quality_issue_dashboard
+
+consumers:
+  - agent.planner_orchestrator
+  - ui-reviewer
+
+updated: 2026-06-28
+---
+
 # [PRD] HGWS 리턴 현황 및 생산기반 PPM 대시보드 개발 명세서 (Draft)
+
+## Overview / Connections
+* **Parent (상위 개념)**: [prd/README.md](README.md)
+* **Related (연관 문서)**:
+  * [prd/prd-template.md](prd-template.md) (PRD 표준 템플릿)
+  * [prd/prd-oe-quality-issue-dashboard.md](prd-oe-quality-issue-dashboard.md) (OE 품질 이슈 PRD)
+
+---
+
 
 > **[필독] AI 에이전트 수호 수칙**: 본 작업은 [L2-architecture.md](.agents/rules/L2-architecture.md)에 정의된 3-레이어 아키텍처 규칙과 프로젝트 명명 표준을 엄격히 따릅니다. 임의로 기존 프로덕션 코드를 수정해서는 안 되며, 신규 개발 파일 배치는 지정된 경로에 한정해야 합니다. UI 페이지 내 모든 이모지 사용은 금지되며, 대신 Google Material Symbols (`:material/icon_name:`) 가이드라인을 준수합니다.
 

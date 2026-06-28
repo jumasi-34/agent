@@ -1,7 +1,44 @@
+---
+id: checklist.security
+type: reference
+status: active
+
+summary: >
+  릴리즈 및 에이전트 구동 보안 검토 체크리스트.
+  자격 정보 평문 보관 여부 검사, note/ 차단 점검, runs/ 격리 상태 확인, 최소 권한 계정 및 SQL Injection 방지 검사를 포함한다.
+
+keywords:
+  - checklist
+  - security
+  - secret-key
+  - sql-injection
+  - protection
+
+parent: checklist.readme
+
+related:
+  - checklist.architecture
+  - checklist.git
+
+consumers:
+  - agent.code_reviewer
+  - agent.quality_evaluator
+
+updated: 2026-06-28
+---
+
 # checklist-security.md (릴리즈 및 에이전트 구동 보안 검토 체크리스트)
 
-본 문서는 자율 품질 의사결정 시스템의 릴리즈 배포 및 AI 에이전트 구동 과정에서 컨텍스트, 시스템 데이터, 데이터베이스 자격 정보 등이 유출되는 것을 차단하고 안전 장치(Safety Guardrails)를 보장하기 위한 보안 지침서입니다.
+## Overview
+* **왜 존재하는가 (Why)**: 보안 자격 정보의 평문 유출, AI 참조 차단 영역(note/)의 노출, 그리고 SQL Injection이나 데이터베이스 불필요 쓰기 등 잠재적인 위협 요소를 원천 봉쇄하여 시스템 안정성을 담보하기 위함입니다.
+* **언제 사용하는가 (When)**: 신규 DB 접속 모듈을 추가하거나, 릴리즈 배포 검증 게이트를 적용할 때 상시 대조합니다.
+* **연계 실행 (Next Action)**: 보안 검토를 마친 뒤, 자가 치유 피드백 이력을 검토하려면 [reverse-sync-prevention.md](.agents/context/checklist/reverse-sync-prevention.md)의 오류 목록을 확인하십시오.
 
+## Connections
+* **상위 개념**: [.agents/context/checklist/README.md](.agents/context/checklist/README.md)
+* **연관 자산**: 
+  - [.agents/context/checklist/checklist-git.md](.agents/context/checklist/checklist-git.md)
+  - [.agents/context/checklist/reverse-sync-prevention.md](.agents/context/checklist/reverse-sync-prevention.md)
 ---
 
 ## 1. 목적

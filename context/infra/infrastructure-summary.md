@@ -1,4 +1,45 @@
+---
+id: infra.infrastructure_summary
+type: reference
+status: active
+
+summary: >
+  API 계약, 인증/권한, 과금/비용, 다중 DB 커넥션, 하네스 보안 등 시스템 내 구축된 5대 핵심 인프라 영역의 아키텍처 및 불변 규칙 명세서.
+
+keywords:
+  - infra
+  - api-contract
+  - db-connection
+  - security
+  - billing
+
+parent: infra.readme
+
+related:
+  - infra.environment
+  - infra.database_metadata
+
+consumers:
+  - agent.planner_orchestrator
+  - agent.system_administrator
+
+updated: 2026-06-28
+---
+
 # infrastructure-summary.md (공용 인프라스트럭처 연합 요약서)
+
+## Overview
+* **왜 존재하는가 (Why)**: API 계약, 물리적 DB 연결, 보안 및 비용 정책의 불변 조건을 명확히 명시함으로써, 개발 중 시스템 기본 구조가 깨지는 회귀 결함을 방지하기 위함입니다.
+* **언제 사용하는가 (When)**: 3레이어 간의 데이터 전달 인터페이스를 변경하거나, 멀티 데이터베이스 연동 환경(Databricks/Oracle/Snowflake)을 설정 및 튜닝할 때 참조합니다.
+* **연계 실행 (Next Action)**: 구체적인 데이터베이스 스키마 및 컬럼 정보 원장을 대조하려면 [infra.database_metadata](.agents/context/infra/database-metadata.md)를 연이어 확인하십시오.
+
+## Connections
+* **상위 개념**: [infra.readme](.agents/context/infra/README.md)
+* **연관 자산**:
+  - [.agents/context/infra/database-metadata.md](.agents/context/infra/database-metadata.md)
+  - [.agents/context/infra/environment.md](.agents/context/infra/environment.md)
+
+---
 
 이 문서는 시스템 내에 구축된 5대 핵심 인프라 영역(API 계약, 인증/권한, 과금/비용, 다중 DB 커넥션, 하네스 보안)의 **핵심 규칙, 불변 조건, 민감 소스 코드 파일 정보 및 필수 테스트 시나리오**를 단일화하여 통합 영속 관리하는 공용 인프라 연합 요약서(SSOT)입니다.
 

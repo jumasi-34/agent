@@ -1,5 +1,47 @@
+---
+id: guide.plotly_style_guide
+type: reference
+status: active
+
+summary: >
+  피겨 빌딩 라이프사이클 통일(go.Figure 선언 후 add_trace/update_layout 단계적 조립), 인라인 폰트 및 스타일 수치 하드코딩 배제, 호버 템플릿(Hover-First) 명시 등 Plotly 시각화 코드 작성 표준 가이드라인.
+
+keywords:
+  - plotly
+  - visualization
+  - charts
+  - hover-template
+  - styling
+
+parent: guide.readme
+
+related:
+  - rule.l3.plot
+  - guide.design_system_guide
+  - guide.plotly_workflow_template
+
+consumers:
+  - agent.planner_orchestrator
+  - agent.ui_builder
+
+updated: 2026-06-28
+---
+
 # Plotly 시각화 코드 작성 표준 가이드라인
-> **Plotly Styling & Structure Standardization Manual (Trace/Layout 조립 방식 표준화)**
+
+## Overview
+* **왜 존재하는가 (Why)**: Plotly 시각화 코드의 파편화(안티패턴)를 해소하고, 호버 스타일, 범례, 색상, 레이아웃을 디자인 토큰과 1:1로 매핑하여 고품질의 완성도 높은 차트를 보증하기 위함입니다.
+* **언제 사용하는가 (When)**: Plotly 차트를 그리는 plots 파일(`*_plots.py`)을 설계하거나, 호버 정보 가독성을 고도화하고 레이아웃을 리팩토링할 때 준수합니다.
+* **연계 실행 (Next Action)**: 구체적인 고품질 Plotly 차트 생성 절차와 템플릿을 확인하려면 [guide.plotly_workflow_template](.agents/context/guide/plotly-workflow-template.md)를 참조하십시오.
+
+## Connections
+* **상위 개념**: [guide.readme](.agents/context/guide/README.md)
+* **연관 자산**:
+  - [.agents/rules/L3-plot.md](.agents/rules/L3-plot.md)
+  - [.agents/context/guide/design-system-guide.md](.agents/context/guide/design-system-guide.md)
+  - [.agents/context/guide/plotly-workflow-template.md](.agents/context/guide/plotly-workflow-template.md)
+
+---
 
 프로젝트 내 시각화(Plots) 코드가 개발자마다 각기 다른 기법으로 작성되어 코드 리뷰, 공통 스타일 유지보수 및 테마 스위칭 시 많은 공수가 발생하고 있습니다. 본 표준 가이드라인은 코드 검토 효율성을 높이고 시각화 완성도를 상향 평준화하기 위한 **엄격한 스타일 통일 규칙**을 규정합니다.
 

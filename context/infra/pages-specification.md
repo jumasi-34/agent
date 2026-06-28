@@ -1,4 +1,47 @@
+---
+id: infra.pages_specification
+type: reference
+status: active
+
+summary: >
+  pages/ UI 레이어(Streamlit 화면 렌더링, 레이아웃 및 1:1 plots 차트 생성)의 파일 명명 규칙, 7단계 표준 구조 제어 흐름, 컴포넌트 렌더링 물리 명세서.
+
+keywords:
+  - pages
+  - streamlit
+  - ui-layer
+  - plots
+  - naming-convention
+
+parent: infra.readme
+
+related:
+  - rule.l3.dashboard
+  - infra.service_specification
+  - guide.page_template_standard
+
+consumers:
+  - agent.planner_orchestrator
+  - agent.ui_builder
+
+updated: 2026-06-28
+---
+
 # \[PAGES\] pages/ — UI 레이어 컨텍스트
+
+## Overview
+* **왜 존재하는가 (Why)**: 사용자 필터 입력 제어와 탭 레이아웃, Plots 시각화 분할 구조를 물리 계층 컨텍스트로 격리하여 프레젠테이션 계층의 결합도를 제어하고 비주얼을 신속히 구현하기 위함습니다.
+* **언제 사용하는가 (When)**: Streamlit 페이지 구성을 고치거나, UI 레이어 전용 명명 규칙 및 컨트롤러 실행 제어 흐름을 진단할 때 준수합니다.
+* **연계 실행 (Next Action)**: 구체적인 Streamlit UI 템플릿과 7단계 렌더링 가이드를 보려면 [guide.page_template_standard](../guide/page-template-standard.md)를 참조하십시오.
+
+## Connections
+* **상위 개념**: [infra.readme](.agents/context/infra/README.md)
+* **연관 자산**:
+  - [.agents/rules/L3-dashboard.md](.agents/rules/L3-dashboard.md)
+  - [.agents/context/guide/page-template-standard.md](.agents/context/guide/page-template-standard.md)
+  - [.agents/context/infra/service-specification.md](.agents/context/infra/service-specification.md)
+
+---
 
 > **LAYER:** `pages/` · UI 레이어 — Streamlit 화면 렌더링·사용자 입력 처리·데이터 시각화.
 

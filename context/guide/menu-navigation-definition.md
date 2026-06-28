@@ -1,4 +1,44 @@
+---
+id: guide.menu_navigation_definition
+type: reference
+status: active
+
+summary: >
+  CQ-BI 애플리케이션의 9대 메뉴 카테고리(Dashboard, Analysis, Plant, Part, System 등)의 상세 정의와 Streamlit 폴더 접두사 및 네비게이션 매핑 표준 가이드라인.
+
+keywords:
+  - menu
+  - navigation
+  - categories
+  - mapping-standard
+
+parent: guide.readme
+
+related:
+  - rule.l3.dashboard
+  - guide.new_page_development_workflow
+
+consumers:
+  - agent.planner_orchestrator
+  - agent.ui_builder
+
+updated: 2026-06-28
+---
+
 # 메뉴 카테고리 정의 및 페이지 매핑 가이드 (Menu Navigation Specification)
+
+## Overview
+* **왜 존재하는가 (Why)**: Streamlit 멀티 페이지 네비게이션 구조에서 물리 폴더 위치와 논리 메뉴 카테고리 간의 이격을 방지하고, 화면 탐색의 물리-논리 일관성을 완벽히 사수하기 위함입니다.
+* **언제 사용하는가 (When)**: 신규 Streamlit 페이지 파일을 추가하거나, 기존 메뉴의 소속 카테고리를 변경하고 네비게이션 순서를 재정렬할 때 참고합니다.
+* **연계 실행 (Next Action)**: 신규 페이지 개발 시 거치는 표준 화면 설계 워크플로우를 보려면 [guide.new_page_development_workflow](.agents/context/guide/new_page_development_workflow.md)를 참조하십시오.
+
+## Connections
+* **상위 개념**: [guide.readme](.agents/context/guide/README.md)
+* **연관 자산**:
+  - [.agents/rules/L3-dashboard.md](.agents/rules/L3-dashboard.md)
+  - [.agents/context/guide/new_page_development_workflow.md](.agents/context/guide/new_page_development_workflow.md)
+
+---
 
 이 문서는 CQ-BI 애플리케이션의 네비게이션 메뉴 구조를 체계적으로 관리하기 위해 각 **카테고리별 명확한 정의**와 **페이지 매핑 표준**을 수립한 단일 진실 공급원(SSOT) 문서입니다.
 

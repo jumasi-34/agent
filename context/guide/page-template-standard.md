@@ -1,6 +1,49 @@
+---
+id: guide.page_template_standard
+type: reference
+status: active
+
+summary: >
+  Streamlit 화면 컨트롤러 파일(*_page.py) 작성 시 준수해야 하는 7단계 표준 구조(Page Config, Load State, Sidebar, Main tabs, Render) 및 디자인/아키텍처 가이드라인.
+
+keywords:
+  - streamlit
+  - ui-standard
+  - layout
+  - template
+  - page-controller
+
+parent: guide.readme
+
+related:
+  - rule.l3.dashboard
+  - guide.coding_templates
+  - guide.new_page_development_workflow
+
+consumers:
+  - agent.planner_orchestrator
+  - agent.ui_builder
+
+updated: 2026-06-28
+---
+
 # Streamlit UI Page Naming & Architectural Template Standard
 
-이 가이드는 모든 대시보드 화면 컨트롤러 파일(`*_page.py`)이 일관된 품질을 확보하고 높은 가독성과 유지보수성을 가질 수 있도록 개발 표준과 구조적 코드 템플릿을 정의합니다.
+## Overview
+* **왜 존재하는가 (Why)**: 모든 대시보드 화면 컨트롤러가 정립된 7단계 개발 표준 순서와 3레이어 물리 격리 규칙을 만족하도록 함으로써 UI 계층의 구조적 일관성과 최상의 유지보수 가독성을 확보하기 위함입니다.
+* **언제 사용하는가 (When)**: 신규 Streamlit 페이지 모듈(`*_page.py`)을 설계하거나, 복잡해진 화면의 컴포넌트 렌더링 순서 및 필터 구조를 리팩토링할 때 준수합니다.
+* **연계 실행 (Next Action)**: 즉시 복사하여 사용할 수 있는 실물 파이썬 템플릿을 확인하려면 [guide.page_template_standard_py](.agents/context/guide/page_template_standard.py) 코드를 확인하십시오. (상대 경로: [page_template_standard.py](.agents/context/guide/page_template_standard.py))
+
+## Connections
+* **상위 개념**: [guide.readme](.agents/context/guide/README.md)
+* **연관 자산**:
+  - [.agents/rules/L3-dashboard.md](.agents/rules/L3-dashboard.md)
+  - [.agents/context/guide/coding-templates.md](.agents/context/guide/coding-templates.md)
+  - [.agents/context/guide/page_template_standard.py](.agents/context/guide/page_template_standard.py)
+
+---
+
+이 가이드는 모든 대시보드 화면 컨트롤러 파일(`*_page.py`)이 일관된 품질을 확보하고 높은 가독성과 유지보수성을 가질 수 있도록 개발 표준과 구조적 코드 템클릿을 정의합니다.
 
 이 문서는 프로젝트의 UI 설계 단일 진실 공급원(SSOT)의 일부이며, 개발을 시작하기 전에 반드시 탐독하고 준수해야 합니다.
 

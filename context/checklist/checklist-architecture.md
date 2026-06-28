@@ -1,7 +1,43 @@
+---
+id: checklist.architecture
+type: reference
+status: active
+
+summary: >
+  L2 3-레이어 아키텍처 및 모듈 격리 체크리스트.
+  파일 배치 규칙, 레이어 격리, 파일 1:1 대칭 매핑 등을 정적으로 자가 진증하기 위한 항목들을 담고 있다.
+
+keywords:
+  - checklist
+  - architecture
+  - layer-isolation
+  - modularity
+
+parent: checklist.readme
+
+related:
+  - rule.l2.architecture
+  - checklist.coding_standard
+
+consumers:
+  - agent.code_reviewer
+  - agent.quality_evaluator
+
+updated: 2026-06-28
+---
+
 # checklist-architecture.md (L2 3-레이어 아키텍처 및 모듈 격리 체크리스트)
 
-본 문서는 프로젝트 아키텍처의 지속 가능한 확장성과 일관성을 유지하기 위해 코드베이스 전반의 파일 구조, 레이어 격리 수준, 그리고 의존성 제약 조건을 검증하는 체크리스트입니다.
+## Overview
+* **왜 존재하는가 (Why)**: 개발 중 실수로 아키텍처 격벽을 허물어 UI와 DB가 강결합되는 스파게티 코드가 작성되는 것을 미연에 방지하고, 일률적인 구조적 정합성을 검증하기 위함입니다.
+* **언제 사용하는가 (When)**: 개발 완료 후 PR을 생성하기 전이나, 에이전트 자율 코드 검역을 수행할 때 체크리스트 항목을 전수 확인합니다.
+* **연계 실행 (Next Action)**: 아키텍처 정합성을 통과한 뒤 구체적인 코딩 표준(명명 규칙 등)을 준증하려면 [checklist-coding-standard.md](.agents/context/checklist/checklist-coding-standard.md)를 확인하십시오.
 
+## Connections
+* **상위 개념**: [.agents/context/checklist/README.md](.agents/context/checklist/README.md)
+* **연관 자산**: 
+  - [.agents/rules/L2-architecture.md](.agents/rules/L2-architecture.md)
+  - [.agents/context/checklist/checklist-coding-standard.md](.agents/context/checklist/checklist-coding-standard.md)
 ---
 
 ## 1. 3-레이어 파일 배치 규칙

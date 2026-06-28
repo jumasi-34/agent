@@ -1,4 +1,45 @@
+---
+id: infra.environment
+type: reference
+status: active
+
+summary: >
+  WSL2 로컬 개발환경과 Ubuntu 리눅스 Production 실서비스 환경 간의 하드웨어, OS 사양, Python 패키지 버전(Miniconda), 오라클 및 Databricks 드라이버 구성 정합성 보고 가이드라인.
+
+keywords:
+  - environment
+  - system-spec
+  - python-packages
+  - wsl2
+  - miniconda
+
+parent: infra.readme
+
+related:
+  - infra.infrastructure_summary
+  - guide.manual_setup
+
+consumers:
+  - agent.planner_orchestrator
+  - agent.system_administrator
+
+updated: 2026-06-28
+---
+
 # context-environment.md (개발 및 서비스 환경 정합성 보고서)
+
+## Overview
+* **왜 존재하는가 (Why)**: 로컬 개발 환경과 실제 운영 환경 간의 패키지 버전 이격이나 드라이버 설정 차이를 사전에 식별하여 배포 시의 시스템 비호환 런타임 오류를 완벽히 차단하기 위함입니다.
+* **언제 사용하는가 (When)**: 신규 파이썬 라이브러리를 추가하거나, 실서버 배포 중 라이브러리 충돌이 의심될 때, Miniconda 가상환경 구성을 동기화할 때 참조합니다.
+* **연계 실행 (Next Action)**: 구체적인 운영 서버 배포 매뉴얼과 수동 배포 단계를 보려면 [guide.manual_setup](../guide/manual-setup.md)을 참조하십시오.
+
+## Connections
+* **상위 개념**: [infra.readme](.agents/context/infra/README.md)
+* **연관 자산**:
+  - [.agents/context/guide/manual-setup.md](.agents/context/guide/manual-setup.md)
+  - [.agents/context/infra/infrastructure-summary.md](.agents/context/infra/infrastructure-summary.md)
+
+---
 
 본 문서는 `goeq_bi` 프로젝트의 **WSL2 로컬 개발환경**과 **Ubuntu 리눅스 실서비스 환경**의 시스템 사양, 패키지 구성, 네트워크 엔드포인트 및 동기화 상태를 정밀 분석하고 기록하기 위한 개발환경 정보 아키텍처 가이드입니다. 
 

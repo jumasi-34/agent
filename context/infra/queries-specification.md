@@ -1,4 +1,45 @@
+---
+id: infra.queries_specification
+type: reference
+status: active
+
+summary: >
+  queries/ 레포지토리 레이어(SQL 문자열 생성 전용, DB 실행 권한 배제)의 설계 철학, 쿼리 도구 매뉴얼, 물리 아키텍처 및 인터페이스 물리적 구현 사양서.
+
+keywords:
+  - queries
+  - sql
+  - repository-layer
+  - cte
+  - query-filter
+
+parent: infra.readme
+
+related:
+  - rule.l3.query
+  - infra.service_specification
+
+consumers:
+  - agent.planner_orchestrator
+  - agent.service_builder
+
+updated: 2026-06-28
+---
+
 # \[QUERIES\] queries/ — 레포지토리 레이어 컨텍스트
+
+## Overview
+* **왜 존재하는가 (Why)**: SQL 문자열의 조립을 완벽히 별도 계층으로 격리하여 물리적인 데이터베이스 실행 구문과 비즈니스 로직 연산을 엄격하게 분리하기 위함입니다.
+* **언제 사용하는가 (When)**: DB 테이블 조회 SQL을 가공하거나, 동적 필터링을 위한 `QueryFilter` 헬퍼 적용, 또는 새로운 쿼리 모듈(`q_*.py`)을 작성할 때 준수합니다.
+* **연계 실행 (Next Action)**: 쿼리 결과를 가져와 가공하는 서비스 레이어 물리 사양을 보려면 [infra.service_specification](.agents/context/infra/service-specification.md)을 참조하십시오.
+
+## Connections
+* **상위 개념**: [infra.readme](.agents/context/infra/README.md)
+* **연관 자산**:
+  - [.agents/rules/L3-query.md](.agents/rules/L3-query.md)
+  - [.agents/context/infra/service-specification.md](.agents/context/infra/service-specification.md)
+
+---
 
 > **LAYER:** `queries/` · 레포지토리 레이어 — SQL 문자열 생성 전용. DB 실행 없음.
 

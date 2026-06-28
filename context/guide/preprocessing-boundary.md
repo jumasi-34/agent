@@ -1,5 +1,47 @@
+---
+id: guide.preprocessing_boundary
+type: reference
+status: active
+
+summary: >
+  비즈니스 로직 전처리(Service-Level Preprocessing)와 시각화 전처리(Plot-Level Preprocessing) 간의 엄격한 데이터 흐름 경계(Boundary) 정의서.
+
+keywords:
+  - preprocessing
+  - data-flow
+  - boundary
+  - separation-of-concerns
+
+parent: guide.readme
+
+related:
+  - rule.l3.service
+  - rule.l3.plot
+  - guide.3layer_development_process
+
+consumers:
+  - agent.planner_orchestrator
+  - agent.ui_builder
+  - agent.service_builder
+
+updated: 2026-06-28
+---
+
 # IQM+ 데이터 전처리 및 시각화 전처리 경계 정의 가이드라인
-> **Data Preprocessing & Plot-Specific Preprocessing Boundary Specification**
+
+## Overview
+* **왜 존재하는가 (Why)**: SQL에서 반환하는 순수 영문 물리 컬럼명과 UI 및 플롯에서 사용하는 디스플레이 명칭/포맷 설정 간의 역할을 명확히 격리(SOP)하여, 비즈니스 계산 로직의 단위 테스트 가능성을 극대화하기 위함입니다.
+* **언제 사용하는가 (When)**: DB 원천 데이터 처리 로직을 수정하거나, 대시보드 탭에 복잡한 통계 가공(예: CPK 연산, 가중 평균)을 추가할 때 준수합니다.
+* **연계 실행 (Next Action)**: 구체적인 SQL 쿼리 설계 표준을 보려면 [rule.l3.query](.agents/rules/L3-query.md)를 연이어 참조하십시오.
+
+## Connections
+* **상위 개념**: [guide.readme](.agents/context/guide/README.md)
+* **연관 자산**:
+  - [.agents/rules/L3-service.md](.agents/rules/L3-service.md)
+  - [.agents/rules/L3-plot.md](.agents/rules/L3-plot.md)
+  - [.agents/rules/L3-query.md](.agents/rules/L3-query.md)
+
+---
 
 이 명세서는 IQM+ 프로젝트 내에서 데이터가 가공되는 흐름을 투명하게 규격화하고, **비즈니스 로직 전처리(Service-Level Preprocessing)**와 **시각화 전처리(Plot-Level Preprocessing)** 간의 엄격한 경계(Boundary)를 설계하기 위한 아키텍처 가이드입니다. 
 
