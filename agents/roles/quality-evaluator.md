@@ -13,18 +13,17 @@ keywords:
   - scoring
   - gate
 
-parent: map.agents
+parent: "[[agents/agents]]"
 
 related:
-  - map.agent_skill
-  - rule.l2.architecture
-  - agent.code_reviewer
+  - "[[agents/skill-map]]"
+  - "[[rules/L2-architecture]]"
+  - "[[agents/roles/code-reviewer]]"
 
 consumers:
-  - agent.quality_evaluator
+  - "[[agents/roles/quality-evaluator]]"
 
-updated: 2026-06-28
----
+updated: 2026-06-28---
 
 # quality-evaluator.md (CQ-BI Quality Evaluator Agent 상세 명세서)
 

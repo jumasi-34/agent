@@ -5,16 +5,15 @@ id: skill.writing_wiki
 type: skill
 status: active
 
-parent: skill.index
+parent: "[[skills/index]]"
 
 related:
-  - skill.index
+  - "[[skills/index]]"
 
 consumers:
   - agent.all
 
-updated: 2026-06-28
----
+updated: 2026-06-28---
 # Skill. Writing Wiki (프로젝트 이해를 위한 Wiki 작성 표준)
 
 ## Overview / Connections

@@ -5,16 +5,15 @@ id: skill.korean_metadata
 type: skill
 status: active
 
-parent: skill.index
+parent: "[[skills/index]]"
 
 related:
-  - skill.index
+  - "[[skills/index]]"
 
 consumers:
   - agent.all
 
-updated: 2026-06-28
----
+updated: 2026-06-28---
 # korean_metadata (디스플레이용 한글 메타데이터 생성 및 매핑 스킬)
 
 ## Overview / Connections

@@ -13,18 +13,17 @@ keywords:
   - design-system
   - logging
 
-parent: infra.index
+parent: "[[context/infra/infra-index]]"
 
 related:
-  - rule.l2.architecture
-  - infra.infrastructure_summary
+  - "[[rules/L2-architecture]]"
+  - "[[context/infra/infrastructure-summary]]"
 
 consumers:
-  - agent.planner_orchestrator
+  - "[[agents/roles/planner-orchestrator]]"
   - agent.system_administrator
 
-updated: 2026-06-28
----
+updated: 2026-06-28---
 
 # \[CORE\] core/ — 공용 인프라 레이어 컨텍스트
 

@@ -5,17 +5,16 @@ id: skill.sql_analyzer
 type: skill
 status: active
 
-parent: skill.index
+parent: "[[skills/index]]"
 
 related:
-  - skill.index
-  - infra.queries_specification
+  - "[[skills/index]]"
+  - "[[context/infra/queries-specification]]"
 
 consumers:
   - agent.all
 
-updated: 2026-06-28
----
+updated: 2026-06-28---
 # sql_analyzer (SQL 쿼리 정적 분석 스킬)
 
 ## Overview / Connections

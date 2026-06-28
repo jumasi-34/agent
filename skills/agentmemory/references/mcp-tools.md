@@ -6,10 +6,9 @@ status: active
 summary: >
   Mcp Tools 참조 및 가이드 명세서.
 
-parent: skill.agentmemory
+parent: "[[skills/agentmemory/SKILL]]"
 
-updated: 2026-06-28
----
+updated: 2026-06-28---
 # agentmemory MCP 도구 세트 및 파라미터
 
 * **Parent (상위 스킬)**: [SKILL.md](../SKILL.md)

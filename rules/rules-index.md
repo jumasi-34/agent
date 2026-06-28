@@ -16,24 +16,23 @@ keywords:
 parent: concept.home
 
 related:
-  - rule.l1.git
-  - rule.l2.architecture
-  - rule.l2.business_constants
-  - rule.l2.color_system
-  - rule.l2.context_readability
-  - rule.l2.naming_convention
-  - rule.l2.sync_policy
-  - rule.l3.dashboard
-  - rule.l3.plot
-  - rule.l3.query
-  - rule.l3.service
+  - "[[rules/L1-git]]"
+  - "[[rules/L2-architecture]]"
+  - "[[rules/L2-business-constants]]"
+  - "[[rules/L2-color-system]]"
+  - "[[rules/L2-context-readability]]"
+  - "[[rules/L2-naming-convention]]"
+  - "[[rules/L2-sync-policy]]"
+  - "[[rules/L3-dashboard]]"
+  - "[[rules/L3-plot]]"
+  - "[[rules/L3-query]]"
+  - "[[rules/L3-service]]"
 
 consumers:
-  - agent.planner_orchestrator
-  - agent.quality_evaluator
+  - "[[agents/roles/planner-orchestrator]]"
+  - "[[agents/roles/quality-evaluator]]"
 
-updated: 2026-06-28
----
+updated: 2026-06-28---
 
 # rules/ 규정
 

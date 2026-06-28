@@ -14,18 +14,17 @@ keywords:
   - local-data
   - local-assets
 
-parent: rule.index
+parent: "[[rules/rules-index]]"
 
 related:
-  - rule.l1.git
-  - rule.l2.context_readability
+  - "[[rules/L1-git]]"
+  - "[[rules/L2-context-readability]]"
 
 consumers:
-  - agent.planner_orchestrator
-  - agent.quality_evaluator
+  - "[[agents/roles/planner-orchestrator]]"
+  - "[[agents/roles/quality-evaluator]]"
 
-updated: 2026-06-28
----
+updated: 2026-06-28---
 
 # L2-sync-policy.md (L2 로컬 폴더 동기화 및 Rsync 운영 규칙)
 

@@ -14,18 +14,17 @@ keywords:
   - sync-policy
   - rsync
 
-parent: checklist.index
+parent: "[[context/checklist/checklist-index]]"
 
 related:
-  - rule.l1.git
-  - rule.l2.sync_policy
+  - "[[rules/L1-git]]"
+  - "[[rules/L2-sync-policy]]"
 
 consumers:
-  - agent.code_reviewer
-  - agent.quality_evaluator
+  - "[[agents/roles/code-reviewer]]"
+  - "[[agents/roles/quality-evaluator]]"
 
-updated: 2026-06-28
----
+updated: 2026-06-28---
 
 # checklist-git.md (L1 Git 형상관리 및 동기화 정책 체크리스트)
 

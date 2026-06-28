@@ -14,18 +14,17 @@ keywords:
   - failure-archive
   - rca
 
-parent: checklist.index
+parent: "[[context/checklist/checklist-index]]"
 
 related:
-  - rule.l2.context_readability
-  - checklist.security
+  - "[[rules/L2-context-readability]]"
+  - "[[context/checklist/checklist-security]]"
 
 consumers:
-  - agent.planner_orchestrator
-  - agent.quality_evaluator
+  - "[[agents/roles/planner-orchestrator]]"
+  - "[[agents/roles/quality-evaluator]]"
 
-updated: 2026-06-28
----
+updated: 2026-06-28---
 
 # 역동기화 재발방지 및 자체 피드백 로그 (Reverse Sync Prevention Logs)
 

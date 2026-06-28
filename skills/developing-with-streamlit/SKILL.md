@@ -5,17 +5,16 @@ id: skill.developing_with_streamlit
 type: skill
 status: active
 
-parent: skill.index
+parent: "[[skills/index]]"
 
 related:
-  - skill.index
+  - "[[skills/index]]"
   - rule.streamlit.widget_key
 
 consumers:
   - agent.all
 
-updated: 2026-06-28
----
+updated: 2026-06-28---
 # Developing with Streamlit
 
 ## Overview / Connections

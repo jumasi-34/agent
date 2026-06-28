@@ -16,16 +16,15 @@ keywords:
 parent: concept.home
 
 related:
-  - prd.prd_template
-  - prd.prd_hgws_return_dashboard
-  - prd.prd_oe_quality_issue_dashboard
+  - "[[context/prd/prd-template]]"
+  - "[[context/prd/prd-hgws-return-dashboard]]"
+  - "[[context/prd/prd-oe-quality-issue-dashboard]]"
 
 consumers:
-  - agent.planner_orchestrator
+  - "[[agents/roles/planner-orchestrator]]"
   - agent.system_administrator
 
-updated: 2026-06-28
----
+updated: 2026-06-28---
 
 # prd/ 규정
 

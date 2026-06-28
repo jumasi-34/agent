@@ -13,18 +13,17 @@ keywords:
   - production
   - manual
 
-parent: guide.index
+parent: "[[context/guide/guide-index]]"
 
 related:
   - checklist.readme
   - infrastructure.readme
 
 consumers:
-  - agent.planner_orchestrator
+  - "[[agents/roles/planner-orchestrator]]"
   - agent.system_administrator
 
-updated: 2026-06-28
----
+updated: 2026-06-28---
 
 # context-manual-setup.md (서비스 환경 수동 설정 및 배포 가이드라인)
 

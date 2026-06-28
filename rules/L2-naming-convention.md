@@ -14,21 +14,20 @@ keywords:
   - database-columns
   - functional-standards
 
-parent: rule.index
+parent: "[[rules/rules-index]]"
 
 related:
-  - rule.l2.architecture
-  - rule.l3.query
-  - rule.l3.service
-  - rule.l3.dashboard
-  - rule.l3.plot
+  - "[[rules/L2-architecture]]"
+  - "[[rules/L3-query]]"
+  - "[[rules/L3-service]]"
+  - "[[rules/L3-dashboard]]"
+  - "[[rules/L3-plot]]"
 
 consumers:
-  - agent.planner_orchestrator
-  - agent.quality_evaluator
+  - "[[agents/roles/planner-orchestrator]]"
+  - "[[agents/roles/quality-evaluator]]"
 
-updated: 2026-06-28
----
+updated: 2026-06-28---
 
 # L2-naming-convention.md (L2 코드베이스 명명 규칙 표준)
 

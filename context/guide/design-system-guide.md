@@ -13,18 +13,17 @@ keywords:
   - theme
   - lucide-icons
 
-parent: guide.index
+parent: "[[context/guide/guide-index]]"
 
 related:
-  - rule.l2.color_system
-  - guide.plotly_style_guide
+  - "[[rules/L2-color-system]]"
+  - "[[context/guide/plotly-style-guide]]"
 
 consumers:
-  - agent.planner_orchestrator
+  - "[[agents/roles/planner-orchestrator]]"
   - agent.ui_builder
 
-updated: 2026-06-28
----
+updated: 2026-06-28---
 
 # IQM+ (Interactive Quality Management Plus) 통합 디자인 시스템 가이드
 

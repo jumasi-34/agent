@@ -14,18 +14,17 @@ keywords:
   - emoji-check
   - wsl-link
 
-parent: rule.index
+parent: "[[rules/rules-index]]"
 
 related:
-  - rule.l1.git
-  - rule.l2.naming_convention
+  - "[[rules/L1-git]]"
+  - "[[rules/L2-naming-convention]]"
 
 consumers:
-  - agent.planner_orchestrator
-  - agent.quality_evaluator
+  - "[[agents/roles/planner-orchestrator]]"
+  - "[[agents/roles/quality-evaluator]]"
 
-updated: 2026-06-28
----
+updated: 2026-06-28---
 
 # L2-context-readability.md (L2 컨텍스트 및 문서 가독성 규칙)
 

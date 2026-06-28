@@ -5,16 +5,15 @@ id: skill.agentmemory
 type: skill
 status: active
 
-parent: skill.index
+parent: "[[skills/index]]"
 
 related:
-  - skill.index
+  - "[[skills/index]]"
 
 consumers:
   - agent.all
 
-updated: 2026-06-28
----
+updated: 2026-06-28---
 # agentmemory 통합 가이드라인 (agentmemory)
 
 ## Overview / Connections

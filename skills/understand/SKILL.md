@@ -5,16 +5,15 @@ id: skill.understand
 type: skill
 status: active
 
-parent: skill.index
+parent: "[[skills/index]]"
 
 related:
-  - skill.index
+  - "[[skills/index]]"
 
 consumers:
   - agent.all
 
-updated: 2026-06-28
----
+updated: 2026-06-28---
 # 코드베이스 분석 및 지식 그래프 모델링 통합 가이드라인 (understand)
 
 ## Overview / Connections

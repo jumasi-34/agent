@@ -6,10 +6,9 @@ status: active
 summary: >
   Pos Patterns 참조 및 가이드 명세서.
 
-parent: skill.humanizer
+parent: "[[skills/humanizer/SKILL]]"
 
-updated: 2026-06-28
----
+updated: 2026-06-28---
 # 품사 다양성 패턴 (11-13)
 
 * **Parent (상위 스킬)**: [SKILL.md](../SKILL.md)

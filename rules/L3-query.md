@@ -14,19 +14,18 @@ keywords:
   - cte
   - database
 
-parent: rule.index
+parent: "[[rules/rules-index]]"
 
 related:
-  - rule.l2.naming_convention
-  - rule.l3.service
+  - "[[rules/L2-naming-convention]]"
+  - "[[rules/L3-service]]"
 
 consumers:
-  - agent.planner_orchestrator
-  - agent.data_layer_builder
+  - "[[agents/roles/planner-orchestrator]]"
+  - "[[agents/roles/data-layer-builder]]"
   - agent.query_reviewer
 
-updated: 2026-06-28
----
+updated: 2026-06-28---
 
 # L3-query.md (L3 쿼리 레이어 개발 규칙)
 

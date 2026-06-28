@@ -13,18 +13,17 @@ keywords:
   - unit-test
   - compilation
 
-parent: guide.index
+parent: "[[context/guide/guide-index]]"
 
 related:
-  - checklist.release
+  - "[[context/checklist/checklist-release]]"
   - skill.verification-before-completion
 
 consumers:
-  - agent.planner_orchestrator
-  - agent.quality_evaluator
+  - "[[agents/roles/planner-orchestrator]]"
+  - "[[agents/roles/quality-evaluator]]"
 
-updated: 2026-06-28
----
+updated: 2026-06-28---
 
 # testing-verification.md (테스트 격리 및 코드 무결성 검증 통합 가이드)
 

@@ -6,10 +6,9 @@ status: active
 summary: >
   Domain 참조 및 가이드 명세서.
 
-parent: skill.understand
+parent: "[[skills/understand/SKILL]]"
 
-updated: 2026-06-28
----
+updated: 2026-06-28---
 # 비즈니스 도메인 지식 흐름 추출 가이드라인 (understand-domain)
 
 * **Parent (상위 스킬)**: [SKILL.md](../SKILL.md)

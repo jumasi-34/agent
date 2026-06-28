@@ -6,10 +6,9 @@ status: active
 summary: >
   Test Academic 참조 및 가이드 명세서.
 
-parent: skill.systematic_debugging
+parent: "[[skills/systematic-debugging/SKILL]]"
 
-updated: 2026-06-28
----
+updated: 2026-06-28---
 # Academic Test: Systematic Debugging Skill
 
 * **Parent (상위 스킬)**: [SKILL.md](./SKILL.md)

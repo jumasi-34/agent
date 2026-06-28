@@ -6,10 +6,9 @@ status: active
 summary: >
   Antigravity Tools 참조 및 가이드 명세서.
 
-parent: skill.using_superpowers
+parent: "[[skills/using-superpowers/SKILL]]"
 
-updated: 2026-06-28
----
+updated: 2026-06-28---
 # Antigravity CLI (`agy`) Tool Mapping
 
 * **Parent (상위 스킬)**: [SKILL.md](../SKILL.md)

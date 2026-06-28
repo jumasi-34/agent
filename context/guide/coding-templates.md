@@ -12,20 +12,19 @@ keywords:
   - boilerplate
   - comments
 
-parent: guide.index
+parent: "[[context/guide/guide-index]]"
 
 related:
-  - rule.l2.naming_convention
-  - guide.3layer_development_process
-  - guide.page_template_standard
+  - "[[rules/L2-naming-convention]]"
+  - "[[context/guide/3layer-development-process]]"
+  - "[[context/guide/page-template-standard]]"
 
 consumers:
-  - agent.planner_orchestrator
+  - "[[agents/roles/planner-orchestrator]]"
   - agent.ui_builder
   - agent.service_builder
 
-updated: 2026-06-28
----
+updated: 2026-06-28---
 
 # 3-Layer Architecture 구조적 주석 템플릿 가이드
 

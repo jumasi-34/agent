@@ -13,18 +13,17 @@ keywords:
   - verification
   - production-ready
 
-parent: checklist.index
+parent: "[[context/checklist/checklist-index]]"
 
 related:
-  - checklist.architecture
-  - checklist.coding_standard
+  - "[[context/checklist/checklist-architecture]]"
+  - "[[context/checklist/checklist-coding-standard]]"
 
 consumers:
-  - agent.code_reviewer
-  - agent.quality_evaluator
+  - "[[agents/roles/code-reviewer]]"
+  - "[[agents/roles/quality-evaluator]]"
 
-updated: 2026-06-28
----
+updated: 2026-06-28---
 
 # checklist-release.md (L1 릴리즈 및 빌드 정합성 체크리스트)
 

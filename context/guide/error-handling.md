@@ -13,19 +13,18 @@ keywords:
   - sqlite
   - exceptions
 
-parent: guide.index
+parent: "[[context/guide/guide-index]]"
 
 related:
   - rule.streamlit.widget_key
-  - skill.agent_hooks
+  - "[[skills/agent_hooks/SKILL]]"
 
 consumers:
-  - agent.planner_orchestrator
+  - "[[agents/roles/planner-orchestrator]]"
   - agent.ui_builder
   - agent.service_builder
 
-updated: 2026-06-28
----
+updated: 2026-06-28---
 
 # error-handling.md (UI 렌더링 예외 처리 및 SQLite 영구 로깅 설계 가이드)
 

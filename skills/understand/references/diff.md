@@ -6,10 +6,9 @@ status: active
 summary: >
   Diff 참조 및 가이드 명세서.
 
-parent: skill.understand
+parent: "[[skills/understand/SKILL]]"
 
-updated: 2026-06-28
----
+updated: 2026-06-28---
 # Git Diff 분석 및 점진 분석 가이드라인 (understand-diff)
 
 * **Parent (상위 스킬)**: [SKILL.md](../SKILL.md)

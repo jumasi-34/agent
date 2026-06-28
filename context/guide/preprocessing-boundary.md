@@ -12,20 +12,19 @@ keywords:
   - boundary
   - separation-of-concerns
 
-parent: guide.index
+parent: "[[context/guide/guide-index]]"
 
 related:
-  - rule.l3.service
-  - rule.l3.plot
-  - guide.3layer_development_process
+  - "[[rules/L3-service]]"
+  - "[[rules/L3-plot]]"
+  - "[[context/guide/3layer-development-process]]"
 
 consumers:
-  - agent.planner_orchestrator
+  - "[[agents/roles/planner-orchestrator]]"
   - agent.ui_builder
   - agent.service_builder
 
-updated: 2026-06-28
----
+updated: 2026-06-28---
 
 # IQM+ 데이터 전처리 및 시각화 전처리 경계 정의 가이드라인
 

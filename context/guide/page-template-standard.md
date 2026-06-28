@@ -13,19 +13,18 @@ keywords:
   - template
   - page-controller
 
-parent: guide.index
+parent: "[[context/guide/guide-index]]"
 
 related:
-  - rule.l3.dashboard
-  - guide.coding_templates
-  - guide.new_page_development_workflow
+  - "[[rules/L3-dashboard]]"
+  - "[[context/guide/coding-templates]]"
+  - "[[context/guide/new_page_development_workflow]]"
 
 consumers:
-  - agent.planner_orchestrator
+  - "[[agents/roles/planner-orchestrator]]"
   - agent.ui_builder
 
-updated: 2026-06-28
----
+updated: 2026-06-28---
 
 # Streamlit UI Page Naming & Architectural Template Standard
 

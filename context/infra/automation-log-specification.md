@@ -13,18 +13,17 @@ keywords:
   - sqlite
   - auditing
 
-parent: infra.index
+parent: "[[context/infra/infra-index]]"
 
 related:
-  - guide.error_handling
-  - skill.agent_hooks
+  - "[[context/guide/error-handling]]"
+  - "[[skills/agent_hooks/SKILL]]"
 
 consumers:
-  - agent.planner_orchestrator
+  - "[[agents/roles/planner-orchestrator]]"
   - agent.system_administrator
 
-updated: 2026-06-28
----
+updated: 2026-06-28---
 
 # Automation Execution Log System Specification (자동화 실행 로그 수집 체계 설계서)
 

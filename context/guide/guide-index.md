@@ -15,27 +15,26 @@ keywords:
 parent: concept.home
 
 related:
-  - guide.3layer_development_process
-  - guide.coding_templates
-  - guide.common_column_metadata_design
-  - guide.design_system_guide
-  - guide.error_handling
-  - guide.manual_setup
-  - guide.menu_navigation_definition
-  - guide.new_page_development_workflow
-  - guide.page_template_standard
-  - guide.plotly_style_guide
-  - guide.plotly_workflow_template
-  - guide.preprocessing_boundary
-  - guide.testing_verification
+  - "[[context/guide/3layer-development-process]]"
+  - "[[context/guide/coding-templates]]"
+  - "[[context/guide/common-column-metadata-design]]"
+  - "[[context/guide/design-system-guide]]"
+  - "[[context/guide/error-handling]]"
+  - "[[context/guide/manual-setup]]"
+  - "[[context/guide/menu-navigation-definition]]"
+  - "[[context/guide/new_page_development_workflow]]"
+  - "[[context/guide/page-template-standard]]"
+  - "[[context/guide/plotly-style-guide]]"
+  - "[[context/guide/plotly-workflow-template]]"
+  - "[[context/guide/preprocessing-boundary]]"
+  - "[[context/guide/testing-verification]]"
 
 consumers:
-  - agent.planner_orchestrator
+  - "[[agents/roles/planner-orchestrator]]"
   - agent.ui_builder
   - agent.service_builder
 
-updated: 2026-06-28
----
+updated: 2026-06-28---
 
 # guide/ 규정
 

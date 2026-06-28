@@ -16,14 +16,13 @@ keywords:
 parent: concept.design_system
 
 related:
-  - rule.l3.dashboard
-  - rule.l3.plot
+  - "[[rules/L3-dashboard]]"
+  - "[[rules/L3-plot]]"
 
 consumers:
-  - agent.dashboard_layer_builder
+  - "[[agents/roles/dashboard-layer-builder]]"
 
-updated: 2026-06-28
----
+updated: 2026-06-28---
 
 # L2-color-system.md (L2 대시보드 컬러 및 시각화 디자인 시스템 규칙)
 

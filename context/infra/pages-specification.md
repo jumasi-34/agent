@@ -13,19 +13,18 @@ keywords:
   - plots
   - naming-convention
 
-parent: infra.index
+parent: "[[context/infra/infra-index]]"
 
 related:
-  - rule.l3.dashboard
-  - infra.service_specification
-  - guide.page_template_standard
+  - "[[rules/L3-dashboard]]"
+  - "[[context/infra/service-specification]]"
+  - "[[context/guide/page-template-standard]]"
 
 consumers:
-  - agent.planner_orchestrator
+  - "[[agents/roles/planner-orchestrator]]"
   - agent.ui_builder
 
-updated: 2026-06-28
----
+updated: 2026-06-28---
 
 # \[PAGES\] pages/ — UI 레이어 컨텍스트
 

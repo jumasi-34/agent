@@ -13,18 +13,17 @@ keywords:
   - cte
   - query-filter
 
-parent: infra.index
+parent: "[[context/infra/infra-index]]"
 
 related:
-  - rule.l3.query
-  - infra.service_specification
+  - "[[rules/L3-query]]"
+  - "[[context/infra/service-specification]]"
 
 consumers:
-  - agent.planner_orchestrator
+  - "[[agents/roles/planner-orchestrator]]"
   - agent.service_builder
 
-updated: 2026-06-28
----
+updated: 2026-06-28---
 
 # \[QUERIES\] queries/ — 레포지토리 레이어 컨텍스트
 

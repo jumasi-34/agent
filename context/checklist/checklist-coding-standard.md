@@ -14,19 +14,18 @@ keywords:
   - clean-code
   - pandas
 
-parent: checklist.index
+parent: "[[context/checklist/checklist-index]]"
 
 related:
-  - rule.l2.naming_convention
-  - rule.l3.service
-  - checklist.architecture
+  - "[[rules/L2-naming-convention]]"
+  - "[[rules/L3-service]]"
+  - "[[context/checklist/checklist-architecture]]"
 
 consumers:
-  - agent.code_reviewer
-  - agent.quality_evaluator
+  - "[[agents/roles/code-reviewer]]"
+  - "[[agents/roles/quality-evaluator]]"
 
-updated: 2026-06-28
----
+updated: 2026-06-28---
 
 # checklist-coding-standard.md (L2 코드 및 데이터 전처리 코딩 표준 체크리스트)
 

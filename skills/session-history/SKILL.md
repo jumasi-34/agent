@@ -5,16 +5,15 @@ id: skill.session_history
 type: skill
 status: active
 
-parent: skill.index
+parent: "[[skills/index]]"
 
 related:
-  - skill.index
+  - "[[skills/index]]"
 
 consumers:
   - agent.all
 
-updated: 2026-06-28
----
+updated: 2026-06-28---
 The user wants an overview of recent sessions on this project.
 
 ## Quick start

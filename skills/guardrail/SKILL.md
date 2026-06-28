@@ -5,16 +5,15 @@ id: skill.guardrail
 type: skill
 status: active
 
-parent: skill.index
+parent: "[[skills/index]]"
 
 related:
-  - skill.index
+  - "[[skills/index]]"
 
 consumers:
   - agent.all
 
-updated: 2026-06-28
----
+updated: 2026-06-28---
 # guardrail (통합 자가 배포 가드레일 스킬)
 
 ## Overview / Connections

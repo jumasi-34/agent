@@ -13,18 +13,17 @@ keywords:
   - wsl2
   - miniconda
 
-parent: infra.index
+parent: "[[context/infra/infra-index]]"
 
 related:
-  - infra.infrastructure_summary
-  - guide.manual_setup
+  - "[[context/infra/infrastructure-summary]]"
+  - "[[context/guide/manual-setup]]"
 
 consumers:
-  - agent.planner_orchestrator
+  - "[[agents/roles/planner-orchestrator]]"
   - agent.system_administrator
 
-updated: 2026-06-28
----
+updated: 2026-06-28---
 
 # context-environment.md (개발 및 서비스 환경 정합성 보고서)
 

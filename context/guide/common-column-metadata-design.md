@@ -12,18 +12,17 @@ keywords:
   - common-columns
   - ssot
 
-parent: guide.index
+parent: "[[context/guide/guide-index]]"
 
 related:
-  - skill.korean_metadata
-  - rule.l2.naming_convention
+  - "[[skills/korean_metadata/SKILL]]"
+  - "[[rules/L2-naming-convention]]"
 
 consumers:
-  - agent.planner_orchestrator
+  - "[[agents/roles/planner-orchestrator]]"
   - agent.service_builder
 
-updated: 2026-06-28
----
+updated: 2026-06-28---
 
 # 글로벌 공통 컬럼 메타데이터 일괄 업데이트 시스템 설계서 (Common Column Metadata Sync)
 

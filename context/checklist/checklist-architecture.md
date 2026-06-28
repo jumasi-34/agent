@@ -13,18 +13,17 @@ keywords:
   - layer-isolation
   - modularity
 
-parent: checklist.index
+parent: "[[context/checklist/checklist-index]]"
 
 related:
-  - rule.l2.architecture
-  - checklist.coding_standard
+  - "[[rules/L2-architecture]]"
+  - "[[context/checklist/checklist-coding-standard]]"
 
 consumers:
-  - agent.code_reviewer
-  - agent.quality_evaluator
+  - "[[agents/roles/code-reviewer]]"
+  - "[[agents/roles/quality-evaluator]]"
 
-updated: 2026-06-28
----
+updated: 2026-06-28---
 
 # checklist-architecture.md (L2 3-레이어 아키텍처 및 모듈 격리 체크리스트)
 

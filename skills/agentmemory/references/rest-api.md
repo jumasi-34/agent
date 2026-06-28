@@ -6,10 +6,9 @@ status: active
 summary: >
   Rest Api 참조 및 가이드 명세서.
 
-parent: skill.agentmemory
+parent: "[[skills/agentmemory/SKILL]]"
 
-updated: 2026-06-28
----
+updated: 2026-06-28---
 # agentmemory HTTP REST API 사양
 
 * **Parent (상위 스킬)**: [SKILL.md](../SKILL.md)

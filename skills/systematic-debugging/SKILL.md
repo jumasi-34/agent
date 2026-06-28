@@ -5,17 +5,16 @@ id: skill.systematic_debugging
 type: skill
 status: active
 
-parent: skill.index
+parent: "[[skills/index]]"
 
 related:
-  - skill.index
-  - guide.testing_verification
+  - "[[skills/index]]"
+  - "[[context/guide/testing-verification]]"
 
 consumers:
   - agent.all
 
-updated: 2026-06-28
----
+updated: 2026-06-28---
 # Systematic Debugging
 
 ## Overview / Connections

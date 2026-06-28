@@ -15,14 +15,13 @@ keywords:
 parent: concept.agent_os.governance
 
 related:
-  - map.agents
-  - skill.using_superpowers
+  - "[[agents/agents]]"
+  - "[[skills/using-superpowers/SKILL]]"
 
 consumers:
-  - agent.planner_orchestrator
+  - "[[agents/roles/planner-orchestrator]]"
 
-updated: 2026-06-28
----
+updated: 2026-06-28---
 
 # 에이전트별 필수 기동 스킬 맵핑 정의서 (agents/skill-map.md)
 

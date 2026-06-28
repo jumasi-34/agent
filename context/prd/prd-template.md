@@ -12,18 +12,17 @@ keywords:
   - specifications
   - layout
 
-parent: prd.index
+parent: "[[context/prd/prd-index]]"
 
 related:
-  - prd.prd_hgws_return_dashboard
-  - prd.prd_oe_quality_issue_dashboard
+  - "[[context/prd/prd-hgws-return-dashboard]]"
+  - "[[context/prd/prd-oe-quality-issue-dashboard]]"
 
 consumers:
-  - agent.planner_orchestrator
+  - "[[agents/roles/planner-orchestrator]]"
   - ui-reviewer
 
-updated: 2026-06-28
----
+updated: 2026-06-28---
 
 # [PRD] - {기능명 / 화면명} 개발 명세서
 

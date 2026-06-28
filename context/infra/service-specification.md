@@ -13,19 +13,18 @@ keywords:
   - dataframe
   - preprocessing
 
-parent: infra.index
+parent: "[[context/infra/infra-index]]"
 
 related:
-  - rule.l3.service
-  - infra.queries_specification
-  - infra.pages_specification
+  - "[[rules/L3-service]]"
+  - "[[context/infra/queries-specification]]"
+  - "[[context/infra/pages-specification]]"
 
 consumers:
-  - agent.planner_orchestrator
+  - "[[agents/roles/planner-orchestrator]]"
   - agent.service_builder
 
-updated: 2026-06-28
----
+updated: 2026-06-28---
 
 # \[SERVICE\] service/ — 서비스 레이어 컨텍스트
 

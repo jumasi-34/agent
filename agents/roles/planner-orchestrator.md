@@ -12,17 +12,16 @@ keywords:
   - orchestrator
   - prd
 
-parent: map.agents
+parent: "[[agents/agents]]"
 
 related:
-  - map.agent_skill
-  - rule.l2.architecture
+  - "[[agents/skill-map]]"
+  - "[[rules/L2-architecture]]"
 
 consumers:
-  - agent.planner_orchestrator
+  - "[[agents/roles/planner-orchestrator]]"
 
-updated: 2026-06-28
----
+updated: 2026-06-28---
 
 # planner-orchestrator.md (CQ-BI Planner Orchestration Agent 상세 명세서)
 

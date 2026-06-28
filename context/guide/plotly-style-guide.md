@@ -13,19 +13,18 @@ keywords:
   - hover-template
   - styling
 
-parent: guide.index
+parent: "[[context/guide/guide-index]]"
 
 related:
-  - rule.l3.plot
-  - guide.design_system_guide
-  - guide.plotly_workflow_template
+  - "[[rules/L3-plot]]"
+  - "[[context/guide/design-system-guide]]"
+  - "[[context/guide/plotly-workflow-template]]"
 
 consumers:
-  - agent.planner_orchestrator
+  - "[[agents/roles/planner-orchestrator]]"
   - agent.ui_builder
 
-updated: 2026-06-28
----
+updated: 2026-06-28---
 
 # Plotly 시각화 코드 작성 표준 가이드라인
 

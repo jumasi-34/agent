@@ -16,19 +16,18 @@ keywords:
 parent: concept.home
 
 related:
-  - checklist.architecture
-  - checklist.coding_standard
-  - checklist.git
-  - checklist.release
-  - checklist.security
-  - checklist.reverse_sync_prevention
+  - "[[context/checklist/checklist-architecture]]"
+  - "[[context/checklist/checklist-coding-standard]]"
+  - "[[context/checklist/checklist-git]]"
+  - "[[context/checklist/checklist-release]]"
+  - "[[context/checklist/checklist-security]]"
+  - "[[context/checklist/reverse-sync-prevention]]"
 
 consumers:
-  - agent.code_reviewer
-  - agent.quality_evaluator
+  - "[[agents/roles/code-reviewer]]"
+  - "[[agents/roles/quality-evaluator]]"
 
-updated: 2026-06-28
----
+updated: 2026-06-28---
 
 # checklist/ 규정
 

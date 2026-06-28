@@ -13,19 +13,18 @@ keywords:
   - incident
   - rollback
 
-parent: infra.index
+parent: "[[context/infra/infra-index]]"
 
 related:
-  - infra.infrastructure_summary
+  - "[[context/infra/infrastructure-summary]]"
   - checklist.checklist_release
-  - guide.testing_verification
+  - "[[context/guide/testing-verification]]"
 
 consumers:
   - codebase-researcher
   - ui-reviewer
 
-updated: 2026-06-28
----
+updated: 2026-06-28---
 
 # hooks-specification.md (품질 게이트, 관찰 및 운영 릴리즈 훅 규격서)
 

@@ -12,18 +12,17 @@ keywords:
   - categories
   - mapping-standard
 
-parent: guide.index
+parent: "[[context/guide/guide-index]]"
 
 related:
-  - rule.l3.dashboard
-  - guide.new_page_development_workflow
+  - "[[rules/L3-dashboard]]"
+  - "[[context/guide/new_page_development_workflow]]"
 
 consumers:
-  - agent.planner_orchestrator
+  - "[[agents/roles/planner-orchestrator]]"
   - agent.ui_builder
 
-updated: 2026-06-28
----
+updated: 2026-06-28---
 
 # 메뉴 카테고리 정의 및 페이지 매핑 가이드 (Menu Navigation Specification)
 

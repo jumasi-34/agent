@@ -16,22 +16,21 @@ keywords:
 parent: concept.home
 
 related:
-  - infra.infrastructure_summary
-  - infra.database_metadata
-  - infra.environment
-  - infra.queries_specification
-  - infra.service_specification
-  - infra.pages_specification
-  - infra.core_specification
-  - infra.automation_log_specification
-  - infra.hooks_specification
+  - "[[context/infra/infrastructure-summary]]"
+  - "[[context/infra/database-metadata]]"
+  - "[[context/infra/environment]]"
+  - "[[context/infra/queries-specification]]"
+  - "[[context/infra/service-specification]]"
+  - "[[context/infra/pages-specification]]"
+  - "[[context/infra/core-specification]]"
+  - "[[context/infra/automation-log-specification]]"
+  - "[[context/infra/hooks-specification]]"
 
 consumers:
-  - agent.planner_orchestrator
+  - "[[agents/roles/planner-orchestrator]]"
   - agent.system_administrator
 
-updated: 2026-06-28
----
+updated: 2026-06-28---
 
 # infra/ 규정
 

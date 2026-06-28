@@ -14,18 +14,17 @@ keywords:
   - databricks
   - sqlite
 
-parent: infra.index
+parent: "[[context/infra/infra-index]]"
 
 related:
-  - infra.infrastructure_summary
-  - skill.korean_metadata
+  - "[[context/infra/infrastructure-summary]]"
+  - "[[skills/korean_metadata/SKILL]]"
 
 consumers:
-  - agent.planner_orchestrator
+  - "[[agents/roles/planner-orchestrator]]"
   - agent.service_builder
 
-updated: 2026-06-28
----
+updated: 2026-06-28---
 
 # 데이터베이스 테이블 및 쿼리 메타데이터 명세서 (Integrated Database Metadata Specification)
 

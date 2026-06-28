@@ -5,16 +5,15 @@ id: skill.agent_hooks
 type: skill
 status: active
 
-parent: skill.index
+parent: "[[skills/index]]"
 
 related:
-  - skill.index
+  - "[[skills/index]]"
 
 consumers:
   - agent.all
 
-updated: 2026-06-28
----
+updated: 2026-06-28---
 # agent_hooks (하네스 라이프사이클 훅 및 자율 감시 스킬)
 
 ## Overview / Connections

@@ -13,19 +13,18 @@ keywords:
   - deployment
   - automation
 
-parent: guide.index
+parent: "[[context/guide/guide-index]]"
 
 related:
-  - guide.3layer_development_process
-  - guide.page_template_standard
+  - "[[context/guide/3layer-development-process]]"
+  - "[[context/guide/page-template-standard]]"
 
 consumers:
-  - agent.planner_orchestrator
+  - "[[agents/roles/planner-orchestrator]]"
   - agent.ui_builder
   - agent.service_builder
 
-updated: 2026-06-28
----
+updated: 2026-06-28---
 
 # new_page_development_workflow.md (신규 품질 대시보드 화면 및 시각화 개발 프로세스)
 

@@ -13,19 +13,18 @@ keywords:
   - naming-convention
   - schema
 
-parent: map.agents
+parent: "[[agents/agents]]"
 
 related:
-  - map.agent_skill
-  - rule.l2.naming_convention
-  - rule.l2.business_constants
+  - "[[agents/skill-map]]"
+  - "[[rules/L2-naming-convention]]"
+  - "[[rules/L2-business-constants]]"
 
 consumers:
-  - agent.planner_orchestrator
-  - agent.governance_compliance_auditor
+  - "[[agents/roles/planner-orchestrator]]"
+  - "[[agents/roles/governance-compliance-auditor]]"
 
-updated: 2026-06-28
----
+updated: 2026-06-28---
 
 # governance-compliance-auditor.md (CQ-BI Governance & Compliance Auditor Sub-Agent 상세 명세서)
 

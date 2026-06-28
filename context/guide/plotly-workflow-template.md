@@ -12,19 +12,18 @@ keywords:
   - boilerplate
   - chart-template
 
-parent: guide.index
+parent: "[[context/guide/guide-index]]"
 
 related:
-  - rule.l3.plot
-  - guide.design_system_guide
-  - guide.plotly_style_guide
+  - "[[rules/L3-plot]]"
+  - "[[context/guide/design-system-guide]]"
+  - "[[context/guide/plotly-style-guide]]"
 
 consumers:
-  - agent.planner_orchestrator
+  - "[[agents/roles/planner-orchestrator]]"
   - agent.ui_builder
 
-updated: 2026-06-28
----
+updated: 2026-06-28---
 
 # Plotly 시각화 개발 워크플로우 및 표준 함수 템플릿
 

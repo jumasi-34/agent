@@ -12,20 +12,19 @@ keywords:
   - workflow
   - process
 
-parent: guide.index
+parent: "[[context/guide/guide-index]]"
 
 related:
-  - rule.l2.architecture
-  - guide.coding_templates
-  - guide.new_page_development_workflow
+  - "[[rules/L2-architecture]]"
+  - "[[context/guide/coding-templates]]"
+  - "[[context/guide/new_page_development_workflow]]"
 
 consumers:
-  - agent.planner_orchestrator
+  - "[[agents/roles/planner-orchestrator]]"
   - agent.ui_builder
   - agent.service_builder
 
-updated: 2026-06-28
----
+updated: 2026-06-28---
 
 # [PROCESS] 3레이어 준수 개발 및 리팩토링 표준 절차서
 

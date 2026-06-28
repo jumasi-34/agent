@@ -15,14 +15,13 @@ keywords:
 parent: concept.git
 
 related:
-  - rule.l2.sync_policy
+  - "[[rules/L2-sync-policy]]"
 
 consumers:
-  - agent.planner_orchestrator
-  - agent.quality_evaluator
+  - "[[agents/roles/planner-orchestrator]]"
+  - "[[agents/roles/quality-evaluator]]"
 
-updated: 2026-06-28
----
+updated: 2026-06-28---
 
 # L1-git.md (L1 Git 사용 및 커밋 메시지 표준)
 

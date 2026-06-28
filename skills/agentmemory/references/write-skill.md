@@ -6,10 +6,9 @@ status: active
 summary: >
   Write Skill 참조 및 가이드 명세서.
 
-parent: skill.agentmemory
+parent: "[[skills/agentmemory/SKILL]]"
 
-updated: 2026-06-28
----
+updated: 2026-06-28---
 # agentmemory 스킬 신규 작성 표준
 
 * **Parent (상위 스킬)**: [SKILL.md](../SKILL.md)

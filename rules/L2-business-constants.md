@@ -18,11 +18,10 @@ related:
   - context.domain.knowledge
 
 consumers:
-  - agent.data_layer_builder
-  - agent.governance_compliance_auditor
+  - "[[agents/roles/data-layer-builder]]"
+  - "[[agents/roles/governance-compliance-auditor]]"
 
-updated: 2026-06-28
----
+updated: 2026-06-28---
 
 # L2-business-constants.md (L2 비즈니스 상수 관리 및 호출 규칙)
 

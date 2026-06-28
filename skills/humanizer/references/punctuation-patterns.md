@@ -6,10 +6,9 @@ status: active
 summary: >
   Punctuation Patterns 참조 및 가이드 명세서.
 
-parent: skill.humanizer
+parent: "[[skills/humanizer/SKILL]]"
 
-updated: 2026-06-28
----
+updated: 2026-06-28---
 # 문장부호 패턴 (1-7)
 
 * **Parent (상위 스킬)**: [SKILL.md](../SKILL.md)

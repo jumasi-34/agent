@@ -15,14 +15,13 @@ keywords:
 parent: concept.agent_os.governance
 
 related:
-  - map.agent_skill
-  - rule.l2.architecture
+  - "[[agents/skill-map]]"
+  - "[[rules/L2-architecture]]"
 
 consumers:
-  - agent.planner_orchestrator
+  - "[[agents/roles/planner-orchestrator]]"
 
-updated: 2026-06-28
----
+updated: 2026-06-28---
 
 # agents.md (에이전트 규정)
 

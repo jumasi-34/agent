@@ -14,18 +14,17 @@ keywords:
   - sql-injection
   - protection
 
-parent: checklist.index
+parent: "[[context/checklist/checklist-index]]"
 
 related:
-  - checklist.architecture
-  - checklist.git
+  - "[[context/checklist/checklist-architecture]]"
+  - "[[context/checklist/checklist-git]]"
 
 consumers:
-  - agent.code_reviewer
-  - agent.quality_evaluator
+  - "[[agents/roles/code-reviewer]]"
+  - "[[agents/roles/quality-evaluator]]"
 
-updated: 2026-06-28
----
+updated: 2026-06-28---
 
 # checklist-security.md (릴리즈 및 에이전트 구동 보안 검토 체크리스트)
 

@@ -13,18 +13,17 @@ keywords:
   - briefing
   - discovery
 
-parent: map.agents
+parent: "[[agents/agents]]"
 
 related:
-  - map.agent_skill
-  - rule.l2.architecture
+  - "[[agents/skill-map]]"
+  - "[[rules/L2-architecture]]"
   - context.domain.knowledge
 
 consumers:
-  - agent.planner_orchestrator
+  - "[[agents/roles/planner-orchestrator]]"
 
-updated: 2026-06-28
----
+updated: 2026-06-28---
 
 # data-insights-analyst.md (CQ-BI Data Insights Analyst Sub-Agent 상세 명세서)
 

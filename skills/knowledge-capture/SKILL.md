@@ -5,16 +5,15 @@ id: skill.knowledge_capture
 type: skill
 status: active
 
-parent: skill.index
+parent: "[[skills/index]]"
 
 related:
-  - skill.index
+  - "[[skills/index]]"
 
 consumers:
   - agent.all
 
-updated: 2026-06-28
----
+updated: 2026-06-28---
 # Skill. Knowledge Capture (지식 자동 캡처 및 전파 가이드)
 
 ## Overview / Connections

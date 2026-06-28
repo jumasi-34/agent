@@ -6,10 +6,9 @@ status: active
 summary: >
   Examples 참조 및 가이드 명세서.
 
-parent: skill.recall
+parent: "[[skills/recall/SKILL]]"
 
-updated: 2026-06-28
----
+updated: 2026-06-28---
 # recall worked examples
 
 * **Parent (상위 스킬)**: [SKILL.md](./SKILL.md)

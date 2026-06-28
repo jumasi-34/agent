@@ -5,17 +5,16 @@ id: skill.commit_context
 type: skill
 status: active
 
-parent: skill.index
+parent: "[[skills/index]]"
 
 related:
-  - skill.index
-  - rule.l1.git
+  - "[[skills/index]]"
+  - "[[rules/L1-git]]"
 
 consumers:
   - agent.all
 
-updated: 2026-06-28
----
+updated: 2026-06-28---
 The user wants commit context for: $ARGUMENTS
 
 ## Quick start

@@ -14,18 +14,17 @@ keywords:
   - returns
   - claim
 
-parent: prd.index
+parent: "[[context/prd/prd-index]]"
 
 related:
-  - prd.prd_template
-  - prd.prd_oe_quality_issue_dashboard
+  - "[[context/prd/prd-template]]"
+  - "[[context/prd/prd-oe-quality-issue-dashboard]]"
 
 consumers:
-  - agent.planner_orchestrator
+  - "[[agents/roles/planner-orchestrator]]"
   - ui-reviewer
 
-updated: 2026-06-28
----
+updated: 2026-06-28---
 
 # [PRD] HGWS 리턴 현황 및 생산기반 PPM 대시보드 개발 명세서 (Draft)
 

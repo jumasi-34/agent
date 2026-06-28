@@ -16,14 +16,13 @@ keywords:
 parent: concept.home
 
 related:
-  - domain.knowledge
+  - "[[context/domain/domain-knowledge]]"
 
 consumers:
-  - agent.planner_orchestrator
-  - agent.quality_evaluator
+  - "[[agents/roles/planner-orchestrator]]"
+  - "[[agents/roles/quality-evaluator]]"
 
-updated: 2026-06-28
----
+updated: 2026-06-28---
 
 # domain/ 규정
 

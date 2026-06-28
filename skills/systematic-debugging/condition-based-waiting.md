@@ -6,10 +6,9 @@ status: active
 summary: >
   Condition Based Waiting 참조 및 가이드 명세서.
 
-parent: skill.systematic_debugging
+parent: "[[skills/systematic-debugging/SKILL]]"
 
-updated: 2026-06-28
----
+updated: 2026-06-28---
 # Condition-Based Waiting
 
 * **Parent (상위 스킬)**: [SKILL.md](./SKILL.md)

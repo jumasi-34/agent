@@ -14,18 +14,17 @@ keywords:
   - oeqi
   - mttc
 
-parent: prd.index
+parent: "[[context/prd/prd-index]]"
 
 related:
-  - prd.prd_template
-  - prd.prd_hgws_return_dashboard
+  - "[[context/prd/prd-template]]"
+  - "[[context/prd/prd-hgws-return-dashboard]]"
 
 consumers:
-  - agent.planner_orchestrator
+  - "[[agents/roles/planner-orchestrator]]"
   - ui-reviewer
 
-updated: 2026-06-28
----
+updated: 2026-06-28---
 
 # [PRD] OE 품질 이슈 대시보드 개발 명세서 (Draft for AI Developer Agent)
 

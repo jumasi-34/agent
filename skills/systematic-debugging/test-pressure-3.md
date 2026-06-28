@@ -6,10 +6,9 @@ status: active
 summary: >
   Test Pressure 3 참조 및 가이드 명세서.
 
-parent: skill.systematic_debugging
+parent: "[[skills/systematic-debugging/SKILL]]"
 
-updated: 2026-06-28
----
+updated: 2026-06-28---
 # Pressure Test 3: Authority + Social Pressure
 
 * **Parent (상위 스킬)**: [SKILL.md](./SKILL.md)

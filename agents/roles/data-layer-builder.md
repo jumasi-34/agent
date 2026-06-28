@@ -13,19 +13,18 @@ keywords:
   - pandas
   - cache
 
-parent: map.agents
+parent: "[[agents/agents]]"
 
 related:
-  - map.agent_skill
-  - rule.l2.architecture
-  - rule.l3.query
-  - rule.l3.service
+  - "[[agents/skill-map]]"
+  - "[[rules/L2-architecture]]"
+  - "[[rules/L3-query]]"
+  - "[[rules/L3-service]]"
 
 consumers:
-  - agent.data_layer_builder
+  - "[[agents/roles/data-layer-builder]]"
 
-updated: 2026-06-28
----
+updated: 2026-06-28---
 
 # data-layer-builder.md (CQ-BI Data Layer Builder Agent 상세 명세서)
 

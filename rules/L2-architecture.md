@@ -15,17 +15,16 @@ keywords:
 parent: concept.architecture
 
 related:
-  - rule.l3.query
-  - rule.l3.service
-  - rule.l3.dashboard
+  - "[[rules/L3-query]]"
+  - "[[rules/L3-service]]"
+  - "[[rules/L3-dashboard]]"
 
 consumers:
-  - agent.dashboard_layer_builder
-  - agent.data_layer_builder
-  - agent.planner_orchestrator
+  - "[[agents/roles/dashboard-layer-builder]]"
+  - "[[agents/roles/data-layer-builder]]"
+  - "[[agents/roles/planner-orchestrator]]"
 
-updated: 2026-06-28
----
+updated: 2026-06-28---
 
 # L2-architecture.md (L2 3-레이어 파일 아키텍처 및 모듈 격리 규칙)
 

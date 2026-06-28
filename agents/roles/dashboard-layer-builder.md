@@ -13,19 +13,18 @@ keywords:
   - plotly
   - styling
 
-parent: map.agents
+parent: "[[agents/agents]]"
 
 related:
-  - map.agent_skill
-  - rule.l2.architecture
-  - rule.l3.dashboard
-  - rule.l3.plot
+  - "[[agents/skill-map]]"
+  - "[[rules/L2-architecture]]"
+  - "[[rules/L3-dashboard]]"
+  - "[[rules/L3-plot]]"
 
 consumers:
-  - agent.dashboard_layer_builder
+  - "[[agents/roles/dashboard-layer-builder]]"
 
-updated: 2026-06-28
----
+updated: 2026-06-28---
 
 # dashboard-layer-builder.md (CQ-BI Dashboard Layer Builder Agent 상세 명세서)
 

@@ -14,19 +14,18 @@ keywords:
   - visualization
   - typography
 
-parent: rule.index
+parent: "[[rules/rules-index]]"
 
 related:
-  - rule.l2.color_system
-  - rule.l3.dashboard
+  - "[[rules/L2-color-system]]"
+  - "[[rules/L3-dashboard]]"
 
 consumers:
-  - agent.planner_orchestrator
-  - agent.dashboard_layer_builder
+  - "[[agents/roles/planner-orchestrator]]"
+  - "[[agents/roles/dashboard-layer-builder]]"
   - agent.ui_reviewer
 
-updated: 2026-06-28
----
+updated: 2026-06-28---
 
 # L3-plot.md (L3 시각화/차트 개발 규칙)
 

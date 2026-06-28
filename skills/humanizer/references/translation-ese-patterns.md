@@ -6,10 +6,9 @@ status: active
 summary: >
   Translation Ese Patterns 참조 및 가이드 명세서.
 
-parent: skill.humanizer
+parent: "[[skills/humanizer/SKILL]]"
 
-updated: 2026-06-28
----
+updated: 2026-06-28---
 # 번역투 패턴 (25-36, 40)
 
 * **Parent (상위 스킬)**: [SKILL.md](../SKILL.md)

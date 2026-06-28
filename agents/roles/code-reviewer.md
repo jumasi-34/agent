@@ -13,18 +13,17 @@ keywords:
   - diff
   - architecture
 
-parent: map.agents
+parent: "[[agents/agents]]"
 
 related:
-  - map.agent_skill
-  - rule.l2.architecture
-  - rule.l2.naming_convention
+  - "[[agents/skill-map]]"
+  - "[[rules/L2-architecture]]"
+  - "[[rules/L2-naming-convention]]"
 
 consumers:
-  - agent.code_reviewer
+  - "[[agents/roles/code-reviewer]]"
 
-updated: 2026-06-28
----
+updated: 2026-06-28---
 
 # code-reviewer.md (CQ-BI Code Reviewer Agent 상세 명세서)
 

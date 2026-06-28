@@ -16,14 +16,13 @@ keywords:
 parent: concept.context
 
 related:
-  - rule.l2.sync_policy
-  - infra.hooks_specification
+  - "[[rules/L2-sync-policy]]"
+  - "[[context/infra/hooks-specification]]"
 
 consumers:
   - agent.all
 
-updated: 2026-06-28
----
+updated: 2026-06-28---
 
 # 에이전트 스킬 인덱스 및 기동 타이밍 가이드 (skills/index.md)
 
