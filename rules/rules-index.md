@@ -28,6 +28,7 @@ related:
   - "[[rules/L3-plot.md]]"
   - "[[rules/L3-query.md]]"
   - "[[rules/L3-service.md]]"
+  - "[[rules/L2-metadata-standard.md]]"
 
 consumers:
   - "[[agents/roles/planner-orchestrator.md]]"
@@ -59,24 +60,25 @@ updated: 2026-06-28
 
 ---
 
-## 2. 활성 파일 목록 인덱스 (Active Files)
+## 2. 활성 파일 목록 및 온디맨드 매핑 인덱스 (Active Files & Targeted Loading)
 
-| 파일명 | 파일의 본질적 역할 및 책임 (1줄 요약) |
-| :--- | :
----
- |
-| `L1-git.md` | 커밋 메시지 머리말 태그 규정, 한국어 작성 표준 및 동시 푸시(Dual Push) 원칙 표준 |
-| `L2-architecture.md` | UI - 비즈니스 서비스 - SQL 쿼리 간 결합도 제어 및 아키텍처 아웃라인 총괄 대원칙 |
-| `L2-business-constants.md` | 물리 공장 코드(Plant Code), 핵심 비즈니스 상수 정적 매핑 및 이중화 방지 표준 |
-| `L2-color-system.md` | IBM Carbon 시각화 철학 기반의 대시보드 및 플롯 컬러 시스템 표준 설계 규정 |
-| `L2-context-readability.md` | 문서 인덱스 자동화, 중복 명 접두사 배제 및 AI 컨텍스트 가독성 최적화 수칙 |
-| `L2-naming-convention.md` | 물리 및 논리 계층의 파일명, 클래스명, 함수명 및 SQL 전처리 전반의 네이밍 표준 수칙 |
-| `L2-sync-policy.md` | 로컬(WSL)과 원격(Ubuntu) 간의 자산 및 가동 데이터 Push/Pull 단방향 동기화 및 Rsync 제약 규정 |
-| `L3-query.md` | SQL 디스플레이 한글 AS 하드코딩 전면 금지 및 영문 물리 컬럼명 유지 등 쿼리 레이어 개발 규칙 |
-| `L3-service.md` | 데이터프레임 메서드 체이닝 표준 준수 및 비즈니스 전처리 전담 서비스 레이어 개발 규칙 |
-| `L3-dashboard.md` | Streamlit 페이지 라우팅 제어, 이모지 전면 사용 금지 및 Google Material Symbols 채용 화면 UI 표준 규칙 |
-| `L3-plot.md` | UI 레이어 1:1 시각화 격리 및 Plotly 차트 구현에 관한 렌더링 개발 규칙 |
-| `table_naming_convention.json` | 데이터베이스 원천 테이블의 물리명과 한글 논리 도메인명의 공통 네이밍 정합용 사전 정의 파일 |
+에이전트는 수행 중인 작업 유형에 맞춰 아래 매핑 테이블을 기준으로 **단 1개의 타겟 파일**만 선택하여 로드하십시오.
+
+| 작업 유형 | 타겟 규칙 파일 | 파일의 본질적 역할 및 핵심 제약 수칙 |
+| :--- | :--- | :--- |
+| **Git 버전 관리** | [L1-git.md](.agents/rules/L1-git.md) | 커밋 메시지 한국어 작성 및 태그 접두사 의무화, Dual Push 원칙 |
+| **시스템 아키텍처** | [L2-architecture.md](.agents/rules/L2-architecture.md) | 3-Layer(UI-Service-Query) 물리 격리 및 Pandas 체이닝, UI 6대 정합성 수칙 |
+| **비즈니스 상수** | [L2-business-constants.md](.agents/rules/L2-business-constants.md) | 물리 공장 코드 정적 매핑 및 이중화 방지, 도메인 상수 일원화 |
+| **컬러 시스템** | [L2-color-system.md](.agents/rules/L2-color-system.md) | IBM Carbon 테마 기반의 대시보드 및 플롯 컬러 시스템 정적 일치화 |
+| **코드 가독성** | [L2-context-readability.md](.agents/rules/L2-context-readability.md) | 중복 명 접두사 배제 및 AI 컨텍스트 가독성 최적화 수칙 |
+| **메타데이터 표준** | [L2-metadata-standard.md](.agents/rules/L2-metadata-standard.md) | YAML Frontmatter 속성 규격 및 상태(status) 생애주기 관리 제약 |
+| **코드 명명 규칙** | [L2-naming-convention.md](.agents/rules/L2-naming-convention.md) | 계층별 명명 규칙 표준화 및 함수 생성, 독스트링 기술 표준 |
+| **자산 동기화** | [L2-sync-policy.md](.agents/rules/L2-sync-policy.md) | 로컬과 원격 간의 rsync 일방향 동기화 및 자산/데이터 불변 수칙 |
+| **쿼리 설계** | [L3-query.md](.agents/rules/L3-query.md) | SQL 내 디스플레이 한글 AS 하드코딩 금지 및 영문 물리 컬럼명 보존 |
+| **서비스 전처리** | [L3-service.md](.agents/rules/L3-service.md) | 데이터프레임 가공 전담 및 메서드 체이닝 표준 준수 |
+| **UI 화면 구성** | [L3-dashboard.md](.agents/rules/L3-dashboard.md) | Streamlit 페이지 라우팅 제어 및 Google Material Symbols 화면 렌더링 |
+| **데이터 시각화** | [L3-plot.md](.agents/rules/L3-plot.md) | UI 레이어 1:1 매핑 Plotly 차트 격리 구현 규정 |
+
 
 ---
 
