@@ -1,7 +1,46 @@
+---
+id: rule.l3.dashboard
+type: rule
+status: active
+
+summary: >
+  L3 대시보드 UI 개발 규칙.
+  Streamlit 화면 컨트롤러(page)의 역할과 제약(Plotly 인라인 금지, 시맨틱 컬러 매핑, 이모지 금지, 동적 컬럼 설정기 사용 등)을 정의한다.
+
+keywords:
+  - streamlit
+  - dashboard
+  - ui
+  - layout
+  - page
+
+parent: rule.readme
+
+related:
+  - rule.l2.architecture
+  - rule.l2.color_system
+  - rule.l3.plot
+
+consumers:
+  - agent.planner_orchestrator
+  - agent.dashboard_layer_builder
+  - agent.ui_reviewer
+
+updated: 2026-06-28
+---
+
 # L3-dashboard.md (L3 대시보드 UI 개발 규칙)
 
-이 문서는 Streamlit 화면 컨트롤러 역할을 수행하는 **대시보드 UI 레이어 (`app/pages/`)**의 핵심 개발 표준 및 안전 규칙을 정의합니다.
+## Overview
+* **왜 존재하는가 (Why)**: Streamlit 화면 개발 시 UI 컨트롤러 레이어에 데이터 가공 및 차트 렌더링 세부 구현이 혼재되는 것을 방지하고, 일관된 디자인 시스템(ShadCN 스타일, 프리미엄 플랫 CSS)을 일괄 이식하여 고품질의 UX를 단일하게 보장하기 위함입니다.
+* **언제 사용하는가 (When)**: `app/pages/` 내의 `*_page.py` 컨트롤러를 신규 작성하거나 기존 대시보드 UI를 리팩토링할 때 상시 준수합니다.
+* **연계 실행 (Next Action)**: 이 레이아웃에서 렌더링할 고품질 Plotly 차트 세부 명세를 정의하려면 [.agents/rules/L3-plot.md](.agents/rules/L3-plot.md)를 연이어 연계 참조하십시오.
 
+## Connections
+* **상위 개념**: [.agents/rules/L2-architecture.md](.agents/rules/L2-architecture.md)
+* **연관 자산**: 
+  - [.agents/rules/L3-plot.md](.agents/rules/L3-plot.md)
+  - [.agents/rules/L2-color-system.md](.agents/rules/L2-color-system.md)
 ---
 
 ## 1. 대시보드 UI 레이어의 핵심 역할 및 위치

@@ -1,7 +1,51 @@
+---
+id: rule.readme
+type: rule
+status: active
+
+summary: >
+  rules/ 디렉터리 규정 마이크로 가이드라인.
+  표준 정책 및 행동 규칙 규정 레이어의 로컬 규칙과 활성 파일 목록 및 책임을 요약한다.
+
+keywords:
+  - rules
+  - index
+  - readme
+  - directory-rules
+
+parent: concept.rules
+
+related:
+  - rule.l1.git
+  - rule.l2.architecture
+  - rule.l2.business_constants
+  - rule.l2.color_system
+  - rule.l2.context_readability
+  - rule.l2.naming_convention
+  - rule.l2.sync_policy
+  - rule.l3.dashboard
+  - rule.l3.plot
+  - rule.l3.query
+  - rule.l3.service
+
+consumers:
+  - agent.planner_orchestrator
+  - agent.quality_evaluator
+
+updated: 2026-06-28
+---
+
 # rules/ 규정
 
-이 문서는 `.agents/rules/` (표준 정책 및 행동 규칙 규정 레이어) 고유의 로컬 규칙과 파일 정보를 신속히 인지하기 위한 마이크로 가이드라인입니다.
+## Overview
+* **왜 존재하는가 (Why)**: 에이전트와 소스 코드가 예외 없이 준수해야 하는 강제 규정(L1, L2, L3)의 종류와 파일별 본질적 책임을 일관되게 정렬하고 한눈에 관리하기 위함입니다.
+* **언제 사용하는가 (When)**: 규칙 제정, 개정, 또는 소스 코드 아키텍처의 기준이 되는 상위 제약을 검토하고자 할 때 참고합니다.
+* **연계 실행 (Next Action)**: 본 규정 내 폴더의 핵심 설계 수칙을 파악하려면 연이어 [L2-architecture.md](.agents/rules/L2-architecture.md) 대원칙을 확인하십시오.
 
+## Connections
+* **상위 개념**: [.agents/AGENTS.md](.agents/AGENTS.md)
+* **연관 자산**: 
+  - [.agents/rules/L2-architecture.md](.agents/rules/L2-architecture.md)
 ---
 
 ## 1. 로컬 핵심 제약 (Local Rules)

@@ -1,8 +1,45 @@
-//# L2-context-readability.md (L2 컨텍스트 및 문서 가독성 규칙)
+---
+id: rule.l2.context_readability
+type: rule
+status: active
+
+summary: >
+  L2 컨텍스트 및 문서 가독성 규칙.
+  문서 내 이모지 금지, 장식적 표현 금지, WSL 마크다운 링크 제약, 실시간 오작동 자가 정제 프로세스를 수립한다.
+
+keywords:
+  - readability
+  - rules
+  - formatting
+  - emoji-check
+  - wsl-link
+
+parent: rule.readme
+
+related:
+  - rule.l1.git
+  - rule.l2.naming_convention
+
+consumers:
+  - agent.planner_orchestrator
+  - agent.quality_evaluator
+
+updated: 2026-06-28
+---
+
+# L2-context-readability.md (L2 컨텍스트 및 문서 가독성 규칙)
+
+## Overview
+* **왜 존재하는가 (Why)**: 개발 프로세스 중 생산되는 규칙, 가이드, 로그 문서 등의 인지 복잡성을 낮추고, WSL 및 Windows 간 하이퍼링크 동작 오류를 예방하며, AI 에이전트의 오작동 시 지식 피드백 루프를 시스템화하기 위함입니다.
+* **언제 사용하는가 (When)**: 규칙 개정, 개발 이력 작성, 피드백 기록, README 작성 등 모든 Markdown 및 주석 작성 시 상시 준수합니다.
+* **연계 실행 (Next Action)**: 이 가이드의 최상위 명명 규칙을 적용하려면 [.agents/rules/L2-naming-convention.md](.agents/rules/L2-naming-convention.md)를 연이어 대조해 보십시오.
+
+## Connections
+* **상위 개념**: [.agents/AGENTS.md](.agents/AGENTS.md)
+* **연관 자산**: [.agents/rules/L2-naming-convention.md](.agents/rules/L2-naming-convention.md)
+---
 
 이 문서는 시스템 내에서 생성되는 모든 컨텍스트 문서와 규칙 파일의 가독성, 일관성, 정보 전달력을 극대화하기 위한 작성 표준을 정의합니다.
-
----
 
 ## 1. 목적
 - 인텔리전스 레이어 문서의 가독성을 확보합니다.

@@ -1,8 +1,46 @@
+---
+id: rule.l2.architecture
+type: rule
+status: active
+
+summary: >
+  L2 3-레이어 파일 아키텍처 및 모듈 격리 표준.
+  Presentation, Service, Query 레이어를 물리적으로 격리하여 스파게티 코드를 완벽히 차단한다.
+
+keywords:
+  - architecture
+  - 3-layer
+  - isolation
+
+parent: concept.architecture
+
+related:
+  - rule.l3.query
+  - rule.l3.service
+  - rule.l3.dashboard
+
+consumers:
+  - agent.dashboard_layer_builder
+  - agent.data_layer_builder
+  - agent.planner_orchestrator
+
+updated: 2026-06-28
+---
+
 # L2-architecture.md (L2 3-레이어 파일 아키텍처 및 모듈 격리 규칙)
+
+## Overview
+* **왜 존재하는가 (Why)**: 각 코드 모듈의 책임을 명확히 구분하여 유지보수성을 확보하고, UI와 DB 질의가 한데 뒤엉켜 발생하는 유지보수성 훼손을 예방하기 위함입니다.
+* **언제 사용하는가 (When)**: 신규 기능 구현, 화면 추가, 전처리 개발 및 SQL 쿼리 작성 등 개발 생명주기 전 단계에서 무조건적으로 상시 강제됩니다.
+* **연계 실행 (Next Action)**: 구체적인 SQL 쿼리 설계 및 가공 제약사항을 점검하려면 [.agents/rules/L3-query.md](.agents/rules/L3-query.md)를 연이어 참조하십시오.
+
+## Connections
+* **상위 개념**: [.agents/AGENTS.md](.agents/AGENTS.md)
+* **연관 자산**: [.agents/rules/L3-query.md](.agents/rules/L3-query.md) | [.agents/rules/L3-service.md](.agents/rules/L3-service.md)
+---
 
 이 문서는 프로젝트의 지속 가능한 확장성과 일관된 품질을 수호하기 위해 코드베이스 전반의 **파일 구조(File Structure), 레이어별 격리 수준(Layer Isolation), 명명 규칙(Naming Convention), 그리고 의존성 제약 조건**을 정의하는 **단일 진실 공급원(SSOT, Single Source of Truth) 아키텍처 표준 가이드라인**입니다.
 
----
 
 ## 1. 3-레이어 아키텍처 파일 배치 및 역할 (Standard Layout & Roles)
 

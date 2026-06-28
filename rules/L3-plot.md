@@ -1,7 +1,45 @@
+---
+id: rule.l3.plot
+type: rule
+status: active
+
+summary: >
+  L3 시각화/차트 개발 규칙.
+  Plotly 기반 플롯 레이어(plots)의 역할과 제약(Streamlit 레이아웃 호출 금지, 비즈니스 가공 금지, 호버 옵션 최적화, Carbon DV 준수 등)을 정의한다.
+
+keywords:
+  - plotly
+  - plot
+  - chart
+  - visualization
+  - typography
+
+parent: rule.readme
+
+related:
+  - rule.l2.color_system
+  - rule.l3.dashboard
+
+consumers:
+  - agent.planner_orchestrator
+  - agent.dashboard_layer_builder
+  - agent.ui_reviewer
+
+updated: 2026-06-28
+---
+
 # L3-plot.md (L3 시각화/차트 개발 규칙)
 
-이 문서는 Plotly 기반의 시각화 로직을 전문적으로 처리하는 **플롯 레이어 (`app/pages/`)**의 핵심 개발 표준 및 안전 규칙을 정의합니다.
+## Overview
+* **왜 존재하는가 (Why)**: Plotly 차트 드로잉에 필요한 복잡한 시각적 설정(서체, 축, 범례, 색상)과 핵심 비즈니스 로직을 분리하고, IBM Carbon DV 및 디자인 시스템 표준을 보장하여 고도로 전문화되고 통일된 데이터 시각화를 제공하기 위함입니다.
+* **언제 사용하는가 (When)**: `app/pages/` 하위에서 `*_plots.py` 파일을 작성하거나 차트 컴포넌트를 리팩토링할 때 상시 준수합니다.
+* **연계 실행 (Next Action)**: 차트에 들어갈 정제된 데이터프레임을 생성하기 위해 [L3-service.md](.agents/rules/L3-service.md)의 서비스 레이어 연산 및 캐싱 규칙을 따르십시오.
 
+## Connections
+* **상위 개념**: [.agents/rules/L2-architecture.md](.agents/rules/L2-architecture.md)
+* **연관 자산**: 
+  - [.agents/rules/L3-dashboard.md](.agents/rules/L3-dashboard.md)
+  - [.agents/rules/L2-color-system.md](.agents/rules/L2-color-system.md)
 ---
 
 ## 1. 플롯 레이어의 핵심 역할 및 위치

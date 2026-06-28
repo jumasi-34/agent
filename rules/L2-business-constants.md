@@ -1,8 +1,43 @@
+---
+id: rule.l2.business_constants
+type: rule
+status: active
+
+summary: >
+  L2 비즈니스 상수 관리 및 호출 표준.
+  공장 코드 매핑 등 도메인 상수를 단일 파일로 격리하여 중복과 불일치를 차단한다.
+
+keywords:
+  - constants
+  - business-logic
+  - static-mapping
+
+parent: concept.domain
+
+related:
+  - context.domain.knowledge
+
+consumers:
+  - agent.data_layer_builder
+  - agent.governance_compliance_auditor
+
+updated: 2026-06-28
+---
+
 # L2-business-constants.md (L2 비즈니스 상수 관리 및 호출 규칙)
+
+## Overview
+* **왜 존재하는가 (Why)**: 코드 전반에 분산된 공장 기호, 품질 기준치 등의 상수 하드코딩을 차단하고, 단일 진실 공급원(SSOT) 상수를 보장하여 비즈니스 불일치를 예방하기 위함입니다.
+* **언제 사용하는가 (When)**: 쿼리 필터 구성, 데이터 전처리 지표 분기, 공장 단위 매핑 조건 조립 등 정적 도메인 분기 식별자가 필요할 때 사용합니다.
+* **연계 실행 (Next Action)**: 이 상수들을 소비하여 실제 연산을 전개하는 비즈니스 가이드는 [.agents/context/domain/domain-knowledge.md](.agents/context/domain/domain-knowledge.md)에서 확인하십시오.
+
+## Connections
+* **상위 개념**: [.agents/AGENTS.md](.agents/AGENTS.md)
+* **연관 자산**: [.agents/context/domain/domain-knowledge.md](.agents/context/domain/domain-knowledge.md)
+---
 
 이 문서는 프로젝트 내에서 **비즈니스 상수(Business Constants)**가 추가되거나 변경될 때 일관된 코드 품질과 단일 진실 공급원(SSOT, Single Source of Truth)을 유지하기 위해 준수해야 하는 **엄격한 관리 및 호출 개발 표준**을 정의합니다.
 
----
 
 ## 1. 핵심 원칙 (Core Principle)
 

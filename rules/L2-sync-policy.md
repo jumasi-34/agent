@@ -1,7 +1,43 @@
+---
+id: rule.l2.sync_policy
+type: rule
+status: active
+
+summary: >
+  L2 로컬 폴더 동기화 및 Rsync 운영 규칙.
+  WSL 개발 환경과 Ubuntu 운영 서버 간의 단방향 Rsync 동기화(local.assets 및 local.data) 규칙을 정의한다.
+
+keywords:
+  - sync
+  - rsync
+  - deployment
+  - local-data
+  - local-assets
+
+parent: rule.readme
+
+related:
+  - rule.l1.git
+  - rule.l2.context_readability
+
+consumers:
+  - agent.planner_orchestrator
+  - agent.quality_evaluator
+
+updated: 2026-06-28
+---
+
 # L2-sync-policy.md (L2 로컬 폴더 동기화 및 Rsync 운영 규칙)
 
-이 문서는 개발 환경(WSL/Local)과 운영 서버(Ubuntu) 간에 Git으로 관리되지 않는 로컬 데이터(`local.` 접두사 폴더)를 안전하고 신속하게 동기화하기 위한 **Rsync 동기화 정책 및 운영 규칙**을 정의하는 **단일 진실 공급원(SSOT) 동기화 가이드라인**입니다.
+## Overview
+* **왜 존재하는가 (Why)**: 대용량 정적 자원 및 민감한 운영 실데이터를 Git 형상 관리에서 완벽히 배제하되, 로컬 개발 환경(WSL)과 운영 서버 간에 안전하고 일관된 단방향 동기화 구조를 확보하기 위함입니다.
+* **언제 사용하는가 (When)**: 디자인 자산, 도면, 매뉴얼 등의 정적 리소스를 서버에 배포하거나, 운영 서버의 데이터베이스 및 세션 로그를 로컬로 가져와 분석 및 디버깅을 수행할 때 준수합니다.
+* **연계 실행 (Next Action)**: 동기화 과정에서 생성되는 모든 분석 데이터 및 메타파일이 Git 추적 대상에서 완전히 격리되어 있는지 [.agents/rules/L1-git.md](.agents/rules/L1-git.md)를 통해 형상 관리 기준을 점검하십시오.
 
+## Connections
+* **상위 개념**: [.agents/AGENTS.md](.agents/AGENTS.md)
+* **연관 자산**: 
+  - [.agents/rules/L1-git.md](.agents/rules/L1-git.md)
 ---
 
 ## 1. 동기화 기본 아키텍처 및 원칙 (Core Principles)

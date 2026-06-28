@@ -1,7 +1,45 @@
+---
+id: rule.l3.service
+type: rule
+status: active
+
+summary: >
+  L3 서비스 레이어 개발 규칙.
+  app/service/ 내의 데이터 전처리 및 비즈니스 연산 파일(*_df.py)에 대해 inplace=True 사용 금지, 성능 캐싱(@st.cache_data), 메서드 체이닝 등의 규칙을 정의한다.
+
+keywords:
+  - service
+  - preprocessing
+  - pandas
+  - cache
+  - dataframe
+
+parent: rule.readme
+
+related:
+  - rule.l2.naming_convention
+  - rule.l3.query
+
+consumers:
+  - agent.planner_orchestrator
+  - agent.data_layer_builder
+  - agent.query_reviewer
+
+updated: 2026-06-28
+---
+
 # L3-service.md (L3 서비스 레이어 개발 규칙)
 
-이 문서는 비즈니스 로직과 데이터 가공 및 캐싱을 담당하는 **서비스 레이어 (`app/service/`)**의 핵심 개발 표준 및 안전 규칙을 정의합니다.
+## Overview
+* **왜 존재하는가 (Why)**: 뷰(UI) 레이어와 쿼리 레이어 사이에서 데이터프레임의 타입 교정, 결측치 대체, 통계/그룹 연산의 정합성을 수호하고, 불필요한 중복 쿼리 호출 및 불필요한 인플레이스 결함을 방지하기 위함입니다.
+* **언제 사용하는가 (When)**: `app/service/` 디렉터리 내에 `*_df.py` 서비스 파일을 새로 작성하거나 Pandas 데이터 가공 로직을 리팩토링할 때 상시 준수합니다.
+* **연계 실행 (Next Action)**: 이 레이어에서 수집한 데이터프레임을 차트로 미려하게 표현하는 방식을 확인하려면 [.agents/rules/L3-plot.md](.agents/rules/L3-plot.md)를 연이어 연계 대조하십시오.
 
+## Connections
+* **상위 개념**: [.agents/rules/L2-architecture.md](.agents/rules/L2-architecture.md)
+* **연관 자산**: 
+  - [.agents/rules/L3-query.md](.agents/rules/L3-query.md)
+  - [.agents/rules/L3-plot.md](.agents/rules/L3-plot.md)
 ---
 
 ## 1. 서비스 레이어의 핵심 역할 및 위치

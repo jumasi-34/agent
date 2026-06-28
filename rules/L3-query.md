@@ -1,7 +1,45 @@
+---
+id: rule.l3.query
+type: rule
+status: active
+
+summary: >
+  L3 쿼리 레이어 개발 규칙.
+  app/queries/ 내의 SQL 쿼리 빌더 파일들에 대해 순수 SQL 문자열 조립, CTE 구조 지향, 한글 AS 별칭 금지, 쿼리 단일 반환(query), 과금 방지 규칙을 정의한다.
+
+keywords:
+  - sql
+  - query
+  - databricks
+  - cte
+  - database
+
+parent: rule.readme
+
+related:
+  - rule.l2.naming_convention
+  - rule.l3.service
+
+consumers:
+  - agent.planner_orchestrator
+  - agent.data_layer_builder
+  - agent.query_reviewer
+
+updated: 2026-06-28
+---
+
 # L3-query.md (L3 쿼리 레이어 개발 규칙)
 
-이 문서는 프로젝트의 데이터베이스 조회 SQL을 정의하는 **쿼리 레이어(`app/queries/`)**의 핵심 개발 표준 및 안전 규칙을 정의합니다.
+## Overview
+* **왜 존재하는가 (Why)**: SQL 문자열 빌드에 필요한 결합 복잡성을 제어하고, 한글 AS 별칭 하드코딩으로 인한 필드 매핑 결함을 원천 예방하며, Databricks 등 엔터프라이즈 데이터 인프라의 과도한 스캔 비용을 제어하기 위함입니다.
+* **언제 사용하는가 (When)**: `app/queries/` 디렉터리 내에 신규 SQL 쿼리 생성 함수를 생성하거나 기존 쿼리를 튜닝할 때 상시 준수합니다.
+* **연계 실행 (Next Action)**: 쿼리에서 반환된 영문 물리 컬럼과 한글 디스플레이명, 숫자 포맷 등을 동적으로 바인딩하려면 [L3-dashboard.md](.agents/rules/L3-dashboard.md)의 동적 컬럼 설정기 표준을 적용하십시오.
 
+## Connections
+* **상위 개념**: [.agents/rules/L2-architecture.md](.agents/rules/L2-architecture.md)
+* **연관 자산**: 
+  - [.agents/rules/L3-dashboard.md](.agents/rules/L3-dashboard.md)
+  - [.agents/rules/L3-service.md](.agents/rules/L3-service.md)
 ---
 
 ## 1. 쿼리 레이어의 핵심 역할 및 위치

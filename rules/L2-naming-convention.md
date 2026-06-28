@@ -1,7 +1,47 @@
+---
+id: rule.l2.naming_convention
+type: rule
+status: active
+
+summary: >
+  L2 코드베이스 명명 규칙 표준.
+  소스 코드 파일, 클래스, 함수(3-Layer 공식), 변수, DB 컬럼 및 CSS 클래스의 명명 규칙을 통일한다.
+
+keywords:
+  - naming-convention
+  - standards
+  - refactoring
+  - database-columns
+  - functional-standards
+
+parent: rule.readme
+
+related:
+  - rule.l2.architecture
+  - rule.l3.query
+  - rule.l3.service
+  - rule.l3.dashboard
+  - rule.l3.plot
+
+consumers:
+  - agent.planner_orchestrator
+  - agent.quality_evaluator
+
+updated: 2026-06-28
+---
+
 # L2-naming-convention.md (L2 코드베이스 명명 규칙 표준)
 
-이 문서는 프로젝트의 지속 가능성과 가독성, 그리고 아키텍처적 일관성을 유지하기 위해 소스 코드 파일, 클래스, 함수, 변수, 데이터베이스 객체 등의 **명명 규칙(Naming Convention)**을 정의하는 **단일 진실 공급원(SSOT) 명명 표준 가이드라인**입니다.
+## Overview
+* **왜 존재하는가 (Why)**: 다차원 계층 구조(UI-Service-Query)를 유지하고, 다수의 AI 에이전트와 개발자가 생성하는 코드의 유지보수성을 극대화하며, 데이터베이스 컬럼과 UI 변수 간의 정합성을 수호하기 위함입니다.
+* **언제 사용하는가 (When)**: 신규 파일 생성, 클래스 및 함수 정의, 변수 선언, DB 컬럼 설계, CSS 스타일링 등 코드 작성이 일어나는 모든 설계 및 구현 단계에서 상시 준수합니다.
+* **연계 실행 (Next Action)**: 본 가이드의 명명 규칙 하에 함수, 데이터프레임 구조를 생성한 뒤, [L3-service.md](.agents/rules/L3-service.md)의 데이터 전처리 및 체이닝 기법을 적용하십시오.
 
+## Connections
+* **상위 개념**: [.agents/AGENTS.md](.agents/AGENTS.md)
+* **연관 자산**: 
+  - [.agents/rules/L2-architecture.md](.agents/rules/L2-architecture.md)
+  - [.agents/rules/L3-service.md](.agents/rules/L3-service.md)
 ---
 
 ## 1. 물리적 파일 및 디렉터리 명명 규칙 (File & Directory Naming)

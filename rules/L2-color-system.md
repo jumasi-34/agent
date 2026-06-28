@@ -1,8 +1,44 @@
+---
+id: rule.l2.color_system
+type: rule
+status: active
+
+summary: >
+  L2 대시보드 컬러 및 시각화 디자인 시스템 표준.
+  HEX 값 하드코딩을 차단하고 3단계 디자인 토큰(Primitive -> Semantic -> Component)을 정립한다.
+
+keywords:
+  - color-system
+  - design-system
+  - plotly-theme
+  - carbon
+
+parent: concept.design_system
+
+related:
+  - rule.l3.dashboard
+  - rule.l3.plot
+
+consumers:
+  - agent.dashboard_layer_builder
+
+updated: 2026-06-28
+---
+
 # L2-color-system.md (L2 대시보드 컬러 및 시각화 디자인 시스템 규칙)
+
+## Overview
+* **왜 존재하는가 (Why)**: 중구난방의 원색 및 HEX 하드코딩 노출을 전면 예방하고, IBM Carbon 기반의 프리미엄 테마를 전 대시보드에 일괄 강제 이식하기 위함입니다.
+* **언제 사용하는가 (When)**: Plotly 플롯 드로잉 함수 내의 색상 매핑, Streamlit 보조 글래스모피즘 CSS 주입 등 모든 비주얼 배색 구현 시 사용합니다.
+* **연계 실행 (Next Action)**: 구체적인 차트 축과 범례 배치 등 시각화 스타일 규정을 보려면 [.agents/rules/L3-plot.md](.agents/rules/L3-plot.md)를 연이어 참조하십시오.
+
+## Connections
+* **상위 개념**: [.agents/AGENTS.md](.agents/AGENTS.md)
+* **연관 자산**: [.agents/rules/L3-plot.md](.agents/rules/L3-plot.md) | [.agents/rules/L3-dashboard.md](.agents/rules/L3-dashboard.md)
+---
 
 이 문서는 프로젝트 전반에서 사용되는 UI(Streamlit) 및 데이터 시각화(Plotly) 요소의 색상 사용을 통제하는 단일 진실 공급원(SSOT) 규칙 정의서입니다.
 
----
 
 ## 1. 기본 아키텍처 및 철학
 

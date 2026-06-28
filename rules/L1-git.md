@@ -1,8 +1,43 @@
+---
+id: rule.l1.git
+type: rule
+status: active
+
+summary: >
+  L1 Git 사용 및 커밋 메시지 표준.
+  한국어 커밋 메시지 강제 및 표준 대괄호 태그 규칙을 수립한다.
+
+keywords:
+  - git
+  - commit-msg
+  - workflow
+
+parent: concept.git
+
+related:
+  - rule.l2.sync_policy
+
+consumers:
+  - agent.planner_orchestrator
+  - agent.quality_evaluator
+
+updated: 2026-06-28
+---
+
 # L1-git.md (L1 Git 사용 및 커밋 메시지 표준)
+
+## Overview
+* **왜 존재하는가 (Why)**: 개발 형상 관리의 투명성과 이력 추적성을 보증하고, 인간과 AI 간의 원활한 커밋 변경 맥락을 보존하기 위함입니다.
+* **언제 사용하는가 (When)**: 소스 코드 커밋, 푸시, 브랜치 병합 등 모든 Git 기반 형상 관리 생명주기 작업 시 상시 준수합니다.
+* **연계 실행 (Next Action)**: 로컬 자산과 원격 rsync 일방향 동기화 규정을 보려면 [.agents/rules/L2-sync-policy.md](.agents/rules/L2-sync-policy.md)를 연이어 대조해 보십시오.
+
+## Connections
+* **상위 개념**: [.agents/AGENTS.md](.agents/AGENTS.md)
+* **연관 자산**: [.agents/rules/L2-sync-policy.md](.agents/rules/L2-sync-policy.md)
+---
 
 이 문서는 프로젝트의 형상 관리 일관성을 유지하고, 개발팀과 AI 에이전트 간의 원활한 소통 및 코드 변경 추적을 위해 **Git 사용 및 커밋 메시지 작성 규칙**을 정의하는 **단일 진실 공급원(SSOT) Git 표준 가이드라인**입니다.
 
----
 
 ## 1. Git 커밋 메시지 3대 대원칙 (Three Golden Rules)
 
