@@ -49,7 +49,7 @@ updated: 2026-06-28
 *   **권장 및 필수 가동 스킬**:
     *   [using-superpowers](.agents/skills/using-superpowers/SKILL.md): 세션 시작 즉시 활용 가능한 비즈니스 규칙 및 인프라 지침 탐색
     *   [brainstorming](.agents/skills/brainstorming/SKILL.md): 설계 단계 전 사용자와의 실시간 의도 합치 및 디자인 맵핑
-    *   [writing-plans](.agents/skills/writing/writing-plans/SKILL.md): 코드 변경 전에 완벽한 단계별 순차 구현 계획서(SDDD) 구축
+    *   [writing-plans](.agents/skills/writing/plans/SKILL.md): 코드 변경 전에 완벽한 단계별 순차 구현 계획서(SDDD) 구축
     *   [understand](.agents/skills/understand/SKILL.md): 전체 코드 아키텍처 및 영향 범위(Impact Area) 사전 점검
     *   [handoff](.agents/skills/handoff/SKILL.md) / [session-history](.agents/skills/session-history/SKILL.md): 이전 세션의 미해결 과제와 흐름 신속 연속 이행
     *   [recall](.agents/skills/recall/SKILL.md) / [remember](.agents/skills/remember/SKILL.md): 과거 세션 메모리 내의 기획 핵심 이정표 회상 및 신규 로컬 아키텍처 규칙 영속화

@@ -48,7 +48,7 @@ updated: 2026-06-28
 ### ① 기획 및 의도 정렬 단계 (Planning)
 *   **스킬명**: [brainstorming](.agents/skills/brainstorming/SKILL.md)
     - **기동 타이밍**: 새로운 기능을 설계하거나 코드 수정을 본격 착수하기 전, 사용자의 잠재적 의도와 요구사항을 실시간으로 정합하고 브레인스토밍할 때 반드시 먼저 실행합니다.
-*   **스킬명**: [writing-plans](.agents/skills/writing/writing-plans/SKILL.md)
+*   **스킬명**: [writing-plans](.agents/skills/writing/plans/SKILL.md)
     - **기동 타이밍**: 복잡한 요구사항이나 다단계 리팩토링 설계가 제시되었을 때, 실제 소스 코드를 수정하기 전에 완벽한 순차 구현 계획서(Markdown 체크리스트 양식)를 수립할 때 사용합니다.
 
 ### ② 구현 및 특화 설계 단계 (Implementation)
@@ -125,7 +125,7 @@ updated: 2026-06-28
     - **기동 타이밍**: 코딩 실수나 비대해지는 설계를 사전 차단하고, 가장 직관적이면서 수술식 변경(Surgical Edit)을 관철하는 Karpathy 개발 대원칙을 준수하고자 할 때 사용합니다.
 *   **스킬명**: [find-skills](.agents/skills/find-skills/SKILL.md)
     - **기동 타이밍**: 구현 요구 사항을 만나 가용할 추가 확장 스킬을 탐색 및 다운로드하거나 등록하고 싶을 때 지칭합니다.
-*   **스킬명**: [writing-skills](.agents/skills/writing/writing-skills/SKILL.md)
+*   **스킬명**: [writing-skills](.agents/skills/writing/skills/SKILL.md)
     - **기동 타이밍**: 새로운 스킬 폴더를 신설하고 YAML 프론트매터 및 세부 행동 규칙을 제정하여 영속화하려 할 때 기동합니다.
 *   **스킬명**: [executing-plans](.agents/skills/executing-plans/SKILL.md)
     - **기동 타이밍**: 완성된 구현 기획을 병렬 혹은 체크포인트 검증 검사를 동반하여 신중하게 순차적으로 완수하려 할 때 구동합니다.
