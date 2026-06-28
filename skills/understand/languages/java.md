@@ -1,6 +1,6 @@
 ---
 id: skill.understand.java
-title: "Ref: UNDERSTAND > LANGUAGES > JAVA"
+title: "[Skill] Java"
 type: reference
 status: active
 

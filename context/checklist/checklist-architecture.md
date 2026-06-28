@@ -1,6 +1,6 @@
 ---
 id: checklist.architecture
-title: "Ref: CONTEXT > CHECKLIST > CHECKLIST-ARCHITECTURE"
+title: "[Context] Checklist Architecture"
 type: reference
 status: active
 

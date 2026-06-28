@@ -1,6 +1,6 @@
 ---
 id: skill.brainstorming.visual_companion
-title: "Ref: SKILLS > BRAINSTORMING > VISUAL-COMPANION"
+title: "[Skill] Visual Companion"
 type: reference
 status: active
 

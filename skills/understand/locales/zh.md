@@ -1,6 +1,6 @@
 ---
 id: skill.understand.zh
-title: "Ref: UNDERSTAND > LOCALES > ZH"
+title: "[Skill] Zh"
 type: reference
 status: active
 

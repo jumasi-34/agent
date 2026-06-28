@@ -1,6 +1,6 @@
 ---
 id: guide.preprocessing_boundary
-title: "Ref: CONTEXT > GUIDE > PREPROCESSING-BOUNDARY"
+title: "[Context] Preprocessing Boundary"
 type: reference
 status: active
 

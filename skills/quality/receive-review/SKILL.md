@@ -2,7 +2,7 @@
 name: "receiving-code-review"
 description: "Use when receiving code review feedback, before implementing suggestions, especially if feedback seems unclear or technically questionable - requires technical rigor and verification, not performative agreement or blind implementation"
 id: skill.quality.receive_review
-title: "Skill: QUALITY > RECEIVE-REVIEW"
+title: "[Skill] Receive Review"
 type: skill
 status: active
 

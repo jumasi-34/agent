@@ -1,6 +1,6 @@
 ---
 id: skill.writing_plans.plan_document_reviewer_prompt
-title: "Ref: WRITING > PLANS > PLAN-DOCUMENT-REVIEWER-PROMPT"
+title: "[Skill] Plan Document Reviewer Prompt"
 type: reference
 status: active
 

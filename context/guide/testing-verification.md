@@ -1,6 +1,6 @@
 ---
 id: guide.testing_verification
-title: "Ref: CONTEXT > GUIDE > TESTING-VERIFICATION"
+title: "[Context] Testing Verification"
 type: reference
 status: active
 

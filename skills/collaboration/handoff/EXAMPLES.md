@@ -1,6 +1,6 @@
 ---
 id: skill.collaboration.handoff.EXAMPLES
-title: "Ref: COLLABORATION > HANDOFF > EXAMPLES"
+title: "[Skill] Examples"
 type: reference
 status: active
 

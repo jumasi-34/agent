@@ -1,6 +1,6 @@
 ---
 id: skill.using_superpowers.codex_tools
-title: "Ref: USING-SUPERPOWERS > REFERENCES > CODEX-TOOLS"
+title: "[Skill] Codex Tools"
 type: reference
 status: active
 

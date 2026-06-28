@@ -1,6 +1,6 @@
 ---
 id: agent.planner_orchestrator
-title: "Ref: AGENTS > ROLES > PLANNER-ORCHESTRATOR"
+title: "[Planner Orchestrator]"
 type: agent
 status: active
 

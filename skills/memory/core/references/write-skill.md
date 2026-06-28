@@ -1,6 +1,6 @@
 ---
 id: skill.memory.core.write_skill
-title: "Ref: CORE > REFERENCES > WRITE-SKILL"
+title: "[Skill] Write Skill"
 type: reference
 status: active
 

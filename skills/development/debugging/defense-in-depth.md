@@ -1,6 +1,6 @@
 ---
 id: skill.development.debugging.defense_in_depth
-title: "Ref: DEVELOPMENT > DEBUGGING > DEFENSE-IN-DEPTH"
+title: "[Skill] Defense In Depth"
 type: reference
 status: active
 

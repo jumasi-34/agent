@@ -2,7 +2,7 @@
 name: "korean_metadata"
 description: "원천 DB 영문 물리 컬럼명에 대응하는 디스플레이용 한글 명칭, 소수점 포맷팅, 툴팁 설명 등의 정적 딕셔너리를 자동 매핑 및 업데이트해 줍니다."
 id: skill.quality.korean_metadata
-title: "Skill: QUALITY > KOREAN-METADATA"
+title: "[Skill] Korean Metadata"
 type: skill
 status: active
 

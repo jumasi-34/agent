@@ -1,6 +1,6 @@
 ---
 id: guide.common_column_metadata_design
-title: "Ref: CONTEXT > GUIDE > COMMON-COLUMN-METADATA-DESIGN"
+title: "[Context] Common Column Metadata Design"
 type: reference
 status: active
 

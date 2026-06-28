@@ -1,6 +1,6 @@
 ---
 id: skill.using_superpowers.pi_tools
-title: "Ref: USING-SUPERPOWERS > REFERENCES > PI-TOOLS"
+title: "[Skill] Pi Tools"
 type: reference
 status: active
 

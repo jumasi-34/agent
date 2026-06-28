@@ -1,6 +1,6 @@
 ---
 id: agent.data_layer_builder
-title: "Ref: AGENTS > ROLES > DATA-LAYER-BUILDER"
+title: "[Data Layer Builder]"
 type: agent
 status: active
 

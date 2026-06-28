@@ -1,6 +1,6 @@
 ---
 id: skill.index
-title: "Ref: SKILLS > INDEX"
+title: "[Skill] Index"
 type: reference
 status: active
 

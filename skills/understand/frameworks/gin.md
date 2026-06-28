@@ -1,6 +1,6 @@
 ---
 id: skill.understand.gin
-title: "Ref: UNDERSTAND > FRAMEWORKS > GIN"
+title: "[Skill] Gin"
 type: reference
 status: active
 

@@ -1,6 +1,6 @@
 ---
 id: skill.humanizer.vocabulary_patterns
-title: "Ref: HUMANIZER > REFERENCES > VOCABULARY-PATTERNS"
+title: "[Skill] Vocabulary Patterns"
 type: reference
 status: active
 

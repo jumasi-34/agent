@@ -1,6 +1,6 @@
 ---
 id: skill.memory.commit_history.EXAMPLES
-title: "Ref: MEMORY > COMMIT-HISTORY > EXAMPLES"
+title: "[Skill] Examples"
 type: reference
 status: active
 

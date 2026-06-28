@@ -1,6 +1,6 @@
 ---
 id: skill.understand.ru
-title: "Ref: UNDERSTAND > LOCALES > RU"
+title: "[Skill] Ru"
 type: reference
 status: active
 

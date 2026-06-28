@@ -1,6 +1,6 @@
 ---
 id: infra.database_metadata
-title: "Ref: CONTEXT > INFRA > DATABASE-METADATA"
+title: "[Context] Database Metadata"
 type: reference
 status: active
 

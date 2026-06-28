@@ -1,6 +1,6 @@
 ---
 id: infra.index
-title: "Ref: CONTEXT > INFRA > INFRA-INDEX"
+title: "[Context] Infra Index"
 type: reference
 status: active
 

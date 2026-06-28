@@ -1,6 +1,6 @@
 ---
 id: skill.development.debugging.CREATION_LOG
-title: "Ref: DEVELOPMENT > DEBUGGING > CREATION-LOG"
+title: "[Skill] Creation Log"
 type: reference
 status: active
 

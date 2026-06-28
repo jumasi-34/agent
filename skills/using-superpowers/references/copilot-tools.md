@@ -1,6 +1,6 @@
 ---
 id: skill.using_superpowers.copilot_tools
-title: "Ref: USING-SUPERPOWERS > REFERENCES > COPILOT-TOOLS"
+title: "[Skill] Copilot Tools"
 type: reference
 status: active
 

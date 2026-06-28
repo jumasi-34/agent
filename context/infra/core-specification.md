@@ -1,6 +1,6 @@
 ---
 id: infra.core_specification
-title: "Ref: CONTEXT > INFRA > CORE-SPECIFICATION"
+title: "[Context] Core Specification"
 type: reference
 status: active
 

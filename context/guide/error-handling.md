@@ -1,6 +1,6 @@
 ---
 id: guide.error_handling
-title: "Ref: CONTEXT > GUIDE > ERROR-HANDLING"
+title: "[Context] Error Handling"
 type: reference
 status: active
 

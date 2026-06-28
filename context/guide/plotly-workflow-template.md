@@ -1,6 +1,6 @@
 ---
 id: guide.plotly_workflow_template
-title: "Ref: CONTEXT > GUIDE > PLOTLY-WORKFLOW-TEMPLATE"
+title: "[Context] Plotly Workflow Template"
 type: reference
 status: active
 

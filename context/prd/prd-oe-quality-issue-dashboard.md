@@ -1,6 +1,6 @@
 ---
 id: prd.prd_oe_quality_issue_dashboard
-title: "Ref: CONTEXT > PRD > PRD-OE-QUALITY-ISSUE-DASHBOARD"
+title: "[Context] Prd Oe Quality Issue Dashboard"
 type: specification
 status: active
 

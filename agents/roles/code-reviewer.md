@@ -1,6 +1,6 @@
 ---
 id: agent.code_reviewer
-title: "Ref: AGENTS > ROLES > CODE-REVIEWER"
+title: "[Code Reviewer]"
 type: agent
 status: active
 

@@ -1,6 +1,6 @@
 ---
 id: eval.index
-title: "Ref: CONTEXT > EVALS > EVALS-INDEX"
+title: "[Context] Evals Index"
 type: reference
 status: active
 

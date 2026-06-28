@@ -1,6 +1,6 @@
 ---
 id: infra.service_specification
-title: "Ref: CONTEXT > INFRA > SERVICE-SPECIFICATION"
+title: "[Context] Service Specification"
 type: reference
 status: active
 

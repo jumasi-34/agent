@@ -1,6 +1,6 @@
 ---
 id: skill.understand.fastapi
-title: "Ref: UNDERSTAND > FRAMEWORKS > FASTAPI"
+title: "[Skill] Fastapi"
 type: reference
 status: active
 

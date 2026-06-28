@@ -1,6 +1,6 @@
 ---
 id: guide.page_template_standard
-title: "Ref: CONTEXT > GUIDE > PAGE-TEMPLATE-STANDARD"
+title: "[Context] Page Template Standard"
 type: reference
 status: active
 

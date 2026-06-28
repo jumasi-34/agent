@@ -1,6 +1,6 @@
 ---
 id: guide.manual_setup
-title: "Ref: CONTEXT > GUIDE > MANUAL-SETUP"
+title: "[Context] Manual Setup"
 type: reference
 status: active
 

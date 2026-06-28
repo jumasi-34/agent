@@ -1,6 +1,6 @@
 ---
 id: skill.collaboration.subagent_development.task_reviewer_prompt
-title: "Ref: COLLABORATION > SUBAGENT-DEVELOPMENT > TASK-REVIEWER-PROMPT"
+title: "[Skill] Task Reviewer Prompt"
 type: reference
 status: active
 

@@ -1,3 +1,7 @@
+---
+title: "[Raw] Readme"
+---
+
 # Raw Idea Repository (아이디어 원본 데이터 저장소)
 
 ## 1. 보존 대상 정보 (Stored Information)

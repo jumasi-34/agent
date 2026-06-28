@@ -1,6 +1,6 @@
 ---
 id: skill.quality.request_review.code_reviewer
-title: "Ref: QUALITY > REQUEST-REVIEW > CODE-REVIEWER"
+title: "[Skill] Code Reviewer"
 type: reference
 status: active
 

@@ -1,6 +1,6 @@
 ---
 id: guide.index
-title: "Ref: CONTEXT > GUIDE > GUIDE-INDEX"
+title: "[Context] Guide Index"
 type: reference
 status: active
 

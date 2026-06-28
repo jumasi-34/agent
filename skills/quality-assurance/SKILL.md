@@ -1,4 +1,5 @@
 ---
+title: "[Skill] Quality Assurance"
 name: quality-assurance
 description: >
   코드 배포 전 정적 무결성 검증, SQL 정적 분석, 메타데이터 동기화, 자율 정적 컴파일 및 코드 리뷰 프로세스를 전담하는 통합 품질 게이트(Quality Gate) 매크로 스킬입니다.

@@ -1,6 +1,6 @@
 ---
 id: skill.understand.cpp
-title: "Ref: UNDERSTAND > LANGUAGES > CPP"
+title: "[Skill] Cpp"
 type: reference
 status: active
 

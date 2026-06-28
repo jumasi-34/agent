@@ -1,6 +1,6 @@
 ---
 id: skill.understand.flask
-title: "Ref: UNDERSTAND > FRAMEWORKS > FLASK"
+title: "[Skill] Flask"
 type: reference
 status: active
 

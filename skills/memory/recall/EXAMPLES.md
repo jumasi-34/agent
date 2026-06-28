@@ -1,6 +1,6 @@
 ---
 id: skill.memory.recall.EXAMPLES
-title: "Ref: MEMORY > RECALL > EXAMPLES"
+title: "[Skill] Examples"
 type: reference
 status: active
 

@@ -1,6 +1,6 @@
 ---
 id: skill.development.debugging.condition_based_waiting
-title: "Ref: DEVELOPMENT > DEBUGGING > CONDITION-BASED-WAITING"
+title: "[Skill] Condition Based Waiting"
 type: reference
 status: active
 

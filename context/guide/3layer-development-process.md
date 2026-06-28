@@ -1,6 +1,6 @@
 ---
 id: guide.3layer_development_process
-title: "Ref: CONTEXT > GUIDE > 3LAYER-DEVELOPMENT-PROCESS"
+title: "[Context] 3Layer Development Process"
 type: reference
 status: active
 

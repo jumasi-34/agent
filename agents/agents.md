@@ -1,6 +1,6 @@
 ---
 id: map.agents
-title: "Ref: AGENTS > AGENTS"
+title: "[Agents]"
 type: map
 status: active
 

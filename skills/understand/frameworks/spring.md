@@ -1,6 +1,6 @@
 ---
 id: skill.understand.spring
-title: "Ref: UNDERSTAND > FRAMEWORKS > SPRING"
+title: "[Skill] Spring"
 type: reference
 status: active
 

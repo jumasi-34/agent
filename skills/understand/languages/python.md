@@ -1,6 +1,6 @@
 ---
 id: skill.understand.python
-title: "Ref: UNDERSTAND > LANGUAGES > PYTHON"
+title: "[Skill] Python"
 type: reference
 status: active
 

@@ -2,7 +2,7 @@
 name: "agent_hooks"
 description: "에이전트 실행 주기 관측(Runs Observer), 자율 세션 실시간 로그 분석(Runs Analyzer), WSL 오작동 방지 및 역동기화 제어(Reverse Sync), 장애상황 릴리즈 수동 복구(Release Hooks)를 총괄 관리하는 하네스 운영 및 감시 전용 툴킷입니다."
 id: skill.agent_hooks
-title: "Skill: SKILLS > AGENT_HOOKS"
+title: "[Skill] Agent_Hooks"
 type: skill
 status: active
 

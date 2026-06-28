@@ -2,7 +2,7 @@
 name: "test-driven-development"
 description: "Use when implementing any feature or bugfix, before writing implementation code"
 id: skill.development.tdd
-title: "Skill: DEVELOPMENT > TDD"
+title: "[Skill] Tdd"
 type: skill
 status: active
 

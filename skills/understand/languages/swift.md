@@ -1,6 +1,6 @@
 ---
 id: skill.understand.swift
-title: "Ref: UNDERSTAND > LANGUAGES > SWIFT"
+title: "[Skill] Swift"
 type: reference
 status: active
 

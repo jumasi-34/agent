@@ -1,6 +1,6 @@
 ---
 id: skill.understand.html
-title: "Ref: UNDERSTAND > LANGUAGES > HTML"
+title: "[Skill] Html"
 type: reference
 status: active
 

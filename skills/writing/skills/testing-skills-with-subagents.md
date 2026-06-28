@@ -1,6 +1,6 @@
 ---
 id: skill.writing_skills.testing_skills_with_subagents
-title: "Ref: WRITING > SKILLS > TESTING-SKILLS-WITH-SUBAGENTS"
+title: "[Skill] Testing Skills With Subagents"
 type: reference
 status: active
 

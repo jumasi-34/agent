@@ -1,6 +1,6 @@
 ---
 id: skill.understand.typescript
-title: "Ref: UNDERSTAND > LANGUAGES > TYPESCRIPT"
+title: "[Skill] Typescript"
 type: reference
 status: active
 

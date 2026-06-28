@@ -2,7 +2,7 @@
 name: "writing-wiki"
 description: "Rule, Skill, Agent, Context, Raw를 분석하여 프로젝트를 이해하기 위한 정돈된 Wiki를 생성하거나 갱신하는 스킬입니다. 내용을 그대로 복제하지 않고 '설명하고 연결'하는 것을 핵심 원칙으로 삼습니다."
 id: skill.writing_wiki
-title: "Skill: WRITING > WIKI"
+title: "[Skill] Wiki"
 type: skill
 status: active
 

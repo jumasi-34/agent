@@ -1,6 +1,6 @@
 ---
 id: checklist.security
-title: "Ref: CONTEXT > CHECKLIST > CHECKLIST-SECURITY"
+title: "[Context] Checklist Security"
 type: reference
 status: active
 

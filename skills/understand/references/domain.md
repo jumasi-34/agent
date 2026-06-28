@@ -1,6 +1,6 @@
 ---
 id: skill.understand.domain
-title: "Ref: UNDERSTAND > REFERENCES > DOMAIN"
+title: "[Skill] Domain"
 type: reference
 status: active
 

@@ -1,6 +1,6 @@
 ---
 id: skill.understand.onboard
-title: "Ref: UNDERSTAND > REFERENCES > ONBOARD"
+title: "[Skill] Onboard"
 type: reference
 status: active
 

@@ -1,6 +1,6 @@
 ---
 id: skill.understand.protobuf
-title: "Ref: UNDERSTAND > LANGUAGES > PROTOBUF"
+title: "[Skill] Protobuf"
 type: reference
 status: active
 

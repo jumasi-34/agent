@@ -2,7 +2,7 @@
 name: "karpathy-guidelines"
 description: "Behavioral guidelines to reduce common LLM coding mistakes. Use when writing, reviewing, or refactoring code to avoid overcomplication, make surgical changes, surface assumptions, and define verifiable success criteria."
 id: skill.karpathy_guidelines
-title: "Skill: SKILLS > KARPATHY-GUIDELINES"
+title: "[Skill] Karpathy Guidelines"
 type: skill
 status: active
 

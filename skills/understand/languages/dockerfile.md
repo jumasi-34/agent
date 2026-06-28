@@ -1,6 +1,6 @@
 ---
 id: skill.understand.dockerfile
-title: "Ref: UNDERSTAND > LANGUAGES > DOCKERFILE"
+title: "[Skill] Dockerfile"
 type: reference
 status: active
 

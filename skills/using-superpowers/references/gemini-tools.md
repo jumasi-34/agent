@@ -1,6 +1,6 @@
 ---
 id: skill.using_superpowers.gemini_tools
-title: "Ref: USING-SUPERPOWERS > REFERENCES > GEMINI-TOOLS"
+title: "[Skill] Gemini Tools"
 type: reference
 status: active
 

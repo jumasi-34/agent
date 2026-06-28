@@ -1,6 +1,6 @@
 ---
 id: infra.infrastructure_summary
-title: "Ref: CONTEXT > INFRA > INFRASTRUCTURE-SUMMARY"
+title: "[Context] Infrastructure Summary"
 type: reference
 status: active
 

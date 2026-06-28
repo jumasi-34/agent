@@ -1,6 +1,6 @@
 ---
 id: skill.understand.terraform
-title: "Ref: UNDERSTAND > LANGUAGES > TERRAFORM"
+title: "[Skill] Terraform"
 type: reference
 status: active
 

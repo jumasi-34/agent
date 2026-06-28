@@ -1,6 +1,6 @@
 ---
 id: skill.understand.express
-title: "Ref: UNDERSTAND > FRAMEWORKS > EXPRESS"
+title: "[Skill] Express"
 type: reference
 status: active
 

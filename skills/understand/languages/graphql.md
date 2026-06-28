@@ -1,6 +1,6 @@
 ---
 id: skill.understand.graphql
-title: "Ref: UNDERSTAND > LANGUAGES > GRAPHQL"
+title: "[Skill] Graphql"
 type: reference
 status: active
 

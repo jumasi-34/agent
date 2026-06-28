@@ -2,7 +2,7 @@
 name: "requesting-code-review"
 description: "Use when completing tasks, implementing major features, or before merging to verify work meets requirements"
 id: skill.quality.request_review
-title: "Skill: QUALITY > REQUEST-REVIEW"
+title: "[Skill] Request Review"
 type: skill
 status: active
 

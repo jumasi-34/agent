@@ -1,6 +1,6 @@
 ---
 id: skill.development.debugging.test_pressure_2
-title: "Ref: DEVELOPMENT > DEBUGGING > TEST-PRESSURE-2"
+title: "[Skill] Test Pressure 2"
 type: reference
 status: active
 

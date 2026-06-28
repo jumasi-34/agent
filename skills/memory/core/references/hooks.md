@@ -1,6 +1,6 @@
 ---
 id: skill.memory.core.hooks
-title: "Ref: CORE > REFERENCES > HOOKS"
+title: "[Skill] Hooks"
 type: reference
 status: active
 

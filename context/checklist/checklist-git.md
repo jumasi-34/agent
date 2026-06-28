@@ -1,6 +1,6 @@
 ---
 id: checklist.git
-title: "Ref: CONTEXT > CHECKLIST > CHECKLIST-GIT"
+title: "[Context] Checklist Git"
 type: reference
 status: active
 

@@ -1,6 +1,6 @@
 ---
 id: skill.humanizer.after_3
-title: "Ref: HUMANIZER > EXAMPLES > AFTER-3"
+title: "[Skill] After 3"
 type: reference
 status: active
 

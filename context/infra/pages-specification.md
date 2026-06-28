@@ -1,6 +1,6 @@
 ---
 id: infra.pages_specification
-title: "Ref: CONTEXT > INFRA > PAGES-SPECIFICATION"
+title: "[Context] Pages Specification"
 type: reference
 status: active
 

@@ -1,6 +1,6 @@
 ---
 id: infra.environment
-title: "Ref: CONTEXT > INFRA > ENVIRONMENT"
+title: "[Context] Environment"
 type: reference
 status: active
 

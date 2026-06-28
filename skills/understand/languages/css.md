@@ -1,6 +1,6 @@
 ---
 id: skill.understand.css
-title: "Ref: UNDERSTAND > LANGUAGES > CSS"
+title: "[Skill] Css"
 type: reference
 status: active
 

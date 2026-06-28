@@ -1,6 +1,6 @@
 ---
 id: skill.understand.en
-title: "Ref: UNDERSTAND > LOCALES > EN"
+title: "[Skill] En"
 type: reference
 status: active
 

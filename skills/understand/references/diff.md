@@ -1,6 +1,6 @@
 ---
 id: skill.understand.diff
-title: "Ref: UNDERSTAND > REFERENCES > DIFF"
+title: "[Skill] Diff"
 type: reference
 status: active
 

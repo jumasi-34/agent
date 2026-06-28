@@ -1,6 +1,6 @@
 ---
 id: guide.menu_navigation_definition
-title: "Ref: CONTEXT > GUIDE > MENU-NAVIGATION-DEFINITION"
+title: "[Context] Menu Navigation Definition"
 type: reference
 status: active
 

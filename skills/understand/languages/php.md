@@ -1,6 +1,6 @@
 ---
 id: skill.understand.php
-title: "Ref: UNDERSTAND > LANGUAGES > PHP"
+title: "[Skill] Php"
 type: reference
 status: active
 

@@ -1,6 +1,6 @@
 ---
 id: guide.coding_templates
-title: "Ref: CONTEXT > GUIDE > CODING-TEMPLATES"
+title: "[Context] Coding Templates"
 type: reference
 status: active
 

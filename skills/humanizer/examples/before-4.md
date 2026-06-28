@@ -1,6 +1,6 @@
 ---
 id: skill.humanizer.before_4
-title: "Ref: HUMANIZER > EXAMPLES > BEFORE-4"
+title: "[Skill] Before 4"
 type: reference
 status: active
 

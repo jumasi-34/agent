@@ -1,6 +1,6 @@
 ---
 id: prd.index
-title: "Ref: CONTEXT > PRD > PRD-INDEX"
+title: "[Context] Prd Index"
 type: reference
 status: active
 

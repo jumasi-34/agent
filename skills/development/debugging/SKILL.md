@@ -2,7 +2,7 @@
 name: "systematic-debugging"
 description: "Use when encountering any bug, test failure, or unexpected behavior, before proposing fixes"
 id: skill.development.debugging
-title: "Skill: DEVELOPMENT > DEBUGGING"
+title: "[Skill] Debugging"
 type: skill
 status: active
 

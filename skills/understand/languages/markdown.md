@@ -1,6 +1,6 @@
 ---
 id: skill.understand.markdown
-title: "Ref: UNDERSTAND > LANGUAGES > MARKDOWN"
+title: "[Skill] Markdown"
 type: reference
 status: active
 

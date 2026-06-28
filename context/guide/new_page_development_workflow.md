@@ -1,6 +1,6 @@
 ---
 id: guide.new_page_development_workflow
-title: "Ref: CONTEXT > GUIDE > NEW_PAGE_DEVELOPMENT_WORKFLOW"
+title: "[Context] New_Page_Development_Workflow"
 type: reference
 status: active
 

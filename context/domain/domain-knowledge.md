@@ -1,6 +1,6 @@
 ---
 id: domain.knowledge
-title: "Ref: CONTEXT > DOMAIN > DOMAIN-KNOWLEDGE"
+title: "[Context] Domain Knowledge"
 type: reference
 status: active
 

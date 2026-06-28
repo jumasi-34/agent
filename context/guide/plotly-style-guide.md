@@ -1,6 +1,6 @@
 ---
 id: guide.plotly_style_guide
-title: "Ref: CONTEXT > GUIDE > PLOTLY-STYLE-GUIDE"
+title: "[Context] Plotly Style Guide"
 type: reference
 status: active
 

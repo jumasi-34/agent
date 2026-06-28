@@ -1,6 +1,6 @@
 ---
 id: skill.understand.json
-title: "Ref: UNDERSTAND > LANGUAGES > JSON"
+title: "[Skill] Json"
 type: reference
 status: active
 

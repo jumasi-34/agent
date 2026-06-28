@@ -1,6 +1,6 @@
 ---
 id: skill.understand.explain
-title: "Ref: UNDERSTAND > REFERENCES > EXPLAIN"
+title: "[Skill] Explain"
 type: reference
 status: active
 

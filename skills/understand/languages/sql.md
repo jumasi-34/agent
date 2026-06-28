@@ -1,6 +1,6 @@
 ---
 id: skill.understand.sql
-title: "Ref: UNDERSTAND > LANGUAGES > SQL"
+title: "[Skill] Sql"
 type: reference
 status: active
 

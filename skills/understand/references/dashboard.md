@@ -1,6 +1,6 @@
 ---
 id: skill.understand.dashboard
-title: "Ref: UNDERSTAND > REFERENCES > DASHBOARD"
+title: "[Skill] Dashboard"
 type: reference
 status: active
 

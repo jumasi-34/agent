@@ -1,6 +1,6 @@
 ---
 id: checklist.coding_standard
-title: "Ref: CONTEXT > CHECKLIST > CHECKLIST-CODING-STANDARD"
+title: "[Context] Checklist Coding Standard"
 type: reference
 status: active
 

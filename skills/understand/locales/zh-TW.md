@@ -1,6 +1,6 @@
 ---
 id: skill.understand.zh_TW
-title: "Ref: UNDERSTAND > LOCALES > ZH-TW"
+title: "[Skill] Zh Tw"
 type: reference
 status: active
 

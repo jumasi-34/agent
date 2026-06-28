@@ -1,6 +1,6 @@
 ---
 id: agent.quality_evaluator
-title: "Ref: AGENTS > ROLES > QUALITY-EVALUATOR"
+title: "[Quality Evaluator]"
 type: agent
 status: active
 

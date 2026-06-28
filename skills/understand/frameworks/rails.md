@@ -1,6 +1,6 @@
 ---
 id: skill.understand.rails
-title: "Ref: UNDERSTAND > FRAMEWORKS > RAILS"
+title: "[Skill] Rails"
 type: reference
 status: active
 

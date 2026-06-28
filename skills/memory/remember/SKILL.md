@@ -2,7 +2,7 @@
 name: "remember"
 description: "Save an insight, decision, or learning to agentmemory's long-term storage with searchable concept tags. Use when the user says 'remember this', 'save this', 'note that', 'don't forget', or wants to preserve knowledge for future sessions."
 id: skill.memory.remember
-title: "Skill: MEMORY > REMEMBER"
+title: "[Skill] Remember"
 type: skill
 status: active
 

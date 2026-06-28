@@ -1,6 +1,6 @@
 ---
 id: checklist.release
-title: "Ref: CONTEXT > CHECKLIST > CHECKLIST-RELEASE"
+title: "[Context] Checklist Release"
 type: reference
 status: active
 

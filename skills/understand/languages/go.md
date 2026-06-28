@@ -1,6 +1,6 @@
 ---
 id: skill.understand.go
-title: "Ref: UNDERSTAND > LANGUAGES > GO"
+title: "[Skill] Go"
 type: reference
 status: active
 

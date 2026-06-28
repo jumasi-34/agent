@@ -2,7 +2,7 @@
 name: "dispatching-parallel-agents"
 description: "Use when facing 2+ independent tasks that can be worked on without shared state or sequential dependencies"
 id: skill.collaboration.parallel_agents
-title: "Skill: COLLABORATION > PARALLEL-AGENTS"
+title: "[Skill] Parallel Agents"
 type: skill
 status: active
 

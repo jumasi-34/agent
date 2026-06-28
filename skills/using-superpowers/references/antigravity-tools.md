@@ -1,6 +1,6 @@
 ---
 id: skill.using_superpowers.antigravity_tools
-title: "Ref: USING-SUPERPOWERS > REFERENCES > ANTIGRAVITY-TOOLS"
+title: "[Skill] Antigravity Tools"
 type: reference
 status: active
 

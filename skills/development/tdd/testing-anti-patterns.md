@@ -1,6 +1,6 @@
 ---
 id: skill.development.tdd.testing_anti_patterns
-title: "Ref: DEVELOPMENT > TDD > TESTING-ANTI-PATTERNS"
+title: "[Skill] Testing Anti Patterns"
 type: reference
 status: active
 

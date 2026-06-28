@@ -1,6 +1,6 @@
 ---
 id: skill.memory.core.config
-title: "Ref: CORE > REFERENCES > CONFIG"
+title: "[Skill] Config"
 type: reference
 status: active
 

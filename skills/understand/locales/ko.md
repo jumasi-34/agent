@@ -1,6 +1,6 @@
 ---
 id: skill.understand.ko
-title: "Ref: UNDERSTAND > LOCALES > KO"
+title: "[Skill] Ko"
 type: reference
 status: active
 

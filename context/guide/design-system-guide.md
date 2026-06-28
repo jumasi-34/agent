@@ -1,6 +1,6 @@
 ---
 id: guide.design_system_guide
-title: "Ref: CONTEXT > GUIDE > DESIGN-SYSTEM-GUIDE"
+title: "[Context] Design System Guide"
 type: reference
 status: active
 

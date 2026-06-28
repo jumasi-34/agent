@@ -1,6 +1,6 @@
 ---
 id: checklist.index
-title: "Ref: CONTEXT > CHECKLIST > CHECKLIST-INDEX"
+title: "[Context] Checklist Index"
 type: reference
 status: active
 

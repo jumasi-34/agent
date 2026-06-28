@@ -1,6 +1,6 @@
 ---
 id: skill.understand.rust
-title: "Ref: UNDERSTAND > LANGUAGES > RUST"
+title: "[Skill] Rust"
 type: reference
 status: active
 

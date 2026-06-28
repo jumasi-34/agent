@@ -2,7 +2,7 @@
 name: "commit-history"
 description: "List recent git commits linked to agent sessions, optionally filtered by branch or repo. Use when the user asks 'show agent commits', 'what has the agent shipped', 'list linked commits', or wants commits with their session context."
 id: skill.memory.commit_history
-title: "Skill: MEMORY > COMMIT-HISTORY"
+title: "[Skill] Commit History"
 type: skill
 status: active
 

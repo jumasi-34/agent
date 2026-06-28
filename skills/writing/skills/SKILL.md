@@ -2,7 +2,7 @@
 name: "writing-skills"
 description: "Use when creating new skills, editing existing skills, or verifying skills work before deployment"
 id: skill.writing_skills
-title: "Skill: WRITING > SKILLS"
+title: "[Skill] Skills"
 type: skill
 status: active
 

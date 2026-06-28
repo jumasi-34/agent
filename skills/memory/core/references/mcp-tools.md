@@ -1,6 +1,6 @@
 ---
 id: skill.memory.core.mcp_tools
-title: "Ref: CORE > REFERENCES > MCP-TOOLS"
+title: "[Skill] Mcp Tools"
 type: reference
 status: active
 

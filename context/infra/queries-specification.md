@@ -1,6 +1,6 @@
 ---
 id: infra.queries_specification
-title: "Ref: CONTEXT > INFRA > QUERIES-SPECIFICATION"
+title: "[Context] Queries Specification"
 type: reference
 status: active
 

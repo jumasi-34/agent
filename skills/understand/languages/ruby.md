@@ -1,6 +1,6 @@
 ---
 id: skill.understand.ruby
-title: "Ref: UNDERSTAND > LANGUAGES > RUBY"
+title: "[Skill] Ruby"
 type: reference
 status: active
 

@@ -1,6 +1,6 @@
 ---
 id: skill.understand.kotlin
-title: "Ref: UNDERSTAND > LANGUAGES > KOTLIN"
+title: "[Skill] Kotlin"
 type: reference
 status: active
 

@@ -1,6 +1,6 @@
 ---
 id: skill.understand.vue
-title: "Ref: UNDERSTAND > FRAMEWORKS > VUE"
+title: "[Skill] Vue"
 type: reference
 status: active
 

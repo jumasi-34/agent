@@ -1,6 +1,6 @@
 ---
 id: skill.humanizer.spacing_patterns
-title: "Ref: HUMANIZER > REFERENCES > SPACING-PATTERNS"
+title: "[Skill] Spacing Patterns"
 type: reference
 status: active
 

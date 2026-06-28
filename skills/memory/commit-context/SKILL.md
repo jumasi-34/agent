@@ -2,7 +2,7 @@
 name: "commit-context"
 description: "Trace a file, function, or line back to the agent session that produced its current commit. Use when the user asks 'why is this code here', 'what was the agent doing when this changed', 'who wrote this', or wants context on a specific location in the codebase."
 id: skill.memory.commit_context
-title: "Skill: MEMORY > COMMIT-CONTEXT"
+title: "[Skill] Commit Context"
 type: skill
 status: active
 

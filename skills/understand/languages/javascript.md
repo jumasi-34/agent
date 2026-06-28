@@ -1,6 +1,6 @@
 ---
 id: skill.understand.javascript
-title: "Ref: UNDERSTAND > LANGUAGES > JAVASCRIPT"
+title: "[Skill] Javascript"
 type: reference
 status: active
 
