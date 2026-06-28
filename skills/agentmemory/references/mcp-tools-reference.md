@@ -1,4 +1,21 @@
+---
+id: skill.agentmemory.mcp_tools_reference
+type: reference
+status: active
+
+summary: >
+  Mcp Tools Reference 참조 및 가이드 명세서.
+
+parent: skill.agentmemory
+
+updated: 2026-06-28
+---
 # agentmemory MCP 도구 세트 참조서 (mcp-tools-reference)
+
+* **Parent (상위 스킬)**: [SKILL.md](../SKILL.md)
+
+---
+
 
 본 문서는 `src/mcp/tools-registry.ts`로부터 생성된 agentmemory MCP 도구 참조 명세입니다. 이 파일의 자동 생성 영역은 직접 수정하지 마십시오.
 

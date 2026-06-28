@@ -1,4 +1,21 @@
+---
+id: skill.agentmemory.rest_api
+type: reference
+status: active
+
+summary: >
+  Rest Api 참조 및 가이드 명세서.
+
+parent: skill.agentmemory
+
+updated: 2026-06-28
+---
 # agentmemory HTTP REST API 사양
+
+* **Parent (상위 스킬)**: [SKILL.md](../SKILL.md)
+
+---
+
 
 본 문서는 agentmemory의 주 프로토콜이자 핵심 서페이스인 HTTP REST API 스펙과 연동 수칙을 기술합니다.
 

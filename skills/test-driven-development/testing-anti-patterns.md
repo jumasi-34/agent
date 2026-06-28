@@ -1,4 +1,21 @@
+---
+id: skill.test_driven_development.testing_anti_patterns
+type: reference
+status: active
+
+summary: >
+  Testing Anti Patterns 참조 및 가이드 명세서.
+
+parent: skill.test_driven_development
+
+updated: 2026-06-28
+---
 # Testing Anti-Patterns
+
+* **Parent (상위 스킬)**: [SKILL.md](./SKILL.md)
+
+---
+
 
 **Load this reference when:** writing or changing tests, adding mocks, or tempted to add test-only methods to production code.
 

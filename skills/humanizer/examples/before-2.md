@@ -1,4 +1,21 @@
+---
+id: skill.humanizer.before_2
+type: reference
+status: active
+
+summary: >
+  Before 2 참조 및 가이드 명세서.
+
+parent: skill.humanizer
+
+updated: 2026-06-28
+---
 # 지속가능한 도시 개발
+
+* **Parent (상위 스킬)**: [SKILL.md](../SKILL.md)
+
+---
+
 
 ## 개요
 

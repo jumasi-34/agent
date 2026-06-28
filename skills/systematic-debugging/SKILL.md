@@ -311,3 +311,14 @@ From debugging sessions:
 - Random fixes approach: 2-3 hours of thrashing
 - First-time fix rate: 95% vs 40%
 - New bugs introduced: Near zero vs common
+
+
+## Sub-Assets (하위 참조 자산)
+* [Creation Log](CREATION-LOG.md) — Creation Log 참조 및 가이드 명세서.
+* [Condition Based Waiting](condition-based-waiting.md) — Condition Based Waiting 참조 및 가이드 명세서.
+* [Defense In Depth](defense-in-depth.md) — Defense In Depth 참조 및 가이드 명세서.
+* [Root Cause Tracing](root-cause-tracing.md) — Root Cause Tracing 참조 및 가이드 명세서.
+* [Test Academic](test-academic.md) — Test Academic 참조 및 가이드 명세서.
+* [Test Pressure 1](test-pressure-1.md) — Test Pressure 1 참조 및 가이드 명세서.
+* [Test Pressure 2](test-pressure-2.md) — Test Pressure 2 참조 및 가이드 명세서.
+* [Test Pressure 3](test-pressure-3.md) — Test Pressure 3 참조 및 가이드 명세서.

@@ -1,4 +1,21 @@
+---
+id: skill.understand.en
+type: reference
+status: active
+
+summary: >
+  En 참조 및 가이드 명세서.
+
+parent: skill.understand
+
+updated: 2026-06-28
+---
 # English Output Guidelines
+
+* **Parent (상위 스킬)**: [SKILL.md](../SKILL.md)
+
+---
+
 
 This file provides language-specific guidance for generating knowledge graph content in English.
 

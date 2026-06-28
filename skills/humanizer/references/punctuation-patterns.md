@@ -1,4 +1,21 @@
+---
+id: skill.humanizer.punctuation_patterns
+type: reference
+status: active
+
+summary: >
+  Punctuation Patterns 참조 및 가이드 명세서.
+
+parent: skill.humanizer
+
+updated: 2026-06-28
+---
 # 문장부호 패턴 (1-7)
+
+* **Parent (상위 스킬)**: [SKILL.md](../SKILL.md)
+
+---
+
 
 **우선순위: 최고** - 검출 정확도: 94.88% AUC (패턴 1-6)
 

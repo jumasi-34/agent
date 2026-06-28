@@ -173,3 +173,8 @@ A question about a UI topic is not automatically a visual question. "What does p
 
 If they agree to the companion, read the detailed guide before proceeding:
 `skills/brainstorming/visual-companion.md`
+
+
+## Sub-Assets (하위 참조 자산)
+* [Spec Document Reviewer Prompt](spec-document-reviewer-prompt.md) — Spec Document Reviewer Prompt 참조 및 가이드 명세서.
+* [Visual Companion](visual-companion.md) — Visual Companion 참조 및 가이드 명세서.

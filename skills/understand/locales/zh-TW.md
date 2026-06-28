@@ -1,4 +1,21 @@
+---
+id: skill.understand.zh_TW
+type: reference
+status: active
+
+summary: >
+  Zh Tw 참조 및 가이드 명세서.
+
+parent: skill.understand
+
+updated: 2026-06-28
+---
 # 繁體中文輸出指南 (Chinese Traditional)
+
+* **Parent (상위 스킬)**: [SKILL.md](../SKILL.md)
+
+---
+
 
 本文件提供生成繁體中文知識圖譜內容的語言指導。
 

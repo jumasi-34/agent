@@ -1,4 +1,21 @@
+---
+id: skill.humanizer.vocabulary_patterns
+type: reference
+status: active
+
+summary: >
+  Vocabulary Patterns 참조 및 가이드 명세서.
+
+parent: skill.humanizer
+
+updated: 2026-06-28
+---
 # 어휘 패턴 (14-20, 37-39)
+
+* **Parent (상위 스킬)**: [SKILL.md](../SKILL.md)
+
+---
+
 
 **우선순위: 중간**
 

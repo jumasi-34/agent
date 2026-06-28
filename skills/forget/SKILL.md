@@ -74,3 +74,7 @@ an explicit yes.
 ## Troubleshooting
 
 See ../_shared/TROUBLESHOOTING.md if `memory_smart_search` or `memory_governance_delete` is not available.
+
+
+## Sub-Assets (하위 참조 자산)
+* [Examples](EXAMPLES.md) — Examples 참조 및 가이드 명세서.

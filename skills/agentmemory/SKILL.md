@@ -41,3 +41,15 @@ updated: 2026-06-28
     - HTTP 엔드포인트 명세 및 [references/rest-api-reference.md](references/rest-api-reference.md) 계약서 연동 지침
 *   **메모리 스킬 신규 작성 표준 (write-skill)**: [references/write-skill.md](references/write-skill.md)
     - ChromaDB 기반 장기 기억에 인덱싱할 신규 스킬의 구조적 명세 표준
+
+
+## Sub-Assets (하위 참조 자산)
+* [Agents](references/agents.md) — Agents 참조 및 가이드 명세서.
+* [Architecture](references/architecture.md) — Architecture 참조 및 가이드 명세서.
+* [Config](references/config.md) — Config 참조 및 가이드 명세서.
+* [Hooks](references/hooks.md) — Hooks 참조 및 가이드 명세서.
+* [Mcp Tools Reference](references/mcp-tools-reference.md) — Mcp Tools Reference 참조 및 가이드 명세서.
+* [Mcp Tools](references/mcp-tools.md) — Mcp Tools 참조 및 가이드 명세서.
+* [Rest Api Reference](references/rest-api-reference.md) — Rest Api Reference 참조 및 가이드 명세서.
+* [Rest Api](references/rest-api.md) — Rest Api 참조 및 가이드 명세서.
+* [Write Skill](references/write-skill.md) — Write Skill 참조 및 가이드 명세서.

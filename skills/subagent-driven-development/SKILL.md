@@ -432,3 +432,8 @@ Done!
 
 **Alternative workflow:**
 - **superpowers:executing-plans** - Use for parallel session instead of same-session execution
+
+
+## Sub-Assets (하위 참조 자산)
+* [Implementer Prompt](implementer-prompt.md) — Implementer Prompt 참조 및 가이드 명세서.
+* [Task Reviewer Prompt](task-reviewer-prompt.md) — Task Reviewer Prompt 참조 및 가이드 명세서.

@@ -1,4 +1,21 @@
+---
+id: skill.understand.gin
+type: reference
+status: active
+
+summary: >
+  Gin 참조 및 가이드 명세서.
+
+parent: skill.understand
+
+updated: 2026-06-28
+---
 # Gin (Go) Framework Addendum
+
+* **Parent (상위 스킬)**: [SKILL.md](../SKILL.md)
+
+---
+
 
 > Injected into file-analyzer and architecture-analyzer prompts when Gin is detected.
 > Do NOT use as a standalone prompt — always appended to the base prompt template.

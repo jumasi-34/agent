@@ -386,3 +386,7 @@ Otherwise → not TDD
 ```
 
 No exceptions without your human partner's permission.
+
+
+## Sub-Assets (하위 참조 자산)
+* [Testing Anti Patterns](testing-anti-patterns.md) — Testing Anti Patterns 참조 및 가이드 명세서.

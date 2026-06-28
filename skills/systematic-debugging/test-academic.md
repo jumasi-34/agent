@@ -1,4 +1,21 @@
+---
+id: skill.systematic_debugging.test_academic
+type: reference
+status: active
+
+summary: >
+  Test Academic 참조 및 가이드 명세서.
+
+parent: skill.systematic_debugging
+
+updated: 2026-06-28
+---
 # Academic Test: Systematic Debugging Skill
+
+* **Parent (상위 스킬)**: [SKILL.md](./SKILL.md)
+
+---
+
 
 You have access to the systematic debugging skill at skills/debugging/systematic-debugging
 

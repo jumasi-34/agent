@@ -1,4 +1,21 @@
+---
+id: skill.writing_skills.persuasion_principles
+type: reference
+status: active
+
+summary: >
+  Persuasion Principles 참조 및 가이드 명세서.
+
+parent: skill.writing_skills
+
+updated: 2026-06-28
+---
 # Persuasion Principles for Skill Design
+
+* **Parent (상위 스킬)**: [SKILL.md](./SKILL.md)
+
+---
+
 
 ## Overview
 

@@ -1,4 +1,21 @@
+---
+id: skill.understand.onboard
+type: reference
+status: active
+
+summary: >
+  Onboard 참조 및 가이드 명세서.
+
+parent: skill.understand
+
+updated: 2026-06-28
+---
 # 신규 팀 멤버 온보딩 가이드 제작 가이드라인 (understand-onboard)
+
+* **Parent (상위 스킬)**: [SKILL.md](../SKILL.md)
+
+---
+
 
 본 지침은 분석된 프로젝트의 지식 그래프(`.understand-anything/knowledge-graph.json`)를 가공 및 요약하여, 신규 합류한 팀 멤버가 복잡한 아키텍처와 로직 위계를 막힘없이 이해할 수 있도록 구조화된 온보딩 가이드라인 문서를 자율 생산하는 제어 가이드라인입니다.
 

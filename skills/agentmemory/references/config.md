@@ -1,4 +1,21 @@
+---
+id: skill.agentmemory.config
+type: reference
+status: active
+
+summary: >
+  Config 참조 및 가이드 명세서.
+
+parent: skill.agentmemory
+
+updated: 2026-06-28
+---
 # agentmemory 환경 설정 및 포트 정책
+
+* **Parent (상위 스킬)**: [SKILL.md](../SKILL.md)
+
+---
+
 
 본 문서는 agentmemory의 환경 설정, 환경 변수, 포트 정책 및 기능 플래그(Feature Flags) 수칙을 기술합니다.
 

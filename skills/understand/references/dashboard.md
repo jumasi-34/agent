@@ -1,4 +1,21 @@
+---
+id: skill.understand.dashboard
+type: reference
+status: active
+
+summary: >
+  Dashboard 참조 및 가이드 명세서.
+
+parent: skill.understand
+
+updated: 2026-06-28
+---
 # 지식 그래프 시각화 대시보드 가이드라인 (understand-dashboard)
+
+* **Parent (상위 스킬)**: [SKILL.md](../SKILL.md)
+
+---
+
 
 본 지침은 생성된 지식 그래프를 시각적으로 탐색하기 위해 대시보드 웹 인터페이스를 구동하고 올바르게 연동하는 제어 가이드라인입니다.
 

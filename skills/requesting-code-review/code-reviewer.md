@@ -1,4 +1,21 @@
+---
+id: skill.requesting_code_review.code_reviewer
+type: reference
+status: active
+
+summary: >
+  Code Reviewer 참조 및 가이드 명세서.
+
+parent: skill.requesting_code_review
+
+updated: 2026-06-28
+---
 # Code Reviewer Prompt Template
+
+* **Parent (상위 스킬)**: [SKILL.md](./SKILL.md)
+
+---
+
 
 Use this template when dispatching a code reviewer subagent.
 

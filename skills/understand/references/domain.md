@@ -1,4 +1,21 @@
+---
+id: skill.understand.domain
+type: reference
+status: active
+
+summary: >
+  Domain 참조 및 가이드 명세서.
+
+parent: skill.understand
+
+updated: 2026-06-28
+---
 # 비즈니스 도메인 지식 흐름 추출 가이드라인 (understand-domain)
+
+* **Parent (상위 스킬)**: [SKILL.md](../SKILL.md)
+
+---
+
 
 본 지침은 코드베이스 내에 축적된 비즈니스 도메인 지식(도메인 영역, 비즈니스 흐름 및 세부 처리 단계)을 식별하고 추출하여 대시보드상에 수평적 도메인 플로우 그래프를 가시화하기 위한 분석 가이드라인입니다.
 

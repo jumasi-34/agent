@@ -73,3 +73,7 @@ session. From `git show`: it changed token rotation in refresh.ts."
 ## Troubleshooting
 
 See ../_shared/TROUBLESHOOTING.md if `memory_commit_lookup` is not available.
+
+
+## Sub-Assets (하위 참조 자산)
+* [Examples](EXAMPLES.md) — Examples 참조 및 가이드 명세서.

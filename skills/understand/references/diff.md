@@ -1,4 +1,21 @@
+---
+id: skill.understand.diff
+type: reference
+status: active
+
+summary: >
+  Diff 참조 및 가이드 명세서.
+
+parent: skill.understand
+
+updated: 2026-06-28
+---
 # Git Diff 분석 및 점진 분석 가이드라인 (understand-diff)
+
+* **Parent (상위 스킬)**: [SKILL.md](../SKILL.md)
+
+---
+
 
 본 지침은 기존 지식 그래프(`.understand-anything/knowledge-graph.json`)와 현재 Git 변경 사항(Diff)을 비교 대조하여, 변경된 컴포넌트의 파급 효과, 영향 범위 및 리스크를 계량하고 예측하는 분석 가이드라인입니다.
 

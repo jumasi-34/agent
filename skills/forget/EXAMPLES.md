@@ -1,4 +1,21 @@
+---
+id: skill.forget.EXAMPLES
+type: reference
+status: active
+
+summary: >
+  Examples 참조 및 가이드 명세서.
+
+parent: skill.forget
+
+updated: 2026-06-28
+---
 # forget worked examples
+
+* **Parent (상위 스킬)**: [SKILL.md](./SKILL.md)
+
+---
+
 
 ## 1. Delete a leaked secret
 

@@ -1,4 +1,21 @@
+---
+id: skill.understand.css
+type: reference
+status: active
+
+summary: >
+  Css 참조 및 가이드 명세서.
+
+parent: skill.understand
+
+updated: 2026-06-28
+---
 # CSS Language Prompt Snippet
+
+* **Parent (상위 스킬)**: [SKILL.md](../SKILL.md)
+
+---
+
 
 ## Key Concepts
 

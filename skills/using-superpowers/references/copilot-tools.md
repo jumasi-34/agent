@@ -1,4 +1,21 @@
+---
+id: skill.using_superpowers.copilot_tools
+type: reference
+status: active
+
+summary: >
+  Copilot Tools 참조 및 가이드 명세서.
+
+parent: skill.using_superpowers
+
+updated: 2026-06-28
+---
 # Copilot CLI Tool Mapping
+
+* **Parent (상위 스킬)**: [SKILL.md](../SKILL.md)
+
+---
+
 
 Skills speak in actions ("dispatch a subagent", "create a todo", "read a file"). On Copilot CLI these resolve to the tools below.
 

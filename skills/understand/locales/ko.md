@@ -1,4 +1,21 @@
+---
+id: skill.understand.ko
+type: reference
+status: active
+
+summary: >
+  Ko 참조 및 가이드 명세서.
+
+parent: skill.understand
+
+updated: 2026-06-28
+---
 # 한국어 출력 가이드라인 (Korean)
+
+* **Parent (상위 스킬)**: [SKILL.md](../SKILL.md)
+
+---
+
 
 이 파일은 한국어로 지식 그래프 콘텐츠를 생성할 때의 언어별 가이드를 제공합니다.
 

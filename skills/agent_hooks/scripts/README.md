@@ -1,4 +1,21 @@
+---
+id: skill.agent_hooks.README
+type: reference
+status: active
+
+summary: >
+  Readme 참조 및 가이드 명세서.
+
+parent: skill.agent_hooks
+
+updated: 2026-06-28
+---
 # agent_hooks/scripts/ 규정
+
+* **Parent (상위 스킬)**: [SKILL.md](../SKILL.md)
+
+---
+
 
 이 문서는 `.agents/skills/agent_hooks/` (다차원 라이프사이클 이벤트 인터셉터 레이어) 고유의 로컬 규칙과 파일 정보를 신속히 인지하기 위한 마이크로 가이드라인입니다.
 

@@ -1,4 +1,21 @@
+---
+id: skill.agentmemory.mcp_tools
+type: reference
+status: active
+
+summary: >
+  Mcp Tools 참조 및 가이드 명세서.
+
+parent: skill.agentmemory
+
+updated: 2026-06-28
+---
 # agentmemory MCP 도구 세트 및 파라미터
+
+* **Parent (상위 스킬)**: [SKILL.md](../SKILL.md)
+
+---
+
 
 본 문서는 agentmemory가 MCP(Model Context Protocol) 도구로 제공하는 전체 기능 매핑, 역할 및 파라미터 규격을 기술합니다.
 

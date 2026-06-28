@@ -1,4 +1,21 @@
+---
+id: skill.writing_skills.testing_skills_with_subagents
+type: reference
+status: active
+
+summary: >
+  Testing Skills With Subagents 참조 및 가이드 명세서.
+
+parent: skill.writing_skills
+
+updated: 2026-06-28
+---
 # Testing Skills With Subagents
+
+* **Parent (상위 스킬)**: [SKILL.md](./SKILL.md)
+
+---
+
 
 **Load this reference when:** creating or editing skills, before deployment, to verify they work under pressure and resist rationalization.
 

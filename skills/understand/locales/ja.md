@@ -1,4 +1,21 @@
+---
+id: skill.understand.ja
+type: reference
+status: active
+
+summary: >
+  Ja 참조 및 가이드 명세서.
+
+parent: skill.understand
+
+updated: 2026-06-28
+---
 # 日本語出力ガイドライン (Japanese)
+
+* **Parent (상위 스킬)**: [SKILL.md](../SKILL.md)
+
+---
+
 
 本ファイルは、日本語でナレッジグラフコンテンツを生成する際の言語固有のガイドラインを提供します。
 

@@ -1,4 +1,21 @@
+---
+id: skill.agentmemory.architecture
+type: reference
+status: active
+
+summary: >
+  Architecture 참조 및 가이드 명세서.
+
+parent: skill.agentmemory
+
+updated: 2026-06-28
+---
 # agentmemory 저장소 및 백엔드 아키텍처
+
+* **Parent (상위 스킬)**: [SKILL.md](../SKILL.md)
+
+---
+
 
 본 문서는 agentmemory가 어떻게 빌드되는지, 기반이 되는 iii 엔진 프리미티브, 저장소 모델, 포트 정책 및 뷰어에 대한 아키텍처 지침을 기술합니다.
 

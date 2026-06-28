@@ -1,4 +1,21 @@
+---
+id: skill.humanizer.structure_patterns
+type: reference
+status: active
+
+summary: >
+  Structure Patterns 참조 및 가이드 명세서.
+
+parent: skill.humanizer
+
+updated: 2026-06-28
+---
 # 문장 구조 패턴 (21-24)
+
+* **Parent (상위 스킬)**: [SKILL.md](../SKILL.md)
+
+---
+
 
 **우선순위: 중간**
 

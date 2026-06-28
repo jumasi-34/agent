@@ -1,4 +1,21 @@
+---
+id: skill.humanizer.before_4
+type: reference
+status: active
+
+summary: >
+  Before 4 참조 및 가이드 명세서.
+
+parent: skill.humanizer
+
+updated: 2026-06-28
+---
 # 디지털 혁신 시대의 기업 전략
+
+* **Parent (상위 스킬)**: [SKILL.md](../SKILL.md)
+
+---
+
 
 ## 서론
 

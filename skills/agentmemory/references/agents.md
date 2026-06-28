@@ -1,4 +1,21 @@
+---
+id: skill.agentmemory.agents
+type: reference
+status: active
+
+summary: >
+  Agents 참조 및 가이드 명세서.
+
+parent: skill.agentmemory
+
+updated: 2026-06-28
+---
 # agentmemory 에이전트 연동 가이드
+
+* **Parent (상위 스킬)**: [SKILL.md](../SKILL.md)
+
+---
+
 
 본 문서는 agentmemory가 `connect` 명령어를 통해 호스트 코딩 에이전트에 연동되는 방식과 수칙을 기술합니다.
 

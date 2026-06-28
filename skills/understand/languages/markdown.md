@@ -1,4 +1,21 @@
+---
+id: skill.understand.markdown
+type: reference
+status: active
+
+summary: >
+  Markdown 참조 및 가이드 명세서.
+
+parent: skill.understand
+
+updated: 2026-06-28
+---
 # Markdown Language Prompt Snippet
+
+* **Parent (상위 스킬)**: [SKILL.md](../SKILL.md)
+
+---
+
 
 ## Key Concepts
 

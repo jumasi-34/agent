@@ -1,4 +1,21 @@
+---
+id: skill.humanizer.spacing_patterns
+type: reference
+status: active
+
+summary: >
+  Spacing Patterns 참조 및 가이드 명세서.
+
+parent: skill.humanizer
+
+updated: 2026-06-28
+---
 # 띄어쓰기 패턴 (8-10)
+
+* **Parent (상위 스킬)**: [SKILL.md](../SKILL.md)
+
+---
+
 
 **우선순위: 높음** - 검출 정확도: 79.51% AUC
 

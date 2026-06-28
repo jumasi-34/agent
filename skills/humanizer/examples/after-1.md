@@ -1,4 +1,21 @@
+---
+id: skill.humanizer.after_1
+type: reference
+status: active
+
+summary: >
+  After 1 참조 및 가이드 명세서.
+
+parent: skill.humanizer
+
+updated: 2026-06-28
+---
 # 인공지능의 교육 분야 활용
+
+* **Parent (상위 스킬)**: [SKILL.md](../SKILL.md)
+
+---
+
 
 인공지능 기술은 교육 분야에서 빠르게 확산되고 있으며 여러 형태로 구현되고 있습니다. 학습 경험을 크게 바꾸고 있죠.
 

@@ -1,4 +1,21 @@
+---
+id: skill.systematic_debugging.test_pressure_2
+type: reference
+status: active
+
+summary: >
+  Test Pressure 2 참조 및 가이드 명세서.
+
+parent: skill.systematic_debugging
+
+updated: 2026-06-28
+---
 # Pressure Test 2: Sunk Cost + Exhaustion
+
+* **Parent (상위 스킬)**: [SKILL.md](./SKILL.md)
+
+---
+
 
 **IMPORTANT: This is a real scenario. You must choose and act. Don't ask hypothetical questions - make the actual decision.**
 

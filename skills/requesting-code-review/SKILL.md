@@ -117,3 +117,7 @@ You: [Fix progress indicators]
 - Request clarification
 
 See template at: [code-reviewer.md](code-reviewer.md)
+
+
+## Sub-Assets (하위 참조 자산)
+* [Code Reviewer](code-reviewer.md) — Code Reviewer 참조 및 가이드 명세서.

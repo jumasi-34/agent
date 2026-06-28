@@ -1,4 +1,21 @@
+---
+id: skill.understand.knowledge
+type: reference
+status: active
+
+summary: >
+  Knowledge 참조 및 가이드 명세서.
+
+parent: skill.understand
+
+updated: 2026-06-28
+---
 # 위키형 지식 베이스 추출 가이드라인 (understand-knowledge)
+
+* **Parent (상위 스킬)**: [SKILL.md](../SKILL.md)
+
+---
+
 
 본 지침은 카파시(Karpathy) 패턴 LLM 위키(3계층 지식 베이스 구조: Raw Sources, Wiki Markdown, Schema 파일)를 정밀 분석하고 추출하여, 상호 연결 관계 및 지식 군집화(Topic Clustering)가 적용된 지식 그래프 대시보드를 구축하는 제어 가이드라인입니다.
 

@@ -69,3 +69,7 @@ RIGHT: `concepts: "jwt-refresh-rotation, token-revocation"` (specific, retrievab
 ## Troubleshooting
 
 See ../_shared/TROUBLESHOOTING.md if `memory_save` is not available.
+
+
+## Sub-Assets (하위 참조 자산)
+* [Examples](EXAMPLES.md) — Examples 참조 및 가이드 명세서.

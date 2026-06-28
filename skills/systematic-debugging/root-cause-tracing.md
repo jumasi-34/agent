@@ -1,4 +1,21 @@
+---
+id: skill.systematic_debugging.root_cause_tracing
+type: reference
+status: active
+
+summary: >
+  Root Cause Tracing 참조 및 가이드 명세서.
+
+parent: skill.systematic_debugging
+
+updated: 2026-06-28
+---
 # Root Cause Tracing
+
+* **Parent (상위 스킬)**: [SKILL.md](./SKILL.md)
+
+---
+
 
 ## Overview
 

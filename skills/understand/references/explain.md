@@ -1,4 +1,21 @@
+---
+id: skill.understand.explain
+type: reference
+status: active
+
+summary: >
+  Explain 참조 및 가이드 명세서.
+
+parent: skill.understand
+
+updated: 2026-06-28
+---
 # 소스코드 및 모듈 상세 딥다이브 가이드라인 (understand-explain)
+
+* **Parent (상위 스킬)**: [SKILL.md](../SKILL.md)
+
+---
+
 
 본 지침은 기존 지식 그래프(`.understand-anything/knowledge-graph.json`)와 연동하여, 코드베이스 내의 특정 소스파일, 함수 또는 클래스 모듈을 입체적으로 추적하고 그 내부 아키텍처 및 상세 로직을 정밀 설명하기 위한 가이드라인입니다.
 

@@ -703,3 +703,10 @@ Same cycle: RED (baseline) → GREEN (write skill) → REFACTOR (close loopholes
 Same benefits: Better quality, fewer surprises, bulletproof results.
 
 If you follow TDD for code, follow it for skills. It's the same discipline applied to documentation.
+
+
+## Sub-Assets (하위 참조 자산)
+* [Anthropic Best Practices](anthropic-best-practices.md) — Anthropic Best Practices 참조 및 가이드 명세서.
+* [Claude Md Testing](examples/CLAUDE_MD_TESTING.md) — Claude Md Testing 참조 및 가이드 명세서.
+* [Persuasion Principles](persuasion-principles.md) — Persuasion Principles 참조 및 가이드 명세서.
+* [Testing Skills With Subagents](testing-skills-with-subagents.md) — Testing Skills With Subagents 참조 및 가이드 명세서.

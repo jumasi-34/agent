@@ -1,4 +1,21 @@
+---
+id: skill.writing_skills.anthropic_best_practices
+type: reference
+status: active
+
+summary: >
+  Anthropic Best Practices 참조 및 가이드 명세서.
+
+parent: skill.writing_skills
+
+updated: 2026-06-28
+---
 # Skill authoring best practices
+
+* **Parent (상위 스킬)**: [SKILL.md](./SKILL.md)
+
+---
+
 
 > Learn how to write effective Skills that agents can discover and use successfully.
 

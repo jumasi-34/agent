@@ -1,4 +1,21 @@
+---
+id: skill.writing_skills.CLAUDE_MD_TESTING
+type: reference
+status: active
+
+summary: >
+  Claude Md Testing 참조 및 가이드 명세서.
+
+parent: skill.writing_skills
+
+updated: 2026-06-28
+---
 # Testing CLAUDE.md Skills Documentation
+
+* **Parent (상위 스킬)**: [SKILL.md](../SKILL.md)
+
+---
+
 
 Testing different documentation variants to find what actually makes agents discover and use skills under pressure.
 

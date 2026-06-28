@@ -1,4 +1,21 @@
+---
+id: skill.understand.ru
+type: reference
+status: active
+
+summary: >
+  Ru 참조 및 가이드 명세서.
+
+parent: skill.understand
+
+updated: 2026-06-28
+---
 # Руководство по выводу на русском языке (Russian)
+
+* **Parent (상위 스킬)**: [SKILL.md](../SKILL.md)
+
+---
+
 
 Этот файл содержит языковые рекомендации для генерации контента графа знаний на русском языке.
 

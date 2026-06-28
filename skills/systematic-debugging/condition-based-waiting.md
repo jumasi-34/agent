@@ -1,4 +1,21 @@
+---
+id: skill.systematic_debugging.condition_based_waiting
+type: reference
+status: active
+
+summary: >
+  Condition Based Waiting 참조 및 가이드 명세서.
+
+parent: skill.systematic_debugging
+
+updated: 2026-06-28
+---
 # Condition-Based Waiting
+
+* **Parent (상위 스킬)**: [SKILL.md](./SKILL.md)
+
+---
+
 
 ## Overview
 

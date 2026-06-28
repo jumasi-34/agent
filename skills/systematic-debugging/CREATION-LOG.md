@@ -1,4 +1,21 @@
+---
+id: skill.systematic_debugging.CREATION_LOG
+type: reference
+status: active
+
+summary: >
+  Creation Log 참조 및 가이드 명세서.
+
+parent: skill.systematic_debugging
+
+updated: 2026-06-28
+---
 # Creation Log: Systematic Debugging Skill
+
+* **Parent (상위 스킬)**: [SKILL.md](./SKILL.md)
+
+---
+
 
 Reference example of extracting, structuring, and bulletproofing a critical skill.
 

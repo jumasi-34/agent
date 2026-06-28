@@ -1,4 +1,21 @@
+---
+id: skill.understand.chat
+type: reference
+status: active
+
+summary: >
+  Chat 참조 및 가이드 명세서.
+
+parent: skill.understand
+
+updated: 2026-06-28
+---
 # 코드베이스 기반 대화형 질의응답 가이드라인 (understand-chat)
+
+* **Parent (상위 스킬)**: [SKILL.md](../SKILL.md)
+
+---
+
 
 본 지침은 지식 그래프(`.understand-anything/knowledge-graph.json`)를 활용하여 코드베이스의 아키텍처, 의존 관계, 특정 컴포넌트 정보에 대해 질문하고 정확히 이해하는 분석 가이드라인입니다.
 

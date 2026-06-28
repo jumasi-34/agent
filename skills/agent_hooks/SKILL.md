@@ -46,3 +46,8 @@ PYTHONPATH=/home/jumasi/workstation /home/jumasi/miniconda3/envs/goeq/bin/python
 # 역동기화 차단 및 로컬 환경 동적 복구 루프 기동
 PYTHONPATH=/home/jumasi/workstation /home/jumasi/miniconda3/envs/goeq/bin/python .agents/skills/agent_hooks/scripts/reverse_sync.py
 ```
+
+
+## Sub-Assets (하위 참조 자산)
+* [Ncf Metrics Revamp Plan](ncf_metrics_revamp_plan.md) — Ncf Metrics Revamp Plan 참조 및 가이드 명세서.
+* [Readme](scripts/README.md) — Readme 참조 및 가이드 명세서.

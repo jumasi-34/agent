@@ -1,4 +1,21 @@
+---
+id: skill.humanizer.after_3
+type: reference
+status: active
+
+summary: >
+  After 3 참조 및 가이드 명세서.
+
+parent: skill.humanizer
+
+updated: 2026-06-28
+---
 # 디지털 전환 시대의 기업 전략
+
+* **Parent (상위 스킬)**: [SKILL.md](../SKILL.md)
+
+---
+
 
 ## 서론
 

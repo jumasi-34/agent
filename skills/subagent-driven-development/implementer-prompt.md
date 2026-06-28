@@ -1,4 +1,21 @@
+---
+id: skill.subagent_driven_development.implementer_prompt
+type: reference
+status: active
+
+summary: >
+  Implementer Prompt 참조 및 가이드 명세서.
+
+parent: skill.subagent_driven_development
+
+updated: 2026-06-28
+---
 # Implementer Subagent Prompt Template
+
+* **Parent (상위 스킬)**: [SKILL.md](./SKILL.md)
+
+---
+
 
 Use this template when dispatching an implementer subagent.
 

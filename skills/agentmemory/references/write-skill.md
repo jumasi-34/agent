@@ -1,4 +1,21 @@
+---
+id: skill.agentmemory.write_skill
+type: reference
+status: active
+
+summary: >
+  Write Skill 참조 및 가이드 명세서.
+
+parent: skill.agentmemory
+
+updated: 2026-06-28
+---
 # agentmemory 스킬 신규 작성 표준
+
+* **Parent (상위 스킬)**: [SKILL.md](../SKILL.md)
+
+---
+
 
 본 문서는 agentmemory 규격의 스킬을 신규 작성하거나 기존 스킬을 갱신할 때 준수해야 하는 공통 포맷과 규칙을 기술합니다.
 

@@ -1,4 +1,21 @@
+---
+id: skill.writing_plans.plan_document_reviewer_prompt
+type: reference
+status: active
+
+summary: >
+  Plan Document Reviewer Prompt 참조 및 가이드 명세서.
+
+parent: skill.writing_plans
+
+updated: 2026-06-28
+---
 # Plan Document Reviewer Prompt Template
+
+* **Parent (상위 스킬)**: [SKILL.md](./SKILL.md)
+
+---
+
 
 Use this template when dispatching a plan document reviewer subagent.
 

@@ -1,4 +1,21 @@
+---
+id: skill.brainstorming.visual_companion
+type: reference
+status: active
+
+summary: >
+  Visual Companion 참조 및 가이드 명세서.
+
+parent: skill.brainstorming
+
+updated: 2026-06-28
+---
 # Visual Companion Guide
+
+* **Parent (상위 스킬)**: [SKILL.md](./SKILL.md)
+
+---
+
 
 Browser-based visual brainstorming companion for showing mockups, diagrams, and options.
 

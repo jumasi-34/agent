@@ -188,3 +188,7 @@ After saving the plan, offer execution choice:
 **If Inline Execution chosen:**
 - **REQUIRED SUB-SKILL:** Use superpowers:executing-plans
 - Batch execution with checkpoints for review
+
+
+## Sub-Assets (하위 참조 자산)
+* [Plan Document Reviewer Prompt](plan-document-reviewer-prompt.md) — Plan Document Reviewer Prompt 참조 및 가이드 명세서.

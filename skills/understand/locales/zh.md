@@ -1,4 +1,21 @@
+---
+id: skill.understand.zh
+type: reference
+status: active
+
+summary: >
+  Zh 참조 및 가이드 명세서.
+
+parent: skill.understand
+
+updated: 2026-06-28
+---
 # 中文输出指南 (Chinese Simplified)
+
+* **Parent (상위 스킬)**: [SKILL.md](../SKILL.md)
+
+---
+
 
 本文件提供生成中文知识图谱内容的语言指导。
 

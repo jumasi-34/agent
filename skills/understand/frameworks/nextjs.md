@@ -1,4 +1,21 @@
+---
+id: skill.understand.nextjs
+type: reference
+status: active
+
+summary: >
+  Nextjs 참조 및 가이드 명세서.
+
+parent: skill.understand
+
+updated: 2026-06-28
+---
 # Next.js Framework Addendum
+
+* **Parent (상위 스킬)**: [SKILL.md](../SKILL.md)
+
+---
+
 
 > Injected into file-analyzer and architecture-analyzer prompts when Next.js is detected.
 > Do NOT use as a standalone prompt — always appended to the base prompt template.

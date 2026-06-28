@@ -1,4 +1,21 @@
+---
+id: skill.agent_hooks.ncf_metrics_revamp_plan
+type: reference
+status: active
+
+summary: >
+  Ncf Metrics Revamp Plan 참조 및 가이드 명세서.
+
+parent: skill.agent_hooks
+
+updated: 2026-06-28
+---
 # NCF Metrics Layout and Styling Revamp Implementation Plan
+
+* **Parent (상위 스킬)**: [SKILL.md](./SKILL.md)
+
+---
+
 
 > **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
 

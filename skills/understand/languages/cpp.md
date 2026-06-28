@@ -1,4 +1,21 @@
+---
+id: skill.understand.cpp
+type: reference
+status: active
+
+summary: >
+  Cpp 참조 및 가이드 명세서.
+
+parent: skill.understand
+
+updated: 2026-06-28
+---
 # C++ Language Prompt Snippet
+
+* **Parent (상위 스킬)**: [SKILL.md](../SKILL.md)
+
+---
+
 
 ## Key Concepts
 

@@ -1,4 +1,21 @@
+---
+id: skill.systematic_debugging.defense_in_depth
+type: reference
+status: active
+
+summary: >
+  Defense In Depth 참조 및 가이드 명세서.
+
+parent: skill.systematic_debugging
+
+updated: 2026-06-28
+---
 # Defense-in-Depth Validation
+
+* **Parent (상위 스킬)**: [SKILL.md](./SKILL.md)
+
+---
+
 
 ## Overview
 

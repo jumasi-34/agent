@@ -875,3 +875,52 @@ Report to the user: `[Phase 7/7] Saving knowledge graph...`
 | `depends_on`, `configures`, `triggers` | 0.6 |
 | `tested_by`, `documents`, `provisions`, `serves`, `routes` | 0.5 |
 | All others | 0.5 (default) |
+
+
+## Sub-Assets (하위 참조 자산)
+* [Django](frameworks/django.md) — Django 참조 및 가이드 명세서.
+* [Express](frameworks/express.md) — Express 참조 및 가이드 명세서.
+* [Fastapi](frameworks/fastapi.md) — Fastapi 참조 및 가이드 명세서.
+* [Flask](frameworks/flask.md) — Flask 참조 및 가이드 명세서.
+* [Gin](frameworks/gin.md) — Gin 참조 및 가이드 명세서.
+* [Nextjs](frameworks/nextjs.md) — Nextjs 참조 및 가이드 명세서.
+* [Rails](frameworks/rails.md) — Rails 참조 및 가이드 명세서.
+* [React](frameworks/react.md) — React 참조 및 가이드 명세서.
+* [Spring](frameworks/spring.md) — Spring 참조 및 가이드 명세서.
+* [Vue](frameworks/vue.md) — Vue 참조 및 가이드 명세서.
+* [Cpp](languages/cpp.md) — Cpp 참조 및 가이드 명세서.
+* [Csharp](languages/csharp.md) — Csharp 참조 및 가이드 명세서.
+* [Css](languages/css.md) — Css 참조 및 가이드 명세서.
+* [Dockerfile](languages/dockerfile.md) — Dockerfile 참조 및 가이드 명세서.
+* [Go](languages/go.md) — Go 참조 및 가이드 명세서.
+* [Graphql](languages/graphql.md) — Graphql 참조 및 가이드 명세서.
+* [Html](languages/html.md) — Html 참조 및 가이드 명세서.
+* [Java](languages/java.md) — Java 참조 및 가이드 명세서.
+* [Javascript](languages/javascript.md) — Javascript 참조 및 가이드 명세서.
+* [Json](languages/json.md) — Json 참조 및 가이드 명세서.
+* [Kotlin](languages/kotlin.md) — Kotlin 참조 및 가이드 명세서.
+* [Markdown](languages/markdown.md) — Markdown 참조 및 가이드 명세서.
+* [Php](languages/php.md) — Php 참조 및 가이드 명세서.
+* [Protobuf](languages/protobuf.md) — Protobuf 참조 및 가이드 명세서.
+* [Python](languages/python.md) — Python 참조 및 가이드 명세서.
+* [Ruby](languages/ruby.md) — Ruby 참조 및 가이드 명세서.
+* [Rust](languages/rust.md) — Rust 참조 및 가이드 명세서.
+* [Shell](languages/shell.md) — Shell 참조 및 가이드 명세서.
+* [Sql](languages/sql.md) — Sql 참조 및 가이드 명세서.
+* [Swift](languages/swift.md) — Swift 참조 및 가이드 명세서.
+* [Terraform](languages/terraform.md) — Terraform 참조 및 가이드 명세서.
+* [Typescript](languages/typescript.md) — Typescript 참조 및 가이드 명세서.
+* [Yaml](languages/yaml.md) — Yaml 참조 및 가이드 명세서.
+* [En](locales/en.md) — En 참조 및 가이드 명세서.
+* [Ja](locales/ja.md) — Ja 참조 및 가이드 명세서.
+* [Ko](locales/ko.md) — Ko 참조 및 가이드 명세서.
+* [Ru](locales/ru.md) — Ru 참조 및 가이드 명세서.
+* [Zh Tw](locales/zh-TW.md) — Zh Tw 참조 및 가이드 명세서.
+* [Zh](locales/zh.md) — Zh 참조 및 가이드 명세서.
+* [Chat](references/chat.md) — Chat 참조 및 가이드 명세서.
+* [Dashboard](references/dashboard.md) — Dashboard 참조 및 가이드 명세서.
+* [Diff](references/diff.md) — Diff 참조 및 가이드 명세서.
+* [Domain](references/domain.md) — Domain 참조 및 가이드 명세서.
+* [Explain](references/explain.md) — Explain 참조 및 가이드 명세서.
+* [Knowledge](references/knowledge.md) — Knowledge 참조 및 가이드 명세서.
+* [Onboard](references/onboard.md) — Onboard 참조 및 가이드 명세서.

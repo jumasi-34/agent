@@ -1,4 +1,21 @@
+---
+id: skill.subagent_driven_development.task_reviewer_prompt
+type: reference
+status: active
+
+summary: >
+  Task Reviewer Prompt 참조 및 가이드 명세서.
+
+parent: skill.subagent_driven_development
+
+updated: 2026-06-28
+---
 # Task Reviewer Prompt Template
+
+* **Parent (상위 스킬)**: [SKILL.md](./SKILL.md)
+
+---
+
 
 Use this template when dispatching a task reviewer subagent. The reviewer
 reads the task's diff once and returns two verdicts: spec compliance and

@@ -1,4 +1,21 @@
+---
+id: skill.recap.EXAMPLES
+type: reference
+status: active
+
+summary: >
+  Examples 참조 및 가이드 명세서.
+
+parent: skill.recap
+
+updated: 2026-06-28
+---
 # recap worked examples
+
+* **Parent (상위 스킬)**: [SKILL.md](./SKILL.md)
+
+---
+
 
 ## 1. This week
 
