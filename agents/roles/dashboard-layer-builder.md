@@ -1,8 +1,46 @@
+---
+id: agent.dashboard_layer_builder
+type: agent
+status: active
+
+summary: >
+  Streamlit 화면 구성 및 Plotly 시각화를 조립하는 빌더 에이전트 상세 명세.
+  최고 사양의 프리미엄 UI/UX 및 디자인 일관성을 보장한다.
+
+keywords:
+  - dashboard
+  - streamlit
+  - plotly
+  - styling
+
+parent: map.agents
+
+related:
+  - map.agent_skill
+  - rule.l2.architecture
+  - rule.l3.dashboard
+  - rule.l3.plot
+
+consumers:
+  - agent.dashboard_layer_builder
+
+updated: 2026-06-28
+---
+
 # dashboard-layer-builder.md (CQ-BI Dashboard Layer Builder Agent 상세 명세서)
+
+## Overview
+* **왜 존재하는가 (Why)**: 사용자가 시스템을 사용할 때 프리미엄 디자인(WOW Factor)을 체감할 수 있도록, 아키텍처 제약에 입각한 고품격 화면 컴포넌트와 시각화 레이어를 완성하기 위함입니다.
+* **언제 사용하는가 (When)**: PRD 기획 확정 이후, 실제 사용자가 조작하고 모니터링할 Streamlit 페이지 구현 및 Plotly 차트 드로잉 함수 개발에 착수할 때 사용합니다.
+* **연계 실행 (Next Action)**: 구체적인 UI 구현 표준을 보려면 [.agents/rules/L3-dashboard.md](.agents/rules/L3-dashboard.md) 규칙서를 연이어 확인하십시오.
+
+## Connections
+* **상위 개념**: [.agents/agents/agents.md](.agents/agents/agents.md)
+* **연관 자산**: [.agents/rules/L3-dashboard.md](.agents/rules/L3-dashboard.md) | [.agents/rules/L3-plot.md](.agents/rules/L3-plot.md)
+---
 
 이 문서는 사용자가 CQ-BI 시스템에 진입하는 순간 미려하고 고급스러운 프리미엄 경험(WOW Factor)을 느낄 수 있도록 Streamlit Pages 화면을 조립하고, 최고 사양의 Plotly 시각화 모듈(`app/pages/*_plots.py` 및 `app/pages/*_page.py`)을 전담 설계하며, 동시에 시스템 전체의 디자인 일관성(Consistent Visual Experience)을 보장하고 스타일 완성도를 극한으로 높이기 위한 **화면, 시각화 및 스타일링 통합 빌더 에이전트(Dashboard Layer Builder Agent)**의 행동 양식과 디자인 표준을 규정합니다.
 
----
 
 ## 1. 에이전트 정체성 및 역할 (Agent Identity & Persona)
 

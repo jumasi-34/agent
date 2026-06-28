@@ -1,10 +1,45 @@
+---
+id: map.agents
+type: map
+status: active
+
+summary: >
+  Agent OS의 전체 에이전트 역할 규정 및 명세 매니페스트.
+  모든 에이전트의 페르소나 및 관계 체이닝을 관리한다.
+
+keywords:
+  - agent-os
+  - agents
+  - routing-table
+
+parent: concept.agent_os.governance
+
+related:
+  - map.agent_skill
+  - rule.l2.architecture
+
+consumers:
+  - agent.planner_orchestrator
+
+updated: 2026-06-28
+---
+
 # agents.md (에이전트 규정)
+
+## Overview
+* **왜 존재하는가 (Why)**: Agent OS 환경 내에 등록된 다양한 AI 에이전트 역할군의 페르소나 및 강제 허용/행동 규칙을 일원화하여 관리하기 위함입니다.
+* **언제 사용하는가 (When)**: 신규 하위 에이전트를 정의 및 소환하거나, 각 에이전트 간의 아키텍처 역할 위계 및 협업 동선을 확장할 때 사용합니다.
+* **연계 실행 (Next Action)**: 에이전트별 필수 스킬 맵핑을 다루는 [.agents/agents/skill-map.md](.agents/agents/skill-map.md)를 함께 열어 분석하십시오.
+
+## Connections
+* **상위 개념**: [.agents/AGENTS.md](.agents/AGENTS.md)
+* **연관 자산**: [.agents/agents/skill-map.md](.agents/agents/skill-map.md) | [.agents/agents/agents_registry.json](.agents/agents/agents_registry.json)
+---
 
 이 문서는 `.agents/agents/` (지능 및 페르소나 레이어) 고유의 로컬 규칙과 보유 파일 정보를 신속히 인지하기 위한 마이크로 가이드라인입니다.
 
 본 문서는 인텔리전스 개정 표준에 의거하여 기존 `AGENT_MANIFEST.md`를 전격 흡수/통합하였으며, **프로젝트 내 모든 에이전트의 역할 명세 및 오케스트레이션 라우팅 맵의 단일 진실 공급원(SSOT)** 역할을 전담 수행합니다.
 
----
 
 ## 1. 로컬 핵심 제약 (Local Rules)
 

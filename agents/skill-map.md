@@ -1,10 +1,45 @@
+---
+id: map.agent_skill
+type: map
+status: active
+
+summary: >
+  에이전트별 필수 기동 스킬 맵핑 정의서.
+  각 에이전트 페르소나가 완수해야 할 가동 스킬들을 명시한다.
+
+keywords:
+  - agent-os
+  - skill-map
+  - capabilities
+
+parent: concept.agent_os.governance
+
+related:
+  - map.agents
+  - skill.using_superpowers
+
+consumers:
+  - agent.planner_orchestrator
+
+updated: 2026-06-28
+---
+
 # 에이전트별 필수 기동 스킬 맵핑 정의서 (agents/skill-map.md)
+
+## Overview
+* **왜 존재하는가 (Why)**: 각 에이전트 페르소나가 자기 기동 단계 및 기능에 맞춰 올바른 스킬셋(Tool)을 학습하고 적소에 오작동 없이 사용하도록 정의하기 위함입니다.
+* **언제 사용하는가 (When)**: 새로운 스킬을 에이전트 라이프사이클에 이식하거나, 특정 에이전트 페르소나의 권한과 가동 규칙을 변경할 때 사용합니다.
+* **연계 실행 (Next Action)**: 전체 에이전트 규정을 담은 [.agents/agents/agents.md](.agents/agents/agents.md)를 연이어 참조하십시오.
+
+## Connections
+* **상위 개념**: [.agents/AGENTS.md](.agents/AGENTS.md)
+* **연관 자산**: [.agents/agents/agents.md](.agents/agents/agents.md) | [.agents/skills/index.md](.agents/skills/index.md)
+---
 
 본 문서는 프로젝트 내에서 고유한 역할 페르소나를 지니고 협업하는 각 AI 에이전트가 어떤 스킬을 핵심적으로 기동하고 활용해야 하는지 명시한 **에이전트-스킬 물리 연동 정의서**입니다.
 
 에이전트는 자신의 정체성(Identity)과 담당 단계에 맞추어 필수 매핑 스킬들을 최우선적으로 습득 및 실행하십시오.
 
----
 
 ## 1. 최상위 설계 및 기획 에이전트 (Planner Agent)
 

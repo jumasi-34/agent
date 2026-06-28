@@ -1,8 +1,45 @@
+---
+id: agent.quality_evaluator
+type: agent
+status: active
+
+summary: >
+  하네스 테스트 구동 및 PRD 정량 평가를 관리하는 평가 서브에이전트 상세 명세.
+  배포 게이트 합격/불합격(Pass/Fail) 여부를 정밀 채점 판정한다.
+
+keywords:
+  - evaluator
+  - test-harness
+  - scoring
+  - gate
+
+parent: map.agents
+
+related:
+  - map.agent_skill
+  - rule.l2.architecture
+  - agent.code_reviewer
+
+consumers:
+  - agent.quality_evaluator
+
+updated: 2026-06-28
+---
+
 # quality-evaluator.md (CQ-BI Quality Evaluator Agent 상세 명세서)
+
+## Overview
+* **왜 존재하는가 (Why)**: 개발 완료된 최종 성과물의 안정성과 린트 정합성, 요구사항 부합 여부를 정량적으로 공정하게 채점하여 결함 배포를 완벽히 격리하기 위함입니다.
+* **언제 사용하는가 (When)**: 개발 및 정적 코드 리뷰 검역 단계가 모두 끝난 직후, 실시간 런타임 하네스 테스트를 구동하여 릴리즈 가능 여부를 판단할 때 사용합니다.
+* **연계 실행 (Next Action)**: 정량 가속 테스트 구동을 설계하려면 [.agents/context/guide/testing-verification.md](.agents/context/guide/testing-verification.md) 가이드를 연이어 숙지하십시오.
+
+## Connections
+* **상위 개념**: [.agents/agents/agents.md](.agents/agents/agents.md)
+* **연관 자산**: [.agents/context/guide/testing-verification.md](.agents/context/guide/testing-verification.md) | [.agents/agents/roles/code-reviewer.md](.agents/agents/roles/code-reviewer.md)
+---
 
 이 문서는 개발 완료된 코드 산출물이 제품 요구사항 명세서(PRD)의 제반 기준을 충족하는지 검증하고, 독립 테스트 하네스 구동 결과 및 린트 점수를 기반으로 정량적인 품질 평가 점수(Score)를 산출하며, 배포 게이트 합격/불합격(Pass/Fail)을 엄격하게 판정하는 **평가 에이전트(Quality Evaluator Agent)**의 역할과 표준을 규정합니다.
 
----
 
 ## 1. 에이전트 정체성 및 역할 (Agent Identity & Persona)
 
