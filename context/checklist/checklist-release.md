@@ -13,7 +13,7 @@ keywords:
   - verification
   - production-ready
 
-parent: checklist.readme
+parent: checklist.index
 
 related:
   - checklist.architecture
@@ -34,7 +34,7 @@ updated: 2026-06-28
 * **연계 실행 (Next Action)**: 릴리즈를 완수하고 배포 결과 및 에러 예방 로그를 확인하려면 [reverse-sync-prevention.md](.agents/context/checklist/reverse-sync-prevention.md)의 이력을 갱신하거나 확인하십시오.
 
 ## Connections
-* **상위 개념**: [.agents/context/checklist/README.md](.agents/context/checklist/README.md)
+* **상위 개념**: [.agents/context/checklist/checklist-index.md](.agents/context/checklist/checklist-index.md)
 * **연관 자산**: 
   - [.agents/context/checklist/checklist-architecture.md](.agents/context/checklist/checklist-architecture.md)
   - [.agents/context/checklist/checklist-coding-standard.md](.agents/context/checklist/checklist-coding-standard.md)

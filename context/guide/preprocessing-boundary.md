@@ -12,7 +12,7 @@ keywords:
   - boundary
   - separation-of-concerns
 
-parent: guide.readme
+parent: guide.index
 
 related:
   - rule.l3.service
@@ -35,7 +35,7 @@ updated: 2026-06-28
 * **연계 실행 (Next Action)**: 구체적인 SQL 쿼리 설계 표준을 보려면 [rule.l3.query](.agents/rules/L3-query.md)를 연이어 참조하십시오.
 
 ## Connections
-* **상위 개념**: [guide.readme](.agents/context/guide/README.md)
+* **상위 개념**: [guide.readme](.agents/context/guide/guide-index.md)
 * **연관 자산**:
   - [.agents/rules/L3-service.md](.agents/rules/L3-service.md)
   - [.agents/rules/L3-plot.md](.agents/rules/L3-plot.md)

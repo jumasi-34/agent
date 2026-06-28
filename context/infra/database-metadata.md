@@ -14,7 +14,7 @@ keywords:
   - databricks
   - sqlite
 
-parent: infra.readme
+parent: infra.index
 
 related:
   - infra.infrastructure_summary
@@ -35,7 +35,7 @@ updated: 2026-06-28
 * **연계 실행 (Next Action)**: 공통 컬럼의 메타데이터 설계 가이드를 보려면 [guide.common_column_metadata_design](../guide/common-column-metadata-design.md)을 참조하십시오.
 
 ## Connections
-* **상위 개념**: [infra.readme](.agents/context/infra/README.md)
+* **상위 개념**: [infra.readme](.agents/context/infra/infra-index.md)
 * **연관 자산**:
   - [.agents/context/guide/common-column-metadata-design.md](.agents/context/guide/common-column-metadata-design.md)
   - [.agents/skills/korean_metadata/SKILL.md](.agents/skills/korean_metadata/SKILL.md)

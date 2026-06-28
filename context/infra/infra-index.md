@@ -1,5 +1,5 @@
 ---
-id: infra.readme
+id: infra.index
 type: reference
 status: active
 
@@ -13,7 +13,7 @@ keywords:
   - databases
   - environment
 
-parent: concept.context
+parent: concept.home
 
 related:
   - infra.infrastructure_summary

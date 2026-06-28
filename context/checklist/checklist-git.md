@@ -14,7 +14,7 @@ keywords:
   - sync-policy
   - rsync
 
-parent: checklist.readme
+parent: checklist.index
 
 related:
   - rule.l1.git
@@ -35,7 +35,7 @@ updated: 2026-06-28
 * **연계 실행 (Next Action)**: 소스 코드를 최종 프로덕션에 적용 및 릴리즈하기 직전에 검역해야 할 전체 게이트는 [checklist-release.md](.agents/context/checklist/checklist-release.md)를 통해 점검하십시오.
 
 ## Connections
-* **상위 개념**: [.agents/context/checklist/README.md](.agents/context/checklist/README.md)
+* **상위 개념**: [.agents/context/checklist/checklist-index.md](.agents/context/checklist/checklist-index.md)
 * **연관 자산**: 
   - [.agents/rules/L1-git.md](.agents/rules/L1-git.md)
   - [.agents/rules/L2-sync-policy.md](.agents/rules/L2-sync-policy.md)

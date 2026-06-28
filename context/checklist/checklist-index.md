@@ -1,5 +1,5 @@
 ---
-id: checklist.readme
+id: checklist.index
 type: reference
 status: active
 
@@ -13,7 +13,7 @@ keywords:
   - index
   - readme
 
-parent: concept.context
+parent: concept.home
 
 related:
   - checklist.architecture

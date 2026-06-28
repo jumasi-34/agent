@@ -14,7 +14,7 @@ keywords:
   - returns
   - claim
 
-parent: prd.readme
+parent: prd.index
 
 related:
   - prd.prd_template
@@ -30,7 +30,7 @@ updated: 2026-06-28
 # [PRD] HGWS 리턴 현황 및 생산기반 PPM 대시보드 개발 명세서 (Draft)
 
 ## Overview / Connections
-* **Parent (상위 개념)**: [prd/README.md](README.md)
+* **Parent (상위 개념)**: [prd/prd-index.md](prd-index.md)
 * **Related (연관 문서)**:
   * [prd/prd-template.md](prd-template.md) (PRD 표준 템플릿)
   * [prd/prd-oe-quality-issue-dashboard.md](prd-oe-quality-issue-dashboard.md) (OE 품질 이슈 PRD)

@@ -13,7 +13,7 @@ keywords:
   - theme
   - lucide-icons
 
-parent: guide.readme
+parent: guide.index
 
 related:
   - rule.l2.color_system
@@ -34,7 +34,7 @@ updated: 2026-06-28
 * **연계 실행 (Next Action)**: 구체적인 차트 전용 Plotly 시각화 가이드를 보려면 [guide.plotly_style_guide](.agents/context/guide/plotly-style-guide.md)를 참조하십시오.
 
 ## Connections
-* **상위 개념**: [guide.readme](.agents/context/guide/README.md)
+* **상위 개념**: [guide.readme](.agents/context/guide/guide-index.md)
 * **연관 자산**:
   - [.agents/rules/L2-color-system.md](.agents/rules/L2-color-system.md)
   - [.agents/context/guide/plotly-style-guide.md](.agents/context/guide/plotly-style-guide.md)

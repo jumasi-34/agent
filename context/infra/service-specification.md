@@ -13,7 +13,7 @@ keywords:
   - dataframe
   - preprocessing
 
-parent: infra.readme
+parent: infra.index
 
 related:
   - rule.l3.service
@@ -35,7 +35,7 @@ updated: 2026-06-28
 * **연계 실행 (Next Action)**: 생산된 DataFrame을 바탕으로 화면과 차트를 렌더링하는 UI 레이어의 스펙을 보려면 [infra.pages_specification](.agents/context/infra/pages-specification.md)을 참조하십시오.
 
 ## Connections
-* **상위 개념**: [infra.readme](.agents/context/infra/README.md)
+* **상위 개념**: [infra.readme](.agents/context/infra/infra-index.md)
 * **연관 자산**:
   - [.agents/rules/L3-service.md](.agents/rules/L3-service.md)
   - [.agents/context/infra/queries-specification.md](.agents/context/infra/queries-specification.md)

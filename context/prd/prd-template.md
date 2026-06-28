@@ -12,7 +12,7 @@ keywords:
   - specifications
   - layout
 
-parent: prd.readme
+parent: prd.index
 
 related:
   - prd.prd_hgws_return_dashboard
@@ -28,7 +28,7 @@ updated: 2026-06-28
 # [PRD] - {기능명 / 화면명} 개발 명세서
 
 ## Overview / Connections
-* **Parent (상위 개념)**: [prd/README.md](README.md)
+* **Parent (상위 개념)**: [prd/prd-index.md](prd-index.md)
 * **Related (연관 문서)**:
   * [prd/prd-hgws-return-dashboard.md](prd-hgws-return-dashboard.md) (HGWS 반송 PRD)
   * [prd/prd-oe-quality-issue-dashboard.md](prd-oe-quality-issue-dashboard.md) (OE 품질 이슈 PRD)

@@ -14,7 +14,7 @@ keywords:
   - visualization
   - typography
 
-parent: rule.readme
+parent: rule.index
 
 related:
   - rule.l2.color_system

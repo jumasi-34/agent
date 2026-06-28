@@ -12,7 +12,7 @@ keywords:
   - categories
   - mapping-standard
 
-parent: guide.readme
+parent: guide.index
 
 related:
   - rule.l3.dashboard
@@ -33,7 +33,7 @@ updated: 2026-06-28
 * **연계 실행 (Next Action)**: 신규 페이지 개발 시 거치는 표준 화면 설계 워크플로우를 보려면 [guide.new_page_development_workflow](.agents/context/guide/new_page_development_workflow.md)를 참조하십시오.
 
 ## Connections
-* **상위 개념**: [guide.readme](.agents/context/guide/README.md)
+* **상위 개념**: [guide.readme](.agents/context/guide/guide-index.md)
 * **연관 자산**:
   - [.agents/rules/L3-dashboard.md](.agents/rules/L3-dashboard.md)
   - [.agents/context/guide/new_page_development_workflow.md](.agents/context/guide/new_page_development_workflow.md)

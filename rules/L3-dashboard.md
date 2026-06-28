@@ -14,7 +14,7 @@ keywords:
   - layout
   - page
 
-parent: rule.readme
+parent: rule.index
 
 related:
   - rule.l2.architecture

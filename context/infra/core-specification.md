@@ -13,7 +13,7 @@ keywords:
   - design-system
   - logging
 
-parent: infra.readme
+parent: infra.index
 
 related:
   - rule.l2.architecture
@@ -34,7 +34,7 @@ updated: 2026-06-28
 * **연계 실행 (Next Action)**: 공용 인프라 영역의 주요 5대 API 계약 및 핵심 요약을 보려면 [infra.infrastructure_summary](.agents/context/infra/infrastructure-summary.md)를 참조하십시오.
 
 ## Connections
-* **상위 개념**: [infra.readme](.agents/context/infra/README.md)
+* **상위 개념**: [infra.readme](.agents/context/infra/infra-index.md)
 * **연관 자산**:
   - [.agents/rules/L2-architecture.md](.agents/rules/L2-architecture.md)
   - [.agents/context/infra/infrastructure-summary.md](.agents/context/infra/infrastructure-summary.md)

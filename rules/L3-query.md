@@ -14,7 +14,7 @@ keywords:
   - cte
   - database
 
-parent: rule.readme
+parent: rule.index
 
 related:
   - rule.l2.naming_convention

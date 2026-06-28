@@ -13,7 +13,7 @@ keywords:
   - unit-test
   - compilation
 
-parent: guide.readme
+parent: guide.index
 
 related:
   - checklist.release
@@ -34,7 +34,7 @@ updated: 2026-06-28
 * **연계 실행 (Next Action)**: 작업 종료 전 무결함을 확증하는 정량 정적 검증 스킬을 다루려면 [verification-before-completion](../../skills/verification-before-completion/SKILL.md)을 참조하십시오.
 
 ## Connections
-* **상위 개념**: [guide.readme](.agents/context/guide/README.md)
+* **상위 개념**: [guide.readme](.agents/context/guide/guide-index.md)
 * **연관 자산**:
   - [.agents/context/checklist/checklist-release.md](.agents/context/checklist/checklist-release.md)
   - [.agents/skills/verification-before-completion/SKILL.md](.agents/skills/verification-before-completion/SKILL.md)

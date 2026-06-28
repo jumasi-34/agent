@@ -12,7 +12,7 @@ keywords:
   - common-columns
   - ssot
 
-parent: guide.readme
+parent: guide.index
 
 related:
   - skill.korean_metadata
@@ -33,7 +33,7 @@ updated: 2026-06-28
 * **연계 실행 (Next Action)**: 한국어 컬럼 메타데이터 매핑 및 업데이트 스킬 지침을 보려면 [korean_metadata](../../skills/korean_metadata/SKILL.md)를 참조하십시오.
 
 ## Connections
-* **상위 개념**: [guide.readme](.agents/context/guide/README.md)
+* **상위 개념**: [guide.readme](.agents/context/guide/guide-index.md)
 * **연관 자산**:
   - [.agents/skills/korean_metadata/SKILL.md](.agents/skills/korean_metadata/SKILL.md)
 

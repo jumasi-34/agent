@@ -12,7 +12,7 @@ keywords:
   - boilerplate
   - comments
 
-parent: guide.readme
+parent: guide.index
 
 related:
   - rule.l2.naming_convention
@@ -35,7 +35,7 @@ updated: 2026-06-28
 * **연계 실행 (Next Action)**: 구체적인 Streamlit 표준 페이지 템플릿 상세 명세를 확인하려면 [guide.page_template_standard](.agents/context/guide/page-template-standard.md)를 참조하십시오.
 
 ## Connections
-* **상위 개념**: [guide.readme](.agents/context/guide/README.md)
+* **상위 개념**: [guide.readme](.agents/context/guide/guide-index.md)
 * **연관 자산**:
   - [.agents/context/guide/page-template-standard.md](.agents/context/guide/page-template-standard.md)
   - [.agents/context/guide/page_template_standard.py](.agents/context/guide/page_template_standard.py)

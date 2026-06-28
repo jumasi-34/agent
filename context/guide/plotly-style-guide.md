@@ -13,7 +13,7 @@ keywords:
   - hover-template
   - styling
 
-parent: guide.readme
+parent: guide.index
 
 related:
   - rule.l3.plot
@@ -35,7 +35,7 @@ updated: 2026-06-28
 * **연계 실행 (Next Action)**: 구체적인 고품질 Plotly 차트 생성 절차와 템플릿을 확인하려면 [guide.plotly_workflow_template](.agents/context/guide/plotly-workflow-template.md)를 참조하십시오.
 
 ## Connections
-* **상위 개념**: [guide.readme](.agents/context/guide/README.md)
+* **상위 개념**: [guide.readme](.agents/context/guide/guide-index.md)
 * **연관 자산**:
   - [.agents/rules/L3-plot.md](.agents/rules/L3-plot.md)
   - [.agents/context/guide/design-system-guide.md](.agents/context/guide/design-system-guide.md)

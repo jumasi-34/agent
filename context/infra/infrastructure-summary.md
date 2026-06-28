@@ -13,7 +13,7 @@ keywords:
   - security
   - billing
 
-parent: infra.readme
+parent: infra.index
 
 related:
   - infra.environment
@@ -34,7 +34,7 @@ updated: 2026-06-28
 * **연계 실행 (Next Action)**: 구체적인 데이터베이스 스키마 및 컬럼 정보 원장을 대조하려면 [infra.database_metadata](.agents/context/infra/database-metadata.md)를 연이어 확인하십시오.
 
 ## Connections
-* **상위 개념**: [infra.readme](.agents/context/infra/README.md)
+* **상위 개념**: [infra.readme](.agents/context/infra/infra-index.md)
 * **연관 자산**:
   - [.agents/context/infra/database-metadata.md](.agents/context/infra/database-metadata.md)
   - [.agents/context/infra/environment.md](.agents/context/infra/environment.md)

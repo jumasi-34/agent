@@ -14,7 +14,7 @@ keywords:
   - local-data
   - local-assets
 
-parent: rule.readme
+parent: rule.index
 
 related:
   - rule.l1.git

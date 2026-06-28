@@ -1,5 +1,5 @@
 ---
-id: guide.readme
+id: guide.index
 type: reference
 status: active
 
@@ -12,7 +12,7 @@ keywords:
   - architecture-guidelines
   - design-system
 
-parent: concept.context
+parent: concept.home
 
 related:
   - guide.3layer_development_process

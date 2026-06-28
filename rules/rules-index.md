@@ -1,5 +1,5 @@
 ---
-id: rule.readme
+id: rule.index
 type: rule
 status: active
 
@@ -13,7 +13,7 @@ keywords:
   - readme
   - directory-rules
 
-parent: concept.rules
+parent: concept.home
 
 related:
   - rule.l1.git

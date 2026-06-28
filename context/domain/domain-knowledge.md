@@ -15,7 +15,7 @@ keywords:
   - qrs
   - sysops
 
-parent: domain.readme
+parent: domain.index
 
 related:
   - checklist.architecture
@@ -36,7 +36,7 @@ updated: 2026-06-28
 * **연계 실행 (Next Action)**: 이 비즈니스 사양에 대응하는 구체적인 테이블 스키마와 인프라 API 연동 규격을 파악하려면 [infrastructure-summary.md](.agents/context/infra/infrastructure-summary.md)를 연이어 연계 확인하십시오.
 
 ## Connections
-* **상위 개념**: [.agents/context/domain/README.md](.agents/context/domain/README.md)
+* **상위 개념**: [.agents/context/domain/domain-index.md](.agents/context/domain/domain-index.md)
 * **연관 자산**: 
   - [.agents/context/infra/infrastructure-summary.md](.agents/context/infra/infrastructure-summary.md)
 ---

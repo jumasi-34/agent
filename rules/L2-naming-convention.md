@@ -14,7 +14,7 @@ keywords:
   - database-columns
   - functional-standards
 
-parent: rule.readme
+parent: rule.index
 
 related:
   - rule.l2.architecture

@@ -12,7 +12,7 @@ keywords:
   - boilerplate
   - chart-template
 
-parent: guide.readme
+parent: guide.index
 
 related:
   - rule.l3.plot
@@ -34,7 +34,7 @@ updated: 2026-06-28
 * **연계 실행 (Next Action)**: 정립된 Plotly 스타일 가이드를 깊이 보려면 [guide.plotly_style_guide](.agents/context/guide/plotly-style-guide.md)를 참조하십시오.
 
 ## Connections
-* **상위 개념**: [guide.readme](.agents/context/guide/README.md)
+* **상위 개념**: [guide.readme](.agents/context/guide/guide-index.md)
 * **연관 자산**:
   - [.agents/rules/L3-plot.md](.agents/rules/L3-plot.md)
   - [.agents/context/guide/design-system-guide.md](.agents/context/guide/design-system-guide.md)

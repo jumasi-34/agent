@@ -14,7 +14,7 @@ keywords:
   - failure-archive
   - rca
 
-parent: checklist.readme
+parent: checklist.index
 
 related:
   - rule.l2.context_readability
@@ -35,7 +35,7 @@ updated: 2026-06-28
 * **연계 실행 (Next Action)**: 보안 및 AI 참조 차단 영역(Exclusion Zone) 검토 수칙을 확인하려면 [checklist-security.md](.agents/context/checklist/checklist-security.md)로 이동해 수칙을 파악하십시오.
 
 ## Connections
-* **상위 개념**: [.agents/context/checklist/README.md](.agents/context/checklist/README.md)
+* **상위 개념**: [.agents/context/checklist/checklist-index.md](.agents/context/checklist/checklist-index.md)
 * **연관 자산**: 
   - [.agents/rules/L2-context-readability.md](.agents/rules/L2-context-readability.md)
   - [.agents/context/checklist/checklist-security.md](.agents/context/checklist/checklist-security.md)

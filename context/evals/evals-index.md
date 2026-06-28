@@ -1,5 +1,5 @@
 ---
-id: evals.readme
+id: eval.index
 type: reference
 status: active
 
@@ -14,7 +14,7 @@ keywords:
   - index
   - readme
 
-parent: concept.context
+parent: concept.home
 
 related:
   - evals.golden_tasks

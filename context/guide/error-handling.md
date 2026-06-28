@@ -13,7 +13,7 @@ keywords:
   - sqlite
   - exceptions
 
-parent: guide.readme
+parent: guide.index
 
 related:
   - rule.streamlit.widget_key
@@ -35,7 +35,7 @@ updated: 2026-06-28
 * **연계 실행 (Next Action)**: 에러 발생 시 SQLite 데이터가 축적되는 에이전트 런타임 훅 및 세션 관리 도구를 보려면 [agent_hooks](../../skills/agent_hooks/SKILL.md)를 참조하십시오.
 
 ## Connections
-* **상위 개념**: [guide.readme](.agents/context/guide/README.md)
+* **상위 개념**: [guide.readme](.agents/context/guide/guide-index.md)
 * **연관 자산**:
   - [.agents/skills/agent_hooks/SKILL.md](.agents/skills/agent_hooks/SKILL.md)
 

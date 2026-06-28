@@ -1,5 +1,5 @@
 ---
-id: domain.readme
+id: domain.index
 type: reference
 status: active
 
@@ -13,7 +13,7 @@ keywords:
   - index
   - readme
 
-parent: concept.context
+parent: concept.home
 
 related:
   - domain.knowledge

@@ -14,7 +14,7 @@ keywords:
   - clean-code
   - pandas
 
-parent: checklist.readme
+parent: checklist.index
 
 related:
   - rule.l2.naming_convention
@@ -36,7 +36,7 @@ updated: 2026-06-28
 * **연계 실행 (Next Action)**: 이 체크리스트를 통과한 후 Git 형상관리 및 Rsync 동기화 규칙을 준수하는지 검증하려면 [checklist-git.md](.agents/context/checklist/checklist-git.md)를 대조해 보십시오.
 
 ## Connections
-* **상위 개념**: [.agents/context/checklist/README.md](.agents/context/checklist/README.md)
+* **상위 개념**: [.agents/context/checklist/checklist-index.md](.agents/context/checklist/checklist-index.md)
 * **연관 자산**: 
   - [.agents/rules/L2-naming-convention.md](.agents/rules/L2-naming-convention.md)
   - [.agents/context/checklist/checklist-architecture.md](.agents/context/checklist/checklist-architecture.md)

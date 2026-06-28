@@ -13,7 +13,7 @@ keywords:
   - layer-isolation
   - modularity
 
-parent: checklist.readme
+parent: checklist.index
 
 related:
   - rule.l2.architecture
@@ -34,7 +34,7 @@ updated: 2026-06-28
 * **연계 실행 (Next Action)**: 아키텍처 정합성을 통과한 뒤 구체적인 코딩 표준(명명 규칙 등)을 준증하려면 [checklist-coding-standard.md](.agents/context/checklist/checklist-coding-standard.md)를 확인하십시오.
 
 ## Connections
-* **상위 개념**: [.agents/context/checklist/README.md](.agents/context/checklist/README.md)
+* **상위 개념**: [.agents/context/checklist/checklist-index.md](.agents/context/checklist/checklist-index.md)
 * **연관 자산**: 
   - [.agents/rules/L2-architecture.md](.agents/rules/L2-architecture.md)
   - [.agents/context/checklist/checklist-coding-standard.md](.agents/context/checklist/checklist-coding-standard.md)

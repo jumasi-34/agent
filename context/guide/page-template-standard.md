@@ -13,7 +13,7 @@ keywords:
   - template
   - page-controller
 
-parent: guide.readme
+parent: guide.index
 
 related:
   - rule.l3.dashboard
@@ -35,7 +35,7 @@ updated: 2026-06-28
 * **연계 실행 (Next Action)**: 즉시 복사하여 사용할 수 있는 실물 파이썬 템플릿을 확인하려면 [guide.page_template_standard_py](.agents/context/guide/page_template_standard.py) 코드를 확인하십시오. (상대 경로: [page_template_standard.py](.agents/context/guide/page_template_standard.py))
 
 ## Connections
-* **상위 개념**: [guide.readme](.agents/context/guide/README.md)
+* **상위 개념**: [guide.readme](.agents/context/guide/guide-index.md)
 * **연관 자산**:
   - [.agents/rules/L3-dashboard.md](.agents/rules/L3-dashboard.md)
   - [.agents/context/guide/coding-templates.md](.agents/context/guide/coding-templates.md)

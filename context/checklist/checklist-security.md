@@ -14,7 +14,7 @@ keywords:
   - sql-injection
   - protection
 
-parent: checklist.readme
+parent: checklist.index
 
 related:
   - checklist.architecture
@@ -35,7 +35,7 @@ updated: 2026-06-28
 * **연계 실행 (Next Action)**: 보안 검토를 마친 뒤, 자가 치유 피드백 이력을 검토하려면 [reverse-sync-prevention.md](.agents/context/checklist/reverse-sync-prevention.md)의 오류 목록을 확인하십시오.
 
 ## Connections
-* **상위 개념**: [.agents/context/checklist/README.md](.agents/context/checklist/README.md)
+* **상위 개념**: [.agents/context/checklist/checklist-index.md](.agents/context/checklist/checklist-index.md)
 * **연관 자산**: 
   - [.agents/context/checklist/checklist-git.md](.agents/context/checklist/checklist-git.md)
   - [.agents/context/checklist/reverse-sync-prevention.md](.agents/context/checklist/reverse-sync-prevention.md)

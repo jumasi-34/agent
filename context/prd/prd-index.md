@@ -1,5 +1,5 @@
 ---
-id: prd.readme
+id: prd.index
 type: reference
 status: active
 
@@ -13,7 +13,7 @@ keywords:
   - dashboard
   - template
 
-parent: concept.context
+parent: concept.home
 
 related:
   - prd.prd_template

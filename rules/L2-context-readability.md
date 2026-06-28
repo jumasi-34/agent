@@ -14,7 +14,7 @@ keywords:
   - emoji-check
   - wsl-link
 
-parent: rule.readme
+parent: rule.index
 
 related:
   - rule.l1.git

@@ -13,7 +13,7 @@ keywords:
   - incident
   - rollback
 
-parent: infra.readme
+parent: infra.index
 
 related:
   - infra.infrastructure_summary
@@ -30,7 +30,7 @@ updated: 2026-06-28
 # hooks-specification.md (품질 게이트, 관찰 및 운영 릴리즈 훅 규격서)
 
 ## Overview / Connections
-* **Parent (상위 개념)**: [infra/README.md](README.md)
+* **Parent (상위 개념)**: [infra/infra-index.md](infra-index.md)
 * **Related (연관 문서)**:
   * [infra/infrastructure-summary.md](infrastructure-summary.md) (인프라 전반 요약)
   * [checklist/checklist-release.md](../checklist/checklist-release.md) (릴리즈 체크리스트)

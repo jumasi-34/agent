@@ -13,7 +13,7 @@ keywords:
   - cte
   - query-filter
 
-parent: infra.readme
+parent: infra.index
 
 related:
   - rule.l3.query
@@ -34,7 +34,7 @@ updated: 2026-06-28
 * **연계 실행 (Next Action)**: 쿼리 결과를 가져와 가공하는 서비스 레이어 물리 사양을 보려면 [infra.service_specification](.agents/context/infra/service-specification.md)을 참조하십시오.
 
 ## Connections
-* **상위 개념**: [infra.readme](.agents/context/infra/README.md)
+* **상위 개념**: [infra.readme](.agents/context/infra/infra-index.md)
 * **연관 자산**:
   - [.agents/rules/L3-query.md](.agents/rules/L3-query.md)
   - [.agents/context/infra/service-specification.md](.agents/context/infra/service-specification.md)

@@ -12,7 +12,7 @@ keywords:
   - workflow
   - process
 
-parent: guide.readme
+parent: guide.index
 
 related:
   - rule.l2.architecture
@@ -35,7 +35,7 @@ updated: 2026-06-28
 * **연계 실행 (Next Action)**: 구체적인 페이지 템플릿과 코드를 보려면 [guide.coding_templates](.agents/context/guide/coding-templates.md)를 연이어 참조하십시오.
 
 ## Connections
-* **상위 개념**: [guide.readme](.agents/context/guide/README.md)
+* **상위 개념**: [guide.readme](.agents/context/guide/guide-index.md)
 * **연관 자산**:
   - [.agents/rules/L2-architecture.md](.agents/rules/L2-architecture.md)
   - [.agents/context/guide/new_page_development_workflow.md](.agents/context/guide/new_page_development_workflow.md)

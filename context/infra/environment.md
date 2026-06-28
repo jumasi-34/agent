@@ -13,7 +13,7 @@ keywords:
   - wsl2
   - miniconda
 
-parent: infra.readme
+parent: infra.index
 
 related:
   - infra.infrastructure_summary
@@ -34,7 +34,7 @@ updated: 2026-06-28
 * **연계 실행 (Next Action)**: 구체적인 운영 서버 배포 매뉴얼과 수동 배포 단계를 보려면 [guide.manual_setup](../guide/manual-setup.md)을 참조하십시오.
 
 ## Connections
-* **상위 개념**: [infra.readme](.agents/context/infra/README.md)
+* **상위 개념**: [infra.readme](.agents/context/infra/infra-index.md)
 * **연관 자산**:
   - [.agents/context/guide/manual-setup.md](.agents/context/guide/manual-setup.md)
   - [.agents/context/infra/infrastructure-summary.md](.agents/context/infra/infrastructure-summary.md)
