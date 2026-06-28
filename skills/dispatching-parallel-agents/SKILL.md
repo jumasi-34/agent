@@ -1,9 +1,25 @@
 ---
-name: dispatching-parallel-agents
-description: Use when facing 2+ independent tasks that can be worked on without shared state or sequential dependencies
----
+name: "dispatching-parallel-agents"
+description: "Use when facing 2+ independent tasks that can be worked on without shared state or sequential dependencies"
+id: skill.dispatching_parallel_agents
+type: skill
+status: active
 
+parent: skill.index
+
+related:
+  - skill.index
+
+consumers:
+  - agent.all
+
+updated: 2026-06-28
+---
 # Dispatching Parallel Agents
+
+## Overview / Connections
+* **Parent (상위 개념)**: [skills/index.md](../index.md)
+
 
 ## Overview
 

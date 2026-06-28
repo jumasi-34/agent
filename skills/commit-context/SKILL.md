@@ -1,10 +1,21 @@
 ---
-name: commit-context
-description: Trace a file, function, or line back to the agent session that produced its current commit. Use when the user asks "why is this code here", "what was the agent doing when this changed", "who wrote this", or wants context on a specific location in the codebase.
-argument-hint: "[file, function, or line]"
-user-invocable: true
----
+name: "commit-context"
+description: "Trace a file, function, or line back to the agent session that produced its current commit. Use when the user asks "why is this code here", "what was the agent doing when this changed", "who wrote this", or wants context on a specific location in the codebase."
+id: skill.commit_context
+type: skill
+status: active
 
+parent: skill.index
+
+related:
+  - skill.index
+  - rule.l1.git
+
+consumers:
+  - agent.all
+
+updated: 2026-06-28
+---
 The user wants commit context for: $ARGUMENTS
 
 ## Quick start

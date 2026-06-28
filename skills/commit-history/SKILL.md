@@ -1,10 +1,21 @@
 ---
-name: commit-history
-description: List recent git commits linked to agent sessions, optionally filtered by branch or repo. Use when the user asks "show agent commits", "what has the agent shipped", "list linked commits", or wants commits with their session context.
-argument-hint: "[branch=... repo=... limit=...]"
-user-invocable: true
----
+name: "commit-history"
+description: "List recent git commits linked to agent sessions, optionally filtered by branch or repo. Use when the user asks "show agent commits", "what has the agent shipped", "list linked commits", or wants commits with their session context."
+id: skill.commit_history
+type: skill
+status: active
 
+parent: skill.index
+
+related:
+  - skill.index
+  - rule.l1.git
+
+consumers:
+  - agent.all
+
+updated: 2026-06-28
+---
 The user wants a list of agent-linked commits. Filter args: $ARGUMENTS
 
 ## Quick start

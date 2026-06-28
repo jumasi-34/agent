@@ -1,10 +1,20 @@
 ---
-name: forget
-description: Delete specific observations from agentmemory after showing them and getting explicit confirmation. Use when the user says "forget this", "delete memory", "remove that note", or wants to scrub specific data for privacy.
-argument-hint: "[what to forget - session ID, file path, or search term]"
-user-invocable: true
----
+name: "forget"
+description: "Delete specific observations from agentmemory after showing them and getting explicit confirmation. Use when the user says "forget this", "delete memory", "remove that note", or wants to scrub specific data for privacy."
+id: skill.forget
+type: skill
+status: active
 
+parent: skill.index
+
+related:
+  - skill.index
+
+consumers:
+  - agent.all
+
+updated: 2026-06-28
+---
 The user wants to remove data from agentmemory: $ARGUMENTS
 
 ## Quick start

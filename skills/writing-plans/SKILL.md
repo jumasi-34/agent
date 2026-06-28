@@ -1,9 +1,25 @@
 ---
-name: writing-plans
-description: Use when you have a spec or requirements for a multi-step task, before touching code
----
+name: "writing-plans"
+description: "Use when you have a spec or requirements for a multi-step task, before touching code"
+id: skill.writing_plans
+type: skill
+status: active
 
+parent: skill.index
+
+related:
+  - skill.index
+
+consumers:
+  - agent.all
+
+updated: 2026-06-28
+---
 # Writing Plans
+
+## Overview / Connections
+* **Parent (상위 개념)**: [skills/index.md](../index.md)
+
 
 ## Overview
 

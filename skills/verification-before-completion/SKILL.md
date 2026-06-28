@@ -1,9 +1,25 @@
 ---
-name: verification-before-completion
-description: Use when about to claim work is complete, fixed, or passing, before committing or creating PRs - requires running verification commands and confirming output before making any success claims; evidence before assertions always
----
+name: "verification-before-completion"
+description: "Use when about to claim work is complete, fixed, or passing, before committing or creating PRs - requires running verification commands and confirming output before making any success claims; evidence before assertions always"
+id: skill.verification_before_completion
+type: skill
+status: active
 
+parent: skill.index
+
+related:
+  - skill.index
+
+consumers:
+  - agent.all
+
+updated: 2026-06-28
+---
 # Verification Before Completion
+
+## Overview / Connections
+* **Parent (상위 개념)**: [skills/index.md](../index.md)
+
 
 ## Overview
 

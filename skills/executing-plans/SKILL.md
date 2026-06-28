@@ -1,9 +1,25 @@
 ---
-name: executing-plans
-description: Use when you have a written implementation plan to execute in a separate session with review checkpoints
----
+name: "executing-plans"
+description: "Use when you have a written implementation plan to execute in a separate session with review checkpoints"
+id: skill.executing_plans
+type: skill
+status: active
 
+parent: skill.index
+
+related:
+  - skill.index
+
+consumers:
+  - agent.all
+
+updated: 2026-06-28
+---
 # Executing Plans
+
+## Overview / Connections
+* **Parent (상위 개념)**: [skills/index.md](../index.md)
+
 
 ## Overview
 

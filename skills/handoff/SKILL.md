@@ -1,10 +1,20 @@
 ---
-name: handoff
-description: Resume the most recent agent session for the current working directory, leading with any unanswered question. Use when the user says "where were we", "resume", "handoff", "pick up where I left off", or starts a session with no fresh context.
-argument-hint: "[optional cwd override]"
-user-invocable: true
----
+name: "handoff"
+description: "Resume the most recent agent session for the current working directory, leading with any unanswered question. Use when the user says "where were we", "resume", "handoff", "pick up where I left off", or starts a session with no fresh context."
+id: skill.handoff
+type: skill
+status: active
 
+parent: skill.index
+
+related:
+  - skill.index
+
+consumers:
+  - agent.all
+
+updated: 2026-06-28
+---
 The user wants to resume work. Optional cwd override: $ARGUMENTS
 
 ## Quick start

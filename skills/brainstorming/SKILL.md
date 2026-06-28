@@ -1,9 +1,25 @@
 ---
-name: brainstorming
+name: "brainstorming"
 description: "You MUST use this before any creative work - creating features, building components, adding functionality, or modifying behavior. Explores user intent, requirements and design before implementation."
----
+id: skill.brainstorming
+type: skill
+status: active
 
+parent: skill.index
+
+related:
+  - skill.index
+
+consumers:
+  - agent.all
+
+updated: 2026-06-28
+---
 # Brainstorming Ideas Into Designs
+
+## Overview / Connections
+* **Parent (상위 개념)**: [skills/index.md](../index.md)
+
 
 Help turn ideas into fully formed designs and specs through natural collaborative dialogue.
 

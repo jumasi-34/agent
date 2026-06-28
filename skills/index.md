@@ -1,4 +1,40 @@
+---
+id: skill.index
+type: reference
+status: active
+
+summary: >
+  에이전트 스킬 인덱스 및 기동 타이밍 가이드.
+  프로젝트 내 모든 스킬들의 기동 시점과 관계도를 색인화하여 관리한다.
+
+keywords:
+  - skills
+  - index
+  - timing
+  - triggers
+
+parent: concept.context
+
+related:
+  - rule.l2.sync_policy
+  - infra.hooks_specification
+
+consumers:
+  - agent.all
+
+updated: 2026-06-28
+---
+
 # 에이전트 스킬 인덱스 및 기동 타이밍 가이드 (skills/index.md)
+
+## Overview / Connections
+* **Parent (상위 개념)**: [AGENTS.md](../AGENTS.md)
+* **Related (연관 문서)**:
+  * [rules/L2-sync-policy.md](../rules/L2-sync-policy.md) (자산 동기화 정책)
+  * [infra/hooks-specification.md](../context/infra/hooks-specification.md) (품질 릴리즈 훅 규격)
+
+---
+
 
 본 문서는 프로젝트 내의 모든 활성 AI 에이전트들이 복잡한 스킬셋 중 적합한 지침을 즉각적으로 파악하고 가동할 수 있도록 돕는 **스킬 기동 시점 색인(Index) 정의서**입니다.
 

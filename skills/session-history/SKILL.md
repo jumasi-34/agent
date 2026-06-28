@@ -1,9 +1,20 @@
 ---
-name: session-history
-description: Show what happened in recent past sessions on this project as a clean timeline. Use when the user asks "what did we do last time", "session history", "past sessions", or wants an overview of previous work.
-user-invocable: true
----
+name: "session-history"
+description: "Show what happened in recent past sessions on this project as a clean timeline. Use when the user asks "what did we do last time", "session history", "past sessions", or wants an overview of previous work."
+id: skill.session_history
+type: skill
+status: active
 
+parent: skill.index
+
+related:
+  - skill.index
+
+consumers:
+  - agent.all
+
+updated: 2026-06-28
+---
 The user wants an overview of recent sessions on this project.
 
 ## Quick start

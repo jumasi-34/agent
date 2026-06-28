@@ -1,9 +1,25 @@
 ---
-name: agentmemory
+name: "agentmemory"
 description: "Manage agentmemory server, configurations, automatic lifecycle hooks, REST/MCP APIs, and client wiring adapters for coding agents. Use this skill when asked to explain how memory functions, configure memory environments, look up API/tool specs, inspect hooks, or run connection commands."
----
+id: skill.agentmemory
+type: skill
+status: active
 
+parent: skill.index
+
+related:
+  - skill.index
+
+consumers:
+  - agent.all
+
+updated: 2026-06-28
+---
 # agentmemory 통합 가이드라인 (agentmemory)
+
+## Overview / Connections
+* **Parent (상위 개념)**: [skills/index.md](../index.md)
+
 
 본 스킬은 에이전트 메모리 시스템(agentmemory)의 구성, 환경설정, 수동/자동 수집 라이프사이클 및 REST/MCP API 명세를 통합 관리합니다.
 

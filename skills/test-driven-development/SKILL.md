@@ -1,9 +1,26 @@
 ---
-name: test-driven-development
-description: Use when implementing any feature or bugfix, before writing implementation code
----
+name: "test-driven-development"
+description: "Use when implementing any feature or bugfix, before writing implementation code"
+id: skill.test_driven_development
+type: skill
+status: active
 
+parent: skill.index
+
+related:
+  - skill.index
+  - guide.testing_verification
+
+consumers:
+  - agent.all
+
+updated: 2026-06-28
+---
 # Test-Driven Development (TDD)
+
+## Overview / Connections
+* **Parent (상위 개념)**: [skills/index.md](../index.md)
+
 
 ## Overview
 

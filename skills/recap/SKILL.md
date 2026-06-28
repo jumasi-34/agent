@@ -1,10 +1,20 @@
 ---
-name: recap
-description: Summarize the last N agent sessions for the current project, grouped by date, with highlight observations per session. Use when the user asks "recap", "what have we been doing", "today", "this week", or wants a rollup of recent work.
-argument-hint: "[last N | today | this week]"
-user-invocable: true
----
+name: "recap"
+description: "Summarize the last N agent sessions for the current project, grouped by date, with highlight observations per session. Use when the user asks "recap", "what have we been doing", "today", "this week", or wants a rollup of recent work."
+id: skill.recap
+type: skill
+status: active
 
+parent: skill.index
+
+related:
+  - skill.index
+
+consumers:
+  - agent.all
+
+updated: 2026-06-28
+---
 The user wants a recap. Time window args: $ARGUMENTS
 
 ## Quick start

@@ -1,9 +1,25 @@
 ---
-name: subagent-driven-development
-description: Use when executing implementation plans with independent tasks in the current session
----
+name: "subagent-driven-development"
+description: "Use when executing implementation plans with independent tasks in the current session"
+id: skill.subagent_driven_development
+type: skill
+status: active
 
+parent: skill.index
+
+related:
+  - skill.index
+
+consumers:
+  - agent.all
+
+updated: 2026-06-28
+---
 # Subagent-Driven Development
+
+## Overview / Connections
+* **Parent (상위 개념)**: [skills/index.md](../index.md)
+
 
 Execute plan by dispatching a fresh implementer subagent per task, a task review (spec compliance + code quality) after each, and a broad whole-branch review at the end.
 

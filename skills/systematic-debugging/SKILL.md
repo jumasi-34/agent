@@ -1,9 +1,26 @@
 ---
-name: systematic-debugging
-description: Use when encountering any bug, test failure, or unexpected behavior, before proposing fixes
----
+name: "systematic-debugging"
+description: "Use when encountering any bug, test failure, or unexpected behavior, before proposing fixes"
+id: skill.systematic_debugging
+type: skill
+status: active
 
+parent: skill.index
+
+related:
+  - skill.index
+  - guide.testing_verification
+
+consumers:
+  - agent.all
+
+updated: 2026-06-28
+---
 # Systematic Debugging
+
+## Overview / Connections
+* **Parent (상위 개념)**: [skills/index.md](../index.md)
+
 
 ## Overview
 

@@ -1,9 +1,25 @@
 ---
-name: knowledge-capture
-description: 작업이 종료되는 시점에 세션의 지식을 분석하여 프로젝트 지식 그래프를 확장하는 스킬입니다. 새로운 지식을 Raw로 보존하고 Wiki 및 Index로 유기적 전파를 보증합니다.
----
+name: "knowledge-capture"
+description: "작업이 종료되는 시점에 세션의 지식을 분석하여 프로젝트 지식 그래프를 확장하는 스킬입니다. 새로운 지식을 Raw로 보존하고 Wiki 및 Index로 유기적 전파를 보증합니다."
+id: skill.knowledge_capture
+type: skill
+status: active
 
+parent: skill.index
+
+related:
+  - skill.index
+
+consumers:
+  - agent.all
+
+updated: 2026-06-28
+---
 # Skill. Knowledge Capture (지식 자동 캡처 및 전파 가이드)
+
+## Overview / Connections
+* **Parent (상위 개념)**: [skills/index.md](../index.md)
+
 
 이 스킬은 개발, 리팩토링, 디버깅 등 모든 개발 작업이 완료되고 종료(커밋 혹은 푸시)되는 시점에 에이전트가 자율적으로 실행해야 하는 최종 지식 정제 프로세스입니다.
 

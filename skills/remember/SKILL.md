@@ -1,10 +1,20 @@
 ---
-name: remember
-description: Save an insight, decision, or learning to agentmemory's long-term storage with searchable concept tags. Use when the user says "remember this", "save this", "note that", "don't forget", or wants to preserve knowledge for future sessions.
-argument-hint: "[what to remember]"
-user-invocable: true
----
+name: "remember"
+description: "Save an insight, decision, or learning to agentmemory's long-term storage with searchable concept tags. Use when the user says "remember this", "save this", "note that", "don't forget", or wants to preserve knowledge for future sessions."
+id: skill.remember
+type: skill
+status: active
 
+parent: skill.index
+
+related:
+  - skill.index
+
+consumers:
+  - agent.all
+
+updated: 2026-06-28
+---
 The user wants to save this to long-term memory: $ARGUMENTS
 
 ## Quick start

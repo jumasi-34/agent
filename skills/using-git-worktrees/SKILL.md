@@ -1,9 +1,26 @@
 ---
-name: using-git-worktrees
-description: Use when starting feature work that needs isolation from current workspace or before executing implementation plans - ensures an isolated workspace exists via native tools or git worktree fallback
----
+name: "using-git-worktrees"
+description: "Use when starting feature work that needs isolation from current workspace or before executing implementation plans - ensures an isolated workspace exists via native tools or git worktree fallback"
+id: skill.using_git_worktrees
+type: skill
+status: active
 
+parent: skill.index
+
+related:
+  - skill.index
+  - rule.l1.git
+
+consumers:
+  - agent.all
+
+updated: 2026-06-28
+---
 # Using Git Worktrees
+
+## Overview / Connections
+* **Parent (상위 개념)**: [skills/index.md](../index.md)
+
 
 ## Overview
 

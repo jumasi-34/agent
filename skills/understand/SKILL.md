@@ -1,10 +1,25 @@
 ---
-name: understand
+name: "understand"
 description: "Analyze codebases to produce interactive knowledge graphs, explaining architecture layers, component relations, domain flows, git diffs, developer onboard guides, or code-chat inquiries."
-argument-hint: ["[path] [--full|--auto-update|--no-auto-update|--review|--language <lang>]"]
----
+id: skill.understand
+type: skill
+status: active
 
+parent: skill.index
+
+related:
+  - skill.index
+
+consumers:
+  - agent.all
+
+updated: 2026-06-28
+---
 # 코드베이스 분석 및 지식 그래프 모델링 통합 가이드라인 (understand)
+
+## Overview / Connections
+* **Parent (상위 개념)**: [skills/index.md](../index.md)
+
 
 본 스킬은 전체 코드베이스의 구조 정밀 진단, 의존성 맵 설계 및 특화 정적/LLM 종합 분석 지침을 포함합니다.
 기본 코드베이스 분석(Phase 0~7) 외에, 사용자가 특수 영역에 대해 문의하거나 분석을 요청할 경우 아래의 상대 경로를 즉각 조회하여 자율 수행하십시오.

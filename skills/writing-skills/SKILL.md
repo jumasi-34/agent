@@ -1,9 +1,25 @@
 ---
-name: writing-skills
-description: Use when creating new skills, editing existing skills, or verifying skills work before deployment
----
+name: "writing-skills"
+description: "Use when creating new skills, editing existing skills, or verifying skills work before deployment"
+id: skill.writing_skills
+type: skill
+status: active
 
+parent: skill.index
+
+related:
+  - skill.index
+
+consumers:
+  - agent.all
+
+updated: 2026-06-28
+---
 # Writing Skills
+
+## Overview / Connections
+* **Parent (상위 개념)**: [skills/index.md](../index.md)
+
 
 ## Overview
 
