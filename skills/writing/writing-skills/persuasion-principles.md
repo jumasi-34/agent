@@ -6,14 +6,14 @@ status: active
 summary: >
   Persuasion Principles 참조 및 가이드 명세서.
 
-parent: "[[skills/writing-skills/SKILL]]"
+parent: "[[skills/writing/writing-skills/SKILL]]"
 
 updated: 2026-06-28
 ---
 
 # Persuasion Principles for Skill Design
 
-* **Parent (상위 스킬)**: [[skills/writing-skills/SKILL]]
+* **Parent (상위 스킬)**: [[skills/writing/writing-skills/SKILL]]
 
 ---
 

@@ -192,4 +192,4 @@ After saving the plan, offer execution choice:
 
 
 ## Sub-Assets (하위 참조 자산)
-* [[skills/writing-plans/plan-document-reviewer-prompt]] — Plan Document Reviewer Prompt 참조 및 가이드 명세서.
+* [[skills/writing/writing-plans/plan-document-reviewer-prompt]] — Plan Document Reviewer Prompt 참조 및 가이드 명세서.

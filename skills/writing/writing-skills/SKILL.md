@@ -603,7 +603,7 @@ Full pressure-scenario runs are the final gate, but they are slow and expensive 
 
 Micro-tests verify wording; they do not replace pressure scenarios for discipline skills.
 
-**Testing methodology:** See [[skills/writing-skills/testing-skills-with-subagents]] for the complete testing methodology:
+**Testing methodology:** See [[skills/writing/writing-skills/testing-skills-with-subagents]] for the complete testing methodology:
 - How to write pressure scenarios
 - Pressure types (time, sunk cost, authority, exhaustion)
 - Plugging holes systematically
@@ -709,7 +709,7 @@ If you follow TDD for code, follow it for skills. It's the same discipline appli
 
 
 ## Sub-Assets (하위 참조 자산)
-* [[skills/writing-skills/anthropic-best-practices]] — Anthropic Best Practices 참조 및 가이드 명세서.
-* [[skills/writing-skills/examples/CLAUDE_MD_TESTING]] — Claude Md Testing 참조 및 가이드 명세서.
-* [[skills/writing-skills/persuasion-principles]] — Persuasion Principles 참조 및 가이드 명세서.
-* [[skills/writing-skills/testing-skills-with-subagents]] — Testing Skills With Subagents 참조 및 가이드 명세서.
+* [[skills/writing/writing-skills/anthropic-best-practices]] — Anthropic Best Practices 참조 및 가이드 명세서.
+* [[skills/writing/writing-skills/examples/CLAUDE_MD_TESTING]] — Claude Md Testing 참조 및 가이드 명세서.
+* [[skills/writing/writing-skills/persuasion-principles]] — Persuasion Principles 참조 및 가이드 명세서.
+* [[skills/writing/writing-skills/testing-skills-with-subagents]] — Testing Skills With Subagents 참조 및 가이드 명세서.
