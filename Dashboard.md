@@ -1,16 +1,19 @@
+---
+title: "[Dashboard]"
+---
+
 # 🤖 Agent Knowledge Dashboard
 
 이 대시보드는 에이전트의 활동 내역(Raw)과 프로젝트 지식(Wiki)의 진화 상태를 실시간으로 모니터링하는 **중앙 관제탑**입니다. 에이전트의 사고 흐름과 지식 융합의 병목 지점을 파악하십시오.
 
 ---
-title: "[Dashboard]"
 
 ## 🚨 1. 해결 중인 오류 및 디버깅 로그 (Active Bugs)
 에이전트가 현재 직면하여 해결 중이거나 미해결 상태인 오류 기록입니다.
 
 ```dataview
 TABLE status AS "상태", agent AS "담당 에이전트", file.mtime AS "업데이트 시간"
-FROM ".agents/raw/bug"
+FROM "raw/bug"
 WHERE status != "synthesized" AND status != "resolved"
 SORT file.mtime DESC
 LIMIT 10
@@ -23,7 +26,7 @@ LIMIT 10
 
 ```dataview
 TABLE category AS "유형", file.ctime AS "발생일", agent AS "작성자"
-FROM ".agents/raw"
+FROM "raw"
 WHERE type = "raw" AND status != "synthesized"
 SORT file.ctime ASC
 LIMIT 10
@@ -36,7 +39,7 @@ LIMIT 10
 
 ```dataview
 TABLE type AS "분류", file.mtime AS "갱신 시간"
-FROM ".agents/wiki" OR ".agents/rules" OR ".agents/principles"
+FROM "wiki" OR "rules" OR "principles"
 SORT file.mtime DESC
 LIMIT 5
 ```
@@ -48,7 +51,7 @@ LIMIT 5
 
 ```dataview
 TABLE type AS "분류", status AS "상태"
-FROM ".agents"
+FROM ""
 WHERE contains(tags, "requires/human-review")
 SORT file.mtime DESC
 ```
