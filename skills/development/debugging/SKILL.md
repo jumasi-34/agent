@@ -5,11 +5,11 @@ id: skill.development.debugging
 type: skill
 status: active
 
-parent: "[[skills/index]]"
+parent: "[[skills/index.md]]"
 
 related:
-  - "[[skills/index]]"
-  - "[[context/guide/testing-verification]]"
+  - "[[skills/index.md]]"
+  - "[[context/guide/testing-verification.md]]"
 
 consumers:
   - agent.all
@@ -20,7 +20,7 @@ updated: 2026-06-28
 # Systematic Debugging
 
 ## Overview / Connections
-* **Parent (상위 개념)**: [[skills/index]]
+* **Parent (상위 개념)**: [[skills/index.md]]
 
 
 ## Overview
@@ -317,11 +317,11 @@ From debugging sessions:
 
 
 ## Sub-Assets (하위 참조 자산)
-* [[skills/development/debugging/CREATION-LOG]] — Creation Log 참조 및 가이드 명세서.
-* [[skills/development/debugging/condition-based-waiting]] — Condition Based Waiting 참조 및 가이드 명세서.
-* [[skills/development/debugging/defense-in-depth]] — Defense In Depth 참조 및 가이드 명세서.
-* [[skills/development/debugging/root-cause-tracing]] — Root Cause Tracing 참조 및 가이드 명세서.
-* [[skills/development/debugging/test-academic]] — Test Academic 참조 및 가이드 명세서.
-* [[skills/development/debugging/test-pressure-1]] — Test Pressure 1 참조 및 가이드 명세서.
-* [[skills/development/debugging/test-pressure-2]] — Test Pressure 2 참조 및 가이드 명세서.
-* [[skills/development/debugging/test-pressure-3]] — Test Pressure 3 참조 및 가이드 명세서.
+* [[skills/development/debugging/CREATION-LOG.md]] — Creation Log 참조 및 가이드 명세서.
+* [[skills/development/debugging/condition-based-waiting.md]] — Condition Based Waiting 참조 및 가이드 명세서.
+* [[skills/development/debugging/defense-in-depth.md]] — Defense In Depth 참조 및 가이드 명세서.
+* [[skills/development/debugging/root-cause-tracing.md]] — Root Cause Tracing 참조 및 가이드 명세서.
+* [[skills/development/debugging/test-academic.md]] — Test Academic 참조 및 가이드 명세서.
+* [[skills/development/debugging/test-pressure-1.md]] — Test Pressure 1 참조 및 가이드 명세서.
+* [[skills/development/debugging/test-pressure-2.md]] — Test Pressure 2 참조 및 가이드 명세서.
+* [[skills/development/debugging/test-pressure-3.md]] — Test Pressure 3 참조 및 가이드 명세서.

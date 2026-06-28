@@ -6,14 +6,14 @@ status: active
 summary: >
   Examples 참조 및 가이드 명세서.
 
-parent: "[[skills/memory/forget/SKILL]]"
+parent: "[[skills/memory/forget/SKILL.md]]"
 
 updated: 2026-06-28
 ---
 
 # forget worked examples
 
-* **Parent (상위 스킬)**: [[skills/memory/forget/SKILL]]
+* **Parent (상위 스킬)**: [[skills/memory/forget/SKILL.md]]
 
 ---
 

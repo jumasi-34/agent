@@ -15,15 +15,15 @@ keywords:
   - qrs
   - sysops
 
-parent: "[[context/domain/domain-index]]"
+parent: "[[context/domain/domain-index.md]]"
 
 related:
-  - "[[context/checklist/checklist-architecture]]"
-  - "[[context/checklist/checklist-coding-standard]]"
+  - "[[context/checklist/checklist-architecture.md]]"
+  - "[[context/checklist/checklist-coding-standard.md]]"
 
 consumers:
-  - "[[agents/roles/planner-orchestrator]]"
-  - "[[agents/roles/quality-evaluator]]"
+  - "[[agents/roles/planner-orchestrator.md]]"
+  - "[[agents/roles/quality-evaluator.md]]"
 
 updated: 2026-06-28
 ---

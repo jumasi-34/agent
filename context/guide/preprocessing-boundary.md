@@ -12,15 +12,15 @@ keywords:
   - boundary
   - separation-of-concerns
 
-parent: "[[context/guide/guide-index]]"
+parent: "[[context/guide/guide-index.md]]"
 
 related:
-  - "[[rules/L3-service]]"
-  - "[[rules/L3-plot]]"
-  - "[[context/guide/3layer-development-process]]"
+  - "[[rules/L3-service.md]]"
+  - "[[rules/L3-plot.md]]"
+  - "[[context/guide/3layer-development-process.md]]"
 
 consumers:
-  - "[[agents/roles/planner-orchestrator]]"
+  - "[[agents/roles/planner-orchestrator.md]]"
   - agent.ui_builder
   - agent.service_builder
 

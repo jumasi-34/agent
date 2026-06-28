@@ -14,14 +14,14 @@ keywords:
   - returns
   - claim
 
-parent: "[[context/prd/prd-index]]"
+parent: "[[context/prd/prd-index.md]]"
 
 related:
-  - "[[context/prd/prd-template]]"
-  - "[[context/prd/prd-oe-quality-issue-dashboard]]"
+  - "[[context/prd/prd-template.md]]"
+  - "[[context/prd/prd-oe-quality-issue-dashboard.md]]"
 
 consumers:
-  - "[[agents/roles/planner-orchestrator]]"
+  - "[[agents/roles/planner-orchestrator.md]]"
   - ui-reviewer
 
 updated: 2026-06-28
@@ -31,10 +31,10 @@ updated: 2026-06-28
 # [PRD] HGWS 리턴 현황 및 생산기반 PPM 대시보드 개발 명세서 (Draft)
 
 ## Overview / Connections
-* **Parent (상위 개념)**: [[context/prd/prd-index]]
+* **Parent (상위 개념)**: [[context/prd/prd-index.md]]
 * **Related (연관 문서)**:
-  * [[context/prd/prd-template]] (PRD 표준 템플릿)
-  * [[context/prd/prd-oe-quality-issue-dashboard]] (OE 품질 이슈 PRD)
+  * [[context/prd/prd-template.md]] (PRD 표준 템플릿)
+  * [[context/prd/prd-oe-quality-issue-dashboard.md]] (OE 품질 이슈 PRD)
 
 ---
 

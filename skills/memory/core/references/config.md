@@ -6,14 +6,14 @@ status: active
 summary: >
   Config 참조 및 가이드 명세서.
 
-parent: "[[skills/memory/core/SKILL]]"
+parent: "[[skills/memory/core/SKILL.md]]"
 
 updated: 2026-06-28
 ---
 
 # agentmemory 환경 설정 및 포트 정책
 
-* **Parent (상위 스킬)**: [[skills/memory/core/SKILL]]
+* **Parent (상위 스킬)**: [[skills/memory/core/SKILL.md]]
 
 ---
 

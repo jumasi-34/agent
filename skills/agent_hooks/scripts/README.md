@@ -6,14 +6,14 @@ status: active
 summary: >
   Readme 참조 및 가이드 명세서.
 
-parent: "[[skills/agent_hooks/SKILL]]"
+parent: "[[skills/agent_hooks/SKILL.md]]"
 
 updated: 2026-06-28
 ---
 
 # agent_hooks/scripts/ 규정
 
-* **Parent (상위 스킬)**: [[skills/agent_hooks/SKILL]]
+* **Parent (상위 스킬)**: [[skills/agent_hooks/SKILL.md]]
 
 ---
 

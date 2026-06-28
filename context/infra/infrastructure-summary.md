@@ -13,14 +13,14 @@ keywords:
   - security
   - billing
 
-parent: "[[context/infra/infra-index]]"
+parent: "[[context/infra/infra-index.md]]"
 
 related:
-  - "[[context/infra/environment]]"
-  - "[[context/infra/database-metadata]]"
+  - "[[context/infra/environment.md]]"
+  - "[[context/infra/database-metadata.md]]"
 
 consumers:
-  - "[[agents/roles/planner-orchestrator]]"
+  - "[[agents/roles/planner-orchestrator.md]]"
   - agent.system_administrator
 
 updated: 2026-06-28

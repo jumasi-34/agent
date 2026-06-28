@@ -16,11 +16,11 @@ keywords:
 parent: concept.home
 
 related:
-  - "[[context/domain/domain-knowledge]]"
+  - "[[context/domain/domain-knowledge.md]]"
 
 consumers:
-  - "[[agents/roles/planner-orchestrator]]"
-  - "[[agents/roles/quality-evaluator]]"
+  - "[[agents/roles/planner-orchestrator.md]]"
+  - "[[agents/roles/quality-evaluator.md]]"
 
 updated: 2026-06-28
 ---

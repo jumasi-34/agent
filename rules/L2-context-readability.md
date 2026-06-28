@@ -14,15 +14,15 @@ keywords:
   - emoji-check
   - wsl-link
 
-parent: "[[rules/rules-index]]"
+parent: "[[rules/rules-index.md]]"
 
 related:
-  - "[[rules/L1-git]]"
-  - "[[rules/L2-naming-convention]]"
+  - "[[rules/L1-git.md]]"
+  - "[[rules/L2-naming-convention.md]]"
 
 consumers:
-  - "[[agents/roles/planner-orchestrator]]"
-  - "[[agents/roles/quality-evaluator]]"
+  - "[[agents/roles/planner-orchestrator.md]]"
+  - "[[agents/roles/quality-evaluator.md]]"
 
 updated: 2026-06-28
 ---

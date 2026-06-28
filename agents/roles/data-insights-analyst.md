@@ -13,15 +13,15 @@ keywords:
   - briefing
   - discovery
 
-parent: "[[agents/agents]]"
+parent: "[[agents/agents.md]]"
 
 related:
-  - "[[agents/skill-map]]"
-  - "[[rules/L2-architecture]]"
+  - "[[agents/skill-map.md]]"
+  - "[[rules/L2-architecture.md]]"
   - context.domain.knowledge
 
 consumers:
-  - "[[agents/roles/planner-orchestrator]]"
+  - "[[agents/roles/planner-orchestrator.md]]"
 
 updated: 2026-06-28
 ---

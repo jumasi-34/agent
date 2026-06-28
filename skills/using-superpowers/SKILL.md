@@ -5,10 +5,10 @@ id: skill.using_superpowers
 type: skill
 status: active
 
-parent: "[[skills/index]]"
+parent: "[[skills/index.md]]"
 
 related:
-  - "[[skills/index]]"
+  - "[[skills/index.md]]"
 
 consumers:
   - agent.all
@@ -54,12 +54,12 @@ If CLAUDE.md, GEMINI.md, or AGENTS.md says "don't use TDD" and a skill says "alw
 
 ## Platform Adaptation
 
-Skills speak in actions ("dispatch a subagent", "create a todo", "read a file") rather than naming any one runtime's tools. For per-platform tool equivalents and instructions-file conventions, see [[skills/using-superpowers/references/claude-code-tools]], [[skills/using-superpowers/references/codex-tools]], [[skills/using-superpowers/references/copilot-tools]], [[skills/using-superpowers/references/gemini-tools]], [[skills/using-superpowers/references/pi-tools]], and [[skills/using-superpowers/references/antigravity-tools]]. Gemini CLI users get the tool mapping loaded automatically via GEMINI.md.
+Skills speak in actions ("dispatch a subagent", "create a todo", "read a file") rather than naming any one runtime's tools. For per-platform tool equivalents and instructions-file conventions, see [[skills/using-superpowers/references/claude-code-tools.md]], [[skills/using-superpowers/references/codex-tools.md]], [[skills/using-superpowers/references/copilot-tools.md]], [[skills/using-superpowers/references/gemini-tools.md]], [[skills/using-superpowers/references/pi-tools.md]], and [[skills/using-superpowers/references/antigravity-tools.md]]. Gemini CLI users get the tool mapping loaded automatically via GEMINI.md.
 
 # Using Skills
 
 ## Overview / Connections
-* **Parent (상위 개념)**: [[skills/index]]
+* **Parent (상위 개념)**: [[skills/index.md]]
 
 
 ## The Rule
@@ -141,9 +141,9 @@ Instructions say WHAT, not HOW. "Add X" or "Fix Y" doesn't mean skip workflows.
 
 
 ## Sub-Assets (하위 참조 자산)
-* [[skills/using-superpowers/references/antigravity-tools]] — Antigravity Tools 참조 및 가이드 명세서.
-* [[skills/using-superpowers/references/claude-code-tools]] — Claude Code Tools 참조 및 가이드 명세서.
-* [[skills/using-superpowers/references/codex-tools]] — Codex Tools 참조 및 가이드 명세서.
-* [[skills/using-superpowers/references/copilot-tools]] — Copilot Tools 참조 및 가이드 명세서.
-* [[skills/using-superpowers/references/gemini-tools]] — Gemini Tools 참조 및 가이드 명세서.
-* [[skills/using-superpowers/references/pi-tools]] — Pi Tools 참조 및 가이드 명세서.
+* [[skills/using-superpowers/references/antigravity-tools.md]] — Antigravity Tools 참조 및 가이드 명세서.
+* [[skills/using-superpowers/references/claude-code-tools.md]] — Claude Code Tools 참조 및 가이드 명세서.
+* [[skills/using-superpowers/references/codex-tools.md]] — Codex Tools 참조 및 가이드 명세서.
+* [[skills/using-superpowers/references/copilot-tools.md]] — Copilot Tools 참조 및 가이드 명세서.
+* [[skills/using-superpowers/references/gemini-tools.md]] — Gemini Tools 참조 및 가이드 명세서.
+* [[skills/using-superpowers/references/pi-tools.md]] — Pi Tools 참조 및 가이드 명세서.

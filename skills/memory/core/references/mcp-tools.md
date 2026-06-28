@@ -6,14 +6,14 @@ status: active
 summary: >
   Mcp Tools 참조 및 가이드 명세서.
 
-parent: "[[skills/memory/core/SKILL]]"
+parent: "[[skills/memory/core/SKILL.md]]"
 
 updated: 2026-06-28
 ---
 
 # agentmemory MCP 도구 세트 및 파라미터
 
-* **Parent (상위 스킬)**: [[skills/memory/core/SKILL]]
+* **Parent (상위 스킬)**: [[skills/memory/core/SKILL.md]]
 
 ---
 
@@ -52,4 +52,4 @@ agentmemory는 전체 기능 세트를 MCP 도구 형태로 노출합니다. 본
 
 ## 참고 자료
 
-각 도구의 파라미터 사양과 코어 도구 식별 정보가 포함된 전체 도구 명세 테이블은 소스 코드를 통해 자동 갱신되는 [[skills/memory/core/references/mcp-tools-reference]]에서 확인하실 수 있습니다.
+각 도구의 파라미터 사양과 코어 도구 식별 정보가 포함된 전체 도구 명세 테이블은 소스 코드를 통해 자동 갱신되는 [[skills/memory/core/references/mcp-tools-reference.md]]에서 확인하실 수 있습니다.

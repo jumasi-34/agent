@@ -15,11 +15,11 @@ keywords:
 parent: concept.git
 
 related:
-  - "[[rules/L2-sync-policy]]"
+  - "[[rules/L2-sync-policy.md]]"
 
 consumers:
-  - "[[agents/roles/planner-orchestrator]]"
-  - "[[agents/roles/quality-evaluator]]"
+  - "[[agents/roles/planner-orchestrator.md]]"
+  - "[[agents/roles/quality-evaluator.md]]"
 
 updated: 2026-06-28
 ---

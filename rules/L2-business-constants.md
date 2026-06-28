@@ -18,8 +18,8 @@ related:
   - context.domain.knowledge
 
 consumers:
-  - "[[agents/roles/data-layer-builder]]"
-  - "[[agents/roles/governance-compliance-auditor]]"
+  - "[[agents/roles/data-layer-builder.md]]"
+  - "[[agents/roles/governance-compliance-auditor.md]]"
 
 updated: 2026-06-28
 ---

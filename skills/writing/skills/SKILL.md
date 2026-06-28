@@ -5,10 +5,10 @@ id: skill.writing_skills
 type: skill
 status: active
 
-parent: "[[skills/index]]"
+parent: "[[skills/index.md]]"
 
 related:
-  - "[[skills/index]]"
+  - "[[skills/index.md]]"
 
 consumers:
   - agent.all
@@ -19,14 +19,14 @@ updated: 2026-06-28
 # Writing Skills
 
 ## Overview / Connections
-* **Parent (상위 개념)**: [[skills/index]]
+* **Parent (상위 개념)**: [[skills/index.md]]
 
 
 ## Overview
 
 **Writing skills IS Test-Driven Development applied to process documentation.**
 
-**Personal skills live in your runtime's skills directory** — see [[skills/using-superpowers/references/claude-code-tools]], [[skills/using-superpowers/references/codex-tools]], [[skills/using-superpowers/references/copilot-tools]], or [[skills/using-superpowers/references/gemini-tools]] for the path on your runtime. Codex, Copilot CLI, and Gemini CLI all also recognize `~/.agents/skills/` as a cross-runtime alias.
+**Personal skills live in your runtime's skills directory** — see [[skills/using-superpowers/references/claude-code-tools.md]], [[skills/using-superpowers/references/codex-tools.md]], [[skills/using-superpowers/references/copilot-tools.md]], or [[skills/using-superpowers/references/gemini-tools.md]] for the path on your runtime. Codex, Copilot CLI, and Gemini CLI all also recognize `~/.agents/skills/` as a cross-runtime alias.
 
 You write test cases (pressure scenarios with subagents), watch them fail (baseline behavior), write the skill (documentation), watch tests pass (agents comply), and refactor (close loopholes).
 
@@ -603,7 +603,7 @@ Full pressure-scenario runs are the final gate, but they are slow and expensive 
 
 Micro-tests verify wording; they do not replace pressure scenarios for discipline skills.
 
-**Testing methodology:** See [[skills/writing/skills/testing-skills-with-subagents]] for the complete testing methodology:
+**Testing methodology:** See [[skills/writing/skills/testing-skills-with-subagents.md]] for the complete testing methodology:
 - How to write pressure scenarios
 - Pressure types (time, sunk cost, authority, exhaustion)
 - Plugging holes systematically
@@ -709,7 +709,7 @@ If you follow TDD for code, follow it for skills. It's the same discipline appli
 
 
 ## Sub-Assets (하위 참조 자산)
-* [[skills/writing/skills/anthropic-best-practices]] — Anthropic Best Practices 참조 및 가이드 명세서.
-* [[skills/writing/skills/examples/CLAUDE_MD_TESTING]] — Claude Md Testing 참조 및 가이드 명세서.
-* [[skills/writing/skills/persuasion-principles]] — Persuasion Principles 참조 및 가이드 명세서.
-* [[skills/writing/skills/testing-skills-with-subagents]] — Testing Skills With Subagents 참조 및 가이드 명세서.
+* [[skills/writing/skills/anthropic-best-practices.md]] — Anthropic Best Practices 참조 및 가이드 명세서.
+* [[skills/writing/skills/examples/CLAUDE_MD_TESTING.md]] — Claude Md Testing 참조 및 가이드 명세서.
+* [[skills/writing/skills/persuasion-principles.md]] — Persuasion Principles 참조 및 가이드 명세서.
+* [[skills/writing/skills/testing-skills-with-subagents.md]] — Testing Skills With Subagents 참조 및 가이드 명세서.

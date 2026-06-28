@@ -15,11 +15,11 @@ keywords:
 parent: concept.agent_os.governance
 
 related:
-  - "[[agents/skill-map]]"
-  - "[[rules/L2-architecture]]"
+  - "[[agents/skill-map.md]]"
+  - "[[rules/L2-architecture.md]]"
 
 consumers:
-  - "[[agents/roles/planner-orchestrator]]"
+  - "[[agents/roles/planner-orchestrator.md]]"
 
 updated: 2026-06-28
 ---

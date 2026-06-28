@@ -5,10 +5,10 @@ id: skill.quality.korean_metadata
 type: skill
 status: active
 
-parent: "[[skills/index]]"
+parent: "[[skills/index.md]]"
 
 related:
-  - "[[skills/index]]"
+  - "[[skills/index.md]]"
 
 consumers:
   - agent.all
@@ -19,7 +19,7 @@ updated: 2026-06-28
 # korean_metadata (디스플레이용 한글 메타데이터 생성 및 매핑 스킬)
 
 ## Overview / Connections
-* **Parent (상위 개념)**: [[skills/index]]
+* **Parent (상위 개념)**: [[skills/index.md]]
 
 
 이 스킬은 데이터베이스의 영문 물리 컬럼명들과 디스플레이용 한글 명칭, 정적 포맷팅, 툴팁 도움말 정보 등을 동적으로 매핑하고 구성 파일 형태로 자동 작성/유지보수할 수 있도록 돕는 메타데이터 관리 전용 도구입니다.

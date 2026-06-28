@@ -13,15 +13,15 @@ keywords:
   - diff
   - architecture
 
-parent: "[[agents/agents]]"
+parent: "[[agents/agents.md]]"
 
 related:
-  - "[[agents/skill-map]]"
-  - "[[rules/L2-architecture]]"
-  - "[[rules/L2-naming-convention]]"
+  - "[[agents/skill-map.md]]"
+  - "[[rules/L2-architecture.md]]"
+  - "[[rules/L2-naming-convention.md]]"
 
 consumers:
-  - "[[agents/roles/code-reviewer]]"
+  - "[[agents/roles/code-reviewer.md]]"
 
 updated: 2026-06-28
 ---

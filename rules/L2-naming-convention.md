@@ -14,18 +14,18 @@ keywords:
   - database-columns
   - functional-standards
 
-parent: "[[rules/rules-index]]"
+parent: "[[rules/rules-index.md]]"
 
 related:
-  - "[[rules/L2-architecture]]"
-  - "[[rules/L3-query]]"
-  - "[[rules/L3-service]]"
-  - "[[rules/L3-dashboard]]"
-  - "[[rules/L3-plot]]"
+  - "[[rules/L2-architecture.md]]"
+  - "[[rules/L3-query.md]]"
+  - "[[rules/L3-service.md]]"
+  - "[[rules/L3-dashboard.md]]"
+  - "[[rules/L3-plot.md]]"
 
 consumers:
-  - "[[agents/roles/planner-orchestrator]]"
-  - "[[agents/roles/quality-evaluator]]"
+  - "[[agents/roles/planner-orchestrator.md]]"
+  - "[[agents/roles/quality-evaluator.md]]"
 
 updated: 2026-06-28
 ---

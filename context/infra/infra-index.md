@@ -16,18 +16,18 @@ keywords:
 parent: concept.home
 
 related:
-  - "[[context/infra/infrastructure-summary]]"
-  - "[[context/infra/database-metadata]]"
-  - "[[context/infra/environment]]"
-  - "[[context/infra/queries-specification]]"
-  - "[[context/infra/service-specification]]"
-  - "[[context/infra/pages-specification]]"
-  - "[[context/infra/core-specification]]"
-  - "[[context/infra/automation-log-specification]]"
-  - "[[context/infra/hooks-specification]]"
+  - "[[context/infra/infrastructure-summary.md]]"
+  - "[[context/infra/database-metadata.md]]"
+  - "[[context/infra/environment.md]]"
+  - "[[context/infra/queries-specification.md]]"
+  - "[[context/infra/service-specification.md]]"
+  - "[[context/infra/pages-specification.md]]"
+  - "[[context/infra/core-specification.md]]"
+  - "[[context/infra/automation-log-specification.md]]"
+  - "[[context/infra/hooks-specification.md]]"
 
 consumers:
-  - "[[agents/roles/planner-orchestrator]]"
+  - "[[agents/roles/planner-orchestrator.md]]"
   - agent.system_administrator
 
 updated: 2026-06-28

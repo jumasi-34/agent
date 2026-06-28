@@ -16,11 +16,11 @@ keywords:
 parent: concept.design_system
 
 related:
-  - "[[rules/L3-dashboard]]"
-  - "[[rules/L3-plot]]"
+  - "[[rules/L3-dashboard.md]]"
+  - "[[rules/L3-plot.md]]"
 
 consumers:
-  - "[[agents/roles/dashboard-layer-builder]]"
+  - "[[agents/roles/dashboard-layer-builder.md]]"
 
 updated: 2026-06-28
 ---

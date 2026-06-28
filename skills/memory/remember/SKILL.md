@@ -5,10 +5,10 @@ id: skill.memory.remember
 type: skill
 status: active
 
-parent: "[[skills/index]]"
+parent: "[[skills/index.md]]"
 
 related:
-  - "[[skills/index]]"
+  - "[[skills/index.md]]"
 
 consumers:
   - agent.all
@@ -74,4 +74,4 @@ See ../_shared/TROUBLESHOOTING.md if `memory_save` is not available.
 
 
 ## Sub-Assets (하위 참조 자산)
-* [[skills/memory/remember/EXAMPLES]] — Examples 참조 및 가이드 명세서.
+* [[skills/memory/remember/EXAMPLES.md]] — Examples 참조 및 가이드 명세서.

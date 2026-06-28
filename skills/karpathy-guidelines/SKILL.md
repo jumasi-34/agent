@@ -5,10 +5,10 @@ id: skill.karpathy_guidelines
 type: skill
 status: active
 
-parent: "[[skills/index]]"
+parent: "[[skills/index.md]]"
 
 related:
-  - "[[skills/index]]"
+  - "[[skills/index.md]]"
 
 consumers:
   - agent.all
@@ -19,7 +19,7 @@ updated: 2026-06-28
 # Karpathy Guidelines
 
 ## Overview / Connections
-* **Parent (상위 개념)**: [[skills/index]]
+* **Parent (상위 개념)**: [[skills/index.md]]
 
 
 Behavioral guidelines to reduce common LLM coding mistakes, derived from [Andrej Karpathy's observations](https://x.com/karpathy/status/2015883857489522876) on LLM coding pitfalls.

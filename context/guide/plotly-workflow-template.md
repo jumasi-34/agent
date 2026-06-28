@@ -12,15 +12,15 @@ keywords:
   - boilerplate
   - chart-template
 
-parent: "[[context/guide/guide-index]]"
+parent: "[[context/guide/guide-index.md]]"
 
 related:
-  - "[[rules/L3-plot]]"
-  - "[[context/guide/design-system-guide]]"
-  - "[[context/guide/plotly-style-guide]]"
+  - "[[rules/L3-plot.md]]"
+  - "[[context/guide/design-system-guide.md]]"
+  - "[[context/guide/plotly-style-guide.md]]"
 
 consumers:
-  - "[[agents/roles/planner-orchestrator]]"
+  - "[[agents/roles/planner-orchestrator.md]]"
   - agent.ui_builder
 
 updated: 2026-06-28

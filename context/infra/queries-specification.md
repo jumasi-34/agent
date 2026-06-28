@@ -13,14 +13,14 @@ keywords:
   - cte
   - query-filter
 
-parent: "[[context/infra/infra-index]]"
+parent: "[[context/infra/infra-index.md]]"
 
 related:
-  - "[[rules/L3-query]]"
-  - "[[context/infra/service-specification]]"
+  - "[[rules/L3-query.md]]"
+  - "[[context/infra/service-specification.md]]"
 
 consumers:
-  - "[[agents/roles/planner-orchestrator]]"
+  - "[[agents/roles/planner-orchestrator.md]]"
   - agent.service_builder
 
 updated: 2026-06-28

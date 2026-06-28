@@ -16,16 +16,16 @@ keywords:
 parent: concept.home
 
 related:
-  - "[[context/checklist/checklist-architecture]]"
-  - "[[context/checklist/checklist-coding-standard]]"
-  - "[[context/checklist/checklist-git]]"
-  - "[[context/checklist/checklist-release]]"
-  - "[[context/checklist/checklist-security]]"
-  - "[[context/checklist/reverse-sync-prevention]]"
+  - "[[context/checklist/checklist-architecture.md]]"
+  - "[[context/checklist/checklist-coding-standard.md]]"
+  - "[[context/checklist/checklist-git.md]]"
+  - "[[context/checklist/checklist-release.md]]"
+  - "[[context/checklist/checklist-security.md]]"
+  - "[[context/checklist/reverse-sync-prevention.md]]"
 
 consumers:
-  - "[[agents/roles/code-reviewer]]"
-  - "[[agents/roles/quality-evaluator]]"
+  - "[[agents/roles/code-reviewer.md]]"
+  - "[[agents/roles/quality-evaluator.md]]"
 
 updated: 2026-06-28
 ---

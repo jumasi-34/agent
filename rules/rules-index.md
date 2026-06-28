@@ -16,21 +16,21 @@ keywords:
 parent: concept.home
 
 related:
-  - "[[rules/L1-git]]"
-  - "[[rules/L2-architecture]]"
-  - "[[rules/L2-business-constants]]"
-  - "[[rules/L2-color-system]]"
-  - "[[rules/L2-context-readability]]"
-  - "[[rules/L2-naming-convention]]"
-  - "[[rules/L2-sync-policy]]"
-  - "[[rules/L3-dashboard]]"
-  - "[[rules/L3-plot]]"
-  - "[[rules/L3-query]]"
-  - "[[rules/L3-service]]"
+  - "[[rules/L1-git.md]]"
+  - "[[rules/L2-architecture.md]]"
+  - "[[rules/L2-business-constants.md]]"
+  - "[[rules/L2-color-system.md]]"
+  - "[[rules/L2-context-readability.md]]"
+  - "[[rules/L2-naming-convention.md]]"
+  - "[[rules/L2-sync-policy.md]]"
+  - "[[rules/L3-dashboard.md]]"
+  - "[[rules/L3-plot.md]]"
+  - "[[rules/L3-query.md]]"
+  - "[[rules/L3-service.md]]"
 
 consumers:
-  - "[[agents/roles/planner-orchestrator]]"
-  - "[[agents/roles/quality-evaluator]]"
+  - "[[agents/roles/planner-orchestrator.md]]"
+  - "[[agents/roles/quality-evaluator.md]]"
 
 updated: 2026-06-28
 ---

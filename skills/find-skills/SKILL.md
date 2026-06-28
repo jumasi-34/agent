@@ -5,10 +5,10 @@ id: skill.find_skills
 type: skill
 status: active
 
-parent: "[[skills/index]]"
+parent: "[[skills/index.md]]"
 
 related:
-  - "[[skills/index]]"
+  - "[[skills/index.md]]"
 
 consumers:
   - agent.all
@@ -20,7 +20,7 @@ updated: 2026-06-28
 # Find Skills
 
 ## Overview / Connections
-* **Parent (상위 개념)**: [[skills/index]]
+* **Parent (상위 개념)**: [[skills/index.md]]
 
 
 This skill helps you discover and install skills from the open agent skills ecosystem.

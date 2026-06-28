@@ -14,16 +14,16 @@ keywords:
   - clean-code
   - pandas
 
-parent: "[[context/checklist/checklist-index]]"
+parent: "[[context/checklist/checklist-index.md]]"
 
 related:
-  - "[[rules/L2-naming-convention]]"
-  - "[[rules/L3-service]]"
-  - "[[context/checklist/checklist-architecture]]"
+  - "[[rules/L2-naming-convention.md]]"
+  - "[[rules/L3-service.md]]"
+  - "[[context/checklist/checklist-architecture.md]]"
 
 consumers:
-  - "[[agents/roles/code-reviewer]]"
-  - "[[agents/roles/quality-evaluator]]"
+  - "[[agents/roles/code-reviewer.md]]"
+  - "[[agents/roles/quality-evaluator.md]]"
 
 updated: 2026-06-28
 ---

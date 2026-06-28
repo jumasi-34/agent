@@ -14,15 +14,15 @@ keywords:
   - cache
   - dataframe
 
-parent: "[[rules/rules-index]]"
+parent: "[[rules/rules-index.md]]"
 
 related:
-  - "[[rules/L2-naming-convention]]"
-  - "[[rules/L3-query]]"
+  - "[[rules/L2-naming-convention.md]]"
+  - "[[rules/L3-query.md]]"
 
 consumers:
-  - "[[agents/roles/planner-orchestrator]]"
-  - "[[agents/roles/data-layer-builder]]"
+  - "[[agents/roles/planner-orchestrator.md]]"
+  - "[[agents/roles/data-layer-builder.md]]"
   - agent.query_reviewer
 
 updated: 2026-06-28

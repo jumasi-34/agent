@@ -13,14 +13,14 @@ keywords:
   - design-system
   - logging
 
-parent: "[[context/infra/infra-index]]"
+parent: "[[context/infra/infra-index.md]]"
 
 related:
-  - "[[rules/L2-architecture]]"
-  - "[[context/infra/infrastructure-summary]]"
+  - "[[rules/L2-architecture.md]]"
+  - "[[context/infra/infrastructure-summary.md]]"
 
 consumers:
-  - "[[agents/roles/planner-orchestrator]]"
+  - "[[agents/roles/planner-orchestrator.md]]"
   - agent.system_administrator
 
 updated: 2026-06-28

@@ -6,14 +6,14 @@ status: active
 summary: >
   Condition Based Waiting 참조 및 가이드 명세서.
 
-parent: "[[skills/development/debugging/SKILL]]"
+parent: "[[skills/development/debugging/SKILL.md]]"
 
 updated: 2026-06-28
 ---
 
 # Condition-Based Waiting
 
-* **Parent (상위 스킬)**: [[skills/development/debugging/SKILL]]
+* **Parent (상위 스킬)**: [[skills/development/debugging/SKILL.md]]
 
 ---
 

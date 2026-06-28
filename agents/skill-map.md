@@ -15,11 +15,11 @@ keywords:
 parent: concept.agent_os.governance
 
 related:
-  - "[[agents/agents]]"
-  - "[[skills/using-superpowers/SKILL]]"
+  - "[[agents/agents.md]]"
+  - "[[skills/using-superpowers/SKILL.md]]"
 
 consumers:
-  - "[[agents/roles/planner-orchestrator]]"
+  - "[[agents/roles/planner-orchestrator.md]]"
 
 updated: 2026-06-28
 ---

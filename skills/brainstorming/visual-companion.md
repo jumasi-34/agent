@@ -6,14 +6,14 @@ status: active
 summary: >
   Visual Companion 참조 및 가이드 명세서.
 
-parent: "[[skills/brainstorming/SKILL]]"
+parent: "[[skills/brainstorming/SKILL.md]]"
 
 updated: 2026-06-28
 ---
 
 # Visual Companion Guide
 
-* **Parent (상위 스킬)**: [[skills/brainstorming/SKILL]]
+* **Parent (상위 스킬)**: [[skills/brainstorming/SKILL.md]]
 
 ---
 

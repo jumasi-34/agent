@@ -35,7 +35,7 @@
   # SECTION 1. Imports (라이브러리 및 모듈 임포트)
   # =========================================================================
   ```
-- 세부적인 서식 규칙 및 예시는 [[rules/L2-naming-convention]]를 참조하십시오.
+- 세부적인 서식 규칙 및 예시는 [[rules/L2-naming-convention.md]]를 참조하십시오.
 
 ---
 
@@ -45,17 +45,17 @@
 
 | 영역 | 규정 파일 (상대 경로 링크) | 본질적 역할 및 핵심 제약 수칙 |
 | :--- | :--- | :--- |
-| **Git & 형상관리** | [[rules/L1-git]] | 커밋 메시지 한국어 작성 및 태그 접두사 의무화, Dual Push(메인 & .agents) 순차 동시 수행 수칙 |
-| **시스템 아키텍처** | [[rules/L2-architecture]] | 3-Layer(UI-Service-Query) 물리 격리 및 Pandas 체이닝 표준, UI 6대 정합성 수칙 준수 |
-| **비즈니스 상수** | [[rules/L2-business-constants]] | 물리 공장 코드 정적 매핑 및 이중화 방지, 도메인 상수 일원화 관리 |
-| **컬러 시스템** | [[rules/L2-color-system]] | IBM Carbon 테마 기반의 대시보드 및 플롯 컬러 시스템 정적 일치화 |
-| **코드 가독성** | [[rules/L2-context-readability]] | 중복 명 접두사(context-) 배제 및 AI 컨텍스트 가독성 극대화 표준 |
-| **코드 명명 규칙** | [[rules/L2-naming-convention]] | 물리/논리 계층 명명 규칙 표준화, DB-UI 컬럼 매핑 정합성, 함수 생성 및 독스트링 기술 표준 |
-| **자산 동기화** | [[rules/L2-sync-policy]] | 로컬과 원격 간의 Rsync 일방향 동기화 및 자산/데이터 Push/Pull 흐름 불변 수칙 |
-| **쿼리 설계** | [[rules/L3-query]] | SQL 내 디스플레이 한글 AS 하드코딩 전면 금지 및 영문 물리 컬럼명 보존 규칙 |
-| **서비스 전처리** | [[rules/L3-service]] | 데이터프레임 가공 전담 및 메서드 체이닝 표준 준수 |
-| **UI 화면 구성** | [[rules/L3-dashboard]] | Streamlit 페이지 라우팅 제어 및 Google Material Symbols 화면 렌더링 표준 |
-| **데이터 시각화** | [[rules/L3-plot]] | UI 레이어 1:1 매핑 Plotly 차트 격리 구현 규칙 |
+| **Git & 형상관리** | [[rules/L1-git.md]] | 커밋 메시지 한국어 작성 및 태그 접두사 의무화, Dual Push(메인 & .agents) 순차 동시 수행 수칙 |
+| **시스템 아키텍처** | [[rules/L2-architecture.md]] | 3-Layer(UI-Service-Query) 물리 격리 및 Pandas 체이닝 표준, UI 6대 정합성 수칙 준수 |
+| **비즈니스 상수** | [[rules/L2-business-constants.md]] | 물리 공장 코드 정적 매핑 및 이중화 방지, 도메인 상수 일원화 관리 |
+| **컬러 시스템** | [[rules/L2-color-system.md]] | IBM Carbon 테마 기반의 대시보드 및 플롯 컬러 시스템 정적 일치화 |
+| **코드 가독성** | [[rules/L2-context-readability.md]] | 중복 명 접두사(context-) 배제 및 AI 컨텍스트 가독성 극대화 표준 |
+| **코드 명명 규칙** | [[rules/L2-naming-convention.md]] | 물리/논리 계층 명명 규칙 표준화, DB-UI 컬럼 매핑 정합성, 함수 생성 및 독스트링 기술 표준 |
+| **자산 동기화** | [[rules/L2-sync-policy.md]] | 로컬과 원격 간의 Rsync 일방향 동기화 및 자산/데이터 Push/Pull 흐름 불변 수칙 |
+| **쿼리 설계** | [[rules/L3-query.md]] | SQL 내 디스플레이 한글 AS 하드코딩 전면 금지 및 영문 물리 컬럼명 보존 규칙 |
+| **서비스 전처리** | [[rules/L3-service.md]] | 데이터프레임 가공 전담 및 메서드 체이닝 표준 준수 |
+| **UI 화면 구성** | [[rules/L3-dashboard.md]] | Streamlit 페이지 라우팅 제어 및 Google Material Symbols 화면 렌더링 표준 |
+| **데이터 시각화** | [[rules/L3-plot.md]] | UI 레이어 1:1 매핑 Plotly 차트 격리 구현 규칙 |
 
 ---
 
@@ -63,14 +63,14 @@
 
 코딩 작업 진행 시 필요한 비즈니스 수식, API 계약, 에러 처리 등의 영속 지식은 다음 상대 경로 링크를 탐색하여 지식을 흡수하십시오.
 
-- **품질 비즈니스 도메인 지식**: [[context/domain/domain-knowledge]] (6대 핵심 품질 도메인 지표 수식 및 데이터 집계 룰 SSOT)
-- **공용 인프라 사양**: [[context/infra/infrastructure-summary]] (API, 인사정보, DB 자원 관리 요약서)
-- **릴리즈 훅 규격**: [[context/infra/hooks-specification]] (3단계 로컬 품질 게이트 및 장애 대응 릴리즈 훅)
-- **에러 격리 가이드**: [[context/guide/error-handling]] (Streamlit Error Boundary 격리 렌더링 및 SQLite 로깅 가이드)
-- **테스트 및 코드 정적 검증**: [[context/guide/testing-verification]] (인메모리 Mocking 기법 및 `verify_code.py` 정적 코드 컴파일 검증 기동 가이드)
+- **품질 비즈니스 도메인 지식**: [[context/domain/domain-knowledge.md]] (6대 핵심 품질 도메인 지표 수식 및 데이터 집계 룰 SSOT)
+- **공용 인프라 사양**: [[context/infra/infrastructure-summary.md]] (API, 인사정보, DB 자원 관리 요약서)
+- **릴리즈 훅 규격**: [[context/infra/hooks-specification.md]] (3단계 로컬 품질 게이트 및 장애 대응 릴리즈 훅)
+- **에러 격리 가이드**: [[context/guide/error-handling.md]] (Streamlit Error Boundary 격리 렌더링 및 SQLite 로깅 가이드)
+- **테스트 및 코드 정적 검증**: [[context/guide/testing-verification.md]] (인메모리 Mocking 기법 및 `verify_code.py` 정적 코드 컴파일 검증 기동 가이드)
 - **에이전트 품질 평가 데이터 (Golden Tasks)**: [golden_tasks.yaml](context/evals/golden_tasks.yaml) (에이전트 성능 정량 평가 명세셋)
-- **신규 페이지 개발 워크플로우**: [[context/guide/new_page_development_workflow]] (Streamlit 화면 개발 계층별 표준 워크플로우)
-- **시각화 개발 워크플로우 및 템플릿**: [[context/guide/plotly-workflow-template]] (일관된 고품질 Plotly 생성을 위한 표준 워크플로우 및 코드 템플릿)
+- **신규 페이지 개발 워크플로우**: [[context/guide/new_page_development_workflow.md]] (Streamlit 화면 개발 계층별 표준 워크플로우)
+- **시각화 개발 워크플로우 및 템플릿**: [[context/guide/plotly-workflow-template.md]] (일관된 고품질 Plotly 생성을 위한 표준 워크플로우 및 코드 템플릿)
 - **PRD 기획서 표준 템플릿**: [docs/superpowers/specs/prd_standard_template.md](docs/superpowers/specs/prd_standard_template.md) (AI-Human 간 요구사항 정렬을 위한 4대 섹션 기획 템플릿 표준)
 - **OE 품질 대시보드 기획 명세서**: [docs/superpowers/specs/oe_quality_issue_dashboard_prd.md](docs/superpowers/specs/oe_quality_issue_dashboard_prd.md) (완성형 OE Quality Issue Integrated Dashboard 전수 기획 명세서)
 
@@ -78,7 +78,7 @@
 
 ## 4. 자가 정제 루프 및 오작동 재발 방지 (Self-Refinement)
 
-- 에이전트는 작업 중 에러나 규칙 미준수를 인지하는 즉시 원인을 정밀 분석하여 [[context/checklist/reverse-sync-prevention]] 내의 히스토리 테이블에 양식에 맞춰 추가 기록해야 합니다.
+- 에이전트는 작업 중 에러나 규칙 미준수를 인지하는 즉시 원인을 정밀 분석하여 [[context/checklist/reverse-sync-prevention.md]] 내의 히스토리 테이블에 양식에 맞춰 추가 기록해야 합니다.
 - 동시에 로컬 및 글로벌 규칙을 갱신 및 보강하여 지속적으로 실시간 자가 정제를 완수합니다.
 
 ---

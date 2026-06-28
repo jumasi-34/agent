@@ -6,14 +6,14 @@ status: active
 summary: >
   After 2 참조 및 가이드 명세서.
 
-parent: "[[skills/humanizer/SKILL]]"
+parent: "[[skills/humanizer/SKILL.md]]"
 
 updated: 2026-06-28
 ---
 
 # 지속가능한 도시 개발
 
-* **Parent (상위 스킬)**: [[skills/humanizer/SKILL]]
+* **Parent (상위 스킬)**: [[skills/humanizer/SKILL.md]]
 
 ---
 

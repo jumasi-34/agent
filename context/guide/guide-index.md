@@ -15,22 +15,22 @@ keywords:
 parent: concept.home
 
 related:
-  - "[[context/guide/3layer-development-process]]"
-  - "[[context/guide/coding-templates]]"
-  - "[[context/guide/common-column-metadata-design]]"
-  - "[[context/guide/design-system-guide]]"
-  - "[[context/guide/error-handling]]"
-  - "[[context/guide/manual-setup]]"
-  - "[[context/guide/menu-navigation-definition]]"
-  - "[[context/guide/new_page_development_workflow]]"
-  - "[[context/guide/page-template-standard]]"
-  - "[[context/guide/plotly-style-guide]]"
-  - "[[context/guide/plotly-workflow-template]]"
-  - "[[context/guide/preprocessing-boundary]]"
-  - "[[context/guide/testing-verification]]"
+  - "[[context/guide/3layer-development-process.md]]"
+  - "[[context/guide/coding-templates.md]]"
+  - "[[context/guide/common-column-metadata-design.md]]"
+  - "[[context/guide/design-system-guide.md]]"
+  - "[[context/guide/error-handling.md]]"
+  - "[[context/guide/manual-setup.md]]"
+  - "[[context/guide/menu-navigation-definition.md]]"
+  - "[[context/guide/new_page_development_workflow.md]]"
+  - "[[context/guide/page-template-standard.md]]"
+  - "[[context/guide/plotly-style-guide.md]]"
+  - "[[context/guide/plotly-workflow-template.md]]"
+  - "[[context/guide/preprocessing-boundary.md]]"
+  - "[[context/guide/testing-verification.md]]"
 
 consumers:
-  - "[[agents/roles/planner-orchestrator]]"
+  - "[[agents/roles/planner-orchestrator.md]]"
   - agent.ui_builder
   - agent.service_builder
 

@@ -13,15 +13,15 @@ keywords:
   - template
   - page-controller
 
-parent: "[[context/guide/guide-index]]"
+parent: "[[context/guide/guide-index.md]]"
 
 related:
-  - "[[rules/L3-dashboard]]"
-  - "[[context/guide/coding-templates]]"
-  - "[[context/guide/new_page_development_workflow]]"
+  - "[[rules/L3-dashboard.md]]"
+  - "[[context/guide/coding-templates.md]]"
+  - "[[context/guide/new_page_development_workflow.md]]"
 
 consumers:
-  - "[[agents/roles/planner-orchestrator]]"
+  - "[[agents/roles/planner-orchestrator.md]]"
   - agent.ui_builder
 
 updated: 2026-06-28

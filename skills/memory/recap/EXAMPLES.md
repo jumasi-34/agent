@@ -6,14 +6,14 @@ status: active
 summary: >
   Examples 참조 및 가이드 명세서.
 
-parent: "[[skills/memory/recap/SKILL]]"
+parent: "[[skills/memory/recap/SKILL.md]]"
 
 updated: 2026-06-28
 ---
 
 # recap worked examples
 
-* **Parent (상위 스킬)**: [[skills/memory/recap/SKILL]]
+* **Parent (상위 스킬)**: [[skills/memory/recap/SKILL.md]]
 
 ---
 

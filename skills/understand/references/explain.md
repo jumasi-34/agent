@@ -6,14 +6,14 @@ status: active
 summary: >
   Explain 참조 및 가이드 명세서.
 
-parent: "[[skills/understand/SKILL]]"
+parent: "[[skills/understand/SKILL.md]]"
 
 updated: 2026-06-28
 ---
 
 # 소스코드 및 모듈 상세 딥다이브 가이드라인 (understand-explain)
 
-* **Parent (상위 스킬)**: [[skills/understand/SKILL]]
+* **Parent (상위 스킬)**: [[skills/understand/SKILL.md]]
 
 ---
 

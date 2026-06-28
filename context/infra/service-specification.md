@@ -13,15 +13,15 @@ keywords:
   - dataframe
   - preprocessing
 
-parent: "[[context/infra/infra-index]]"
+parent: "[[context/infra/infra-index.md]]"
 
 related:
-  - "[[rules/L3-service]]"
-  - "[[context/infra/queries-specification]]"
-  - "[[context/infra/pages-specification]]"
+  - "[[rules/L3-service.md]]"
+  - "[[context/infra/queries-specification.md]]"
+  - "[[context/infra/pages-specification.md]]"
 
 consumers:
-  - "[[agents/roles/planner-orchestrator]]"
+  - "[[agents/roles/planner-orchestrator.md]]"
   - agent.service_builder
 
 updated: 2026-06-28

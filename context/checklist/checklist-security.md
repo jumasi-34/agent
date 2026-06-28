@@ -14,15 +14,15 @@ keywords:
   - sql-injection
   - protection
 
-parent: "[[context/checklist/checklist-index]]"
+parent: "[[context/checklist/checklist-index.md]]"
 
 related:
-  - "[[context/checklist/checklist-architecture]]"
-  - "[[context/checklist/checklist-git]]"
+  - "[[context/checklist/checklist-architecture.md]]"
+  - "[[context/checklist/checklist-git.md]]"
 
 consumers:
-  - "[[agents/roles/code-reviewer]]"
-  - "[[agents/roles/quality-evaluator]]"
+  - "[[agents/roles/code-reviewer.md]]"
+  - "[[agents/roles/quality-evaluator.md]]"
 
 updated: 2026-06-28
 ---

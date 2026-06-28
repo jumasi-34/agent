@@ -5,11 +5,11 @@ id: skill.development.tdd
 type: skill
 status: active
 
-parent: "[[skills/index]]"
+parent: "[[skills/index.md]]"
 
 related:
-  - "[[skills/index]]"
-  - "[[context/guide/testing-verification]]"
+  - "[[skills/index.md]]"
+  - "[[context/guide/testing-verification.md]]"
 
 consumers:
   - agent.all
@@ -20,7 +20,7 @@ updated: 2026-06-28
 # Test-Driven Development (TDD)
 
 ## Overview / Connections
-* **Parent (상위 개념)**: [[skills/index]]
+* **Parent (상위 개념)**: [[skills/index.md]]
 
 
 ## Overview
@@ -376,7 +376,7 @@ Never fix bugs without a test.
 
 ## Testing Anti-Patterns
 
-When adding mocks or test utilities, read [[skills/development/tdd/testing-anti-patterns]] to avoid common pitfalls:
+When adding mocks or test utilities, read [[skills/development/tdd/testing-anti-patterns.md]] to avoid common pitfalls:
 - Testing mock behavior instead of real behavior
 - Adding test-only methods to production classes
 - Mocking without understanding dependencies
@@ -392,4 +392,4 @@ No exceptions without your human partner's permission.
 
 
 ## Sub-Assets (하위 참조 자산)
-* [[skills/development/tdd/testing-anti-patterns]] — Testing Anti Patterns 참조 및 가이드 명세서.
+* [[skills/development/tdd/testing-anti-patterns.md]] — Testing Anti Patterns 참조 및 가이드 명세서.

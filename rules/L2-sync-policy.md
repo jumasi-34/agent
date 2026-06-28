@@ -14,15 +14,15 @@ keywords:
   - local-data
   - local-assets
 
-parent: "[[rules/rules-index]]"
+parent: "[[rules/rules-index.md]]"
 
 related:
-  - "[[rules/L1-git]]"
-  - "[[rules/L2-context-readability]]"
+  - "[[rules/L1-git.md]]"
+  - "[[rules/L2-context-readability.md]]"
 
 consumers:
-  - "[[agents/roles/planner-orchestrator]]"
-  - "[[agents/roles/quality-evaluator]]"
+  - "[[agents/roles/planner-orchestrator.md]]"
+  - "[[agents/roles/quality-evaluator.md]]"
 
 updated: 2026-06-28
 ---

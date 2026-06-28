@@ -13,16 +13,16 @@ keywords:
   - plotly
   - styling
 
-parent: "[[agents/agents]]"
+parent: "[[agents/agents.md]]"
 
 related:
-  - "[[agents/skill-map]]"
-  - "[[rules/L2-architecture]]"
-  - "[[rules/L3-dashboard]]"
-  - "[[rules/L3-plot]]"
+  - "[[agents/skill-map.md]]"
+  - "[[rules/L2-architecture.md]]"
+  - "[[rules/L3-dashboard.md]]"
+  - "[[rules/L3-plot.md]]"
 
 consumers:
-  - "[[agents/roles/dashboard-layer-builder]]"
+  - "[[agents/roles/dashboard-layer-builder.md]]"
 
 updated: 2026-06-28
 ---

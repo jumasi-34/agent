@@ -5,10 +5,10 @@ id: skill.collaboration.parallel_agents
 type: skill
 status: active
 
-parent: "[[skills/index]]"
+parent: "[[skills/index.md]]"
 
 related:
-  - "[[skills/index]]"
+  - "[[skills/index.md]]"
 
 consumers:
   - agent.all
@@ -19,7 +19,7 @@ updated: 2026-06-28
 # Dispatching Parallel Agents
 
 ## Overview / Connections
-* **Parent (상위 개념)**: [[skills/index]]
+* **Parent (상위 개념)**: [[skills/index.md]]
 
 
 ## Overview

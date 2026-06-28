@@ -14,16 +14,16 @@ keywords:
   - layout
   - page
 
-parent: "[[rules/rules-index]]"
+parent: "[[rules/rules-index.md]]"
 
 related:
-  - "[[rules/L2-architecture]]"
-  - "[[rules/L2-color-system]]"
-  - "[[rules/L3-plot]]"
+  - "[[rules/L2-architecture.md]]"
+  - "[[rules/L2-color-system.md]]"
+  - "[[rules/L3-plot.md]]"
 
 consumers:
-  - "[[agents/roles/planner-orchestrator]]"
-  - "[[agents/roles/dashboard-layer-builder]]"
+  - "[[agents/roles/planner-orchestrator.md]]"
+  - "[[agents/roles/dashboard-layer-builder.md]]"
   - agent.ui_reviewer
 
 updated: 2026-06-28

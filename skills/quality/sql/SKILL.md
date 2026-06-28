@@ -5,11 +5,11 @@ id: skill.quality.sql
 type: skill
 status: active
 
-parent: "[[skills/index]]"
+parent: "[[skills/index.md]]"
 
 related:
-  - "[[skills/index]]"
-  - "[[context/infra/queries-specification]]"
+  - "[[skills/index.md]]"
+  - "[[context/infra/queries-specification.md]]"
 
 consumers:
   - agent.all
@@ -21,7 +21,7 @@ updated: 2026-06-28
 # sql_analyzer (SQL 쿼리 정적 분석 스킬)
 
 ## Overview / Connections
-* **Parent (상위 개념)**: [[skills/index]]
+* **Parent (상위 개념)**: [[skills/index.md]]
 
 
 이 스킬은 개발되거나 리팩토링된 SQL 쿼리 빌더 파일들을 분석하여 하드코딩된 디스플레이 별칭이나 아키텍처 규칙 침범을 사전에 격리 검출하기 위한 전용 정적 분석기입니다.

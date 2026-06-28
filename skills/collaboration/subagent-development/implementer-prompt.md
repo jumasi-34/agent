@@ -6,14 +6,14 @@ status: active
 summary: >
   Implementer Prompt 참조 및 가이드 명세서.
 
-parent: "[[skills/collaboration/subagent-development/SKILL]]"
+parent: "[[skills/collaboration/subagent-development/SKILL.md]]"
 
 updated: 2026-06-28
 ---
 
 # Implementer Subagent Prompt Template
 
-* **Parent (상위 스킬)**: [[skills/collaboration/subagent-development/SKILL]]
+* **Parent (상위 스킬)**: [[skills/collaboration/subagent-development/SKILL.md]]
 
 ---
 

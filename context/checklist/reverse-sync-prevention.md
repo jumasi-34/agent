@@ -14,15 +14,15 @@ keywords:
   - failure-archive
   - rca
 
-parent: "[[context/checklist/checklist-index]]"
+parent: "[[context/checklist/checklist-index.md]]"
 
 related:
-  - "[[rules/L2-context-readability]]"
-  - "[[context/checklist/checklist-security]]"
+  - "[[rules/L2-context-readability.md]]"
+  - "[[context/checklist/checklist-security.md]]"
 
 consumers:
-  - "[[agents/roles/planner-orchestrator]]"
-  - "[[agents/roles/quality-evaluator]]"
+  - "[[agents/roles/planner-orchestrator.md]]"
+  - "[[agents/roles/quality-evaluator.md]]"
 
 updated: 2026-06-28
 ---

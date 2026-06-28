@@ -15,14 +15,14 @@ keywords:
 parent: concept.architecture
 
 related:
-  - "[[rules/L3-query]]"
-  - "[[rules/L3-service]]"
-  - "[[rules/L3-dashboard]]"
+  - "[[rules/L3-query.md]]"
+  - "[[rules/L3-service.md]]"
+  - "[[rules/L3-dashboard.md]]"
 
 consumers:
-  - "[[agents/roles/dashboard-layer-builder]]"
-  - "[[agents/roles/data-layer-builder]]"
-  - "[[agents/roles/planner-orchestrator]]"
+  - "[[agents/roles/dashboard-layer-builder.md]]"
+  - "[[agents/roles/data-layer-builder.md]]"
+  - "[[agents/roles/planner-orchestrator.md]]"
 
 updated: 2026-06-28
 ---

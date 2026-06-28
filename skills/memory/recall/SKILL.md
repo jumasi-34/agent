@@ -5,10 +5,10 @@ id: skill.memory.recall
 type: skill
 status: active
 
-parent: "[[skills/index]]"
+parent: "[[skills/index.md]]"
 
 related:
-  - "[[skills/index]]"
+  - "[[skills/index.md]]"
 
 consumers:
   - agent.all
@@ -73,4 +73,4 @@ See ../_shared/TROUBLESHOOTING.md if `memory_smart_search` is not available.
 
 
 ## Sub-Assets (하위 참조 자산)
-* [[skills/memory/recall/EXAMPLES]] — Examples 참조 및 가이드 명세서.
+* [[skills/memory/recall/EXAMPLES.md]] — Examples 참조 및 가이드 명세서.

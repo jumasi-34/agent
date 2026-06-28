@@ -14,14 +14,14 @@ keywords:
   - databricks
   - sqlite
 
-parent: "[[context/infra/infra-index]]"
+parent: "[[context/infra/infra-index.md]]"
 
 related:
-  - "[[context/infra/infrastructure-summary]]"
-  - "[[skills/quality/korean-metadata/SKILL]]"
+  - "[[context/infra/infrastructure-summary.md]]"
+  - "[[skills/quality/korean-metadata/SKILL.md]]"
 
 consumers:
-  - "[[agents/roles/planner-orchestrator]]"
+  - "[[agents/roles/planner-orchestrator.md]]"
   - agent.service_builder
 
 updated: 2026-06-28
@@ -33,7 +33,7 @@ updated: 2026-06-28
 ## Overview
 * **왜 존재하는가 (Why)**: 물리 DB 스키마 및 한글 컬럼 디렉터리의 기준 정보를 영속 명세하여, AI 에이전트와 엔지니어가 쿼리를 안전하고 무결하게 생성하고 로직 결함을 사전 진증하게 돕기 위함입니다.
 * **언제 사용하는가 (When)**: 대시보드 화면에 필요한 데이터 원천 테이블과 컬럼 타입을 확인하고 스키마 구조를 가늠할 때 조감합니다.
-* **연계 실행 (Next Action)**: 공통 컬럼의 메타데이터 설계 가이드를 보려면 [[context/guide/common-column-metadata-design]]을 참조하십시오.
+* **연계 실행 (Next Action)**: 공통 컬럼의 메타데이터 설계 가이드를 보려면 [[context/guide/common-column-metadata-design.md]]을 참조하십시오.
 
 ## Connections
 * **상위 개념**: [infra.readme](.agents/context/infra/infra-index.md)

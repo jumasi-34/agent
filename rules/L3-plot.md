@@ -14,15 +14,15 @@ keywords:
   - visualization
   - typography
 
-parent: "[[rules/rules-index]]"
+parent: "[[rules/rules-index.md]]"
 
 related:
-  - "[[rules/L2-color-system]]"
-  - "[[rules/L3-dashboard]]"
+  - "[[rules/L2-color-system.md]]"
+  - "[[rules/L3-dashboard.md]]"
 
 consumers:
-  - "[[agents/roles/planner-orchestrator]]"
-  - "[[agents/roles/dashboard-layer-builder]]"
+  - "[[agents/roles/planner-orchestrator.md]]"
+  - "[[agents/roles/dashboard-layer-builder.md]]"
   - agent.ui_reviewer
 
 updated: 2026-06-28

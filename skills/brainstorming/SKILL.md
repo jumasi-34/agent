@@ -5,10 +5,10 @@ id: skill.brainstorming
 type: skill
 status: active
 
-parent: "[[skills/index]]"
+parent: "[[skills/index.md]]"
 
 related:
-  - "[[skills/index]]"
+  - "[[skills/index.md]]"
 
 consumers:
   - agent.all
@@ -19,7 +19,7 @@ updated: 2026-06-28
 # Brainstorming Ideas Into Designs
 
 ## Overview / Connections
-* **Parent (상위 개념)**: [[skills/index]]
+* **Parent (상위 개념)**: [[skills/index.md]]
 
 
 Help turn ideas into fully formed designs and specs through natural collaborative dialogue.
@@ -177,5 +177,5 @@ If they agree to the companion, read the detailed guide before proceeding:
 
 
 ## Sub-Assets (하위 참조 자산)
-* [[skills/brainstorming/spec-document-reviewer-prompt]] — Spec Document Reviewer Prompt 참조 및 가이드 명세서.
-* [[skills/brainstorming/visual-companion]] — Visual Companion 참조 및 가이드 명세서.
+* [[skills/brainstorming/spec-document-reviewer-prompt.md]] — Spec Document Reviewer Prompt 참조 및 가이드 명세서.
+* [[skills/brainstorming/visual-companion.md]] — Visual Companion 참조 및 가이드 명세서.

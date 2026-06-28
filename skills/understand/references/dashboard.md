@@ -6,14 +6,14 @@ status: active
 summary: >
   Dashboard 참조 및 가이드 명세서.
 
-parent: "[[skills/understand/SKILL]]"
+parent: "[[skills/understand/SKILL.md]]"
 
 updated: 2026-06-28
 ---
 
 # 지식 그래프 시각화 대시보드 가이드라인 (understand-dashboard)
 
-* **Parent (상위 스킬)**: [[skills/understand/SKILL]]
+* **Parent (상위 스킬)**: [[skills/understand/SKILL.md]]
 
 ---
 

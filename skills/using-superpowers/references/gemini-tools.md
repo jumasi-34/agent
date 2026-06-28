@@ -6,14 +6,14 @@ status: active
 summary: >
   Gemini Tools 참조 및 가이드 명세서.
 
-parent: "[[skills/using-superpowers/SKILL]]"
+parent: "[[skills/using-superpowers/SKILL.md]]"
 
 updated: 2026-06-28
 ---
 
 # Gemini CLI Tool Mapping
 
-* **Parent (상위 스킬)**: [[skills/using-superpowers/SKILL]]
+* **Parent (상위 스킬)**: [[skills/using-superpowers/SKILL.md]]
 
 ---
 

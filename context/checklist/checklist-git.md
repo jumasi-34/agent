@@ -14,15 +14,15 @@ keywords:
   - sync-policy
   - rsync
 
-parent: "[[context/checklist/checklist-index]]"
+parent: "[[context/checklist/checklist-index.md]]"
 
 related:
-  - "[[rules/L1-git]]"
-  - "[[rules/L2-sync-policy]]"
+  - "[[rules/L1-git.md]]"
+  - "[[rules/L2-sync-policy.md]]"
 
 consumers:
-  - "[[agents/roles/code-reviewer]]"
-  - "[[agents/roles/quality-evaluator]]"
+  - "[[agents/roles/code-reviewer.md]]"
+  - "[[agents/roles/quality-evaluator.md]]"
 
 updated: 2026-06-28
 ---

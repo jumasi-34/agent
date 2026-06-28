@@ -5,11 +5,11 @@ id: skill.development.worktrees
 type: skill
 status: active
 
-parent: "[[skills/index]]"
+parent: "[[skills/index.md]]"
 
 related:
-  - "[[skills/index]]"
-  - "[[rules/L1-git]]"
+  - "[[skills/index.md]]"
+  - "[[rules/L1-git.md]]"
 
 consumers:
   - agent.all
@@ -20,7 +20,7 @@ updated: 2026-06-28
 # Using Git Worktrees
 
 ## Overview / Connections
-* **Parent (상위 개념)**: [[skills/index]]
+* **Parent (상위 개념)**: [[skills/index.md]]
 
 
 ## Overview

@@ -6,14 +6,14 @@ status: active
 summary: >
   Code Reviewer 참조 및 가이드 명세서.
 
-parent: "[[skills/quality/request-review/SKILL]]"
+parent: "[[skills/quality/request-review/SKILL.md]]"
 
 updated: 2026-06-28
 ---
 
 # Code Reviewer Prompt Template
 
-* **Parent (상위 스킬)**: [[skills/quality/request-review/SKILL]]
+* **Parent (상위 스킬)**: [[skills/quality/request-review/SKILL.md]]
 
 ---
 

@@ -12,15 +12,15 @@ keywords:
   - workflow
   - process
 
-parent: "[[context/guide/guide-index]]"
+parent: "[[context/guide/guide-index.md]]"
 
 related:
-  - "[[rules/L2-architecture]]"
-  - "[[context/guide/coding-templates]]"
-  - "[[context/guide/new_page_development_workflow]]"
+  - "[[rules/L2-architecture.md]]"
+  - "[[context/guide/coding-templates.md]]"
+  - "[[context/guide/new_page_development_workflow.md]]"
 
 consumers:
-  - "[[agents/roles/planner-orchestrator]]"
+  - "[[agents/roles/planner-orchestrator.md]]"
   - agent.ui_builder
   - agent.service_builder
 

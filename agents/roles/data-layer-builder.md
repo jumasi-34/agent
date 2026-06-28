@@ -13,16 +13,16 @@ keywords:
   - pandas
   - cache
 
-parent: "[[agents/agents]]"
+parent: "[[agents/agents.md]]"
 
 related:
-  - "[[agents/skill-map]]"
-  - "[[rules/L2-architecture]]"
-  - "[[rules/L3-query]]"
-  - "[[rules/L3-service]]"
+  - "[[agents/skill-map.md]]"
+  - "[[rules/L2-architecture.md]]"
+  - "[[rules/L3-query.md]]"
+  - "[[rules/L3-service.md]]"
 
 consumers:
-  - "[[agents/roles/data-layer-builder]]"
+  - "[[agents/roles/data-layer-builder.md]]"
 
 updated: 2026-06-28
 ---

@@ -13,15 +13,15 @@ keywords:
   - scoring
   - gate
 
-parent: "[[agents/agents]]"
+parent: "[[agents/agents.md]]"
 
 related:
-  - "[[agents/skill-map]]"
-  - "[[rules/L2-architecture]]"
-  - "[[agents/roles/code-reviewer]]"
+  - "[[agents/skill-map.md]]"
+  - "[[rules/L2-architecture.md]]"
+  - "[[agents/roles/code-reviewer.md]]"
 
 consumers:
-  - "[[agents/roles/quality-evaluator]]"
+  - "[[agents/roles/quality-evaluator.md]]"
 
 updated: 2026-06-28
 ---

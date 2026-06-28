@@ -13,14 +13,14 @@ keywords:
   - theme
   - lucide-icons
 
-parent: "[[context/guide/guide-index]]"
+parent: "[[context/guide/guide-index.md]]"
 
 related:
-  - "[[rules/L2-color-system]]"
-  - "[[context/guide/plotly-style-guide]]"
+  - "[[rules/L2-color-system.md]]"
+  - "[[context/guide/plotly-style-guide.md]]"
 
 consumers:
-  - "[[agents/roles/planner-orchestrator]]"
+  - "[[agents/roles/planner-orchestrator.md]]"
   - agent.ui_builder
 
 updated: 2026-06-28

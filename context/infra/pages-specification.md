@@ -13,15 +13,15 @@ keywords:
   - plots
   - naming-convention
 
-parent: "[[context/infra/infra-index]]"
+parent: "[[context/infra/infra-index.md]]"
 
 related:
-  - "[[rules/L3-dashboard]]"
-  - "[[context/infra/service-specification]]"
-  - "[[context/guide/page-template-standard]]"
+  - "[[rules/L3-dashboard.md]]"
+  - "[[context/infra/service-specification.md]]"
+  - "[[context/guide/page-template-standard.md]]"
 
 consumers:
-  - "[[agents/roles/planner-orchestrator]]"
+  - "[[agents/roles/planner-orchestrator.md]]"
   - agent.ui_builder
 
 updated: 2026-06-28
@@ -33,7 +33,7 @@ updated: 2026-06-28
 ## Overview
 * **왜 존재하는가 (Why)**: 사용자 필터 입력 제어와 탭 레이아웃, Plots 시각화 분할 구조를 물리 계층 컨텍스트로 격리하여 프레젠테이션 계층의 결합도를 제어하고 비주얼을 신속히 구현하기 위함습니다.
 * **언제 사용하는가 (When)**: Streamlit 페이지 구성을 고치거나, UI 레이어 전용 명명 규칙 및 컨트롤러 실행 제어 흐름을 진단할 때 준수합니다.
-* **연계 실행 (Next Action)**: 구체적인 Streamlit UI 템플릿과 7단계 렌더링 가이드를 보려면 [[context/guide/page-template-standard]]를 참조하십시오.
+* **연계 실행 (Next Action)**: 구체적인 Streamlit UI 템플릿과 7단계 렌더링 가이드를 보려면 [[context/guide/page-template-standard.md]]를 참조하십시오.
 
 ## Connections
 * **상위 개념**: [infra.readme](.agents/context/infra/infra-index.md)

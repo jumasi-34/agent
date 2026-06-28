@@ -5,10 +5,10 @@ id: skill.memory.forget
 type: skill
 status: active
 
-parent: "[[skills/index]]"
+parent: "[[skills/index.md]]"
 
 related:
-  - "[[skills/index]]"
+  - "[[skills/index.md]]"
 
 consumers:
   - agent.all
@@ -79,4 +79,4 @@ See ../_shared/TROUBLESHOOTING.md if `memory_smart_search` or `memory_governance
 
 
 ## Sub-Assets (하위 참조 자산)
-* [[skills/memory/forget/EXAMPLES]] — Examples 참조 및 가이드 명세서.
+* [[skills/memory/forget/EXAMPLES.md]] — Examples 참조 및 가이드 명세서.

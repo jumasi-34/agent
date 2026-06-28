@@ -13,15 +13,15 @@ keywords:
   - verification
   - production-ready
 
-parent: "[[context/checklist/checklist-index]]"
+parent: "[[context/checklist/checklist-index.md]]"
 
 related:
-  - "[[context/checklist/checklist-architecture]]"
-  - "[[context/checklist/checklist-coding-standard]]"
+  - "[[context/checklist/checklist-architecture.md]]"
+  - "[[context/checklist/checklist-coding-standard.md]]"
 
 consumers:
-  - "[[agents/roles/code-reviewer]]"
-  - "[[agents/roles/quality-evaluator]]"
+  - "[[agents/roles/code-reviewer.md]]"
+  - "[[agents/roles/quality-evaluator.md]]"
 
 updated: 2026-06-28
 ---

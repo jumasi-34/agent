@@ -16,8 +16,8 @@ keywords:
 parent: concept.context
 
 related:
-  - "[[rules/L2-sync-policy]]"
-  - "[[context/infra/hooks-specification]]"
+  - "[[rules/L2-sync-policy.md]]"
+  - "[[context/infra/hooks-specification.md]]"
 
 consumers:
   - agent.all
@@ -29,10 +29,10 @@ updated: 2026-06-28
 # 에이전트 스킬 인덱스 및 기동 타이밍 가이드 (skills/index.md)
 
 ## Overview / Connections
-* **Parent (상위 개념)**: [[AGENTS]]
+* **Parent (상위 개념)**: [[AGENTS.md]]
 * **Related (연관 문서)**:
-  * [[rules/L2-sync-policy]] (자산 동기화 정책)
-  * [[context/infra/hooks-specification]] (품질 릴리즈 훅 규격)
+  * [[rules/L2-sync-policy.md]] (자산 동기화 정책)
+  * [[context/infra/hooks-specification.md]] (품질 릴리즈 훅 규격)
 
 ---
 

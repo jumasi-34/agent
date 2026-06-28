@@ -12,15 +12,15 @@ keywords:
   - boilerplate
   - comments
 
-parent: "[[context/guide/guide-index]]"
+parent: "[[context/guide/guide-index.md]]"
 
 related:
-  - "[[rules/L2-naming-convention]]"
-  - "[[context/guide/3layer-development-process]]"
-  - "[[context/guide/page-template-standard]]"
+  - "[[rules/L2-naming-convention.md]]"
+  - "[[context/guide/3layer-development-process.md]]"
+  - "[[context/guide/page-template-standard.md]]"
 
 consumers:
-  - "[[agents/roles/planner-orchestrator]]"
+  - "[[agents/roles/planner-orchestrator.md]]"
   - agent.ui_builder
   - agent.service_builder
 

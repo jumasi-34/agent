@@ -13,16 +13,16 @@ keywords:
   - naming-convention
   - schema
 
-parent: "[[agents/agents]]"
+parent: "[[agents/agents.md]]"
 
 related:
-  - "[[agents/skill-map]]"
-  - "[[rules/L2-naming-convention]]"
-  - "[[rules/L2-business-constants]]"
+  - "[[agents/skill-map.md]]"
+  - "[[rules/L2-naming-convention.md]]"
+  - "[[rules/L2-business-constants.md]]"
 
 consumers:
-  - "[[agents/roles/planner-orchestrator]]"
-  - "[[agents/roles/governance-compliance-auditor]]"
+  - "[[agents/roles/planner-orchestrator.md]]"
+  - "[[agents/roles/governance-compliance-auditor.md]]"
 
 updated: 2026-06-28
 ---

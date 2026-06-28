@@ -5,10 +5,10 @@ id: skill.collaboration.handoff
 type: skill
 status: active
 
-parent: "[[skills/index]]"
+parent: "[[skills/index.md]]"
 
 related:
-  - "[[skills/index]]"
+  - "[[skills/index.md]]"
 
 consumers:
   - agent.all
@@ -81,4 +81,4 @@ See ../_shared/TROUBLESHOOTING.md if `memory_sessions` or `memory_recall` is not
 
 
 ## Sub-Assets (하위 참조 자산)
-* [[skills/collaboration/handoff/EXAMPLES]] — Examples 참조 및 가이드 명세서.
+* [[skills/collaboration/handoff/EXAMPLES.md]] — Examples 참조 및 가이드 명세서.
