@@ -48,3 +48,8 @@ The script prints either:
 ### ④ 수치 가독성 및 가시적 관리선 레이아웃 정합성
 - 대형 차트(예: 파레토, p-관리도) 렌더링 시, 80% 누적 한계선(UCL, LCL 쉐이딩 밴드 가이드) 등 비즈니스 제약 가이드라인을 은은한 점선과 레이어 Shading으로 영리하게 제공하여 해석 편의를 도모합니다.
 - 또한 우상단 구석 등에 가시적인 KPI Summary Annotation Box(예: "평균 불량률 (pbar) = 0.25%")를 매끄러운 반투명 카드 배너 형태로 가산하여 현장 관리 정합성을 극대화합니다.
+
+## Related
+
+[[Streamlit UI Development]]
+[[Plotly Visualization System]]

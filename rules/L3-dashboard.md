@@ -79,3 +79,8 @@
 2. **미니멀 타이포그래피 일치화**:
    - 화면 내 소제목, 섹션 헤더 등은 디자인 시스템의 `colors.slate_800` 주조색과 `get_font_family('display')` 서체 패밀리를 바인딩해 고급스럽고 균형 잡힌 서체 가독성을 구현합니다.
 
+
+## Related
+
+[[Streamlit UI Development]]
+
