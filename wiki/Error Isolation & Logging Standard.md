@@ -18,4 +18,4 @@ title: "[Wiki] 에러 격리 및 로깅"
 - **Streamlit 에러 바운더리 격리 렌더링**:
   - 화면 일부에서 연산 크래시가 유발되더라도 페이지 전체 렌더링이 중단되지 않도록, 예외 발생 구역을 `st.error` 경고 보드로 격리 렌더링하고 세션은 안정 탈출하도록 예외 처리 구조를 짭니다.
 - **오디팅 로그의 생성 일시 서버 고정**:
-  - 로그 조작을 방지하기 위해 생성 타임스탬프(`LOG_DT`)는 클라이언트 측 입력을 일절 배제하며, 오직 서버 시스템의 실시간 표준시(`datetime.now()`)에 의해 원천 고정 기입되도록 로직을 일원화합니다. 관련 실물 헬퍼는 [app/core/db/sqlite_utils.py](app/core/db/sqlite_utils.py) 등에 안전하게 내장 설계합니다.
+  - 로그 조작을 방지하기 위해 생성 타임스탬프(`LOG_DT`)는 클라이언트 측 입력을 일절 배제하며, 오직 서버 시스템의 실시간 표준시(`datetime.now()`)에 의해 원천 고정 기입되도록 로직을 일원화합니다. 관련 실물 헬퍼는 [app/core/infrastructure/sqlite_client.py](app/core/infrastructure/sqlite_client.py) 등에 안전하게 내장 설계합니다.

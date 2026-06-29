@@ -45,8 +45,8 @@ updated: 2026-06-28
 
 모든 비즈니스 관련 매핑 테이블, 상태 목록, 코드 설명 사전(Dictionary), 필터 목록 등은 개별 소스 코드 내에 하드코딩되거나 분산되어 관리되어서는 안 됩니다.
 
-* **단일 진실 공급원(SSOT)**: 모든 비즈니스 상수는 반드시 `app/core/constants/business_constants.json` 파일 내에 정의되어야 합니다.
-* **호출 일원화**: 소스 코드(UI, Service, Query 레이어 등)는 JSON 파일을 직접 읽거나 개별적으로 상수를 하드코딩하지 않고, `app/core/constants/business.py`를 거쳐 노출된 파이썬 상수를 호출하는 단일화된 경로를 통해 사용해야 합니다.
+* **단일 진실 공급원(SSOT)**: 모든 비즈니스 상수는 반드시 `app/core/data_models/business_constants.json` 파일 내에 정의되어야 합니다.
+* **호출 일원화**: 소스 코드(UI, Service, Query 레이어 등)는 JSON 파일을 직접 읽거나 개별적으로 상수를 하드코딩하지 않고, `app/core/data_models/business.py`를 거쳐 노출된 파이썬 상수를 호출하는 단일화된 경로를 통해 사용해야 합니다.
 
 ---
 
@@ -57,13 +57,13 @@ updated: 2026-06-28
 ```
 ┌──────────────────────────────────────────────┐
 │  1. JSON 파일 추가/수정                      │
-│     - app/core/constants/                    │
+│     - app/core/data_models/                  │
 │       business_constants.json                │
 └──────────────────────┬───────────────────────┘
                        │
 ┌──────────────────────▼───────────────────────┐
 │  2. 파이썬 바인딩 및 __all__ 추가             │
-│     - app/core/constants/business.py         │
+│     - app/core/data_models/business.py       │
 └──────────────────────┬───────────────────────┘
                        │
 ┌──────────────────────▼───────────────────────┐
@@ -73,7 +73,7 @@ updated: 2026-06-28
 ```
 
 ### [Step 1] JSON 파일에 상수 정의
-[app/core/constants/business_constants.json](app/core/constants/business_constants.json) 파일 내에 원하는 구조(대문자 Key 권장)로 상수를 정의합니다.
+[app/core/data_models/business_constants.json](app/core/data_models/business_constants.json) 파일 내에 원하는 구조(대문자 Key 권장)로 상수를 정의합니다.
 
 * **주의 사항**: JSON 문법을 완벽히 준수해야 하며, 마지막 요소 뒤에 쉼표(`,`)를 남겨두는 Syntax Error(Trailing Comma)가 발생하지 않도록 각별히 유의합니다.
 * **예시 (신규 DICT 추가)**:
@@ -89,7 +89,7 @@ updated: 2026-06-28
   ```
 
 ### [Step 2] 파이썬 상수 바인딩 및 내보내기 (Export)
-[app/core/constants/business.py](app/core/constants/business.py) 파일에서 JSON 파싱 결과인 `_data` 딕셔너리로부터 상수를 바인딩하고 모듈 외부에서 import할 수 있도록 `__all__`에 등록합니다.
+[app/core/data_models/business.py](app/core/data_models/business.py) 파일에서 JSON 파싱 결과인 `_data` 딕셔너리로부터 상수를 바인딩하고 모듈 외부에서 import할 수 있도록 `__all__`에 등록합니다.
 
 1. **상수 선언 및 바인딩 (대문자 스네이크 케이스 준수)**:
    ```python
@@ -112,8 +112,8 @@ updated: 2026-06-28
 UI 레이어, 서비스 레이어, 쿼리 레이어 등에서 선언한 상수가 필요할 경우 아래와 같이 참조하여 사용합니다.
 
 ```python
-# 올바른 사용 예시 (app/core/constants/business.py 로부터 import)
-from app.core.constants.business import NEW_BUSINESS_DICT
+# 올바른 사용 예시 (app/core/data_models/business.py 로부터 import)
+from app.core.data_models.business import NEW_BUSINESS_DICT
 
 def process_business_status(status_code):
     status_name = NEW_BUSINESS_DICT.get(status_code, "미정의")
