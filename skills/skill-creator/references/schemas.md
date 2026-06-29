@@ -1,10 +1,11 @@
 ---
 id: wiki.schemas
 title: "[Wiki] JSON Schemas"
-type: wiki
+type: reference
 status: active
 summary: >
   본 문서는 이 세션에서 생성/수정된 [Wiki] JSON Schemas 자산입니다.
+parent: "../SKILL.md"
 updated: 2026-06-29
 ---
 

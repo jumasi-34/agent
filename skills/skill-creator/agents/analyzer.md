@@ -1,10 +1,14 @@
 ---
 id: wiki.analyzer
 title: "[Wiki] Post-hoc Analyzer Agent"
-type: wiki
+type: agent
 status: active
 summary: >
   본 문서는 이 세션에서 생성/수정된 [Wiki] Post-hoc Analyzer Agent 자산입니다.
+parent: "../SKILL.md"
+related:
+  - "comparator.md"
+  - "grader.md"
 updated: 2026-06-29
 ---
 

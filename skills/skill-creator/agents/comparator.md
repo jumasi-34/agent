@@ -1,10 +1,14 @@
 ---
 id: wiki.comparator
 title: "[Wiki] Blind Comparator Agent"
-type: wiki
+type: agent
 status: active
 summary: >
   본 문서는 이 세션에서 생성/수정된 [Wiki] Blind Comparator Agent 자산입니다.
+parent: "../SKILL.md"
+related:
+  - "analyzer.md"
+  - "grader.md"
 updated: 2026-06-29
 ---
 
