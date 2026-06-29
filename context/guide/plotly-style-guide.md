@@ -59,7 +59,7 @@ updated: 2026-06-28
 
 ### 1.2. 인라인 폰트 및 스타일 수치 하드코딩
 * **현황**: 특정 플롯에서 디자인 토큰을 무시하고 `color="black"`, `size=16`, `family="Inter"` 등 원시 문자열/정수값을 직접 레이아웃에 주입하고 있습니다.
-  > **안티패턴 예시 ([data_analysis_plots.py:L98-101](app/pages/_20_analysis/data_analysis_plots.py#L98-101))**
+  > **안티패턴 예시 ([data_analysis_plots.py:L98-101](../../../app/pages/_20_analysis/data_analysis_plots.py#L98-101))**
   > ```python
   > layout = go.Layout(
   >     title=dict(text="Product History", font=dict(color="black", size=16)),

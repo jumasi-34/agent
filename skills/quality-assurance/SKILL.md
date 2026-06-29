@@ -46,6 +46,11 @@ flowchart TD
 * **실천 수칙**:
   1. 소스 코드 내 모든 주석, 문자열, 마크다운 본문 내에 유니코드 이모지가 잔존하지 않는지 `grep_search` 등을 통해 전수 수동 확인합니다.
   2. 마크다운 내 링크가 프로토콜 없는 평문 상대 경로(예: `[L2-architecture.md](../../rules/L2-architecture.md)`) 규격을 빈틈없이 유지하고 있는지 검사합니다.
+  3. 에이전트가 코드를 커밋/배포하기 전에, 지식 자산 전반의 깨진 연결과 비표준 링크를 자율 검증하고 무결함을 증명하기 위해 반드시 다음 스크립트를 기동해야 합니다:
+     ```bash
+     python3 .agents/skills/knowledge-lint-curator/scripts/link_validator.py
+     ```
+     이 검증기에서 에러가 0건으로 성공("All link validations passed successfully.")해야만 Gate 1을 완전히 통과한 것으로 인정합니다.
 
 ### ② Gate 2. SQL Static Analyzer (정적 쿼리 분석)
 * **목적**: 쿼리 내 한글 AS 별칭 하드코딩 오류를 선제 방어합니다.
@@ -62,13 +67,13 @@ flowchart TD
 * **목적**: 수정된 파이썬 모듈이 인터프리터 수준에서 에러 없이 완전히 컴파일되고, 독립 테스트 세트가 정상 통과하는지 구체적인 정량적 무결성 증거를 수집합니다.
 * **실행 명령어**:
   * **전역 구문/컴파일 분석**:
-    ```bash
-    PYTHONPATH=/home/jumasi/workstation /home/jumasi/miniconda3/envs/goeq/bin/python tests/verify_code.py
-    ```
+     ```bash
+     PYTHONPATH=/home/jumasi/workstation /home/jumasi/miniconda3/envs/goeq/bin/python tests/verify_code.py
+     ```
   * **독립 단위 테스트 격리 기동 (실제 DB 및 파일 오염이 없는 Mock 기반)**:
-    ```bash
-    PYTHONPATH=/home/jumasi/workstation /home/jumasi/miniconda3/envs/goeq/bin/python -m unittest tests/test_cqms_regression.py
-    ```
+     ```bash
+     PYTHONPATH=/home/jumasi/workstation /home/jumasi/miniconda3/envs/goeq/bin/python -m unittest tests/test_cqms_regression.py
+     ```
 
 ### ⑤ Gate 5. Review & Handoff (자율 피드백 반영 및 맥락 인계)
 * **목적**: 피드백 수집 및 다음 세션에서 작업을 이어나갈 에이전트를 위한 최종 맥락 정합을 완수합니다.
@@ -82,7 +87,7 @@ flowchart TD
 
 품질 관문을 통과하고 성공을 보고하기 전, 에이전트는 본 문서의 다음 체크리스트에 대해 자율 정합 판단을 내리고 이를 답변에 명시해야 합니다.
 
-1. **[  ] Guardrail**: 프로젝트 소스 트리 내에 유니코드 이모지가 100% 전무하며, 마크다운 링크가 평문 상대 경로로 통제되었는가?
+1. **[  ] Guardrail**: 프로젝트 소스 트리 내에 유니코드 이모지가 100% 전무하고 마크다운 링크가 평문 상대 경로로 통제되었으며, `link_validator.py`를 실행하여 깨진 연결과 비표준 링크가 0건(SUCCESS)임을 증명하였는가?
 2. **[  ] SQL & Metadata**: SQL 쿼리 내의 한글 AS 별칭 하드코딩이 완전히 차단되고, 컬럼명이 로컬 메타데이터 사전에 올바르게 매핑되어 있는가?
 3. **[  ] Build & Compilation**: `verify_code.py`를 작동하여 프로젝트 소스 전체 컴파일 무결성을 통과하고, 어떠한 Syntax 에러도 없음이 정량 입증되었는가?
 4. **[  ] Test Pass**: 작성된 모든 격리 테스트 케이스(Mock DB 기반)가 정상 성공하여 비즈니스 정합성이 검증되었는가?

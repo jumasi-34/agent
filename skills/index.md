@@ -40,10 +40,10 @@ updated: 2026-06-29
 | 대분류 스킬 | 타겟 스킬 파일 | 기동 타이밍 및 에이전트 행동 수칙 |
 | :--- | :--- | :--- |
 | **품질 검역 & 리뷰** | [quality-assurance/SKILL.md](quality-assurance/SKILL.md) | 구현 완료 후 배포 전, 소스 가드레일 스캔, SQL 쿼리 정적 분석, 메타데이터 연동, 자가 정적 컴파일 및 Mock 단위 테스트 기동 등 5대 품질 관문(Quality Gate)을 순서대로 격리 완수하려 할 때 실행합니다. |
-| **기억 & 컨텍스트** | [agent-memory/SKILL.md](.agents/skills/agent-memory/SKILL.md) | 에이전트의 단기/장기 기억을 보관(remember)하거나 회상(recall)하고, 불필요한 관측 데이터를 소거(forget)하며, 세션 이력을 일자별로 조감 요약(recap)하여 기억 간 무결성을 확보할 때 가동합니다. |
-| **기획 & 플랜** | [planning/SKILL.md](.agents/skills/planning/SKILL.md) | 새로운 피처 구현 및 다단계 대형 리팩토링 설계가 제시되었을 때, 본격 소스 코드 수정 전 인간의 의도를 실시간 정렬(brainstorming)하고 마크다운 체크리스트형 계획서를 수립 및 순차 이행하려 할 때 실행합니다. |
-| **환경 훅 & 인계** | [agent-hooks/SKILL.md](.agents/skills/agent-hooks/SKILL.md) | WSL 가상 환경의 역동기화 오작동을 자동 방어하고, 세션 실행 중의 SQLite 장애 원인을 실시간 로그 분석 수렴하며, 세션 종료 직전 다음 에이전트로 명확히 개발 콘텍스트를 인계(handoff)할 때 기동합니다. |
-| **지휘 & 확장** | [orchestration/SKILL.md](.agents/skills/orchestration/SKILL.md) | 신규 능력을 자율 확장하기 위해 스킬을 탐색/신설하거나, 두 개 이상의 독립 개발 업무를 다수의 서브에이전트에게 동시 병렬 위임하고 총괄 오케스트레이션 개발할 때 전격 가동합니다. |
+| **기억 & 컨텍스트** | [memory/core/SKILL.md](memory/core/SKILL.md) | 에이전트의 단기/장기 기억을 보관(remember)하거나 회상(recall)하고, 불필요한 관측 데이터를 소거(forget)하며, 세션 이력을 일자별로 조감 요약(recap)하여 기억 간 무결성을 확보할 때 가동합니다. |
+| **기획 & 플랜** | [writing/plans/SKILL.md](writing/plans/SKILL.md) | 새로운 피처 구현 및 다단계 대형 리팩토링 설계가 제시되었을 때, 본격 소스 코드 수정 전 인간의 의도를 실시간 정렬(brainstorming)하고 마크다운 체크리스트형 계획서를 수립 및 순차 이행하려 할 때 실행합니다. |
+| **환경 훅 & 인계** | [agent_hooks/SKILL.md](agent_hooks/SKILL.md) | WSL 가상 환경의 역동기화 오작동을 자동 방어하고, 세션 실행 중의 SQLite 장애 원인을 실시간 로그 분석 수렴하며, 세션 종료 직전 다음 에이전트로 명확히 개발 콘텍스트를 인계(handoff)할 때 기동합니다. |
+| **지휘 & 확장** | [collaboration/subagent-development/SKILL.md](collaboration/subagent-development/SKILL.md) | 신규 능력을 자율 확장하기 위해 스킬을 탐색/신설하거나, 두 개 이상의 독립 개발 업무를 다수의 서브에이전트에게 동시 병렬 위임하고 총괄 오케스트레이션 개발할 때 전격 가동합니다. |
 | **지식 & 품질** | [knowledge-lint-curator/SKILL.md](knowledge-lint-curator/SKILL.md) | 모든 마크다운 파일의 YAML Frontmatter 준수 여부를 자동으로 진단/보정(Lint)하고, 소스코드 수정 시 Wiki 및 Index 지식 자산의 동기화 결핍을 실시간으로 감지 차단하려 할 때 실행합니다. |
 
 ---

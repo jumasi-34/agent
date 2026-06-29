@@ -21,6 +21,109 @@ LINK_RE = re.compile(r'\[([^\]]+)\]\(([^)]+)\)')
 # SECTION 3. Core Verification Logic (핵심 검증 및 파싱 함수)
 # =========================================================================
 
+def remove_code_elements(content: str) -> str:
+    """마크다운 본문에서 펜스드 코드 블록(Fenced Code Blocks) 및 인라인 코드(백틱 영역)를 공백으로 대체합니다.
+
+    줄바꿈 문자('\n', '\r')는 그대로 보존하여 원본 마크다운 파일의 라인 번호 정보를 유지함으로써,
+    검출된 오류의 정확한 라인 번호를 안내할 수 있도록 합니다.
+
+    Args:
+        content (str): 검증 대상 마크다운 파일의 전체 텍스트 콘텐츠
+
+    Returns:
+        str: 코드 블록 및 인라인 코드가 공백 처리되어 정제된 마크다운 텍스트 콘텐츠
+    """
+    chars = list(content)
+    n = len(chars)
+    i = 0
+    in_fenced = False
+    fenced_fence = ""  # "```" 또는 "~~~"
+    
+    in_inline = False
+    inline_backticks_count = 0
+    
+    while i < n:
+        # 줄바꿈 문자를 만나면 인라인 코드 상태를 강제 해제 (라인 간 전파 방지)
+        if chars[i] in ('\n', '\r'):
+            in_inline = False
+            i += 1
+            continue
+
+        if not in_inline:
+            if not in_fenced:
+                # 펜스드 코드 블록 시작 검사
+                if i <= n - 3 and chars[i:i+3] == ['`', '`', '`']:
+                    in_fenced = True
+                    fenced_fence = "```"
+                    chars[i] = ' '
+                    chars[i+1] = ' '
+                    chars[i+2] = ' '
+                    i += 3
+                    continue
+                elif i <= n - 3 and chars[i:i+3] == ['~', '~', '~']:
+                    in_fenced = True
+                    fenced_fence = "~~~"
+                    chars[i] = ' '
+                    chars[i+1] = ' '
+                    chars[i+2] = ' '
+                    i += 3
+                    continue
+            else:
+                # 펜스드 코드 블록 종료 검사
+                if fenced_fence == "```" and i <= n - 3 and chars[i:i+3] == ['`', '`', '`']:
+                    in_fenced = False
+                    chars[i] = ' '
+                    chars[i+1] = ' '
+                    chars[i+2] = ' '
+                    i += 3
+                    continue
+                elif fenced_fence == "~~~" and i <= n - 3 and chars[i:i+3] == ['~', '~', '~']:
+                    in_fenced = False
+                    chars[i] = ' '
+                    chars[i+1] = ' '
+                    chars[i+2] = ' '
+                    i += 3
+                    continue
+        
+        if in_fenced:
+            # 펜스드 코드 블록 내부의 문자는 줄바꿈 문자(\n, \r)가 아니면 공백으로 대체
+            if chars[i] not in ('\n', '\r'):
+                chars[i] = ' '
+            i += 1
+            continue
+            
+        # 인라인 코드 (Backticks) 검사
+        if not in_fenced:
+            if chars[i] == '`':
+                # 연속된 백틱의 개수를 셉니다.
+                count = 0
+                while i + count < n and chars[i + count] == '`':
+                    count += 1
+                
+                if in_inline:
+                    if count == inline_backticks_count:
+                        in_inline = False
+                        for c in range(count):
+                            chars[i + c] = ' '
+                        i += count
+                        continue
+                else:
+                    in_inline = True
+                    inline_backticks_count = count
+                    for c in range(count):
+                        chars[i + c] = ' '
+                    i += count
+                    continue
+            
+            if in_inline:
+                if chars[i] not in ('\n', '\r'):
+                    chars[i] = ' '
+        
+        i += 1
+        
+    return "".join(chars)
+
+
 def verify_markdown_content(file_path: str, base_dir: str) -> List[Dict]:
     """단일 마크다운 파일의 콘텐츠 내 링크 및 비표준 이중 대괄호를 검증합니다.
 
@@ -35,7 +138,7 @@ def verify_markdown_content(file_path: str, base_dir: str) -> List[Dict]:
     errors = []
     try:
         with open(file_path, "r", encoding="utf-8") as f:
-            content = f.read()
+            raw_content = f.read()
     except Exception as e:
         errors.append({
             "file": file_path,
@@ -46,7 +149,9 @@ def verify_markdown_content(file_path: str, base_dir: str) -> List[Dict]:
         })
         return errors
 
-    lines = content.splitlines()
+    # 코드 블록 및 인라인 코드 영역 제거로 오탐(False Positive) 방증
+    cleaned_content = remove_code_elements(raw_content)
+    lines = cleaned_content.splitlines()
     in_frontmatter = False
 
     for idx, line in enumerate(lines, 1):

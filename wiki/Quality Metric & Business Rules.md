@@ -18,8 +18,8 @@ updated: 2026-06-29
 
 ## 3. 무엇을 이해해야 하는가 (What)
 - **6대 핵심 품질 도메인 지표 공식**:
-  - OEQG 등 복잡한 제조 설비 품질 지표의 분모/분자, MTTC 영업일 연산 규칙 등은 소스 코드 곳곳에 임의 구현되지 않고, 비즈니스 상수와 도메인 룰 가이드에 의거해 단일 구현체로 관리됩니다. 관련 실물 기준 상수는 [app/core/data_models/business.py](app/core/data_models/business.py)를 SSOT로 호출합니다.
+  - OEQG 등 복잡한 제조 설비 품질 지표의 분모/분자, MTTC 영업일 연산 규칙 등은 소스 코드 곳곳에 임의 구현되지 않고, 비즈니스 상수와 도메인 룰 가이드에 의거해 단일 구현체로 관리됩니다. 관련 실물 기준 상수는 [app/core/data_models/business.py](../../app/core/data_models/business.py)를 SSOT로 호출합니다.
 - **물리 공장 코드의 정적 매핑**:
   - 다수 공장 코드는 이중화되거나 오염되지 않도록 관리 영역을 철저히 정적으로 묶어 관리해야 합니다.
 - **영문 DB 컬럼의 디스플레이 한글 자동 맵핑**:
-  - 원천 테이블의 물리 컬럼을 가져와서 디스플레이할 때 수동 AS "한글"을 금지하며, [app/core/design_system/column_config.py](app/core/design_system/column_config.py) 동적 헬퍼를 참조해 소수점 포맷팅 및 호버 툴팁이 자동 바인딩되도록 설계해야 합니다.
+  - 원천 테이블의 물리 컬럼을 가져와서 디스플레이할 때 수동 AS "한글"을 금지하며, [app/core/design_system/column_config.py](../../app/core/design_system/column_config.py) 동적 헬퍼를 참조해 소수점 포맷팅 및 호버 툴팁이 자동 바인딩되도록 설계해야 합니다.
