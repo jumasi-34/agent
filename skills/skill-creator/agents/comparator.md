@@ -1,3 +1,13 @@
+---
+id: wiki.comparator
+title: "[Wiki] Blind Comparator Agent"
+type: wiki
+status: active
+summary: >
+  본 문서는 이 세션에서 생성/수정된 [Wiki] Blind Comparator Agent 자산입니다.
+updated: 2026-06-29
+---
+
 # Blind Comparator Agent
 
 Compare two outputs WITHOUT knowing which skill produced them.

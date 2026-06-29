@@ -1,7 +1,10 @@
 ---
 title: "[Wiki] PRD 기획 워크플로우"
+id: "wiki.prd planning workflow"
+type: wiki
+status: active
+updated: 2026-06-29
 ---
-
 # PRD Planning Workflow (PRD 기반 기획 및 요구사항 정렬)
 
 ## 1. 왜 존재하는가 (Why)

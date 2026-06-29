@@ -1,7 +1,10 @@
 ---
 title: "[Wiki] AI 문체 정제 규칙"
+id: "wiki.natural language humanizing rule"
+type: wiki
+status: active
+updated: 2026-06-29
 ---
-
 # Natural Language Humanizing Rule (자연스러운 한국어 정제 및 가독성 규칙)
 
 ## 1. 왜 존재하는가 (Why)

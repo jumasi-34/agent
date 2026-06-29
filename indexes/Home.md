@@ -1,7 +1,10 @@
 ---
 title: "[Index] 통합 지식 홈"
+id: index.home
+type: index
+status: active
+updated: 2026-06-29
 ---
-
 # Home (프로젝트 지식 허브 홈)
 
 ## 1. 왜 존재하는가 (Why)

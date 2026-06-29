@@ -1,7 +1,7 @@
 ---
 id: prd.prd_oe_quality_issue_dashboard
 title: "[Context] Prd Oe Quality Issue Dashboard"
-type: specification
+type: wiki
 status: active
 
 summary: >
@@ -27,8 +27,6 @@ consumers:
 
 updated: 2026-06-28
 ---
-
-
 # [PRD] OE 품질 이슈 대시보드 개발 명세서 (Draft for AI Developer Agent)
 
 ## Overview / Connections

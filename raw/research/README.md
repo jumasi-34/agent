@@ -1,7 +1,10 @@
 ---
 title: "[Raw] Readme"
+id: raw.readme
+type: raw
+status: unresolved
+updated: 2026-06-29
 ---
-
 # Raw Research Repository (리서치 원본 데이터 저장소)
 
 ## 1. 보존 대상 정보 (Stored Information)

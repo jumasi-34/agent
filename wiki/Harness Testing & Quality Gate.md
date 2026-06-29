@@ -1,7 +1,10 @@
 ---
 title: "[Wiki] 품질 게이트 검증"
+id: "wiki.harness testing & quality gate"
+type: wiki
+status: active
+updated: 2026-06-29
 ---
-
 # Harness Testing & Quality Gate (하네스 테스트 및 품질 가드레일)
 
 ## 1. 왜 존재하는가 (Why)

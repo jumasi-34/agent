@@ -1,7 +1,7 @@
 ---
 id: prd.prd_hgws_return_dashboard
 title: "[Context] Prd Hgws Return Dashboard"
-type: specification
+type: wiki
 status: active
 
 summary: >
@@ -27,8 +27,6 @@ consumers:
 
 updated: 2026-06-28
 ---
-
-
 # [PRD] HGWS 리턴 현황 및 생산기반 PPM 대시보드 개발 명세서 (Draft)
 
 ## Overview / Connections

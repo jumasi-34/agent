@@ -1,7 +1,10 @@
 ---
 title: "[Wiki] 듀얼 푸시 및 동기화"
+id: "wiki.git dual push & rsync sync"
+type: wiki
+status: active
+updated: 2026-06-29
 ---
-
 # Git Dual Push & Rsync Sync (Git 형상관리 및 동기화 무결성)
 
 ## 1. 왜 존재하는가 (Why)

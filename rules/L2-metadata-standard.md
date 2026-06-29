@@ -44,7 +44,7 @@ updated: 2026-06-29
 
 ## 2. 속성(Property) 제약 수칙
 
-1. **`type` (필수)**: 문서의 성격을 나타내며, `rule`, `wiki`, `raw`, `index`, `principle` 외의 임의 값 사용을 금지합니다.
+1. **`type` (필수)**: 문서의 성격을 나타내며, `rule`, `wiki`, `raw`, `index`, `principle`, `reference`, `skill`, `agent` 외의 임의 값 사용을 금지합니다.
 2. **`status` (필수)**: 문서의 현재 생애주기 상태를 나타냅니다.
    * `active`: 현재 유효하고 적용 중인 규칙 및 위키.
    * `unresolved`: 아직 해결되지 않은 에러나 논의 (`raw` 전용).

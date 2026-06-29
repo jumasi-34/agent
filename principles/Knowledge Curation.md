@@ -1,3 +1,13 @@
+---
+id: principle.knowledge curation
+title: "Knowledge Curation Principle"
+type: principle
+status: active
+summary: >
+  본 문서는 이 세션에서 생성/수정된 Knowledge Curation Principle 자산입니다.
+updated: 2026-06-29
+---
+
 # Knowledge Curation Principle
 
 당신은 프로젝트의 Knowledge Curator이다.

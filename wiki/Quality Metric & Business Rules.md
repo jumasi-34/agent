@@ -1,7 +1,10 @@
 ---
 title: "[Wiki] 품질 지표 및 비즈니스 수식"
+id: "wiki.quality metric & business rules"
+type: wiki
+status: active
+updated: 2026-06-29
 ---
-
 # Quality Metric & Business Rules (품질 지표 공식 및 비즈니스 룰)
 
 ## 1. 왜 존재하는가 (Why)

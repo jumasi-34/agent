@@ -44,6 +44,7 @@ updated: 2026-06-29
 | **기획 & 플랜** | [planning/SKILL.md](.agents/skills/planning/SKILL.md) | 새로운 피처 구현 및 다단계 대형 리팩토링 설계가 제시되었을 때, 본격 소스 코드 수정 전 인간의 의도를 실시간 정렬(brainstorming)하고 마크다운 체크리스트형 계획서를 수립 및 순차 이행하려 할 때 실행합니다. |
 | **환경 훅 & 인계** | [agent-hooks/SKILL.md](.agents/skills/agent-hooks/SKILL.md) | WSL 가상 환경의 역동기화 오작동을 자동 방어하고, 세션 실행 중의 SQLite 장애 원인을 실시간 로그 분석 수렴하며, 세션 종료 직전 다음 에이전트로 명확히 개발 콘텍스트를 인계(handoff)할 때 기동합니다. |
 | **지휘 & 확장** | [orchestration/SKILL.md](.agents/skills/orchestration/SKILL.md) | 신규 능력을 자율 확장하기 위해 스킬을 탐색/신설하거나, 두 개 이상의 독립 개발 업무를 다수의 서브에이전트에게 동시 병렬 위임하고 총괄 오케스트레이션 개발할 때 전격 가동합니다. |
+| **지식 & 품질** | [knowledge-lint-curator/SKILL.md](.agents/skills/knowledge-lint-curator/SKILL.md) | 모든 마크다운 파일의 YAML Frontmatter 준수 여부를 자동으로 진단/보정(Lint)하고, 소스코드 수정 시 Wiki 및 Index 지식 자산의 동기화 결핍을 실시간으로 감지 차단하려 할 때 실행합니다. |
 
 ---
 

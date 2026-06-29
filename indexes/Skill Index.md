@@ -1,7 +1,10 @@
 ---
 title: "[Index] 스킬 허브"
+id: "index.skill index"
+type: index
+status: active
+updated: 2026-06-29
 ---
-
 # Skill Index (행동 스킬 지식 색인)
 
 ## 1. 개요

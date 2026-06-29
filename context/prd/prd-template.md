@@ -1,7 +1,7 @@
 ---
 id: prd.prd_template
 title: "[Context] Prd Template"
-type: template
+type: wiki
 status: active
 
 summary: >
@@ -25,8 +25,6 @@ consumers:
 
 updated: 2026-06-28
 ---
-
-
 # [PRD] - {기능명 / 화면명} 개발 명세서
 
 ## Overview / Connections

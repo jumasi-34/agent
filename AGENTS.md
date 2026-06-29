@@ -1,3 +1,13 @@
+---
+id: wiki.agents
+title: "[Wiki] agents.md (Antigravity 프로젝트 제약 및 행동 규칙 헌법)"
+type: wiki
+status: active
+summary: >
+  본 문서는 이 세션에서 생성/수정된 [Wiki] agents.md (Antigravity 프로젝트 제약 및 행동 규칙 헌법) 자산입니다.
+updated: 2026-06-29
+---
+
 # agents.md (Antigravity 프로젝트 제약 및 행동 규칙 헌법)
 
 이 문서는 본 워크스페이스 내에서 AI 에이전트(Antigravity 등)가 자율 개발, 하네스 엔지니어링 및 리팩토링 작업을 수행할 때 반드시 준수해야 하는 **초핵심 제약 사항 및 설계 헌법(SSOT)**입니다.

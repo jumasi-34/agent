@@ -1,3 +1,13 @@
+---
+id: wiki.grader
+title: "[Wiki] Grader Agent"
+type: wiki
+status: active
+summary: >
+  본 문서는 이 세션에서 생성/수정된 [Wiki] Grader Agent 자산입니다.
+updated: 2026-06-29
+---
+
 # Grader Agent
 
 Evaluate expectations against an execution transcript and outputs.

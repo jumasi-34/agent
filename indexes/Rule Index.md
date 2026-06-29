@@ -1,7 +1,10 @@
 ---
 title: "[Index] 룰 허브"
+id: "index.rule index"
+type: index
+status: active
+updated: 2026-06-29
 ---
-
 # Rule Index (규칙 및 제약 사항 지식 색인)
 
 ## 1. 개요

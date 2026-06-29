@@ -1,7 +1,10 @@
 ---
 title: "[Wiki] Streamlit UI 개발"
+id: "wiki.streamlit ui development"
+type: wiki
+status: active
+updated: 2026-06-29
 ---
-
 # Streamlit UI Development (Streamlit 화면 개발 및 제어 표준)
 
 ## 1. 왜 존재하는가 (Why)

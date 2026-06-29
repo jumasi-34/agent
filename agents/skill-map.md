@@ -1,7 +1,7 @@
 ---
 id: map.agent_skill
 title: "[Skill Map]"
-type: map
+type: wiki
 status: active
 
 summary: >
@@ -24,8 +24,6 @@ consumers:
 
 updated: 2026-06-28
 ---
-
-
 # 에이전트별 필수 기동 스킬 맵핑 정의서 (agents/skill-map.md)
 
 ## Overview

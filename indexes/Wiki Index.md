@@ -1,7 +1,10 @@
 ---
 title: "[Index] 위키 통합 허브"
+id: "index.wiki index"
+type: index
+status: active
+updated: 2026-06-29
 ---
-
 # Wiki Index (통합 위키 지식 색인)
 
 ## 1. 개요

@@ -1,7 +1,7 @@
 ---
 id: map.agents
 title: "[Agents]"
-type: map
+type: wiki
 status: active
 
 summary: >
@@ -24,8 +24,6 @@ consumers:
 
 updated: 2026-06-28
 ---
-
-
 # agents.md (에이전트 규정)
 
 ## Overview

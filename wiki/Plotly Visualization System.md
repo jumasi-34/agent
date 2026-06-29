@@ -1,7 +1,10 @@
 ---
 title: "[Wiki] 시각화 시스템 설계"
+id: "wiki.plotly visualization system"
+type: wiki
+status: active
+updated: 2026-06-29
 ---
-
 # Plotly Visualization System (Plotly 시각화 및 컴포넌트화 지침)
 
 ## 1. 왜 존재하는가 (Why)

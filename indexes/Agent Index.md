@@ -1,7 +1,10 @@
 ---
 title: "[Index] 에이전트 허브"
+id: "index.agent index"
+type: index
+status: active
+updated: 2026-06-29
 ---
-
 # Agent Index (에이전트 역할 및 R&R 지식 색인)
 
 ## 1. 개요

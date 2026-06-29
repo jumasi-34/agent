@@ -1,7 +1,10 @@
 ---
 title: "[Index] 비즈니스 도메인 허브"
+id: "index.business domain index"
+type: index
+status: active
+updated: 2026-06-29
 ---
-
 # Business Domain Index (비즈니스 도메인 및 메타 지식 색인)
 
 ## 1. 개요

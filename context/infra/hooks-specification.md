@@ -1,7 +1,7 @@
 ---
 id: infra.hooks_specification
 title: "[Context] Hooks Specification"
-type: specification
+type: wiki
 status: active
 
 summary: >
@@ -27,8 +27,6 @@ consumers:
 
 updated: 2026-06-28
 ---
-
-
 # hooks-specification.md (품질 게이트, 관찰 및 운영 릴리즈 훅 규격서)
 
 ## Overview / Connections

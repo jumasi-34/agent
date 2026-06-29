@@ -1,7 +1,10 @@
 ---
 title: "[Index] 아키텍처 허브"
+id: "index.architecture index"
+type: index
+status: active
+updated: 2026-06-29
 ---
-
 # Architecture Index (아키텍처 지식 색인)
 
 ## 1. 개요

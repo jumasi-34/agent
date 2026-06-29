@@ -1,7 +1,10 @@
 ---
 title: "[Wiki] 에러 격리 및 로깅"
+id: "wiki.error isolation & logging standard"
+type: wiki
+status: active
+updated: 2026-06-29
 ---
-
 # Error Isolation & Logging Standard (에러 격리 및 로깅 표준 가이드)
 
 ## 1. 왜 존재하는가 (Why)

@@ -1,7 +1,10 @@
 ---
 title: "[Dashboard]"
+id: wiki.dashboard
+type: wiki
+status: active
+updated: 2026-06-29
 ---
-
 # 🤖 Agent Knowledge Dashboard
 
 이 대시보드는 에이전트의 활동 내역(Raw)과 프로젝트 지식(Wiki)의 진화 상태를 실시간으로 모니터링하는 **중앙 관제탑**입니다. 에이전트의 사고 흐름과 지식 융합의 병목 지점을 파악하십시오.
