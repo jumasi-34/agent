@@ -7,14 +7,14 @@ status: active
 summary: >
   Diff 참조 및 가이드 명세서.
 
-parent: "[[skills/understand/SKILL.md]]"
+parent: "[skills/understand/SKILL.md](../SKILL.md)"
 
 updated: 2026-06-28
 ---
 
 # Git Diff 분석 및 점진 분석 가이드라인 (understand-diff)
 
-* **Parent (상위 스킬)**: [[skills/understand/SKILL.md]]
+* **Parent (상위 스킬)**: [skills/understand/SKILL.md](../SKILL.md)
 
 ---
 

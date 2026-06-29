@@ -15,16 +15,16 @@ keywords:
   - clean-code
   - pandas
 
-parent: "[[context/checklist/checklist-index.md]]"
+parent: "[context/checklist/checklist-index.md](checklist-index.md)"
 
 related:
-  - "[[rules/L2-naming-convention.md]]"
-  - "[[rules/L3-service.md]]"
-  - "[[context/checklist/checklist-architecture.md]]"
+  - "[rules/L2-naming-convention.md](../../rules/L2-naming-convention.md)"
+  - "[rules/L3-service.md](../../rules/L3-service.md)"
+  - "[context/checklist/checklist-architecture.md](checklist-architecture.md)"
 
 consumers:
-  - "[[agents/roles/code-reviewer.md]]"
-  - "[[agents/roles/quality-evaluator.md]]"
+  - "[agents/roles/code-reviewer.md](../../agents/roles/code-reviewer.md)"
+  - "[agents/roles/quality-evaluator.md](../../agents/roles/quality-evaluator.md)"
 
 updated: 2026-06-28
 ---
@@ -35,13 +35,13 @@ updated: 2026-06-28
 ## Overview
 * **왜 존재하는가 (Why)**: 코드 스타일의 불일치로 인한 가독성 저하를 방지하고, 이모지 유출 및 SQL 하드코딩 별칭으로 발생하는 런타임 결함을 사전에 자율적으로 예방하기 위함입니다.
 * **언제 사용하는가 (When)**: 클래스/함수를 설계하고 생성할 때, 혹은 Pandas 전처리 체이닝을 구성한 후 검역 단계에서 참조합니다.
-* **연계 실행 (Next Action)**: 이 체크리스트를 통과한 후 Git 형상관리 및 Rsync 동기화 규칙을 준수하는지 검증하려면 [checklist-git.md](.agents/context/checklist/checklist-git.md)를 대조해 보십시오.
+* **연계 실행 (Next Action)**: 이 체크리스트를 통과한 후 Git 형상관리 및 Rsync 동기화 규칙을 준수하는지 검증하려면 [checklist-git.md](checklist-git.md)를 대조해 보십시오.
 
 ## Connections
-* **상위 개념**: [.agents/context/checklist/checklist-index.md](.agents/context/checklist/checklist-index.md)
+* **상위 개념**: [.agents/context/checklist/checklist-index.md](checklist-index.md)
 * **연관 자산**: 
-  - [.agents/rules/L2-naming-convention.md](.agents/rules/L2-naming-convention.md)
-  - [.agents/context/checklist/checklist-architecture.md](.agents/context/checklist/checklist-architecture.md)
+  - [.agents/rules/L2-naming-convention.md](../../rules/L2-naming-convention.md)
+  - [.agents/context/checklist/checklist-architecture.md](checklist-architecture.md)
 ---
 
 ## 1. 명명 거버넌스 및 규칙 준수

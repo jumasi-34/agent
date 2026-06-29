@@ -7,14 +7,14 @@ status: active
 summary: >
   Rest Api 참조 및 가이드 명세서.
 
-parent: "[[skills/memory/core/SKILL.md]]"
+parent: "[skills/memory/core/SKILL.md](../SKILL.md)"
 
 updated: 2026-06-28
 ---
 
 # agentmemory HTTP REST API 사양
 
-* **Parent (상위 스킬)**: [[skills/memory/core/SKILL.md]]
+* **Parent (상위 스킬)**: [skills/memory/core/SKILL.md](../SKILL.md)
 
 ---
 
@@ -57,4 +57,4 @@ curl -X POST http://localhost:3111/agentmemory/smart-search \
 
 ## 참고 자료
 
-전체 API 엔드포인트 명세 및 허용 HTTP 메서드 목록은 `src/triggers/api.ts`로부터 추출된 [[skills/memory/core/references/rest-api-reference.md]]에서 확인하실 수 있습니다.
+전체 API 엔드포인트 명세 및 허용 HTTP 메서드 목록은 `src/triggers/api.ts`로부터 추출된 [skills/memory/core/references/rest-api-reference.md](rest-api-reference.md)에서 확인하실 수 있습니다.

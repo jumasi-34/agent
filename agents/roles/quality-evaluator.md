@@ -14,15 +14,15 @@ keywords:
   - scoring
   - gate
 
-parent: "[[agents/agents.md]]"
+parent: "[agents/agents.md](../agents.md)"
 
 related:
-  - "[[agents/skill-map.md]]"
-  - "[[rules/L2-architecture.md]]"
-  - "[[agents/roles/code-reviewer.md]]"
+  - "[agents/skill-map.md](../skill-map.md)"
+  - "[rules/L2-architecture.md](../../rules/L2-architecture.md)"
+  - "[agents/roles/code-reviewer.md](code-reviewer.md)"
 
 consumers:
-  - "[[agents/roles/quality-evaluator.md]]"
+  - "[agents/roles/quality-evaluator.md](quality-evaluator.md)"
 
 updated: 2026-06-28
 ---
@@ -33,11 +33,11 @@ updated: 2026-06-28
 ## Overview
 * **왜 존재하는가 (Why)**: 개발 완료된 최종 성과물의 안정성과 린트 정합성, 요구사항 부합 여부를 정량적으로 공정하게 채점하여 결함 배포를 완벽히 격리하기 위함입니다.
 * **언제 사용하는가 (When)**: 개발 및 정적 코드 리뷰 검역 단계가 모두 끝난 직후, 실시간 런타임 하네스 테스트를 구동하여 릴리즈 가능 여부를 판단할 때 사용합니다.
-* **연계 실행 (Next Action)**: 정량 가속 테스트 구동을 설계하려면 [.agents/context/guide/testing-verification.md](.agents/context/guide/testing-verification.md) 가이드를 연이어 숙지하십시오.
+* **연계 실행 (Next Action)**: 정량 가속 테스트 구동을 설계하려면 [.agents/context/guide/testing-verification.md](../../context/guide/testing-verification.md) 가이드를 연이어 숙지하십시오.
 
 ## Connections
-* **상위 개념**: [.agents/agents/agents.md](.agents/agents/agents.md)
-* **연관 자산**: [.agents/context/guide/testing-verification.md](.agents/context/guide/testing-verification.md) | [.agents/agents/roles/code-reviewer.md](.agents/agents/roles/code-reviewer.md)
+* **상위 개념**: [.agents/agents/agents.md](../agents.md)
+* **연관 자산**: [.agents/context/guide/testing-verification.md](../../context/guide/testing-verification.md) | [.agents/agents/roles/code-reviewer.md](code-reviewer.md)
 ---
 
 이 문서는 개발 완료된 코드 산출물이 제품 요구사항 명세서(PRD)의 제반 기준을 충족하는지 검증하고, 독립 테스트 하네스 구동 결과 및 린트 점수를 기반으로 정량적인 품질 평가 점수(Score)를 산출하며, 배포 게이트 합격/불합격(Pass/Fail)을 엄격하게 판정하는 **평가 에이전트(Quality Evaluator Agent)**의 역할과 표준을 규정합니다.
@@ -95,4 +95,4 @@ updated: 2026-06-28
 
 ## 4. 에이전트 협업 및 체이닝 (Agent Collaboration & Chaining)
 
-본 에이전트의 구체적인 기동 협업 다이어그램(Chaining Mermaid), 예외 에스컬레이션 수칙(Escalation Protocol), 그리고 이모지 사용 전면 금지와 같은 공통 세이프티 제약은 지능 연합 원장인 [agent/agents.md](.agents/agents/agents.md)에 통합 기재되어 전역 관리됩니다. 개발 및 협업 시 이를 참고하여 구동하십시오.
+본 에이전트의 구체적인 기동 협업 다이어그램(Chaining Mermaid), 예외 에스컬레이션 수칙(Escalation Protocol), 그리고 이모지 사용 전면 금지와 같은 공통 세이프티 제약은 지능 연합 원장인 [agent/agents.md](../agents.md)에 통합 기재되어 전역 관리됩니다. 개발 및 협업 시 이를 참고하여 구동하십시오.

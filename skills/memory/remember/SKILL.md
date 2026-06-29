@@ -6,10 +6,10 @@ title: "[Skill] Remember"
 type: skill
 status: active
 
-parent: "[[skills/index.md]]"
+parent: "[skills/index.md](../../index.md)"
 
 related:
-  - "[[skills/index.md]]"
+  - "[skills/index.md](../../index.md)"
 
 consumers:
   - agent.all
@@ -75,4 +75,4 @@ See ../_shared/TROUBLESHOOTING.md if `memory_save` is not available.
 
 
 ## Sub-Assets (하위 참조 자산)
-* [[skills/memory/remember/EXAMPLES.md]] — Examples 참조 및 가이드 명세서.
+* [skills/memory/remember/EXAMPLES.md](EXAMPLES.md) — Examples 참조 및 가이드 명세서.

@@ -7,14 +7,14 @@ status: active
 summary: >
   Task Reviewer Prompt 참조 및 가이드 명세서.
 
-parent: "[[skills/collaboration/subagent-development/SKILL.md]]"
+parent: "[skills/collaboration/subagent-development/SKILL.md](SKILL.md)"
 
 updated: 2026-06-28
 ---
 
 # Task Reviewer Prompt Template
 
-* **Parent (상위 스킬)**: [[skills/collaboration/subagent-development/SKILL.md]]
+* **Parent (상위 스킬)**: [skills/collaboration/subagent-development/SKILL.md](SKILL.md)
 
 ---
 

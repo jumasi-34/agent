@@ -7,18 +7,18 @@ type: skill
 status: active
 parent: skill.index
 related:
-  - "[[skills/index.md]]"
-  - "[[rules/L2-metadata-standard.md]]"
-  - "[[principles/Knowledge Curation.md]]"
+  - "[skills/index.md](../index.md)"
+  - "[rules/L2-metadata-standard.md](../../rules/L2-metadata-standard.md)"
+  - "[principles/Knowledge Curation.md](../../principles/Knowledge Curation.md)"
 updated: 2026-06-29
 ---
 # Skill. Knowledge Lint Curator (지식 린트 및 실시간 동기화 가이드)
 
 ## Overview / Connections
-* **Parent (상위 개념)**: [[skills/index.md]]
+* **Parent (상위 개념)**: [skills/index.md](../index.md)
 * **연관 자산**:
-  - [[rules/L2-metadata-standard.md]]
-  - [[principles/Knowledge Curation.md]]
+  - [rules/L2-metadata-standard.md](../../rules/L2-metadata-standard.md)
+  - [principles/Knowledge Curation.md](../../principles/Knowledge Curation.md)
 
 본 스킬은 에이전트가 개발 및 리팩토링 작업을 종료하기 직전, 생산된 지식과 마크다운 문서의 품질 표준을 기계적으로 철저하게 검증하고 교정하기 위한 자율 오퍼레이션 자동화 스킬입니다.
 

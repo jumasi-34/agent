@@ -11,9 +11,9 @@ updated: 2026-06-29
 이 가이드는 사용자의 승인 없이 프로덕션 소스가 오염되거나 린팅 에러, 구문 충돌, SQLite 골든 스키마 일탈 등으로 서비스 불능 상태에 빠지는 것을 선제 검역하기 위해 존재합니다. 정적 정합성 가드레일과 샌드박스 테스트 체계를 구축하여 완벽히 증명된 성공(Evidence) 데이터만 배포되도록 통제합니다.
 
 ## 2. 어디와 연결되는가 (Connections)
-- **3-Layer 경계 및 쿼리 무결성 진증**: 레이어 침범 및 SQL 구문 한글 하드코딩 여부는 [[Architecture Guide]]의 격리 아키텍처에 근간하여 진단됩니다.
-- **인수 기준 부합 검증**: 기획 및 순차 구현 계획서 상에 수립된 체크포인트는 [[PRD Planning Workflow]]의 목표와 완전 연동됩니다.
-- **런타임 에러 로그 감시 및 기억**: 테스트 구동 시 발생한 에러 히스토리와 장애 정보는 [[Agent Collaboration & Memory]]에 학습 등록됩니다.
+- **3-Layer 경계 및 쿼리 무결성 진증**: 레이어 침범 및 SQL 구문 한글 하드코딩 여부는 [Architecture Guide](Architecture Guide.md)의 격리 아키텍처에 근간하여 진단됩니다.
+- **인수 기준 부합 검증**: 기획 및 순차 구현 계획서 상에 수립된 체크포인트는 [PRD Planning Workflow](PRD Planning Workflow.md)의 목표와 완전 연동됩니다.
+- **런타임 에러 로그 감시 및 기억**: 테스트 구동 시 발생한 에러 히스토리와 장애 정보는 [Agent Collaboration & Memory](Agent Collaboration & Memory.md)에 학습 등록됩니다.
 
 ## 3. 무엇을 이해해야 하는가 (What)
 - **검증 코드의 독립 샌드박스 제약**:

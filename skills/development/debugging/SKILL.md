@@ -6,11 +6,11 @@ title: "[Skill] Debugging"
 type: skill
 status: active
 
-parent: "[[skills/index.md]]"
+parent: "[skills/index.md](../../index.md)"
 
 related:
-  - "[[skills/index.md]]"
-  - "[[context/guide/testing-verification.md]]"
+  - "[skills/index.md](../../index.md)"
+  - "[context/guide/testing-verification.md](../../../context/guide/testing-verification.md)"
 
 consumers:
   - agent.all
@@ -21,7 +21,7 @@ updated: 2026-06-28
 # Systematic Debugging
 
 ## Overview / Connections
-* **Parent (상위 개념)**: [[skills/index.md]]
+* **Parent (상위 개념)**: [skills/index.md](../../index.md)
 
 
 ## Overview
@@ -318,11 +318,11 @@ From debugging sessions:
 
 
 ## Sub-Assets (하위 참조 자산)
-* [[skills/development/debugging/CREATION-LOG.md]] — Creation Log 참조 및 가이드 명세서.
-* [[skills/development/debugging/condition-based-waiting.md]] — Condition Based Waiting 참조 및 가이드 명세서.
-* [[skills/development/debugging/defense-in-depth.md]] — Defense In Depth 참조 및 가이드 명세서.
-* [[skills/development/debugging/root-cause-tracing.md]] — Root Cause Tracing 참조 및 가이드 명세서.
-* [[skills/development/debugging/test-academic.md]] — Test Academic 참조 및 가이드 명세서.
-* [[skills/development/debugging/test-pressure-1.md]] — Test Pressure 1 참조 및 가이드 명세서.
-* [[skills/development/debugging/test-pressure-2.md]] — Test Pressure 2 참조 및 가이드 명세서.
-* [[skills/development/debugging/test-pressure-3.md]] — Test Pressure 3 참조 및 가이드 명세서.
+* [skills/development/debugging/CREATION-LOG.md](CREATION-LOG.md) — Creation Log 참조 및 가이드 명세서.
+* [skills/development/debugging/condition-based-waiting.md](condition-based-waiting.md) — Condition Based Waiting 참조 및 가이드 명세서.
+* [skills/development/debugging/defense-in-depth.md](defense-in-depth.md) — Defense In Depth 참조 및 가이드 명세서.
+* [skills/development/debugging/root-cause-tracing.md](root-cause-tracing.md) — Root Cause Tracing 참조 및 가이드 명세서.
+* [skills/development/debugging/test-academic.md](test-academic.md) — Test Academic 참조 및 가이드 명세서.
+* [skills/development/debugging/test-pressure-1.md](test-pressure-1.md) — Test Pressure 1 참조 및 가이드 명세서.
+* [skills/development/debugging/test-pressure-2.md](test-pressure-2.md) — Test Pressure 2 참조 및 가이드 명세서.
+* [skills/development/debugging/test-pressure-3.md](test-pressure-3.md) — Test Pressure 3 참조 및 가이드 명세서.

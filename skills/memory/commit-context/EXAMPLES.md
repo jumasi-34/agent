@@ -7,14 +7,14 @@ status: active
 summary: >
   Examples 참조 및 가이드 명세서.
 
-parent: "[[skills/memory/commit-context/SKILL.md]]"
+parent: "[skills/memory/commit-context/SKILL.md](SKILL.md)"
 
 updated: 2026-06-28
 ---
 
 # commit-context worked examples
 
-* **Parent (상위 스킬)**: [[skills/memory/commit-context/SKILL.md]]
+* **Parent (상위 스킬)**: [skills/memory/commit-context/SKILL.md](SKILL.md)
 
 ---
 

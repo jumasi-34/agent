@@ -7,14 +7,14 @@ status: active
 summary: >
   Zh 참조 및 가이드 명세서.
 
-parent: "[[skills/understand/SKILL.md]]"
+parent: "[skills/understand/SKILL.md](../SKILL.md)"
 
 updated: 2026-06-28
 ---
 
 # 中文输出指南 (Chinese Simplified)
 
-* **Parent (상위 스킬)**: [[skills/understand/SKILL.md]]
+* **Parent (상위 스킬)**: [skills/understand/SKILL.md](../SKILL.md)
 
 ---
 

@@ -7,14 +7,14 @@ status: active
 summary: >
   Claude Md Testing 참조 및 가이드 명세서.
 
-parent: "[[skills/writing/skills/SKILL.md]]"
+parent: "[skills/writing/skills/SKILL.md](../SKILL.md)"
 
 updated: 2026-06-28
 ---
 
 # Testing CLAUDE.md Skills Documentation
 
-* **Parent (상위 스킬)**: [[skills/writing/skills/SKILL.md]]
+* **Parent (상위 스킬)**: [skills/writing/skills/SKILL.md](../SKILL.md)
 
 ---
 

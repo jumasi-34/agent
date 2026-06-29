@@ -7,14 +7,14 @@ status: active
 summary: >
   Knowledge 참조 및 가이드 명세서.
 
-parent: "[[skills/understand/SKILL.md]]"
+parent: "[skills/understand/SKILL.md](../SKILL.md)"
 
 updated: 2026-06-28
 ---
 
 # 위키형 지식 베이스 추출 가이드라인 (understand-knowledge)
 
-* **Parent (상위 스킬)**: [[skills/understand/SKILL.md]]
+* **Parent (상위 스킬)**: [skills/understand/SKILL.md](../SKILL.md)
 
 ---
 

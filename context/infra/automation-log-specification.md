@@ -14,14 +14,14 @@ keywords:
   - sqlite
   - auditing
 
-parent: "[[context/infra/infra-index.md]]"
+parent: "[context/infra/infra-index.md](infra-index.md)"
 
 related:
-  - "[[context/guide/error-handling.md]]"
-  - "[[skills/agent_hooks/SKILL.md]]"
+  - "[context/guide/error-handling.md](../guide/error-handling.md)"
+  - "[skills/agent_hooks/SKILL.md](../../skills/agent_hooks/SKILL.md)"
 
 consumers:
-  - "[[agents/roles/planner-orchestrator.md]]"
+  - "[agents/roles/planner-orchestrator.md](../../agents/roles/planner-orchestrator.md)"
   - agent.system_administrator
 
 updated: 2026-06-28
@@ -33,13 +33,13 @@ updated: 2026-06-28
 ## Overview
 * **왜 존재하는가 (Why)**: 백그라운드 자동화 배치 작업이나 수동 데이터 취합 시 소요 시간과 성공 여부를 실시간 추적하고, 장애 스택 트레이스를 기록하여 실행 흐름의 투명성과 장애 감내성을 보장하기 위함입니다.
 * **언제 사용하는가 (When)**: 집계 크론 배치(`agg_sellin.py` 등)의 실행 로그를 SQLite에 영구 적재하는 스키마나 가동 소스를 수정하고 관리할 때 참고합니다.
-* **연계 실행 (Next Action)**: 대시보드 에러 처리 및 SQLite 통합 로깅 메커니즘을 상세히 보려면 [[context/guide/error-handling.md]]을 참조하십시오.
+* **연계 실행 (Next Action)**: 대시보드 에러 처리 및 SQLite 통합 로깅 메커니즘을 상세히 보려면 [context/guide/error-handling.md](../guide/error-handling.md)을 참조하십시오.
 
 ## Connections
-* **상위 개념**: [infra.readme](.agents/context/infra/infra-index.md)
+* **상위 개념**: [infra.readme](infra-index.md)
 * **연관 자산**:
-  - [.agents/context/guide/error-handling.md](.agents/context/guide/error-handling.md)
-  - [.agents/skills/agent_hooks/SKILL.md](.agents/skills/agent_hooks/SKILL.md)
+  - [.agents/context/guide/error-handling.md](../guide/error-handling.md)
+  - [.agents/skills/agent_hooks/SKILL.md](../../skills/agent_hooks/SKILL.md)
 
 ---
 

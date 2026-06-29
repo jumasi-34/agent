@@ -6,10 +6,10 @@ title: "[Skill] Plans"
 type: skill
 status: active
 
-parent: "[[skills/index.md]]"
+parent: "[skills/index.md](../../index.md)"
 
 related:
-  - "[[skills/index.md]]"
+  - "[skills/index.md](../../index.md)"
 
 consumers:
   - agent.all
@@ -20,7 +20,7 @@ updated: 2026-06-28
 # Writing Plans
 
 ## Overview / Connections
-* **Parent (상위 개념)**: [[skills/index.md]]
+* **Parent (상위 개념)**: [skills/index.md](../../index.md)
 
 
 ## Overview
@@ -193,4 +193,4 @@ After saving the plan, offer execution choice:
 
 
 ## Sub-Assets (하위 참조 자산)
-* [[skills/writing/plans/plan-document-reviewer-prompt.md]] — Plan Document Reviewer Prompt 참조 및 가이드 명세서.
+* [skills/writing/plans/plan-document-reviewer-prompt.md](plan-document-reviewer-prompt.md) — Plan Document Reviewer Prompt 참조 및 가이드 명세서.

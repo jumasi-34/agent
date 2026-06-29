@@ -14,15 +14,15 @@ keywords:
   - diff
   - architecture
 
-parent: "[[agents/agents.md]]"
+parent: "[agents/agents.md](../agents.md)"
 
 related:
-  - "[[agents/skill-map.md]]"
-  - "[[rules/L2-architecture.md]]"
-  - "[[rules/L2-naming-convention.md]]"
+  - "[agents/skill-map.md](../skill-map.md)"
+  - "[rules/L2-architecture.md](../../rules/L2-architecture.md)"
+  - "[rules/L2-naming-convention.md](../../rules/L2-naming-convention.md)"
 
 consumers:
-  - "[[agents/roles/code-reviewer.md]]"
+  - "[agents/roles/code-reviewer.md](code-reviewer.md)"
 
 updated: 2026-06-28
 ---
@@ -33,11 +33,11 @@ updated: 2026-06-28
 ## Overview
 * **왜 존재하는가 (Why)**: 빌더들이 생산한 코드 품질을 개발 헌법 및 체크리스트 가이드에 수술식(Surgical)으로 교차 검증하여 잠재적 런타임 결함을 예방하기 위함입니다.
 * **언제 사용하는가 (When)**: 개발 빌더 에이전트들이 코딩을 완료하여 코드를 커밋/제출하고, 최종 정량 테스트(`quality-evaluator`)가 수행되기 전에 검역 단계로 가동합니다.
-* **연계 실행 (Next Action)**: 정적 검역 통과 후 작동할 품질 점수 측정 체계를 점검하려면 [.agents/agents/roles/quality-evaluator.md](.agents/agents/roles/quality-evaluator.md)를 연이어 참조하십시오.
+* **연계 실행 (Next Action)**: 정적 검역 통과 후 작동할 품질 점수 측정 체계를 점검하려면 [.agents/agents/roles/quality-evaluator.md](quality-evaluator.md)를 연이어 참조하십시오.
 
 ## Connections
-* **상위 개념**: [.agents/agents/agents.md](.agents/agents/agents.md)
-* **연관 자산**: [.agents/context/checklist/checklist-architecture.md](.agents/context/checklist/checklist-architecture.md) | [.agents/agents/roles/quality-evaluator.md](.agents/agents/roles/quality-evaluator.md)
+* **상위 개념**: [.agents/agents/agents.md](../agents.md)
+* **연관 자산**: [.agents/context/checklist/checklist-architecture.md](../../context/checklist/checklist-architecture.md) | [.agents/agents/roles/quality-evaluator.md](quality-evaluator.md)
 ---
 
 이 문서는 빌더 에이전트들이 작성한 코드(SQL 쿼리, 서비스 레이어 전처리, Streamlit UI 및 Plotly 시각화)에 대해 정적 코드 리뷰를 수행하고, 아키텍처 규칙과 비즈니스 명명 거버넌스를 완벽히 지키고 있는지 검증 및 피드백을 전달하는 **코드 리뷰어 에이전트(Code Reviewer Agent)**의 역할과 표준을 규정합니다.
@@ -95,7 +95,7 @@ updated: 2026-06-28
 
 ## 4. 에이전트 협업 및 체이닝 (Agent Collaboration & Chaining)
 
-본 에이전트의 구체적인 기동 협업 다이어그램(Chaining Mermaid), 예외 에스컬레이션 수칙(Escalation Protocol), 그리고 이모지 사용 전면 금지와 같은 공통 세이프티 제약은 지능 연합 원장인 [agent/agents.md](.agents/agents/agents.md)에 통합 기재되어 전역 관리됩니다. 개발 및 협업 시 이를 참고하여 구동하십시오.
+본 에이전트의 구체적인 기동 협업 다이어그램(Chaining Mermaid), 예외 에스컬레이션 수칙(Escalation Protocol), 그리고 이모지 사용 전면 금지와 같은 공통 세이프티 제약은 지능 연합 원장인 [agent/agents.md](../agents.md)에 통합 기재되어 전역 관리됩니다. 개발 및 협업 시 이를 참고하여 구동하십시오.
 
 ---
 

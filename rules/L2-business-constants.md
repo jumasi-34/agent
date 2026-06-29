@@ -19,8 +19,8 @@ related:
   - context.domain.knowledge
 
 consumers:
-  - "[[agents/roles/data-layer-builder.md]]"
-  - "[[agents/roles/governance-compliance-auditor.md]]"
+  - "[agents/roles/data-layer-builder.md](../agents/roles/data-layer-builder.md)"
+  - "[agents/roles/governance-compliance-auditor.md](../agents/roles/governance-compliance-auditor.md)"
 
 updated: 2026-06-28
 ---
@@ -31,11 +31,11 @@ updated: 2026-06-28
 ## Overview
 * **왜 존재하는가 (Why)**: 코드 전반에 분산된 공장 기호, 품질 기준치 등의 상수 하드코딩을 차단하고, 단일 진실 공급원(SSOT) 상수를 보장하여 비즈니스 불일치를 예방하기 위함입니다.
 * **언제 사용하는가 (When)**: 쿼리 필터 구성, 데이터 전처리 지표 분기, 공장 단위 매핑 조건 조립 등 정적 도메인 분기 식별자가 필요할 때 사용합니다.
-* **연계 실행 (Next Action)**: 이 상수들을 소비하여 실제 연산을 전개하는 비즈니스 가이드는 [.agents/context/domain/domain-knowledge.md](.agents/context/domain/domain-knowledge.md)에서 확인하십시오.
+* **연계 실행 (Next Action)**: 이 상수들을 소비하여 실제 연산을 전개하는 비즈니스 가이드는 [.agents/context/domain/domain-knowledge.md](../context/domain/domain-knowledge.md)에서 확인하십시오.
 
 ## Connections
-* **상위 개념**: [.agents/AGENTS.md](.agents/AGENTS.md)
-* **연관 자산**: [.agents/context/domain/domain-knowledge.md](.agents/context/domain/domain-knowledge.md)
+* **상위 개념**: [.agents/AGENTS.md](../AGENTS.md)
+* **연관 자산**: [.agents/context/domain/domain-knowledge.md](../context/domain/domain-knowledge.md)
 ---
 
 이 문서는 프로젝트 내에서 **비즈니스 상수(Business Constants)**가 추가되거나 변경될 때 일관된 코드 품질과 단일 진실 공급원(SSOT, Single Source of Truth)을 유지하기 위해 준수해야 하는 **엄격한 관리 및 호출 개발 표준**을 정의합니다.
@@ -138,4 +138,4 @@ def process_business_status(status_code):
 
 ## Related
 
-[[Quality Metric & Business Rules]]
+[Quality Metric & Business Rules](../wiki/Quality Metric & Business Rules.md)

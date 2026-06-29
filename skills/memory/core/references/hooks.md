@@ -7,7 +7,7 @@ status: active
 summary: >
   Hooks 참조 및 가이드 명세서.
 
-parent: "[[skills/memory/core/SKILL.md]]"
+parent: "[skills/memory/core/SKILL.md](../SKILL.md)"
 
 updated: 2026-06-28
 ---

@@ -7,14 +7,14 @@ status: active
 summary: >
   Chat 참조 및 가이드 명세서.
 
-parent: "[[skills/understand/SKILL.md]]"
+parent: "[skills/understand/SKILL.md](../SKILL.md)"
 
 updated: 2026-06-28
 ---
 
 # 코드베이스 기반 대화형 질의응답 가이드라인 (understand-chat)
 
-* **Parent (상위 스킬)**: [[skills/understand/SKILL.md]]
+* **Parent (상위 스킬)**: [skills/understand/SKILL.md](../SKILL.md)
 
 ---
 

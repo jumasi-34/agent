@@ -21,8 +21,8 @@ related:
   - evals.golden_tasks
 
 consumers:
-  - "[[agents/roles/planner-orchestrator.md]]"
-  - "[[agents/roles/quality-evaluator.md]]"
+  - "[agents/roles/planner-orchestrator.md](../../agents/roles/planner-orchestrator.md)"
+  - "[agents/roles/quality-evaluator.md](../../agents/roles/quality-evaluator.md)"
 
 updated: 2026-06-28
 ---
@@ -33,12 +33,12 @@ updated: 2026-06-28
 ## Overview
 * **왜 존재하는가 (Why)**: 개발 중인 에이전트의 개발 정밀도, 코드 생성 능력, 규정 준수 여부를 골든 테스트 케이스를 통해 정량적으로 측정하고 회귀 결함을 검출하기 위함입니다.
 * **언제 사용하는가 (When)**: 에이전트 성능 평가 벤치마크를 정기적으로 돌리거나, 신규 기능 배포 전 에이전트 성능 회귀 테스트(Regression Test) 결과를 검증할 때 사용합니다.
-* **연계 실행 (Next Action)**: 정량 벤치마크 대표 골든 태스크셋 명세 세부를 보려면 [.agents/context/evals/golden_tasks.yaml](.agents/context/evals/golden_tasks.yaml)을 대조해 보십시오.
+* **연계 실행 (Next Action)**: 정량 벤치마크 대표 골든 태스크셋 명세 세부를 보려면 [.agents/context/evals/golden_tasks.yaml](golden_tasks.yaml)을 대조해 보십시오.
 
 ## Connections
-* **상위 개념**: [.agents/AGENTS.md](.agents/AGENTS.md)
+* **상위 개념**: [.agents/AGENTS.md](../../AGENTS.md)
 * **연관 자산**: 
-  - [.agents/context/evals/golden_tasks.yaml](.agents/context/evals/golden_tasks.yaml)
+  - [.agents/context/evals/golden_tasks.yaml](golden_tasks.yaml)
 ---
 
 ## 1. 로컬 핵심 제약 (Local Rules)

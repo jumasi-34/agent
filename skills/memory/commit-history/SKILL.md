@@ -6,11 +6,11 @@ title: "[Skill] Commit History"
 type: skill
 status: active
 
-parent: "[[skills/index.md]]"
+parent: "[skills/index.md](../../index.md)"
 
 related:
-  - "[[skills/index.md]]"
-  - "[[rules/L1-git.md]]"
+  - "[skills/index.md](../../index.md)"
+  - "[rules/L1-git.md](../../../rules/L1-git.md)"
 
 consumers:
   - agent.all
@@ -77,4 +77,4 @@ See ../_shared/TROUBLESHOOTING.md if `memory_commits` is not available.
 
 
 ## Sub-Assets (하위 참조 자산)
-* [[skills/memory/commit-history/EXAMPLES.md]] — Examples 참조 및 가이드 명세서.
+* [skills/memory/commit-history/EXAMPLES.md](EXAMPLES.md) — Examples 참조 및 가이드 명세서.

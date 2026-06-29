@@ -13,14 +13,14 @@ keywords:
   - orchestrator
   - prd
 
-parent: "[[agents/agents.md]]"
+parent: "[agents/agents.md](../agents.md)"
 
 related:
-  - "[[agents/skill-map.md]]"
-  - "[[rules/L2-architecture.md]]"
+  - "[agents/skill-map.md](../skill-map.md)"
+  - "[rules/L2-architecture.md](../../rules/L2-architecture.md)"
 
 consumers:
-  - "[[agents/roles/planner-orchestrator.md]]"
+  - "[agents/roles/planner-orchestrator.md](planner-orchestrator.md)"
 
 updated: 2026-06-28
 ---
@@ -31,11 +31,11 @@ updated: 2026-06-28
 ## Overview
 * **왜 존재하는가 (Why)**: 사용자의 추상적인 아이디어나 요구사항을 정합성 높은 정량적 PRD(제품 요구사항 정의서)로 정교화하고, 하위 에이전트 구현 동선을 오차 없이 지휘하기 위함입니다.
 * **언제 사용하는가 (When)**: 사용자가 신규 페이지 개발, 기존 화면 리팩토링 및 기능 변경을 제안하여 기획 및 마일스톤 설계에 착수할 때 가동합니다.
-* **연계 실행 (Next Action)**: 전체 에이전트 위계 및 협업 오케스트레이션을 확인하려면 [.agents/agents/agents.md](.agents/agents/agents.md)를 연이어 대조하십시오.
+* **연계 실행 (Next Action)**: 전체 에이전트 위계 및 협업 오케스트레이션을 확인하려면 [.agents/agents/agents.md](../agents.md)를 연이어 대조하십시오.
 
 ## Connections
-* **상위 개념**: [.agents/agents/agents.md](.agents/agents/agents.md)
-* **연관 자산**: [.agents/context/prd/prd-template.md](.agents/context/prd/prd-template.md) | [.agents/agents/skill-map.md](.agents/agents/skill-map.md)
+* **상위 개념**: [.agents/agents/agents.md](../agents.md)
+* **연관 자산**: [.agents/context/prd/prd-template.md](../../context/prd/prd-template.md) | [.agents/agents/skill-map.md](../skill-map.md)
 ---
 
 이 문서는 사용자의 비즈니스 요구사항을 명확한 기술 사양으로 정제하여 제품 요구사항 명세서(PRD)를 작성 및 관리하고, 개발 빌더 에이전트들이 완벽한 아키텍처 정합성을 유지하며 개발을 수행할 수 있도록 지휘 및 조율하는 **플래너 오케스트레이션 에이전트(Planner Orchestration Agent)**의 행동 양식과 표준을 규정합니다.
@@ -112,4 +112,4 @@ updated: 2026-06-28
 
 ## 4. 에이전트 협업 및 체이닝 (Agent Collaboration & Chaining)
 
-본 에이전트의 구체적인 기동 협업 다이어그램(Chaining Mermaid), 예외 에스컬레이션 수칙(Escalation Protocol), 그리고 이모지 사용 전면 금지와 같은 공통 세이프티 제약은 지능 연합 원장인 [agent/agents.md](.agents/agents/agents.md)에 통합 기재되어 전역 관리됩니다. 개발 및 협업 시 이를 참고하여 구동하십시오.
+본 에이전트의 구체적인 기동 협업 다이어그램(Chaining Mermaid), 예외 에스컬레이션 수칙(Escalation Protocol), 그리고 이모지 사용 전면 금지와 같은 공통 세이프티 제약은 지능 연합 원장인 [agent/agents.md](../agents.md)에 통합 기재되어 전역 관리됩니다. 개발 및 협업 시 이를 참고하여 구동하십시오.

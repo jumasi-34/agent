@@ -14,14 +14,14 @@ keywords:
   - cte
   - query-filter
 
-parent: "[[context/infra/infra-index.md]]"
+parent: "[context/infra/infra-index.md](infra-index.md)"
 
 related:
-  - "[[rules/L3-query.md]]"
-  - "[[context/infra/service-specification.md]]"
+  - "[rules/L3-query.md](../../rules/L3-query.md)"
+  - "[context/infra/service-specification.md](service-specification.md)"
 
 consumers:
-  - "[[agents/roles/planner-orchestrator.md]]"
+  - "[agents/roles/planner-orchestrator.md](../../agents/roles/planner-orchestrator.md)"
   - agent.service_builder
 
 updated: 2026-06-28
@@ -33,13 +33,13 @@ updated: 2026-06-28
 ## Overview
 * **왜 존재하는가 (Why)**: SQL 문자열의 조립을 완벽히 별도 계층으로 격리하여 물리적인 데이터베이스 실행 구문과 비즈니스 로직 연산을 엄격하게 분리하기 위함입니다.
 * **언제 사용하는가 (When)**: DB 테이블 조회 SQL을 가공하거나, 동적 필터링을 위한 `QueryFilter` 헬퍼 적용, 또는 새로운 쿼리 모듈(`q_*.py`)을 작성할 때 준수합니다.
-* **연계 실행 (Next Action)**: 쿼리 결과를 가져와 가공하는 서비스 레이어 물리 사양을 보려면 [infra.service_specification](.agents/context/infra/service-specification.md)을 참조하십시오.
+* **연계 실행 (Next Action)**: 쿼리 결과를 가져와 가공하는 서비스 레이어 물리 사양을 보려면 [infra.service_specification](service-specification.md)을 참조하십시오.
 
 ## Connections
-* **상위 개념**: [infra.readme](.agents/context/infra/infra-index.md)
+* **상위 개념**: [infra.readme](infra-index.md)
 * **연관 자산**:
-  - [.agents/rules/L3-query.md](.agents/rules/L3-query.md)
-  - [.agents/context/infra/service-specification.md](.agents/context/infra/service-specification.md)
+  - [.agents/rules/L3-query.md](../../rules/L3-query.md)
+  - [.agents/context/infra/service-specification.md](service-specification.md)
 
 ---
 

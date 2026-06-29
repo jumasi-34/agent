@@ -14,16 +14,16 @@ keywords:
   - plotly
   - styling
 
-parent: "[[agents/agents.md]]"
+parent: "[agents/agents.md](../agents.md)"
 
 related:
-  - "[[agents/skill-map.md]]"
-  - "[[rules/L2-architecture.md]]"
-  - "[[rules/L3-dashboard.md]]"
-  - "[[rules/L3-plot.md]]"
+  - "[agents/skill-map.md](../skill-map.md)"
+  - "[rules/L2-architecture.md](../../rules/L2-architecture.md)"
+  - "[rules/L3-dashboard.md](../../rules/L3-dashboard.md)"
+  - "[rules/L3-plot.md](../../rules/L3-plot.md)"
 
 consumers:
-  - "[[agents/roles/dashboard-layer-builder.md]]"
+  - "[agents/roles/dashboard-layer-builder.md](dashboard-layer-builder.md)"
 
 updated: 2026-06-28
 ---
@@ -34,11 +34,11 @@ updated: 2026-06-28
 ## Overview
 * **왜 존재하는가 (Why)**: 사용자가 시스템을 사용할 때 프리미엄 디자인(WOW Factor)을 체감할 수 있도록, 아키텍처 제약에 입각한 고품격 화면 컴포넌트와 시각화 레이어를 완성하기 위함입니다.
 * **언제 사용하는가 (When)**: PRD 기획 확정 이후, 실제 사용자가 조작하고 모니터링할 Streamlit 페이지 구현 및 Plotly 차트 드로잉 함수 개발에 착수할 때 사용합니다.
-* **연계 실행 (Next Action)**: 구체적인 UI 구현 표준을 보려면 [.agents/rules/L3-dashboard.md](.agents/rules/L3-dashboard.md) 규칙서를 연이어 확인하십시오.
+* **연계 실행 (Next Action)**: 구체적인 UI 구현 표준을 보려면 [.agents/rules/L3-dashboard.md](../../rules/L3-dashboard.md) 규칙서를 연이어 확인하십시오.
 
 ## Connections
-* **상위 개념**: [.agents/agents/agents.md](.agents/agents/agents.md)
-* **연관 자산**: [.agents/rules/L3-dashboard.md](.agents/rules/L3-dashboard.md) | [.agents/rules/L3-plot.md](.agents/rules/L3-plot.md)
+* **상위 개념**: [.agents/agents/agents.md](../agents.md)
+* **연관 자산**: [.agents/rules/L3-dashboard.md](../../rules/L3-dashboard.md) | [.agents/rules/L3-plot.md](../../rules/L3-plot.md)
 ---
 
 이 문서는 사용자가 CQ-BI 시스템에 진입하는 순간 미려하고 고급스러운 프리미엄 경험(WOW Factor)을 느낄 수 있도록 Streamlit Pages 화면을 조립하고, 최고 사양의 Plotly 시각화 모듈(`app/pages/*_plots.py` 및 `app/pages/*_page.py`)을 전담 설계하며, 동시에 시스템 전체의 디자인 일관성(Consistent Visual Experience)을 보장하고 스타일 완성도를 극한으로 높이기 위한 **화면, 시각화 및 스타일링 통합 빌더 에이전트(Dashboard Layer Builder Agent)**의 행동 양식과 디자인 표준을 규정합니다.
@@ -118,4 +118,4 @@ E태스크는 다음 디렉터리와 모듈 내에서 활동하며 코드의 생
 
 ## 4. 에이전트 협업 및 체이닝 (Agent Collaboration & Chaining)
 
-본 에이전트의 구체적인 기동 협업 다이어그램(Chaining Mermaid), 예외 에스컬레이션 수칙(Escalation Protocol), 그리고 이모지 사용 전면 금지와 같은 공통 세이프티 제약은 지능 연합 원장인 [agent/agents.md](.agents/agents/agents.md)에 통합 기재되어 전역 관리됩니다. 개발 및 협업 시 이를 참고하여 구동하십시오.
+본 에이전트의 구체적인 기동 협업 다이어그램(Chaining Mermaid), 예외 에스컬레이션 수칙(Escalation Protocol), 그리고 이모지 사용 전면 금지와 같은 공통 세이프티 제약은 지능 연합 원장인 [agent/agents.md](../agents.md)에 통합 기재되어 전역 관리됩니다. 개발 및 협업 시 이를 참고하여 구동하십시오.

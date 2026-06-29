@@ -7,14 +7,14 @@ status: active
 summary: >
   Examples 참조 및 가이드 명세서.
 
-parent: "[[skills/collaboration/handoff/SKILL.md]]"
+parent: "[skills/collaboration/handoff/SKILL.md](SKILL.md)"
 
 updated: 2026-06-28
 ---
 
 # handoff worked examples
 
-* **Parent (상위 스킬)**: [[skills/collaboration/handoff/SKILL.md]]
+* **Parent (상위 스킬)**: [skills/collaboration/handoff/SKILL.md](SKILL.md)
 
 ---
 

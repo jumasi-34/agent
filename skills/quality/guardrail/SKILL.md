@@ -6,10 +6,10 @@ title: "[Skill] Guardrail"
 type: skill
 status: active
 
-parent: "[[skills/index.md]]"
+parent: "[skills/index.md](../../index.md)"
 
 related:
-  - "[[skills/index.md]]"
+  - "[skills/index.md](../../index.md)"
 
 consumers:
   - agent.all
@@ -20,7 +20,7 @@ updated: 2026-06-28
 # guardrail (통합 자가 배포 가드레일 스킬)
 
 ## Overview / Connections
-* **Parent (상위 개념)**: [[skills/index.md]]
+* **Parent (상위 개념)**: [skills/index.md](../../index.md)
 
 
 이 스킬은 코드 형상관리 및 배포 전조 단계에서 에이전트 스스로 패치 무결성과 스타일 수칙 준수 여부를 다각도로 검증할 수 있도록 돕는 자율 진단형 정적 가드레일 툴킷입니다.

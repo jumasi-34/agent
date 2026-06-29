@@ -11,9 +11,9 @@ updated: 2026-06-29
 이 가이드는 프로젝트 개발 전반에서 획득되는 암묵적 의사결정 사항, 비즈니스 지식, 기술 규격 및 오류 수정 경험들이 휘발되지 않고 하나의 거대한 **"지식 그래프(Knowledge Graph)"**로 수축 및 확장되도록 관리하기 위해 존재합니다. 정돈되고 연결된 위키를 통해 지식 중복 생성을 배제하고 에이전트의 온온보딩 효율을 비약적으로 끌어올립니다.
 
 ## 2. 어디와 연결되는가 (Connections)
-- **기획 및 요구사항 정합 유치**: PRD 기획과 소스 코드 간의 사상 및 명세 일치화 추적은 [[PRD Planning Workflow]]와 연계됩니다.
-- **경험 축적 및 자율 학습 파이프라인**: 런타임에서 분석된 raw 데이터의 유기적 가공 정제는 [[Agent Collaboration & Memory]]의 기억소와 통신합니다.
-- **시스템 전체 아키텍처 정밀 조감**: 물리 코드베이스의 관계 및 3-Layer 맵핑 구조는 [[Architecture Guide]]의 거시적 맥락을 표현합니다.
+- **기획 및 요구사항 정합 유치**: PRD 기획과 소스 코드 간의 사상 및 명세 일치화 추적은 [PRD Planning Workflow](PRD Planning Workflow.md)와 연계됩니다.
+- **경험 축적 및 자율 학습 파이프라인**: 런타임에서 분석된 raw 데이터의 유기적 가공 정제는 [Agent Collaboration & Memory](Agent Collaboration & Memory.md)의 기억소와 통신합니다.
+- **시스템 전체 아키텍처 정밀 조감**: 물리 코드베이스의 관계 및 3-Layer 맵핑 구조는 [Architecture Guide](Architecture Guide.md)의 거시적 맥락을 표현합니다.
 
 ## 3. 무엇을 이해해야 하는가 (What)
 - **지식 큐레이터로서의 에이전트 정체성**:

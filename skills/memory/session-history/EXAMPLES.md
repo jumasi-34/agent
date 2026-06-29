@@ -7,14 +7,14 @@ status: active
 summary: >
   Examples 참조 및 가이드 명세서.
 
-parent: "[[skills/memory/session-history/SKILL.md]]"
+parent: "[skills/memory/session-history/SKILL.md](SKILL.md)"
 
 updated: 2026-06-28
 ---
 
 # session-history worked examples
 
-* **Parent (상위 스킬)**: [[skills/memory/session-history/SKILL.md]]
+* **Parent (상위 스킬)**: [skills/memory/session-history/SKILL.md](SKILL.md)
 
 ---
 

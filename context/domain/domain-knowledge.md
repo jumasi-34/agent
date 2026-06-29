@@ -16,15 +16,15 @@ keywords:
   - qrs
   - sysops
 
-parent: "[[context/domain/domain-index.md]]"
+parent: "[context/domain/domain-index.md](domain-index.md)"
 
 related:
-  - "[[context/checklist/checklist-architecture.md]]"
-  - "[[context/checklist/checklist-coding-standard.md]]"
+  - "[context/checklist/checklist-architecture.md](../checklist/checklist-architecture.md)"
+  - "[context/checklist/checklist-coding-standard.md](../checklist/checklist-coding-standard.md)"
 
 consumers:
-  - "[[agents/roles/planner-orchestrator.md]]"
-  - "[[agents/roles/quality-evaluator.md]]"
+  - "[agents/roles/planner-orchestrator.md](../../agents/roles/planner-orchestrator.md)"
+  - "[agents/roles/quality-evaluator.md](../../agents/roles/quality-evaluator.md)"
 
 updated: 2026-06-28
 ---
@@ -35,12 +35,12 @@ updated: 2026-06-28
 ## Overview
 * **왜 존재하는가 (Why)**: 다수의 이종 레거시 시스템(CQMS, GMES 등)에서 생산되는 데이터의 비즈니스 산식 정합성을 단일한 가이드라인 하에 보호하고, 런타임 수치 왜곡이나 계산 불일치를 원천 방지하기 위함입니다.
 * **언제 사용하는가 (When)**: 대시보드 KPI 카드, Trend Line, Cpk 계측, 혹은 0분모 방어 코드를 설계하고 디버깅할 때 비즈니스 수식의 단일 진실 공급원(SSOT)으로 삼습니다.
-* **연계 실행 (Next Action)**: 이 비즈니스 사양에 대응하는 구체적인 테이블 스키마와 인프라 API 연동 규격을 파악하려면 [infrastructure-summary.md](.agents/context/infra/infrastructure-summary.md)를 연이어 연계 확인하십시오.
+* **연계 실행 (Next Action)**: 이 비즈니스 사양에 대응하는 구체적인 테이블 스키마와 인프라 API 연동 규격을 파악하려면 [infrastructure-summary.md](../infra/infrastructure-summary.md)를 연이어 연계 확인하십시오.
 
 ## Connections
-* **상위 개념**: [.agents/context/domain/domain-index.md](.agents/context/domain/domain-index.md)
+* **상위 개념**: [.agents/context/domain/domain-index.md](domain-index.md)
 * **연관 자산**: 
-  - [.agents/context/infra/infrastructure-summary.md](.agents/context/infra/infrastructure-summary.md)
+  - [.agents/context/infra/infrastructure-summary.md](../infra/infrastructure-summary.md)
 ---
 
 ## 1. CQMS (고객 품질 및 필드 클레임 분석)
@@ -259,4 +259,4 @@ updated: 2026-06-28
 
 ## Related
 
-[[Quality Metric & Business Rules]]
+[Quality Metric & Business Rules](../../wiki/Quality Metric & Business Rules.md)

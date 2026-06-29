@@ -7,14 +7,14 @@ status: active
 summary: >
   Creation Log 참조 및 가이드 명세서.
 
-parent: "[[skills/development/debugging/SKILL.md]]"
+parent: "[skills/development/debugging/SKILL.md](SKILL.md)"
 
 updated: 2026-06-28
 ---
 
 # Creation Log: Systematic Debugging Skill
 
-* **Parent (상위 스킬)**: [[skills/development/debugging/SKILL.md]]
+* **Parent (상위 스킬)**: [skills/development/debugging/SKILL.md](SKILL.md)
 
 ---
 

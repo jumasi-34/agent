@@ -7,14 +7,14 @@ status: active
 summary: >
   Testing Anti Patterns 참조 및 가이드 명세서.
 
-parent: "[[skills/development/tdd/SKILL.md]]"
+parent: "[skills/development/tdd/SKILL.md](SKILL.md)"
 
 updated: 2026-06-28
 ---
 
 # Testing Anti-Patterns
 
-* **Parent (상위 스킬)**: [[skills/development/tdd/SKILL.md]]
+* **Parent (상위 스킬)**: [skills/development/tdd/SKILL.md](SKILL.md)
 
 ---
 

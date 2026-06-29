@@ -14,15 +14,15 @@ keywords:
   - template
   - page-controller
 
-parent: "[[context/guide/guide-index.md]]"
+parent: "[context/guide/guide-index.md](guide-index.md)"
 
 related:
-  - "[[rules/L3-dashboard.md]]"
-  - "[[context/guide/coding-templates.md]]"
-  - "[[context/guide/new_page_development_workflow.md]]"
+  - "[rules/L3-dashboard.md](../../rules/L3-dashboard.md)"
+  - "[context/guide/coding-templates.md](coding-templates.md)"
+  - "[context/guide/new_page_development_workflow.md](new_page_development_workflow.md)"
 
 consumers:
-  - "[[agents/roles/planner-orchestrator.md]]"
+  - "[agents/roles/planner-orchestrator.md](../../agents/roles/planner-orchestrator.md)"
   - agent.ui_builder
 
 updated: 2026-06-28
@@ -34,14 +34,14 @@ updated: 2026-06-28
 ## Overview
 * **왜 존재하는가 (Why)**: 모든 대시보드 화면 컨트롤러가 정립된 7단계 개발 표준 순서와 3레이어 물리 격리 규칙을 만족하도록 함으로써 UI 계층의 구조적 일관성과 최상의 유지보수 가독성을 확보하기 위함입니다.
 * **언제 사용하는가 (When)**: 신규 Streamlit 페이지 모듈(`*_page.py`)을 설계하거나, 복잡해진 화면의 컴포넌트 렌더링 순서 및 필터 구조를 리팩토링할 때 준수합니다.
-* **연계 실행 (Next Action)**: 즉시 복사하여 사용할 수 있는 실물 파이썬 템플릿을 확인하려면 [guide.page_template_standard_py](.agents/context/guide/page_template_standard.py) 코드를 확인하십시오. (상대 경로: [page_template_standard.py](.agents/context/guide/page_template_standard.py))
+* **연계 실행 (Next Action)**: 즉시 복사하여 사용할 수 있는 실물 파이썬 템플릿을 확인하려면 [guide.page_template_standard_py](page_template_standard.py) 코드를 확인하십시오. (상대 경로: [page_template_standard.py](page_template_standard.py))
 
 ## Connections
-* **상위 개념**: [guide.readme](.agents/context/guide/guide-index.md)
+* **상위 개념**: [guide.readme](guide-index.md)
 * **연관 자산**:
-  - [.agents/rules/L3-dashboard.md](.agents/rules/L3-dashboard.md)
-  - [.agents/context/guide/coding-templates.md](.agents/context/guide/coding-templates.md)
-  - [.agents/context/guide/page_template_standard.py](.agents/context/guide/page_template_standard.py)
+  - [.agents/rules/L3-dashboard.md](../../rules/L3-dashboard.md)
+  - [.agents/context/guide/coding-templates.md](coding-templates.md)
+  - [.agents/context/guide/page_template_standard.py](page_template_standard.py)
 
 ---
 
@@ -55,8 +55,8 @@ updated: 2026-06-28
 
 ### ① 단일 책임 및 물리 격리 (Single Responsibility & Isolation)
 - `*_page.py` 파일은 화면의 레이아웃을 잡고 필터를 제어하며 위젯을 화면에 표출하는 **화면 컨트롤러(Controller & Layout)** 역할만 전담합니다.
-- 데이터베이스 조회 및 Pandas 전처리는 **서비스 레이어([.agents/rules/L3-service.md](.agents/rules/L3-service.md))**에 위임합니다.
-- 복잡한 Plotly 피규어 구성 및 스타일 차트 그리기는 **시각화 레이어([.agents/rules/L3-plot.md](.agents/rules/L3-plot.md))**에 위임합니다.
+- 데이터베이스 조회 및 Pandas 전처리는 **서비스 레이어([.agents/rules/L3-service.md](../../rules/L3-service.md))**에 위임합니다.
+- 복잡한 Plotly 피규어 구성 및 스타일 차트 그리기는 **시각화 레이어([.agents/rules/L3-plot.md](../../rules/L3-plot.md))**에 위임합니다.
 
 ### ② 이모지 전면 사용 금지 및 Material Icons 표준화 (Strict Emoji-Free Policy)
 - 탭 라벨, 마크다운 텍스트, 버튼, 로그 및 소스 코드 내 주석을 포함한 대시보드 전 영역에서 유니코드 이모지(예: 💡, 🚀, 📋, ⚠️, ❌)의 사용을 금지합니다.

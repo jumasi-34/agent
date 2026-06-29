@@ -13,11 +13,11 @@ keywords:
   - query
   - cte
 
-parent: "[[rules/rules-index.md]]"
+parent: "[rules/rules-index.md](rules-index.md)"
 
 related:
-  - "[[rules/L2-naming-convention.md]]"
-  - "[[rules/L3-service.md]]"
+  - "[rules/L2-naming-convention.md](L2-naming-convention.md)"
+  - "[rules/L3-service.md](L3-service.md)"
 
 consumers:
   - agent.all

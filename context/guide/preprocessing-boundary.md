@@ -13,15 +13,15 @@ keywords:
   - boundary
   - separation-of-concerns
 
-parent: "[[context/guide/guide-index.md]]"
+parent: "[context/guide/guide-index.md](guide-index.md)"
 
 related:
-  - "[[rules/L3-service.md]]"
-  - "[[rules/L3-plot.md]]"
-  - "[[context/guide/3layer-development-process.md]]"
+  - "[rules/L3-service.md](../../rules/L3-service.md)"
+  - "[rules/L3-plot.md](../../rules/L3-plot.md)"
+  - "[context/guide/3layer-development-process.md](3layer-development-process.md)"
 
 consumers:
-  - "[[agents/roles/planner-orchestrator.md]]"
+  - "[agents/roles/planner-orchestrator.md](../../agents/roles/planner-orchestrator.md)"
   - agent.ui_builder
   - agent.service_builder
 
@@ -34,14 +34,14 @@ updated: 2026-06-28
 ## Overview
 * **왜 존재하는가 (Why)**: SQL에서 반환하는 순수 영문 물리 컬럼명과 UI 및 플롯에서 사용하는 디스플레이 명칭/포맷 설정 간의 역할을 명확히 격리(SOP)하여, 비즈니스 계산 로직의 단위 테스트 가능성을 극대화하기 위함입니다.
 * **언제 사용하는가 (When)**: DB 원천 데이터 처리 로직을 수정하거나, 대시보드 탭에 복잡한 통계 가공(예: CPK 연산, 가중 평균)을 추가할 때 준수합니다.
-* **연계 실행 (Next Action)**: 구체적인 SQL 쿼리 설계 표준을 보려면 [rule.l3.query](.agents/rules/L3-query.md)를 연이어 참조하십시오.
+* **연계 실행 (Next Action)**: 구체적인 SQL 쿼리 설계 표준을 보려면 [rule.l3.query](../../rules/L3-query.md)를 연이어 참조하십시오.
 
 ## Connections
-* **상위 개념**: [guide.readme](.agents/context/guide/guide-index.md)
+* **상위 개념**: [guide.readme](guide-index.md)
 * **연관 자산**:
-  - [.agents/rules/L3-service.md](.agents/rules/L3-service.md)
-  - [.agents/rules/L3-plot.md](.agents/rules/L3-plot.md)
-  - [.agents/rules/L3-query.md](.agents/rules/L3-query.md)
+  - [.agents/rules/L3-service.md](../../rules/L3-service.md)
+  - [.agents/rules/L3-plot.md](../../rules/L3-plot.md)
+  - [.agents/rules/L3-query.md](../../rules/L3-query.md)
 
 ---
 

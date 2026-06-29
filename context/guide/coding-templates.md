@@ -13,15 +13,15 @@ keywords:
   - boilerplate
   - comments
 
-parent: "[[context/guide/guide-index.md]]"
+parent: "[context/guide/guide-index.md](guide-index.md)"
 
 related:
-  - "[[rules/L2-naming-convention.md]]"
-  - "[[context/guide/3layer-development-process.md]]"
-  - "[[context/guide/page-template-standard.md]]"
+  - "[rules/L2-naming-convention.md](../../rules/L2-naming-convention.md)"
+  - "[context/guide/3layer-development-process.md](3layer-development-process.md)"
+  - "[context/guide/page-template-standard.md](page-template-standard.md)"
 
 consumers:
-  - "[[agents/roles/planner-orchestrator.md]]"
+  - "[agents/roles/planner-orchestrator.md](../../agents/roles/planner-orchestrator.md)"
   - agent.ui_builder
   - agent.service_builder
 
@@ -34,14 +34,14 @@ updated: 2026-06-28
 ## Overview
 * **왜 존재하는가 (Why)**: 개발자 및 AI 에이전트가 코드를 작성할 때 일관되고 통일된 주석 구조와 포맷을 보장하여 소스코드의 가독성을 최상으로 유지하기 위함입니다.
 * **언제 사용하는가 (When)**: 신규 페이지 모듈, 서비스 함수, SQL 쿼리 모듈을 신설하거나 기존 코드를 전면 리팩토링할 때 뼈대로 복사하여 사용합니다.
-* **연계 실행 (Next Action)**: 구체적인 Streamlit 표준 페이지 템플릿 상세 명세를 확인하려면 [guide.page_template_standard](.agents/context/guide/page-template-standard.md)를 참조하십시오.
+* **연계 실행 (Next Action)**: 구체적인 Streamlit 표준 페이지 템플릿 상세 명세를 확인하려면 [guide.page_template_standard](page-template-standard.md)를 참조하십시오.
 
 ## Connections
-* **상위 개념**: [guide.readme](.agents/context/guide/guide-index.md)
+* **상위 개념**: [guide.readme](guide-index.md)
 * **연관 자산**:
-  - [.agents/context/guide/page-template-standard.md](.agents/context/guide/page-template-standard.md)
-  - [.agents/context/guide/page_template_standard.py](.agents/context/guide/page_template_standard.py)
-  - [.agents/context/guide/query_module_template.py](.agents/context/guide/query_module_template.py)
+  - [.agents/context/guide/page-template-standard.md](page-template-standard.md)
+  - [.agents/context/guide/page_template_standard.py](page_template_standard.py)
+  - [.agents/context/guide/query_module_template.py](query_module_template.py)
 
 ---
 
@@ -56,9 +56,9 @@ updated: 2026-06-28
 - **목적**: 사용자의 필터 선택을 입력받아 파라미터를 제어하고, 레이아웃을 구성하며, 최종 차트와 지표 카드를 화면에 렌더링합니다.
 - **주석 및 구조 템플릿**:
   대시보드 화면 컨트롤러는 일관된 작업 순서(7단계 표준 구조)와 탭/섹션 분할 렌더링 가독성 규칙을 준수하여 작성해야 합니다. 
-  자세한 설계 규칙은 [.agents/context/guide/page-template-standard.md](.agents/context/guide/page-template-standard.md) 문서를 준수하십시오.
+  자세한 설계 규칙은 [.agents/context/guide/page-template-standard.md](page-template-standard.md) 문서를 준수하십시오.
 
-  실제 신규 개발 및 리팩토링 시 즉시 복사하여 사용할 수 있는 완전한 파이썬 소스 코드 템플릿은 [.agents/context/guide/page_template_standard.py](.agents/context/guide/page_template_standard.py)를 복사하여 뼈대로 삼으십시오.
+  실제 신규 개발 및 리팩토링 시 즉시 복사하여 사용할 수 있는 완전한 파이썬 소스 코드 템플릿은 [.agents/context/guide/page_template_standard.py](page_template_standard.py)를 복사하여 뼈대로 삼으십시오.
 
 - **요약된 7단계 구조 개요**:
   1. **Imports**: 외부 라이브러리, 코어 UI, 비즈니스 서비스, 1:1 plots 순 배치

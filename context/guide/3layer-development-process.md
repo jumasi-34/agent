@@ -13,15 +13,15 @@ keywords:
   - workflow
   - process
 
-parent: "[[context/guide/guide-index.md]]"
+parent: "[context/guide/guide-index.md](guide-index.md)"
 
 related:
-  - "[[rules/L2-architecture.md]]"
-  - "[[context/guide/coding-templates.md]]"
-  - "[[context/guide/new_page_development_workflow.md]]"
+  - "[rules/L2-architecture.md](../../rules/L2-architecture.md)"
+  - "[context/guide/coding-templates.md](coding-templates.md)"
+  - "[context/guide/new_page_development_workflow.md](new_page_development_workflow.md)"
 
 consumers:
-  - "[[agents/roles/planner-orchestrator.md]]"
+  - "[agents/roles/planner-orchestrator.md](../../agents/roles/planner-orchestrator.md)"
   - agent.ui_builder
   - agent.service_builder
 
@@ -34,14 +34,14 @@ updated: 2026-06-28
 ## Overview
 * **왜 존재하는가 (Why)**: 개발의 질서를 세워 에이전트와 엔지니어가 동일한 아키텍처 원칙 하에 무결한 대시보드를 유지 및 구현할 수 있게 하기 위함입니다.
 * **언제 사용하는가 (When)**: 대시보드 화면 설계, 비즈니스 가공 레이어 작성, SQL 쿼리층 분리 등의 작업에 돌입할 때 개발 절차를 검토하기 위해 사용합니다.
-* **연계 실행 (Next Action)**: 구체적인 페이지 템플릿과 코드를 보려면 [guide.coding_templates](.agents/context/guide/coding-templates.md)를 연이어 참조하십시오.
+* **연계 실행 (Next Action)**: 구체적인 페이지 템플릿과 코드를 보려면 [guide.coding_templates](coding-templates.md)를 연이어 참조하십시오.
 
 ## Connections
-* **상위 개념**: [guide.readme](.agents/context/guide/guide-index.md)
+* **상위 개념**: [guide.readme](guide-index.md)
 * **연관 자산**:
-  - [.agents/rules/L2-architecture.md](.agents/rules/L2-architecture.md)
-  - [.agents/context/guide/new_page_development_workflow.md](.agents/context/guide/new_page_development_workflow.md)
-  - [.agents/context/guide/coding-templates.md](.agents/context/guide/coding-templates.md)
+  - [.agents/rules/L2-architecture.md](../../rules/L2-architecture.md)
+  - [.agents/context/guide/new_page_development_workflow.md](new_page_development_workflow.md)
+  - [.agents/context/guide/coding-templates.md](coding-templates.md)
 
 ---
 

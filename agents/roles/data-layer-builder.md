@@ -14,16 +14,16 @@ keywords:
   - pandas
   - cache
 
-parent: "[[agents/agents.md]]"
+parent: "[agents/agents.md](../agents.md)"
 
 related:
-  - "[[agents/skill-map.md]]"
-  - "[[rules/L2-architecture.md]]"
-  - "[[rules/L3-query.md]]"
-  - "[[rules/L3-service.md]]"
+  - "[agents/skill-map.md](../skill-map.md)"
+  - "[rules/L2-architecture.md](../../rules/L2-architecture.md)"
+  - "[rules/L3-query.md](../../rules/L3-query.md)"
+  - "[rules/L3-service.md](../../rules/L3-service.md)"
 
 consumers:
-  - "[[agents/roles/data-layer-builder.md]]"
+  - "[agents/roles/data-layer-builder.md](data-layer-builder.md)"
 
 updated: 2026-06-28
 ---
@@ -34,11 +34,11 @@ updated: 2026-06-28
 ## Overview
 * **왜 존재하는가 (Why)**: 데이터베이스 쿼리를 안전하고 조밀하게 구조화하고, 효율적으로 전처리한 데이터를 화면에 즉각 공급하여 고속의 대시보드 무결성을 사수하기 위함입니다.
 * **언제 사용하는가 (When)**: PRD 기획 확정 이후, 실제 데이터 공급을 담당할 SQL 함수 작성 및 `@st.cache_data` 서비스 로직 구현에 진입할 때 실행합니다.
-* **연계 실행 (Next Action)**: 구체적인 데이터 가공 표준을 보려면 [.agents/rules/L3-service.md](.agents/rules/L3-service.md) 및 [.agents/rules/L3-query.md](.agents/rules/L3-query.md)를 분석하십시오.
+* **연계 실행 (Next Action)**: 구체적인 데이터 가공 표준을 보려면 [.agents/rules/L3-service.md](../../rules/L3-service.md) 및 [.agents/rules/L3-query.md](../../rules/L3-query.md)를 분석하십시오.
 
 ## Connections
-* **상위 개념**: [.agents/agents/agents.md](.agents/agents/agents.md)
-* **연관 자산**: [.agents/rules/L3-query.md](.agents/rules/L3-query.md) | [.agents/rules/L3-service.md](.agents/rules/L3-service.md)
+* **상위 개념**: [.agents/agents/agents.md](../agents.md)
+* **연관 자산**: [.agents/rules/L3-query.md](../../rules/L3-query.md) | [.agents/rules/L3-service.md](../../rules/L3-service.md)
 ---
 
 이 문서는 CQ-BI 시스템 내에서 안전하고 정형화된 데이터 조회를 위한 SQL 쿼리 빌더(`app/queries/*_query.py`)를 작성하고, 수집된 원시 데이터를 정제, 가공 및 캐싱하여 고속의 비즈니스 데이터프레임(`app/service/*_df.py`)을 구축하는 **쿼리 및 전처리 통합 빌더 에이전트(Data Layer Builder Agent)**의 행동 양식과 개발 표준을 규정합니다.
@@ -101,4 +101,4 @@ updated: 2026-06-28
 
 ## 4. 에이전트 협업 및 체이닝 (Agent Collaboration & Chaining)
 
-본 에이전트의 구체적인 기동 협업 다이어그램(Chaining Mermaid), 예외 에스컬레이션 수칙(Escalation Protocol), 그리고 이모지 사용 전면 금지와 같은 공통 세이프티 제약은 지능 연합 원장인 [agent/agents.md](.agents/agents/agents.md)에 통합 기재되어 전역 관리됩니다. 개발 및 협업 시 이를 참고하여 구동하십시오.
+본 에이전트의 구체적인 기동 협업 다이어그램(Chaining Mermaid), 예외 에스컬레이션 수칙(Escalation Protocol), 그리고 이모지 사용 전면 금지와 같은 공통 세이프티 제약은 지능 연합 원장인 [agent/agents.md](../agents.md)에 통합 기재되어 전역 관리됩니다. 개발 및 협업 시 이를 참고하여 구동하십시오.

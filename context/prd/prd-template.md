@@ -13,14 +13,14 @@ keywords:
   - specifications
   - layout
 
-parent: "[[context/prd/prd-index.md]]"
+parent: "[context/prd/prd-index.md](prd-index.md)"
 
 related:
-  - "[[context/prd/prd-hgws-return-dashboard.md]]"
-  - "[[context/prd/prd-oe-quality-issue-dashboard.md]]"
+  - "[context/prd/prd-hgws-return-dashboard.md](prd-hgws-return-dashboard.md)"
+  - "[context/prd/prd-oe-quality-issue-dashboard.md](prd-oe-quality-issue-dashboard.md)"
 
 consumers:
-  - "[[agents/roles/planner-orchestrator.md]]"
+  - "[agents/roles/planner-orchestrator.md](../../agents/roles/planner-orchestrator.md)"
   - ui-reviewer
 
 updated: 2026-06-28
@@ -28,10 +28,10 @@ updated: 2026-06-28
 # [PRD] - {기능명 / 화면명} 개발 명세서
 
 ## Overview / Connections
-* **Parent (상위 개념)**: [[context/prd/prd-index.md]]
+* **Parent (상위 개념)**: [context/prd/prd-index.md](prd-index.md)
 * **Related (연관 문서)**:
-  * [[context/prd/prd-hgws-return-dashboard.md]] (HGWS 반송 PRD)
-  * [[context/prd/prd-oe-quality-issue-dashboard.md]] (OE 품질 이슈 PRD)
+  * [context/prd/prd-hgws-return-dashboard.md](prd-hgws-return-dashboard.md) (HGWS 반송 PRD)
+  * [context/prd/prd-oe-quality-issue-dashboard.md](prd-oe-quality-issue-dashboard.md) (OE 품질 이슈 PRD)
 
 ---
 

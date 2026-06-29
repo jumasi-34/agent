@@ -6,10 +6,10 @@ title: "[Skill] Streamlit"
 type: skill
 status: active
 
-parent: "[[skills/index.md]]"
+parent: "[skills/index.md](../../index.md)"
 
 related:
-  - "[[skills/index.md]]"
+  - "[skills/index.md](../../index.md)"
   - rule.streamlit.widget_key
 
 consumers:
@@ -21,7 +21,7 @@ updated: 2026-06-28
 # Developing with Streamlit
 
 ## Overview / Connections
-* **Parent (상위 개념)**: [[skills/index.md]]
+* **Parent (상위 개념)**: [skills/index.md](../../index.md)
 
 
 Streamlit (>=1.57) ships detailed reference documentation for building Streamlit apps inside its pip package. The bundled skill is a routing `SKILL.md` plus a `references/` folder of topic-specific reference docs (dashboards, themes, layouts, session state, custom components, etc.).
@@ -69,5 +69,5 @@ The script prints either:
 
 ## Related
 
-[[Streamlit UI Development]]
-[[Plotly Visualization System]]
+[Streamlit UI Development](../../../wiki/Streamlit UI Development.md)
+[Plotly Visualization System](../../../wiki/Plotly Visualization System.md)

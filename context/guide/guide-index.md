@@ -16,22 +16,22 @@ keywords:
 parent: concept.home
 
 related:
-  - "[[context/guide/3layer-development-process.md]]"
-  - "[[context/guide/coding-templates.md]]"
-  - "[[context/guide/common-column-metadata-design.md]]"
-  - "[[context/guide/design-system-guide.md]]"
-  - "[[context/guide/error-handling.md]]"
-  - "[[context/guide/manual-setup.md]]"
-  - "[[context/guide/menu-navigation-definition.md]]"
-  - "[[context/guide/new_page_development_workflow.md]]"
-  - "[[context/guide/page-template-standard.md]]"
-  - "[[context/guide/plotly-style-guide.md]]"
-  - "[[context/guide/plotly-workflow-template.md]]"
-  - "[[context/guide/preprocessing-boundary.md]]"
-  - "[[context/guide/testing-verification.md]]"
+  - "[context/guide/3layer-development-process.md](3layer-development-process.md)"
+  - "[context/guide/coding-templates.md](coding-templates.md)"
+  - "[context/guide/common-column-metadata-design.md](common-column-metadata-design.md)"
+  - "[context/guide/design-system-guide.md](design-system-guide.md)"
+  - "[context/guide/error-handling.md](error-handling.md)"
+  - "[context/guide/manual-setup.md](manual-setup.md)"
+  - "[context/guide/menu-navigation-definition.md](menu-navigation-definition.md)"
+  - "[context/guide/new_page_development_workflow.md](new_page_development_workflow.md)"
+  - "[context/guide/page-template-standard.md](page-template-standard.md)"
+  - "[context/guide/plotly-style-guide.md](plotly-style-guide.md)"
+  - "[context/guide/plotly-workflow-template.md](plotly-workflow-template.md)"
+  - "[context/guide/preprocessing-boundary.md](preprocessing-boundary.md)"
+  - "[context/guide/testing-verification.md](testing-verification.md)"
 
 consumers:
-  - "[[agents/roles/planner-orchestrator.md]]"
+  - "[agents/roles/planner-orchestrator.md](../../agents/roles/planner-orchestrator.md)"
   - agent.ui_builder
   - agent.service_builder
 
@@ -44,24 +44,24 @@ updated: 2026-06-28
 ## Overview
 * **왜 존재하는가 (Why)**: `rules/`의 절대 제약 규정을 실제 코드 상에 어떻게 우아하게 구현하고 녹여낼 수 있는지 모범 사례와 디자인 시스템, 아키텍처 및 화면 템플릿 등의 가이드를 정립하기 위함입니다.
 * **언제 사용하는가 (When)**: 대시보드 UI, 비즈니스 가공 서비스, SQL 쿼리층을 새로 구현하거나 고도화할 때, 디자인 시스템과 에러 처리 등을 참고하여 아키텍처 표준을 완수해야 할 때 참고합니다.
-* **연계 실행 (Next Action)**: 구체적인 3레이어 구조 개발 프로세스 절차를 보려면 [guide.3layer_development_process](.agents/context/guide/3layer-development-process.md)를, 템플릿 코드를 보려면 [guide.coding_templates](.agents/context/guide/coding-templates.md)를 먼저 확인하십시오.
+* **연계 실행 (Next Action)**: 구체적인 3레이어 구조 개발 프로세스 절차를 보려면 [guide.3layer_development_process](3layer-development-process.md)를, 템플릿 코드를 보려면 [guide.coding_templates](coding-templates.md)를 먼저 확인하십시오.
 
 ## Connections
-* **상위 개념**: [AGENTS.md](.agents/AGENTS.md)
+* **상위 개념**: [AGENTS.md](../../AGENTS.md)
 * **하위 자산**:
-  - [.agents/context/guide/3layer-development-process.md](.agents/context/guide/3layer-development-process.md)
-  - [.agents/context/guide/coding-templates.md](.agents/context/guide/coding-templates.md)
-  - [.agents/context/guide/common-column-metadata-design.md](.agents/context/guide/common-column-metadata-design.md)
-  - [.agents/context/guide/design-system-guide.md](.agents/context/guide/design-system-guide.md)
-  - [.agents/context/guide/error-handling.md](.agents/context/guide/error-handling.md)
-  - [.agents/context/guide/manual-setup.md](.agents/context/guide/manual-setup.md)
-  - [.agents/context/guide/menu-navigation-definition.md](.agents/context/guide/menu-navigation-definition.md)
-  - [.agents/context/guide/new_page_development_workflow.md](.agents/context/guide/new_page_development_workflow.md)
-  - [.agents/context/guide/page-template-standard.md](.agents/context/guide/page-template-standard.md)
-  - [.agents/context/guide/plotly-style-guide.md](.agents/context/guide/plotly-style-guide.md)
-  - [.agents/context/guide/plotly-workflow-template.md](.agents/context/guide/plotly-workflow-template.md)
-  - [.agents/context/guide/preprocessing-boundary.md](.agents/context/guide/preprocessing-boundary.md)
-  - [.agents/context/guide/testing-verification.md](.agents/context/guide/testing-verification.md)
+  - [.agents/context/guide/3layer-development-process.md](3layer-development-process.md)
+  - [.agents/context/guide/coding-templates.md](coding-templates.md)
+  - [.agents/context/guide/common-column-metadata-design.md](common-column-metadata-design.md)
+  - [.agents/context/guide/design-system-guide.md](design-system-guide.md)
+  - [.agents/context/guide/error-handling.md](error-handling.md)
+  - [.agents/context/guide/manual-setup.md](manual-setup.md)
+  - [.agents/context/guide/menu-navigation-definition.md](menu-navigation-definition.md)
+  - [.agents/context/guide/new_page_development_workflow.md](new_page_development_workflow.md)
+  - [.agents/context/guide/page-template-standard.md](page-template-standard.md)
+  - [.agents/context/guide/plotly-style-guide.md](plotly-style-guide.md)
+  - [.agents/context/guide/plotly-workflow-template.md](plotly-workflow-template.md)
+  - [.agents/context/guide/preprocessing-boundary.md](preprocessing-boundary.md)
+  - [.agents/context/guide/testing-verification.md](testing-verification.md)
 
 ---
 

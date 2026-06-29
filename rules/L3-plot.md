@@ -13,11 +13,11 @@ keywords:
   - chart
   - visualization
 
-parent: "[[rules/rules-index.md]]"
+parent: "[rules/rules-index.md](rules-index.md)"
 
 related:
-  - "[[rules/L2-color-system.md]]"
-  - "[[rules/L3-dashboard.md]]"
+  - "[rules/L2-color-system.md](L2-color-system.md)"
+  - "[rules/L3-dashboard.md](L3-dashboard.md)"
 
 consumers:
   - agent.all
@@ -50,7 +50,7 @@ updated: 2026-06-29
 ## 3. 시각화 개발 3대 표준
 
 1. **시각화 전처리 한계 준수**: 호버 텍스트 문자열 포맷 조립, 차트 형태 정렬을 위한 가공(Top-N 자르기 및 Others 그룹화), 축 틱 포맷(`tickformat`) 등 오직 **비주얼 프레젠테이션 종속적인 포맷팅 가공**만 플롯 레이어 내에서 한정 처리합니다.
-2. **시맨틱 차트 토큰 준수**: 색상 마커 지정 시 임의의 Hex 코드를 하드코딩하지 않고, 반드시 최상위 표준인 [L2-color-system.md](.agents/rules/L2-color-system.md)를 참조하여 `chart_series_primary`, `spec_limit`, `target_line` 등의 차트 의미(Semantic) 토큰을 매핑해야 합니다.
+2. **시맨틱 차트 토큰 준수**: 색상 마커 지정 시 임의의 Hex 코드를 하드코딩하지 않고, 반드시 최상위 표준인 [L2-color-system.md](L2-color-system.md)를 참조하여 `chart_series_primary`, `spec_limit`, `target_line` 등의 차트 의미(Semantic) 토큰을 매핑해야 합니다.
 3. **타이포그래피 및 투명 배경 통합**: 차트 반환 직전, 일관된 디스플레이 폰트 스펙과 텍스트 크기가 이식된 공통 헬퍼인 `apply_custom_chart_style(fig)`를 무조건 호출해야 합니다. 또한 st.container 카드 패널과의 조화를 위해 `paper_bgcolor` 및 `plot_bgcolor`는 항상 투명(`rgba(0,0,0,0)`)화합니다.
 
 ---

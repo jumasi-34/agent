@@ -11,9 +11,9 @@ updated: 2026-06-29
 이 가이드는 사용자의 잠재적 의도를 명확하게 정량화하고, 코딩 착수 전 정합성 있는 순차 구현 계획서를 수립하여 요구사항과 실제 소스 코드 구현 간의 엇박자 오작동을 사전에 차단하기 위해 존재합니다. 기획과 구현 산출물의 네이밍과 내용을 1:1로 일치시킴으로써 개발 전반의 투명성과 흐름을 제어합니다.
 
 ## 2. 어디와 연결되는가 (Connections)
-- **비즈니스 수식 명세**: 대시보드 화면 및 탭에 구현할 상세 수식과 조건부 기준은 [[Quality Metric & Business Rules]]를 기반으로 수립됩니다.
-- **구현 계획 검증 및 인수 합격**: 계획된 체크포인트와 정적 룰 부합 여부는 [[Harness Testing & Quality Gate]]를 통해 사전에 걸러집니다.
-- **지식 그래프 및 자산 보존**: 요구사항 조율 및 구현 중 축적된 고유 설계 지식은 [[Project Knowledge Graph & Curation]]를 통해 프로젝트 기억에 연계 보존됩니다.
+- **비즈니스 수식 명세**: 대시보드 화면 및 탭에 구현할 상세 수식과 조건부 기준은 [Quality Metric & Business Rules](Quality Metric & Business Rules.md)를 기반으로 수립됩니다.
+- **구현 계획 검증 및 인수 합격**: 계획된 체크포인트와 정적 룰 부합 여부는 [Harness Testing & Quality Gate](Harness Testing & Quality Gate.md)를 통해 사전에 걸러집니다.
+- **지식 그래프 및 자산 보존**: 요구사항 조율 및 구현 중 축적된 고유 설계 지식은 [Project Knowledge Graph & Curation](Project Knowledge Graph & Curation.md)를 통해 프로젝트 기억에 연계 보존됩니다.
 
 ## 3. 무엇을 이해해야 하는가 (What)
 - **4대 섹션 기획 명세서 표준**:

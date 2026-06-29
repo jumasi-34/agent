@@ -15,15 +15,15 @@ keywords:
   - failure-archive
   - rca
 
-parent: "[[context/checklist/checklist-index.md]]"
+parent: "[context/checklist/checklist-index.md](checklist-index.md)"
 
 related:
-  - "[[rules/L2-context-readability.md]]"
-  - "[[context/checklist/checklist-security.md]]"
+  - "[rules/L2-context-readability.md](../../rules/L2-context-readability.md)"
+  - "[context/checklist/checklist-security.md](checklist-security.md)"
 
 consumers:
-  - "[[agents/roles/planner-orchestrator.md]]"
-  - "[[agents/roles/quality-evaluator.md]]"
+  - "[agents/roles/planner-orchestrator.md](../../agents/roles/planner-orchestrator.md)"
+  - "[agents/roles/quality-evaluator.md](../../agents/roles/quality-evaluator.md)"
 
 updated: 2026-06-28
 ---
@@ -34,13 +34,13 @@ updated: 2026-06-28
 ## Overview
 * **왜 존재하는가 (Why)**: 개발 과정 중 에이전트가 반복해서 저지르는 아키텍처 위반, 프레임워크 옵션 오작동, 경로 연동 실패 등의 예외 이력을 수집하여 지식 개정을 가이드하고, 동일한 실수의 재발을 시스템적으로 예방하기 위함입니다.
 * **언제 사용하는가 (When)**: AI 구동 세션을 분석 및 개선하거나, 새로운 작업 브랜치를 개발하기 전 과거의 핵심 자가 치유 수칙들을 복기하기 위해 참조합니다.
-* **연계 실행 (Next Action)**: 보안 및 AI 참조 차단 영역(Exclusion Zone) 검토 수칙을 확인하려면 [checklist-security.md](.agents/context/checklist/checklist-security.md)로 이동해 수칙을 파악하십시오.
+* **연계 실행 (Next Action)**: 보안 및 AI 참조 차단 영역(Exclusion Zone) 검토 수칙을 확인하려면 [checklist-security.md](checklist-security.md)로 이동해 수칙을 파악하십시오.
 
 ## Connections
-* **상위 개념**: [.agents/context/checklist/checklist-index.md](.agents/context/checklist/checklist-index.md)
+* **상위 개념**: [.agents/context/checklist/checklist-index.md](checklist-index.md)
 * **연관 자산**: 
-  - [.agents/rules/L2-context-readability.md](.agents/rules/L2-context-readability.md)
-  - [.agents/context/checklist/checklist-security.md](.agents/context/checklist/checklist-security.md)
+  - [.agents/rules/L2-context-readability.md](../../rules/L2-context-readability.md)
+  - [.agents/context/checklist/checklist-security.md](checklist-security.md)
 ---
 
 | 발생 일시 | RUN ID | 에이전트 | 도메인 | 에러 분류 | 근본 원인 (RCA) | 재발방지 조치 사항 |

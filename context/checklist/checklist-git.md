@@ -15,15 +15,15 @@ keywords:
   - sync-policy
   - rsync
 
-parent: "[[context/checklist/checklist-index.md]]"
+parent: "[context/checklist/checklist-index.md](checklist-index.md)"
 
 related:
-  - "[[rules/L1-git.md]]"
-  - "[[rules/L2-sync-policy.md]]"
+  - "[rules/L1-git.md](../../rules/L1-git.md)"
+  - "[rules/L2-sync-policy.md](../../rules/L2-sync-policy.md)"
 
 consumers:
-  - "[[agents/roles/code-reviewer.md]]"
-  - "[[agents/roles/quality-evaluator.md]]"
+  - "[agents/roles/code-reviewer.md](../../agents/roles/code-reviewer.md)"
+  - "[agents/roles/quality-evaluator.md](../../agents/roles/quality-evaluator.md)"
 
 updated: 2026-06-28
 ---
@@ -34,13 +34,13 @@ updated: 2026-06-28
 ## Overview
 * **왜 존재하는가 (Why)**: 커밋 이력 추적 및 협업 컨텍스트 유실을 막고, rsync 동기화 오작동으로 인한 프로덕션 데이터 손실을 원천적으로 막기 위함입니다.
 * **언제 사용하는가 (When)**: 형상관리에 커밋을 반영하기 직전, 혹은 로컬 및 원격 rsync 명령을 구동하기 전에 확인합니다.
-* **연계 실행 (Next Action)**: 소스 코드를 최종 프로덕션에 적용 및 릴리즈하기 직전에 검역해야 할 전체 게이트는 [checklist-release.md](.agents/context/checklist/checklist-release.md)를 통해 점검하십시오.
+* **연계 실행 (Next Action)**: 소스 코드를 최종 프로덕션에 적용 및 릴리즈하기 직전에 검역해야 할 전체 게이트는 [checklist-release.md](checklist-release.md)를 통해 점검하십시오.
 
 ## Connections
-* **상위 개념**: [.agents/context/checklist/checklist-index.md](.agents/context/checklist/checklist-index.md)
+* **상위 개념**: [.agents/context/checklist/checklist-index.md](checklist-index.md)
 * **연관 자산**: 
-  - [.agents/rules/L1-git.md](.agents/rules/L1-git.md)
-  - [.agents/rules/L2-sync-policy.md](.agents/rules/L2-sync-policy.md)
+  - [.agents/rules/L1-git.md](../../rules/L1-git.md)
+  - [.agents/rules/L2-sync-policy.md](../../rules/L2-sync-policy.md)
 ---
 
 ## 1. 커밋 메시지 표준 규칙

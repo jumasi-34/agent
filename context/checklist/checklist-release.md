@@ -14,15 +14,15 @@ keywords:
   - verification
   - production-ready
 
-parent: "[[context/checklist/checklist-index.md]]"
+parent: "[context/checklist/checklist-index.md](checklist-index.md)"
 
 related:
-  - "[[context/checklist/checklist-architecture.md]]"
-  - "[[context/checklist/checklist-coding-standard.md]]"
+  - "[context/checklist/checklist-architecture.md](checklist-architecture.md)"
+  - "[context/checklist/checklist-coding-standard.md](checklist-coding-standard.md)"
 
 consumers:
-  - "[[agents/roles/code-reviewer.md]]"
-  - "[[agents/roles/quality-evaluator.md]]"
+  - "[agents/roles/code-reviewer.md](../../agents/roles/code-reviewer.md)"
+  - "[agents/roles/quality-evaluator.md](../../agents/roles/quality-evaluator.md)"
 
 updated: 2026-06-28
 ---
@@ -33,13 +33,13 @@ updated: 2026-06-28
 ## Overview
 * **왜 존재하는가 (Why)**: 개발 완료된 코드가 프로덕션 환경에 배포되기 전, 런타임 오류 및 구문 오류를 원천 차단하고 릴리즈 훅이 정상적으로 완수되는지 자가 검증하기 위함입니다.
 * **언제 사용하는가 (When)**: 코드 변경 사항을 실제 서버나 프로덕션 환경에 릴리즈/배포하기 직전 최종 게이트 단계에서 준수합니다.
-* **연계 실행 (Next Action)**: 릴리즈를 완수하고 배포 결과 및 에러 예방 로그를 확인하려면 [reverse-sync-prevention.md](.agents/context/checklist/reverse-sync-prevention.md)의 이력을 갱신하거나 확인하십시오.
+* **연계 실행 (Next Action)**: 릴리즈를 완수하고 배포 결과 및 에러 예방 로그를 확인하려면 [reverse-sync-prevention.md](reverse-sync-prevention.md)의 이력을 갱신하거나 확인하십시오.
 
 ## Connections
-* **상위 개념**: [.agents/context/checklist/checklist-index.md](.agents/context/checklist/checklist-index.md)
+* **상위 개념**: [.agents/context/checklist/checklist-index.md](checklist-index.md)
 * **연관 자산**: 
-  - [.agents/context/checklist/checklist-architecture.md](.agents/context/checklist/checklist-architecture.md)
-  - [.agents/context/checklist/checklist-coding-standard.md](.agents/context/checklist/checklist-coding-standard.md)
+  - [.agents/context/checklist/checklist-architecture.md](checklist-architecture.md)
+  - [.agents/context/checklist/checklist-coding-standard.md](checklist-coding-standard.md)
 ---
 
 ## 1. 빌드 및 컴파일 정합성 (Build & Compilation)

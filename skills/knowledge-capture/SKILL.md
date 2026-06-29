@@ -6,10 +6,10 @@ title: "[Skill] Knowledge Capture"
 type: skill
 status: active
 
-parent: "[[skills/index.md]]"
+parent: "[skills/index.md](../index.md)"
 
 related:
-  - "[[skills/index.md]]"
+  - "[skills/index.md](../index.md)"
 
 consumers:
   - agent.all
@@ -20,7 +20,7 @@ updated: 2026-06-28
 # Skill. Knowledge Capture (지식 자동 캡처 및 전파 가이드)
 
 ## Overview / Connections
-* **Parent (상위 개념)**: [[skills/index.md]]
+* **Parent (상위 개념)**: [skills/index.md](../index.md)
 
 
 이 스킬은 개발, 리팩토링, 디버깅 등 모든 개발 작업이 완료되고 종료(커밋 혹은 푸시)되는 시점에 에이전트가 자율적으로 실행해야 하는 최종 지식 정제 프로세스입니다.
@@ -73,5 +73,5 @@ updated: 2026-06-28
 
 - **Raw 불변성**: 어떠한 경우에도 이미 생성된 Raw 문서를 수정하거나 삭제하지 않습니다.
 - **Wiki 단일화**: 중복되거나 난잡한 Wiki 생성을 지양하고, 기존 지식을 유기적으로 수정·결합하는 것을 우선으로 삼습니다.
-- **경로 무오성**: 모든 문서 내부에서 타 문서나 소스 코드를 참조하는 하이퍼링크를 작성할 때, 절대 `file:///` 프로토콜을 사용하지 않으며, 평문 상대 경로(예: `[.agents/principles/Knowledge Curation.md](.agents/principles/Knowledge Curation.md)`)만을 사용하여 WSL 환경 하에서의 파일 접근 오류를 완벽히 통제합니다.
+- **경로 무오성**: 모든 문서 내부에서 타 문서나 소스 코드를 참조하는 하이퍼링크를 작성할 때, 절대 `file:///` 프로토콜을 사용하지 않으며, 평문 상대 경로(예: `[.agents/principles/Knowledge Curation.md](../../principles/Knowledge Curation.md)`)만을 사용하여 WSL 환경 하에서의 파일 접근 오류를 완벽히 통제합니다.
 - **비주얼 표준 준수**: 마크다운 내에서 이모지(유니코드 아이콘)의 노출을 전면 차단합니다.

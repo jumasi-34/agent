@@ -15,10 +15,10 @@ updated: 2026-06-29
 * **언제 사용하는가 (When)**: `.agents` 폴더 내에 새로운 규칙, 위키, 원시(Raw) 로그를 생성하거나 편집할 때 반드시 본 규정에 따라 문서 상단에 메타데이터를 삽입해야 합니다.
 
 ## Connections
-* **상위 개념**: [rules-index.md](.agents/rules/rules-index.md)
+* **상위 개념**: [rules-index.md](rules-index.md)
 * **연관 자산**: 
-  - [Knowledge Curation.md](.agents/principles/Knowledge Curation.md)
-  - [Dashboard.md](.agents/Dashboard.md)
+  - [Knowledge Curation.md](../principles/Knowledge Curation.md)
+  - [Dashboard.md](../Dashboard.md)
 
 ---
 

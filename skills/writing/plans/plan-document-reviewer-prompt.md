@@ -7,14 +7,14 @@ status: active
 summary: >
   Plan Document Reviewer Prompt 참조 및 가이드 명세서.
 
-parent: "[[skills/writing/plans/SKILL.md]]"
+parent: "[skills/writing/plans/SKILL.md](SKILL.md)"
 
 updated: 2026-06-28
 ---
 
 # Plan Document Reviewer Prompt Template
 
-* **Parent (상위 스킬)**: [[skills/writing/plans/SKILL.md]]
+* **Parent (상위 스킬)**: [skills/writing/plans/SKILL.md](SKILL.md)
 
 ---
 

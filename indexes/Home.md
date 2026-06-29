@@ -13,9 +13,9 @@ updated: 2026-06-29
 ## 2. 세부 지식 인덱스 맵 (Connections)
 본 지식 허브는 역할별로 최적화된 6대 하위 인덱스 허브로 직접 연결됩니다.
 
-- **[Architecture Index](.agents/indexes/Architecture Index.md)**: 3-Layer 격리 설계 및 레이어 통신 규격을 관리하는 아키텍처 위키 색인
-- **[Rule Index](.agents/indexes/Rule Index.md)**: 개발 중 반드시 이행해야 할 물리/논리적 제약 수칙 위키 색인
-- **[Skill Index](.agents/indexes/Skill Index.md)**: SDLC 단계별, 특정 분석 상황별 에이전트 자율 행동 위키 색인
-- **[Agent Index](.agents/indexes/Agent Index.md)**: 병렬 업무 분산 및 견제와 균형을 이루는 에이전트 R&R 위키 색인
-- **[Business Domain Index](.agents/indexes/Business Domain Index.md)**: 제조 현장 비즈니스 수식 공식 및 메타데이터 정의 위키 색인
-- **[Wiki Index](.agents/indexes/Wiki Index.md)**: 프로젝트 전체의 핵심 지식 구조를 종합한 통합 위키 색인
+- **[Architecture Index](Architecture Index.md)**: 3-Layer 격리 설계 및 레이어 통신 규격을 관리하는 아키텍처 위키 색인
+- **[Rule Index](Rule Index.md)**: 개발 중 반드시 이행해야 할 물리/논리적 제약 수칙 위키 색인
+- **[Skill Index](Skill Index.md)**: SDLC 단계별, 특정 분석 상황별 에이전트 자율 행동 위키 색인
+- **[Agent Index](Agent Index.md)**: 병렬 업무 분산 및 견제와 균형을 이루는 에이전트 R&R 위키 색인
+- **[Business Domain Index](Business Domain Index.md)**: 제조 현장 비즈니스 수식 공식 및 메타데이터 정의 위키 색인
+- **[Wiki Index](Wiki Index.md)**: 프로젝트 전체의 핵심 지식 구조를 종합한 통합 위키 색인

@@ -11,9 +11,9 @@ updated: 2026-06-29
 이 가이드는 AI 에이전트가 주석, 독스트링(Docstring), 가이드 및 산출물 문서를 작성할 때 발생하는 딱딱한 번역투, AI 고유의 기계적인 단조로운 서술 양식, 쉼표의 무분별한 남용 등 "AI의 흔적"을 국어학적 분석을 통해 제거하기 위해 존재합니다. 인간 개발자와의 원활한 공조와 지식 그래프 탐색의 자연스러운 가독성을 담보하기 위한 문장 가공 표준입니다.
 
 ## 2. 어디와 연결되는가 (Connections)
-- **지식 그래프 가독 및 큐레이션**: 정제된 국어 문장은 [[Project Knowledge Graph & Curation]]에서 추구하는 연결된 프로젝트 위키 가독성의 품질을 보증합니다.
-- **기획서 명세 요구사항 명료화**: PRD 및 계획서 초안 작성 시 기획 의도를 인간 서술조 언어로 투명하게 도출하는 것은 [[PRD Planning Workflow]]와 결합됩니다.
-- **협업 컨텍스트 공유 및 학습**: 에이전트 간의 설계 의사결정 맥락을 오염 없이 회상하고 장기 기억에 등록하는 흐름은 [[Agent Collaboration & Memory]]와 유기적으로 소통합니다.
+- **지식 그래프 가독 및 큐레이션**: 정제된 국어 문장은 [Project Knowledge Graph & Curation](Project Knowledge Graph & Curation.md)에서 추구하는 연결된 프로젝트 위키 가독성의 품질을 보증합니다.
+- **기획서 명세 요구사항 명료화**: PRD 및 계획서 초안 작성 시 기획 의도를 인간 서술조 언어로 투명하게 도출하는 것은 [PRD Planning Workflow](PRD Planning Workflow.md)와 결합됩니다.
+- **협업 컨텍스트 공유 및 학습**: 에이전트 간의 설계 의사결정 맥락을 오염 없이 회상하고 장기 기억에 등록하는 흐름은 [Agent Collaboration & Memory](Agent Collaboration & Memory.md)와 유기적으로 소통합니다.
 
 ## 3. 무엇을 이해해야 하는가 (What)
 - **AI 번역투 및 반복 명사 배제**:

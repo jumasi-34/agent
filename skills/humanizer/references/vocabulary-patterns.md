@@ -7,14 +7,14 @@ status: active
 summary: >
   Vocabulary Patterns 참조 및 가이드 명세서.
 
-parent: "[[skills/humanizer/SKILL.md]]"
+parent: "[skills/humanizer/SKILL.md](../SKILL.md)"
 
 updated: 2026-06-28
 ---
 
 # 어휘 패턴 (14-20, 37-39)
 
-* **Parent (상위 스킬)**: [[skills/humanizer/SKILL.md]]
+* **Parent (상위 스킬)**: [skills/humanizer/SKILL.md](../SKILL.md)
 
 ---
 
@@ -155,7 +155,7 @@ updated: 2026-06-28
 
 *설명*: "중심에"("at the center"의 직역), "통해"("through"의 직역), "A에서 Z까지"("from A to Z"의 직역)를 제거했습니다. 더 자연스러운 한국어 표현법입니다.
 
-**관련 패턴**: 조사·동사·통사 구조 차원의 번역투(`~에 대해`, `~를 통해`, `이중 피동`, `~할 수 있다 남발` 등)는 [[skills/humanizer/references/translation-ese-patterns.md]]의 패턴 25~36을 참조하세요. 패턴 16은 관용구·표현법 차원의 직역에 한정합니다.
+**관련 패턴**: 조사·동사·통사 구조 차원의 번역투(`~에 대해`, `~를 통해`, `이중 피동`, `~할 수 있다 남발` 등)는 [skills/humanizer/references/translation-ese-patterns.md](translation-ese-patterns.md)의 패턴 25~36을 참조하세요. 패턴 16은 관용구·표현법 차원의 직역에 한정합니다.
 
 ---
 

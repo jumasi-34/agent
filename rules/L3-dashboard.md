@@ -13,12 +13,12 @@ keywords:
   - dashboard
   - ui
 
-parent: "[[rules/rules-index.md]]"
+parent: "[rules/rules-index.md](rules-index.md)"
 
 related:
-  - "[[rules/L2-architecture.md]]"
-  - "[[rules/L2-color-system.md]]"
-  - "[[rules/L3-plot.md]]"
+  - "[rules/L2-architecture.md](L2-architecture.md)"
+  - "[rules/L2-color-system.md](L2-color-system.md)"
+  - "[rules/L3-plot.md](L3-plot.md)"
 
 consumers:
   - agent.all

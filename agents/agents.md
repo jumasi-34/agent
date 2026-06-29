@@ -16,11 +16,11 @@ keywords:
 parent: concept.agent_os.governance
 
 related:
-  - "[[agents/skill-map.md]]"
-  - "[[rules/L2-architecture.md]]"
+  - "[agents/skill-map.md](skill-map.md)"
+  - "[rules/L2-architecture.md](../rules/L2-architecture.md)"
 
 consumers:
-  - "[[agents/roles/planner-orchestrator.md]]"
+  - "[agents/roles/planner-orchestrator.md](roles/planner-orchestrator.md)"
 
 updated: 2026-06-28
 ---
@@ -29,11 +29,11 @@ updated: 2026-06-28
 ## Overview
 * **왜 존재하는가 (Why)**: Agent OS 환경 내에 등록된 다양한 AI 에이전트 역할군의 페르소나 및 강제 허용/행동 규칙을 일원화하여 관리하기 위함입니다.
 * **언제 사용하는가 (When)**: 신규 하위 에이전트를 정의 및 소환하거나, 각 에이전트 간의 아키텍처 역할 위계 및 협업 동선을 확장할 때 사용합니다.
-* **연계 실행 (Next Action)**: 에이전트별 필수 스킬 맵핑을 다루는 [.agents/agents/skill-map.md](.agents/agents/skill-map.md)를 함께 열어 분석하십시오.
+* **연계 실행 (Next Action)**: 에이전트별 필수 스킬 맵핑을 다루는 [.agents/agents/skill-map.md](skill-map.md)를 함께 열어 분석하십시오.
 
 ## Connections
-* **상위 개념**: [.agents/AGENTS.md](.agents/AGENTS.md)
-* **연관 자산**: [.agents/agents/skill-map.md](.agents/agents/skill-map.md) | [.agents/agents/agents_registry.json](.agents/agents/agents_registry.json)
+* **상위 개념**: [.agents/AGENTS.md](../AGENTS.md)
+* **연관 자산**: [.agents/agents/skill-map.md](skill-map.md) | [.agents/agents/agents_registry.json](agents_registry.json)
 ---
 
 이 문서는 `.agents/agents/` (지능 및 페르소나 레이어) 고유의 로컬 규칙과 보유 파일 정보를 신속히 인지하기 위한 마이크로 가이드라인입니다.
@@ -59,14 +59,14 @@ updated: 2026-06-28
 | :--- | :
 ---
  |
-| [agents_registry.json](.agents/agents/agents_registry.json) | 에이전트 명세 및 Agy 표준 매니페스트 설정을 담은 단일 진실 공급원 (JSON) |
-| [roles/planner-orchestrator.md](.agents/agents/roles/planner-orchestrator.md) | 최상위 기획 및 PRD 설계를 지휘하는 에이전트 상세 가이드 |
-| [roles/data-layer-builder.md](.agents/agents/roles/data-layer-builder.md) | SQL 설계 및 Pandas 데이터프레임 전처리를 수행하는 에이전트 가이드 |
-| [roles/dashboard-layer-builder.md](.agents/agents/roles/dashboard-layer-builder.md) | Streamlit 화면 구성 및 Plotly 시각화를 조립하는 에이전트 가이드 |
-| [roles/data-insights-analyst.md](.agents/agents/roles/data-insights-analyst.md) | 신규 테이블 등록 시 사전 정량/정성 브리핑을 지원하는 분석가 가이드 |
-| [roles/governance-compliance-auditor.md](.agents/agents/roles/governance-compliance-auditor.md) | 코드 명명 및 스키마-코드 1:1 컬럼 정합성을 검역하는 분석가 가이드 |
-| [roles/code-reviewer.md](.agents/agents/roles/code-reviewer.md) | 파이썬 소스 코드 정적 정합성 및 Diff 개선안을 제공하는 리뷰어 가이드 |
-| [roles/quality-evaluator.md](.agents/agents/roles/quality-evaluator.md) | 하네스 테스트 및 PRD 정량 평가를 전담하는 최종 평가자 가이드 |
+| [agents_registry.json](agents_registry.json) | 에이전트 명세 및 Agy 표준 매니페스트 설정을 담은 단일 진실 공급원 (JSON) |
+| [roles/planner-orchestrator.md](roles/planner-orchestrator.md) | 최상위 기획 및 PRD 설계를 지휘하는 에이전트 상세 가이드 |
+| [roles/data-layer-builder.md](roles/data-layer-builder.md) | SQL 설계 및 Pandas 데이터프레임 전처리를 수행하는 에이전트 가이드 |
+| [roles/dashboard-layer-builder.md](roles/dashboard-layer-builder.md) | Streamlit 화면 구성 및 Plotly 시각화를 조립하는 에이전트 가이드 |
+| [roles/data-insights-analyst.md](roles/data-insights-analyst.md) | 신규 테이블 등록 시 사전 정량/정성 브리핑을 지원하는 분석가 가이드 |
+| [roles/governance-compliance-auditor.md](roles/governance-compliance-auditor.md) | 코드 명명 및 스키마-코드 1:1 컬럼 정합성을 검역하는 분석가 가이드 |
+| [roles/code-reviewer.md](roles/code-reviewer.md) | 파이썬 소스 코드 정적 정합성 및 Diff 개선안을 제공하는 리뷰어 가이드 |
+| [roles/quality-evaluator.md](roles/quality-evaluator.md) | 하네스 테스트 및 PRD 정량 평가를 전담하는 최종 평가자 가이드 |
 
 ---
 

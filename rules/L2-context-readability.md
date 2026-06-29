@@ -15,15 +15,15 @@ keywords:
   - emoji-check
   - wsl-link
 
-parent: "[[rules/rules-index.md]]"
+parent: "[rules/rules-index.md](rules-index.md)"
 
 related:
-  - "[[rules/L1-git.md]]"
-  - "[[rules/L2-naming-convention.md]]"
+  - "[rules/L1-git.md](L1-git.md)"
+  - "[rules/L2-naming-convention.md](L2-naming-convention.md)"
 
 consumers:
-  - "[[agents/roles/planner-orchestrator.md]]"
-  - "[[agents/roles/quality-evaluator.md]]"
+  - "[agents/roles/planner-orchestrator.md](../agents/roles/planner-orchestrator.md)"
+  - "[agents/roles/quality-evaluator.md](../agents/roles/quality-evaluator.md)"
 
 updated: 2026-06-28
 ---
@@ -34,11 +34,11 @@ updated: 2026-06-28
 ## Overview
 * **왜 존재하는가 (Why)**: 개발 프로세스 중 생산되는 규칙, 가이드, 로그 문서 등의 인지 복잡성을 낮추고, WSL 및 Windows 간 하이퍼링크 동작 오류를 예방하며, AI 에이전트의 오작동 시 지식 피드백 루프를 시스템화하기 위함입니다.
 * **언제 사용하는가 (When)**: 규칙 개정, 개발 이력 작성, 피드백 기록, README 작성 등 모든 Markdown 및 주석 작성 시 상시 준수합니다.
-* **연계 실행 (Next Action)**: 이 가이드의 최상위 명명 규칙을 적용하려면 [.agents/rules/L2-naming-convention.md](.agents/rules/L2-naming-convention.md)를 연이어 대조해 보십시오.
+* **연계 실행 (Next Action)**: 이 가이드의 최상위 명명 규칙을 적용하려면 [.agents/rules/L2-naming-convention.md](L2-naming-convention.md)를 연이어 대조해 보십시오.
 
 ## Connections
-* **상위 개념**: [.agents/AGENTS.md](.agents/AGENTS.md)
-* **연관 자산**: [.agents/rules/L2-naming-convention.md](.agents/rules/L2-naming-convention.md)
+* **상위 개념**: [.agents/AGENTS.md](../AGENTS.md)
+* **연관 자산**: [.agents/rules/L2-naming-convention.md](L2-naming-convention.md)
 ---
 
 이 문서는 시스템 내에서 생성되는 모든 컨텍스트 문서와 규칙 파일의 가독성, 일관성, 정보 전달력을 극대화하기 위한 작성 표준을 정의합니다.
@@ -87,7 +87,7 @@ updated: 2026-06-28
 ### ⑧ WSL 환경에서의 VS Code 마크다운 링크 제약 (★핵심 상시 검토 조항★)
 - WSL(Windows Subsystem for Linux) 환경의 VS Code 터미널 및 채팅창에서 마크다운 링크를 클릭하는 경우를 고려해야 합니다.
 - **절대 절대 경로(`file:///home/jumasi/...`) 형식의 하이퍼링크 사용을 전면 엄금**합니다. 리눅스 절대 경로는 Windows 호스트 OS가 파일 프로토콜로 직접 해당 경로를 열려 시도하여 `지정된 파일을 찾을 수 없습니다 (0x2)` 에러를 발생시킵니다.
-- 모든 문서 및 챗 피드백 내에서 하이퍼링크를 제공할 때는 반드시 **워크스페이스 루트 기준의 상대 경로**(`[텍스트](.agents/context/checklist/reverse-sync-prevention.md)` 또는 `./` 접두사 경로)를 사용하여, VS Code 내부 마크다운 뷰어 및 에디터에서 즉시 열리도록 설계합니다.
+- 모든 문서 및 챗 피드백 내에서 하이퍼링크를 제공할 때는 반드시 **워크스페이스 루트 기준의 상대 경로**(`[텍스트](../context/checklist/reverse-sync-prevention.md)` 또는 `./` 접두사 경로)를 사용하여, VS Code 내부 마크다운 뷰어 및 에디터에서 즉시 열리도록 설계합니다.
 - 사용자가 에디터 단축키(`Ctrl + P` 또는 `Ctrl + Click`)로 손쉽게 파일을 추적할 수 있도록 평문 상대 경로(예: `.agents/context/checklist/checklist-release.md`)를 문장에 함께 제시해 줍니다.
 
 ---
@@ -111,7 +111,7 @@ updated: 2026-06-28
 AI 에이전트의 오작동 및 사용자의 교정 피드백이 발생할 경우, 인텔리전스 내의 규칙과 가이드라인을 자가 정제하고 영속화하기 위해 다음의 3단계 문서화 프로세스를 즉각적으로 실행해야 합니다.
 
 ### ① 역동기화 및 자체 피드백 로그 기록 수칙
-오작동 감지 시, [.agents/context/checklist/reverse-sync-prevention.md](.agents/context/checklist/reverse-sync-prevention.md) 파일 하단의 테이블에 아래의 7개 명세 항목을 준수하여 마크다운 표의 행(Row)으로 즉시 기록합니다.
+오작동 감지 시, [.agents/context/checklist/reverse-sync-prevention.md](../context/checklist/reverse-sync-prevention.md) 파일 하단의 테이블에 아래의 7개 명세 항목을 준수하여 마크다운 표의 행(Row)으로 즉시 기록합니다.
 1. **발생 일시**: `YYYY-MM-DD HH:MM:SS` 형태로 기록합니다.
 2. **RUN ID**: 실수가 발생한 실행 고유 ID 또는 AI 대화 세션 고유 ID를 기록합니다.
 3. **에이전트**: 오류를 일으킨 AI 에이전트의 구체적 명칭(예: `Antigravity`, `MockPageBuilder` 등)을 기록합니다.

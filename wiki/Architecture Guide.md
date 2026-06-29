@@ -11,9 +11,9 @@ updated: 2026-06-29
 이 가이드는 프로젝트의 뼈대를 이루는 3-Layer(UI-Service-Query) 물리 격리 사상을 명확히 정의하고, 각 계층이 월선하거나 오용되어 스파게티 코드로 변질되는 것을 원천 차단하기 위해 존재합니다. 엄격한 물리 격리는 코드의 결합도를 낮추고 테스트 용이성을 극대화하며, 인간 개발자와 에이전트 간의 병렬 개발 중 간섭을 완전히 제어하는 근간이 됩니다.
 
 ## 2. 어디와 연결되는가 (Connections)
-- **UI 및 프레젠테이션 설계**: [[Streamlit UI Development]]를 통해 화면 및 위젯 제어와 완전히 연계됩니다.
-- **시각화 데이터 흐름**: [[Plotly Visualization System]]에서 드로잉되는 차트 데이터의 원천 바인딩 및 격리 모델과 결합됩니다.
-- **무결성 및 정적 컴파일 검증**: [[Harness Testing & Quality Gate]]를 통해 계층 분리 위배 여부를 실시간으로 정밀 진단합니다.
+- **UI 및 프레젠테이션 설계**: [Streamlit UI Development](Streamlit UI Development.md)를 통해 화면 및 위젯 제어와 완전히 연계됩니다.
+- **시각화 데이터 흐름**: [Plotly Visualization System](Plotly Visualization System.md)에서 드로잉되는 차트 데이터의 원천 바인딩 및 격리 모델과 결합됩니다.
+- **무결성 및 정적 컴파일 검증**: [Harness Testing & Quality Gate](Harness Testing & Quality Gate.md)를 통해 계층 분리 위배 여부를 실시간으로 정밀 진단합니다.
 
 ## 3. 무엇을 이해해야 하는가 (What)
 - **3-Layer의 물리적 경계**:

@@ -11,9 +11,9 @@ updated: 2026-06-29
 이 가이드는 분산된 복수 에이전트들이 상호 쓰기 충돌 없이 조화롭게 작업을 기동할 수 있도록 물리적 역할을 격리하고, 개발 과정 중 취득된 런타임 오류, 설계 결함 및 완치 정보를 단/장기 기억소에 영속 자산화하기 위해 존재합니다. 에이전트의 자기 학습 루프를 활성화하여 세션 간 지식 연속성을 확보합니다.
 
 ## 2. 어디와 연결되는가 (Connections)
-- **오류 완치 로그 및 테스트 검증**: 런타임과 테스트 구동 시 발생한 SQLite 및 세션의 고장 이력은 [[Harness Testing & Quality Gate]]와 직결됩니다.
-- **워크트리 분기 및 상태 동기화**: 독립 병렬 작업을 위해 활용하는 Git 워크트리 분할 및 Rsync 간섭 통제 규칙은 [[Git Dual Push & Rsync Sync]]에 바인딩됩니다.
-- **장기 지식 그래프 큐레이션**: 단기 및 장기 벡터 기억에 축적된 영속 기억 데이터는 [[Project Knowledge Graph & Curation]]로 흐르는 지식 파이프라인의 핵심 입력 데이터가 됩니다.
+- **오류 완치 로그 및 테스트 검증**: 런타임과 테스트 구동 시 발생한 SQLite 및 세션의 고장 이력은 [Harness Testing & Quality Gate](Harness Testing & Quality Gate.md)와 직결됩니다.
+- **워크트리 분기 및 상태 동기화**: 독립 병렬 작업을 위해 활용하는 Git 워크트리 분할 및 Rsync 간섭 통제 규칙은 [Git Dual Push & Rsync Sync](Git Dual Push & Rsync Sync.md)에 바인딩됩니다.
+- **장기 지식 그래프 큐레이션**: 단기 및 장기 벡터 기억에 축적된 영속 기억 데이터는 [Project Knowledge Graph & Curation](Project Knowledge Graph & Curation.md)로 흐르는 지식 파이프라인의 핵심 입력 데이터가 됩니다.
 
 ## 3. 무엇을 이해해야 하는가 (What)
 - **에이전트 병렬 위임 완전 격리**:

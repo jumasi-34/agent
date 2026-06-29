@@ -15,15 +15,15 @@ keywords:
   - local-data
   - local-assets
 
-parent: "[[rules/rules-index.md]]"
+parent: "[rules/rules-index.md](rules-index.md)"
 
 related:
-  - "[[rules/L1-git.md]]"
-  - "[[rules/L2-context-readability.md]]"
+  - "[rules/L1-git.md](L1-git.md)"
+  - "[rules/L2-context-readability.md](L2-context-readability.md)"
 
 consumers:
-  - "[[agents/roles/planner-orchestrator.md]]"
-  - "[[agents/roles/quality-evaluator.md]]"
+  - "[agents/roles/planner-orchestrator.md](../agents/roles/planner-orchestrator.md)"
+  - "[agents/roles/quality-evaluator.md](../agents/roles/quality-evaluator.md)"
 
 updated: 2026-06-28
 ---
@@ -34,12 +34,12 @@ updated: 2026-06-28
 ## Overview
 * **왜 존재하는가 (Why)**: 대용량 정적 자원 및 민감한 운영 실데이터를 Git 형상 관리에서 완벽히 배제하되, 로컬 개발 환경(WSL)과 운영 서버 간에 안전하고 일관된 단방향 동기화 구조를 확보하기 위함입니다.
 * **언제 사용하는가 (When)**: 디자인 자산, 도면, 매뉴얼 등의 정적 리소스를 서버에 배포하거나, 운영 서버의 데이터베이스 및 세션 로그를 로컬로 가져와 분석 및 디버깅을 수행할 때 준수합니다.
-* **연계 실행 (Next Action)**: 동기화 과정에서 생성되는 모든 분석 데이터 및 메타파일이 Git 추적 대상에서 완전히 격리되어 있는지 [.agents/rules/L1-git.md](.agents/rules/L1-git.md)를 통해 형상 관리 기준을 점검하십시오.
+* **연계 실행 (Next Action)**: 동기화 과정에서 생성되는 모든 분석 데이터 및 메타파일이 Git 추적 대상에서 완전히 격리되어 있는지 [.agents/rules/L1-git.md](L1-git.md)를 통해 형상 관리 기준을 점검하십시오.
 
 ## Connections
-* **상위 개념**: [.agents/AGENTS.md](.agents/AGENTS.md)
+* **상위 개념**: [.agents/AGENTS.md](../AGENTS.md)
 * **연관 자산**: 
-  - [.agents/rules/L1-git.md](.agents/rules/L1-git.md)
+  - [.agents/rules/L1-git.md](L1-git.md)
 ---
 
 ## 1. 동기화 기본 아키텍처 및 원칙 (Core Principles)

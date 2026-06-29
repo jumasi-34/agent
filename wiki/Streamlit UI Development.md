@@ -11,9 +11,9 @@ updated: 2026-06-29
 이 가이드는 Streamlit 위젯의 생명 주기 관리 및 세션 상태 제어 시 빈번히 발생하는 런타임 충돌과, 사용자 테마 및 브라우저 환경에 따른 다크/라이트 모드 스타일 엇박자를 방지하기 위해 존재합니다. 엄격한 UI 제어 규칙을 통해 화면 깜빡임이 없고 로딩 성능이 최적화된 프리미엄 비주얼 대시보드를 유지할 수 있습니다.
 
 ## 2. 어디와 연결되는가 (Connections)
-- **3-Layer 계층 정합성**: UI 컴포넌트의 물리적 설계 원칙은 [[Architecture Guide]]에 전적으로 바인딩됩니다.
-- **차트 및 인라인 요소 렌더링**: 화면 내부의 Plotly 차트 및 아이콘 시스템은 [[Plotly Visualization System]]의 컴포넌트 사양을 참조합니다.
-- **기획 및 탭 화면 레이아웃**: 대시보드의 화면 구성 및 분기 탭 기획 표준은 [[PRD Planning Workflow]]와 직접 연계됩니다.
+- **3-Layer 계층 정합성**: UI 컴포넌트의 물리적 설계 원칙은 [Architecture Guide](Architecture Guide.md)에 전적으로 바인딩됩니다.
+- **차트 및 인라인 요소 렌더링**: 화면 내부의 Plotly 차트 및 아이콘 시스템은 [Plotly Visualization System](Plotly Visualization System.md)의 컴포넌트 사양을 참조합니다.
+- **기획 및 탭 화면 레이아웃**: 대시보드의 화면 구성 및 분기 탭 기획 표준은 [PRD Planning Workflow](PRD Planning Workflow.md)와 직접 연계됩니다.
 
 ## 3. 무엇을 이해해야 하는가 (What)
 - **세션 상태 가로채기(Session Interception) 기법**:

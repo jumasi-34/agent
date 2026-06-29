@@ -6,10 +6,10 @@ title: "[Skill] Understand"
 type: skill
 status: active
 
-parent: "[[skills/index.md]]"
+parent: "[skills/index.md](../index.md)"
 
 related:
-  - "[[skills/index.md]]"
+  - "[skills/index.md](../index.md)"
 
 consumers:
   - agent.all
@@ -20,7 +20,7 @@ updated: 2026-06-28
 # 코드베이스 분석 및 지식 그래프 모델링 통합 가이드라인 (understand)
 
 ## Overview / Connections
-* **Parent (상위 개념)**: [[skills/index.md]]
+* **Parent (상위 개념)**: [skills/index.md](../index.md)
 
 
 본 스킬은 전체 코드베이스의 구조 정밀 진단, 의존성 맵 설계 및 특화 정적/LLM 종합 분석 지침을 포함합니다.
@@ -28,19 +28,19 @@ updated: 2026-06-28
 
 ## 특화 분석 기능 라우팅 테이블 (Specialized Analysis)
 
-*   **코드베이스 기반 질의응답 (chat)**: [[skills/understand/references/chat.md]]
+*   **코드베이스 기반 질의응답 (chat)**: [skills/understand/references/chat.md](references/chat.md)
     - 대화형 질의응답, 컴포넌트 정보 검색 시의 컨텍스트 필터링 및 대답 요약 표준
-*   **인터랙티브 대시보드 구동 (dashboard)**: [[skills/understand/references/dashboard.md]]
+*   **인터랙티브 대시보드 구동 (dashboard)**: [skills/understand/references/dashboard.md](references/dashboard.md)
     - 지식 그래프 웹 인터페이스 서버 가동 표준 및 렌더링 검증 수칙
-*   **Git Diff 분석 및 점진 분석 (diff)**: [[skills/understand/references/diff.md]]
+*   **Git Diff 분석 및 점진 분석 (diff)**: [skills/understand/references/diff.md](references/diff.md)
     - 변경 내역 파악, 영향 범위(Impact Area) 계산 및 리스크 진단 표준
-*   **비즈니스 도메인 지식 흐름 추출 (domain)**: [[skills/understand/references/domain.md]]
+*   **비즈니스 도메인 지식 흐름 추출 (domain)**: [skills/understand/references/domain.md](references/domain.md)
     - 업무 플로우 그래프, 비즈니스 흐름 모델링 및 도메인 상수 분석
-*   **소스코드 및 모듈 상세 딥다이브 (explain)**: [[skills/understand/references/explain.md]]
+*   **소스코드 및 모듈 상세 딥다이브 (explain)**: [skills/understand/references/explain.md](references/explain.md)
     - 특정 소스코드 파일 및 유닛 컴포넌트의 기저 아키텍처 및 세부 로직 설명 기법
-*   **위키형 지식 베이스 추출 (knowledge)**: [[skills/understand/references/knowledge.md]]
+*   **위키형 지식 베이스 추출 (knowledge)**: [skills/understand/references/knowledge.md](references/knowledge.md)
     - Karpathy 패턴 Wiki 구조 분석 및 지식 클러스터링 규칙
-*   **신규 팀 멤버 온보딩 가이드 제작 (onboard)**: [[skills/understand/references/onboard.md]]
+*   **신규 팀 멤버 온보딩 가이드 제작 (onboard)**: [skills/understand/references/onboard.md](references/onboard.md)
     - 온보딩 가이드라인 문서 자율 포맷 생산 지침
 
 ---
@@ -882,49 +882,49 @@ Report to the user: `[Phase 7/7] Saving knowledge graph...`
 
 
 ## Sub-Assets (하위 참조 자산)
-* [[skills/understand/frameworks/django.md]] — Django 참조 및 가이드 명세서.
-* [[skills/understand/frameworks/express.md]] — Express 참조 및 가이드 명세서.
-* [[skills/understand/frameworks/fastapi.md]] — Fastapi 참조 및 가이드 명세서.
-* [[skills/understand/frameworks/flask.md]] — Flask 참조 및 가이드 명세서.
-* [[skills/understand/frameworks/gin.md]] — Gin 참조 및 가이드 명세서.
-* [[skills/understand/frameworks/nextjs.md]] — Nextjs 참조 및 가이드 명세서.
-* [[skills/understand/frameworks/rails.md]] — Rails 참조 및 가이드 명세서.
-* [[skills/understand/frameworks/react.md]] — React 참조 및 가이드 명세서.
-* [[skills/understand/frameworks/spring.md]] — Spring 참조 및 가이드 명세서.
-* [[skills/understand/frameworks/vue.md]] — Vue 참조 및 가이드 명세서.
-* [[skills/understand/languages/cpp.md]] — Cpp 참조 및 가이드 명세서.
-* [[skills/understand/languages/csharp.md]] — Csharp 참조 및 가이드 명세서.
-* [[skills/understand/languages/css.md]] — Css 참조 및 가이드 명세서.
-* [[skills/understand/languages/dockerfile.md]] — Dockerfile 참조 및 가이드 명세서.
-* [[skills/understand/languages/go.md]] — Go 참조 및 가이드 명세서.
-* [[skills/understand/languages/graphql.md]] — Graphql 참조 및 가이드 명세서.
-* [[skills/understand/languages/html.md]] — Html 참조 및 가이드 명세서.
-* [[skills/understand/languages/java.md]] — Java 참조 및 가이드 명세서.
-* [[skills/understand/languages/javascript.md]] — Javascript 참조 및 가이드 명세서.
-* [[skills/understand/languages/json.md]] — Json 참조 및 가이드 명세서.
-* [[skills/understand/languages/kotlin.md]] — Kotlin 참조 및 가이드 명세서.
-* [[skills/understand/languages/markdown.md]] — Markdown 참조 및 가이드 명세서.
-* [[skills/understand/languages/php.md]] — Php 참조 및 가이드 명세서.
-* [[skills/understand/languages/protobuf.md]] — Protobuf 참조 및 가이드 명세서.
-* [[skills/understand/languages/python.md]] — Python 참조 및 가이드 명세서.
-* [[skills/understand/languages/ruby.md]] — Ruby 참조 및 가이드 명세서.
-* [[skills/understand/languages/rust.md]] — Rust 참조 및 가이드 명세서.
-* [[skills/understand/languages/shell.md]] — Shell 참조 및 가이드 명세서.
-* [[skills/understand/languages/sql.md]] — Sql 참조 및 가이드 명세서.
-* [[skills/understand/languages/swift.md]] — Swift 참조 및 가이드 명세서.
-* [[skills/understand/languages/terraform.md]] — Terraform 참조 및 가이드 명세서.
-* [[skills/understand/languages/typescript.md]] — Typescript 참조 및 가이드 명세서.
-* [[skills/understand/languages/yaml.md]] — Yaml 참조 및 가이드 명세서.
-* [[skills/understand/locales/en.md]] — En 참조 및 가이드 명세서.
-* [[skills/understand/locales/ja.md]] — Ja 참조 및 가이드 명세서.
-* [[skills/understand/locales/ko.md]] — Ko 참조 및 가이드 명세서.
-* [[skills/understand/locales/ru.md]] — Ru 참조 및 가이드 명세서.
-* [[skills/understand/locales/zh-TW.md]] — Zh Tw 참조 및 가이드 명세서.
-* [[skills/understand/locales/zh.md]] — Zh 참조 및 가이드 명세서.
-* [[skills/understand/references/chat.md]] — Chat 참조 및 가이드 명세서.
-* [[skills/understand/references/dashboard.md]] — Dashboard 참조 및 가이드 명세서.
-* [[skills/understand/references/diff.md]] — Diff 참조 및 가이드 명세서.
-* [[skills/understand/references/domain.md]] — Domain 참조 및 가이드 명세서.
-* [[skills/understand/references/explain.md]] — Explain 참조 및 가이드 명세서.
-* [[skills/understand/references/knowledge.md]] — Knowledge 참조 및 가이드 명세서.
-* [[skills/understand/references/onboard.md]] — Onboard 참조 및 가이드 명세서.
+* [skills/understand/frameworks/django.md](frameworks/django.md) — Django 참조 및 가이드 명세서.
+* [skills/understand/frameworks/express.md](frameworks/express.md) — Express 참조 및 가이드 명세서.
+* [skills/understand/frameworks/fastapi.md](frameworks/fastapi.md) — Fastapi 참조 및 가이드 명세서.
+* [skills/understand/frameworks/flask.md](frameworks/flask.md) — Flask 참조 및 가이드 명세서.
+* [skills/understand/frameworks/gin.md](frameworks/gin.md) — Gin 참조 및 가이드 명세서.
+* [skills/understand/frameworks/nextjs.md](frameworks/nextjs.md) — Nextjs 참조 및 가이드 명세서.
+* [skills/understand/frameworks/rails.md](frameworks/rails.md) — Rails 참조 및 가이드 명세서.
+* [skills/understand/frameworks/react.md](frameworks/react.md) — React 참조 및 가이드 명세서.
+* [skills/understand/frameworks/spring.md](frameworks/spring.md) — Spring 참조 및 가이드 명세서.
+* [skills/understand/frameworks/vue.md](frameworks/vue.md) — Vue 참조 및 가이드 명세서.
+* [skills/understand/languages/cpp.md](languages/cpp.md) — Cpp 참조 및 가이드 명세서.
+* [skills/understand/languages/csharp.md](languages/csharp.md) — Csharp 참조 및 가이드 명세서.
+* [skills/understand/languages/css.md](languages/css.md) — Css 참조 및 가이드 명세서.
+* [skills/understand/languages/dockerfile.md](languages/dockerfile.md) — Dockerfile 참조 및 가이드 명세서.
+* [skills/understand/languages/go.md](languages/go.md) — Go 참조 및 가이드 명세서.
+* [skills/understand/languages/graphql.md](languages/graphql.md) — Graphql 참조 및 가이드 명세서.
+* [skills/understand/languages/html.md](languages/html.md) — Html 참조 및 가이드 명세서.
+* [skills/understand/languages/java.md](languages/java.md) — Java 참조 및 가이드 명세서.
+* [skills/understand/languages/javascript.md](languages/javascript.md) — Javascript 참조 및 가이드 명세서.
+* [skills/understand/languages/json.md](languages/json.md) — Json 참조 및 가이드 명세서.
+* [skills/understand/languages/kotlin.md](languages/kotlin.md) — Kotlin 참조 및 가이드 명세서.
+* [skills/understand/languages/markdown.md](languages/markdown.md) — Markdown 참조 및 가이드 명세서.
+* [skills/understand/languages/php.md](languages/php.md) — Php 참조 및 가이드 명세서.
+* [skills/understand/languages/protobuf.md](languages/protobuf.md) — Protobuf 참조 및 가이드 명세서.
+* [skills/understand/languages/python.md](languages/python.md) — Python 참조 및 가이드 명세서.
+* [skills/understand/languages/ruby.md](languages/ruby.md) — Ruby 참조 및 가이드 명세서.
+* [skills/understand/languages/rust.md](languages/rust.md) — Rust 참조 및 가이드 명세서.
+* [skills/understand/languages/shell.md](languages/shell.md) — Shell 참조 및 가이드 명세서.
+* [skills/understand/languages/sql.md](languages/sql.md) — Sql 참조 및 가이드 명세서.
+* [skills/understand/languages/swift.md](languages/swift.md) — Swift 참조 및 가이드 명세서.
+* [skills/understand/languages/terraform.md](languages/terraform.md) — Terraform 참조 및 가이드 명세서.
+* [skills/understand/languages/typescript.md](languages/typescript.md) — Typescript 참조 및 가이드 명세서.
+* [skills/understand/languages/yaml.md](languages/yaml.md) — Yaml 참조 및 가이드 명세서.
+* [skills/understand/locales/en.md](locales/en.md) — En 참조 및 가이드 명세서.
+* [skills/understand/locales/ja.md](locales/ja.md) — Ja 참조 및 가이드 명세서.
+* [skills/understand/locales/ko.md](locales/ko.md) — Ko 참조 및 가이드 명세서.
+* [skills/understand/locales/ru.md](locales/ru.md) — Ru 참조 및 가이드 명세서.
+* [skills/understand/locales/zh-TW.md](locales/zh-TW.md) — Zh Tw 참조 및 가이드 명세서.
+* [skills/understand/locales/zh.md](locales/zh.md) — Zh 참조 및 가이드 명세서.
+* [skills/understand/references/chat.md](references/chat.md) — Chat 참조 및 가이드 명세서.
+* [skills/understand/references/dashboard.md](references/dashboard.md) — Dashboard 참조 및 가이드 명세서.
+* [skills/understand/references/diff.md](references/diff.md) — Diff 참조 및 가이드 명세서.
+* [skills/understand/references/domain.md](references/domain.md) — Domain 참조 및 가이드 명세서.
+* [skills/understand/references/explain.md](references/explain.md) — Explain 참조 및 가이드 명세서.
+* [skills/understand/references/knowledge.md](references/knowledge.md) — Knowledge 참조 및 가이드 명세서.
+* [skills/understand/references/onboard.md](references/onboard.md) — Onboard 참조 및 가이드 명세서.

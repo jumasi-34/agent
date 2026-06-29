@@ -13,12 +13,12 @@ keywords:
   - 3-layer
   - isolation
 
-parent: "[[rules/rules-index.md]]"
+parent: "[rules/rules-index.md](rules-index.md)"
 
 related:
-  - "[[rules/L3-query.md]]"
-  - "[[rules/L3-service.md]]"
-  - "[[rules/L3-dashboard.md]]"
+  - "[rules/L3-query.md](L3-query.md)"
+  - "[rules/L3-service.md](L3-service.md)"
+  - "[rules/L3-dashboard.md](L3-dashboard.md)"
 
 consumers:
   - agent.all

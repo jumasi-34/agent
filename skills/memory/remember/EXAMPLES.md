@@ -7,14 +7,14 @@ status: active
 summary: >
   Examples 참조 및 가이드 명세서.
 
-parent: "[[skills/memory/remember/SKILL.md]]"
+parent: "[skills/memory/remember/SKILL.md](SKILL.md)"
 
 updated: 2026-06-28
 ---
 
 # remember worked examples
 
-* **Parent (상위 스킬)**: [[skills/memory/remember/SKILL.md]]
+* **Parent (상위 스킬)**: [skills/memory/remember/SKILL.md](SKILL.md)
 
 ---
 

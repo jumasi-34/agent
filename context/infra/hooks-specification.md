@@ -14,12 +14,12 @@ keywords:
   - incident
   - rollback
 
-parent: "[[context/infra/infra-index.md]]"
+parent: "[context/infra/infra-index.md](infra-index.md)"
 
 related:
-  - "[[context/infra/infrastructure-summary.md]]"
+  - "[context/infra/infrastructure-summary.md](infrastructure-summary.md)"
   - checklist.checklist_release
-  - "[[context/guide/testing-verification.md]]"
+  - "[context/guide/testing-verification.md](../guide/testing-verification.md)"
 
 consumers:
   - codebase-researcher
@@ -30,11 +30,11 @@ updated: 2026-06-28
 # hooks-specification.md (품질 게이트, 관찰 및 운영 릴리즈 훅 규격서)
 
 ## Overview / Connections
-* **Parent (상위 개념)**: [[context/infra/infra-index.md]]
+* **Parent (상위 개념)**: [context/infra/infra-index.md](infra-index.md)
 * **Related (연관 문서)**:
-  * [[context/infra/infrastructure-summary.md]] (인프라 전반 요약)
-  * [[context/checklist/checklist-release.md]] (릴리즈 체크리스트)
-  * [[context/guide/testing-verification.md]] (정적 검증 가이드)
+  * [context/infra/infrastructure-summary.md](infrastructure-summary.md) (인프라 전반 요약)
+  * [context/checklist/checklist-release.md](../checklist/checklist-release.md) (릴리즈 체크리스트)
+  * [context/guide/testing-verification.md](../guide/testing-verification.md) (정적 검증 가이드)
 
 ---
 

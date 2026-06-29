@@ -13,12 +13,12 @@ keywords:
   - standards
   - refactoring
 
-parent: "[[rules/rules-index.md]]"
+parent: "[rules/rules-index.md](rules-index.md)"
 
 related:
-  - "[[rules/L2-architecture.md]]"
-  - "[[rules/L3-query.md]]"
-  - "[[rules/L3-service.md]]"
+  - "[rules/L2-architecture.md](L2-architecture.md)"
+  - "[rules/L3-query.md](L3-query.md)"
+  - "[rules/L3-service.md](L3-service.md)"
 
 consumers:
   - agent.all
@@ -46,7 +46,7 @@ updated: 2026-06-29
 | **기획 명세** | PRD 기획서 및 요구사항 정의서 | `*_prd.md` | `oe_quality_issue_dashboard_prd.md` |
 
 * **에이전트 규칙 규칙 (`.agents/rules/`)**: 룰 계층 관리를 위해 반드시 분류 접두사(`L1-`, `L2-`, `L3-`)를 부여합니다.
-* **상대 경로 의무화**: 모든 마크다운 자산 내 하이퍼링크는 절대 리눅스 경로나 `file:///` 프로토콜을 전면 배제하고, 워크스페이스 기준 평문 상대 경로(예: `[L2-architecture.md](.agents/rules/L2-architecture.md)`)만을 기입해야 합니다.
+* **상대 경로 의무화**: 모든 마크다운 자산 내 하이퍼링크는 절대 리눅스 경로나 `file:///` 프로토콜을 전면 배제하고, 워크스페이스 기준 평문 상대 경로(예: `[L2-architecture.md](L2-architecture.md)`)만을 기입해야 합니다.
 
 ---
 

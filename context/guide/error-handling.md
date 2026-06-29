@@ -14,14 +14,14 @@ keywords:
   - sqlite
   - exceptions
 
-parent: "[[context/guide/guide-index.md]]"
+parent: "[context/guide/guide-index.md](guide-index.md)"
 
 related:
   - rule.streamlit.widget_key
-  - "[[skills/agent_hooks/SKILL.md]]"
+  - "[skills/agent_hooks/SKILL.md](../../skills/agent_hooks/SKILL.md)"
 
 consumers:
-  - "[[agents/roles/planner-orchestrator.md]]"
+  - "[agents/roles/planner-orchestrator.md](../../agents/roles/planner-orchestrator.md)"
   - agent.ui_builder
   - agent.service_builder
 
@@ -34,12 +34,12 @@ updated: 2026-06-28
 ## Overview
 * **왜 존재하는가 (Why)**: 오류로 인해 대시보드가 통째로 마비되는 장애를 완벽히 격리하고, 발생 위치와 맥락을 SQLite 로깅을 통해 자동 추적하여 에이전트 및 인간의 신속한 디버깅 분석을 지원하기 위함입니다.
 * **언제 사용하는가 (When)**: 대시보드 내 특정 차트나 탭 렌더링에 안전장치(`st_error_boundary`)를 두거나, 서비스 데코레이터(`@log_error`)를 적용할 때, 로그 기록 테이블 스키마를 확인할 때 사용합니다.
-* **연계 실행 (Next Action)**: 에러 발생 시 SQLite 데이터가 축적되는 에이전트 런타임 훅 및 세션 관리 도구를 보려면 [[skills/agent_hooks/SKILL.md]]를 참조하십시오.
+* **연계 실행 (Next Action)**: 에러 발생 시 SQLite 데이터가 축적되는 에이전트 런타임 훅 및 세션 관리 도구를 보려면 [skills/agent_hooks/SKILL.md](../../skills/agent_hooks/SKILL.md)를 참조하십시오.
 
 ## Connections
-* **상위 개념**: [guide.readme](.agents/context/guide/guide-index.md)
+* **상위 개념**: [guide.readme](guide-index.md)
 * **연관 자산**:
-  - [.agents/skills/agent_hooks/SKILL.md](.agents/skills/agent_hooks/SKILL.md)
+  - [.agents/skills/agent_hooks/SKILL.md](../../skills/agent_hooks/SKILL.md)
 
 ---
 

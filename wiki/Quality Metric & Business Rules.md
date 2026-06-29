@@ -11,10 +11,10 @@ updated: 2026-06-29
 이 가이드는 생산 공정에서 수집되는 원천 데이터의 복잡한 비즈니스 집계 계산식과 공장 물리 매핑 상수가 개별 코드 모듈에 하드코딩되거나 산발적으로 기입되어 지표 상 엇박자가 발생하는 참사를 예방하기 위해 존재합니다. 모든 연산과 상수를 정적으로 SSOT화하여 비즈니스 논리의 고결성을 수호합니다.
 
 ## 2. 어디와 연결되는가 (Connections)
-- **3-Layer의 서비스 계층 처리**: 지표 집계 및 가공 로직은 [[Architecture Guide]]의 서비스 레이어 규정을 이행합니다.
-- **차트 축 및 가독 데이터 바인딩**: 데이터의 물리적 단위 및 컬러 하이라이트 분기는 [[Plotly Visualization System]]과 직결됩니다.
-- **기획서 수식 일치화**: 비즈니스 계산 공식의 개정 및 임계치 기준 변경 시 [[PRD Planning Workflow]]에 수립되는 기획과 100% 동기화되어야 합니다.
-- **수식 인메모리 테스트 및 품질 검증**: 정의된 품질 공식이 동적으로 깨지지 않도록 통제하는 샌드박스는 [[Harness Testing & Quality Gate]]와 바인딩됩니다.
+- **3-Layer의 서비스 계층 처리**: 지표 집계 및 가공 로직은 [Architecture Guide](Architecture Guide.md)의 서비스 레이어 규정을 이행합니다.
+- **차트 축 및 가독 데이터 바인딩**: 데이터의 물리적 단위 및 컬러 하이라이트 분기는 [Plotly Visualization System](Plotly Visualization System.md)과 직결됩니다.
+- **기획서 수식 일치화**: 비즈니스 계산 공식의 개정 및 임계치 기준 변경 시 [PRD Planning Workflow](PRD Planning Workflow.md)에 수립되는 기획과 100% 동기화되어야 합니다.
+- **수식 인메모리 테스트 및 품질 검증**: 정의된 품질 공식이 동적으로 깨지지 않도록 통제하는 샌드박스는 [Harness Testing & Quality Gate](Harness Testing & Quality Gate.md)와 바인딩됩니다.
 
 ## 3. 무엇을 이해해야 하는가 (What)
 - **6대 핵심 품질 도메인 지표 공식**:

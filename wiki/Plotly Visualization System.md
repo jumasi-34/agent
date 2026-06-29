@@ -11,9 +11,9 @@ updated: 2026-06-29
 이 가이드는 대시보드의 비주얼 핵심인 차트 및 시각 요소들이 개별 화면 모듈 내에 스파게티 형태로 혼재되어 노출되는 것을 차단하고, IBM Carbon 테마 기반의 고급스러운 디자인을 일관성 있게 구현하기 위해 존재합니다. 시각화를 컴포넌트화하고 레이아웃 및 디자인 컬러 시스템을 정적 격리함으로써 프리미엄 UI 미학을 달성합니다.
 
 ## 2. 어디와 연결되는가 (Connections)
-- **UI 화면 레이아웃 및 렌더링**: 개별 차트 컴포넌트의 화면 배치는 [[Streamlit UI Development]]를 통해 동적으로 주입됩니다.
-- **데이터 공급 및 전처리 정합성**: 차트가 소비하는 데이터의 3-Layer 정합성은 [[Architecture Guide]]의 명세를 이행합니다.
-- **비즈니스 지표 가독성**: 데이터 시각화의 수식 조건부 강조 및 다국어 축 설명은 [[Quality Metric & Business Rules]]를 기반으로 가공됩니다.
+- **UI 화면 레이아웃 및 렌더링**: 개별 차트 컴포넌트의 화면 배치는 [Streamlit UI Development](Streamlit UI Development.md)를 통해 동적으로 주입됩니다.
+- **데이터 공급 및 전처리 정합성**: 차트가 소비하는 데이터의 3-Layer 정합성은 [Architecture Guide](Architecture Guide.md)의 명세를 이행합니다.
+- **비즈니스 지표 가독성**: 데이터 시각화의 수식 조건부 강조 및 다국어 축 설명은 [Quality Metric & Business Rules](Quality Metric & Business Rules.md)를 기반으로 가공됩니다.
 
 ## 3. 무엇을 이해해야 하는가 (What)
 - **Plotly의 철저한 컴포넌트화**:

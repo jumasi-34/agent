@@ -7,14 +7,14 @@ status: active
 summary: >
   Write Skill 참조 및 가이드 명세서.
 
-parent: "[[skills/memory/core/SKILL.md]]"
+parent: "[skills/memory/core/SKILL.md](../SKILL.md)"
 
 updated: 2026-06-28
 ---
 
 # agentmemory 스킬 신규 작성 표준
 
-* **Parent (상위 스킬)**: [[skills/memory/core/SKILL.md]]
+* **Parent (상위 스킬)**: [skills/memory/core/SKILL.md](../SKILL.md)
 
 ---
 

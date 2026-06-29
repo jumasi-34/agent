@@ -13,14 +13,14 @@ keywords:
   - categories
   - mapping-standard
 
-parent: "[[context/guide/guide-index.md]]"
+parent: "[context/guide/guide-index.md](guide-index.md)"
 
 related:
-  - "[[rules/L3-dashboard.md]]"
-  - "[[context/guide/new_page_development_workflow.md]]"
+  - "[rules/L3-dashboard.md](../../rules/L3-dashboard.md)"
+  - "[context/guide/new_page_development_workflow.md](new_page_development_workflow.md)"
 
 consumers:
-  - "[[agents/roles/planner-orchestrator.md]]"
+  - "[agents/roles/planner-orchestrator.md](../../agents/roles/planner-orchestrator.md)"
   - agent.ui_builder
 
 updated: 2026-06-28
@@ -32,13 +32,13 @@ updated: 2026-06-28
 ## Overview
 * **왜 존재하는가 (Why)**: Streamlit 멀티 페이지 네비게이션 구조에서 물리 폴더 위치와 논리 메뉴 카테고리 간의 이격을 방지하고, 화면 탐색의 물리-논리 일관성을 완벽히 사수하기 위함입니다.
 * **언제 사용하는가 (When)**: 신규 Streamlit 페이지 파일을 추가하거나, 기존 메뉴의 소속 카테고리를 변경하고 네비게이션 순서를 재정렬할 때 참고합니다.
-* **연계 실행 (Next Action)**: 신규 페이지 개발 시 거치는 표준 화면 설계 워크플로우를 보려면 [guide.new_page_development_workflow](.agents/context/guide/new_page_development_workflow.md)를 참조하십시오.
+* **연계 실행 (Next Action)**: 신규 페이지 개발 시 거치는 표준 화면 설계 워크플로우를 보려면 [guide.new_page_development_workflow](new_page_development_workflow.md)를 참조하십시오.
 
 ## Connections
-* **상위 개념**: [guide.readme](.agents/context/guide/guide-index.md)
+* **상위 개념**: [guide.readme](guide-index.md)
 * **연관 자산**:
-  - [.agents/rules/L3-dashboard.md](.agents/rules/L3-dashboard.md)
-  - [.agents/context/guide/new_page_development_workflow.md](.agents/context/guide/new_page_development_workflow.md)
+  - [.agents/rules/L3-dashboard.md](../../rules/L3-dashboard.md)
+  - [.agents/context/guide/new_page_development_workflow.md](new_page_development_workflow.md)
 
 ---
 

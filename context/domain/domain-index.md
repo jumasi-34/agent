@@ -17,11 +17,11 @@ keywords:
 parent: concept.home
 
 related:
-  - "[[context/domain/domain-knowledge.md]]"
+  - "[context/domain/domain-knowledge.md](domain-knowledge.md)"
 
 consumers:
-  - "[[agents/roles/planner-orchestrator.md]]"
-  - "[[agents/roles/quality-evaluator.md]]"
+  - "[agents/roles/planner-orchestrator.md](../../agents/roles/planner-orchestrator.md)"
+  - "[agents/roles/quality-evaluator.md](../../agents/roles/quality-evaluator.md)"
 
 updated: 2026-06-28
 ---
@@ -32,12 +32,12 @@ updated: 2026-06-28
 ## Overview
 * **왜 존재하는가 (Why)**: 물리적인 기술 구현 세부사항(DWH, SQL)에 귀속되지 않는 범용 비즈니스 개념, 용어, 마스터 코드 및 정밀 지표 산식을 단일 진실 공급원(SSOT)으로 확보하여, 비즈니스 오차를 예방하기 위함입니다.
 * **언제 사용하는가 (When)**: 대시보드 내 품질 공식(MTTC, 성적서 합격률 등)을 구현하거나 공장 코드 매핑 논리를 검토할 때 참고합니다.
-* **연계 실행 (Next Action)**: 공장별 마스터 코드 및 핵심 수식 세부를 보려면 [.agents/context/domain/domain-knowledge.md](.agents/context/domain/domain-knowledge.md)를 연이어 대조하십시오.
+* **연계 실행 (Next Action)**: 공장별 마스터 코드 및 핵심 수식 세부를 보려면 [.agents/context/domain/domain-knowledge.md](domain-knowledge.md)를 연이어 대조하십시오.
 
 ## Connections
-* **상위 개념**: [.agents/AGENTS.md](.agents/AGENTS.md)
+* **상위 개념**: [.agents/AGENTS.md](../../AGENTS.md)
 * **연관 자산**: 
-  - [.agents/context/domain/domain-knowledge.md](.agents/context/domain/domain-knowledge.md)
+  - [.agents/context/domain/domain-knowledge.md](domain-knowledge.md)
 ---
 
 ## 1. 로컬 핵심 제약 (Local Rules)

@@ -14,15 +14,15 @@ keywords:
   - briefing
   - discovery
 
-parent: "[[agents/agents.md]]"
+parent: "[agents/agents.md](../agents.md)"
 
 related:
-  - "[[agents/skill-map.md]]"
-  - "[[rules/L2-architecture.md]]"
+  - "[agents/skill-map.md](../skill-map.md)"
+  - "[rules/L2-architecture.md](../../rules/L2-architecture.md)"
   - context.domain.knowledge
 
 consumers:
-  - "[[agents/roles/planner-orchestrator.md]]"
+  - "[agents/roles/planner-orchestrator.md](planner-orchestrator.md)"
 
 updated: 2026-06-28
 ---
@@ -33,11 +33,11 @@ updated: 2026-06-28
 ## Overview
 * **왜 존재하는가 (Why)**: 개발 전 연동 데이터베이스의 DDL 및 로우 통계 정보를 선제 분석하여 데이터의 정보 불균형을 해소하고 최적의 설계 가이드라인을 제공하기 위함입니다.
 * **언제 사용하는가 (When)**: 신규 테이블이 DB에 마운트되거나 기존 비즈니스 지표의 대대적인 정량 EDA(탐색적 데이터 분석)가 요구될 때 실행합니다.
-* **연계 실행 (Next Action)**: 분석한 데이터를 비즈니스 수식과 일치시키기 위해 [.agents/context/domain/domain-knowledge.md](.agents/context/domain/domain-knowledge.md)를 연이어 대조해 보십시오.
+* **연계 실행 (Next Action)**: 분석한 데이터를 비즈니스 수식과 일치시키기 위해 [.agents/context/domain/domain-knowledge.md](../../context/domain/domain-knowledge.md)를 연이어 대조해 보십시오.
 
 ## Connections
-* **상위 개념**: [.agents/agents/agents.md](.agents/agents/agents.md)
-* **연관 자산**: [.agents/context/domain/domain-knowledge.md](.agents/context/domain/domain-knowledge.md) | [.agents/context/infra/database-metadata.md](.agents/context/infra/database-metadata.md)
+* **상위 개념**: [.agents/agents/agents.md](../agents.md)
+* **연관 자산**: [.agents/context/domain/domain-knowledge.md](../../context/domain/domain-knowledge.md) | [.agents/context/infra/database-metadata.md](../../context/infra/database-metadata.md)
 ---
 
 이 문서는 Databricks 등 연동 데이터베이스에 신규 테이블이 마운트되거나 데이터 탐색이 필요할 때, 해당 테이블의 비즈니스적 실체와 데이터 정량 분석 보고서를 신속히 정제하여 **사용자와 개발 에이전트 전원에게 사전 브리핑하고 개발 설계의 해상도를 극한으로 올려주는 데이터 심층 분석 및 인사이트 도출 전담 서브에이전트(Data Insights Analyst Sub-Agent)**의 행동 양식과 분석 표준을 규정합니다.
@@ -93,4 +93,4 @@ updated: 2026-06-28
 
 ## 4. 에이전트 협업 및 체이닝 (Agent Collaboration & Chaining)
 
-본 에이전트의 구체적인 기동 협업 다이어그램(Chaining Mermaid), 예외 에스컬레이션 수칙(Escalation Protocol), 그리고 이모지 사용 전면 금지와 같은 공통 세이프티 제약은 지능 연합 원장인 [agent/agents.md](.agents/agents/agents.md)에 통합 기재되어 전역 관리됩니다. 개발 및 협업 시 이를 참고하여 구동하십시오.
+본 에이전트의 구체적인 기동 협업 다이어그램(Chaining Mermaid), 예외 에스컬레이션 수칙(Escalation Protocol), 그리고 이모지 사용 전면 금지와 같은 공통 세이프티 제약은 지능 연합 원장인 [agent/agents.md](../agents.md)에 통합 기재되어 전역 관리됩니다. 개발 및 협업 시 이를 참고하여 구동하십시오.

@@ -14,14 +14,14 @@ keywords:
   - wsl2
   - miniconda
 
-parent: "[[context/infra/infra-index.md]]"
+parent: "[context/infra/infra-index.md](infra-index.md)"
 
 related:
-  - "[[context/infra/infrastructure-summary.md]]"
-  - "[[context/guide/manual-setup.md]]"
+  - "[context/infra/infrastructure-summary.md](infrastructure-summary.md)"
+  - "[context/guide/manual-setup.md](../guide/manual-setup.md)"
 
 consumers:
-  - "[[agents/roles/planner-orchestrator.md]]"
+  - "[agents/roles/planner-orchestrator.md](../../agents/roles/planner-orchestrator.md)"
   - agent.system_administrator
 
 updated: 2026-06-28
@@ -33,13 +33,13 @@ updated: 2026-06-28
 ## Overview
 * **왜 존재하는가 (Why)**: 로컬 개발 환경과 실제 운영 환경 간의 패키지 버전 이격이나 드라이버 설정 차이를 사전에 식별하여 배포 시의 시스템 비호환 런타임 오류를 완벽히 차단하기 위함입니다.
 * **언제 사용하는가 (When)**: 신규 파이썬 라이브러리를 추가하거나, 실서버 배포 중 라이브러리 충돌이 의심될 때, Miniconda 가상환경 구성을 동기화할 때 참조합니다.
-* **연계 실행 (Next Action)**: 구체적인 운영 서버 배포 매뉴얼과 수동 배포 단계를 보려면 [[context/guide/manual-setup.md]]을 참조하십시오.
+* **연계 실행 (Next Action)**: 구체적인 운영 서버 배포 매뉴얼과 수동 배포 단계를 보려면 [context/guide/manual-setup.md](../guide/manual-setup.md)을 참조하십시오.
 
 ## Connections
-* **상위 개념**: [infra.readme](.agents/context/infra/infra-index.md)
+* **상위 개념**: [infra.readme](infra-index.md)
 * **연관 자산**:
-  - [.agents/context/guide/manual-setup.md](.agents/context/guide/manual-setup.md)
-  - [.agents/context/infra/infrastructure-summary.md](.agents/context/infra/infrastructure-summary.md)
+  - [.agents/context/guide/manual-setup.md](../guide/manual-setup.md)
+  - [.agents/context/infra/infrastructure-summary.md](infrastructure-summary.md)
 
 ---
 

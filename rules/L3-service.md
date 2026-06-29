@@ -15,15 +15,15 @@ keywords:
   - cache
   - dataframe
 
-parent: "[[rules/rules-index.md]]"
+parent: "[rules/rules-index.md](rules-index.md)"
 
 related:
-  - "[[rules/L2-naming-convention.md]]"
-  - "[[rules/L3-query.md]]"
+  - "[rules/L2-naming-convention.md](L2-naming-convention.md)"
+  - "[rules/L3-query.md](L3-query.md)"
 
 consumers:
-  - "[[agents/roles/planner-orchestrator.md]]"
-  - "[[agents/roles/data-layer-builder.md]]"
+  - "[agents/roles/planner-orchestrator.md](../agents/roles/planner-orchestrator.md)"
+  - "[agents/roles/data-layer-builder.md](../agents/roles/data-layer-builder.md)"
   - agent.query_reviewer
 
 updated: 2026-06-28
@@ -35,13 +35,13 @@ updated: 2026-06-28
 ## Overview
 * **왜 존재하는가 (Why)**: 뷰(UI) 레이어와 쿼리 레이어 사이에서 데이터프레임의 타입 교정, 결측치 대체, 통계/그룹 연산의 정합성을 수호하고, 불필요한 중복 쿼리 호출 및 불필요한 인플레이스 결함을 방지하기 위함입니다.
 * **언제 사용하는가 (When)**: `app/service/` 디렉터리 내에 `*_df.py` 서비스 파일을 새로 작성하거나 Pandas 데이터 가공 로직을 리팩토링할 때 상시 준수합니다.
-* **연계 실행 (Next Action)**: 이 레이어에서 수집한 데이터프레임을 차트로 미려하게 표현하는 방식을 확인하려면 [.agents/rules/L3-plot.md](.agents/rules/L3-plot.md)를 연이어 연계 대조하십시오.
+* **연계 실행 (Next Action)**: 이 레이어에서 수집한 데이터프레임을 차트로 미려하게 표현하는 방식을 확인하려면 [.agents/rules/L3-plot.md](L3-plot.md)를 연이어 연계 대조하십시오.
 
 ## Connections
-* **상위 개념**: [.agents/rules/L2-architecture.md](.agents/rules/L2-architecture.md)
+* **상위 개념**: [.agents/rules/L2-architecture.md](L2-architecture.md)
 * **연관 자산**: 
-  - [.agents/rules/L3-query.md](.agents/rules/L3-query.md)
-  - [.agents/rules/L3-plot.md](.agents/rules/L3-plot.md)
+  - [.agents/rules/L3-query.md](L3-query.md)
+  - [.agents/rules/L3-plot.md](L3-plot.md)
 ---
 
 ## 1. 서비스 레이어의 핵심 역할 및 위치
@@ -53,7 +53,7 @@ updated: 2026-06-28
 
 ## 2. 금지 규칙 (Strict Guardrails)
 > [!IMPORTANT]
-> 레이어 간 상호 작용 및 고수준 의존성 격벽 제약 조건은 단일 진실 공급원(SSOT)인 **[L2-architecture.md](.agents/rules/L2-architecture.md)**의 규칙을 엄격히 준수합니다.
+> 레이어 간 상호 작용 및 고수준 의존성 격벽 제약 조건은 단일 진실 공급원(SSOT)인 **[L2-architecture.md](L2-architecture.md)**의 규칙을 엄격히 준수합니다.
 
 1. **Inplace Mutation 금지 (No Inplace)**:
    - 데이터프레임 가공 시 `inplace=True` 옵션 사용을 금지하며, 원본 데이터의 불변성을 유지하고 사이드 이펙트를 원천 차단합니다.

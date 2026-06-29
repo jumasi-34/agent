@@ -7,14 +7,14 @@ status: active
 summary: >
   Spec Document Reviewer Prompt 참조 및 가이드 명세서.
 
-parent: "[[skills/brainstorming/SKILL.md]]"
+parent: "[skills/brainstorming/SKILL.md](SKILL.md)"
 
 updated: 2026-06-28
 ---
 
 # Spec Document Reviewer Prompt Template
 
-* **Parent (상위 스킬)**: [[skills/brainstorming/SKILL.md]]
+* **Parent (상위 스킬)**: [skills/brainstorming/SKILL.md](SKILL.md)
 
 ---
 

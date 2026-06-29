@@ -7,14 +7,14 @@ status: active
 summary: >
   Before 1 참조 및 가이드 명세서.
 
-parent: "[[skills/humanizer/SKILL.md]]"
+parent: "[skills/humanizer/SKILL.md](../SKILL.md)"
 
 updated: 2026-06-28
 ---
 
 # 인공지능의 교육 분야 활용
 
-* **Parent (상위 스킬)**: [[skills/humanizer/SKILL.md]]
+* **Parent (상위 스킬)**: [skills/humanizer/SKILL.md](../SKILL.md)
 
 ---
 

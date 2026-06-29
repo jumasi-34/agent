@@ -6,10 +6,10 @@ title: "[Skill] Subagent Development"
 type: skill
 status: active
 
-parent: "[[skills/index.md]]"
+parent: "[skills/index.md](../../index.md)"
 
 related:
-  - "[[skills/index.md]]"
+  - "[skills/index.md](../../index.md)"
 
 consumers:
   - agent.all
@@ -20,7 +20,7 @@ updated: 2026-06-28
 # Subagent-Driven Development
 
 ## Overview / Connections
-* **Parent (상위 개념)**: [[skills/index.md]]
+* **Parent (상위 개념)**: [skills/index.md](../../index.md)
 
 
 Execute plan by dispatching a fresh implementer subagent per task, a task review (spec compliance + code quality) after each, and a broad whole-branch review at the end.
@@ -283,9 +283,9 @@ a ledger file, not only in todos.
 
 ## Prompt Templates
 
-- [[skills/collaboration/subagent-development/implementer-prompt.md]] - Dispatch implementer subagent
-- [[skills/collaboration/subagent-development/task-reviewer-prompt.md]] - Dispatch task reviewer subagent (spec compliance + code quality)
-- Final whole-branch review: use superpowers:requesting-code-review's [[skills/quality/request-review/code-reviewer.md]]
+- [skills/collaboration/subagent-development/implementer-prompt.md](implementer-prompt.md) - Dispatch implementer subagent
+- [skills/collaboration/subagent-development/task-reviewer-prompt.md](task-reviewer-prompt.md) - Dispatch task reviewer subagent (spec compliance + code quality)
+- Final whole-branch review: use superpowers:requesting-code-review's [skills/quality/request-review/code-reviewer.md](../../quality/request-review/code-reviewer.md)
 
 ## Example Workflow
 
@@ -437,5 +437,5 @@ Done!
 
 
 ## Sub-Assets (하위 참조 자산)
-* [[skills/collaboration/subagent-development/implementer-prompt.md]] — Implementer Prompt 참조 및 가이드 명세서.
-* [[skills/collaboration/subagent-development/task-reviewer-prompt.md]] — Task Reviewer Prompt 참조 및 가이드 명세서.
+* [skills/collaboration/subagent-development/implementer-prompt.md](implementer-prompt.md) — Implementer Prompt 참조 및 가이드 명세서.
+* [skills/collaboration/subagent-development/task-reviewer-prompt.md](task-reviewer-prompt.md) — Task Reviewer Prompt 참조 및 가이드 명세서.

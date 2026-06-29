@@ -6,10 +6,10 @@ title: "[Skill] Request Review"
 type: skill
 status: active
 
-parent: "[[skills/index.md]]"
+parent: "[skills/index.md](../../index.md)"
 
 related:
-  - "[[skills/index.md]]"
+  - "[skills/index.md](../../index.md)"
 
 consumers:
   - agent.all
@@ -20,7 +20,7 @@ updated: 2026-06-28
 # Requesting Code Review
 
 ## Overview / Connections
-* **Parent (상위 개념)**: [[skills/index.md]]
+* **Parent (상위 개념)**: [skills/index.md](../../index.md)
 
 
 Dispatch a code reviewer subagent to catch issues before they cascade. The reviewer gets precisely crafted context for evaluation — never your session's history. This keeps the reviewer focused on the work product, not your thought process, and preserves your own context for continued work.
@@ -49,7 +49,7 @@ HEAD_SHA=$(git rev-parse HEAD)
 
 **2. Dispatch code reviewer subagent:**
 
-Dispatch a `general-purpose` subagent, filling the template at [[skills/quality/request-review/code-reviewer.md]]
+Dispatch a `general-purpose` subagent, filling the template at [skills/quality/request-review/code-reviewer.md](code-reviewer.md)
 
 **Placeholders:**
 - `{DESCRIPTION}` - Brief summary of what you built
@@ -118,8 +118,8 @@ You: [Fix progress indicators]
 - Show code/tests that prove it works
 - Request clarification
 
-See template at: [[skills/quality/request-review/code-reviewer.md]]
+See template at: [skills/quality/request-review/code-reviewer.md](code-reviewer.md)
 
 
 ## Sub-Assets (하위 참조 자산)
-* [[skills/quality/request-review/code-reviewer.md]] — Code Reviewer 참조 및 가이드 명세서.
+* [skills/quality/request-review/code-reviewer.md](code-reviewer.md) — Code Reviewer 참조 및 가이드 명세서.

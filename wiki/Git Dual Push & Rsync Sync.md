@@ -11,10 +11,10 @@ updated: 2026-06-29
 이 가이드는 로컬과 원격 간의 소스 및 데이터 rsync 동기화 흐름에서 발생할 수 있는 데이터 오염을 예방하고, 로컬 피처 브랜치의 물리 코드와 `.agents/` 내 지식 자산을 누락 없이 형상 관리하는 **Dual Push** 규칙을 완전하게 관철하기 위해 존재합니다. 안전한 데이터 파이프라인과 형상 무결성을 달성하기 위한 도구적 근간입니다.
 
 ## 2. 어디와 연결되는가 (Connections)
-- **병렬 개발 분기 제어**: 독립 개발 영역 구축을 위한 Git Worktree 가상 개발 영역 렌더링은 [[Agent Collaboration & Memory]]의 역할 격리와 합일됩니다.
-- **물리 코드베이스 보호 및 변경 감시**: 로컬과 원격 간의 비가역적 push/pull 흐름과 물리 3-Layer 코드베이스의 무결성은 [[Architecture Guide]]를 수호합니다.
-- **배포 전 릴리즈 훅 규격화**: 릴리즈 최종 체크포인트 단계에서 로컬 배포 상태를 검사하고 브랜치 병합 제어를 진행하는 훅은 [[Harness Testing & Quality Gate]]의 통제 하에 구동됩니다.
-- **기획 및 브랜치 명명 동기화**: 피처 개발 시 생성되는 격리 브랜치와 기획 문서 명명은 [[PRD Planning Workflow]]의 지표 명세 1:1 대칭 수칙을 준수합니다.
+- **병렬 개발 분기 제어**: 독립 개발 영역 구축을 위한 Git Worktree 가상 개발 영역 렌더링은 [Agent Collaboration & Memory](Agent Collaboration & Memory.md)의 역할 격리와 합일됩니다.
+- **물리 코드베이스 보호 및 변경 감시**: 로컬과 원격 간의 비가역적 push/pull 흐름과 물리 3-Layer 코드베이스의 무결성은 [Architecture Guide](Architecture Guide.md)를 수호합니다.
+- **배포 전 릴리즈 훅 규격화**: 릴리즈 최종 체크포인트 단계에서 로컬 배포 상태를 검사하고 브랜치 병합 제어를 진행하는 훅은 [Harness Testing & Quality Gate](Harness Testing & Quality Gate.md)의 통제 하에 구동됩니다.
+- **기획 및 브랜치 명명 동기화**: 피처 개발 시 생성되는 격리 브랜치와 기획 문서 명명은 [PRD Planning Workflow](PRD Planning Workflow.md)의 지표 명세 1:1 대칭 수칙을 준수합니다.
 
 ## 3. 무엇을 이해해야 하는가 (What)
 - **이중 푸시 (Dual Push) 의무 수칙**:

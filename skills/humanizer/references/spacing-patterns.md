@@ -7,14 +7,14 @@ status: active
 summary: >
   Spacing Patterns 참조 및 가이드 명세서.
 
-parent: "[[skills/humanizer/SKILL.md]]"
+parent: "[skills/humanizer/SKILL.md](../SKILL.md)"
 
 updated: 2026-06-28
 ---
 
 # 띄어쓰기 패턴 (8-10)
 
-* **Parent (상위 스킬)**: [[skills/humanizer/SKILL.md]]
+* **Parent (상위 스킬)**: [skills/humanizer/SKILL.md](../SKILL.md)
 
 ---
 

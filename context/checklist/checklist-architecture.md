@@ -14,15 +14,15 @@ keywords:
   - layer-isolation
   - modularity
 
-parent: "[[context/checklist/checklist-index.md]]"
+parent: "[context/checklist/checklist-index.md](checklist-index.md)"
 
 related:
-  - "[[rules/L2-architecture.md]]"
-  - "[[context/checklist/checklist-coding-standard.md]]"
+  - "[rules/L2-architecture.md](../../rules/L2-architecture.md)"
+  - "[context/checklist/checklist-coding-standard.md](checklist-coding-standard.md)"
 
 consumers:
-  - "[[agents/roles/code-reviewer.md]]"
-  - "[[agents/roles/quality-evaluator.md]]"
+  - "[agents/roles/code-reviewer.md](../../agents/roles/code-reviewer.md)"
+  - "[agents/roles/quality-evaluator.md](../../agents/roles/quality-evaluator.md)"
 
 updated: 2026-06-28
 ---
@@ -33,13 +33,13 @@ updated: 2026-06-28
 ## Overview
 * **왜 존재하는가 (Why)**: 개발 중 실수로 아키텍처 격벽을 허물어 UI와 DB가 강결합되는 스파게티 코드가 작성되는 것을 미연에 방지하고, 일률적인 구조적 정합성을 검증하기 위함입니다.
 * **언제 사용하는가 (When)**: 개발 완료 후 PR을 생성하기 전이나, 에이전트 자율 코드 검역을 수행할 때 체크리스트 항목을 전수 확인합니다.
-* **연계 실행 (Next Action)**: 아키텍처 정합성을 통과한 뒤 구체적인 코딩 표준(명명 규칙 등)을 준증하려면 [checklist-coding-standard.md](.agents/context/checklist/checklist-coding-standard.md)를 확인하십시오.
+* **연계 실행 (Next Action)**: 아키텍처 정합성을 통과한 뒤 구체적인 코딩 표준(명명 규칙 등)을 준증하려면 [checklist-coding-standard.md](checklist-coding-standard.md)를 확인하십시오.
 
 ## Connections
-* **상위 개념**: [.agents/context/checklist/checklist-index.md](.agents/context/checklist/checklist-index.md)
+* **상위 개념**: [.agents/context/checklist/checklist-index.md](checklist-index.md)
 * **연관 자산**: 
-  - [.agents/rules/L2-architecture.md](.agents/rules/L2-architecture.md)
-  - [.agents/context/checklist/checklist-coding-standard.md](.agents/context/checklist/checklist-coding-standard.md)
+  - [.agents/rules/L2-architecture.md](../../rules/L2-architecture.md)
+  - [.agents/context/checklist/checklist-coding-standard.md](checklist-coding-standard.md)
 ---
 
 ## 1. 3-레이어 파일 배치 규칙

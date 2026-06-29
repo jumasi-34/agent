@@ -7,14 +7,14 @@ status: active
 summary: >
   After 4 참조 및 가이드 명세서.
 
-parent: "[[skills/humanizer/SKILL.md]]"
+parent: "[skills/humanizer/SKILL.md](../SKILL.md)"
 
 updated: 2026-06-28
 ---
 
 # 디지털 혁신 시대의 기업 전략
 
-* **Parent (상위 스킬)**: [[skills/humanizer/SKILL.md]]
+* **Parent (상위 스킬)**: [skills/humanizer/SKILL.md](../SKILL.md)
 
 ---
 

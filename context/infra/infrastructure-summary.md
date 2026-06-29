@@ -14,14 +14,14 @@ keywords:
   - security
   - billing
 
-parent: "[[context/infra/infra-index.md]]"
+parent: "[context/infra/infra-index.md](infra-index.md)"
 
 related:
-  - "[[context/infra/environment.md]]"
-  - "[[context/infra/database-metadata.md]]"
+  - "[context/infra/environment.md](environment.md)"
+  - "[context/infra/database-metadata.md](database-metadata.md)"
 
 consumers:
-  - "[[agents/roles/planner-orchestrator.md]]"
+  - "[agents/roles/planner-orchestrator.md](../../agents/roles/planner-orchestrator.md)"
   - agent.system_administrator
 
 updated: 2026-06-28
@@ -33,13 +33,13 @@ updated: 2026-06-28
 ## Overview
 * **왜 존재하는가 (Why)**: API 계약, 물리적 DB 연결, 보안 및 비용 정책의 불변 조건을 명확히 명시함으로써, 개발 중 시스템 기본 구조가 깨지는 회귀 결함을 방지하기 위함입니다.
 * **언제 사용하는가 (When)**: 3레이어 간의 데이터 전달 인터페이스를 변경하거나, 멀티 데이터베이스 연동 환경(Databricks/Oracle/Snowflake)을 설정 및 튜닝할 때 참조합니다.
-* **연계 실행 (Next Action)**: 구체적인 데이터베이스 스키마 및 컬럼 정보 원장을 대조하려면 [infra.database_metadata](.agents/context/infra/database-metadata.md)를 연이어 확인하십시오.
+* **연계 실행 (Next Action)**: 구체적인 데이터베이스 스키마 및 컬럼 정보 원장을 대조하려면 [infra.database_metadata](database-metadata.md)를 연이어 확인하십시오.
 
 ## Connections
-* **상위 개념**: [infra.readme](.agents/context/infra/infra-index.md)
+* **상위 개념**: [infra.readme](infra-index.md)
 * **연관 자산**:
-  - [.agents/context/infra/database-metadata.md](.agents/context/infra/database-metadata.md)
-  - [.agents/context/infra/environment.md](.agents/context/infra/environment.md)
+  - [.agents/context/infra/database-metadata.md](database-metadata.md)
+  - [.agents/context/infra/environment.md](environment.md)
 
 ---
 

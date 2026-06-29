@@ -13,15 +13,15 @@ keywords:
   - boilerplate
   - chart-template
 
-parent: "[[context/guide/guide-index.md]]"
+parent: "[context/guide/guide-index.md](guide-index.md)"
 
 related:
-  - "[[rules/L3-plot.md]]"
-  - "[[context/guide/design-system-guide.md]]"
-  - "[[context/guide/plotly-style-guide.md]]"
+  - "[rules/L3-plot.md](../../rules/L3-plot.md)"
+  - "[context/guide/design-system-guide.md](design-system-guide.md)"
+  - "[context/guide/plotly-style-guide.md](plotly-style-guide.md)"
 
 consumers:
-  - "[[agents/roles/planner-orchestrator.md]]"
+  - "[agents/roles/planner-orchestrator.md](../../agents/roles/planner-orchestrator.md)"
   - agent.ui_builder
 
 updated: 2026-06-28
@@ -33,14 +33,14 @@ updated: 2026-06-28
 ## Overview
 * **왜 존재하는가 (Why)**: 개발자가 마주하는 다양한 데이터 차원에 대해 디자인 토큰과 가이드라인을 매끄럽게 반영한 표준 함수 템플릿을 신속히 조립해 제공함으로써 시각화 품질 편차를 극소화하기 위함입니다.
 * **언제 사용하는가 (When)**: 신규 차트 드로잉 함수를 설계하거나, 기존 plots 스크립트에 공통 레이아웃 헬퍼와 디폴트 컨피그 설정을 동적으로 주입하여 리팩토링할 때 준수합니다.
-* **연계 실행 (Next Action)**: 정립된 Plotly 스타일 가이드를 깊이 보려면 [guide.plotly_style_guide](.agents/context/guide/plotly-style-guide.md)를 참조하십시오.
+* **연계 실행 (Next Action)**: 정립된 Plotly 스타일 가이드를 깊이 보려면 [guide.plotly_style_guide](plotly-style-guide.md)를 참조하십시오.
 
 ## Connections
-* **상위 개념**: [guide.readme](.agents/context/guide/guide-index.md)
+* **상위 개념**: [guide.readme](guide-index.md)
 * **연관 자산**:
-  - [.agents/rules/L3-plot.md](.agents/rules/L3-plot.md)
-  - [.agents/context/guide/design-system-guide.md](.agents/context/guide/design-system-guide.md)
-  - [.agents/context/guide/plotly-style-guide.md](.agents/context/guide/plotly-style-guide.md)
+  - [.agents/rules/L3-plot.md](../../rules/L3-plot.md)
+  - [.agents/context/guide/design-system-guide.md](design-system-guide.md)
+  - [.agents/context/guide/plotly-style-guide.md](plotly-style-guide.md)
 
 ---
 

@@ -17,18 +17,18 @@ keywords:
 parent: concept.home
 
 related:
-  - "[[context/infra/infrastructure-summary.md]]"
-  - "[[context/infra/database-metadata.md]]"
-  - "[[context/infra/environment.md]]"
-  - "[[context/infra/queries-specification.md]]"
-  - "[[context/infra/service-specification.md]]"
-  - "[[context/infra/pages-specification.md]]"
-  - "[[context/infra/core-specification.md]]"
-  - "[[context/infra/automation-log-specification.md]]"
-  - "[[context/infra/hooks-specification.md]]"
+  - "[context/infra/infrastructure-summary.md](infrastructure-summary.md)"
+  - "[context/infra/database-metadata.md](database-metadata.md)"
+  - "[context/infra/environment.md](environment.md)"
+  - "[context/infra/queries-specification.md](queries-specification.md)"
+  - "[context/infra/service-specification.md](service-specification.md)"
+  - "[context/infra/pages-specification.md](pages-specification.md)"
+  - "[context/infra/core-specification.md](core-specification.md)"
+  - "[context/infra/automation-log-specification.md](automation-log-specification.md)"
+  - "[context/infra/hooks-specification.md](hooks-specification.md)"
 
 consumers:
-  - "[[agents/roles/planner-orchestrator.md]]"
+  - "[agents/roles/planner-orchestrator.md](../../agents/roles/planner-orchestrator.md)"
   - agent.system_administrator
 
 updated: 2026-06-28
@@ -40,20 +40,20 @@ updated: 2026-06-28
 ## Overview
 * **왜 존재하는가 (Why)**: 물리 데이터베이스 연동 제원, 로컬 런타임 가상환경, 3레이어별 물리적 구현 인터페이스 규격 등의 시스템 기계적 인프라 명세를 한 곳에 정립하기 위함입니다.
 * **언제 사용하는가 (When)**: Snowflake/Oracle 클라이언트, DB 원천 테이블 스키마, Streamlit 및 서비스 뼈대 사양, 배치 로깅 인터페이스 등을 파악하고 확장할 때 활용합니다.
-* **연계 실행 (Next Action)**: 구체적인 서버 및 데이터베이스 아키텍처 제원을 보려면 [infra.infrastructure_summary](.agents/context/infra/infrastructure-summary.md)를 참조하십시오.
+* **연계 실행 (Next Action)**: 구체적인 서버 및 데이터베이스 아키텍처 제원을 보려면 [infra.infrastructure_summary](infrastructure-summary.md)를 참조하십시오.
 
 ## Connections
-* **상위 개념**: [AGENTS.md](.agents/AGENTS.md)
+* **상위 개념**: [AGENTS.md](../../AGENTS.md)
 * **하위 자산**:
-  - [.agents/context/infra/infrastructure-summary.md](.agents/context/infra/infrastructure-summary.md)
-  - [.agents/context/infra/database-metadata.md](.agents/context/infra/database-metadata.md)
-  - [.agents/context/infra/environment.md](.agents/context/infra/environment.md)
-  - [.agents/context/infra/queries-specification.md](.agents/context/infra/queries-specification.md)
-  - [.agents/context/infra/service-specification.md](.agents/context/infra/service-specification.md)
-  - [.agents/context/infra/pages-specification.md](.agents/context/infra/pages-specification.md)
-  - [.agents/context/infra/core-specification.md](.agents/context/infra/core-specification.md)
-  - [.agents/context/infra/automation-log-specification.md](.agents/context/infra/automation-log-specification.md)
-  - [.agents/context/infra/hooks-specification.md](.agents/context/infra/hooks-specification.md)
+  - [.agents/context/infra/infrastructure-summary.md](infrastructure-summary.md)
+  - [.agents/context/infra/database-metadata.md](database-metadata.md)
+  - [.agents/context/infra/environment.md](environment.md)
+  - [.agents/context/infra/queries-specification.md](queries-specification.md)
+  - [.agents/context/infra/service-specification.md](service-specification.md)
+  - [.agents/context/infra/pages-specification.md](pages-specification.md)
+  - [.agents/context/infra/core-specification.md](core-specification.md)
+  - [.agents/context/infra/automation-log-specification.md](automation-log-specification.md)
+  - [.agents/context/infra/hooks-specification.md](hooks-specification.md)
 
 ---
 

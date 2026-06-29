@@ -7,14 +7,14 @@ status: active
 summary: >
   Ncf Metrics Revamp Plan 참조 및 가이드 명세서.
 
-parent: "[[skills/agent_hooks/SKILL.md]]"
+parent: "[skills/agent_hooks/SKILL.md](SKILL.md)"
 
 updated: 2026-06-28
 ---
 
 # NCF Metrics Layout and Styling Revamp Implementation Plan
 
-* **Parent (상위 스킬)**: [[skills/agent_hooks/SKILL.md]]
+* **Parent (상위 스킬)**: [skills/agent_hooks/SKILL.md](SKILL.md)
 
 ---
 

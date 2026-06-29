@@ -14,14 +14,14 @@ keywords:
   - theme
   - lucide-icons
 
-parent: "[[context/guide/guide-index.md]]"
+parent: "[context/guide/guide-index.md](guide-index.md)"
 
 related:
-  - "[[rules/L2-color-system.md]]"
-  - "[[context/guide/plotly-style-guide.md]]"
+  - "[rules/L2-color-system.md](../../rules/L2-color-system.md)"
+  - "[context/guide/plotly-style-guide.md](plotly-style-guide.md)"
 
 consumers:
-  - "[[agents/roles/planner-orchestrator.md]]"
+  - "[agents/roles/planner-orchestrator.md](../../agents/roles/planner-orchestrator.md)"
   - agent.ui_builder
 
 updated: 2026-06-28
@@ -33,13 +33,13 @@ updated: 2026-06-28
 ## Overview
 * **왜 존재하는가 (Why)**: 모든 화면과 차트의 미적 룩앤필을 IBM Carbon 테마 등 단일화된 프리미엄 디자인 시스템 기준으로 일치시키고, 하드코딩 색상 및 폰트를 배제하여 관리 효율을 극대화하기 위함입니다.
 * **언제 사용하는가 (When)**: 대시보드의 레이아웃 스타일, 폰트 크기, Google Material 및 Lucide Icons 아이콘 선정, HTML/CSS 배너 제작, 또는 테마 색상을 변경할 때 참고합니다.
-* **연계 실행 (Next Action)**: 구체적인 차트 전용 Plotly 시각화 가이드를 보려면 [guide.plotly_style_guide](.agents/context/guide/plotly-style-guide.md)를 참조하십시오.
+* **연계 실행 (Next Action)**: 구체적인 차트 전용 Plotly 시각화 가이드를 보려면 [guide.plotly_style_guide](plotly-style-guide.md)를 참조하십시오.
 
 ## Connections
-* **상위 개념**: [guide.readme](.agents/context/guide/guide-index.md)
+* **상위 개념**: [guide.readme](guide-index.md)
 * **연관 자산**:
-  - [.agents/rules/L2-color-system.md](.agents/rules/L2-color-system.md)
-  - [.agents/context/guide/plotly-style-guide.md](.agents/context/guide/plotly-style-guide.md)
+  - [.agents/rules/L2-color-system.md](../../rules/L2-color-system.md)
+  - [.agents/context/guide/plotly-style-guide.md](plotly-style-guide.md)
 
 ---
 

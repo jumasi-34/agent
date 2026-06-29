@@ -17,11 +17,11 @@ keywords:
 parent: concept.design_system
 
 related:
-  - "[[rules/L3-dashboard.md]]"
-  - "[[rules/L3-plot.md]]"
+  - "[rules/L3-dashboard.md](L3-dashboard.md)"
+  - "[rules/L3-plot.md](L3-plot.md)"
 
 consumers:
-  - "[[agents/roles/dashboard-layer-builder.md]]"
+  - "[agents/roles/dashboard-layer-builder.md](../agents/roles/dashboard-layer-builder.md)"
 
 updated: 2026-06-28
 ---
@@ -32,11 +32,11 @@ updated: 2026-06-28
 ## Overview
 * **왜 존재하는가 (Why)**: 중구난방의 원색 및 HEX 하드코딩 노출을 전면 예방하고, IBM Carbon 기반의 프리미엄 테마를 전 대시보드에 일괄 강제 이식하기 위함입니다.
 * **언제 사용하는가 (When)**: Plotly 플롯 드로잉 함수 내의 색상 매핑, Streamlit 보조 글래스모피즘 CSS 주입 등 모든 비주얼 배색 구현 시 사용합니다.
-* **연계 실행 (Next Action)**: 구체적인 차트 축과 범례 배치 등 시각화 스타일 규정을 보려면 [.agents/rules/L3-plot.md](.agents/rules/L3-plot.md)를 연이어 참조하십시오.
+* **연계 실행 (Next Action)**: 구체적인 차트 축과 범례 배치 등 시각화 스타일 규정을 보려면 [.agents/rules/L3-plot.md](L3-plot.md)를 연이어 참조하십시오.
 
 ## Connections
-* **상위 개념**: [.agents/AGENTS.md](.agents/AGENTS.md)
-* **연관 자산**: [.agents/rules/L3-plot.md](.agents/rules/L3-plot.md) | [.agents/rules/L3-dashboard.md](.agents/rules/L3-dashboard.md)
+* **상위 개념**: [.agents/AGENTS.md](../AGENTS.md)
+* **연관 자산**: [.agents/rules/L3-plot.md](L3-plot.md) | [.agents/rules/L3-dashboard.md](L3-dashboard.md)
 ---
 
 이 문서는 프로젝트 전반에서 사용되는 UI(Streamlit) 및 데이터 시각화(Plotly) 요소의 색상 사용을 통제하는 단일 진실 공급원(SSOT) 규칙 정의서입니다.
@@ -207,5 +207,5 @@ Plotly 영역은 정밀 데이터를 시각 분석하는 데이터 캔버스로,
 
 ## Related
 
-[[Plotly Visualization System]]
+[Plotly Visualization System](../wiki/Plotly Visualization System.md)
 
