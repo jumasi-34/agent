@@ -3,6 +3,9 @@ title: "[Wiki] 듀얼 푸시 및 동기화"
 id: "wiki.git dual push & rsync sync"
 type: wiki
 status: active
+parent: "Agent Collaboration & Memory.md"
+related: ["Error Isolation & Logging Standard.md"]
+consumers: ["Harness Testing & Quality Gate.md"]
 updated: 2026-06-29
 ---
 # Git Dual Push & Rsync Sync (Git 형상관리 및 동기화 무결성)

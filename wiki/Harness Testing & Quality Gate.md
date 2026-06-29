@@ -3,6 +3,9 @@ title: "[Wiki] 품질 게이트 검증"
 id: "wiki.harness testing & quality gate"
 type: wiki
 status: active
+parent: "Git Dual Push & Rsync Sync.md"
+related: ["Error Isolation & Logging Standard.md"]
+consumers: ["../agents/roles/quality-evaluator.md"]
 updated: 2026-06-29
 ---
 # Harness Testing & Quality Gate (하네스 테스트 및 품질 가드레일)

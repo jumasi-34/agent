@@ -3,6 +3,9 @@ title: "[Wiki] 지식 그래프 큐레이션"
 id: "wiki.project knowledge graph & curation"
 type: wiki
 status: active
+parent: "../indexes/Wiki Index.md"
+related: ["Natural Language Humanizing Rule.md"]
+consumers: ["Quality Metric & Business Rules.md"]
 updated: 2026-06-29
 ---
 # Project Knowledge Graph & Curation (지식 큐레이션 및 그래프 자산화)

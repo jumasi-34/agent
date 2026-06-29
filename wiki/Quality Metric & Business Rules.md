@@ -3,6 +3,9 @@ title: "[Wiki] 품질 지표 및 비즈니스 수식"
 id: "wiki.quality metric & business rules"
 type: wiki
 status: active
+parent: "Project Knowledge Graph & Curation.md"
+related: ["Error Isolation & Logging Standard.md"]
+consumers: ["Plotly Visualization System.md"]
 updated: 2026-06-29
 ---
 # Quality Metric & Business Rules (품질 지표 공식 및 비즈니스 룰)

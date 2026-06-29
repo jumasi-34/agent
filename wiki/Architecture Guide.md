@@ -3,6 +3,9 @@ title: "[Wiki] 아키텍처 3계층 가이드"
 id: "wiki.architecture guide"
 type: wiki
 status: active
+parent: "PRD Planning Workflow.md"
+related: ["Error Isolation & Logging Standard.md"]
+consumers: ["Streamlit UI Development.md", "Plotly Visualization System.md"]
 updated: 2026-06-29
 ---
 # Architecture Guide (아키텍처 설계 및 계층 분리 가이드)

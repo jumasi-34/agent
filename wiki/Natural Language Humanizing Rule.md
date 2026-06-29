@@ -3,6 +3,9 @@ title: "[Wiki] AI 문체 정제 규칙"
 id: "wiki.natural language humanizing rule"
 type: wiki
 status: active
+parent: "../indexes/Wiki Index.md"
+related: ["Project Knowledge Graph & Curation.md"]
+consumers: ["Streamlit UI Development.md"]
 updated: 2026-06-29
 ---
 # Natural Language Humanizing Rule (자연스러운 한국어 정제 및 가독성 규칙)

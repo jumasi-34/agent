@@ -3,6 +3,9 @@ title: "[Wiki] PRD 기획 워크플로우"
 id: "wiki.prd planning workflow"
 type: wiki
 status: active
+parent: "../indexes/Wiki Index.md"
+related: ["Project Knowledge Graph & Curation.md"]
+consumers: ["Architecture Guide.md", "../agents/roles/planner-orchestrator.md"]
 updated: 2026-06-29
 ---
 # PRD Planning Workflow (PRD 기반 기획 및 요구사항 정렬)

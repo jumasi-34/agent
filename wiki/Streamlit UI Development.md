@@ -3,6 +3,9 @@ title: "[Wiki] Streamlit UI 개발"
 id: "wiki.streamlit ui development"
 type: wiki
 status: active
+parent: "Architecture Guide.md"
+related: ["Plotly Visualization System.md"]
+consumers: ["../agents/roles/dashboard-layer-builder.md"]
 updated: 2026-06-29
 ---
 # Streamlit UI Development (Streamlit 화면 개발 및 제어 표준)
