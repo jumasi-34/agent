@@ -16,7 +16,7 @@ updated: 2026-06-29
 - **[PRD Planning Workflow](../wiki/PRD Planning Workflow.md)**: `brainstorming`, `writing-plans`, `executing-plans`를 동반한 점진적 계획 완수
 - **[Harness Testing & Quality Gate](../wiki/Harness Testing & Quality Gate.md)**: `guardrail`, `sql_analyzer`, `verification-before-completion` 스킬 기반 품질 게이트 검역
 - **[Agent Collaboration & Memory](../wiki/Agent Collaboration & Memory.md)**: `agent_hooks` 및 `agentmemory` 연동 장단기 기억 저장/회상 스킬 관리
-- **[Project Knowledge Graph & Curation](../wiki/Project Knowledge Graph & Curation.md)**: `writing-wiki` 및 `knowledge-capture` 스킬 기반 지식 그래프 확장
+- **[Project Knowledge Graph & Curation](../wiki/Project Knowledge Graph & Curation.md)**: `knowledge-capture` 통합 스킬 기반 지식 그래프 확장 및 품질 순환 루프 케어
 
 ## 3. 홈으로 이동
 - **[Home](Home.md)**

@@ -48,7 +48,7 @@ flowchart TD
   2. 마크다운 내 링크가 프로토콜 없는 평문 상대 경로(예: `[L2-architecture.md](../../rules/L2-architecture.md)`) 규격을 빈틈없이 유지하고 있는지 검사합니다.
   3. 에이전트가 코드를 커밋/배포하기 전에, 지식 자산 전반의 깨진 연결과 비표준 링크를 자율 검증하고 무결함을 증명하기 위해 반드시 다음 스크립트를 기동해야 합니다:
      ```bash
-     python3 .agents/skills/knowledge-lint-curator/scripts/link_validator.py
+     python3 .agents/tools/link_validator.py
      ```
      이 검증기에서 에러가 0건으로 성공("All link validations passed successfully.")해야만 Gate 1을 완전히 통과한 것으로 인정합니다.
 
