@@ -98,7 +98,7 @@ def get_git_changes() -> Tuple[List[str], List[str]]:
                     markdown_files.append(final_path)
                 elif normalized_path.endswith((".py", ".sql", ".sh")):
                     # 임시 scratch 스크립트는 지식 보강 추적 대상에서 배제
-                    if not normalized_path.startswith("scratch/"):
+                    if not normalized_path.startswith(("scratch/", ".agent-storage/scratch/")):
                         code_files.append(final_path)
                         
         except Exception as e:
