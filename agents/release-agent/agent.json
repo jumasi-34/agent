@@ -1,0 +1,35 @@
+{
+  "name": "release-agent",
+  "displayName": "Release Agent",
+  "description": "배포 준비 확인, 배포 전 정적 무결성 최종 검역, 릴리스 노트 작성 및 수동 머지 승인 대기 상태 정렬을 주관하는 인도 에이전트",
+  "category": "Governance",
+  "hidden": false,
+  "contexts": [
+    "checklist/checklist-release.md"
+  ],
+  "outputs": [
+    ".agents/evals/release-notes-*.md"
+  ],
+  "connections": [
+    "router-agent"
+  ],
+  "config": {
+    "customAgent": {
+      "systemPromptSections": [
+        {
+          "title": "Allowed Operations",
+          "content": "- 코드 변경 내역 일원화 요약 및 Git 버전 태깅 가이드라인 정립\n- 최종 배포 전 무결성 입증 수동 승인 요청서 정밀화"
+        },
+        {
+          "title": "Forbidden Operations",
+          "content": "- 사용자의 수동 승인을 우회한 독단적인 마스터 브랜치 푸시 및 원격 자동 머지 금지"
+        }
+      ],
+      "toolNames": [
+        "view_file",
+        "write_to_file",
+        "run_command"
+      ]
+    }
+  }
+}

@@ -1,0 +1,175 @@
+{
+  "intent_analysis": {
+    "version": "1.0.0",
+    "updated": "2026-07-03",
+    "categories": [
+      {
+        "id": "Create",
+        "description": "새로운 기능, 대시보드, 에이전트, 규칙 등 프로젝트 내에 존재하지 않던 새로운 디지털 자산을 창조하는 인텐트",
+        "trigger_keywords": [
+          "신설",
+          "추가",
+          "개발",
+          "구현",
+          "만들어",
+          "제작",
+          "새로운"
+        ],
+        "primary_mapped_agents": [
+          "Requirements Agent",
+          "Architecture Agent",
+          "Data Modeling Agent",
+          "Data Agent",
+          "Page Builder Agent",
+          "Component Agent"
+        ],
+        "expected_value": "품질 분석 화면 또는 에이전트 라이브러리에 새로운 비즈니스 자산이 확충되어 플랫폼 영토가 확장됩니다."
+      },
+      {
+        "id": "Improve",
+        "description": "기존에 이미 존재하는 화면, 쿼리, 기능 등의 사용성, 정밀도, 완성도를 보강하고 사용자의 피드백을 반영하는 인텐트",
+        "trigger_keywords": [
+          "개선",
+          "보완",
+          "피드백 반영",
+          "수정",
+          "기능 추가",
+          "변경"
+        ],
+        "primary_mapped_agents": [
+          "Requirements Agent",
+          "Architecture Agent",
+          "Page Builder Agent",
+          "Component Agent",
+          "Refactoring Agent"
+        ],
+        "expected_value": "현업 품질 담당자의 편의성을 도출하고, 화면 내 데이터 흐름과 상태 전이의 안정성을 증대시킵니다."
+      },
+      {
+        "id": "Standardize",
+        "description": "변수명, 파일명, 컴포넌트 호출 방식 등을 프로젝트 표준 규칙(Naming, Color Token 등)에 맞춰 정렬하여 일관성을 높이는 인텐트",
+        "trigger_keywords": [
+          "표준화",
+          "통일",
+          "명명 규칙 적용",
+          "디자인 토큰 적용",
+          "일관성",
+          "정합성 맞추기"
+        ],
+        "primary_mapped_agents": [
+          "Design System Agent",
+          "Component Librarian Agent",
+          "Refactoring Agent",
+          "Reviewer Agent"
+        ],
+        "expected_value": "소스 코드 가독성과 형상 관리 정밀도를 수립하여 수동 운영 부하를 사전에 경감합니다."
+      },
+      {
+        "id": "Reuse",
+        "description": "중복 개발을 원천 차단하기 위해 기 개발된 공통 차트, 필터 카드, 쿼리 등의 컴포넌트 자산을 검색하여 연동하는 인텐트",
+        "trigger_keywords": [
+          "재사용",
+          "기존 컴포넌트 활용",
+          "중복 방지",
+          "공통 필터 도입",
+          "가져다 쓰기"
+        ],
+        "primary_mapped_agents": [
+          "Component Librarian Agent",
+          "Component Agent"
+        ],
+        "expected_value": "중복 코드 생성을 사전 예방하여 장기 유지보수성과 플랫폼의 청정도를 보존합니다."
+      },
+      {
+        "id": "Analyze",
+        "description": "원인 규명, 이상 경향 탐색 등 품질 데이터를 비즈니스 관점에서 수학적/통계적으로 해석하여 인사이트를 도출하는 인텐트",
+        "trigger_keywords": [
+          "원인 추적",
+          "경향성 분석",
+          "이상치 탐색",
+          "파레토",
+          "해석",
+          "인사이트",
+          "yoy",
+          "mom"
+        ],
+        "primary_mapped_agents": [
+          "Insight Agent",
+          "Data Agent"
+        ],
+        "expected_value": "품질 관리자가 데이터를 맹목적으로 보지 않고, 불량의 핵심적 원인을 정량적으로 파악하도록 의사결정을 지지합니다."
+      },
+      {
+        "id": "Automate",
+        "description": "데이터 수집, 스케줄링 배치 배선, 요약 리포터 발송 등 주기적으로 수동 가동되던 업무의 휴먼 개입을 배제시키는 인텐트",
+        "trigger_keywords": [
+          "자동 발송",
+          "스케줄링",
+          "배치 작업",
+          "주기적",
+          "자동화",
+          "알림",
+          "리포터 자동 생성"
+        ],
+        "primary_mapped_agents": [
+          "Automation Agent",
+          "Data Agent"
+        ],
+        "expected_value": "품질 관리자의 일상적 수동 반복 행정 비용을 극적으로 차단하여 고부가가치 분석 업무에 몰입하도록 돕습니다."
+      },
+      {
+        "id": "Optimize",
+        "description": "데이터베이스 응답 렌더링 지연 단축, Streamlit Rerun 횟수 경감, Pandas 데이터프레임 병목 제거 등 성능 효율을 극대화하는 인텐트",
+        "trigger_keywords": [
+          "속도 개선",
+          "병목 제거",
+          "최적화",
+          "캐시 적용",
+          "성능 점검",
+          "렌더링 지연"
+        ],
+        "primary_mapped_agents": [
+          "Performance Agent",
+          "Data Agent"
+        ],
+        "expected_value": "사용자 화면 이탈율을 막고 동시 접속 환경에서의 시스템 건전성과 서버 자원 소모율을 최적화합니다."
+      },
+      {
+        "id": "Govern",
+        "description": "프로젝트 아키텍처 규칙 준수율을 검사하고, 보안 취약성(비밀키 하드코딩 등)을 교차 검역하여 플랫폼 정합성을 강제하는 인텐트",
+        "trigger_keywords": [
+          "코드 리뷰",
+          "정적 검증",
+          "보안 검역",
+          "건전성 진단",
+          "품질 스코어",
+          "가드레일 검사"
+        ],
+        "primary_mapped_agents": [
+          "Reviewer Agent",
+          "Evaluator Agent",
+          "Project Health Agent",
+          "Test Agent"
+        ],
+        "expected_value": "사전에 약속된 플랫폼 헌법(Rules)의 정밀 동작 신뢰도를 확보하고, 무결함 배포를 입증합니다."
+      },
+      {
+        "id": "Learn",
+        "description": "수행 결과물에 대한 기술적 의사결정 결정(Design Decisions)과 배움의 과정들을 위키 및 룰셋으로 축적하여 자산화하는 인텐트",
+        "trigger_keywords": [
+          "문서화",
+          "위키 업데이트",
+          "지식 자산화",
+          "changelog 작성",
+          "경험 기록"
+        ],
+        "primary_mapped_agents": [
+          "Documentation Agent",
+          "Knowledge Curator Agent",
+          "Prompt Optimizer Agent"
+        ],
+        "expected_value": "개발 과정의 모든 고부가가치 무형 자산이 영구 보존되어 다음 에이전트 및 인간 개발자에게 자율 전파됩니다."
+      }
+    ]
+  }
+}

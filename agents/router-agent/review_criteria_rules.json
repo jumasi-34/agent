@@ -1,0 +1,69 @@
+{
+  "quality_gate_reviews": {
+    "version": "1.0.0",
+    "updated": "2026-07-03",
+    "criteria_by_agent": {
+      "data-agent": {
+        "harness_test_required": true,
+        "lint_score_threshold": 95,
+        "checkpoints": [
+          "SQL 쿼리 내 하드코딩된 변수 유무 (상수 정의 의무화)",
+          "Pandas 연산 시 결측치(NaN/Inf) 방어 연산 유무",
+          "@st.cache_data 데코레이터 적용 및 TTL 효율성 점검"
+        ]
+      },
+      "page-builder-agent": {
+        "harness_test_required": true,
+        "lint_score_threshold": 90,
+        "checkpoints": [
+          "UI 소스 코드, 탭 라벨, 버튼, 토스트, 주석 영역 내 일반 유니코드 이모지 직접 사용 여부 검역 (0건 필효)",
+          "Streamlit 기본 Google Material 아이콘 구문(:material/icon_name:) 일치 여부",
+          "위젯에 직접적인 세션 값 직접 할당 차단 검사 (세션 가로채기 기법 도입 확인)",
+          "CSS 인젝션 구문의 Minified 포맷팅 및 공백/주석 자동 패치 준수"
+        ]
+      },
+      "component-agent": {
+        "harness_test_required": false,
+        "lint_score_threshold": 90,
+        "checkpoints": [
+          "Plotly 피겨 오브젝트에 apply_premium_chart_theme 연동 누락 보정 유무",
+          "반응형 차원(Responsive width) 및 가독성 높은 여백(Spacing) 튜닝 여부",
+          "커스텀 원색 단독 하드코딩 배제 및 HSL 컬러 시스템 준수율"
+        ]
+      },
+      "automation-agent": {
+        "harness_test_required": true,
+        "lint_score_threshold": 95,
+        "checkpoints": [
+          "크론 데이터 스케줄링 시 동기화 주기 오동작 방지 훅 구현 여부",
+          "백그라운드 배치 예외 상황 시 자동 롤백 및 Release Hooks 연동 설계"
+        ]
+      }
+    },
+    "knowledge_curation_hooks": {
+      "trigger": "Iteration 완료 시점 자동 구동",
+      "curator_agent": "knowledge-curator-agent",
+      "required_harvest_items": [
+        {
+          "item": "Architecture Decision Records (ADR)",
+          "path_pattern": "docs/architecture/adr-*.md",
+          "format": "Markdown"
+        },
+        {
+          "item": "Wiki Index Update",
+          "path_pattern": ".agents/wiki/index.md",
+          "format": "Markdown table sync"
+        },
+        {
+          "item": "Rules Refinement",
+          "path_pattern": ".agents/rules/L*-*.md",
+          "format": "Strict alignment with lessons learned"
+        }
+      ],
+      "lint_rules": {
+        "wsl_markdown_link_constraint": "모든 파일 하이퍼링크는 반드시 프로토콜(file:///)을 소거하고 워크스페이스 평문 상대 경로로 연결해야 함",
+        "no_unicode_emoji": "자산 텍스트 및 프롬프트 내에 유니코드 이모지 직접 기입 금지"
+      }
+    }
+  }
+}

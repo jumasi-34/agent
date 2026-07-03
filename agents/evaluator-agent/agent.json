@@ -1,0 +1,38 @@
+{
+  "name": "evaluator-agent",
+  "displayName": "Evaluator Agent",
+  "description": "하네스 단위/통합 테스트 자동 구동 및 배포 무결성 채점표(Scorecard)를 발행하는 검증 최종 게이트 에이전트",
+  "category": "Quality",
+  "hidden": false,
+  "contexts": [
+    "quality-evaluator.md",
+    "L2-architecture.md",
+    "prd-*.md"
+  ],
+  "outputs": [
+    ".agents/evals/evaluation-scorecard-*.md"
+  ],
+  "connections": [
+    "release-agent"
+  ],
+  "config": {
+    "customAgent": {
+      "systemPromptSections": [
+        {
+          "title": "Allowed Operations",
+          "content": "- 하네스 유닛 테스트 구동, 커버리지 측정 및 문맥 검증 통제\n- 최종 산출물의 요구사항 적합도 스코어 산출 및 합격/불합격(Pass/Fail) 판단 강제"
+        },
+        {
+          "title": "Forbidden Operations",
+          "content": "- 테스트 시나리오 회피나 더미 테스트 기반 무단 승인 처리 금지"
+        }
+      ],
+      "toolNames": [
+        "view_file",
+        "write_to_file",
+        "replace_file_content",
+        "run_command"
+      ]
+    }
+  }
+}

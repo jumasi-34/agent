@@ -1,0 +1,145 @@
+{
+  "execution_planner": {
+    "version": "1.0.0",
+    "updated": "2026-07-03",
+    "scenarios": [
+      {
+        "id": "New Analysis Page Development",
+        "description": "완전히 새로운 도메인 품질 분석 뷰 및 대시보드 화면을 설계하고 구축하는 시나리오",
+        "matching_criteria": {
+          "primary_work": "Analysis Page Development",
+          "primary_intent": "Create"
+        },
+        "required_rules": [
+          "rules/L2-architecture.md",
+          "rules/L2-naming-convention.md",
+          "rules/L2-business-constants.md",
+          "rules/L2-color-system.md",
+          "rules/L3-dashboard.md",
+          "rules/L3-plot.md",
+          "rules/L3-query.md",
+          "rules/L3-service.md"
+        ],
+        "required_skills": [
+          "skills/quality-assurance",
+          "skills/knowledge-capture",
+          "skills/agent_hooks"
+        ],
+        "default_outputs": [
+          "app/queries/*_query.py (데이터 원천 조회)",
+          "app/service/*_df.py (비즈니스 집계 가공)",
+          "app/pages/*_page.py (Streamlit UI 레이아웃)",
+          "app/pages/*_plots.py (Plotly 프리미엄 시각화)",
+          "app/core/page/config_pages.py (네비게이션 연동)"
+        ]
+      },
+      {
+        "id": "Existing Page Improvement",
+        "description": "기구축된 품질 분석 페이지의 레이아웃을 보완하거나 UX 기능을 강화하는 시나리오",
+        "matching_criteria": {
+          "primary_work": "Existing Page Improvement",
+          "primary_intent": "Improve"
+        },
+        "required_rules": [
+          "rules/L2-architecture.md",
+          "rules/L2-naming-convention.md",
+          "rules/L2-color-system.md",
+          "rules/L3-dashboard.md",
+          "rules/L3-plot.md"
+        ],
+        "required_skills": [
+          "skills/quality-assurance",
+          "skills/knowledge-capture"
+        ],
+        "default_outputs": [
+          "app/pages/*_page.py (기존 레이아웃 리팩토링 및 개선)",
+          "app/pages/*_plots.py (시각화 개선)"
+        ]
+      },
+      {
+        "id": "Component Development",
+        "description": "여러 분석 화면에 공통 활용될 수 있는 제네릭 UI 컴포넌트나 차트를 새로 만드는 시나리오",
+        "matching_criteria": {
+          "primary_work": "Component Development",
+          "primary_intent": "Create"
+        },
+        "required_rules": [
+          "rules/L2-architecture.md",
+          "rules/L2-naming-convention.md",
+          "rules/L2-color-system.md",
+          "rules/L3-dashboard.md",
+          "rules/L3-plot.md"
+        ],
+        "required_skills": [
+          "skills/quality-assurance"
+        ],
+        "default_outputs": [
+          "app/core/plot/*_component.py (공통 컴포넌트 신설)",
+          "app/core/design_system/*_token.py (디자인 토큰화)"
+        ]
+      },
+      {
+        "id": "Data Engineering & Analytics",
+        "description": "원천 SQL 쿼리를 설계하고 비즈니스 KPI 계산식을 정의하여 데이터 레이어를 정립하는 시나리오",
+        "matching_criteria": {
+          "primary_work": "Data Engineering",
+          "primary_intent": "Analyze"
+        },
+        "required_rules": [
+          "rules/L2-architecture.md",
+          "rules/L2-naming-convention.md",
+          "rules/L3-query.md",
+          "rules/L3-service.md"
+        ],
+        "required_skills": [
+          "skills/quality-assurance",
+          "skills/memory"
+        ],
+        "default_outputs": [
+          "app/queries/*_query.py (신규 SQL 설계 및 캐싱 배선)",
+          "app/service/*_df.py (비즈니스 가공 메트릭 완성)"
+        ]
+      },
+      {
+        "id": "Automation Platform",
+        "description": "품질 보고서 발송, 배치 연산 스케줄링 등 수동 반복 행정을 기계적 스케줄링하는 시나리오",
+        "matching_criteria": {
+          "primary_work": "Automation",
+          "primary_intent": "Automate"
+        },
+        "required_rules": [
+          "rules/L2-architecture.md",
+          "rules/L2-naming-convention.md"
+        ],
+        "required_skills": [
+          "skills/quality-assurance",
+          "skills/agent_hooks"
+        ],
+        "default_outputs": [
+          "automation/*_scheduler.py (스케줄러 구축)",
+          "automation/*_sender.py (이메일 및 리포터 자동 생성)"
+        ]
+      },
+      {
+        "id": "Quality & Governance Audit",
+        "description": "코드 스타일, 명명 규칙 위반을 색출하고 정적 테스트 구동을 통해 플랫폼 안전을 교차 점검하는 시나리오",
+        "matching_criteria": {
+          "primary_work": "Quality Improvement",
+          "primary_intent": "Govern"
+        },
+        "required_rules": [
+          "rules/L1-git.md",
+          "rules/L2-architecture.md",
+          "rules/L2-naming-convention.md"
+        ],
+        "required_skills": [
+          "skills/quality-assurance"
+        ],
+        "default_outputs": [
+          "intelligence/verification/review-report-*.md (정적 리뷰 리포트)",
+          "tests/test_*.py (하네스 단위 테스트 스코어카드)"
+        ]
+      }
+    ]
+  }
+}

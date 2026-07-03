@@ -1,0 +1,219 @@
+{
+  "work_classification": {
+    "version": "1.0.0",
+    "updated": "2026-07-03",
+    "categories": [
+      {
+        "id": "Platform Development",
+        "priority": 1,
+        "description": "플랫폼 자체의 설계 구조를 확장하거나 라우터, 공통 프레임워크 및 기반 시스템을 구축/개선하는 작업",
+        "target_directories": [
+          "app/core/infrastructure/",
+          ".agents/tools/",
+          "app/core/utils/"
+        ],
+        "trigger_keywords": [
+          "라우터",
+          "router",
+          "프레임워크",
+          "framework",
+          "세션 관리",
+          "공통 유틸리티",
+          "인프라",
+          "디렉터리 구조 개편",
+          "Makefile"
+        ],
+        "detection_guidelines": "사용자가 프로젝트의 전체 기반 구동 원리, 빌드 스크립트, 핵심 동작 메커니즘 혹은 라우팅 제어 시스템 자체의 기능 개선을 요청할 때 최우선으로 지정합니다."
+      },
+      {
+        "id": "Agent Development",
+        "priority": 2,
+        "description": "AI 에이전트의 정의를 추가/수정하거나 프롬프트 최적화 및 에이전트 간 협업 구조를 구축/개선하는 작업",
+        "target_directories": [
+          ".agents/agents/",
+          ".agents/agents/roles/"
+        ],
+        "trigger_keywords": [
+          "에이전트",
+          "agent",
+          "프롬프트",
+          "prompt",
+          "협업 구조",
+          "에이전트 역할",
+          "시스템 프롬프트",
+          "agents_registry"
+        ],
+        "detection_guidelines": "새로운 에이전트의 역할 설계, 특정 에이전트의 Allowed/Forbidden 동작 가이드라인 수정, 프롬프트의 지시 정밀도 향상을 요청할 때 지정합니다."
+      },
+      {
+        "id": "Analysis Page Development",
+        "priority": 3,
+        "description": "품질 KPI, 불량 현황, 공정 분석 등 새로운 비즈니스 분석 대시보드 및 신규 페이지를 설계하고 개발하는 작업",
+        "target_directories": [
+          "app/pages/"
+        ],
+        "trigger_keywords": [
+          "신규 대시보드",
+          "신규 페이지",
+          "대시보드 추가",
+          "분석 페이지 개발",
+          "KPI 화면",
+          "신규 화면"
+        ],
+        "detection_guidelines": "기존에 존재하지 않던 완전히 새로운 도메인 분석 뷰나 KPI 리포팅 페이지의 설계를 요청할 때 지정하며, 원칙에 따라 데이터 구조 설계를 항상 선행해야 합니다."
+      },
+      {
+        "id": "Existing Page Improvement",
+        "priority": 4,
+        "description": "기구축된 페이지의 레이아웃 재구성, 기능 추가, UX 편의성 개선 및 유지보수 작업을 수행하는 작업",
+        "target_directories": [
+          "app/pages/"
+        ],
+        "trigger_keywords": [
+          "페이지 개선",
+          "화면 리팩토링",
+          "UX 개선",
+          "레이아웃 변경",
+          "대시보드 튜닝",
+          "필터 추가",
+          "기능 추가"
+        ],
+        "detection_guidelines": "이미 기구축되어 운영 중인 특정 Streamlit 페이지 내 요소의 시각적 위치 재배치, 편의 기능 결합, 사용자 피드백 반영을 요청할 때 지정합니다."
+      },
+      {
+        "id": "Data Engineering",
+        "priority": 5,
+        "description": "품질 분석에 사용될 데이터 모델링, 원천 SQL 작성, 가공 집계 구조 및 KPI/메트릭 공식을 정합성 있게 정의하는 작업",
+        "target_directories": [
+          "app/queries/",
+          "app/service/",
+          "app/core/data_models/"
+        ],
+        "trigger_keywords": [
+          "데이터 모델",
+          "sql",
+          "쿼리",
+          "query",
+          "집계 구조",
+          "kpi 공식",
+          "데이터 전처리",
+          "테이블 스키마",
+          "df 가공"
+        ],
+        "detection_guidelines": "원천 DB 접근용 SQL문 설계, 데이터 프레임 전처리 함수 구축, KPI 계산식 수립 등 데이터 플로우 레이어의 설계를 요청할 때 지정합니다."
+      },
+      {
+        "id": "Analytics",
+        "priority": 6,
+        "description": "구축된 데이터를 기반으로 불량 원인 분석, 경향성 탐색, Pareto 분포 등 의사결정을 돕기 위해 비즈니스 인사이트를 해석 및 추출하는 작업",
+        "target_directories": [
+          "app/pages/*_plots.py"
+        ],
+        "trigger_keywords": [
+          "인사이트",
+          "원인 분석",
+          "이상치",
+          "경향 분석",
+          "trend",
+          "pareto",
+          "데이터 해석",
+          "추세 분석"
+        ],
+        "detection_guidelines": "특정 현상의 원인을 규명하거나, 데이터 추이를 면밀히 대조 분석하여 의사결정용 요약 정보를 사용자에게 제공하도록 요구할 때 지정합니다."
+      },
+      {
+        "id": "Component Development",
+        "priority": 7,
+        "description": "재사용 가능한 차트, 필터 카드, 테이블, 레이아웃 컴포넌트 등을 정의하거나 도서관(Librarian) 자산을 개발/수정하는 작업",
+        "target_directories": [
+          "app/core/plot/",
+          "app/core/design_system/"
+        ],
+        "trigger_keywords": [
+          "재사용 컴포넌트",
+          "차트 템플릿",
+          "메트릭 카드",
+          "공통 필터",
+          "공통 테이블",
+          "공통 다이얼로그"
+        ],
+        "detection_guidelines": "특정 화면에 종속되지 않고 여러 페이지에서 공통으로 수입하여 렌더링될 수 있는 제네릭 UI 컴포넌트의 신설 및 튜닝을 요청할 때 지정합니다."
+      },
+      {
+        "id": "Design System",
+        "priority": 8,
+        "description": "디자인의 일관된 경험을 유지하기 위한 색상 토큰, 타이포그래피, 아이콘 규격, 차트 팔레트 등을 설계하는 작업",
+        "target_directories": [
+          "app/core/design_system/"
+        ],
+        "trigger_keywords": [
+          "디자인 시스템",
+          "컬러 토큰",
+          "color token",
+          "타이포그래피",
+          "아이콘 규격",
+          "차트 팔레트",
+          "테마 가이드"
+        ],
+        "detection_guidelines": "프로젝트 전역에 일관되게 주입되는 글래스모피즘 테마 스타일시트, 정적 디자인 Token 정의 및 차트 앰비언트 컬러 표준 조율을 요청할 때 지정합니다."
+      },
+      {
+        "id": "Automation",
+        "priority": 9,
+        "description": "이메일 자동 발송, 분석 보고서 생성기, 배치 작업 스케줄링 등 반복적인 품질 업무의 자동화 가동 환경을 구축하는 작업",
+        "target_directories": [
+          "automation/"
+        ],
+        "trigger_keywords": [
+          "자동 발송",
+          "배치 작업",
+          "스케줄러",
+          "scheduler",
+          "이메일 리포트",
+          "자동 생성",
+          "수작업 자동화"
+        ],
+        "detection_guidelines": "주기적으로 작동하는 스크립트 작성, 백그라운드 연동, PDF 리포트 자동 출력, 통지 이메일 배선 등을 요청할 때 지정합니다."
+      },
+      {
+        "id": "Quality Improvement",
+        "priority": 10,
+        "description": "코드 리뷰, 룰 검증, 리팩토링, 성능 최적화, 정적 테스트 및 컴파일 무결성을 향상시키는 품질 강화 작업",
+        "target_directories": [
+          "tests/",
+          "intelligence/verification/"
+        ],
+        "trigger_keywords": [
+          "코드 리뷰",
+          "성능 최적화",
+          "리팩토링",
+          "테스트 케이스",
+          "무결성 검증",
+          "make verify",
+          "코드 스타일"
+        ],
+        "detection_guidelines": "기능 자체는 유지한 상태에서 코드의 정밀성 극대화, 버그 소거, 린트 오작동 패치, 또는 단위 테스트 빌드 검정 강화를 요청할 때 지정합니다."
+      },
+      {
+        "id": "Knowledge Management",
+        "priority": 11,
+        "description": "프로젝트 지식 위키를 업데이트하고 규칙(Rules) 및 가이드라인, 베스트 프랙티스 문서를 구조화하고 관리하는 작업",
+        "target_directories": [
+          "wiki/",
+          ".agents/rules/",
+          ".agents/skills/"
+        ],
+        "trigger_keywords": [
+          "위키",
+          "wiki",
+          "문서화",
+          "지식 자산",
+          "규칙 업데이트",
+          "가이드라인",
+          "best practice"
+        ],
+        "detection_guidelines": "새로 취득한 소프트웨어 공학 지식 전파, 위키 인덱스 최적화, 룰 및 가이드의 갱신을 독자적으로 요청할 때 지정합니다."
+      }
+    ]
+  }
+}

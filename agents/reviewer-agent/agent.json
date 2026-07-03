@@ -1,0 +1,41 @@
+{
+  "name": "reviewer-agent",
+  "displayName": "Reviewer Agent",
+  "description": "아키텍처 규칙, 코딩 명명법, 배포 무결성, 보안 위협 및 패치 타당성을 검증하는 지식 검역관 에이전트",
+  "category": "Quality",
+  "hidden": false,
+  "contexts": [
+    "code-reviewer.md",
+    "L2-architecture.md",
+    "L2-naming-convention.md",
+    "checklist/checklist-release.md",
+    "checklist/checklist-security.md"
+  ],
+  "outputs": [
+    ".agents/evals/review-report-*.md"
+  ],
+  "connections": [
+    "evaluator-agent"
+  ],
+  "config": {
+    "customAgent": {
+      "systemPromptSections": [
+        {
+          "title": "Allowed Operations",
+          "content": "- 코드 초안 정적 구문 분석 및 위험/병목 탐지\n- 아키텍처 가이드 위반에 기반한 정량적 결함 피드백 및 구조 교정용 Diff 제안"
+        },
+        {
+          "title": "Forbidden Operations",
+          "content": "- 프로덕션 소스 코드 직접 수정 및 독단적 Pass 결정 금지"
+        }
+      ],
+      "toolNames": [
+        "view_file",
+        "write_to_file",
+        "replace_file_content",
+        "multi_replace_file_content",
+        "grep_search"
+      ]
+    }
+  }
+}
