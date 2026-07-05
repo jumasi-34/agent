@@ -49,18 +49,20 @@ updated: 2026-06-29
 
 ---
 
-## 3. 대시보드 UI 개발 4대 표준
+## 3. 대시보드 UI 개발 5대 표준
 
 1. **공통 UI 모듈 (`app/core/ui/`) 활용**: 페이지 내부에서 자체 HTML/CSS 인라인 스타일을 구구절절 기입하지 않고, 공통 컴포넌트인 `components.py` 및 `styles.py`에서 제공하는 규격 컴포넌트(ShadCN 스타일 UI, 카드형 지표 등)를 임포트하여 활용합니다.
 2. **입력 필터 파라미터 캡슐화**: 화면 필터로부터 수집된 선택 데이터는 반드시 `app/core/params/parameters.py`의 전용 데이터클래스(`*Params`) 객체로 조립해 서비스 레이어의 인풋으로만 전달합니다.
 3. **세션 상태(Session State) 통제**: 임의 변수명을 키로 쓰지 말고 `core/constants/` 또는 `core/page/` 등에 사전 선언된 세션 상태 키 목록을 엄격히 바인딩합니다.
 4. **동적 메타데이터 컬럼 설정기 (`get_dynamic_column_configs`) 필수 연동**: 화면 단에서 데이터프레임을 표출할 때, 쿼리 내의 한글 AS 별칭 대신 반드시 `get_dynamic_column_configs` 헬퍼를 경유시켜 컬럼 레이블, 소수점 포맷, 도움말(툴팁)이 유기적 결합되게 합니다.
+5. **표준 UI/UX 및 사이드바 템플릿 연동**: 새로운 대시보드 화면을 개발하거나 기존 화면을 리팩토링할 때는 반드시 [app/pages/_70_settings/standard_page_template.py](app/pages/_70_settings/standard_page_template.py) 파일을 표준 템플릿으로 참조하여 일관된 사이드 패널 및 레이아웃 구조를 상속하십시오. 특히 본문의 대제목은 뛰어난 비주얼 위계와 명확한 화면 구조를 확립하기 위해 프로젝트 전수 공통 대제목 표준 컴포넌트인 `header_main_title_info_panel` (H1 규격)을 일관되게 활용하여 렌더링해야 합니다.
 
 ---
 
-## 4. 대시보드 UI 레이어 4대 정합성 체크리스트
+## 4. 대시보드 UI 레이어 5대 정합성 체크리스트
 
 1. 차트 드로잉(Plotly) 소스 코드가 인라인에 작성되지 않고 `*_plots.py`로 완벽히 분리 전담되어 있는가?
 2. 마크다운 본문, 버튼, 탭 제목 내에 유니코드 이모지가 철저히 차단되고, 아이콘이 필요한 곳에 Google Material Symbols를 대입했는가?
 3. 표(dataframe) 렌더링 지점에서 한글 AS 오염 대신 `get_dynamic_column_configs` 동적 헬퍼를 경유시켜 결합을 완료했는가?
 4. 스타일 처리를 위해 `app/core/ui/` 공통 라이브러리를 최우선적으로 참조하여 화면 간 일관성을 확보했는가?
+5. 신규 또는 수정된 화면이 [app/pages/_70_settings/standard_page_template.py](app/pages/_70_settings/standard_page_template.py)의 사이드 패널 레이아웃 및 탭 상태 제어를 준수하고, 대제목 영역을 프로젝트 표준 대제목 규격인 `header_main_title_info_panel` (H1 규격)으로 완성했는가?

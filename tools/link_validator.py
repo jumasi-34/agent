@@ -255,7 +255,7 @@ def main():
     """자율 링크 검증기 CLI 실행의 주 진입점입니다."""
     # 기본 검사 대상: 워크스페이스 내의 .agents 디렉터리
     workspace_root = os.path.abspath(
-        os.path.join(os.path.dirname(__file__), "../../../../")
+        os.path.join(os.path.dirname(__file__), "../../")
     )
     target_dir = os.path.join(workspace_root, ".agents")
 

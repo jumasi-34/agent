@@ -28,6 +28,8 @@ title: "[Agents]"
 ### ③ UI 규칙 및 이모지 사용 전면 금지
 - Streamlit UI 페이지, 탭 라벨, 마크다운 텍스트, 버튼, 토스트, 소스 코드 주석 등 어떠한 곳에서도 일반 유니코드 이모지(예: 별, 느낌표, 가위표, 로봇 등)를 사용할 수 없습니다.
 - 아이콘이 필요한 경우 오직 Streamlit 기본 Google Material 아이콘 구문(`:material/icon_name:`)만을 활용합니다.
+- **내장 알림 박스 글로벌 몽키패치 보호막**: `st.info`, `st.warning`, `st.success`, `st.error` 등 내장 박스 사용 시 유니코드 이모지가 깨지는 문제를 예방하기 위해, `app.py` 시작부에서 글로벌 몽키패치를 통해 `icon=None`(기본값) 호출 시 자동으로 구글 머티리얼 벡터 아이콘(`:material/info:`, `:material/warning:`, `:material/check_circle:`, `:material/error:`)이 강제 바인딩되도록 보호막을 수립해 두었습니다.
+- 개발자가 커스텀 아이콘을 지정하고자 하는 경우에는 여전히 `icon=":material/custom_icon:"` 형태로 명시하여 덮어쓸 수 있으나, 어떠한 경우에도 유니코드 이모지를 직접 기입하는 행위는 엄격히 금지됩니다.
 
 ### ④ Streamlit 위젯 세션 상태 제약
 - `key`가 할당되어 렌더링된 Streamlit 위젯은 런타임 중에 프로그램 상에서 `st.session_state[key] = value` 형태로 값을 직접 할당하여 수정할 수 없습니다. (`StreamlitAPIException` 유발)

@@ -5,105 +5,184 @@ type: wiki
 status: active
 
 summary: >
-  에이전트별 필수 기동 스킬 맵핑 정의서.
-  각 에이전트 페르소나가 완수해야 할 가동 스킬들을 명시한다.
+  22대 대형 에이전트 카탈로그와 연동되는 에이전트별 필수 기동 스킬 맵핑 정의서.
+  각 거버넌스 레이어별 에이전트가 완수해야 할 가동 스킬들을 최신화하여 명시한다.
 
 keywords:
   - agent-os
   - skill-map
   - capabilities
+  - 22-agents
 
 parent: concept.agent_os.governance
 
 related:
-  - "[agents/agents.md](agents.md)"
-  - "[skills/using-superpowers/SKILL.md](../skills/using-superpowers/SKILL.md)"
+  - "[.agents/agents/agents.md](.agents/agents/agents.md)"
+  - "[.agents/skills/index.md](.agents/skills/index.md)"
 
 consumers:
-  - "[agents/roles/planner-orchestrator.md](roles/planner-orchestrator.md)"
+  - "[.agents/agents/roles/planner-agent.md](.agents/agents/roles/planner-agent.md)"
+  - "[.agents/agents/roles/router-agent.md](.agents/agents/roles/router-agent.md)"
 
-updated: 2026-06-28
+updated: 2026-07-04
 ---
-# 에이전트별 필수 기동 스킬 맵핑 정의서 (agents/skill-map.md)
+# 에이전트별 필수 기동 스킬 맵핑 정의서 (.agents/agents/skill-map.md)
 
 ## Overview
-* **왜 존재하는가 (Why)**: 각 에이전트 페르소나가 자기 기동 단계 및 기능에 맞춰 올바른 스킬셋(Tool)을 학습하고 적소에 오작동 없이 사용하도록 정의하기 위함입니다.
-* **언제 사용하는가 (When)**: 새로운 스킬을 에이전트 라이프사이클에 이식하거나, 특정 에이전트 페르소나의 권한과 가동 규칙을 변경할 때 사용합니다.
-* **연계 실행 (Next Action)**: 전체 에이전트 규정을 담은 [.agents/agents/agents.md](agents.md)를 연이어 참조하십시오.
+* **왜 존재하는가 (Why)**: 22대 대형 에이전트 카탈로그 환경에서 각 에이전트 페르소나가 자기 기동 단계 및 역할에 부합하는 정량적 스킬셋(Tool)을 정상 수렴하고 오작동 없이 사용하도록 일원화된 연동 정합성을 보장하기 위함입니다.
+* **언제 사용하는가 (When)**: 신규 글로벌/로컬 스킬을 에이전트 라이프사이클에 안전하게 이식하거나, 특정 에이전트의 권한 및 협업 동선을 확장하고자 할 때 참조하고 개정합니다.
+* **연계 실행 (Next Action)**: 전체 에이전트 거버넌스 규정을 담은 [.agents/agents/agents.md](.agents/agents/agents.md) 및 [.agents/skills/index.md](.agents/skills/index.md)를 함께 열어 정합성을 지속 검역하십시오.
 
 ## Connections
-* **상위 개념**: [.agents/AGENTS.md](../AGENTS.md)
-* **연관 자산**: [.agents/agents/agents.md](agents.md) | [.agents/skills/index.md](../skills/index.md)
+* **상위 개념**: [.agents/AGENTS.md](.agents/AGENTS.md)
+* **연관 자산**: [.agents/agents/agents.md](.agents/agents/agents.md) | [.agents/skills/index.md](.agents/skills/index.md) | [.agents/agents/agents_registry.json](.agents/agents/agents_registry.json)
 ---
 
-본 문서는 프로젝트 내에서 고유한 역할 페르소나를 지니고 협업하는 각 AI 에이전트가 어떤 스킬을 핵심적으로 기동하고 활용해야 하는지 명시한 **에이전트-스킬 물리 연동 정의서**입니다.
-
-에이전트는 자신의 정체성(Identity)과 담당 단계에 맞추어 필수 매핑 스킬들을 최우선적으로 습득 및 실행하십시오.
-
-
-## 1. 최상위 설계 및 기획 에이전트 (Planner Agent)
-
-### [Planner Orchestrator (최상위 기획 에이전트)](roles/planner-orchestrator.md)
-*   **본질적 임무**: 사용자 요구사항을 분석하고, `prd-template.md`에 의거한 완전한 PRD 기획서를 수립하며, 빌더 에이전트들의 구현 방향과 단계별 기획 체크리스트를 총괄 지휘합니다.
-*   **권장 및 필수 가동 스킬**:
-    *   `using-superpowers` (글로벌 스킬): 세션 시작 즉시 활용 가능한 비즈니스 규칙 및 인프라 지침 탐색
-    *   `brainstorming` (글로벌 스킬): 설계 단계 전 사용자와의 실시간 의도 합치 및 디자인 맵핑
-    *   `writing-plans` (글로벌 스킬): 코드 변경 전에 완벽한 단계별 순차 구현 계획서 구축
-    *   `understand` (글로벌 스킬): 전체 코드 아키텍처 및 영향 범위(Impact Area) 사전 점검
-    *   [agent_hooks](../skills/agent_hooks/SKILL.md) (로컬 스킬): 세션 실행 장애 감지 및 다음 에이전트로의 개발 콘텍스트 Handoff 인계
-    *   [agentmemory](../skills/memory/core/SKILL.md) (로컬 스킬): 과거 세션 메모리 내의 기획 핵심 이정표 회상 및 신규 로컬 아키텍처 규칙 영속화
+본 문서는 프로젝트 내의 22대 AI 에이전트 역할군이 어떤 스킬을 핵심적으로 기동하고 활용해야 하는지 명시한 **에이전트-스킬 물리 연동 정의서**입니다. 모든 하이퍼링크는 WSL Markdown Link Constraint 수칙에 부합하도록 평문 상대 경로로 연결되었습니다.
 
 ---
 
-## 2. 프로덕션 구현 및 최적화 빌더 에이전트 (Builder Agent)
+## 1. 전략 및 조율 레이어 (Strategic & Coordination Tier)
 
-### [Data Layer Builder (쿼리 및 전처리 개발 에이전트)](roles/data-layer-builder.md)
-*   **본질적 임무**: 데이터베이스 원천 테이블의 DDL을 파악하고, `app/queries/` 하위에 고품질 SQL 쿼리를 작성하며, `app/service/` 하위에서 Pandas를 활용해 지표 연산 및 `@st.cache_data` 전처리 공급 로직을 개발합니다.
+### [router-agent (Router Agent)](.agents/agents/roles/router-agent.md)
+*   **본질적 임무**: 최소 지연 다이내믹 바인딩 및 사전 재사용성 대조 프로토콜을 가동하여 사용자 쿼리에 따른 최적의 파이프라인 시퀀스를 형성합니다.
 *   **권장 및 필수 가동 스킬**:
-    *   `understand` (글로벌 스킬): 데이터 흐름도 생성 및 원천 데이터베이스 DDL/스키마 관계 정밀 분석
-    *   [sql_analyzer](../skills/quality/sql/SKILL.md) (로컬 스킬): SQL 쿼리 내 하드코딩된 한글 별명(AS "한글") 배제 및 아키텍처 수칙 검역
-    *   [korean_metadata](../skills/quality/korean-metadata/SKILL.md) (로컬 스킬): 컬럼 설명 사전을 갱신하여 쿼리-UI 간 디스플레이용 한글 포맷 정합성 정렬
-    *   `systematic-debugging` (글로벌 스킬): 쿼리 실행 실패 및 전처리 Pandas 데이터 타입 에러의 체계적 가설 추적 및 해소
-    *   `test-driven-development` (글로벌 스킬): 원천 데이터 공급 모듈 작성 전 견고한 데이터 모킹(Mocking) 및 단위 테스트 설계
-    *   `verification-before-completion` (글로벌 스킬): 전처리 및 쿼리 파이썬 파일 정적 컴파일(`py_compile`) 및 무결 정합 입증
+    *   `using-superpowers` (글로벌): 세션 시작 즉시 요구사항 파악 전 에이전트 능력 준비
+    *   `subagent-driven-development` (글로벌): 하위 실행 에이전트들로의 유기적 분배 및 관리
+    *   `dispatching-parallel-agents` (글로벌): 상호 의존성 없는 태스크의 병렬 실행 가속화
+    *   [.agents/skills/agent_hooks/SKILL.md](.agents/skills/agent_hooks/SKILL.md) (로컬): 비정상 동작 제어 및 세션 라이프사이클 런타임 수렴
 
-### [Dashboard Layer Builder (화면 및 시각화 조립 에이전트)](roles/dashboard-layer-builder.md)
-*   **본질적 임무**: `app/pages/` 하위에 Streamlit UI 레이아웃을 작성하고, 프리미엄 Plotly 시각화 오브젝트(`*_plots.py`)를 개발하며, 네비게이션 매핑, CSS 앰비언트 인젝션 및 유니코드 이모지 Google Material Symbols 치환 등 비주얼 고도화 작업을 완수합니다.
+### [planner-agent (Planner Agent)](.agents/agents/roles/planner-agent.md)
+*   **본질적 임무**: 사용자 및 비즈니스 의도가 수집되면 최상위에서 기획 방향성 및 작업 로드맵 체크리스트를 정립합니다.
 *   **권장 및 필수 가동 스킬**:
-    *   [developing-with-streamlit](../skills/development/streamlit/SKILL.md) (로컬 스킬): Streamlit 앱 구축 수칙, 세션 상태 가로채기, 캐싱 및 반응형 성능 튜닝
-    *   `frontend-design` (글로벌 스킬): 글래스모피즘, 화이트 카드 컨테이너 포장, 정돈된 타이포그래피 정렬 등의 미학적 디테일 극대화
-    *   `systematic-debugging` (글로벌 스킬): Streamlit 위젯 세션 강제 변경 오류(StreamlitAPIException) 및 렌더링 루프 병목 자율 추적 및 교정
-    *   `verification-before-completion` (글로벌 스킬): UI 컨트롤러 및 차트 시각화 모듈의 빌드 정상 작동 확인 및 최종 렌더링 무결 증명
+    *   `using-superpowers` (글로벌): 초기화 소통 및 지침의 선제 탐색
+    *   `brainstorming` (글로벌): 요구 조건의 타당성 검증 및 상위 수준 기획 정렬
+    *   `writing-plans` (글로벌): 단계별 순차 구현 계획서 구축
+    *   `understand` (글로벌): 전체 아키텍처 및 소스 경계 사전 조감
+
+### [requirements-agent (Requirements Agent)](.agents/agents/roles/requirements-agent.md)
+*   **본질적 임무**: 사용자 자연어 요청의 세부 기능/비기능 요구사항을 구체화하고 완료 정의(DoD) 성공 기준을 상세 수립합니다.
+*   **권장 및 필수 가동 스킬**:
+    *   `brainstorming` (글로벌): 요구 수준의 조밀한 예외 케이스 정의 및 가치 정렬
+    *   `writing-plans` (글로벌): DoD 만족을 위한 기획 이정표 수립
+
+### [architecture-agent (Architecture Agent)](.agents/agents/roles/architecture-agent.md)
+*   **본질적 임무**: 3-Layer 레이어 경계 준수율을 관리하고 컴포넌트 간 순환 참조 종속성을 원천 방지하는 흐름을 설계합니다.
+*   **권장 및 필수 가동 스킬**:
+    *   `understand` (글로벌): 컴포넌트 경계 스캔 및 종속 관계 시각 분석
+    *   `writing-plans` (글로벌): 구조 설계 계획 수립
 
 ---
 
-## 3. 분석, 리뷰 및 검역 서브에이전트 (Sub-Agent)
+## 2. 구현 빌더 레이어 (Implementation Tier)
 
-### [Data Insights Analyst (사전 분석 서브에이전트)](roles/data-insights-analyst.md)
-*   **본질적 임무**: 본격적인 개발 작업 착수 전, 데이터베이스의 Read-Only DDL과 로우 레벨 메타 통계를 자율 검증하여 비즈니스 맥락과 융합한 정밀 EDA 가이드북을 작성해 둡니다.
+### [data-modeling-agent (Data Modeling Agent)](.agents/agents/roles/data-modeling-agent.md)
+*   **본질적 임무**: 집계 분석 마트, Fact, Dimension 테이블 물리/논리 스키마를 수립하고 KPI 공식을 설계합니다.
 *   **권장 및 필수 가동 스킬**:
-    *   `understand` (글로벌 스킬): 신규 추가될 테이블 구조 분석 및 비즈니스 도메인 지식 흐름 추출
-    *   [agentmemory](../skills/memory/core/SKILL.md) (로컬 스킬): 유사 도메인 지표(OEQG, MTTC 등) 연산 수식의 과거 지식 베이스 검색 및 기록 연계
+    *   `understand` (글로벌): 원천 데이터베이스 DDL 스캔 및 구조 관계 탐색
+    *   `writing-plans` (글로벌): 물리 컬럼 설계 이정표 기획
 
-### [Governance Compliance Auditor (사전/사후 검역 서브에이전트)](roles/governance-compliance-auditor.md)
-*   **본질적 임무**: 파일, 함수, 변수 및 DB 영문 원천 물리 컬럼과 UI 한글명 간의 1:1 디스플레이 매핑 표준 및 3-Layer 물리 명명 규정을 검역하고 메타데이터 json 수정을 동기화합니다.
+### [data-agent (Data Agent)](.agents/agents/roles/data-agent.md)
+*   **본질적 임무**: SQL 쿼리 설계 및 Pandas 가공, 서비스 전처리 및 캐싱 모듈을 완벽하게 개발합니다.
 *   **권장 및 필수 가동 스킬**:
-    *   [guardrail](../skills/quality/guardrail/SKILL.md) (로컬 스킬): 이모지 혼용 검역, 커밋 메시지 규격 검사, 데이터베이스 스키마와 물리 테이블 정적 구조 유효성 정밀 검정
-    *   [sql_analyzer](../skills/quality/sql/SKILL.md) (로컬 스킬): SQL 구문 내 불법 영문 Alias 하드코딩 여부 정밀 정적 분석
-    *   [korean_metadata](../skills/quality/korean-metadata/SKILL.md) (로컬 스킬): 영문 물리 컬럼명에 매칭되는 한국어 디스플레이 사전 자동 업데이트 연동
-    *   `verification-before-completion` (글로벌 스킬): 검역 결과가 완벽한지 테스트 스위트를 구동하여 물리적 무오류 보증
+    *   `understand` (글로벌): 소스-DB 간 데이터 흐름 종속성 대조
+    *   `test-driven-development` (글로벌): 데이터 공급 함수 개발 전 단위 테스트 및 Mock 설계
+    *   `systematic-debugging` (글로벌): 쿼리 실행 병목 및 Pandas 타입 에러의 체계적 디버깅
+    *   `verification-before-completion` (글로벌): 정적 컴파일 검증 및 쿼리 무결 증명
+    *   [.agents/skills/quality/sql/SKILL.md](.agents/skills/quality/sql/SKILL.md) (로컬): SQL 한글 별칭 하드코딩 여부 정적 진단
 
-### [Code Reviewer (리뷰어 서브에이전트)](roles/code-reviewer.md)
-*   **본질적 임무**: 구현 빌더들이 제안한 파이썬 소스 코드의 잠재 버그 및 규칙 위반 사항을 검진하고, 리팩토링 개선안(Diff)을 주도적이고 가독성 높게 설계하여 피드백합니다.
+### [page-builder-agent (Page Builder Agent)](.agents/agents/roles/page-builder-agent.md)
+*   **본질적 임무**: Streamlit 레이아웃 구성, 네비게이션 동적 매핑, 세션 가로채기 적용 및 공통 CSS 인젝션을 담당합니다.
 *   **권장 및 필수 가동 스킬**:
-    *   `receiving-code-review` / `requesting-code-review` (글로벌 스킬): 코드 변경점의 PRD 충족도, 스타일 규정 위반 및 잠재적인 부작용(Side Effect)의 정교한 크로스 체크
-    *   [agentmemory](../skills/memory/core/SKILL.md) (로컬 스킬): 특정 소스 한 줄이 이전에 어떤 맥락(Session History)에서 도입되었는지 확인하여 불필요한 코드 리팩토링 간섭을 차단
-    *   [knowledge-capture](../skills/knowledge-capture/SKILL.md) (로컬 스킬): 카파시 코딩 가이드라인 적용(Stage 1), 마크다운/링크 린트, 지식 수확 및 위키 자동 동기화를 관할하는 지식/품질 통합 순환 루프
+    *   `frontend-design` (글로벌): 프리미엄 화면 타이포그래피 및 글래스모피즘 테마 주입
+    *   `systematic-debugging` (글로벌): 위젯 강제 할당 오류(StreamlitAPIException) 자율 극복
+    *   `verification-before-completion` (글로벌): Streamlit 화면 렌더링 무결성 증거 획득
 
-### [Quality Evaluator (평가 서브에이전트)](roles/quality-evaluator.md)
-*   **본질적 임무**: 로컬 하네스 테스트 자율 구동, 빌드 컴파일 무결 진증 및 PRD 정량 평가 스코어카드를 최종 기재하고 최종 릴리즈 게이트를 승인 제어합니다.
+### [component-agent (Component Agent)](.agents/agents/roles/component-agent.md)
+*   **본질적 임무**: 프리미엄 Plotly 반응형 차트 튜닝, 미학적 일관성 확보 및 프리미엄 비주얼 요소를 탑재합니다.
 *   **권장 및 필수 가동 스킬**:
-    *   [guardrail](../skills/quality/guardrail/SKILL.md) (로컬 스킬): 배포 직전 코드 이모지 규정 및 데이터 스키마 물리 매핑 유효성 최종 정밀 자율 통과 여부 검진
-    *   `verification-before-completion` (글로벌 스킬): `make verify` 등의 전수 단위 테스트 구동 지침 실행 및 에러 바운더리 검정 완수
-    *   `finishing-a-development-branch` (글로벌 스킬): 완치 확인 후 로컬 브랜치 안전 로컬 머지 및 워크트리 복원 마무리 실행
-    *   [agent_hooks](../skills/agent_hooks/SKILL.md) (로컬 스킬): 자율 세션 실시간 로그 분석 및 장애 요인의 ChromaDB 장기 학습 기억 연계 등록 지휘
+    *   `frontend-design` (글로벌): 시각화 차트의 시각적 하모니 및 고급 테마 앰비언트 구현
+    *   `verification-before-completion` (글로벌): 시각화 오브젝트 정상 작동 정밀 검정
+
+### [refactoring-agent (Refactoring Agent)](.agents/agents/roles/refactoring-agent.md)
+*   **본질적 임무**: 코드 복잡도 정밀 진단, 중복 제어 및 소스 코드 다이어트를 통한 3-Layer 전향 배치를 완수합니다.
+*   **권장 및 필수 가동 스킬**:
+    *   `systematic-debugging` (글로벌): 리팩토링 과정에서 유입되는 가설 오류 추적
+    *   `verification-before-completion` (글로벌): 소스 경량화 후의 단위 빌드 정상성 통과 여부 검증
+
+### [automation-agent (Automation Agent)](.agents/agents/roles/automation-agent.md)
+*   **본질적 임무**: 백그라운드 크론 스케줄러, 보고서 생성기 및 웹훅 알림 자동화 동작 환경을 빌딩합니다.
+*   **권장 및 필수 가동 스킬**:
+    *   `systematic-debugging` (글로벌): 백그라운드 구동 예외 및 통지 누수 추적
+    *   `verification-before-completion` (글로벌): 배치 실행 스크립트 정합 증명
+
+### [test-agent (Test Agent)](.agents/agents/roles/test-agent.md)
+*   **본질적 임무**: 단위 테스트 케이스 설계, 인메모리 고립 Mocking 테스트 및 회귀 테스트 스위트를 기획 구축합니다.
+*   **권장 및 필수 가동 스킬**:
+    *   `test-driven-development` (글로벌): 구현 전 테스트 스케포커스 및 회귀 무결성 검증 케이스 생성
+    *   `verification-before-completion` (글로벌): 단위 테스트 정상 작동 입증
+
+---
+
+## 3. 분석 및 정적 품질 레이어 (Analytics & Quality Tier)
+
+### [insight-agent (Insight Agent)](.agents/agents/roles/insight-agent.md)
+*   **본질적 임무**: 데이터 이상치(Anomaly) 조기 진단 및 Pareto, Trend, YoY 정량/정성 브리핑 분석 리포트를 생산합니다.
+*   **권장 및 필수 가동 스킬**:
+    *   `understand` (글로벌): 데이터셋 구조 분석 및 비즈니스 인과 분석 연동
+    *   [.agents/skills/memory/core/SKILL.md](.agents/skills/memory/core/SKILL.md) (로컬): 과거 유사 지표 분석 리포트 메모리 회상 및 연계
+
+### [reviewer-agent (Reviewer Agent)](.agents/agents/roles/reviewer-agent.md)
+*   **본질적 임무**: 파이썬 소스 코드의 스타일 규정, 3-Layer 위반 검지 및 아키텍처 결합도 피드백(Diff)을 발행합니다.
+*   **권장 및 필수 가동 스킬**:
+    *   `receiving-code-review` / `requesting-code-review` (글로벌): 코드 정밀 교정 및 안전 리뷰 프로세스 조율
+    *   [.agents/skills/memory/core/SKILL.md](.agents/skills/memory/core/SKILL.md) (로컬): 변경된 소스코드 라인의 장기 기억 맥락 대조
+    *   [.agents/skills/knowledge-capture/SKILL.md](.agents/skills/knowledge-capture/SKILL.md) (로컬): 카파시 코딩 규정 적용, 기술 마크다운 린트, 세션종료 자율 지식 캡처(Raw) 및 위키 정합성 관리
+
+### [project-health-agent (Project Health Agent)](.agents/agents/roles/project-health-agent.md)
+*   **본질적 임무**: 명명 규칙 준수율 정량 감사, DB 테이블 상수 동기화 진단 및 결합도 지표를 관리합니다.
+*   **권장 및 필수 가동 스킬**:
+    *   [.agents/skills/quality/guardrail/SKILL.md](.agents/skills/quality/guardrail/SKILL.md) (로컬): 배포 전 이모지 혼용율 스캔, 커밋 메시지 규격 검사 및 골든 스키마 연동 진단
+    *   [.agents/skills/quality/sql/SKILL.md](.agents/skills/quality/sql/SKILL.md) (로컬): SQL 파일 구문 내 AS 별칭 물리 룰 준수율 감사
+    *   [.agents/skills/quality/korean-metadata/SKILL.md](.agents/skills/quality/korean-metadata/SKILL.md) (로컬): 디스플레이 사전 데이터 갱신 및 컬럼 정합성 동기화
+
+### [performance-agent (Performance Agent)](.agents/agents/roles/performance-agent.md)
+*   **본질적 임무**: Rerun 지연 유발 로직 제어, 캐시 정밀 상태 분석 및 연산 병목 정량 진단 보고를 관리합니다.
+*   **권장 및 필수 가동 스킬**:
+    *   [.agents/skills/development/streamlit/SKILL.md](.agents/skills/development/streamlit/SKILL.md) (로컬): Streamlit 성능 튜닝 가이드 기동
+    *   `verification-before-completion` (글로벌): 메모리 누수 및 Rerun 빈도 측정 검증
+
+---
+
+## 4. 거버넌스 및 배포 레이어 (Governance & Deployment Tier)
+
+### [evaluator-agent (Evaluator Agent)](.agents/agents/roles/evaluator-agent.md)
+*   **본질적 임무**: 종합 하네스 구동, 빌드 컴파일 무결성 보증 및 최종 Pass/Fail 게이트를 판정하는 채점표(Scorecard)를 발행합니다.
+*   **권장 및 필수 가동 스킬**:
+    *   [.agents/skills/quality-assurance/SKILL.md](.agents/skills/quality-assurance/SKILL.md) (로컬): 배포 전 5대 품질 관문(Quality Gate) 정밀 종합 자율 완수
+    *   [.agents/skills/quality/guardrail/SKILL.md](.agents/skills/quality/guardrail/SKILL.md) (로컬): 배포 직전 이모지 규정 및 데이터 스키마 정합성 최종 통과 진증
+    *   `verification-before-completion` (글로벌): `make verify` 등 단위/정적 테스트 종합 실행 및 Evidence 확보
+
+### [release-agent (Release Agent)](.agents/agents/roles/release-agent.md)
+*   **본질적 임무**: 배포 준비 상태 체크리스트 확인, 릴리즈 노트 영속 마크다운 기재 및 안전 머지를 정렬합니다.
+*   **권장 및 필수 가동 스킬**:
+    *   `finishing-a-development-branch` (글로벌): 배포 완료를 위한 로컬 머지 및 브랜치 자율 정비
+    *   [.agents/skills/agent_hooks/SKILL.md](.agents/skills/agent_hooks/SKILL.md) (로컬): 세션 장애 SQLite 로그 학습 기억 연계
+
+### [knowledge-curator-agent (Knowledge Curator Agent)](.agents/agents/roles/knowledge-curator-agent.md)
+*   **본질적 임무**: 완수된 아키텍처 지식의 자율 큐레이션, 위키 린트 검증 및 지식 그래프와의 동기화를 수행합니다.
+*   **권장 및 필수 가동 스킬**:
+    *   [.agents/skills/knowledge-capture/SKILL.md](.agents/skills/knowledge-capture/SKILL.md) (로컬): 세션종료 지식 자율 캡처, 위키 자동 마이그레이션 및 정합성 린트
+    *   `understand` (글로벌): 최신 구현 소스를 지식 그래프(.understand-anything/knowledge-graph.json) 상에 유기적으로 추가
+
+### [documentation-agent (Documentation Agent)](.agents/agents/roles/documentation-agent.md)
+*   **본질적 임무**: 기술 설계 문서, API 명세, 아키텍처 결정 레코드(ADR)를 조밀하게 마크다운에 영속 기록합니다.
+*   **권장 및 필수 가동 스킬**:
+    *   [.agents/skills/knowledge-capture/SKILL.md](.agents/skills/knowledge-capture/SKILL.md) (로컬): 산출 기술 사양 문서의 WSL 링크 및 린트 정밀 정비
+    *   `writing-plans` (글로벌): 정교한 명세서 포맷 조립 기획
+
+### [prompt-optimizer-agent (Prompt Optimizer Agent)](.agents/agents/roles/prompt-optimizer-agent.md)
+*   **본질적 임무**: 에이전트별 행동 규칙 프롬프트의 불필요 토큰 압축 및 지침 자율 자가 튜닝을 지휘합니다.
+*   **권장 및 필수 가동 스킬**:
+    *   `skill-creator` (글로벌): 에이전트 성능 평가 및 지시 정확도 자가 튜닝 성능 측정
+    *   `writing-skills` (글로벌): 프롬프트 수정 전후의 정상 구동 검정 통과율 유효성 검증
