@@ -26,3 +26,20 @@ updated: 2026-06-29
   - 사용자의 OS 미디어나 강제 다크 모드 속성에 의존하지 않고, Streamlit 빌트인 CSS 커스텀 변수(예: `--text-color`, `--background-color`, `--secondary-background-color`)를 SSOT로 상시 적용하여 가독성 가림 현상을 방지합니다.
 - **로딩 최적화**: 
   - 불필요한 전체 렌더링을 방지하기 위해 부분 갱신 조각(Fragment)과 스마트 캐싱을 적절히 구성합니다.
+
+## 4. 단독 기동 세이프가드 및 ECharts 컴포넌트 통합 표준 (Standalone Safeguard & ECharts Integration)
+- **독립 페이지 단독 구동 시 레이아웃 쏠림 해결 (`layout="wide"`)**:
+  - 메인 `app.py` 프레임워크를 통하지 않고 각 서브 대시보드 화면(`app/pages/` 하위)을 단독으로 다이렉트 실행 시, Streamlit 기본값이 `layout="centered"`로 작동하여 전체 UI 및 제목 타이틀이 정중앙으로 강제 수축·밀리는 시각적 불균형이 유발됩니다.
+  - 이를 예방하기 위해, 모든 개별 화면 페이지의 진입 초입부(`SECTION 2`)에 아래와 같은 글로벌 세이프가드를 탑재하여 항상 `wide` 화면 폭을 보증함으로써 좌측 상단 좌우 대칭 타이틀 레이아웃을 엄수합니다:
+    ```python
+    try:
+        st.set_page_config(layout="wide", page_title="Data Analysis")
+    except Exception:
+        # app.py 메인에서 기 지정된 set_page_config가 이미 실행 중일 경우의 이중 호출 예외 방어
+        pass
+    ```
+- **범용 ECharts 레이더 차트 고도화 (Multi-Series & JsCode Formatter)**:
+  - 레이더 차트의 수평 시각적 균형과 정밀 렌더링을 위해 최대 축 범위를 고정(`max_val=15.0`)하고, 반지름(`radius: "70%"`) 및 중심 정렬(`center: ["50%", "46%"]`)을 최적화하여 인접 컴포넌트들과의 수직 정렬을 완전하게 일치시킵니다.
+  - 다중 데이터 비교 시각화 지원을 위해 `values` 리스트와 `series_colors`, `series_symbols`의 유연한 확장을 수용하며, 특정 연간 평균(Average) 데이터의 불필요한 마커('dot')를 제거하는 포맷팅(`series_symbols=["circle", "none"]`)을 동적으로 적용합니다.
+  - 데이터 오버 시 툴팁 내 수치가 날것으로 출력되거나 일그러지는 현상을 차단하기 위해 `streamlit_echarts.JsCode` 기반의 동적 툴팁 포매터를 활용하여, 소수점 첫째자리(`.1f`) 및 한글 축 설명을 이모지 배제 규칙 하에 품격 있게 빌드합니다.
+
