@@ -21,6 +21,7 @@ updated: 2026-06-29
 ### ② 비즈니스 수식 및 기획 프로세스
 - **[Quality Metric & Business Rules](../wiki/Quality Metric & Business Rules.md)**: 핵심 품질 도메인 지표 연산 공식 및 공장 정적 맵핑 관리
 - **[PRD Planning Workflow](../wiki/PRD Planning Workflow.md)**: 4대 섹션 PRD 명세 및 기획-코드 1:1 대칭 정렬(Karpathy 가이드)
+- **[TP OE 2026 Monitoring System](../wiki/TP OE 2026 Monitoring System.md)**: SQLite 트랜잭션 제어, 2026 타겟 M-Code 추출 및 이종 DB 데이터 타입 결합 아키텍처
 
 ### ③ 검증 가드레일, 협업 및 인프라
 - **[Harness Testing & Quality Gate](../wiki/Harness Testing & Quality Gate.md)**: `tests/` 산하 독립 샌드박스 검증 및 배포 전 자율 정적 검사
