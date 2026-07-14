@@ -43,3 +43,13 @@ updated: 2026-07-02
   - 월 단위 시계열을 수치 축(`linear`)으로 완벽하게 수평 정렬하기 위해, 프론트엔드로 전달 전 데이터 프레임의 월(MM) 필드를 반드시 **정수형(`int`)으로 변환**하여 차트에 바인딩해야 합니다.
   - 이를 통해 수치 좌표 `1~12`와 `tickvals`의 `1~12` 좌표가 1:1 대응하여 시각화 정합성이 완벽하게 보장됩니다. 관련 시뮬레이션 및 사전 입증 테스트 하네스는 `tests/test_monthly_chart_bug.py`를 통해 구조적으로 영구 보존됩니다.
 
+## 6. 타임스탬프 축 세로 가이드라인 및 실측 불량율(NG Rate) 계산 정합성 수칙 (Guideline & Stats Sync)
+- **Plotly add_vline 내장 어노테이션의 pd.Timestamp sum() 타입 버그 극복**:
+  - Plotly의 `add_vline` 함수에 `pd.Timestamp` 객체를 전달하면서 동시에 `annotation_text` 를 사용하면 Plotly 내부적으로 가로축 중심 평균을 구하기 위해 `_mean(X)` $\rightarrow$ `sum(x)` 가 호출됩니다.
+  - 파이썬 내장 `sum` 은 초기값 `0` 에서 루프를 시작하여 `0 + Timestamp` 가 가동되고, Pandas 표준에 따라 `TypeError: Addition/subtraction of integers and integer-arrays with Timestamp is no longer supported` 에러가 나며 대시보드가 크래시됩니다.
+  - **해결 방안 (Workaround)**: 이 에러를 차단하기 위해 세로 기준선(`add_vline`) 자체는 어노테이션 관련 매개변수 없이 독립 렌더링하고, 텍스트 라벨(예: `"BP Date"`)은 상대 좌표계(`yref="paper"`) 상에서 `fig.add_annotation` 을 사용해 직접 수동 배치하는 설계가 가장 완벽하고 안전합니다.
+- **실측 불량율(NG Rate)과 가이드라인의 100% 물리적 동조화 (Single Source of Truth)**:
+  - 대시보드 속 정보 카드의 `Lower / Upper NG %` 실측 계산 시, 원시 제품 규격이 아니라 **차트에 실제로 드로잉되어 눈에 보이는 Limit 점선(예: Both 상태 시 lcl/ucl, Max Limit 상태 시 idx - 0.3 등)**을 그대로 불량율 연산의 한계치로 사용해야 합니다.
+  - 가이드라인 드로잉 분기 조건과 불량율 연산 기준선 추출 조건을 단일 조건 변수(`is_both_spec` 플래그) 하에서 완벽하게 상호 동조화시킴으로써, 화면 속 점선 밖의 실제 측정 도트들과 정보 카드의 수치 정보가 한 치의 단수 오차도 없이 논리적으로 완전하게 수렴하는 최상의 정합성을 보장합니다.
+
+
