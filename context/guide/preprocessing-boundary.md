@@ -21,7 +21,7 @@ related:
   - "[context/guide/3layer-development-process.md](3layer-development-process.md)"
 
 consumers:
-  - "[agents/roles/planner-orchestrator.md](../../agents/roles/planner-orchestrator.md)"
+  - "[agents/roles/01_router-agent.md](../../agents/roles/01_router-agent.md)"
   - agent.ui_builder
   - agent.service_builder
 

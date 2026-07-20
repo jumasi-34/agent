@@ -1,6 +1,4 @@
-# 05_ROUTER_ARCHITECTURE.md
-
-# Router Architecture
+# [Router] Router Architecture
 
 ## 목적
 

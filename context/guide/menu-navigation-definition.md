@@ -20,7 +20,7 @@ related:
   - "[context/guide/new_page_development_workflow.md](new_page_development_workflow.md)"
 
 consumers:
-  - "[agents/roles/planner-orchestrator.md](../../agents/roles/planner-orchestrator.md)"
+  - "[agents/roles/01_router-agent.md](../../agents/roles/01_router-agent.md)"
   - agent.ui_builder
 
 updated: 2026-06-28

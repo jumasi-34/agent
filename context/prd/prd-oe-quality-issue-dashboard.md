@@ -22,7 +22,7 @@ related:
   - "[context/prd/prd-hgws-return-dashboard.md](prd-hgws-return-dashboard.md)"
 
 consumers:
-  - "[agents/roles/planner-orchestrator.md](../../agents/roles/planner-orchestrator.md)"
+  - "[agents/roles/01_router-agent.md](../../agents/roles/01_router-agent.md)"
   - ui-reviewer
 
 updated: 2026-06-28

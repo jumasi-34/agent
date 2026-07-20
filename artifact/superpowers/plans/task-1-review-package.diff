@@ -1,0 +1,87 @@
+=== COMMIT LOG ===
+d93cd18 feat(ncf): Update NCF tab orange badge to show SOP date instead of calculated months
+
+=== DIFF STAT ===
+ app/pages/_20_analysis/data_analysis_page.py |  5 ++--
+ docs/superpowers/plans/task-1-report.md      | 42 ++++++++++++++++++++++++++++
+ 2 files changed, 45 insertions(+), 2 deletions(-)
+
+=== DIFF DETAILS ===
+diff --git a/app/pages/_20_analysis/data_analysis_page.py b/app/pages/_20_analysis/data_analysis_page.py
+index 8b5495c..d06a90f 100644
+--- a/app/pages/_20_analysis/data_analysis_page.py
++++ b/app/pages/_20_analysis/data_analysis_page.py
+@@ -566,22 +566,23 @@ def _render_tab_ncf(params: IqmPlusParams) -> None:
+             elif isinstance(sop_date, datetime):
+                 sop_d = sop_date.date()
+             else:
+                 sop_d = sop_date
+                 
+             today = datetime.now().date()
+             months = (today.year - sop_d.year) * 12 + (today.month - sop_d.month)
+             prod_period_str = f"M+{months}" if months >= 0 else "M+0"
+ 
+     badge_html = ""
+-    if prod_period_str != "-":
+-        badge_html = f'<span class="ncf-period-badge">{prod_period_str}</span>'
++    # * [NCF 탭 주황색 뱃지 SOP 일자 노출] M+N 양산 기간 대신 YYYY-MM-DD 형식의 SOP 시작일을 노출하도록 수정
++    if sop_date_str != "-":
++        badge_html = f'<span class="ncf-period-badge">{sop_date_str}</span>'
+ 
+     metadata_card_html = (
+         f'<div class="shadcn-metric-card shadcn-metric-card-vertical shadcn-metric-card-gradient" '
+         f'style="position: relative; height: 100%; min-height: 8.5rem; display: flex; flex-direction: column; justify-content: center; box-sizing: border-box; padding: 1.25rem 1.25rem; gap: 0.35rem; text-align: left;">'
+         f'{badge_html}'
+         f'<div style="font-weight: 700; color: var(--primary-color); font-size: 0.85rem; white-space: nowrap; text-align: left;">{plant_val} ({mcode_val})</div>'
+         f'<div style="font-weight: 500; color: var(--text-color); font-size: 0.80rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; text-align: left; padding-bottom: 0.15rem;" title="{oem_val} | {vehicle_val}">{oem_val} | {vehicle_val}</div>'
+         f'<div style="display: flex; flex-direction: row; justify-content: space-between; align-items: center; font-size: 0.78rem; line-height: 1.2; border-top: 1px solid rgba(128, 128, 128, 0.15); padding-top: 0.35rem; width: 100%;">'
+         f'<span style="font-weight: 500; color: var(--text-color); opacity: 0.8; white-space: nowrap;">양산 시작일</span>'
+         f'<span style="font-weight: 700; color: var(--text-color); white-space: nowrap; margin-left: auto;">{sop_date_str}</span>'
+diff --git a/docs/superpowers/plans/task-1-report.md b/docs/superpowers/plans/task-1-report.md
+new file mode 100644
+index 0000000..2ae8ebf
+--- /dev/null
++++ b/docs/superpowers/plans/task-1-report.md
+@@ -0,0 +1,42 @@
++---
++id: docs.superpowers.plans.task-1-report
++title: "Task 1 Implementation Report: NCF Tab Orange Badge SOP Date Display"
++type: report
++status: active
++summary: >
++  NCF 탭의 첫 번째 메트릭 카드 오렌지 뱃지가 기존의 M+N 양산 기간 대신 
++  SOP 시작일(YYYY-MM-DD)을 노출하도록 수정한 작업 결과 리포트입니다.
++updated: 2026-07-01
++---
++
++# Task 1 Implementation Report
++
++## 1. 개요
++- **목적**: NCF(New Car Flow) 탭의 첫 번째 메트릭 카드 우상단에 위치한 오렌지 뱃지의 노출 값을 기존 양산 기간(M+N)에서 실제 SOP 일자(YYYY-MM-DD)로 변경하여 사용자에게 직접적인 양산 시점을 제공합니다.
++- **작업 대상 파일**: [app/pages/_20_analysis/data_analysis_page.py](app/pages/_20_analysis/data_analysis_page.py)
++
++## 2. 세부 수정 사항
++[app/pages/_20_analysis/data_analysis_page.py](app/pages/_20_analysis/data_analysis_page.py#L575-L578)의 뱃지 HTML 렌더링 로직을 다음과 같이 수정하였습니다.
++
++### 변경 전
++```python
++    badge_html = ""
++    if prod_period_str != "-":
++        badge_html = f'<span class="ncf-period-badge">{prod_period_str}</span>'
++```
++
++### 변경 후
++```python
++    badge_html = ""
++    # * [NCF 탭 주황색 뱃지 SOP 일자 노출] M+N 양산 기간 대신 YYYY-MM-DD 형식의 SOP 시작일을 노출하도록 수정
++    if sop_date_str != "-":
++        badge_html = f'<span class="ncf-period-badge">{sop_date_str}</span>'
++```
++
++## 3. 검증 결과
++- **정적 코드 검증**: `python tests/verify_code.py`를 실행하여 256개 파일에 대해 모두 무결성을 확인하였습니다.
++  - 결과: `[PASSED] 정상 파일: 256 / 256`
++- **테스트 슈트 검증**: `pytest`를 실행하여 전체 테스트의 통과 여부를 검증하고 있습니다.
++
++## 4. 특이 사항 및 우려 사항 (Concerns)
++- 특이 사항 없음. 기존의 양산 기간인 `prod_period_str` 연산 로직(563~573 라인)은 다른 영역에서 활용될 가능성을 고려하여 그대로 유지하였으며, 뱃지에 대입하는 변수만 안전하게 `sop_date_str`로 변경하였습니다.

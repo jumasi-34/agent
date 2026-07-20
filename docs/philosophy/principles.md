@@ -1,6 +1,4 @@
-# 01_PRINCIPLES.md
-
-# AI Agent Platform Principles
+# [Philosophy] AI Agent Platform Principles
 
 ## 목적
 

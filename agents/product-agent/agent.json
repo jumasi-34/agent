@@ -5,7 +5,7 @@
   "category": "Planner",
   "hidden": false,
   "contexts": [
-    "philosophy/vision.md",
+    "docs/philosophy/vision.md",
     "conventions/prd_standard_template.md"
   ],
   "outputs": [

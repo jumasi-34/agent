@@ -25,8 +25,8 @@ related:
   - "[context/checklist/reverse-sync-prevention.md](reverse-sync-prevention.md)"
 
 consumers:
-  - "[agents/roles/code-reviewer.md](../../agents/roles/code-reviewer.md)"
-  - "[agents/roles/quality-evaluator.md](../../agents/roles/quality-evaluator.md)"
+  - "[agents/roles/08_quality-agent.md](../../agents/roles/08_quality-agent.md)"
+  - "[agents/roles/08_quality-agent.md](../../agents/roles/08_quality-agent.md)"
 
 updated: 2026-06-28
 ---

@@ -1,6 +1,4 @@
-# router/08_routing_table.md
-
-# Router Routing Table
+# [Router] Router Routing Table
 
 ## 목적
 
@@ -21,18 +19,23 @@ Routing Table은 프로젝트의 표준 실행 흐름을 정의한다.
 
 모든 요청은 아래 순서로 처리한다.
 
-```text
-User Request
-    ↓
-Work Classification
-    ↓
-Intent Analysis
-    ↓
-Routing Table
-    ↓
-Execution Plan
-    ↓
-Agent Execution
+```mermaid
+flowchart TD
+    classDef step fill:#3b82f6,stroke:#1d4ed8,color:#fff,stroke-width:1.5px;
+    classDef decision fill:#f59e0b,stroke:#d97706,color:#fff,stroke-width:1.5px;
+    classDef output fill:#10b981,stroke:#059669,color:#fff,stroke-width:1.5px;
+
+    Req["사용자 요청<br/>(User Request)"] --> Class["Work Classification<br/>(작업 종류 판별)"]:::step
+    Class --> Intent["Intent Analysis<br/>(사용자 의도 분석)"]:::step
+    Intent --> Route{"Routing Table<br/>(기구축 시나리오 판단)"}:::decision
+    
+    Route -->|일치| Scenario["Execution Plan 수립<br/>(표준 12대 파이프라인 매핑)"]:::step
+    Route -->|미일치| Dynamic["Dynamic Routing 수립<br/>(동적 작업 가동 기획)"]:::step
+    
+    Scenario --> Exec["Agent Execution<br/>(협업 오케스트레이션 실행)"]:::step
+    Dynamic --> Exec
+    
+    Exec --> Success["Definition of Success<br/>(DoD 최종 품질 검증)"]:::output
 ```
 
 ---

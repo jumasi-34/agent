@@ -1,0 +1,285 @@
+=== WHOLE BRANCH COMMIT LOG ===
+ebaabce docs: add Task 2 implementation report
+81334fc feat: implement dynamic subplot widths and thousands formatter in PremiumPpmByFactorPlot
+cb9449c docs: Add design specification for NCF chart visualization improvements
+8e4fd45 feat(ncf): Update NCF tab orange badge to show SOP date instead of calculated months
+
+=== WHOLE BRANCH DIFF STAT ===
+ app/core/plot/components.py                        | 15 +++-
+ app/pages/_20_analysis/data_analysis_page.py       |  5 +-
+ docs/superpowers/plans/task-1-report.md            | 43 ++++++++++
+ docs/superpowers/plans/task-2-report.md            | 94 ++++++++++++++++++++++
+ ...1-ncf-chart-visualization-improvement-design.md | 24 ++++++
+ 5 files changed, 177 insertions(+), 4 deletions(-)
+
+=== WHOLE BRANCH DIFF DETAILS ===
+diff --git a/app/core/plot/components.py b/app/core/plot/components.py
+index b142b69..e39646b 100644
+--- a/app/core/plot/components.py
++++ b/app/core/plot/components.py
+@@ -1216,43 +1216,54 @@ class PremiumPpmByFactorPlot:
+         try:
+             TOP_N = 20
+             GROUPS = [
+                 ("BY_SPEC_REV", "SPEC_REV", "Spec Rev"),
+                 ("BY_BLDG_MC", "BLDG_MC_CD", "Building MC"),
+                 ("BY_CURE_MC", "CURE_MC_CD", "Curing MC"),
+                 ("BY_MOLD", "MLD_NO", "Mold"),
+             ]
+             BAR_COLOR = colors.slate_700
+ 
++            # * [PremiumPpmByFactorPlot.render] X축 컬럼 수에 비례하는 동적 너비 가중치 계산 (하한값 3 보장)
++            widths = []
++            for dict_key, x_col, _ in GROUPS:
++                df = self.ncf_df_dict.get(dict_key, pd.DataFrame())
++                num_items = min(len(df), TOP_N) if not df.empty else 0
++                widths.append(max(num_items, 3))
++            
++            total_width = sum(widths)
++            normalized_widths = [w / total_width for w in widths]
++
+             fig = make_subplots(
+                 rows=1,
+                 cols=4,
+                 subplot_titles=[g[2] for g in GROUPS],
+                 shared_yaxes=False,
+-                horizontal_spacing=0.06
++                horizontal_spacing=0.06,
++                column_widths=normalized_widths  # 동적 너비 할당
+             )
+ 
+             for col_idx, (dict_key, x_col, label_name) in enumerate(GROUPS, start=1):
+                 df = self.ncf_df_dict.get(dict_key, pd.DataFrame())
+                 if df.empty:
+                     continue
+ 
+                 total_items = len(df)
+                 df = df.nlargest(TOP_N, "PPM").reset_index(drop=True)
+ 
+                 fig.add_trace(
+                     go.Bar(
+                         x=df[x_col].astype(str),
+                         y=df["PPM"],
+                         text=df["PPM"].apply(lambda v: f"{v:,.0f}"),
+                         textposition="outside",
+-                        texttemplate="%{y:.0f}",
++                        texttemplate="%{y:,.0f}",  # 쉼표 구분 기호 표기 적용
+                         textfont=dict(size=9, family=get_font_family("primary")),
+                         marker_color=BAR_COLOR,
+                         opacity=0.85,
+                         customdata=df[["DFT_QTY", "count"]].values,
+                         hovertemplate=(
+                             f"<b>{label_name}</b>: %{{x}}<br>"
+                             "PPM: %{y:,.1f}<br>"
+                             "불량수량: %{customdata[0]:,}<br>"
+                             "생산수량: %{customdata[1]:,}"
+                             "<extra></extra>"
+diff --git a/app/pages/_20_analysis/data_analysis_page.py b/app/pages/_20_analysis/data_analysis_page.py
+index 8b5495c..d06a90f 100644
+--- a/app/pages/_20_analysis/data_analysis_page.py
++++ b/app/pages/_20_analysis/data_analysis_page.py
+@@ -566,22 +566,23 @@ def _render_tab_ncf(params: IqmPlusParams) -> None:
+             elif isinstance(sop_date, datetime):
+                 sop_d = sop_date.date()
+             else:
+                 sop_d = sop_date
+                 
+             today = datetime.now().date()
+             months = (today.year - sop_d.year) * 12 + (today.month - sop_d.month)
+             prod_period_str = f"M+{months}" if months >= 0 else "M+0"
+ 
+     badge_html = ""
+-    if prod_period_str != "-":
+-        badge_html = f'<span class="ncf-period-badge">{prod_period_str}</span>'
++    # * [NCF 탭 주황색 뱃지 SOP 일자 노출] M+N 양산 기간 대신 YYYY-MM-DD 형식의 SOP 시작일을 노출하도록 수정
++    if sop_date_str != "-":
++        badge_html = f'<span class="ncf-period-badge">{sop_date_str}</span>'
+ 
+     metadata_card_html = (
+         f'<div class="shadcn-metric-card shadcn-metric-card-vertical shadcn-metric-card-gradient" '
+         f'style="position: relative; height: 100%; min-height: 8.5rem; display: flex; flex-direction: column; justify-content: center; box-sizing: border-box; padding: 1.25rem 1.25rem; gap: 0.35rem; text-align: left;">'
+         f'{badge_html}'
+         f'<div style="font-weight: 700; color: var(--primary-color); font-size: 0.85rem; white-space: nowrap; text-align: left;">{plant_val} ({mcode_val})</div>'
+         f'<div style="font-weight: 500; color: var(--text-color); font-size: 0.80rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; text-align: left; padding-bottom: 0.15rem;" title="{oem_val} | {vehicle_val}">{oem_val} | {vehicle_val}</div>'
+         f'<div style="display: flex; flex-direction: row; justify-content: space-between; align-items: center; font-size: 0.78rem; line-height: 1.2; border-top: 1px solid rgba(128, 128, 128, 0.15); padding-top: 0.35rem; width: 100%;">'
+         f'<span style="font-weight: 500; color: var(--text-color); opacity: 0.8; white-space: nowrap;">양산 시작일</span>'
+         f'<span style="font-weight: 700; color: var(--text-color); white-space: nowrap; margin-left: auto;">{sop_date_str}</span>'
+diff --git a/docs/superpowers/plans/task-1-report.md b/docs/superpowers/plans/task-1-report.md
+new file mode 100644
+index 0000000..8143c2f
+--- /dev/null
++++ b/docs/superpowers/plans/task-1-report.md
+@@ -0,0 +1,43 @@
++---
++id: docs.superpowers.plans.task-1-report
++title: "Task 1 Implementation Report: NCF Tab Orange Badge SOP Date Display"
++type: report
++status: active
++summary: >
++  NCF 탭의 첫 번째 메트릭 카드 오렌지 뱃지가 기존의 M+N 양산 기간 대신 
++  SOP 시작일(YYYY-MM-DD)을 노출하도록 수정한 작업 결과 리포트입니다.
++updated: 2026-07-01
++---
++
++# Task 1 Implementation Report
++
++## 1. 개요
++- **목적**: NCF(New Car Flow) 탭의 첫 번째 메트릭 카드 우상단에 위치한 오렌지 뱃지의 노출 값을 기존 양산 기간(M+N)에서 실제 SOP 일자(YYYY-MM-DD)로 변경하여 사용자에게 직접적인 양산 시점을 제공합니다.
++- **작업 대상 파일**: [app/pages/_20_analysis/data_analysis_page.py](app/pages/_20_analysis/data_analysis_page.py)
++
++## 2. 세부 수정 사항
++[app/pages/_20_analysis/data_analysis_page.py](app/pages/_20_analysis/data_analysis_page.py#L575-L578)의 뱃지 HTML 렌더링 로직을 다음과 같이 수정하였습니다.
++
++### 변경 전
++```python
++    badge_html = ""
++    if prod_period_str != "-":
++        badge_html = f'<span class="ncf-period-badge">{prod_period_str}</span>'
++```
++
++### 변경 후
++```python
++    badge_html = ""
++    # * [NCF 탭 주황색 뱃지 SOP 일자 노출] M+N 양산 기간 대신 YYYY-MM-DD 형식의 SOP 시작일을 노출하도록 수정
++    if sop_date_str != "-":
++        badge_html = f'<span class="ncf-period-badge">{sop_date_str}</span>'
++```
++
++## 3. 검증 결과
++- **정적 코드 검증**: `python tests/verify_code.py`를 실행하여 256개 파일에 대해 모두 무결성을 확인하였습니다.
++  - 결과: `[PASSED] 정상 파일: 256 / 256`
++- **테스트 슈트 검증**: 전체 `pytest` 테스트 슈트 166개를 전수 실행하여 모두 성공적으로 통과하였습니다.
++  - 결과: `166 passed, 6 warnings in 127.85s (100% 통과)`
++
++## 4. 특이 사항 및 우려 사항 (Concerns)
++- 특이 사항 없음. 기존의 양산 기간인 `prod_period_str` 연산 로직(563~573 라인)은 다른 영역에서 활용될 가능성을 고려하여 그대로 유지하였으며, 뱃지에 대입하는 변수만 안전하게 `sop_date_str`로 변경하였습니다.
+diff --git a/docs/superpowers/plans/task-2-report.md b/docs/superpowers/plans/task-2-report.md
+new file mode 100644
+index 0000000..9f437f9
+--- /dev/null
++++ b/docs/superpowers/plans/task-2-report.md
+@@ -0,0 +1,94 @@
++---
++id: docs.superpowers.plans.task-2-report
++title: "Task 2 Implementation Report: Dynamic Width and Thousands Separator in PremiumPpmByFactorPlot"
++type: report
++status: active
++summary: >
++  PremiumPpmByFactorPlot.render 메소드를 수정하여 4대 공정 요인별 PPM 분포 서브플롯의
++  동적 너비 가중치(Dynamic subplot column widths) 및 쉼표 서식(Thousands separator)을 구현한 작업 결과 리포트입니다.
++updated: 2026-07-01
++---
++
++# Task 2 Implementation Report
++
++## 1. 개요
++- **목적**: PremiumPpmByFactorPlot 차트 컴포넌트의 가독성과 시각적 균형을 높이기 위해, 각 서브플롯 컬럼의 X축 데이터 수에 비례하여 동적으로 가중치 너비를 적용하고, 바 차트 상단의 PPM 텍스트 레이블에 천 단위 쉼표 구분자 포맷터를 구현합니다.
++- **작업 대상 파일**: [app/core/plot/components.py](app/core/plot/components.py)
++
++## 2. 세부 수정 사항
++[app/core/plot/components.py](app/core/plot/components.py#L1214-L1266)의 렌더링 로직을 다음과 같이 수정하였습니다.
++
++### ① 동적 너비 가중치 계산 및 적용
++각 요인(SPEC_REV, BLDG_MC_CD, CURE_MC_CD, MLD_NO)의 데이터프레임 길이를 기반으로 최소 3, 최대 20(`TOP_N`) 범위의 가중치를 계산한 후 이를 `column_widths`에 전달했습니다.
++
++- **변경 전**:
++```python
++            fig = make_subplots(
++                rows=1,
++                cols=4,
++                subplot_titles=[g[2] for g in GROUPS],
++                shared_yaxes=False,
++                horizontal_spacing=0.06
++            )
++```
++
++- **변경 후**:
++```python
++            # * [PremiumPpmByFactorPlot.render] X축 컬럼 수에 비례하는 동적 너비 가중치 계산 (하한값 3 보장)
++            widths = []
++            for dict_key, x_col, _ in GROUPS:
++                df = self.ncf_df_dict.get(dict_key, pd.DataFrame())
++                num_items = min(len(df), TOP_N) if not df.empty else 0
++                widths.append(max(num_items, 3))
++            
++            total_width = sum(widths)
++            normalized_widths = [w / total_width for w in widths]
++
++            fig = make_subplots(
++                rows=1,
++                cols=4,
++                subplot_titles=[g[2] for g in GROUPS],
++                shared_yaxes=False,
++                horizontal_spacing=0.06,
++                column_widths=normalized_widths  # 동적 너비 할당
++            )
++```
++
++### ② 천 단위 쉼표 포맷터 적용 (Thousands Separator)
++바 차트 위에 렌더링되는 텍스트 레이블의 포맷 문자열을 천 단위 쉼표가 구분되도록 적용했습니다.
++
++- **변경 전**:
++```python
++                fig.add_trace(
++                    go.Bar(
++                        x=df[x_col].astype(str),
++                        y=df["PPM"],
++                        text=df["PPM"].apply(lambda v: f"{v:,.0f}"),
++                        textposition="outside",
++                        texttemplate="%{y:.0f}",
++                        textfont=dict(size=9, family=get_font_family("primary")),
++                        ...
++```
++
++- **변경 후**:
++```python
++                fig.add_trace(
++                    go.Bar(
++                        x=df[x_col].astype(str),
++                        y=df["PPM"],
++                        text=df["PPM"].apply(lambda v: f"{v:,.0f}"),
++                        textposition="outside",
++                        texttemplate="%{y:,.0f}",  # 쉼표 구분 기호 표기 적용
++                        textfont=dict(size=9, family=get_font_family("primary")),
++                        ...
++```
++
++## 3. 검증 결과
++- **정적 코드 검증**: `python tests/verify_code.py`를 실행하여 256개 전체 파이썬 파일 및 아티팩트가 무결함을 입증했습니다.
++  - 결과: `[PASSED] 정상 파일: 256 / 256`
++- **단위 및 통합 테스트**:
++  - `pytest tests/test_layer_boundary.py` 테스트 슈트 성공 통과 (`8 passed`)
++  - `pytest tests/core/plot/test_components.py` 테스트 슈트 성공 통과 (`4 passed, 2 warnings`)
++
++## 4. 특이 사항 및 우려 사항 (Concerns)
++- 특이 사항 없음. 기존의 테스트 슈트 및 정적 코드 검증을 완벽하게 통과하여 변경 사항의 영향도가 격리되어 있음을 확인하였습니다.
+diff --git a/docs/superpowers/specs/2026-07-01-ncf-chart-visualization-improvement-design.md b/docs/superpowers/specs/2026-07-01-ncf-chart-visualization-improvement-design.md
+new file mode 100644
+index 0000000..35bae6b
+--- /dev/null
++++ b/docs/superpowers/specs/2026-07-01-ncf-chart-visualization-improvement-design.md
+@@ -0,0 +1,24 @@
++# NCF Chart Visualization Improvement Design Specification
++
++## Overview
++
++Improve the NCF tab's bottom process factor PPM distribution subplots by dynamically adjusting the subplot widths in proportion to the number of bars on the X-axis, and formatting bar labels to include thousands separators.
++
++## Proposed Architecture
++
++1. **Dynamic Subplot Width Apportionment:**
++   - Scan each of the 4 process factor datasets (`BY_SPEC_REV`, `BY_BLDG_MC`, `BY_CURE_MC`, `BY_MOLD`) to compute the actual number of elements that will be rendered, capped at `TOP_N = 20`.
++   - Apply a safety lower-bound limit of `3` to each weight to avoid excessively squeezed layout dimensions.
++   - Supply the normalized column widths array `column_widths` to Plotly's `make_subplots`.
++
++2. **Formatting Numbers with Thousands Separator:**
++   - Modify the `texttemplate` field in `go.Bar` trace configuration from `"%{y:.0f}"` to `"%{y:,.0f}"` to enable nativethousands separator support.
++
++## Targeted Files
++
++- `app/core/plot/components.py` (specifically `PremiumPpmByFactorPlot.render`)
++
++## Verification Strategy
++
++- Run the main test suite: `python tests/verify_code.py` to check for syntax and layer boundary violations.
++- Verify that `data_analysis_page.py` imports and runs without regressions.

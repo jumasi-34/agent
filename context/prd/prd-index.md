@@ -22,7 +22,7 @@ related:
   - "[context/prd/prd-oe-quality-issue-dashboard.md](prd-oe-quality-issue-dashboard.md)"
 
 consumers:
-  - "[agents/roles/planner-orchestrator.md](../../agents/roles/planner-orchestrator.md)"
+  - "[agents/roles/01_router-agent.md](../../agents/roles/01_router-agent.md)"
   - agent.system_administrator
 
 updated: 2026-06-28

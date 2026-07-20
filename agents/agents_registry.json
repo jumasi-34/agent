@@ -7,7 +7,7 @@
       "category": "Router",
       "hidden": false,
       "contexts": [
-        "philosophy/vision.md",
+        "docs/philosophy/vision.md",
         "router/routing_table_rules.json"
       ],
       "outputs": [],
@@ -41,7 +41,7 @@
       "category": "Planner",
       "hidden": false,
       "contexts": [
-        "philosophy/vision.md",
+        "docs/philosophy/vision.md",
         "conventions/prd_standard_template.md"
       ],
       "outputs": [

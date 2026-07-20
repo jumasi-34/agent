@@ -39,11 +39,12 @@ updated: 2026-06-29
 
 | 레이어 | 역할 | 파일명 규칙 | 올바른 예시 |
 | :--- | :--- | :--- | :--- |
-| **UI 메인** | Streamlit 화면 구성 및 입력 필터 제어 | `*_page.py` | `cqms_dashboard_page.py` |
-| **UI 시각화** | Plotly 차트 드로잉 및 Hover 포맷팅 | `*_plots.py` | `cqms_dashboard_plots.py` |
+| **UI 메인** | Streamlit 화면 구성 및 입력 필터 제어 | `page_*.py` | `page_oe_quality_dashboard.py` |
+| **UI 렌더러** | 복잡한 화면 배치 및 컴포넌트 렌더링 분리 (탭 등) | `renderer_*.py` | `renderer_global_tab.py`, `renderer_iqm_plus_main.py` |
+| **UI 시각화** | Plotly 차트 드로잉 및 Hover 포맷팅 | `plots_*.py` | `plots_oe_quality_dashboard.py` |
 | **Service** | Pandas 전처리, 비즈니스 계산 및 캐싱 | `*_df.py` | `cqms_df.py` |
 | **Query** | SQL 문자열 조립 및 반환 | `*_query.py` 또는 `q_*.py` | `cqms_query.py`, `q_iqm_plus.py` |
-| **기획 명세** | PRD 기획서 및 요구사항 정의서 | `*_prd.md` | `oe_quality_issue_dashboard_prd.md` |
+| **기획 명세** | PRD 기획서 및 요구사항 정의서 | `prd_*.md` | `prd_oe_quality_dashboard.md` |
 
 * **에이전트 규칙 규칙 (`.agents/rules/`)**: 룰 계층 관리를 위해 반드시 분류 접두사(`L1-`, `L2-`, `L3-`)를 부여합니다.
 * **상대 경로 의무화**: 모든 마크다운 자산 내 하이퍼링크는 절대 리눅스 경로나 `file:///` 프로토콜을 전면 배제하고, 워크스페이스 기준 평문 상대 경로(예: `[L2-architecture.md](L2-architecture.md)`)만을 기입해야 합니다.

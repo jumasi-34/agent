@@ -22,8 +22,8 @@ related:
   - "[context/checklist/checklist-security.md](checklist-security.md)"
 
 consumers:
-  - "[agents/roles/planner-orchestrator.md](../../agents/roles/planner-orchestrator.md)"
-  - "[agents/roles/quality-evaluator.md](../../agents/roles/quality-evaluator.md)"
+  - "[agents/roles/01_router-agent.md](../../agents/roles/01_router-agent.md)"
+  - "[agents/roles/08_quality-agent.md](../../agents/roles/08_quality-agent.md)"
 
 updated: 2026-06-28
 ---

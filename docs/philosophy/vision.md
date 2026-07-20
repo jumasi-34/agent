@@ -1,6 +1,4 @@
-# 00_VISION.md
-
-# AI Agent Platform Vision
+# [Philosophy] AI Agent Platform Vision
 
 ## North Star
 

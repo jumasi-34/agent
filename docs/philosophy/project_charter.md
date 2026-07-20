@@ -1,6 +1,4 @@
-# 02_PROJECT_CHARTER.md
-
-# AI Agent Platform Charter
+# [Philosophy] AI Agent Platform Charter
 
 ## 목적
 

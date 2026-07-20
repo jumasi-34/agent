@@ -8,7 +8,7 @@ summary: >
 updated: 2026-07-20
 ---
 
-# Agent OS (.agents/) 종합 아키텍처 가이드
+# [Philosophy] Agent OS (.agents/) 종합 아키텍처 가이드
 
 안녕하세요! 이 문서는 본 프로젝트의 핵심이자 AI 협업의 두뇌 역할을 담당하는 **`.agents/` 폴더(서브모듈)의 전체적인 설계 구조와 구동 매커니즘**을 직관적으로 이해하실 수 있도록 기획된 종합 해설서입니다.
 
@@ -31,10 +31,19 @@ updated: 2026-07-20
 
 ```plaintext
 .agents/
-├── philosophy/                 # [철학 레이어] 시스템 비전, 아키텍처 로드맵, 기본 신조 보존
-│   ├── 00_vision.md            # 에이전트 OS가 추구하는 방향성
-│   ├── 01_principles.md        # 개발 협업 5대 기본 원칙
-│   └── 05_agent_os_architecture.md # (본 문서) 아키텍처 총괄 해설서
+├── docs/                        # [문서 가이드라인 레이어] 에이전트 문서 표준화 프레임워크
+│   ├── philosophy/             # [철학 레이어] 시스템 비전, 아키텍처 로드맵, 기본 신조 보존
+│   │   ├── vision.md               # 에이전트 OS가 추구하는 방향성
+│   │   ├── principles.md           # 개발 협업 5대 기본 원칙
+│   │   └── agent_os_architecture.md # (본 문서) 아키텍처 총괄 해설서
+│   │
+│   ├── router/                 # [조율 레이어 문서] 자연어 분류 알고리즘 및 표준 파이프라인 가이드
+│   │   ├── router_architecture.md   # 라우팅 오케스트레이션 아키텍처 설계서
+│   │   ├── work_classification.md   # 작업 분류 체계 정의서
+│   │   ├── intent_analysis.md       # 사용자 의도 분석 가이드
+│   │   └── routing_table.md         # 시나리오별 라우팅 테이블 구조 및 실행 규칙
+│   │
+│   └── README.md               # 문서 디렉터리 체계 및 역할 정의서
 │
 ├── rules/                      # [제약 레이어] 에이전트가 코딩 시 상시 준수해야 하는 강제 가드레일
 │   ├── L2-architecture.md      # 3-Layer(Presentation-Service-Query) 레이어 경계 준수 규칙
@@ -46,14 +55,12 @@ updated: 2026-07-20
 │   ├── 01_agent_governance_constitution.md               # 중앙 거버넌스 위계 및 에이전트 행동 규칙 SSOT 문서
 │   │
 │   ├── {agent-id}/             # 각 에이전트별 독립 샌드박스 설정 폴더
-│   │   └── agent.json          # gRPC/Connect Go 백엔드가 로딩하는 개별 에이전트 설정서 (Input, Tool 등)
+│   │   ├── agent.json          # gRPC/Connect Go 백엔드가 로딩하는 개별 에이전트 설정서 (Input, Tool 등)
+│   │   └── routing_table_rules.json # 6대 작업 시나리오 표준 실행 흐름 정의서
 │   │
 │   └── roles/                  # 사람이 읽고 관리하기 위한 에이전트 상세 명세서 서브폴더
 │       ├── router-agent.md     # 각 에이전트의 구체적 허용/금지(Allowed/Forbidden) 작업 명세
 │       └── product-agent.md
-│
-├── router/                     # [조율 레이어] 자연어 분류 알고리즘 및 표준 파이프라인 템플릿
-│   └── routing_table_rules.json # 6대 작업 시나리오 표준 실행 흐름 정의서
 │
 └── context/                    # [데이터 버스 레이어] 에이전트 간의 결과물(PRD, 설계서)을 전달하는 우편함
     ├── prd/                    # Product Agent가 출력한 PRD 마크다운 저장소
@@ -83,63 +90,30 @@ updated: 2026-07-20
 
 사용자로부터 새로운 기능 개발 요청이 들어오면 에이전트들은 정해진 아키텍처 규칙에 따라 **물리적/논리적 파이프라인 시퀀스**를 그리며 앞 단계의 산출물을 가공하여 전달합니다.
 
-```text
-  [User Request] 사용자 요구사항 유입
-        │
-        ▼
-┌──────────────────┐
-│   router-agent   │ 1. 분석 분류 및 최적의 12대 정예 파이프라인 기획 수립
-└────────┬─────────┘
-         │
-         ▼
-┌──────────────────┐
-│  product-agent   │ 2. 목표 명세화, 비즈니스 요구사항 정의(PRD) 및 DoD 설정
-└────────┬─────────┘
-         │ (context/prd/prd-*.md 저장)
-         ▼
-┌──────────────────┐
-│architecture-agent│ 3. 3-Layer 경계 설계, 데이터 테이블 및 의존성 설계
-└────────┬─────────┘
-         │ (context/architecture/design-*.md 저장)
-         ▼
-┌──────────────────┐
-│  analysis-agent  │ 4. 데이터 원천 수치 이상치 진단(EDA) 및 성능/렌더링 병목 분석
-└────────┬─────────┘
-         │
-         ▼
-┌──────────────────┐
-│   design-agent   │ 5. UI 색상, 타이포그래피, 가이드 적용 및 재사용 컴포넌트 스캔
-└────────┬─────────┘
-         │
-         ▼
-┌──────────────────┐
-│engineering-agent │ 6. Python, SQL 구현, 서비스 모듈 및 배치 자동화 모듈 작성
-└────────┬─────────┘
-         │ (app/queries/*, app/service/* 생성/수정)
-         ▼
-┌──────────────────┐
-│     ui-agent     │ 7. Streamlit 화면 조립 및 세션 가로채기를 활용한 UI 연동
-└────────┬─────────┘
-         │ (app/pages/*_page.py 생성/수정)
-         ▼
-┌──────────────────┐
-│  quality-agent   │ 8. 코드 정적 스타일 리뷰 및 mock 기반 단위/통합 테스트 검증 (최종 게이트)
-└────────┬─────────┘
-         │ (tests/*_test.py, .agents/evals/* 리포트 발행)
-         ▼
-┌──────────────────┐
-│  release-agent   │ 9. 변경 사항 요약 정리 및 배포 전 체크리스트 보좌
-└────────┬─────────┘
-         │
-         ▼
-┌──────────────────┐
-│documentation-agent 10. README, 사용법 및 아키텍처 다이어그램(Mermaid) 최종 문서화
-└────────┬─────────┘
-         │ (docs/**/*.md 자산화)
-         ▼
-┌──────────────────┐
-│  knowledge-base  │ 11. Decisions, Patterns, Incidents의 지식 자산 수확 보존
-└──────────────────┘
+```mermaid
+flowchart TD
+    classDef router fill:#3b82f6,stroke:#1d4ed8,color:#fff,stroke-width:1.5px;
+    classDef product fill:#f59e0b,stroke:#d97706,color:#fff,stroke-width:1.5px;
+    classDef architecture fill:#10b981,stroke:#059669,color:#fff,stroke-width:1.5px;
+    classDef builder fill:#8b5cf6,stroke:#7c3aed,color:#fff,stroke-width:1.5px;
+    classDef quality fill:#ef4444,stroke:#dc2626,color:#fff,stroke-width:1.5px;
+    classDef release fill:#ec4899,stroke:#db2777,color:#fff,stroke-width:1.5px;
+    classDef doc fill:#6b7280,stroke:#4b5563,color:#fff,stroke-width:1.5px;
+
+    User["사용자 요청<br/>(User Request)"] --> Router["router-agent<br/>(1. 파이프라인 수립 & 조율)"]:::router
+    Router --> Product["product-agent<br/>(2. PRD 기획 및 DoD 정의)"]:::product
+    Product -->|"context/prd/"| Arch["architecture-agent<br/>(3. 3-Layer 경계 & 스키마 설계)"]:::architecture
+    Arch -->|"context/architecture/"| Analysis["analysis-agent<br/>(4. EDA 이상치 진단 & 성능 분석)"]:::architecture
+    Analysis --> Design["design-agent<br/>(5. 비주얼 규격 & 에셋 재사용 권고)"]:::architecture
+    Design --> Eng["engineering-agent<br/>(6. SQL 쿼리 & 전처리 서비스 개발)"]:::builder
+    Eng --> UI["ui-agent<br/>(7. Streamlit 페이지 빌딩 & 상태 제어)"]:::builder
+    UI --> Quality["quality-agent<br/>(8. 정적 리뷰 & mock 단위 테스트)"]:::quality
+    Quality -->|Pass| Release["release-agent<br/>(9. 변경 이력 정리 & 배포 보좌)"]:::release
+    Quality -->|Fail| Eng
+    Release --> Doc["documentation-agent<br/>(10. API 명세 & 다이어그램 보존)"]:::doc
+    Doc --> Prompt["prompt-agent<br/>(11. 프롬프트 압축 최적화)"]:::doc
+    Prompt --> KB["knowledge-base<br/>(12. 지식 수확 및 위키 전파)"]:::doc
+    KB --> Router
 ```
 
 ---

@@ -1,6 +1,4 @@
-# 04_ITERATION_TEMPLATE.md
-
-# Iteration Template
+# [Philosophy] Iteration Template
 
 ## 목적
 

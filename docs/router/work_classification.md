@@ -1,6 +1,4 @@
-# router/06_work_classification.md
-
-# Work Classification
+# [Router] Work Classification
 
 ## 목적
 

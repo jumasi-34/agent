@@ -1,6 +1,4 @@
-# router/07_intent_analysis.md
-
-# Intent Analysis
+# [Router] Intent Analysis
 
 ## 목적
 

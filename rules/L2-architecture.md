@@ -48,9 +48,18 @@ workstation/
 
 ### ① UI 레이어 (`app/pages/`)
 * **책임**: 사용자의 필터 입력을 제어하고, 화면 레이아웃 구성 및 최종 차트와 지표 카드를 렌더링합니다.
-* **물리 격리**: 모든 화면은 **화면 컨트롤러(`*_page.py`)**와 **시각화 드로잉(`*_plots.py`)** 파일이 **1:1 대칭 매핑** 구조로 분리되어야 합니다.
-  * [금지] `*_page.py` 내부에 수백 줄의 Plotly 차트 드로잉 코드를 인라인 기술하는 행위.
-  * [금지] `*_plots.py` 내부에서 Streamlit 레이아웃 요소(`st.write`, `st.columns` 등)를 호출하는 행위.
+* **물리 격리**: 모든 화면은 카테고리(`app/pages/category/`) 하위의 페이지별 전용 폴더(`page_folder/`)로 그룹화되어 관리됩니다.
+  * **폴더 구조**: `app/pages/category/page_folder/` (예: `app/pages/_10_dashboard/oe_quality_dashboard/`)
+    - **제약**: `page_folder` 이하의 추가 하위 폴더 생성을 엄격히 금지합니다. 파일 분리가 필요하다면 sub 메뉴나 탭 제목을 활용하여 동일 폴더 내에서 `*_tab.py` 형태로 분리하십시오.
+  * **파일명 규칙**:
+    - **화면 컨트롤러**: `page_*.py` (예: `page_oe_quality_dashboard.py`)
+    - **시각화 드로잉**: `plots_*.py` (예: `plots_oe_quality_dashboard.py`)
+    - **PRD 요구사항 문서**: `prd_*.md` (예: `prd_oe_quality_dashboard.md`)
+    - **페이지 관련 문서**: `page_*.md` (예: `page_oe_quality_dashboard.md`)
+    - **UI 렌더링 분리**: `renderer_*.py` (예: `renderer_oe_quality_dashboard.py`)
+  * **렌더러 분리 기준**: 단일 화면 컨트롤러(`page_*.py`) 파일이 **1,000줄을 초과**하거나 복잡한 레이아웃 구조를 갖는 경우, 화면 배치 및 컴포넌트 렌더링 코드를 `renderer_*.py`로 과감히 분리하여 관심사를 격리하고 가독성을 확보해야 합니다.
+  * [금지] 화면 컨트롤러 내부에 수백 줄의 Plotly 차트 드로잉 코드를 인라인 기술하는 행위 (`plots_*.py` 활용).
+  * [금지] `plots_*.py` 내부에서 Streamlit 레이아웃 요소(`st.write`, `st.columns` 등)를 호출하는 행위.
 
 ### ② 서비스 레이어 (`app/service/`)
 * **책임**: DB 클라이언트를 통해 수집된 원시 데이터(Raw DataFrame)를 결측값 대체, 데이터 타입 복구, 비즈니스 수식 적용, 통계 집계 연산 등을 거쳐 정제된 Pandas DataFrame으로 가공합니다.
@@ -70,26 +79,52 @@ workstation/
 
 ```mermaid
 flowchart TD
-    UI_Page["app/pages/*_page.py (UI Control)"]
-    UI_Plots["app/pages/*_plots.py (Visual plots)"]
-    Service["app/service/*_df.py (Data Processing)"]
-    Query["app/queries/*_query.py (SQL assembly)"]
-    DB_Client["app/core/db/client.py"]
+    %% Subgraphs for Layers
+    subgraph UI_Layer ["Presentation UI Layer (app/pages/)"]
+        UI_Page["page_*.py (UI Control / Controller)"]
+        UI_Renderer["renderer_*.py (Layout / Component Renderer)"]
+        UI_Plots["plots_*.py (Plotly Visualization)"]
+    end
 
-    UI_Page -->|Import & Call| Service
-    UI_Page -->|Import & Pass DF| UI_Plots
-    Service -->|Import & Call| Query
-    Service -->|Import & Run| DB_Client
+    subgraph Service_Layer ["Business Service Layer (app/service/)"]
+        Service["*_df.py (Data Processing & Cache)"]
+    end
+
+    subgraph Query_Layer ["Query Layer (app/queries/)"]
+        Query["*_query.py / q_*.py (SQL Assembly)"]
+    end
+
+    subgraph Core_Layer ["Core / Infra Layer (app/core/)"]
+        DB_Client["db/client.py (DB Connection Client)"]
+        Params["params/parameters.py (Common Parameters)"]
+    end
+
+    %% Allowed Dependencies (Flow of Data & Calls)
+    UI_Page --> Service
+    UI_Page --> UI_Renderer
+    UI_Page --> UI_Plots
+    Service --> Query
+    Service --> DB_Client
+    UI_Page -.-> Params
+    Service -.-> Params
+
+    %% Forbidden Dependencies (Rules Enforcement)
+    UI_Page -.-x|금지: DIRECT DB RUN| DB_Client
+    UI_Plots -.-x|금지: NO SERVICE CALL| Service
+    Query -.-x|금지: NO DB EXECUTE| DB_Client
+    Service -.-x|금지: NO PLOTLY IMPORT| UI_Plots
+
+    %% Styling Nodes (Explicit Color Mapping for Light/Dark Theme Compatibility)
+    style UI_Page fill:#fff7ed,stroke:#f97316,stroke-width:1.5px,color:#431407
+    style UI_Plots fill:#fff7ed,stroke:#f97316,stroke-width:1.5px,color:#431407
+    style UI_Renderer fill:#fff7ed,stroke:#f97316,stroke-width:1.5px,color:#431407
     
-    UI_Page -.-x|[금지] DIRECT DB RUN BLOCK| DB_Client
-    UI_Plots -.-x|[금지] NO PLOTLY IMPORT IN SERVICE| Service
-    Query -.-x|[금지] NO DB EXECUTE IN QUERY| DB_Client
+    style Service fill:#eff6ff,stroke:#3b82f6,stroke-width:1.5px,color:#172554
     
-    style UI_Page fill:rgba(128, 128, 128, 0.1),stroke:var(--text-color),stroke-width:1px
-    style UI_Plots fill:rgba(128, 128, 128, 0.1),stroke:var(--text-color),stroke-width:1px
-    style Service fill:rgba(128, 128, 128, 0.15),stroke:var(--text-color),stroke-width:1px
-    style Query fill:rgba(128, 128, 128, 0.2),stroke:var(--text-color),stroke-width:1px
-    style DB_Client fill:rgba(128, 128, 128, 0.25),stroke:var(--text-color),stroke-width:1px
+    style Query fill:#faf5ff,stroke:#8b5cf6,stroke-width:1.5px,color:#3b0764
+    
+    style DB_Client fill:#f8fafc,stroke:#64748b,stroke-width:1.5px,color:#020617
+    style Params fill:#f8fafc,stroke:#64748b,stroke-width:1.5px,color:#020617
 ```
 
 * **역방향 의존성 전면 차단**: 의존성 방향은 무조건 `[UI -> Service -> Query]`로 순방향으로만 흐릅니다. `queries/`는 `service/`나 `pages/`를 임포트할 수 없으며, `service/`는 `pages/`에 속한 모듈 및 Plotly 시각화 파일(`*_plots.py`)을 임포트할 수 없습니다.

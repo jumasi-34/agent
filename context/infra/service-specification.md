@@ -22,7 +22,7 @@ related:
   - "[context/infra/pages-specification.md](pages-specification.md)"
 
 consumers:
-  - "[agents/roles/planner-orchestrator.md](../../agents/roles/planner-orchestrator.md)"
+  - "[agents/roles/01_router-agent.md](../../agents/roles/01_router-agent.md)"
   - agent.service_builder
 
 updated: 2026-06-28

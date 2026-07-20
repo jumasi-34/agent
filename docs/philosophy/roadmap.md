@@ -1,6 +1,4 @@
-# 03_ROADMAP.md
-
-# AI Agent Platform Roadmap
+# [Philosophy] AI Agent Platform Roadmap
 
 ## 목적
 

@@ -22,8 +22,8 @@ related:
   - "[context/checklist/checklist-git.md](checklist-git.md)"
 
 consumers:
-  - "[agents/roles/code-reviewer.md](../../agents/roles/code-reviewer.md)"
-  - "[agents/roles/quality-evaluator.md](../../agents/roles/quality-evaluator.md)"
+  - "[agents/roles/08_quality-agent.md](../../agents/roles/08_quality-agent.md)"
+  - "[agents/roles/08_quality-agent.md](../../agents/roles/08_quality-agent.md)"
 
 updated: 2026-06-28
 ---
