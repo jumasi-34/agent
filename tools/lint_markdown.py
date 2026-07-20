@@ -173,7 +173,7 @@ def suggest_metadata_defaults(filepath: str, content: str) -> Dict[str, str]:
     sub_domain = "wiki"
     if "rules/" in filepath or "L1-" in basename or "L2-" in basename or "L3-" in basename:
         sub_domain = "rule"
-    elif "principles/" in filepath:
+    elif "docs/philosophy/" in filepath:
         sub_domain = "principle"
     elif "raw/" in filepath:
         sub_domain = "raw"

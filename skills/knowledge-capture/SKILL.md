@@ -9,7 +9,7 @@ parent: "[skills/index.md](../index.md)"
 related:
   - "[skills/index.md](../index.md)"
   - "[rules/L2-metadata-standard.md](../../rules/L2-metadata-standard.md)"
-  - "[principles/Knowledge Curation.md](../../principles/Knowledge Curation.md)"
+  - "[docs/philosophy/Knowledge Curation.md](../../docs/philosophy/Knowledge Curation.md)"
 consumers:
   - agent.all
 updated: 2026-06-30
@@ -21,7 +21,7 @@ updated: 2026-06-30
 * **Parent (상위 개념)**: [skills/index.md](../index.md)
 * **연관 가이드 및 자산**:
   - [rules/L2-metadata-standard.md](../../rules/L2-metadata-standard.md)
-  - [principles/Knowledge Curation.md](../../principles/Knowledge Curation.md)
+  - [docs/philosophy/Knowledge Curation.md](../../docs/philosophy/Knowledge Curation.md)
 
 본 스킬은 에이전트가 소프트웨어 설계 및 개발 구현을 시작하고 배포 및 종결에 이르기까지, 소스 코드 품질 점검(Karpathy Guidelines), 문서 포맷 및 정합성 검증(Lint), 지식의 정량 수확(Capture), 그리고 위키 연동 보존(Writing Wiki)을 **단 하나의 유기적인 루프로 실행하도록 정의된 통합 품질/지식 수명 주기 시스템**입니다.
 

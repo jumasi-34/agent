@@ -17,7 +17,7 @@ updated: 2026-06-29
 ## Connections
 * **상위 개념**: [rules-index.md](rules-index.md)
 * **연관 자산**: 
-  - [Knowledge Curation.md](../principles/Knowledge Curation.md)
+  - [Knowledge Curation.md](../docs/philosophy/Knowledge Curation.md)
   - [Dashboard.md](../Dashboard.md)
 
 ---
