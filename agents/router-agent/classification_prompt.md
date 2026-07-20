@@ -26,7 +26,7 @@
 
 ## 2. 정적 분류 및 검출 판단 원칙 (Detection & Priority Rules)
 
-* **원천 보호 및 재사용 우선**: 새로운 대시보드나 컴포넌트 추가 요청 시, 이미 존재하는 유사 컴포넌트나 레이아웃이 있는지 `.agents/agents/skill-map.md` 및 `app/core/design_system/`을 먼저 분석하도록 가이드를 세워야 합니다.
+* **원천 보호 및 재사용 우선**: 새로운 대시보드나 컴포넌트 추가 요청 시, 이미 존재하는 유사 컴포넌트나 레이아웃이 있는지 `.agents/agents/01_agent_governance_constitution.md` 및 `app/core/design_system/`을 먼저 분석하도록 가이드를 세워야 합니다.
 * **설계 선행 원칙 강제**: "Analysis Page Development" 작업으로 판단될 경우, 반드시 "Data Engineering"이 세부 파이프라인 상에 선행 기획되도록 유도해야 합니다.
 * **이모지 및 WSL 오작동 완전 원천 배제**: "Design System" 및 "Existing Page Improvement" 등으로 감지되는 경우, 화면 내 일반 유니코드 이모지(Emoji) 사용 시 즉시 빌드 실패를 일으키는 가드레일을 주입하도록 리뷰 기준을 정립하십시오.
 

@@ -1,36 +1,35 @@
 {
   "name": "documentation-agent",
   "displayName": "Documentation Agent",
-  "description": "신규 개발 명세, 운영 가이드, 주요 설계 결정 사안(ADR) 및 에이전트 행동 지침을 전문 문서화하는 에이전트",
-  "category": "Governance",
+  "description": "기술 설계 문서, API 스펙, Mermaid 다이어그램 및 운영 문서화를 담당하는 문서화 에이전트",
+  "category": "Documentation",
   "hidden": false,
-  "contexts": [
-    "prd-template.md"
-  ],
+  "contexts": [],
   "outputs": [
-    "docs/*",
-    ".agents/wiki/*"
+    "docs/**/*.md",
+    "*.md"
   ],
   "connections": [
-    "knowledge-curator-agent"
+    "knowledge-base"
   ],
   "config": {
     "customAgent": {
       "systemPromptSections": [
         {
           "title": "Allowed Operations",
-          "content": "- 기술 설계서 생성 및 갱신\n- 사용자 매뉴얼, API 입출력 및 개발 이력 마크다운 기록"
+          "content": "- 기술 사양 및 아키텍처 다이어그램(Mermaid) 문서 자산화\n- README, API 문서 및 운영 마크다운 작성"
         },
         {
           "title": "Forbidden Operations",
-          "content": "- 프로덕션 파이썬 파일 작성 금지 및 데이터 전처리 개입 불가"
+          "content": "- 실제 실행 코드 구현 및 비즈니스 로직 직접 수정 금지"
         }
       ],
       "toolNames": [
+        "grep_search",
+        "list_dir",
         "view_file",
         "write_to_file",
-        "replace_file_content",
-        "multi_replace_file_content"
+        "replace_file_content"
       ]
     }
   }

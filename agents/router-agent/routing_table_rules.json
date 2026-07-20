@@ -1,47 +1,37 @@
 {
   "routing_table": {
     "version": "1.0.0",
-    "updated": "2026-07-03",
+    "updated": "2026-07-20",
     "routing_rules": [
       {
-        "id": "RULE_01_PLANNER_FIRST",
-        "title": "Planner Agent 최우선 가동",
-        "description": "사용자 및 비즈니스 의도가 수집되면 항상 Planner Agent를 실행하여 PRD와 아키텍처 연계 기반을 다집니다."
+        "id": "RULE_01_PRODUCT_FIRST",
+        "title": "Product Agent 최우선 가동",
+        "description": "사용자 및 비즈니스 의도가 수집되면 항상 Product Agent를 실행하여 PRD와 아키텍처 연계 기반을 다집니다."
       },
       {
         "id": "RULE_02_ARCHITECTURE_BEFORE_CODE",
         "title": "설계 우선 원칙",
-        "description": "구조적 변경이 발생하는 모든 작업은 구현 에이전트(Builder) 진입 전 반드시 Architecture Agent를 통해 물리/논리 설계 무결성을 승인받아야 합니다."
+        "description": "구조적 변경이 발생하는 모든 작업은 구현 에이전트 진입 전 반드시 Architecture Agent를 통해 물리/논리 설계 무결성을 승인받아야 합니다."
       },
       {
-        "id": "RULE_03_REUSE_BEFORE_CREATE",
-        "title": "재사용성 사전 대조 검역",
-        "description": "새로운 UI나 필터를 구축하기 전, Component Librarian Agent가 기존 에셋 풀을 스캔하여 재사용 및 중복 개발 배제를 권고합니다."
+        "id": "RULE_03_DESIGN_SYSTEM_COMPLIANCE",
+        "title": "디자인 가이드라인 준수",
+        "description": "모든 UI 개발은 Design Agent를 거쳐 미학적 일관성(컬러, 폰트, Material 아이콘 사용률) 및 컴포넌트 재사용성을 보장받아야 합니다."
       },
       {
-        "id": "RULE_04_DESIGN_SYSTEM_COMPLIANCE",
-        "title": "디자인 시스템 강제 준수",
-        "description": "모든 신규 UI 개발은 Design System Agent를 경유하여 미학적 일관성(컬러, 폰트, Material 아이콘 사용률)을 보장해야 합니다."
+        "id": "RULE_04_QUALITY_ALWAYS",
+        "title": "퀄리티 게이트 상시 피드백",
+        "description": "모든 코드 변경 및 패키지 작업은 배포 전 반드시 Quality Agent를 경유해 정적 리뷰 피드백 및 단위 검증을 통과해야 합니다."
       },
       {
-        "id": "RULE_05_REVIEW_ALWAYS",
-        "title": "리뷰어 상시 격리 피드백",
-        "description": "모든 프로덕션 소스 코드 변경(Python 파일 등)은 배포 전 반드시 Reviewer Agent를 경유해 정적 피드백(Diff)을 획득해야 합니다."
-      },
-      {
-        "id": "RULE_06_DOCUMENTATION_REQUIRED",
+        "id": "RULE_05_DOCUMENTATION_REQUIRED",
         "title": "설계 변경 문서 자산화",
-        "description": "아키텍처, 쿼리, UI 등의 신설/개선이 성공리에 마감되면 Documentation Agent를 통해 관련 기술 사양을 영속 마크다운으로 남겨야 합니다."
+        "description": "아키텍처, 쿼리, UI 등의 신설/개선이 마감되면 Documentation Agent를 통해 관련 기술 사양을 영속 마크다운으로 보존합니다."
       },
       {
-        "id": "RULE_07_PERFORMANCE_CHECK",
-        "title": "성능 지연 사전 방지",
-        "description": "대용량 데이터 집계, Rerun이 빈번한 복잡 UI, 쿼리 튜닝 시에는 반드시 Performance Agent를 실행 순서에 할당합니다."
-      },
-      {
-        "id": "RULE_08_LAZY_LOADING_BINDING",
+        "id": "RULE_06_LAZY_LOADING_BINDING",
         "title": "최소 지연 바인딩 (Lazy Loading)",
-        "description": "Router는 무조건 모든 에이전트를 기동시키지 않고, 시나리오 및 사용자 요구 범위에 적합한 '최소 정예 에이전트 파이프라인'만 선택적으로 구동합니다."
+        "description": "Router는 모든 에이전트를 가동하지 않고, 사용자의 범위에 최적화된 '최소 정예 에이전트 파이프라인'만 구동합니다."
       }
     ],
     "standard_pipelines": {
@@ -49,110 +39,97 @@
         "scenario": "New Analysis Page Development",
         "pipeline": [
           "router-agent",
-          "planner-agent",
-          "requirements-agent",
+          "product-agent",
           "architecture-agent",
-          "data-modeling-agent",
-          "insight-agent",
-          "component-librarian-agent",
-          "design-system-agent",
-          "data-agent",
-          "page-builder-agent",
-          "performance-agent",
-          "reviewer-agent",
-          "evaluator-agent",
+          "analysis-agent",
+          "design-agent",
+          "engineering-agent",
+          "ui-agent",
+          "quality-agent",
+          "release-agent",
           "documentation-agent"
         ],
-        "mandatory_reviewer": "reviewer-agent",
-        "mandatory_evaluator": "evaluator-agent",
-        "final_curator": "knowledge-curator-agent"
+        "mandatory_reviewer": "quality-agent",
+        "mandatory_evaluator": "quality-agent",
+        "final_curator": "knowledge-base"
       },
       "existing_page_improvement": {
         "scenario": "Existing Page Improvement",
         "pipeline": [
           "router-agent",
-          "planner-agent",
-          "requirements-agent",
+          "product-agent",
           "architecture-agent",
-          "component-librarian-agent",
-          "design-system-agent",
-          "refactoring-agent",
-          "performance-agent",
-          "page-builder-agent",
-          "reviewer-agent",
-          "evaluator-agent",
+          "design-agent",
+          "engineering-agent",
+          "ui-agent",
+          "quality-agent",
+          "release-agent",
           "documentation-agent"
         ],
-        "mandatory_reviewer": "reviewer-agent",
-        "mandatory_evaluator": "evaluator-agent",
-        "final_curator": "knowledge-curator-agent"
+        "mandatory_reviewer": "quality-agent",
+        "mandatory_evaluator": "quality-agent",
+        "final_curator": "knowledge-base"
       },
       "component_development": {
         "scenario": "Component Development",
         "pipeline": [
           "router-agent",
-          "planner-agent",
-          "requirements-agent",
-          "component-librarian-agent",
-          "design-system-agent",
-          "component-agent",
-          "reviewer-agent",
-          "evaluator-agent",
+          "product-agent",
+          "design-agent",
+          "engineering-agent",
+          "quality-agent",
+          "release-agent",
           "documentation-agent"
         ],
-        "mandatory_reviewer": "reviewer-agent",
-        "mandatory_evaluator": "evaluator-agent",
-        "final_curator": "knowledge-curator-agent"
+        "mandatory_reviewer": "quality-agent",
+        "mandatory_evaluator": "quality-agent",
+        "final_curator": "knowledge-base"
       },
       "data_engineering_analytics": {
         "scenario": "Data Engineering & Analytics",
         "pipeline": [
           "router-agent",
-          "planner-agent",
-          "requirements-agent",
-          "data-modeling-agent",
-          "insight-agent",
-          "data-agent",
-          "performance-agent",
-          "reviewer-agent",
-          "evaluator-agent",
+          "product-agent",
+          "architecture-agent",
+          "analysis-agent",
+          "engineering-agent",
+          "quality-agent",
+          "release-agent",
           "documentation-agent"
         ],
-        "mandatory_reviewer": "reviewer-agent",
-        "mandatory_evaluator": "evaluator-agent",
-        "final_curator": "knowledge-curator-agent"
+        "mandatory_reviewer": "quality-agent",
+        "mandatory_evaluator": "quality-agent",
+        "final_curator": "knowledge-base"
       },
       "automation_platform": {
         "scenario": "Automation Platform",
         "pipeline": [
           "router-agent",
-          "planner-agent",
-          "requirements-agent",
-          "data-modeling-agent",
-          "insight-agent",
-          "automation-agent",
-          "reviewer-agent",
-          "evaluator-agent",
+          "product-agent",
+          "architecture-agent",
+          "analysis-agent",
+          "engineering-agent",
+          "quality-agent",
+          "release-agent",
           "documentation-agent"
         ],
-        "mandatory_reviewer": "reviewer-agent",
-        "mandatory_evaluator": "evaluator-agent",
-        "final_curator": "knowledge-curator-agent"
+        "mandatory_reviewer": "quality-agent",
+        "mandatory_evaluator": "quality-agent",
+        "final_curator": "knowledge-base"
       },
       "agent_improvement": {
         "scenario": "Agent Improvement",
         "pipeline": [
           "router-agent",
-          "planner-agent",
-          "project-health-agent",
-          "prompt-optimizer-agent",
-          "reviewer-agent",
-          "evaluator-agent",
+          "product-agent",
+          "prompt-agent",
+          "quality-agent",
+          "release-agent",
           "documentation-agent"
         ],
-        "mandatory_reviewer": "reviewer-agent",
-        "mandatory_evaluator": "evaluator-agent",
-        "final_curator": "knowledge-curator-agent"
+        "mandatory_reviewer": "quality-agent",
+        "mandatory_evaluator": "quality-agent",
+        "final_curator": "knowledge-base"
       }
     }
   }
