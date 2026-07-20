@@ -30,5 +30,12 @@
         "view_file"
       ]
     }
-  }
+  },
+  "skills": [
+    "find-skills",
+    "using-superpowers",
+    "subagent-driven-development",
+    "dispatching-parallel-agents",
+    "graphify"
+  ]
 }

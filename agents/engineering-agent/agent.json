@@ -37,5 +37,11 @@
         "run_command"
       ]
     }
-  }
+  },
+  "skills": [
+    "ponytail",
+    "executing-plans",
+    "test-driven-development",
+    "receiving-code-review"
+  ]
 }

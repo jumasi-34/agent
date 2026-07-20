@@ -29,5 +29,9 @@
         "replace_file_content"
       ]
     }
-  }
+  },
+  "skills": [
+    "writing-skills",
+    "graphify"
+  ]
 }

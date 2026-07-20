@@ -28,5 +28,11 @@
         "run_command"
       ]
     }
-  }
+  },
+  "skills": [
+    "ponytail-audit",
+    "ponytail-debt",
+    "ponytail-gain",
+    "systematic-debugging"
+  ]
 }

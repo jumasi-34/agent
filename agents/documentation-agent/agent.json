@@ -32,5 +32,9 @@
         "replace_file_content"
       ]
     }
-  }
+  },
+  "skills": [
+    "mermaid-skill",
+    "slides"
+  ]
 }

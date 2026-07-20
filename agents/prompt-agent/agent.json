@@ -32,5 +32,8 @@
         "replace_file_content"
       ]
     }
-  }
+  },
+  "skills": [
+    "graphify"
+  ]
 }

@@ -28,5 +28,10 @@
         "run_command"
       ]
     }
-  }
+  },
+  "skills": [
+    "finishing-a-development-branch",
+    "using-git-worktrees",
+    "mermaid-skill"
+  ]
 }
