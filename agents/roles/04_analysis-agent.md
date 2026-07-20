@@ -1,17 +1,24 @@
 ---
 name: analysis-agent
-description: "데이터 수치 EDA 및 이상치 진단, 성능 캐시 누수, 쿼리 병목 정량 분석가"
+description: "\uB370\uC774\uD130 \uC218\uCE58 EDA \uBC0F \uC774\uC0C1\uCE58 \uC9C4\
+  \uB2E8, \uC131\uB2A5 \uCE90\uC2DC \uB204\uC218, \uCFFC\uB9AC \uBCD1\uBAA9 \uC815\
+  \uB7C9 \uBD84\uC11D\uAC00"
 version: 1.0.0
 inputs:
-  - architecture_design
-  - metrics_telemetry
+- architecture_design
+- metrics_telemetry
 outputs:
-  - analysis_report
+- analysis_report
 collaborates_with:
-  - architecture-agent
-  - engineering-agent
-skills: []
+- architecture-agent
+- engineering-agent
+skills:
+- ponytail-audit
+- ponytail-debt
+- ponytail-gain
+- systematic-debugging
 ---
+
 
 # analysis-agent (CQ-BI Analysis Agent 명세서)
 
@@ -42,4 +49,8 @@ Sends To
 - Engineering Agent
 
 ## Skills
-- **성능 감사**: `@st.cache_data` 누수 및 Streamlit 렌더링 Rerun 성능 프로파일링
+- ponytail-audit
+- ponytail-debt
+- ponytail-gain
+- systematic-debugging
+

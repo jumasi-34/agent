@@ -1,19 +1,24 @@
 ---
 name: ui-agent
-description: "Streamlit 화면 조립 및 세션 가로채기를 이용한 UI 구현 빌더"
+description: "Streamlit \uD654\uBA74 \uC870\uB9BD \uBC0F \uC138\uC158 \uAC00\uB85C\
+  \uCC44\uAE30\uB97C \uC774\uC6A9\uD55C UI \uAD6C\uD604 \uBE4C\uB354"
 version: 1.0.0
 inputs:
-  - queries_modules
-  - service_modules
-  - ui_standards
+- queries_modules
+- service_modules
+- ui_standards
 outputs:
-  - streamlit_pages
+- streamlit_pages
 collaborates_with:
-  - design-agent
-  - engineering-agent
-  - quality-agent
-skills: []
+- design-agent
+- engineering-agent
+- quality-agent
+skills:
+- design-taste-frontend
+- ui-styling
+- executing-plans
 ---
+
 
 # ui-agent (CQ-BI UI Agent 명세서)
 
@@ -44,4 +49,7 @@ Sends To
 - Quality Agent
 
 ## Skills
-- **화면 조립**: Streamlit 세션 가로채기(Session Interception) 제어 및 머티리얼 벡터 적용
+- design-taste-frontend
+- ui-styling
+- executing-plans
+

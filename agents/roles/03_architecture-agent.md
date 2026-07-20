@@ -1,18 +1,23 @@
 ---
 name: architecture-agent
-description: "3-Layer 아키텍처 경계, 데이터 테이블 구조 설계 아키텍트"
+description: "3-Layer \uC544\uD0A4\uD14D\uCC98 \uACBD\uACC4, \uB370\uC774\uD130 \uD14C\
+  \uC774\uBE14 \uAD6C\uC870 \uC124\uACC4 \uC544\uD0A4\uD14D\uD2B8"
 version: 1.0.0
 inputs:
-  - prd
-  - system_architecture_standards
+- prd
+- system_architecture_standards
 outputs:
-  - architecture_design
+- architecture_design
 collaborates_with:
-  - product-agent
-  - analysis-agent
-  - engineering-agent
-skills: []
+- product-agent
+- analysis-agent
+- engineering-agent
+skills:
+- writing-plans
+- mermaid-skill
+- graphify
 ---
+
 
 # architecture-agent (CQ-BI Architecture Agent 명세서)
 
@@ -43,4 +48,7 @@ Sends To
 - Engineering Agent
 
 ## Skills
-- **시스템 설계**: 3-Layer 의존성 관계 스캔 및 DB 테이블 스펙 설계 능력
+- writing-plans
+- mermaid-skill
+- graphify
+

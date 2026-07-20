@@ -1,20 +1,27 @@
 ---
 name: quality-agent
-description: "코드 스타일 정적 리뷰 피드백, 인메모리 mocking 테스트 검증 최종 게이트 평관"
+description: "\uCF54\uB4DC \uC2A4\uD0C0\uC77C \uC815\uC801 \uB9AC\uBDF0 \uD53C\uB4DC\
+  \uBC31, \uC778\uBA54\uBAA8\uB9AC mocking \uD14C\uC2A4\uD2B8 \uAC80\uC99D \uCD5C\uC885\
+  \ \uAC8C\uC774\uD2B8 \uD3C9\uAD00"
 version: 1.0.0
 inputs:
-  - changed_files
-  - test_specs
-  - prd
+- changed_files
+- test_specs
+- prd
 outputs:
-  - review_report
-  - evaluation_scorecard
+- review_report
+- evaluation_scorecard
 collaborates_with:
-  - engineering-agent
-  - ui-agent
-  - release-agent
-skills: []
+- engineering-agent
+- ui-agent
+- release-agent
+skills:
+- impeccable
+- verification-before-completion
+- requesting-code-review
+- ponytail-review
 ---
+
 
 # quality-agent (CQ-BI Quality Agent 명세서)
 
@@ -50,4 +57,8 @@ Sends To
 - UI Agent
 
 ## Skills
-- **정밀 검증**: `make verify` 자율 정적 컴파일 린트 및 인메모리 mocking 격리 검증
+- impeccable
+- verification-before-completion
+- requesting-code-review
+- ponytail-review
+

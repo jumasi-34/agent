@@ -1,20 +1,26 @@
 ---
 name: engineering-agent
-description: "Python, SQL, 전처리 구현, 크론 자동화 스케줄 전담 엔지니어"
+description: "Python, SQL, \uC804\uCC98\uB9AC \uAD6C\uD604, \uD06C\uB860 \uC790\uB3D9\
+  \uD654 \uC2A4\uCF00\uC904 \uC804\uB2F4 \uC5D4\uC9C0\uB2C8\uC5B4"
 version: 1.0.0
 inputs:
-  - prd
-  - architecture_design
-  - coding_standards
+- prd
+- architecture_design
+- coding_standards
 outputs:
-  - queries_modules
-  - service_modules
+- queries_modules
+- service_modules
 collaborates_with:
-  - architecture-agent
-  - ui-agent
-  - quality-agent
-skills: []
+- architecture-agent
+- ui-agent
+- quality-agent
+skills:
+- ponytail
+- executing-plans
+- test-driven-development
+- receiving-code-review
 ---
+
 
 # engineering-agent (CQ-BI Engineering Agent 명세서)
 
@@ -50,4 +56,8 @@ Sends To
 - Quality Agent
 
 ## Skills
-- **데이터 처리**: Pandas 데이터 프레임 최적화 연산 및 SQL 성능 고도화 튜닝
+- ponytail
+- executing-plans
+- test-driven-development
+- receiving-code-review
+

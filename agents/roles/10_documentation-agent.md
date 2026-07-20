@@ -1,18 +1,22 @@
 ---
 name: documentation-agent
-description: "기술 설계 명세, API 사양, 다이어그램(Mermaid) 영속 보존 사서"
+description: "\uAE30\uC220 \uC124\uACC4 \uBA85\uC138, API \uC0AC\uC591, \uB2E4\uC774\
+  \uC5B4\uADF8\uB7A8(Mermaid) \uC601\uC18D \uBCF4\uC874 \uC0AC\uC11C"
 version: 1.0.0
 inputs:
-  - prd
-  - architecture_design
-  - evaluation_scorecard
+- prd
+- architecture_design
+- evaluation_scorecard
 outputs:
-  - documentation_assets
+- documentation_assets
 collaborates_with:
-  - release-agent
-  - knowledge-base
-skills: []
+- release-agent
+- knowledge-base
+skills:
+- mermaid-skill
+- slides
 ---
+
 
 # documentation-agent (CQ-BI Documentation Agent 명세서)
 
@@ -43,4 +47,6 @@ Sends To
 - Knowledge Base
 
 ## Skills
-- **구조 문서화**: Mermaid 데이터 설계 그래프 시뮬레이션 및 WSL 마크다운 경로 무결성 린트
+- mermaid-skill
+- slides
+

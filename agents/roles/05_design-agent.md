@@ -1,17 +1,22 @@
 ---
 name: design-agent
-description: "디자인 가이드라인 준수 및 공통 컴포넌트 재사용성 검역 디자인 전문가"
+description: "\uB514\uC790\uC778 \uAC00\uC774\uB4DC\uB77C\uC778 \uC900\uC218 \uBC0F\
+  \ \uACF5\uD1B5 \uCEF4\uD3EC\uB10C\uD2B8 \uC7AC\uC0AC\uC6A9\uC131 \uAC80\uC5ED \uB514\
+  \uC790\uC778 \uC804\uBB38\uAC00"
 version: 1.0.0
 inputs:
-  - prd
-  - design_system_standards
+- prd
+- design_system_standards
 outputs:
-  - design_guide_compliance
+- design_guide_compliance
 collaborates_with:
-  - product-agent
-  - ui-agent
-skills: []
+- product-agent
+- ui-agent
+skills:
+- design-taste-frontend
+- ui-ux-pro-max
 ---
+
 
 # design-agent (CQ-BI Design Agent 명세서)
 
@@ -43,4 +48,6 @@ Sends To
 - Engineering Agent
 
 ## Skills
-- **재사용 자산 스캔**: 기존 컴포넌트(Plotly, Metric 등) 코드 베이스 재사용 분석
+- design-taste-frontend
+- ui-ux-pro-max
+

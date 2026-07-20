@@ -1,15 +1,19 @@
 ---
 name: knowledge-base
-description: "Decisions, Patterns, Incidents 지식 자산 수확 및 구조화 사서"
+description: "Decisions, Patterns, Incidents \uC9C0\uC2DD \uC790\uC0B0 \uC218\uD655\
+  \ \uBC0F \uAD6C\uC870\uD654 \uC0AC\uC11C"
 version: 1.0.0
 inputs:
-  - documentation_assets
+- documentation_assets
 outputs:
-  - decisions_patterns_incidents
+- decisions_patterns_incidents
 collaborates_with:
-  - documentation-agent
-skills: []
+- documentation-agent
+skills:
+- writing-skills
+- graphify
 ---
+
 
 # knowledge-base (CQ-BI Knowledge Base 명세서)
 
@@ -38,4 +42,6 @@ Sends To
 - Router Agent
 
 ## Skills
-- **지식 자산화**: 위키 링크 유효성 검증 및 Frontmatter WSL 평문 상대 경로 정합성 린트
+- writing-skills
+- graphify
+

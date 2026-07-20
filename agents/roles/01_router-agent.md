@@ -1,16 +1,24 @@
 ---
 name: router-agent
-description: "최소 지연 동적 바인딩(Lazy Loading) 및 파이프라인 수립 오케스트레이터"
+description: "\uCD5C\uC18C \uC9C0\uC5F0 \uB3D9\uC801 \uBC14\uC778\uB529(Lazy Loading)\
+  \ \uBC0F \uD30C\uC774\uD504\uB77C\uC778 \uC218\uB9BD \uC624\uCF00\uC2A4\uD2B8\uB808\
+  \uC774\uD130"
 version: 1.0.0
 inputs:
-  - user_request
+- user_request
 outputs:
-  - orchestration_pipeline
+- orchestration_pipeline
 collaborates_with:
-  - product-agent
-  - prompt-agent
-skills: []
+- product-agent
+- prompt-agent
+skills:
+- find-skills
+- using-superpowers
+- subagent-driven-development
+- dispatching-parallel-agents
+- graphify
 ---
+
 
 # router-agent (CQ-BI Router Agent 명세서)
 
@@ -41,4 +49,9 @@ Sends To
 - Product Agent
 
 ## Skills
-- **정적 규칙 분류**: 사용자 쿼리를 11대 Work 및 9대 Intent로 매핑하는 규칙 엔진
+- find-skills
+- using-superpowers
+- subagent-driven-development
+- dispatching-parallel-agents
+- graphify
+

@@ -1,17 +1,22 @@
 ---
 name: release-agent
-description: "릴리스 체크리스트 정렬, 변경 이력 요약 체크 보좌관"
+description: "\uB9B4\uB9AC\uC2A4 \uCCB4\uD06C\uB9AC\uC2A4\uD2B8 \uC815\uB82C, \uBCC0\
+  \uACBD \uC774\uB825 \uC694\uC57D \uCCB4\uD06C \uBCF4\uC88C\uAD00"
 version: 1.0.0
 inputs:
-  - changed_files
-  - evaluation_scorecard
+- changed_files
+- evaluation_scorecard
 outputs:
-  - release_note
+- release_note
 collaborates_with:
-  - quality-agent
-  - documentation-agent
-skills: []
+- quality-agent
+- documentation-agent
+skills:
+- finishing-a-development-branch
+- using-git-worktrees
+- mermaid-skill
 ---
+
 
 # release-agent (CQ-BI Release Agent 명세서)
 
@@ -41,4 +46,7 @@ Sends To
 - Documentation Agent
 
 ## Skills
-- **체크리스트 관리**: DB 마이그레이션 유무 및 권한 변동 고위험도(High) 리스크 판정 보좌
+- finishing-a-development-branch
+- using-git-worktrees
+- mermaid-skill
+

@@ -1,18 +1,23 @@
 ---
 name: product-agent
-description: "제품 요구사항 정의서(PRD) 및 완료 기준(DoD) 수립 기획자"
+description: "\uC81C\uD488 \uC694\uAD6C\uC0AC\uD56D \uC815\uC758\uC11C(PRD) \uBC0F\
+  \ \uC644\uB8CC \uAE30\uC900(DoD) \uC218\uB9BD \uAE30\uD68D\uC790"
 version: 1.0.0
 inputs:
-  - user_request
-  - project_conventions
+- user_request
+- project_conventions
 outputs:
-  - prd
+- prd
 collaborates_with:
-  - router-agent
-  - architecture-agent
-  - design-agent
-skills: []
+- router-agent
+- architecture-agent
+- design-agent
+skills:
+- brainstorming
+- ui-ux-pro-max
+- graphify
 ---
+
 
 # product-agent (CQ-BI Product Agent 명세서)
 
@@ -44,4 +49,7 @@ Sends To
 - Design Agent
 
 ## Skills
-- **비즈니스 기획**: 완료 성공 기준에 대한 정량 수식 명세 및 라이프사이클 관리
+- brainstorming
+- ui-ux-pro-max
+- graphify
+

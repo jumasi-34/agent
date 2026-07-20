@@ -1,15 +1,19 @@
 ---
 name: prompt-agent
-description: "에이전트 행동 지침 프롬프트 최적화 및 압축 제어 지능 전담자"
+description: "\uC5D0\uC774\uC804\uD2B8 \uD589\uB3D9 \uC9C0\uCE68 \uD504\uB86C\uD504\
+  \uD2B8 \uCD5C\uC801\uD654 \uBC0F \uC555\uCD95 \uC81C\uC5B4 \uC9C0\uB2A5 \uC804\uB2F4\
+  \uC790"
 version: 1.0.0
 inputs:
-  - agents_registry
+- agents_registry
 outputs:
-  - optimized_prompts
+- optimized_prompts
 collaborates_with:
-  - router-agent
-skills: []
+- router-agent
+skills:
+- graphify
 ---
+
 
 # prompt-agent (CQ-BI Prompt Agent 명세서)
 
@@ -38,4 +42,5 @@ Sends To
 - Router Agent
 
 ## Skills
-- **프롬프트 튜닝**: 토큰 절약 최적화 및 오버헤드 지연 방지 가드레일 정비
+- graphify
+
